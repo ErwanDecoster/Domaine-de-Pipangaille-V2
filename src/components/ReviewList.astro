@@ -3,8 +3,25 @@ import Button from "@/components/ui/button/button.astro";
 import { ArrowLeft, ArrowRight } from "@lucide/astro";
 import Review from "./Review.astro";
 
-const { title, reviews } = Astro.props;
-const tripleReviews = [...reviews, ...reviews, ...reviews];
+const { title, reviews = [] } = Astro.props;
+
+const MIN_ITEMS_FOR_SCROLL = 10;
+const BUFFER_SIZE = 4;
+
+let workingReviews = [...reviews];
+while (
+  workingReviews.length > 0 &&
+  workingReviews.length < MIN_ITEMS_FOR_SCROLL
+) {
+  workingReviews = [...workingReviews, ...reviews];
+}
+
+const tailBuffer = workingReviews.slice(-BUFFER_SIZE);
+const headBuffer = workingReviews.slice(0, BUFFER_SIZE);
+const displayReviews = [...tailBuffer, ...workingReviews, ...headBuffer];
+
+const itemCount = workingReviews.length;
+const bufferSize = tailBuffer.length;
 ---
 
 <section class="relative grid md:gap-20 px-20 mt-48">
@@ -24,9 +41,11 @@ const tripleReviews = [...reviews, ...reviews, ...reviews];
       id="review-carousel"
       class="no-scrollbar grid auto-cols-[calc(33.333%-1rem)] grid-flow-col gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory"
       style="scrollbar-width: none;"
+      data-item-count={itemCount}
+      data-buffer-size={bufferSize}
     >
       {
-        tripleReviews.map((review) => (
+        displayReviews.map((review) => (
           <div class="snap-start">
             <Review review={review} />
           </div>
@@ -52,12 +71,24 @@ const tripleReviews = [...reviews, ...reviews, ...reviews];
 
     let scrollTimeout: number | null = null;
     let itemWidth: number;
-    let originalItemsCount: number;
+
+    const itemCount = parseInt(carousel.dataset.itemCount || "0");
+    const bufferSize = parseInt(carousel.dataset.bufferSize || "0");
 
     const calculateDimensions = () => {
-      itemWidth = carousel.children[0]?.getBoundingClientRect().width || 0;
-      originalItemsCount = carousel.children.length / 3;
-      carousel.scrollLeft = itemWidth * originalItemsCount;
+      if (carousel.children.length === 0) return;
+
+      if (carousel.children.length > 1) {
+        const first = carousel.children[0].getBoundingClientRect();
+        const second = carousel.children[1].getBoundingClientRect();
+        itemWidth = second.left - first.left;
+      } else {
+        itemWidth = carousel.children[0].getBoundingClientRect().width;
+      }
+
+      if (carousel.scrollLeft === 0 && bufferSize > 0) {
+        carousel.scrollLeft = itemWidth * bufferSize;
+      }
     };
 
     const resetScroll = (targetPosition: number) => {
@@ -72,12 +103,12 @@ const tripleReviews = [...reviews, ...reviews, ...reviews];
 
     const handleInfiniteScroll = () => {
       const { scrollLeft, scrollWidth, clientWidth } = carousel;
-      const maxScroll = scrollWidth - clientWidth;
 
-      if (scrollLeft >= maxScroll - SCROLL_THRESHOLD) {
-        resetScroll(itemWidth * (originalItemsCount * 2) - clientWidth);
-      } else if (scrollLeft <= SCROLL_THRESHOLD) {
-        resetScroll(itemWidth * originalItemsCount);
+      const realSetWidth = itemWidth * itemCount;
+      if (scrollLeft <= SCROLL_THRESHOLD) {
+        resetScroll(scrollLeft + realSetWidth);
+      } else if (scrollLeft >= scrollWidth - clientWidth - SCROLL_THRESHOLD) {
+        resetScroll(scrollLeft - realSetWidth);
       }
     };
 
@@ -86,13 +117,12 @@ const tripleReviews = [...reviews, ...reviews, ...reviews];
       scrollTimeout = window.setTimeout(handleInfiniteScroll, SCROLL_DEBOUNCE);
     });
 
-    // Initialize
-    calculateDimensions();
+    requestAnimationFrame(() => {
+      calculateDimensions();
+    });
 
-    // Recalculate on resize
     new ResizeObserver(calculateDimensions).observe(carousel);
 
-    // Expose scroll function for buttons
     window.scrollCarousel = (direction: number) => {
       const scrollAmount = itemWidth * direction;
       carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
