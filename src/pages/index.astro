@@ -9,7 +9,8 @@ import Card from "@/components/Card.astro";
 ---
 
 <Layout>
-  <div class="h-28 w-screen sticky top-0 z-10 bg-muted"></div>
+  <div data-scroll-animated class="h-28 w-screen sticky top-0 z-10 bg-muted">
+  </div>
   <Header
     title="Le Domaine de Pipangaille"
     text="Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée entourée d’un parc arboré alliant le charme de la pierre et de l’authenticité dans un cadre idyllique, vous propose 4 chambres d’hôtes, la table d’hôtes sur réservation, la piscine en saison, pour un séjour magique et une invitation à la détente.Le domaine de Pipangaille est situé à proximité de la sortie de l’autoroute A7, proche de la nationale 7, à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna, très proche de la Via-fluvia."
@@ -17,7 +18,11 @@ import Card from "@/components/Card.astro";
     buttonText="Découvrir le Domaine"
     buttonLink="/the-place"
   />
-  <div class="h-28 -mb-28 w-screen sticky top-0 z-10 bg-background"></div>
+  <div
+    data-scroll-animated
+    class="h-28 -mb-20 w-screen sticky top-0 z-10 bg-background"
+  >
+  </div>
   <MediaContent
     direction="left"
     title="Les chambres d’hôtes"
