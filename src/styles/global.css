@@ -5,6 +5,8 @@
 
 @theme inline {
   --text-7.5xl: 5.5rem /* 88px */;
+  --font-serif-4: "Source Serif 4", serif;
+  --font-barlow: "Barlow", sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -117,7 +119,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 font-barlow;
   }
   body {
     @apply bg-background text-foreground;
@@ -127,19 +129,19 @@
     @apply cursor-pointer;
   }
   h1 {
-    @apply text-7.5xl/[100%] tracking-tight font-bold;
+    @apply text-7.5xl/[100%] tracking-tight font-serif-4 font-light;
   }
   h2 {
-    @apply text-6xl/[110%] tracking-tight font-bold;
+    @apply text-6xl/[110%] tracking-tight font-serif-4 font-light;
   }
   h3 {
-    @apply text-5xl/[110%] tracking-tight font-bold;
+    @apply text-5xl/[110%] tracking-tight font-serif-4 font-light;
   }
   h4 {
-    @apply text-4xl/[130%] tracking-tight font-bold;
+    @apply text-4xl/[130%] tracking-tight font-serif-4 font-light;
   }
   h5 {
-    @apply text-2xl/[150%] tracking-tight font-bold;
+    @apply text-2xl/[150%] tracking-tight font-serif-4 font-light;
   }
   p {
     @apply text-base/[160%] text-muted-foreground;
