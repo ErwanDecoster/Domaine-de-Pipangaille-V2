@@ -7,6 +7,7 @@ import MediaContent from "@/components/MediaContent.astro";
 import ReviewList from "@/components/ReviewList.astro";
 import Card from "@/components/Card.astro";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { reviews } from "../../../constants/review";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -43,45 +44,7 @@ const translatePath = useTranslatedPath(lang);
     buttonText={t("home.counter.button")}
     buttonLink="/bedrooms"
   />
-  <ReviewList
-    title={t("home.reviews.title")}
-    reviews={[
-      {
-        stars: 5,
-        name: "Yves Haguier",
-        publishedAtDate: "2025-07-18T19:20:47.159Z",
-        reviewUrl:
-          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4MllqRnFOVE4xWVUxUFlpMXFRbXBOYVd4b1NHYxAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOl82YjFqNTN1YU1PYi1qQmpNaWxoSGc%7C0cTduE8WsDn%7C?hl=en",
-        text: "We only have compliments to give, both for our hosts, the quality of their meals, the rooms, and the location directly on the greenway. The setting is magnificent and so is the building. Our only disappointment was having to shorten our stay. We will be back!",
-      },
-      {
-        stars: 5,
-        name: "R. H.",
-        publishedAtDate: "2025-07-13T20:06:58.432Z",
-        reviewUrl:
-          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4ZlJrYzNSRkZETjJKcFozbHBibkJEVFdFMFNsRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOkxfRkc3RFFDN2JpZ3lpbnBDTWE0SlE%7C0cS06XOkBPS%7C?hl=en",
-        text: "A perfect accommodation for cyclists and also for drivers on the Lyon - Mediterranean route. Very quiet, beautifully green with many different seating areas, plus a pool and everything very relaxing. The hosts are very friendly and laid-back. The room was very pleasant, the shower in the room beautifully designed and practical. Breakfast is sufficient. Thank you for the restful overnight stay.",
-      },
-      {
-        stars: 5,
-        name: "Joelle Milliez",
-        publishedAtDate: "2025-07-13T20:04:13.335Z",
-
-        reviewUrl:
-          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oU2VGVXpibTFEWVdaT1drSmxkbUZWVkhCRFZrRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOnhSeFUzbm1DYWZOWkJldmFVVHBDVkE%7C0cS03xJ-jtb%7C?hl=en",
-        text: "Warm welcome. The place is peaceful and very pretty. The rooms are comfortable. We enjoyed the pool and dinner on the terrace. We will gladly return for a stopover heading south.",
-      },
-      {
-        stars: 5,
-        name: "Axel PLACIDE",
-        publishedAtDate: "2025-07-08T08:55:42.555Z",
-
-        reviewUrl:
-          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWcFZIQjBWblZDTUdnM2VVc3diRmQ0YWpKak1rRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOjVpVHB0VnVCMGg3eUswbFd4ajJjMkE%7C0cQCoDW5FAS%7C?hl=en",
-        text: "I had an excellent night during a business trip in this guest house, whose bucolic environment and appearance are very pleasant. I was greeted with a smile by the owner. The common areas, the room, and the outdoor park are charming. The only downside: the soundproofing of the rooms. I could hear everything happening in the neighboring rooms and vice versa. The charm of the old with its drawbacks. Nevertheless, I highly recommend it!",
-      },
-    ]}
-  />
+  <ReviewList title={t("home.reviews.title")} reviews={reviews[lang]} />
   <section class="grid grid-cols-6 gap-8 md:gap-10 px-20 mt-48">
     <h2 class="mb-4 col-span-6">{t("home.surroundings.title")}</h2>
     <Card
