@@ -1,6 +1,7 @@
 ---
 import Footer from "@/components/Footer.astro";
 import "../styles/global.css";
+import Navbar from "@/components/Navbar.astro";
 ---
 
 <!doctype html>
@@ -18,8 +19,11 @@ import "../styles/global.css";
     <link rel="manifest" href="/site.webmanifest" />
     <title>Domaine de Pipangaille</title>
   </head>
-  <body class="grid gap-24">
-    <slot />
+  <body>
+    <Navbar />
+    <main>
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

@@ -1,0 +1,52 @@
+---
+import { Star } from "@lucide/astro";
+
+const { review } = Astro.props;
+---
+
+<div
+  class="relative min-w-441px grid gap-6 p-8 bg-muted rounded-md group"
+  onmouseleave="this.querySelector('[data-review-overlay]')?.scrollTo({top:0,behavior:'smooth'})"
+>
+  <div class="flex gap-1.5">
+    <Star />
+    <strong>{review.stars}</strong>
+  </div>
+  <div class="relative h-32 overflow-hidden" data-review-content>
+    <p class="line-clamp-5" data-review-preview>
+      {review.text}
+    </p>
+    <div
+      data-review-gradient
+      class="absolute bottom-0 left-0 right-0 h-12 bg-linear-to-t from-muted to-transparent pointer-events-none opacity-0 group-hover:opacity-0 transition-opacity"
+    >
+    </div>
+    <div
+      data-review-overlay
+      class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity overflow-y-auto bg-muted rounded text-sm"
+    >
+      <p>{review.text}</p>
+    </div>
+  </div>
+  <div class="flex justify-between">
+    <span class="capitalize">{review.name}</span>
+    <span>{new Date(review.publishedAtDate).toLocaleDateString()}</span>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll("[data-review-content]").forEach((container) => {
+    const preview = container.querySelector(
+      "[data-review-preview]"
+    ) as HTMLElement;
+    const gradient = container.querySelector(
+      "[data-review-gradient]"
+    ) as HTMLElement;
+
+    if (preview && gradient) {
+      if (preview.scrollHeight > preview.clientHeight) {
+        gradient.style.opacity = "1";
+      }
+    }
+  });
+</script>

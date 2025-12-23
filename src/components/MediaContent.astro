@@ -1,0 +1,20 @@
+---
+import Button from "@/components/ui/button/button.astro";
+
+const { title, text, image, imageAlt, buttonText, buttonLink, direction } =
+  Astro.props;
+---
+
+<section class="relative grid grid-cols-2 md:gap-20 px-20 mt-48">
+  <img
+    class="aspect-4/3"
+    class:list={direction === "left" ? "order-last" : ""}
+    src={image}
+    alt={imageAlt}
+  />
+  <div class="flex flex-col justify-center gap-8">
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <Button class="self-baseline" href={buttonLink}>{buttonText}</Button>
+  </div>
+</section>

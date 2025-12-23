@@ -1,0 +1,144 @@
+---
+import { Button } from "@/components/ui/button";
+import Layout from "../layouts/Layout.astro";
+import { Bike } from "@lucide/astro";
+import Header from "@/components/Header.astro";
+import MediaContent from "@/components/MediaContent.astro";
+import ReviewList from "@/components/ReviewList.astro";
+import Card from "@/components/Card.astro";
+---
+
+<Layout>
+  <div class="h-28 w-screen sticky top-0 z-10 bg-muted"></div>
+  <Header
+    title="Le Domaine de Pipangaille"
+    text="Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée entourée d’un parc arboré alliant le charme de la pierre et de l’authenticité dans un cadre idyllique, vous propose 4 chambres d’hôtes, la table d’hôtes sur réservation, la piscine en saison, pour un séjour magique et une invitation à la détente.Le domaine de Pipangaille est situé à proximité de la sortie de l’autoroute A7, proche de la nationale 7, à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna, très proche de la Via-fluvia."
+    image="/header-image.jpg"
+    buttonText="Découvrir le Domaine"
+    buttonLink="/the-place"
+  />
+  <div class="h-28 -mb-28 w-screen sticky top-0 z-10 bg-background"></div>
+  <MediaContent
+    direction="left"
+    title="Les chambres d’hôtes"
+    text="Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieur entourée de pierres qui lui confère,  un cadre authentique et apaisant.  Les quatre chambres thématiques, une suite et trois chambres de deux personnes sont situées au deuxième étage, accessible par un grand escalier, la décoration des chambres vous invite au voyage."
+    image="/header-image.jpg"
+    buttonText="Voir les chambres"
+    buttonLink="/bedrooms"
+  />
+  <MediaContent
+    title="Le comptoir"
+    text="Pour les cyclistes de passage sur la Via Rhona ou touristes sur la route des vacances à la recherche d’un endroit idéal pour une pause déjeuner ou goûter, le comptoir de Pipangaille situé à l'entrée du domaine vous accueille en pleine saison sous la terrasse couverte pour une pause gourmande sucrée, salée dans un endroit atypique au cœur de la végétation. "
+    image="/header-image.jpg"
+    buttonText="En savoir plus"
+    buttonLink="/bedrooms"
+  />
+  <ReviewList
+    title="Ce que disent nos hôtes"
+    reviews={[
+      {
+        stars: 5,
+        name: "Yves Haguier",
+        publishedAtDate: "2025-07-18T19:20:47.159Z",
+        reviewUrl:
+          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4MllqRnFOVE4xWVUxUFlpMXFRbXBOYVd4b1NHYxAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOl82YjFqNTN1YU1PYi1qQmpNaWxoSGc%7C0cTduE8WsDn%7C?hl=en",
+        text: "We only have compliments to give, both for our hosts, the quality of their meals, the rooms, and the location directly on the greenway. The setting is magnificent and so is the building. Our only disappointment was having to shorten our stay. We will be back!",
+      },
+      {
+        stars: 5,
+        name: "R. H.",
+        publishedAtDate: "2025-07-13T20:06:58.432Z",
+        reviewUrl:
+          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4ZlJrYzNSRkZETjJKcFozbHBibkJEVFdFMFNsRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOkxfRkc3RFFDN2JpZ3lpbnBDTWE0SlE%7C0cS06XOkBPS%7C?hl=en",
+        text: "A perfect accommodation for cyclists and also for drivers on the Lyon - Mediterranean route. Very quiet, beautifully green with many different seating areas, plus a pool and everything very relaxing. The hosts are very friendly and laid-back. The room was very pleasant, the shower in the room beautifully designed and practical. Breakfast is sufficient. Thank you for the restful overnight stay.",
+      },
+      {
+        stars: 5,
+        name: "Joelle Milliez",
+        publishedAtDate: "2025-07-13T20:04:13.335Z",
+
+        reviewUrl:
+          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oU2VGVXpibTFEWVdaT1drSmxkbUZWVkhCRFZrRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOnhSeFUzbm1DYWZOWkJldmFVVHBDVkE%7C0cS03xJ-jtb%7C?hl=en",
+        text: "Warm welcome. The place is peaceful and very pretty. The rooms are comfortable. We enjoyed the pool and dinner on the terrace. We will gladly return for a stopover heading south.",
+      },
+      {
+        stars: 5,
+        name: "Axel PLACIDE",
+        publishedAtDate: "2025-07-08T08:55:42.555Z",
+
+        reviewUrl:
+          "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWcFZIQjBWblZDTUdnM2VVc3diRmQ0YWpKak1rRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CAIQACodChtycF9oOjVpVHB0VnVCMGg3eUswbFd4ajJjMkE%7C0cQCoDW5FAS%7C?hl=en",
+        text: "I had an excellent night during a business trip in this guest house, whose bucolic environment and appearance are very pleasant. I was greeted with a smile by the owner. The common areas, the room, and the outdoor park are charming. The only downside: the soundproofing of the rooms. I could hear everything happening in the neighboring rooms and vice versa. The charm of the old with its drawbacks. Nevertheless, I highly recommend it!",
+      },
+    ]}
+  />
+  <section class="grid grid-cols-6 gap-8 md:gap-10 px-20 mt-48">
+    <h2 class="mb-4 col-span-6">À découvrir autour de chez nous</h2>
+    <Card
+      title="Safari de Peaugres"
+      image="/example.jpg"
+      imageAlt="Example Image"
+      description="Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares."
+      tags={[{ icon: Bike, text: "10 min" }, { text: "Famille" }]}
+      buttonText="En savoir plus"
+      buttonLink="/example"
+      class="col-span-3"
+    />
+    <Card
+      title="Safari de Peaugres"
+      image="/example.jpg"
+      imageAlt="Example Image"
+      description="Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares."
+      tags={[{ icon: Bike, text: "10 min" }, { text: "Famille" }]}
+      buttonText="En savoir plus"
+      buttonLink="/example"
+      class="col-span-3"
+    />
+    <Card
+      title="Safari de Peaugres"
+      image="/example.jpg"
+      imageAlt="Example Image"
+      description="Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares."
+      tags={[{ icon: Bike, text: "10 min" }, { text: "Famille" }]}
+      buttonText="En savoir plus"
+      buttonLink="/example"
+      class="col-span-2"
+    />
+    <Card
+      title="Safari de Peaugres"
+      image="/example.jpg"
+      imageAlt="Example Image"
+      description="Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares."
+      tags={[{ icon: Bike, text: "10 min" }, { text: "Famille" }]}
+      buttonText="En savoir plus"
+      buttonLink="/example"
+      class="col-span-2"
+    />
+    <Card
+      title="Safari de Peaugres"
+      image="/example.jpg"
+      imageAlt="Example Image"
+      description="Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares."
+      tags={[{ icon: Bike, text: "10 min" }, { text: "Famille" }]}
+      buttonText="En savoir plus"
+      buttonLink="/example"
+      class="col-span-2"
+    />
+    <Button class="col-span-6 mx-auto mt-6"
+      >Voir les activités et restaurants à proximité</Button
+    >
+  </section>
+  <section class="px-20 my-48">
+    <div class="mx-auto bg-muted px-6 py-24 max-w-5xl rounded-3xl">
+      <div class="w-fit mx-auto space-y-10">
+        <h3>Prêts à poser vos valises ?</h3>
+        <div class="flex justify-between">
+          <Button href="/booking">Réserver une chambre</Button>
+          <Button href="/booking" variant="secondary"
+            >Voir les hébergements</Button
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

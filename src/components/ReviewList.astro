@@ -1,0 +1,101 @@
+---
+import Button from "@/components/ui/button/button.astro";
+import { ArrowLeft, ArrowRight } from "@lucide/astro";
+import Review from "./Review.astro";
+
+const { title, reviews } = Astro.props;
+const tripleReviews = [...reviews, ...reviews, ...reviews];
+---
+
+<section class="relative grid md:gap-20 px-20 mt-48">
+  <div class="flex w-full items-center justify-between">
+    <h2>{title}</h2>
+    <div>
+      <Button onclick="window.scrollCarousel(-1)" variant="ghost"
+        ><ArrowLeft /></Button
+      >
+      <Button onclick="window.scrollCarousel(1)" variant="ghost"
+        ><ArrowRight /></Button
+      >
+    </div>
+  </div>
+  <div class="review-carousel-container overflow-hidden">
+    <div
+      id="review-carousel"
+      class="no-scrollbar grid auto-cols-[calc(33.333%-1rem)] grid-flow-col gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory"
+      style="scrollbar-width: none;"
+    >
+      {
+        tripleReviews.map((review) => (
+          <div class="snap-start">
+            <Review review={review} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  declare global {
+    interface Window {
+      scrollCarousel: (direction: number) => void;
+    }
+  }
+
+  const carousel = document.getElementById("review-carousel");
+
+  if (carousel) {
+    const SCROLL_DEBOUNCE = 100;
+    const SCROLL_THRESHOLD = 5;
+    const TRANSITION_DELAY = 10;
+
+    let scrollTimeout: number | null = null;
+    let itemWidth: number;
+    let originalItemsCount: number;
+
+    const calculateDimensions = () => {
+      itemWidth = carousel.children[0]?.getBoundingClientRect().width || 0;
+      originalItemsCount = carousel.children.length / 3;
+      carousel.scrollLeft = itemWidth * originalItemsCount;
+    };
+
+    const resetScroll = (targetPosition: number) => {
+      carousel.style.scrollBehavior = "auto";
+      requestAnimationFrame(() => {
+        carousel.scrollLeft = targetPosition;
+        setTimeout(() => {
+          carousel.style.scrollBehavior = "smooth";
+        }, TRANSITION_DELAY);
+      });
+    };
+
+    const handleInfiniteScroll = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = carousel;
+      const maxScroll = scrollWidth - clientWidth;
+
+      if (scrollLeft >= maxScroll - SCROLL_THRESHOLD) {
+        resetScroll(itemWidth * (originalItemsCount * 2) - clientWidth);
+      } else if (scrollLeft <= SCROLL_THRESHOLD) {
+        resetScroll(itemWidth * originalItemsCount);
+      }
+    };
+
+    carousel.addEventListener("scroll", () => {
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      scrollTimeout = window.setTimeout(handleInfiniteScroll, SCROLL_DEBOUNCE);
+    });
+
+    // Initialize
+    calculateDimensions();
+
+    // Recalculate on resize
+    new ResizeObserver(calculateDimensions).observe(carousel);
+
+    // Expose scroll function for buttons
+    window.scrollCarousel = (direction: number) => {
+      const scrollAmount = itemWidth * direction;
+      carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    };
+  }
+</script>
