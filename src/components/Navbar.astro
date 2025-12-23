@@ -1,0 +1,40 @@
+---
+import Logo from "@/assets/DP_LogoTexte_noir.svg";
+import Button from "./ui/button/button.astro";
+---
+
+<nav class="fixed inset-x-0 z-20 px-20 py-7 flex justify-between items-center">
+  <img
+    src={Logo.src}
+    alt="Domaine de Pipangaille"
+    class="bg-transparent w-28 self-baseline"
+  />
+  <ul class="flex">
+    <li>
+      <Button variant="link" href="/">Accueil</Button>
+    </li>
+    <li>
+      <Button variant="link" href="/">Le lieu</Button>
+    </li>
+    <li>
+      <Button variant="link" href="/">Les hébergements</Button>
+    </li>
+    <li>
+      <Button variant="link" href="/">Le comptoir</Button>
+    </li>
+    <li>
+      <Button variant="link" href="/">Les alentours</Button>
+    </li>
+  </ul>
+  <ul class="flex gap-4">
+    <li>
+      <Button class="mr-4" variant="link" href="/">FR TODO</Button>
+    </li>
+    <li>
+      <Button variant="outline" href="/">Contact</Button>
+    </li>
+    <li>
+      <Button href="/">Réserver</Button>
+    </li>
+  </ul>
+</nav>

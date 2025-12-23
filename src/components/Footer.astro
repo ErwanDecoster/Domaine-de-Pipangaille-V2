@@ -1,0 +1,132 @@
+---
+import { Button } from "./ui/button";
+import { Facebook, Instagram, Linkedin } from "@lucide/astro";
+import Logo from "@/assets/DP_LogoTexte_noir.svg";
+---
+
+<footer class="p-16 space-y-48 bg-primary mt-16">
+  <div class="flex justify-between">
+    <img
+      src={Logo.src}
+      alt="Domaine de Pipangaille"
+      class="bg-transparent w-48 self-baseline"
+    />
+    <div>
+      <h5>Liens utiles</h5>
+      <ul>
+        <li>
+          <Button
+            variant="link"
+            class="-ml-6"
+            href="https://www.tripadvisor.fr/Hotel_Review-g11695688-d5990107-Reviews-Domaine_de_Pipangaille-Andancette_Drome_Auvergne_Rhone_Alpes.html"
+            >Tripadvisor</Button
+          >
+        </li>
+        <li>
+          <Button
+            variant="link"
+            class="-ml-6"
+            href="https://www.pagesjaunes.fr/pros/56007503">Pages Jaunes</Button
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Mieux nous connaitre</h5>
+      <ul>
+        <li>
+          <Button
+            variant="link"
+            class="-ml-6"
+            href="https://facebook.com/domainedepipangaille"
+            ><Facebook class="size-5" />Facebook</Button
+          >
+        </li>
+        <li>
+          <Button
+            variant="link"
+            class="-ml-6"
+            href="https://instagram.com/domaine_de_pipangaille"
+            ><Instagram class="size-5" />Instagram</Button
+          >
+        </li>
+        <li>
+          <Button
+            variant="link"
+            class="-ml-6"
+            href="https://linkedin.com/company/domaine-de-pipangaille/"
+            ><Linkedin class="size-5" />LinkedIn</Button
+          >
+        </li>
+        <li>
+          <Button
+            variant="link"
+            class="-ml-6"
+            href="https://x.com/D_Pipangaille"
+          >
+            <svg class="size-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </svg>
+            X
+          </Button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Plus d’informations</h5>
+      <ul>
+        <li>
+          <Button variant="link" class="-ml-6" href="/">Le lieu</Button>
+        </li>
+        <li>
+          <Button variant="link" class="-ml-6" href="/">Les hébergements</Button
+          >
+        </li>
+        <li>
+          <Button variant="link" class="-ml-6" href="/">Le comptoir</Button>
+        </li>
+        <li>
+          <Button variant="link" class="-ml-6" href="/">À proximité</Button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Nous contacter</h5>
+      <ul>
+        <li>
+          <Button variant="link" class="-ml-6" href="tel:+330456747382"
+            >+33 04 56 74 73 82</Button
+          >
+        </li>
+        <li>
+          <Button
+            variant="link"
+            class="-ml-6"
+            href="mailto:contact@domaine-de-pipangaille.fr"
+            >contact@domaine-de-pipangaille.fr</Button
+          >
+        </li>
+        <li>
+          <Button variant="link" class="-ml-6" href="/"
+            >page “nous contacter”</Button
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <ul class="flex justify-center">
+      <li>
+        <Button variant="link" href="/">Mension légales</Button>
+      </li>
+      <li>
+        <Button variant="link" href="/">Condition général de vente</Button>
+      </li>
+      <li>
+        <Button variant="link" href="/">FR TODO</Button>
+      </li>
+    </ul>
+  </div>
+</footer>
