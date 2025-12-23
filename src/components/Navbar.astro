@@ -1,9 +1,18 @@
 ---
 import Logo from "@/assets/DP_LogoTexte_noir.svg";
 import Button from "./ui/button/button.astro";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { languages } from "@/i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
-<nav data-scroll-animated class="fixed inset-x-0 z-20 px-20 h-28 flex justify-between items-center">
+<nav
+  data-scroll-animated
+  class="fixed inset-x-0 z-20 px-20 h-28 flex justify-between items-center"
+>
   <img
     src={Logo.src}
     alt="Domaine de Pipangaille"
@@ -11,30 +20,51 @@ import Button from "./ui/button/button.astro";
   />
   <ul class="flex">
     <li>
-      <Button variant="link" href="/">Accueil</Button>
+      <Button variant="link" href={translatePath("/")}>{t("nav.home")}</Button>
     </li>
     <li>
-      <Button variant="link" href="/">Le lieu</Button>
+      <Button variant="link" href={translatePath("/")}>{t("nav.place")}</Button>
     </li>
     <li>
-      <Button variant="link" href="/">Les hébergements</Button>
+      <Button variant="link" href={translatePath("/")}
+        >{t("nav.accommodations")}</Button
+      >
     </li>
     <li>
-      <Button variant="link" href="/">Le comptoir</Button>
+      <Button variant="link" href={translatePath("/")}
+        >{t("nav.counter")}</Button
+      >
     </li>
     <li>
-      <Button variant="link" href="/">Les alentours</Button>
+      <Button variant="link" href={translatePath("/")}
+        >{t("nav.surroundings")}</Button
+      >
     </li>
   </ul>
   <ul class="flex gap-4">
     <li>
-      <Button class="mr-4" variant="link" href="/">FR TODO</Button>
+      {
+        Object.entries(languages).map(
+          ([l, label]) =>
+            l !== lang && (
+              <Button
+                class="mr-4"
+                variant="link"
+                href={`/${l === "fr" ? "" : l}`}
+              >
+                {label}
+              </Button>
+            )
+        )
+      }
     </li>
     <li>
-      <Button variant="outline" href="/">Contact</Button>
+      <Button variant="outline" href={translatePath("/")}
+        >{t("nav.contact")}</Button
+      >
     </li>
     <li>
-      <Button href="/">Réserver</Button>
+      <Button href={translatePath("/")}>{t("nav.book")}</Button>
     </li>
   </ul>
 </nav>

@@ -2,6 +2,10 @@
 import { Button } from "./ui/button";
 import { Facebook, Instagram, Linkedin } from "@lucide/astro";
 import Logo from "@/assets/DP_LogoTexte_noir.svg";
+import { getLangFromUrl, useTranslations } from "@/lib/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer class="p-16 space-y-48 bg-primary mt-16">
@@ -12,7 +16,7 @@ import Logo from "@/assets/DP_LogoTexte_noir.svg";
       class="bg-transparent w-48 self-baseline"
     />
     <div>
-      <h5>Liens utiles</h5>
+      <h5>{t("footer.usefulLinks")}</h5>
       <ul>
         <li>
           <Button
@@ -32,7 +36,7 @@ import Logo from "@/assets/DP_LogoTexte_noir.svg";
       </ul>
     </div>
     <div>
-      <h5>Mieux nous connaitre</h5>
+      <h5>{t("footer.knowUsBetter")}</h5>
       <ul>
         <li>
           <Button
@@ -75,25 +79,31 @@ import Logo from "@/assets/DP_LogoTexte_noir.svg";
       </ul>
     </div>
     <div>
-      <h5>Plus d’informations</h5>
+      <h5>{t("footer.moreInfo")}</h5>
       <ul>
         <li>
-          <Button variant="link" class="-ml-6" href="/">Le lieu</Button>
-        </li>
-        <li>
-          <Button variant="link" class="-ml-6" href="/">Les hébergements</Button
+          <Button variant="link" class="-ml-6" href="/">{t("nav.place")}</Button
           >
         </li>
         <li>
-          <Button variant="link" class="-ml-6" href="/">Le comptoir</Button>
+          <Button variant="link" class="-ml-6" href="/"
+            >{t("nav.accommodations")}</Button
+          >
         </li>
         <li>
-          <Button variant="link" class="-ml-6" href="/">À proximité</Button>
+          <Button variant="link" class="-ml-6" href="/"
+            >{t("nav.counter")}</Button
+          >
+        </li>
+        <li>
+          <Button variant="link" class="-ml-6" href="/"
+            >{t("nav.surroundings")}</Button
+          >
         </li>
       </ul>
     </div>
     <div>
-      <h5>Nous contacter</h5>
+      <h5>{t("footer.contactUs")}</h5>
       <ul>
         <li>
           <Button variant="link" class="-ml-6" href="tel:+330456747382"
@@ -110,7 +120,7 @@ import Logo from "@/assets/DP_LogoTexte_noir.svg";
         </li>
         <li>
           <Button variant="link" class="-ml-6" href="/"
-            >page “nous contacter”</Button
+            >{t("footer.contactPage")}</Button
           >
         </li>
       </ul>
@@ -119,13 +129,10 @@ import Logo from "@/assets/DP_LogoTexte_noir.svg";
   <div>
     <ul class="flex justify-center">
       <li>
-        <Button variant="link" href="/">Mension légales</Button>
+        <Button variant="link" href="/">{t("footer.legalMentions")}</Button>
       </li>
       <li>
-        <Button variant="link" href="/">Condition général de vente</Button>
-      </li>
-      <li>
-        <Button variant="link" href="/">FR TODO</Button>
+        <Button variant="link" href="/">{t("footer.salesConditions")}</Button>
       </li>
     </ul>
   </div>
