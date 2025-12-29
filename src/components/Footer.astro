@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Facebook, Instagram, Linkedin } from "@lucide/astro";
 import Logo from "@/assets/DP_LogoTexte_noir.svg";
 import { getLangFromUrl, useTranslations } from "@/lib/i18n";
+import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -10,8 +11,8 @@ const t = useTranslations(lang);
 
 <footer class="p-16 space-y-48 bg-primary mt-16">
   <div class="flex justify-between">
-    <img
-      src={Logo.src}
+    <Image
+      src={Logo}
       alt="Domaine de Pipangaille"
       class="bg-transparent w-48 self-baseline"
     />
