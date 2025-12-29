@@ -3,6 +3,7 @@ import Logo from "@/assets/DP_LogoTexte_noir.svg";
 import Button from "./ui/button/button.astro";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
+import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -13,11 +14,7 @@ const translatePath = useTranslatedPath(lang);
   data-scroll-animated
   class="fixed inset-x-0 z-20 px-20 h-28 flex justify-between items-center"
 >
-  <img
-    src={Logo.src}
-    alt="Domaine de Pipangaille"
-    class="bg-transparent w-28"
-  />
+  <Image src={Logo} alt="Domaine de Pipangaille" class="bg-transparent w-28" />
   <ul class="flex">
     <li>
       <Button variant="link" href={translatePath("/")}>{t("nav.home")}</Button>
