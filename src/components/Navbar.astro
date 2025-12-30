@@ -1,8 +1,8 @@
 ---
 import Logo from "@/assets/DP_LogoTexte_noir.svg";
 import Button from "./ui/button/button.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
-import { languages } from "@/i18n/ui";
 import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
@@ -38,22 +38,9 @@ const translatePath = useTranslatedPath(lang);
       >
     </li>
   </ul>
-  <ul class="flex gap-4">
+  <ul class="flex gap-4 items-center">
     <li>
-      {
-        Object.entries(languages).map(
-          ([l, label]) =>
-            l !== lang && (
-              <Button
-                class="mr-4"
-                variant="link"
-                href={`/${l === "fr" ? "" : l}`}
-              >
-                {label}
-              </Button>
-            )
-        )
-      }
+      <LanguageSwitcher class="w-full max-w-xs" />
     </li>
     <li>
       <Button variant="outline" href={translatePath("/")}
