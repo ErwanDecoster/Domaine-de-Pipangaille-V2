@@ -7,7 +7,7 @@ import MediaContent from "@/components/MediaContent.astro";
 import ReviewList from "@/components/ReviewList.astro";
 import Card from "@/components/Card.astro";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
-import { reviews } from "../../constants/review";
+import { reviews } from "@/constants/reviews";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
