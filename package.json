@@ -13,12 +13,10 @@
     "@fontsource/barlow": "^5.2.8",
     "@fontsource/source-serif-4": "^5.2.9",
     "@lucide/astro": "^0.562.0",
-    "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.562.0",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.26"
