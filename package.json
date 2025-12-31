@@ -13,7 +13,6 @@
     "@fontsource/barlow": "^5.2.8",
     "@fontsource/source-serif-4": "^5.2.9",
     "@lucide/astro": "^0.562.0",
-    "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.6",
     "class-variance-authority": "^0.7.1",
