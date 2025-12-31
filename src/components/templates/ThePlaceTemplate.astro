@@ -1,0 +1,41 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import MediaContent from "@/components/MediaContent.astro";
+import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { reviews } from "@/constants/reviews";
+
+const { lang } = Astro.props as { lang: keyof typeof reviews };
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<Layout>
+  <div data-scroll-animated class="h-28 w-screen sticky top-0 z-10 bg-muted">
+  </div>
+  <Header
+    title={t("place.header.title")}
+    text={t("place.header.text")}
+    image="/header-image.jpg"
+    buttonText={t("place.header.button")}
+    buttonLink={translatePath("/book")}
+  />
+  <div
+    data-scroll-animated
+    class="h-28 -mb-20 w-screen sticky top-0 z-10 bg-background"
+  >
+  </div>
+  <MediaContent
+    direction="left"
+    title={t("place.services.title")}
+    text={t("place.services.text")}
+    image="/header-image.jpg"
+  />
+  <MediaContent
+    title={t("place.events.title")}
+    text={t("place.events.text")}
+    image="/header-image.jpg"
+    buttonText={t("place.events.button")}
+    buttonLink={translatePath("/contact")}
+  />
+</Layout>
