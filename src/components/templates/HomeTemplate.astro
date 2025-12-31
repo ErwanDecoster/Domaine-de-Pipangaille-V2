@@ -1,15 +1,15 @@
 ---
 import { Button } from "@/components/ui/button";
-import Layout from "../../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import { Bike } from "@lucide/astro";
 import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import ReviewList from "@/components/ReviewList.astro";
 import Card from "@/components/Card.astro";
-import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 
-const lang = getLangFromUrl(Astro.url);
+const { lang } = Astro.props;
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---

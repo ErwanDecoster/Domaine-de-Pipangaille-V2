@@ -1,5 +1,6 @@
 ---
 import { Button } from "./ui/button";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
 import { Facebook, Instagram, Linkedin } from "@lucide/astro";
 import Logo from "@/assets/DP_LogoTexte_noir.svg";
 import { getLangFromUrl, useTranslations } from "@/lib/i18n";
@@ -128,12 +129,15 @@ const t = useTranslations(lang);
     </div>
   </div>
   <div>
-    <ul class="flex justify-center">
+    <ul class="flex justify-center items-center">
       <li>
         <Button variant="link" href="/">{t("footer.legalMentions")}</Button>
       </li>
       <li>
         <Button variant="link" href="/">{t("footer.salesConditions")}</Button>
+      </li>
+      <li>
+        <LanguageSwitcher class="w-full max-w-xs my-auto" />
       </li>
     </ul>
   </div>

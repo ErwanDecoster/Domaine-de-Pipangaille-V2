@@ -1,0 +1,32 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+import { getLangFromUrl } from "@/lib/i18n";
+import { languages } from "@/i18n/ui";
+import {
+  NativeSelect,
+  NativeSelectOption,
+} from "@/components/ui/native-select";
+
+interface Props extends HTMLAttributes<"select"> {}
+
+const { class: className, onchange, ...props } = Astro.props as Props;
+const lang = getLangFromUrl(Astro.url);
+const handleChange = onchange ?? "window.location.href = this.value";
+const getLangHref = (code: string) => (code === "fr" ? "/" : `/${code}`);
+---
+
+<NativeSelect
+  class={className}
+  onchange={handleChange}
+  aria-label="Change language"
+  {...props}
+>
+  {
+    Object.entries(languages).map(([code, label]) => (
+      <NativeSelectOption value={getLangHref(code)} selected={code === lang}>
+        {label}
+      </NativeSelectOption>
+    ))
+  }
+</NativeSelect>
