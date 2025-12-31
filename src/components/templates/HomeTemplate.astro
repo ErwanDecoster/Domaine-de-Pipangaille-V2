@@ -9,7 +9,7 @@ import Card from "@/components/Card.astro";
 import { useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 
-const { lang } = Astro.props;
+const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
