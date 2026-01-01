@@ -1,5 +1,6 @@
 ---
 import Button from "@/components/ui/button/button.astro";
+import { cn } from "@/lib/utils";
 
 interface MediaContentImage {
   src: string;
@@ -15,6 +16,7 @@ interface Props {
   buttonText?: string;
   buttonLink?: string;
   direction?: "left" | "right";
+  ratio?: "4-5";
 }
 
 const {
@@ -26,6 +28,7 @@ const {
   buttonText,
   buttonLink,
   direction,
+  ratio,
 } = Astro.props as Props;
 
 const gallery = images.length
@@ -46,10 +49,11 @@ const galleryLayout = !gallery.length
 ---
 
 <section
-  class="relative grid md:gap-20 px-20 mt-48"
+  class={cn("relative grid md:gap-20 px-20 mt-48")}
   class:list={{
     "grid-cols-2": gallery.length > 0,
     "grid-cols-1": gallery.length === 0,
+    "grid-cols-9": ratio === "4-5",
   }}
 >
   {
@@ -63,6 +67,7 @@ const galleryLayout = !gallery.length
             galleryLayout === "double" || galleryLayout === "triple",
           "grid-cols-3": galleryLayout === "multi",
           "grid-rows-2": galleryLayout === "triple",
+          "col-span-4": ratio === "4-5",
         }}
       >
         {gallery.map(({ src, alt }, index) => (
@@ -86,7 +91,10 @@ const galleryLayout = !gallery.length
   }
   <div
     class="flex flex-col justify-center gap-8"
-    class:list={{ "col-span-2": !gallery.length }}
+    class:list={{
+      "col-span-2": !gallery.length,
+      "col-span-5": ratio === "4-5",
+    }}
   >
     <h2>{title}</h2>
     <p>{text}</p>

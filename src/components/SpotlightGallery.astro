@@ -1,0 +1,53 @@
+---
+const { title, images = [{ src: "", alt: "" }], direction } = Astro.props;
+---
+
+{
+  direction === "left" ? (
+    <div class="md:gap-6 pt-12 flex">
+      <h3 class="order-last max-w-64 wrap-break-word self-center">{title}</h3>
+      <div class="grid grow sm:grid-cols-3 sm:grid-rows-5 gap-4">
+        <img
+          class="col-span-2 row-span-3"
+          src={images[0].src}
+          alt={images[0].alt}
+        />
+        <img class="row-span-2" src={images[1].src} alt={images[1].alt} />
+        <img class="row-span-3" src={images[4].src} alt={images[4].alt} />
+        <img
+          class="row-span-2 aspect-square"
+          src={images[2].src}
+          alt={images[2].alt}
+        />
+        <img
+          class="row-span-2 aspect-square"
+          src={images[3].src}
+          alt={images[3].alt}
+        />
+      </div>
+    </div>
+  ) : (
+    <div class="md:gap-6 pt-12 flex">
+      <h3 class="order-last max-w-64 wrap-break-word self-center">{title}</h3>
+      <div class="grid grow sm:grid-cols-3 sm:grid-rows-5 gap-4">
+        <img
+          class="row-span-2 aspect-square"
+          src={images[0].src}
+          alt={images[0].alt}
+        />
+        <img
+          class="col-span-2 row-span-3"
+          src={images[1].src}
+          alt={images[1].alt}
+        />
+        <img class="row-span-3" src={images[2].src} alt={images[2].alt} />
+        <img class="row-span-2" src={images[3].src} alt={images[3].alt} />
+        <img
+          class="row-span-2 aspect-square"
+          src={images[4].src}
+          alt={images[4].alt}
+        />
+      </div>
+    </div>
+  )
+}

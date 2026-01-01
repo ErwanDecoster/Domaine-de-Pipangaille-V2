@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import { useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
+import SpotlightGallery from "@/components/SpotlightGallery.astro";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
@@ -19,6 +20,7 @@ const translatePath = useTranslatedPath(lang);
     image="/header-image.jpg"
     buttonText={t("place.header.button")}
     buttonLink={translatePath("/book")}
+    buttonVariant="secondary"
   />
   <div
     data-scroll-animated
@@ -42,4 +44,39 @@ const translatePath = useTranslatedPath(lang);
     buttonText={t("place.events.button")}
     buttonLink={translatePath("/contact")}
   />
+  <section class="mt-48 px-20">
+    <h2>{t("place.spotlight.title")}</h2>
+    <SpotlightGallery
+      title={t("place.spotlight.gallery1.title")}
+      direction="left"
+      images={[
+        { src: "/the-place-1.jpg", alt: "" },
+        { src: "/the-place-2.jpg", alt: "" },
+        { src: "/the-place-3.jpg", alt: "" },
+        { src: "/the-place-4.jpg", alt: "" },
+        { src: "/the-place-5.jpg", alt: "" },
+      ]}
+    />
+    <SpotlightGallery
+      title={t("place.spotlight.gallery2.title")}
+      images={[
+        { src: "/the-place-1.jpg", alt: "" },
+        { src: "/the-place-2.jpg", alt: "" },
+        { src: "/the-place-3.jpg", alt: "" },
+        { src: "/the-place-4.jpg", alt: "" },
+        { src: "/the-place-5.jpg", alt: "" },
+      ]}
+    />
+    <SpotlightGallery
+      title={t("place.spotlight.gallery3.title")}
+      direction="left"
+      images={[
+        { src: "/the-place-1.jpg", alt: "" },
+        { src: "/the-place-2.jpg", alt: "" },
+        { src: "/the-place-3.jpg", alt: "" },
+        { src: "/the-place-4.jpg", alt: "" },
+        { src: "/the-place-5.jpg", alt: "" },
+      ]}
+    />
+  </section>
 </Layout>

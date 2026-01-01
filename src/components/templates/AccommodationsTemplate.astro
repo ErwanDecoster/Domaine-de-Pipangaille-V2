@@ -1,0 +1,107 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import MediaContent from "@/components/MediaContent.astro";
+import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { reviews } from "@/constants/reviews";
+import Button from "../ui/button/button.astro";
+import { Bed, Heart, User, Users } from "@lucide/astro";
+import Card from "../Card.astro";
+
+const { lang } = Astro.props as { lang: keyof typeof reviews };
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const roomButtonText = t("accommodations.rooms.button");
+
+const rooms = [
+  {
+    key: "marocaine",
+    title: t("accommodations.rooms.marocaine.title"),
+    image: "/example.jpg",
+    description: t("accommodations.rooms.marocaine.description"),
+    tags: [
+      { icon: Bed, text: t("accommodations.rooms.marocaine.tags.bedding") },
+      { icon: Users, text: t("accommodations.rooms.marocaine.tags.family") },
+      { icon: Heart, text: t("accommodations.rooms.marocaine.tags.couple") },
+    ],
+    buttonLink: translatePath("/example"),
+  },
+  {
+    key: "africaine",
+    title: t("accommodations.rooms.africaine.title"),
+    image: "/example.jpg",
+    description: t("accommodations.rooms.africaine.description"),
+    tags: [
+      { icon: Bed, text: t("accommodations.rooms.africaine.tags.bedding") },
+      { icon: User, text: t("accommodations.rooms.africaine.tags.adults") },
+    ],
+    buttonLink: translatePath("/example"),
+  },
+  {
+    key: "toscane",
+    title: t("accommodations.rooms.toscane.title"),
+    image: "/example.jpg",
+    description: t("accommodations.rooms.toscane.description"),
+    tags: [
+      { icon: Heart, text: t("accommodations.rooms.toscane.tags.couple") },
+      { text: t("accommodations.rooms.toscane.tags.romantic") },
+    ],
+    buttonLink: translatePath("/example"),
+  },
+  {
+    key: "creole",
+    title: t("accommodations.rooms.creole.title"),
+    image: "/example.jpg",
+    description: t("accommodations.rooms.creole.description"),
+    tags: [],
+    buttonLink: translatePath("/example"),
+  },
+];
+---
+
+<Layout>
+  <div
+    data-scroll-animated
+    class="h-28 w-screen sticky top-0 z-10 bg-background"
+  >
+  </div>
+  <div class="px-20 pt-24">
+    <h1>{t("accommodations.hero.title")}</h1>
+    <p class="mt-12 md:w-4/5 max-w-4xl">{t("accommodations.hero.text")}</p>
+  </div>
+
+  <section class="grid grid-cols-2 gap-8 md:gap-10 px-20 mt-12">
+    {
+      rooms.map((room) => (
+        <Card
+          key={room.key}
+          title={room.title}
+          image={room.image}
+          imageAlt={room.title}
+          description={room.description}
+          tags={room.tags}
+          buttonText={roomButtonText}
+          buttonLink={room.buttonLink}
+        />
+      ))
+    }
+  </section>
+
+  <MediaContent
+    title={t("accommodations.breakfast.title")}
+    text={t("accommodations.breakfast.text")}
+    image="/header-image.jpg"
+    ratio="4-5"
+  />
+
+  <section class="px-20 my-48">
+    <div class="mx-auto bg-muted px-6 py-24 max-w-5xl rounded-3xl">
+      <div class="w-fit max-w-2xl mx-auto space-y-10 text-center">
+        <h3>{t("accommodations.cta.title")}</h3>
+        <p>{t("accommodations.cta.text")}</p>
+        <Button href={translatePath("/booking")}>
+          {t("accommodations.cta.button")}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>
