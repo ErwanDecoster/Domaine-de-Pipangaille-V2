@@ -1,7 +1,9 @@
 ---
 import Button from "@/components/ui/button/button.astro";
+import { cn } from "@/lib/utils";
 
-const { title, text, image, imageAlt, buttonText, buttonLink } = Astro.props;
+const { title, text, image, imageAlt, buttonText, buttonLink, buttonVariant } =
+  Astro.props;
 ---
 
 <header class="relative grid sm:grid-cols-2 md:gap-20 px-20 pt-12">
@@ -10,6 +12,10 @@ const { title, text, image, imageAlt, buttonText, buttonLink } = Astro.props;
   <div class="flex flex-col justify-center gap-8 pb-16">
     <h1>{title}</h1>
     <p>{text}</p>
-    <Button class="self-baseline" href={buttonLink}>{buttonText}</Button>
+    <Button
+      class={cn("self-baseline", buttonVariant === "secondary" && "-ml-6")}
+      variant={buttonVariant}
+      href={buttonLink}>{buttonText}</Button
+    >
   </div>
 </header>
