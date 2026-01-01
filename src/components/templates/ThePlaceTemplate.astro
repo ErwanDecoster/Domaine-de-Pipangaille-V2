@@ -34,7 +34,11 @@ const translatePath = useTranslatedPath(lang);
   <MediaContent
     title={t("place.events.title")}
     text={t("place.events.text")}
-    image="/header-image.jpg"
+    images={[
+      { src: "/header-image.jpg" },
+      { src: "/the-place-1.jpg" },
+      { src: "/the-place-1.jpg" },
+    ]}
     buttonText={t("place.events.button")}
     buttonLink={translatePath("/contact")}
   />
