@@ -1,20 +1,101 @@
 ---
 import Button from "@/components/ui/button/button.astro";
 
-const { title, text, image, imageAlt, buttonText, buttonLink, direction } =
-  Astro.props;
+interface MediaContentImage {
+  src: string;
+  alt?: string;
+}
+
+interface Props {
+  title: string;
+  text: string;
+  image?: string;
+  imageAlt?: string;
+  images?: MediaContentImage[];
+  buttonText?: string;
+  buttonLink?: string;
+  direction?: "left" | "right";
+}
+
+const {
+  title,
+  text,
+  image,
+  imageAlt,
+  images = [],
+  buttonText,
+  buttonLink,
+  direction,
+} = Astro.props as Props;
+
+const gallery = images.length
+  ? images
+  : image
+    ? [{ src: image, alt: imageAlt }]
+    : [];
+
+const galleryLayout = !gallery.length
+  ? "none"
+  : gallery.length === 1
+    ? "single"
+    : gallery.length === 2
+      ? "double"
+      : gallery.length === 3
+        ? "triple"
+        : "multi";
 ---
 
-<section class="relative grid grid-cols-2 md:gap-20 px-20 mt-48">
-  <img
-    class="aspect-4/3"
-    class:list={direction === "left" ? "order-last" : ""}
-    src={image}
-    alt={imageAlt}
-  />
-  <div class="flex flex-col justify-center gap-8">
+<section
+  class="relative grid md:gap-20 px-20 mt-48"
+  class:list={{
+    "grid-cols-2": gallery.length > 0,
+    "grid-cols-1": gallery.length === 0,
+  }}
+>
+  {
+    gallery.length > 0 && (
+      <div
+        class="grid gap-4"
+        class:list={{
+          "order-last": direction === "left",
+          "grid-cols-1": galleryLayout === "single",
+          "grid-cols-2":
+            galleryLayout === "double" || galleryLayout === "triple",
+          "grid-cols-3": galleryLayout === "multi",
+          "grid-rows-2": galleryLayout === "triple",
+        }}
+      >
+        {gallery.map(({ src, alt }, index) => (
+          <img
+            class="w-full rounded-2xl object-cover"
+            class:list={{
+              "aspect-4/3": galleryLayout !== "triple",
+              "h-full": galleryLayout === "triple",
+              "row-span-2": galleryLayout === "triple" && index === 0,
+              "row-start-1 col-start-2 aspect-4/3":
+                galleryLayout === "triple" && index === 1,
+              "row-start-2 col-start-2 aspect-4/3":
+                galleryLayout === "triple" && index === 2,
+            }}
+            src={src}
+            alt={alt ?? `${title} - image ${index + 1}`}
+          />
+        ))}
+      </div>
+    )
+  }
+  <div
+    class="flex flex-col justify-center gap-8"
+    class:list={{ "col-span-2": !gallery.length }}
+  >
     <h2>{title}</h2>
     <p>{text}</p>
-    <Button class="self-baseline" href={buttonLink}>{buttonText}</Button>
+    {
+      buttonText && buttonLink && (
+        <Button class="self-baseline" href={buttonLink}>
+          {buttonText}
+        </Button>
+      )
+    }
   </div>
 </section>
