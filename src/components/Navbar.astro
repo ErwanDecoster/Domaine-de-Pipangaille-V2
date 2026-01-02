@@ -20,20 +20,20 @@ const translatePath = useTranslatedPath(lang);
       <Button variant="link" href={translatePath("/")}>{t("nav.home")}</Button>
     </li>
     <li>
-      <Button variant="link" href={translatePath("/")}>{t("nav.place")}</Button>
+      <Button variant="link" href={translatePath("/the-place")}>{t("nav.place")}</Button>
     </li>
     <li>
-      <Button variant="link" href={translatePath("/")}
+      <Button variant="link" href={translatePath("/accommodations")}
         >{t("nav.accommodations")}</Button
       >
     </li>
     <li>
-      <Button variant="link" href={translatePath("/")}
+      <Button variant="link" href={translatePath("/the-counter")}
         >{t("nav.counter")}</Button
       >
     </li>
     <li>
-      <Button variant="link" href={translatePath("/")}
+      <Button variant="link" href={translatePath("/surroundings")}
         >{t("nav.surroundings")}</Button
       >
     </li>
@@ -43,12 +43,12 @@ const translatePath = useTranslatedPath(lang);
       <LanguageSwitcher class="w-full max-w-xs" />
     </li>
     <li>
-      <Button variant="outline" href={translatePath("/")}
+      <Button variant="outline" href={translatePath("/contact")}
         >{t("nav.contact")}</Button
       >
     </li>
     <li>
-      <Button href={translatePath("/")}>{t("nav.book")}</Button>
+      <Button href={translatePath("/book")}>{t("nav.book")}</Button>
     </li>
   </ul>
 </nav>
