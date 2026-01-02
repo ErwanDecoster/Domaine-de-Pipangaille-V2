@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import MediaContent from "@/components/MediaContent.astro";
+import { useTranslations } from "@/lib/i18n";
+import { languages } from "@/i18n/ui";
+
+const { lang } = Astro.props as { lang: keyof typeof languages };
+const t = useTranslations(lang);
+---
+
+<Layout bodyClass="theme-counter">
+  <div data-scroll-animated class="h-28 w-screen sticky top-0 z-10 bg-muted">
+  </div>
+  <Header
+    title={t("counter.hero.title")}
+    text={t("counter.hero.text")}
+    image="/example.jpg"
+    imageAlt={t("counter.hero.imageAlt")}
+  />
+  <div
+    data-scroll-animated
+    class="h-28 -mb-20 w-screen sticky top-0 z-10 bg-background"
+  >
+  </div>
+  <MediaContent
+    direction="left"
+    title={t("counter.story.title")}
+    text={t("counter.story.text")}
+    image="/example.jpg"
+    imageAlt={t("counter.story.imageAlt")}
+  />
+</Layout>

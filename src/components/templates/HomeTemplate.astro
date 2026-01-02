@@ -42,7 +42,7 @@ const translatePath = useTranslatedPath(lang);
     text={t("home.counter.text")}
     image="/header-image.jpg"
     buttonText={t("home.counter.button")}
-    buttonLink="/bedrooms"
+    buttonLink={translatePath("/the-counter")}
   />
   <ReviewList title={t("home.reviews.title")} reviews={reviews[lang]} />
   <section class="grid grid-cols-6 gap-8 md:gap-10 px-20 mt-48">
