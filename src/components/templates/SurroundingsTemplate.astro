@@ -1,0 +1,77 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Card from "@/components/Card.astro";
+import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { surroundings } from "@/constants/surroundings";
+import { languages } from "@/i18n/ui";
+
+const { lang } = Astro.props as { lang: keyof typeof languages };
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
+
+const mapCategories = (categories: string[] = []) =>
+  categories
+    .map((category) => {
+      const labelKey = `surroundings.category.${category}`;
+      return t(toTranslationKey(labelKey));
+    })
+    .filter(Boolean);
+
+const formatCard = (
+  item:
+    | (typeof surroundings.toVisit)[number]
+    | (typeof surroundings.toEat)[number]
+) => {
+  const categories = Array.isArray((item as { category?: string[] }).category)
+    ? (item as { category: string[] }).category
+    : [];
+
+  const tags = mapCategories(categories).map((text) => ({ text }));
+  const description = item.shortDesc && t(toTranslationKey(item.shortDesc));
+
+  const firstImage = item.gallery?.[0];
+  const imageSrc = firstImage?.src ?? "/example.jpg";
+  const imageAlt = t(toTranslationKey(firstImage.altKey));
+
+  return {
+    key: item.slug,
+    title: item.title,
+    image: imageSrc,
+    imageAlt,
+    description,
+    tags,
+    buttonText: t("surroundings.card.cta"),
+    buttonLink: translatePath(`/surrounding/${item.slug}`),
+  };
+};
+
+const activities = surroundings.toVisit.map(formatCard);
+const restaurants = surroundings.toEat.map(formatCard);
+---
+
+<Layout>
+  <div class="px-20 pt-24">
+    <h1>{t("surroundings.hero.title")}</h1>
+    <p class="mt-12 md:w-4/5 max-w-4xl">{t("surroundings.hero.text")}</p>
+  </div>
+
+  <section class="px-20 mt-20 space-y-10">
+    <div>
+      <h2>{t("surroundings.sections.activities.title")}</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      {activities.map((activity) => <Card {...activity} />)}
+    </div>
+  </section>
+
+  <section class="px-20 mt-24 mb-24 space-y-10">
+    <div>
+      <h2>{t("surroundings.sections.food.title")}</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      {restaurants.map((restaurant) => <Card {...restaurant} />)}
+    </div>
+  </section>
+</Layout>
