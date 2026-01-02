@@ -144,7 +144,7 @@
     @apply text-2xl/[150%] tracking-tight font-serif-4 font-light;
   }
   p {
-    @apply text-base/[160%] text-muted-foreground;
+    @apply text-base/[160%] text-muted-foreground text-pretty;
   }
   img {
     @apply bg-primary rounded-md;
