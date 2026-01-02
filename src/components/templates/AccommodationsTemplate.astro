@@ -3,8 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import { useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
+import { roomsContent } from "@/constants/rooms";
 import Button from "../ui/button/button.astro";
-import { Bed, Heart, User, Users } from "@lucide/astro";
 import Card from "../Card.astro";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
@@ -12,50 +12,19 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 const roomButtonText = t("accommodations.rooms.button");
 
-const rooms = [
-  {
-    key: "marocaine",
-    title: t("accommodations.rooms.marocaine.title"),
-    image: "/example.jpg",
-    description: t("accommodations.rooms.marocaine.description"),
-    tags: [
-      { icon: Bed, text: t("accommodations.rooms.marocaine.tags.bedding") },
-      { icon: Users, text: t("accommodations.rooms.marocaine.tags.family") },
-      { icon: Heart, text: t("accommodations.rooms.marocaine.tags.couple") },
-    ],
-    buttonLink: translatePath("/example"),
-  },
-  {
-    key: "africaine",
-    title: t("accommodations.rooms.africaine.title"),
-    image: "/example.jpg",
-    description: t("accommodations.rooms.africaine.description"),
-    tags: [
-      { icon: Bed, text: t("accommodations.rooms.africaine.tags.bedding") },
-      { icon: User, text: t("accommodations.rooms.africaine.tags.adults") },
-    ],
-    buttonLink: translatePath("/example"),
-  },
-  {
-    key: "toscane",
-    title: t("accommodations.rooms.toscane.title"),
-    image: "/example.jpg",
-    description: t("accommodations.rooms.toscane.description"),
-    tags: [
-      { icon: Heart, text: t("accommodations.rooms.toscane.tags.couple") },
-      { text: t("accommodations.rooms.toscane.tags.romantic") },
-    ],
-    buttonLink: translatePath("/example"),
-  },
-  {
-    key: "creole",
-    title: t("accommodations.rooms.creole.title"),
-    image: "/example.jpg",
-    description: t("accommodations.rooms.creole.description"),
-    tags: [],
-    buttonLink: translatePath("/example"),
-  },
-];
+const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
+
+const rooms = roomsContent.map((room) => ({
+  key: room.key,
+  title: t(`accommodations.rooms.${room.key}.title`),
+  image: room.image,
+  description: t(`accommodations.rooms.${room.key}.description`),
+  tags: room.tags.map((tag) => ({
+    icon: tag.icon,
+    text: t(toTranslationKey(tag.labelKey)),
+  })),
+  buttonLink: translatePath(`/accommodation/${room.key}`),
+}));
 ---
 
 <Layout>
