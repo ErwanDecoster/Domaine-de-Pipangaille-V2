@@ -68,8 +68,10 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
     </div>
     <div id="activities" class="mt-6 flex flex-wrap gap-2 scroll-mt-28">
       <Button
+        class="rounded-full hover:bg-accent/50"
         variant="outline"
         data-value=""
+        size="sm"
         onClick="window.surroundings.handleFilterClick(event)"
       >
         {t("surroundings.filter.all")}
@@ -77,8 +79,10 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
       {
         allCategories.map((category) => (
           <Button
-            variant="outline"
+            class="rounded-full bg-muted hover:bg-accent/50"
+            variant="ghost"
             data-value={category}
+            size="sm"
             onClick="window.surroundings.handleFilterClick(event)"
           >
             {t(toKey(`surroundings.category.${category}`))}
