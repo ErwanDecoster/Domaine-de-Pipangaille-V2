@@ -37,6 +37,7 @@ export const nl = {
   'surroundings.sections.food.title': 'Waar eten',
   'surroundings.card.cta': 'Adres ontdekken',
   'surroundings.card.description.default': 'Aanrader dicht bij het domein',
+  'surroundings.filter.all': 'Alles bekijken',
   'surroundings.category.family': 'Familie',
   'surroundings.category.visit': 'Cultureel bezoek',
   'surroundings.category.loved': 'Favoriet',

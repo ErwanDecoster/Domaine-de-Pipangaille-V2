@@ -37,6 +37,7 @@ export const it = {
   'surroundings.sections.food.title': 'Dove mangiare',
   'surroundings.card.cta': 'Scoprire l\'indirizzo',
   'surroundings.card.description.default': 'Suggerimento vicino al dominio',
+  'surroundings.filter.all': 'Vedi tutto',
   'surroundings.category.family': 'Famiglia',
   'surroundings.category.visit': 'Visita culturale',
   'surroundings.category.loved': 'Preferito',

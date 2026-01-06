@@ -37,6 +37,7 @@ export const en = {
   'surroundings.sections.food.title': 'Where to eat',
   'surroundings.card.cta': 'Discover this address',
   'surroundings.card.description.default': 'A favourite close to the estate',
+  'surroundings.filter.all': 'View all',
   'surroundings.category.family': 'Family friendly',
   'surroundings.category.visit': 'Cultural visit',
   'surroundings.category.loved': 'Favourite',
