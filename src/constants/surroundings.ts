@@ -1,24 +1,24 @@
 export const surroundings = {
   toVisit: [
     {
-      title: 'Safari de Peaugres',
+      title: 'Safari Peaugres',
       category: [
         'family',
       ],
-      shortDesc: 'surroundings.descriptions.safari_de_peaugres.short',
+      shortDesc: 'surroundings.descriptions.safari_peaugres.short',
       longDesc: [
-        'surroundings.descriptions.safari_de_peaugres.long.1',
+        'surroundings.descriptions.safari_peaugres.long.1',
       ],
       gallery: [
         {
-          src: '/images/surroundings/60.jpg',
-          altKey: 'surroundings.safari_de_peaugres.gallery.image1',
+          src: '/src/images/safari-peaugres.png',
+          altKey: 'surroundings.safari_peaugres.gallery.image1',
         },
       ],
       mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25399.90187538962!2d4.711628222803869!3d45.26310487550016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f51417d31f614f%3A0x762be489cc59804e!2sSafari%20de%20Peaugres!5e0!3m2!1sen!2sfr!4v165953927',
       website: 'https://www.safari-peaugres.com/',
       bookLink: 'https://www.safari-peaugres.com/horaires-et-tarifs',
-      slug: 'safari_de_peaugres',
+      slug: 'safari_peaugres',
     },
     {
       title: 'Palais Idéal du Facteur Cheval',
@@ -33,7 +33,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/31.jpg',
+          src: '/src/images/palais-ideal-du-facteur-cheval.png',
           altKey: 'surroundings.palais_ideal_du_facteur_cheval.gallery.image1',
         },
       ],
@@ -64,7 +64,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/1.jpg',
+          src: '/src/images/acrobois-pilat.png',
           altKey: 'surroundings.acrobois_pilat.gallery.image1',
         },
       ],
@@ -85,7 +85,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/29.jpg',
+          src: '/src/images/musee-de-l-alambic.png',
           altKey: 'surroundings.musee_de_l_alambic.gallery.image1',
         },
       ],
@@ -104,7 +104,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/22.jpg',
+          src: '/src/images/golf-de-saint-clair.png',
           altKey: 'surroundings.golf_de_saint_clair.gallery.image1',
         },
       ],
@@ -132,7 +132,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/0.jpg',
+          src: '/src/images/viarhona.png',
           altKey: 'surroundings.viarhona.gallery.image1',
         },
       ],
@@ -152,7 +152,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/61.jpg',
+          src: '/src/images/viafluvia-1.png',
           altKey: 'surroundings.viafluvia.gallery.image1',
         },
       ],
@@ -172,7 +172,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/28.jpg',
+          src: '/src/images/montgolfieres-cie.png',
           altKey: 'surroundings.mongolfieres_et_cie.gallery.image1',
         },
       ],
@@ -196,7 +196,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/81.jpg',
+          src: '/src/images/train-de-l-ardeche.png',
           altKey: 'surroundings.train_de_l_ardeche.gallery.image1',
         },
       ],
@@ -229,7 +229,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/77.jpg',
+          src: '/src/images/la-fabrique-de-julien.png',
           altKey: 'surroundings.la_fabrique_de_julien.gallery.image1',
         },
       ],
@@ -251,7 +251,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/80.jpg',
+          src: '/src/images/le-nougat-de-montsegur.png',
           altKey: 'surroundings.le_nougat_de_montsegur.gallery.image1',
         },
       ],
@@ -277,7 +277,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/75.jpg',
+          src: '/src/images/chateau-de-grignan.png',
           altKey: 'surroundings.chateau_de_grignan.gallery.image1',
         },
       ],
@@ -304,7 +304,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/78.jpg',
+          src: '/src/images/labyrinthe-vegetal.png',
           altKey: 'surroundings.labyrinthe_vegetal.gallery.image1',
         },
       ],
@@ -331,7 +331,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/76.jpg',
+          src: '/src/images/compagnie-des-canotiers-rhone-saone.png',
           altKey: 'surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1',
         },
       ],
@@ -357,7 +357,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/images/surroundings/79.jpg',
+          src: '/src/images/le-chateau-d-anet.png',
           altKey: 'surroundings.le_chateau_d_anet.gallery.image1',
         },
       ],
@@ -371,7 +371,7 @@ export const surroundings = {
       title: 'Le Relais Des Mailles',
       gallery: [
         {
-          src: '/images/surroundings/27.jpg',
+          src: '/src/images/le-relais-des-mailles.png',
           altKey: 'surroundings.le_relais_mailles.gallery.image1',
         },
       ],
@@ -386,10 +386,32 @@ export const surroundings = {
       slug: 'le_relais_mailles',
     },
     {
+      title: 'La Table des SAJ',
+      gallery: [
+        {
+          src: '/src/images/la-table-des-saj.png',
+          altKey: 'surroundings.la_table_des_saj.gallery.image1',
+        },
+      ],
+      mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.6052215576483!2d4.782907876440744!3d45.255775247320926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5150bc1dfa54b%3A0x8885f334a6ef92c7!2sLa%20Table%20des%20SAJ!5e0!3m2!1sfr!2sfr!4v1767736458071!5m2!1sfr!2sfr',
+      website: '',
+      socialMedia: [
+        {
+          platform: 'facebook',
+          link: 'https://www.facebook.com/p/La-Table-des-Saj-61575839439235',
+        },
+        {
+          platform: 'instagram',
+          link: 'https://www.instagram.com/latabledessaj.resto',
+        },
+      ],
+      slug: 'la_table_des_saj',
+    },
+    {
       title: 'La Poule Noire',
       gallery: [
         {
-          src: '/images/surroundings/23.jpg',
+          src: '/src/images/la-poule-noire.png',
           altKey: 'surroundings.la_poule_noir.gallery.image1',
         },
       ],
@@ -407,7 +429,7 @@ export const surroundings = {
       title: 'Le Picotin',
       gallery: [
         {
-          src: '/images/surroundings/26.jpg',
+          src: '/src/images/le-picotin.png',
           altKey: 'surroundings.le_picotin.gallery.image1',
         },
       ],
@@ -425,7 +447,7 @@ export const surroundings = {
       title: 'Au Pré du Rhône',
       gallery: [
         {
-          src: '/images/surroundings/2.jpg',
+          src: '/src/images/au-pre-du-rhone.png',
           altKey: 'surroundings.au_pre_du_rhone.gallery.image1',
         },
       ],
@@ -443,7 +465,7 @@ export const surroundings = {
       title: 'La belle époque',
       gallery: [
         {
-          src: '/images/surroundings/72.jpg',
+          src: '/src/images/la-belle-epoque.png',
           altKey: 'surroundings.la_belle_epoque.gallery.image1',
         },
         {
@@ -475,7 +497,7 @@ export const surroundings = {
       title: 'O\'Daily Truck',
       gallery: [
         {
-          src: '/images/surroundings/30.jpg',
+          src: '/src/images/o-daily-truck.png',
           altKey: 'surroundings.o_daily_truck.gallery.image1',
         },
         {
@@ -502,7 +524,7 @@ export const surroundings = {
       title: 'César Pizza',
       gallery: [
         {
-          src: '/images/surroundings/3.jpg',
+          src: '/src/images/cesar-pizza.png',
           altKey: 'surroundings.cesar_pizza.gallery.image1',
         },
       ],
@@ -519,7 +541,7 @@ export const surroundings = {
       title: 'La Villa Champagnère',
       gallery: [
         {
-          src: '/images/surroundings/24.jpg',
+          src: '/src/images/la-villa-champagnere.png',
           altKey: 'surroundings.la_villa_champagnere.gallery.image1',
         },
       ],
