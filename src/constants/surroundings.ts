@@ -152,7 +152,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/viafluvia-1.png',
+          src: '/src/images/viafluvia.jpg',
           altKey: 'surroundings.viafluvia.gallery.image1',
         },
       ],
