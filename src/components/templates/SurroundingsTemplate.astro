@@ -107,7 +107,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
       {
         [...Array(activitiesTotalPages)].map((_, index) => (
           <Button
-            variant="outline"
+            variant="link"
             data-page={String(index + 1)}
             onClick="window.surroundings.handleActivityPageClick(event)"
           >
@@ -142,7 +142,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
       {
         [...Array(restaurantsTotalPages)].map((_, index) => (
           <Button
-            variant="outline"
+            variant="link"
             data-page={String(index + 1)}
             onClick="window.surroundings.handleRestaurantPageClick(event)"
           >
