@@ -13,7 +13,10 @@ const {
 } = Astro.props;
 ---
 
-<article class={`space-y-4 relative ${className}`}>
+<article
+  class={`space-y-4 relative bg-accent rounded-[16px] p-2 ${className}`}
+  style={`--card-image: url(${image});`}
+>
   <img class="aspect-video" src={image} alt={imageAlt} />
   <div class="flex gap-2.5 absolute top-4 left-4">
     {
@@ -31,8 +34,34 @@ const {
       <h3>{title}</h3>
       <p>{description}</p>
     </div>
-    <Button class="pl-0" href={buttonLink} variant="secondary"
-      >{buttonText}</Button
-    >
+    <Button class="pl-0" href={buttonLink} variant="secondary">
+      {buttonText}
+    </Button>
   </div>
 </article>
+
+<style>
+  article {
+    position: relative;
+    isolation: isolate; /* keeps the blur behind inner content */
+    background: transparent;
+    overflow: hidden;
+  }
+
+  article::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--card-image);
+    background-size: cover;
+    background-position: center;
+    filter: blur(1000px) saturate(160%);
+    transform: scale(1.1);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  article:hover::before {
+    opacity: 0.4;
+  }
+</style>
