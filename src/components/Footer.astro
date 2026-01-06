@@ -1,10 +1,10 @@
 ---
 import { Button } from "./ui/button";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
-import { Facebook, Instagram, Linkedin } from "@lucide/astro";
 import Logo from "@/assets/DP_LogoTexte_noir.svg";
 import { getLangFromUrl, useTranslations } from "@/lib/i18n";
 import { Image } from "astro:assets";
+import PlatformIcon from "./ui/icons/PlatformIcon.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -45,24 +45,30 @@ const t = useTranslations(lang);
             variant="link"
             class="-ml-6 py-2"
             href="https://facebook.com/domainedepipangaille"
-            ><Facebook class="size-5" />Facebook</Button
           >
+            <PlatformIcon platform="facebook" class="size-5" />
+            Facebook
+          </Button>
         </li>
         <li>
           <Button
             variant="link"
             class="-ml-6 py-2"
             href="https://instagram.com/domaine_de_pipangaille"
-            ><Instagram class="size-5" />Instagram</Button
           >
+            <PlatformIcon platform="instagram" class="size-5" />
+            Instagram
+          </Button>
         </li>
         <li>
           <Button
             variant="link"
             class="-ml-6 py-2"
             href="https://linkedin.com/company/domaine-de-pipangaille/"
-            ><Linkedin class="size-5" />LinkedIn</Button
           >
+            <PlatformIcon platform="linkedin" class="size-5" />
+            LinkedIn
+          </Button>
         </li>
         <li>
           <Button
@@ -70,11 +76,7 @@ const t = useTranslations(lang);
             class="-ml-6 py-2"
             href="https://x.com/D_Pipangaille"
           >
-            <svg class="size-5" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-              ></path>
-            </svg>
+            <PlatformIcon platform="x" class="size-5" />
             X
           </Button>
         </li>
