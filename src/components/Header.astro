@@ -2,12 +2,25 @@
 import Button from "@/components/ui/button/button.astro";
 import { cn } from "@/lib/utils";
 
-const { title, text, image, imageAlt, buttonText, buttonLink, buttonVariant } =
-  Astro.props;
+const {
+  title,
+  text,
+  image,
+  imageAlt,
+  buttonText,
+  buttonLink,
+  buttonVariant,
+  buttonExternal = false,
+  withBackground = true,
+} = Astro.props;
 ---
 
 <header class="relative grid sm:grid-cols-2 md:gap-20 px-20 pt-12">
-  <span class="bg-muted -z-10 absolute inset-x-0 top-0 bottom-16"></span>
+  <span
+    class={cn(
+      "-z-10 absolute inset-x-0 top-0 bottom-16",
+      withBackground && "bg-muted"
+    )}></span>
   <img class="aspect-11/12" src={image} alt={imageAlt} />
   <div class="flex flex-col justify-center gap-8 pb-16">
     <h1>{title}</h1>
@@ -15,7 +28,10 @@ const { title, text, image, imageAlt, buttonText, buttonLink, buttonVariant } =
     <Button
       class={cn("self-baseline", buttonVariant === "secondary" && "-ml-6")}
       variant={buttonVariant}
-      href={buttonLink}>{buttonText}</Button
+      href={buttonLink}
+      external={buttonExternal}
     >
+      {buttonText}
+    </Button>
   </div>
 </header>

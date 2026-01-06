@@ -97,7 +97,7 @@ const galleryLayout = !gallery.length
     }}
   >
     <h2>{title}</h2>
-    <p>{text}</p>
+    {text ? <p>{text}</p> : null}
     {
       buttonText && buttonLink && (
         <Button class="self-baseline" href={buttonLink}>
@@ -105,5 +105,6 @@ const galleryLayout = !gallery.length
         </Button>
       )
     }
+    <slot />
   </div>
 </section>
