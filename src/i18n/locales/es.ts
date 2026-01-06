@@ -175,4 +175,10 @@ export const es = {
   'accommodations.cta.title': '¿Quieres privatizar todas las habitaciones?',
   'accommodations.cta.text': 'También puedes reservar todas las habitaciones para eventos de grupo, fines de semana en familia o encuentros con amigos.',
   'accommodations.cta.button': 'Contáctanos',
+  'surroundings.detail.otherActivities.title': 'Otras actividades por descubrir',
+  'surroundings.detail.otherRestaurants.title': 'Otros restaurantes por descubrir',
+  'surroundings.detail.seeAllActivities': 'Ver todas las actividades',
+  'surroundings.detail.seeAllRestaurants': 'Ver todos los restaurantes',
+  'surroundings.detail.visitWebsite': 'Visitar el sitio web',
+  'surroundings.detail.moreInfo.title': 'Más información',
 };

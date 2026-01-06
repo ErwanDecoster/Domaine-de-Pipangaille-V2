@@ -175,4 +175,10 @@ export const de = {
   'accommodations.cta.title': 'Sie möchten alle Zimmer privat nutzen?',
   'accommodations.cta.text': 'Buchen Sie das gesamte Haus für Gruppenveranstaltungen, Familienfeiern oder Wochenenden mit Freunden.',
   'accommodations.cta.button': 'Kontaktieren Sie uns',
+  'surroundings.detail.otherActivities.title': 'Weitere Aktivitäten entdecken',
+  'surroundings.detail.otherRestaurants.title': 'Weitere Restaurants entdecken',
+  'surroundings.detail.seeAllActivities': 'Alle Aktivitäten anzeigen',
+  'surroundings.detail.seeAllRestaurants': 'Alle Restaurants anzeigen',
+  'surroundings.detail.visitWebsite': 'Website besuchen',
+  'surroundings.detail.moreInfo.title': 'Weitere Informationen',
 };

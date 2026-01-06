@@ -1,0 +1,154 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import MediaContent from "@/components/MediaContent.astro";
+import { reviews } from "@/constants/reviews";
+import { surroundings } from "@/constants/surroundings";
+import Card from "../Card.astro";
+import Header from "../Header.astro";
+import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import Button from "../ui/button/button.astro";
+import PlatformIcon from "../ui/icons/PlatformIcon.astro";
+
+const { lang, surroundingName } = Astro.props as {
+  lang: keyof typeof reviews;
+  surroundingName: string;
+};
+
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const toKey = (key: string) => key as Parameters<typeof t>[0];
+
+const surroundingsInToVisit = surroundings.toVisit.find(
+  (surrounding) => surrounding.slug === surroundingName
+);
+const surroundingsInToEat = surroundings.toEat.find(
+  (surrounding) => surrounding.slug === surroundingName
+);
+const surroundingType = surroundingsInToVisit ? "toVisit" : "toEat";
+const otherSurroundings = surroundings[surroundingType].filter(
+  (s) => s.slug !== surroundingName
+);
+
+if (!surroundingsInToVisit && !surroundingsInToEat) {
+  throw new Error(`Unknown surrounding slug: ${surroundingName}`);
+}
+
+const baseSurrounding = surroundingsInToVisit ?? surroundingsInToEat!;
+
+const selectedSurroundingDescription = t(
+  toKey(`surroundings.descriptions.${baseSurrounding.slug}.long.1`)
+);
+const selectedSurroundingImageAlt = t(
+  toKey(baseSurrounding.gallery?.[0]?.altKey ?? "")
+);
+
+const otherSurroundingsTitle =
+  surroundingType === "toVisit"
+    ? toKey("surroundings.detail.otherActivities.title")
+    : toKey("surroundings.detail.otherRestaurants.title");
+
+const surroundingButtonText = t("surroundings.card.cta");
+const seeAllButtonText =
+  surroundingType === "toVisit"
+    ? toKey("surroundings.detail.seeAllActivities")
+    : toKey("surroundings.detail.seeAllRestaurants");
+const seeAllButtonLink = translatePath("/surroundings");
+---
+
+<Layout>
+  <div
+    data-scroll-animated
+    class="h-28 w-screen sticky top-0 z-10 bg-background"
+  >
+  </div>
+
+  <Header
+    title={baseSurrounding.title}
+    text={selectedSurroundingDescription}
+    image={baseSurrounding.gallery?.[1]?.src ??
+      baseSurrounding.gallery?.[0]?.src}
+    imageAlt={selectedSurroundingImageAlt}
+    buttonText={t("surroundings.detail.visitWebsite")}
+    buttonLink={baseSurrounding.website ?? ""}
+    buttonExternal={true}
+    buttonVariant="secondary"
+    withBackground={false}
+  />
+
+  <MediaContent
+    title={t("surroundings.detail.moreInfo.title")}
+    text=""
+    image="/header-image.jpg"
+    direction="left"
+  >
+    <div class="mt-8 grid gap-8">
+      {
+        baseSurrounding?.socialMedia &&
+          baseSurrounding?.socialMedia?.length > 0 && (
+            <div>
+              <h3 class="text-2xl">Réseaux sociaux</h3>
+              <ul>
+                <li>
+                  {baseSurrounding.socialMedia.map((social) => (
+                    <Button
+                      class="-ml-4"
+                      variant="link"
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <PlatformIcon platform={social.platform} class="size-4" />
+                      {social.platform}
+                    </Button>
+                  ))}
+                </li>
+              </ul>
+            </div>
+          )
+      }
+      <div class="flex gap-6">
+        {
+          baseSurrounding.bookLink ? (
+            <Button external href={baseSurrounding.bookLink}>
+              Reservé
+            </Button>
+          ) : null
+        }
+        {
+          baseSurrounding.website ? (
+            <Button variant="outline" external href={baseSurrounding.website}>
+              {t("surroundings.detail.visitWebsite")}
+            </Button>
+          ) : null
+        }
+      </div>
+    </div>
+  </MediaContent>
+
+  <section class="grid grid-cols-3 gap-8 md:gap-10 px-20 mt-48">
+    <h2 class="col-span-3">{t(otherSurroundingsTitle)}</h2>
+    {
+      otherSurroundings.slice(0, 3).map((surrounding) => (
+        <Card
+          key={surrounding.slug}
+          title={surrounding.title}
+          image={surrounding.gallery?.[0]?.src}
+          imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
+          description={
+            surrounding.shortDesc ? t(toKey(surrounding.shortDesc)) : undefined
+          }
+          tags={(surrounding as { category?: string[] }).category?.map(
+            (cat) => ({
+              text: t(toKey(`surroundings.category.${cat}`)),
+            })
+          )}
+          buttonText={surroundingButtonText}
+          buttonLink={translatePath(`/surrounding/${surrounding.slug}`)}
+        />
+      ))
+    }
+    <Button class="mx-auto col-span-3" href={seeAllButtonLink}>
+      {t(seeAllButtonText)}
+    </Button>
+  </section>
+</Layout>

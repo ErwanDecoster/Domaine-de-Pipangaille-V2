@@ -175,4 +175,10 @@ export const en = {
   'accommodations.cta.title': 'Want to privatize every room?',
   'accommodations.cta.text': 'You can book the entire house for group events, evenings with friends or a family weekend getaway.',
   'accommodations.cta.button': 'Contact us',
+  'surroundings.detail.otherActivities.title': 'Other activities to discover',
+  'surroundings.detail.otherRestaurants.title': 'Other restaurants to discover',
+  'surroundings.detail.seeAllActivities': 'See all activities',
+  'surroundings.detail.seeAllRestaurants': 'See all restaurants',
+  'surroundings.detail.visitWebsite': 'Visit the website',
+  'surroundings.detail.moreInfo.title': 'More information',
 };

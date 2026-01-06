@@ -175,4 +175,10 @@ export const nl = {
   'accommodations.cta.title': 'Wilt u alle kamers privatiseren?',
   'accommodations.cta.text': 'Het is mogelijk om het volledige huis te reserveren voor groepsactiviteiten, familie-uitstapjes of weekends met vrienden.',
   'accommodations.cta.button': 'Neem contact op',
+  'surroundings.detail.otherActivities.title': 'Andere activiteiten om te ontdekken',
+  'surroundings.detail.otherRestaurants.title': 'Andere restaurants om te ontdekken',
+  'surroundings.detail.seeAllActivities': 'Bekijk alle activiteiten',
+  'surroundings.detail.seeAllRestaurants': 'Bekijk alle restaurants',
+  'surroundings.detail.visitWebsite': 'Bezoek de website',
+  'surroundings.detail.moreInfo.title': 'Meer informatie',
 };

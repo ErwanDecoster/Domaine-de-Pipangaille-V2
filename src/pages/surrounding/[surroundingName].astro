@@ -1,0 +1,22 @@
+---
+import SurroundingTemplate from "@/components/templates/SurroundingTemplate.astro";
+import { surroundings } from "@/constants/surroundings";
+import { defaultLang } from "@/i18n/ui";
+
+const surroundingSlugs = [
+  ...surroundings.toVisit.map((s) => s.slug),
+  ...surroundings.toEat.map((s) => s.slug),
+];
+
+export function getStaticPaths() {
+  const allSlugs = [
+    ...surroundings.toVisit.map((s) => s.slug),
+    ...surroundings.toEat.map((s) => s.slug),
+  ];
+  return allSlugs.map((surroundingName) => ({ params: { surroundingName } }));
+}
+
+const { surroundingName } = Astro.params as { surroundingName: string };
+---
+
+<SurroundingTemplate lang={defaultLang} surroundingName={surroundingName} />
