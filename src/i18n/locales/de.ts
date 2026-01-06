@@ -179,6 +179,8 @@ export const de = {
   'surroundings.detail.otherRestaurants.title': 'Weitere Restaurants entdecken',
   'surroundings.detail.seeAllActivities': 'Alle Aktivitäten anzeigen',
   'surroundings.detail.seeAllRestaurants': 'Alle Restaurants anzeigen',
+  'surroundings.detail.book': 'Buchen',
+  'surroundings.detail.socialNetworks': 'Soziale Netzwerke',
   'surroundings.detail.visitWebsite': 'Website besuchen',
   'surroundings.detail.moreInfo.title': 'Weitere Informationen',
 };

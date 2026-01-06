@@ -179,6 +179,8 @@ export const nl = {
   'surroundings.detail.otherRestaurants.title': 'Andere restaurants om te ontdekken',
   'surroundings.detail.seeAllActivities': 'Bekijk alle activiteiten',
   'surroundings.detail.seeAllRestaurants': 'Bekijk alle restaurants',
+  'surroundings.detail.book': 'Boeken',
+  'surroundings.detail.socialNetworks': 'Sociale media',
   'surroundings.detail.visitWebsite': 'Bezoek de website',
   'surroundings.detail.moreInfo.title': 'Meer informatie',
 };

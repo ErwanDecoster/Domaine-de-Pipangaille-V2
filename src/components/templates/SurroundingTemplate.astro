@@ -86,7 +86,9 @@ const seeAllButtonLink = translatePath("/surroundings");
         baseSurrounding?.socialMedia &&
           baseSurrounding?.socialMedia?.length > 0 && (
             <div>
-              <h3 class="text-2xl">Réseaux sociaux</h3>
+              <h3 class="text-2xl">
+                {t("surroundings.detail.socialNetworks")}
+              </h3>
               <ul>
                 <li>
                   {baseSurrounding.socialMedia.map((social) => (
@@ -110,7 +112,7 @@ const seeAllButtonLink = translatePath("/surroundings");
         {
           baseSurrounding.bookLink ? (
             <Button external href={baseSurrounding.bookLink}>
-              Reservé
+              {t("surroundings.detail.book")}
             </Button>
           ) : null
         }

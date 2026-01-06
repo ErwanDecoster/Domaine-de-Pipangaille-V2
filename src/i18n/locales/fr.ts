@@ -179,6 +179,8 @@ export const fr = {
   'surroundings.detail.otherRestaurants.title': 'D\'autres restaurants à découvrir',
   'surroundings.detail.seeAllActivities': 'Voir toutes les activités',
   'surroundings.detail.seeAllRestaurants': 'Voir tous les restaurants',
+  'surroundings.detail.book': 'Réserver',
+  'surroundings.detail.socialNetworks': 'Réseaux sociaux',
   'surroundings.detail.visitWebsite': 'Visiter le site internet',
   'surroundings.detail.moreInfo.title': 'Plus d\'informations',
 };

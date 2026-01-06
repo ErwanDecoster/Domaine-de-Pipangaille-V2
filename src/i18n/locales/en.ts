@@ -179,6 +179,8 @@ export const en = {
   'surroundings.detail.otherRestaurants.title': 'Other restaurants to discover',
   'surroundings.detail.seeAllActivities': 'See all activities',
   'surroundings.detail.seeAllRestaurants': 'See all restaurants',
+  'surroundings.detail.book': 'Book',
+  'surroundings.detail.socialNetworks': 'Social media',
   'surroundings.detail.visitWebsite': 'Visit the website',
   'surroundings.detail.moreInfo.title': 'More information',
 };
