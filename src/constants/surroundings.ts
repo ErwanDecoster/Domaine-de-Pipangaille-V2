@@ -160,6 +160,26 @@ export const surroundings = {
       slug: 'viafluvia',
     },
     {
+      title: 'Lamas des Plaines',
+      category: [
+        'family',
+        'visit',
+      ],
+      shortDesc: 'surroundings.descriptions.lamas_des_plaines.short',
+      longDesc: [
+        'surroundings.descriptions.lamas_des_plaines.long',
+      ],
+      gallery: [
+        {
+          src: '/src/images/lamas-des-plaines.png',
+          altKey: 'surroundings.lamas_des_plaines.gallery.image1',
+        },
+      ],
+      website: 'http://www.lamasdesplaines.com/',
+      bookLink: 'http://www.lamasdesplaines.com/Mediation%20animale/Prestations%20et%20tarifs.htm',
+      slug: 'lamas_des_plaines',
+    },
+    {
       title: 'Montgolfières & Cie',
       category: [
         'family',
