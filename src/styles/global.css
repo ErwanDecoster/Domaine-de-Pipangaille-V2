@@ -152,7 +152,7 @@ body.theme-counter {
     @apply text-base/[160%] text-muted-foreground text-pretty;
   }
   img {
-    @apply bg-primary rounded-md;
+    @apply bg-primary rounded-md object-cover;
   }
 }
 
