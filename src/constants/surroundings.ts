@@ -591,5 +591,31 @@ export const surroundings = {
       ],
       slug: 'la_villa_champagnere',
     },
+    {
+      title: 'Les Agapons',
+      shortDesc: 'surroundings.descriptions.les_agapons.short',
+      longDesc: [
+        'surroundings.descriptions.les_agapons.long',
+      ],
+      gallery: [
+        {
+          src: '/src/images/les-agapon-restaurant.png',
+          altKey: 'surroundings.les_agapons.gallery.image1',
+        },
+      ],
+      mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.915753318206!2d5.039340776548699!3d45.23234677909881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f54c3f4c3f4c3f%3A0x8f8f8f8f8f8f8f8f!2sLes%20Agapons%2C%20415%20ROUTE%20DE%20SAINT%20SORLIN%2C%2026210%20MANTHES!5e0!3m2!1sfr!2sfr!4v1234567890123',
+      website: 'https://les-agapons.eatbu.com/?lang=fr',
+      socialMedia: [
+        {
+          platform: 'facebook',
+          link: 'https://www.facebook.com/LesAgaponsRestaurant',
+        },
+        {
+          platform: 'instagram',
+          link: 'https://www.instagram.com/lesagapons_restaurant/',
+        },
+      ],
+      slug: 'les_agapons',
+    },
   ],
 }
