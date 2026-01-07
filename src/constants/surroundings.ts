@@ -7,7 +7,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.safari_peaugres.short',
       longDesc: [
-        'surroundings.descriptions.safari_peaugres.long.1',
+        'surroundings.descriptions.safari_peaugres.long',
       ],
       gallery: [
         {
@@ -29,7 +29,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.palais_ideal_du_facteur_cheval.short',
       longDesc: [
-        'surroundings.descriptions.palais_ideal_du_facteur_cheval.long.1',
+        'surroundings.descriptions.palais_ideal_du_facteur_cheval.long',
       ],
       gallery: [
         {
@@ -60,7 +60,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.acrobois_pilat.short',
       longDesc: [
-        'surroundings.descriptions.acrobois_pilat.long.1',
+        'surroundings.descriptions.acrobois_pilat.long',
       ],
       gallery: [
         {
@@ -81,7 +81,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.musee_de_l_alambic.short',
       longDesc: [
-        'surroundings.descriptions.musee_de_l_alambic.long.1',
+        'surroundings.descriptions.musee_de_l_alambic.long',
       ],
       gallery: [
         {
@@ -100,7 +100,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.golf_de_saint_clair.short',
       longDesc: [
-        'surroundings.descriptions.golf_de_saint_clair.long.1',
+        'surroundings.descriptions.golf_de_saint_clair.long',
       ],
       gallery: [
         {
@@ -128,7 +128,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.viarhona.short',
       longDesc: [
-        'surroundings.descriptions.viarhona.long.1',
+        'surroundings.descriptions.viarhona.long',
       ],
       gallery: [
         {
@@ -148,7 +148,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.viafluvia.short',
       longDesc: [
-        'surroundings.descriptions.viafluvia.long.1',
+        'surroundings.descriptions.viafluvia.long',
       ],
       gallery: [
         {
@@ -168,7 +168,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.mongolfieres_et_cie.short',
       longDesc: [
-        'surroundings.descriptions.mongolfieres_et_cie.long.1',
+        'surroundings.descriptions.mongolfieres_et_cie.long',
       ],
       gallery: [
         {
@@ -191,8 +191,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.train_de_l_ardeche.short',
       longDesc: [
-        'surroundings.descriptions.train_de_l_ardeche.long.1',
-        'surroundings.descriptions.train_de_l_ardeche.long.2',
+        'surroundings.descriptions.train_de_l_ardeche.long',
       ],
       gallery: [
         {
@@ -223,9 +222,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.la_fabrique_de_julien.short',
       longDesc: [
-        'surroundings.descriptions.la_fabrique_de_julien.long.1',
-        'surroundings.descriptions.la_fabrique_de_julien.long.2',
-        'surroundings.descriptions.la_fabrique_de_julien.long.3',
+        'surroundings.descriptions.la_fabrique_de_julien.long',
       ],
       gallery: [
         {
@@ -244,10 +241,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.le_nougat_de_montsegur.short',
       longDesc: [
-        'surroundings.descriptions.le_nougat_de_montsegur.long.1',
-        'surroundings.descriptions.le_nougat_de_montsegur.long.2',
-        'surroundings.descriptions.le_nougat_de_montsegur.long.3',
-        'surroundings.descriptions.le_nougat_de_montsegur.long.4',
+        'surroundings.descriptions.le_nougat_de_montsegur.long',
       ],
       gallery: [
         {
@@ -273,7 +267,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.chateau_de_grignan.short',
       longDesc: [
-        'surroundings.descriptions.chateau_de_grignan.long.1',
+        'surroundings.descriptions.chateau_de_grignan.long',
       ],
       gallery: [
         {
@@ -300,7 +294,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.labyrinthe_vegetal.short',
       longDesc: [
-        'surroundings.descriptions.labyrinthe_vegetal.long.1',
+        'surroundings.descriptions.labyrinthe_vegetal.long',
       ],
       gallery: [
         {
@@ -327,7 +321,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.short',
       longDesc: [
-        'surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long.1',
+        'surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long',
       ],
       gallery: [
         {
@@ -353,7 +347,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.le_chateau_d_anet.short',
       longDesc: [
-        'surroundings.descriptions.le_chateau_d_anet.long.1',
+        'surroundings.descriptions.le_chateau_d_anet.long',
       ],
       gallery: [
         {
@@ -371,8 +365,7 @@ export const surroundings = {
       title: 'Le Relais Des Mailles',
       shortDesc: 'surroundings.descriptions.le_relais_mailles.short',
       longDesc: [
-        'surroundings.descriptions.le_relais_mailles.long.1',
-        'surroundings.descriptions.le_relais_mailles.long.2',
+        'surroundings.descriptions.le_relais_mailles.long',
       ],
       gallery: [
         {
@@ -394,8 +387,7 @@ export const surroundings = {
       title: 'La Table des SAJ',
       shortDesc: 'surroundings.descriptions.la_table_des_saj.short',
       longDesc: [
-        'surroundings.descriptions.la_table_des_saj.long.1',
-        'surroundings.descriptions.la_table_des_saj.long.2',
+        'surroundings.descriptions.la_table_des_saj.long',
       ],
       gallery: [
         {
@@ -421,8 +413,7 @@ export const surroundings = {
       title: 'La Poule Noire',
       shortDesc: 'surroundings.descriptions.la_poule_noire.short',
       longDesc: [
-        'surroundings.descriptions.la_poule_noire.long.1',
-        'surroundings.descriptions.la_poule_noire.long.2',
+        'surroundings.descriptions.la_poule_noire.long',
       ],
       gallery: [
         {
@@ -444,8 +435,7 @@ export const surroundings = {
       title: 'Le Picotin',
       shortDesc: 'surroundings.descriptions.le_picotin.short',
       longDesc: [
-        'surroundings.descriptions.le_picotin.long.1',
-        'surroundings.descriptions.le_picotin.long.2',
+        'surroundings.descriptions.le_picotin.long',
       ],
       gallery: [
         {
@@ -467,8 +457,7 @@ export const surroundings = {
       title: 'Au Pré du Rhône',
       shortDesc: 'surroundings.descriptions.au_pre_du_rhone.short',
       longDesc: [
-        'surroundings.descriptions.au_pre_du_rhone.long.1',
-        'surroundings.descriptions.au_pre_du_rhone.long.2',
+        'surroundings.descriptions.au_pre_du_rhone.long',
       ],
       gallery: [
         {
@@ -500,11 +489,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.la_belle_epoque.short',
       longDesc: [
-        'surroundings.descriptions.la_belle_epoque.long.1',
-        'surroundings.descriptions.la_belle_epoque.long.2',
-        'surroundings.descriptions.la_belle_epoque.long.3',
-        'surroundings.descriptions.la_belle_epoque.long.4',
-        'surroundings.descriptions.la_belle_epoque.long.5',
+        'surroundings.descriptions.la_belle_epoque.long',
       ],
       socialMedia: [
         {
@@ -532,9 +517,7 @@ export const surroundings = {
       ],
       shortDesc: 'surroundings.descriptions.o_daily_truck.short',
       longDesc: [
-        'surroundings.descriptions.o_daily_truck.long.1',
-        'surroundings.descriptions.o_daily_truck.long.2',
-        'surroundings.descriptions.o_daily_truck.long.3',
+        'surroundings.descriptions.o_daily_truck.long',
       ],
       website: 'https://odailytruck.eatbu.com/?lang=fr',
       socialMedia: [
@@ -549,8 +532,7 @@ export const surroundings = {
       title: 'César Pizza',
       shortDesc: 'surroundings.descriptions.cesar_pizza.short',
       longDesc: [
-        'surroundings.descriptions.cesar_pizza.long.1',
-        'surroundings.descriptions.cesar_pizza.long.2',
+        'surroundings.descriptions.cesar_pizza.long',
       ],
       gallery: [
         {
@@ -571,8 +553,7 @@ export const surroundings = {
       title: 'La Villa Champagnère',
       shortDesc: 'surroundings.descriptions.la_villa_champagnere.short',
       longDesc: [
-        'surroundings.descriptions.la_villa_champagnere.long.1',
-        'surroundings.descriptions.la_villa_champagnere.long.2',
+        'surroundings.descriptions.la_villa_champagnere.long',
       ],
       gallery: [
         {

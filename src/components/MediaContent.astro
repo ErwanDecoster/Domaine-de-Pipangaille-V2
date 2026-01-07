@@ -9,7 +9,7 @@ interface MediaContentImage {
 
 interface Props {
   title: string;
-  text: string;
+  text: string | string[];
   image?: string;
   imageAlt?: string;
   images?: MediaContentImage[];
@@ -46,6 +46,12 @@ const galleryLayout = !gallery.length
       : gallery.length === 3
         ? "triple"
         : "multi";
+
+const paragraphs = Array.isArray(text)
+  ? text.filter(Boolean)
+  : typeof text === "string"
+    ? text.split(/\n\s*\n/).filter(Boolean)
+    : [];
 ---
 
 <section
@@ -97,7 +103,15 @@ const galleryLayout = !gallery.length
     }}
   >
     <h2>{title}</h2>
-    {text ? <p>{text}</p> : null}
+    {
+      paragraphs.length ? (
+        <div class="flex flex-col gap-4">
+          {paragraphs.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+      ) : null
+    }
     {
       buttonText && buttonLink && (
         <Button class="self-baseline" href={buttonLink}>

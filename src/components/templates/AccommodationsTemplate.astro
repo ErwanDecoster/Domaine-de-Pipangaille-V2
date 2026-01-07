@@ -25,6 +25,10 @@ const rooms = roomsContent.map((room) => ({
   })),
   buttonLink: translatePath(`/accommodation/${room.key}`),
 }));
+
+const accommodationsHeroParagraphs = t("accommodations.hero.text")
+  .split(/\n\s*\n/)
+  .filter(Boolean);
 ---
 
 <Layout>
@@ -35,7 +39,9 @@ const rooms = roomsContent.map((room) => ({
   </div>
   <div class="px-20 pt-24">
     <h1>{t("accommodations.hero.title")}</h1>
-    <p class="mt-12 md:w-4/5 max-w-4xl">{t("accommodations.hero.text")}</p>
+    <div class="mt-12 md:w-4/5 max-w-4xl flex flex-col gap-4">
+      {accommodationsHeroParagraphs.map((p) => <p>{p}</p>)}
+    </div>
   </div>
 
   <section class="grid grid-cols-2 gap-8 md:gap-10 px-20 mt-12">

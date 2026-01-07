@@ -16,8 +16,8 @@ const {
 
 const paragraphs = Array.isArray(text)
   ? text.filter(Boolean)
-  : text
-    ? [text]
+  : typeof text === "string"
+    ? text.split(/\n\s*\n/).filter(Boolean)
     : [];
 ---
 

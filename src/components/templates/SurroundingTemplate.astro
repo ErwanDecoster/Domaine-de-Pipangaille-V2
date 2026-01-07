@@ -35,9 +35,9 @@ if (!surroundingsInToVisit && !surroundingsInToEat) {
 
 const baseSurrounding = surroundingsInToVisit ?? surroundingsInToEat!;
 
-const selectedSurroundingDescriptions = (baseSurrounding.longDesc ?? [])
-  .map((key) => t(toKey(key)))
-  .filter(Boolean);
+const selectedSurroundingDescription = t(
+  toKey(`surroundings.descriptions.${baseSurrounding.slug}.long`)
+);
 const selectedSurroundingImageAlt = t(
   toKey(baseSurrounding.gallery?.[0]?.altKey ?? "")
 );
@@ -64,7 +64,7 @@ const seeAllButtonLink = translatePath("/surroundings");
 
   <Header
     title={baseSurrounding.title}
-    text={selectedSurroundingDescriptions}
+    text={selectedSurroundingDescription}
     image={baseSurrounding.gallery?.[1]?.src ??
       baseSurrounding.gallery?.[0]?.src}
     imageAlt={selectedSurroundingImageAlt}
