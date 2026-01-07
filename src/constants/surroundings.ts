@@ -369,6 +369,11 @@ export const surroundings = {
   toEat: [
     {
       title: 'Le Relais Des Mailles',
+      shortDesc: 'surroundings.descriptions.le_relais_mailles.short',
+      longDesc: [
+        'surroundings.descriptions.le_relais_mailles.long.1',
+        'surroundings.descriptions.le_relais_mailles.long.2',
+      ],
       gallery: [
         {
           src: '/src/images/le-relais-des-mailles.png',
@@ -387,6 +392,11 @@ export const surroundings = {
     },
     {
       title: 'La Table des SAJ',
+      shortDesc: 'surroundings.descriptions.la_table_des_saj.short',
+      longDesc: [
+        'surroundings.descriptions.la_table_des_saj.long.1',
+        'surroundings.descriptions.la_table_des_saj.long.2',
+      ],
       gallery: [
         {
           src: '/src/images/la-table-des-saj.png',
@@ -409,6 +419,11 @@ export const surroundings = {
     },
     {
       title: 'La Poule Noire',
+      shortDesc: 'surroundings.descriptions.la_poule_noire.short',
+      longDesc: [
+        'surroundings.descriptions.la_poule_noire.long.1',
+        'surroundings.descriptions.la_poule_noire.long.2',
+      ],
       gallery: [
         {
           src: '/src/images/la-poule-noire.png',
@@ -427,6 +442,11 @@ export const surroundings = {
     },
     {
       title: 'Le Picotin',
+      shortDesc: 'surroundings.descriptions.le_picotin.short',
+      longDesc: [
+        'surroundings.descriptions.le_picotin.long.1',
+        'surroundings.descriptions.le_picotin.long.2',
+      ],
       gallery: [
         {
           src: '/src/images/le-picotin.png',
@@ -445,6 +465,11 @@ export const surroundings = {
     },
     {
       title: 'Au Pré du Rhône',
+      shortDesc: 'surroundings.descriptions.au_pre_du_rhone.short',
+      longDesc: [
+        'surroundings.descriptions.au_pre_du_rhone.long.1',
+        'surroundings.descriptions.au_pre_du_rhone.long.2',
+      ],
       gallery: [
         {
           src: '/src/images/au-pre-du-rhone.png',
@@ -522,6 +547,11 @@ export const surroundings = {
     },
     {
       title: 'César Pizza',
+      shortDesc: 'surroundings.descriptions.cesar_pizza.short',
+      longDesc: [
+        'surroundings.descriptions.cesar_pizza.long.1',
+        'surroundings.descriptions.cesar_pizza.long.2',
+      ],
       gallery: [
         {
           src: '/src/images/cesar-pizza.png',
@@ -539,6 +569,11 @@ export const surroundings = {
     },
     {
       title: 'La Villa Champagnère',
+      shortDesc: 'surroundings.descriptions.la_villa_champagnere.short',
+      longDesc: [
+        'surroundings.descriptions.la_villa_champagnere.long.1',
+        'surroundings.descriptions.la_villa_champagnere.long.2',
+      ],
       gallery: [
         {
           src: '/src/images/la-villa-champagnere.png',

@@ -13,6 +13,12 @@ const {
   buttonExternal = false,
   withBackground = true,
 } = Astro.props;
+
+const paragraphs = Array.isArray(text)
+  ? text.filter(Boolean)
+  : text
+    ? [text]
+    : [];
 ---
 
 <header class="relative grid sm:grid-cols-2 md:gap-20 px-20 pt-12">
@@ -24,7 +30,15 @@ const {
   <img class="aspect-11/12" src={image} alt={imageAlt} />
   <div class="flex flex-col justify-center gap-8 pb-16">
     <h1>{title}</h1>
-    <p>{text}</p>
+    {
+      paragraphs.length > 0 && (
+        <div class="flex flex-col gap-4">
+          {paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
+      )
+    }
     <Button
       class={cn("self-baseline", buttonVariant === "secondary" && "-ml-6")}
       variant={buttonVariant}
