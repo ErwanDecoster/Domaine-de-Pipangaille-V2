@@ -138,6 +138,8 @@ export const en = {
   'accommodations.rooms.africaine.gallery.image5': 'African room – safari-inspired details',
   'accommodations.rooms.africaine.tags.bedding': 'Twin beds',
   'accommodations.rooms.africaine.tags.adults': '2 adults',
+  'accommodations.rooms.marocaine.equipments.note': 'This room can be set up as twin beds or a 180 x 200 cm double bed. Please share your preference when booking.',
+  'accommodations.rooms.africaine.equipments.note': 'This room can be set up as twin beds or a 180 x 200 cm double bed. Please share your preference when booking.',
   'accommodations.rooms.toscane.title': 'Tuscan Room',
   'accommodations.rooms.toscane.description': 'Italian flair, soft textiles and views over the park set the tone for a romantic stay.',
   'accommodations.rooms.toscane.longDescription': 'Soft linens, terracotta touches and a 160 x 200 cm bed create a romantic Italian-inspired cocoon. Enjoy the park view, private bathroom with walk-in shower, compact writing desk and air conditioning for serene nights.',

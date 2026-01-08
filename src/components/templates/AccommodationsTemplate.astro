@@ -6,6 +6,8 @@ import { reviews } from "@/constants/reviews";
 import { roomsContent } from "@/constants/rooms";
 import Button from "../ui/button/button.astro";
 import Card from "../Card.astro";
+import exemple from "@/images/exemple.png";
+import breakfastWindow from "@/images/breakfast-window.JPG";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
@@ -64,7 +66,7 @@ const accommodationsHeroParagraphs = t("accommodations.hero.text")
   <MediaContent
     title={t("accommodations.breakfast.title")}
     text={t("accommodations.breakfast.text")}
-    image="/header-image.jpg"
+    image={breakfastWindow}
     ratio="4-5"
   />
 

@@ -138,6 +138,8 @@ export const de = {
   'accommodations.rooms.africaine.gallery.image5': 'Afrikanisches Zimmer – Safari-Details',
   'accommodations.rooms.africaine.tags.bedding': 'Zwei Einzelbetten',
   'accommodations.rooms.africaine.tags.adults': '2 Erwachsene',
+  'accommodations.rooms.marocaine.equipments.note': 'Das Zimmer kann als zwei Einzelbetten oder als 180 x 200 cm Doppelbett vorbereitet werden. Geben Sie Ihren Wunsch bei der Buchung an.',
+  'accommodations.rooms.africaine.equipments.note': 'Das Zimmer kann als zwei Einzelbetten oder als 180 x 200 cm Doppelbett vorbereitet werden. Geben Sie Ihren Wunsch bei der Buchung an.',
   'accommodations.rooms.toscane.title': 'Toskanisches Zimmer',
   'accommodations.rooms.toscane.description': 'Italienisches Flair, weiche Stoffe und der Blick auf den Park sorgen für einen romantischen Aufenthalt.',
   'accommodations.rooms.toscane.longDescription': 'Weiche Stoffe, Terrakotta-Akzente und ein 160 x 200 cm Bett formen einen romantischen Kokon im italienischen Stil. Genießen Sie den Blick auf den Park, das private Bad mit bodengleicher Dusche, einen kleinen Schreibtisch und die Klimaanlage für ruhige Nächte.',

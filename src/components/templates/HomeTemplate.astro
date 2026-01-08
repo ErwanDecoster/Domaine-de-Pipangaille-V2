@@ -8,10 +8,35 @@ import ReviewList from "@/components/ReviewList.astro";
 import Card from "@/components/Card.astro";
 import { useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
+import { surroundings } from "@/constants/surroundings";
+
+import courtyardTerraceLawn from "@/images/courtyard-terrace-lawn.jpeg";
+import moroccanRoomFrenchDoor from "@/images/moroccan-room-french-door.jpeg";
+import gardenCheeseAndCharcuterieBoard from "@/images/garden-cheese-and-charcuterie-board.JPG";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+type TranslationKey = Parameters<typeof t>[0];
+const toKey = (key: string) => key as TranslationKey;
+
+const formatCard = (item: (typeof surroundings.toVisit)[number]) => {
+  const categories = item.category ?? [];
+  const firstImage = item.gallery?.[0];
+
+  return {
+    title: item.title,
+    image: firstImage?.src,
+    imageAlt: t(toKey(firstImage?.altKey ?? "")),
+    description: item.shortDesc ? t(toKey(item.shortDesc)) : undefined,
+    tags: categories.map((cat) => ({
+      text: t(toKey(`surroundings.category.${cat}`)),
+    })),
+    buttonText: t("surroundings.card.cta"),
+    buttonLink: translatePath(`/surrounding/${item.slug}`),
+  };
+};
 ---
 
 <Layout>
@@ -20,7 +45,8 @@ const translatePath = useTranslatedPath(lang);
   <Header
     title={t("home.header.title")}
     text={t("home.header.text")}
-    image="/header-image.jpg"
+    image={courtyardTerraceLawn}
+    imageAlt="TODO"
     buttonText={t("home.header.button")}
     buttonLink={translatePath("/the-place")}
   />
@@ -33,73 +59,33 @@ const translatePath = useTranslatedPath(lang);
     direction="left"
     title={t("home.rooms.title")}
     text={t("home.rooms.text")}
-    image="/header-image.jpg"
+    image={moroccanRoomFrenchDoor}
+    imageAlt="TODO"
     buttonText={t("home.rooms.button")}
     buttonLink={translatePath("/accommodations")}
   />
   <MediaContent
     title={t("home.counter.title")}
     text={t("home.counter.text")}
-    image="/header-image.jpg"
+    image={gardenCheeseAndCharcuterieBoard}
+    imageAlt="TODO"
     buttonText={t("home.counter.button")}
     buttonLink={translatePath("/the-counter")}
   />
   <ReviewList title={t("home.reviews.title")} reviews={reviews[lang]} />
   <section class="grid grid-cols-6 gap-8 md:gap-10 px-20 mt-48">
     <h2 class="mb-4 col-span-6">{t("home.surroundings.title")}</h2>
-    <Card
-      title={t("card.safari.title")}
-      image="/example.jpg"
-      imageAlt="Example Image"
-      description={t("card.safari.description")}
-      tags={[{ icon: Bike, text: "10 min" }, { text: t("card.tag.family") }]}
-      buttonText={t("card.safari.button")}
-      buttonLink="/example"
-      class="col-span-3"
-    />
-    <Card
-      title={t("card.safari.title")}
-      image="/example.jpg"
-      imageAlt="Example Image"
-      description={t("card.safari.description")}
-      tags={[{ icon: Bike, text: "10 min" }, { text: t("card.tag.family") }]}
-      buttonText={t("card.safari.button")}
-      buttonLink="/example"
-      class="col-span-3"
-    />
-    <Card
-      title={t("card.safari.title")}
-      image="/example.jpg"
-      imageAlt="Example Image"
-      description={t("card.safari.description")}
-      tags={[{ icon: Bike, text: "10 min" }, { text: t("card.tag.family") }]}
-      buttonText={t("card.safari.button")}
-      buttonLink="/example"
-      class="col-span-2"
-    />
-    <Card
-      title={t("card.safari.title")}
-      image="/example.jpg"
-      imageAlt="Example Image"
-      description={t("card.safari.description")}
-      tags={[{ icon: Bike, text: "10 min" }, { text: t("card.tag.family") }]}
-      buttonText={t("card.safari.button")}
-      buttonLink="/example"
-      class="col-span-2"
-    />
-    <Card
-      title={t("card.safari.title")}
-      image="/example.jpg"
-      imageAlt="Example Image"
-      description={t("card.safari.description")}
-      tags={[{ icon: Bike, text: "10 min" }, { text: t("card.tag.family") }]}
-      buttonText={t("card.safari.button")}
-      buttonLink="/example"
-      class="col-span-2"
-    />
-    <Button class="col-span-6 mx-auto mt-6"
-      >{t("home.surroundings.button")}</Button
-    >
+    {
+      surroundings.toVisit.slice(0, 5).map((surrounding, index) => {
+        const card = formatCard(surrounding);
+        return (
+          <Card {...card} class={index < 2 ? "col-span-3" : "col-span-2"} />
+        );
+      })
+    }
+    <Button class="col-span-6 mx-auto mt-6">
+      {t("home.surroundings.button")}
+    </Button>
   </section>
   <section class="px-20 my-48">
     <div class="mx-auto bg-muted px-6 py-24 max-w-5xl rounded-3xl">
@@ -107,9 +93,9 @@ const translatePath = useTranslatedPath(lang);
         <h3>{t("home.booking.title")}</h3>
         <div class="flex justify-between">
           <Button href="/booking">{t("home.booking.button")}</Button>
-          <Button href="/booking" variant="secondary"
-            >{t("home.booking.secondaryButton")}</Button
-          >
+          <Button href="/booking" variant="secondary">
+            {t("home.booking.secondaryButton")}
+          </Button>
         </div>
       </div>
     </div>

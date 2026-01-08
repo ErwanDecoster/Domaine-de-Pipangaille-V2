@@ -138,6 +138,8 @@ export const it = {
   'accommodations.rooms.africaine.gallery.image5': 'Camera africana - dettagli safari',
   'accommodations.rooms.africaine.tags.bedding': 'Letti gemelli',
   'accommodations.rooms.africaine.tags.adults': '2 adulti',
+  'accommodations.rooms.marocaine.equipments.note': 'La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.',
+  'accommodations.rooms.africaine.equipments.note': 'La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.',
   'accommodations.rooms.toscane.title': 'Camera Toscana',
   'accommodations.rooms.toscane.description': 'Atmosfera italiana, tessuti soffici e vista sul parco per un soggiorno romantico.',
   'accommodations.rooms.toscane.longDescription': 'Lenzuola morbide, dettagli in terracotta e il letto 160 x 200 cm creano un nido romantico dal gusto italiano. Vista sul parco, bagno privato con doccia walk-in, piccolo scrittoio e aria condizionata accompagnano le vostre notti serene.',

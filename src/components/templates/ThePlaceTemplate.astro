@@ -5,6 +5,11 @@ import MediaContent from "@/components/MediaContent.astro";
 import { useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import SpotlightGallery from "@/components/SpotlightGallery.astro";
+import poolLoungers from "@/images/pool-loungers.jpeg";
+import courtyardCornerConcert from "@/images/courtyard-corner-concert.jpeg";
+import pavilionTerraceEvening from "@/images/pavilion-terrace-evening.jpeg";
+import carportsWedding from "@/images/carports-wedding.webp";
+import gardenTerrace from "@/images/garden-terrace.jpeg";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
@@ -17,7 +22,8 @@ const translatePath = useTranslatedPath(lang);
   <Header
     title={t("place.header.title")}
     text={t("place.header.text")}
-    image="/header-image.jpg"
+    image={poolLoungers}
+    imageAlt="TODO"
     buttonText={t("place.header.button")}
     buttonLink={translatePath("/book")}
     buttonVariant="secondary"
@@ -31,15 +37,16 @@ const translatePath = useTranslatedPath(lang);
     direction="left"
     title={t("place.services.title")}
     text={t("place.services.text")}
-    image="/header-image.jpg"
+    image={gardenTerrace}
+    imageAlt="TODO"
   />
   <MediaContent
     title={t("place.events.title")}
     text={t("place.events.text")}
     images={[
-      { src: "/header-image.jpg" },
-      { src: "/the-place-1.jpg" },
-      { src: "/the-place-1.jpg" },
+      { src: courtyardCornerConcert, alt: "TODO" },
+      { src: pavilionTerraceEvening, alt: "TODO" },
+      { src: carportsWedding, alt: "TODO" },
     ]}
     buttonText={t("place.events.button")}
     buttonLink={translatePath("/contact")}

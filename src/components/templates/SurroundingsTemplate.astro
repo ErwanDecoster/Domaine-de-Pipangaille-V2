@@ -26,7 +26,7 @@ const formatCard = (
   return {
     key: item.slug,
     title: item.title,
-    image: firstImage?.src ?? "/example.jpg",
+    image: firstImage?.src,
     imageAlt: t(toKey(firstImage?.altKey ?? "")),
     description: item.shortDesc ? t(toKey(item.shortDesc)) : undefined,
     tags: categories.map((cat) => ({

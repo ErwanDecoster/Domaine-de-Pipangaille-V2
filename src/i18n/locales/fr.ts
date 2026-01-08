@@ -138,6 +138,8 @@ export const fr = {
   'accommodations.rooms.africaine.gallery.image5': 'Chambre africaine - détails safari',
   'accommodations.rooms.africaine.tags.bedding': 'Lits jumeaux',
   'accommodations.rooms.africaine.tags.adults': '2 adultes',
+  'accommodations.rooms.marocaine.equipments.note': 'Cette chambre peut être configurée en deux lits simples ou en lit double (180 cm x 200 cm). Indiquez-nous votre préférence lors de la réservation.',
+  'accommodations.rooms.africaine.equipments.note': 'Cette chambre peut être configurée en deux lits simples ou en lit double (180 cm x 200 cm). Indiquez-nous votre préférence lors de la réservation.',
   'accommodations.rooms.toscane.title': 'Chambre Toscane',
   'accommodations.rooms.toscane.description': 'Ambiance italienne, textiles doux et vue sur le parc pour un séjour romantique.',
   'accommodations.rooms.toscane.longDescription': 'Le linge doux, les teintes terracotta et le lit 160 x 200 cm composent un cocon italien romantique. Profitez de la vue sur le parc, de la salle d’eau privative avec douche à l’italienne, d’un bureau d’écriture et de la climatisation pour des nuits paisibles.',

@@ -1,3 +1,30 @@
+import acroboisPilatImg from '../images/acrobois-pilat.png';
+import auPreDuRhoneImg from '../images/au-pre-du-rhone.png';
+import cesarPizzaImg from '../images/cesar-pizza.png';
+import chateauDeGrignanImg from '../images/chateau-de-grignan.png';
+import compagnieDesCanotiersRhoneSaoneImg from '../images/compagnie-des-canotiers-rhone-saone.png';
+import golfDeSaintClairImg from '../images/golf-de-saint-clair.png';
+import laBelleEpoqueImg from '../images/la-belle-epoque.png';
+import laFabriqueDeJulienImg from '../images/la-fabrique-de-julien.png';
+import laPouleNoireImg from '../images/la-poule-noire.png';
+import laTableDesSajImg from '../images/la-table-des-saj.png';
+import laVillaChampagnereImg from '../images/la-villa-champagnere.png';
+import labyrintheVegetalImg from '../images/labyrinthe-vegetal.png';
+import lamasDesPlainesImg from '../images/lamas-des-plaines.png';
+import leChateauDAnetImg from '../images/le-chateau-d-anet.png';
+import leNougatDeMontsegurImg from '../images/le-nougat-de-montsegur.png';
+import lePicotinImg from '../images/le-picotin.png';
+import leRelaisDesMaillesImg from '../images/le-relais-des-mailles.png';
+import lesAgaponRestaurantImg from '../images/les-agapon-restaurant.png';
+import montgolfieresCieImg from '../images/montgolfieres-cie.png';
+import museeDeLAlambicImg from '../images/musee-de-l-alambic.png';
+import oDailyTruckImg from '../images/o-daily-truck.png';
+import palaisIdealDuFacteurChevalImg from '../images/palais-ideal-du-facteur-cheval.png';
+import safariPeaugresImg from '../images/safari-peaugres.png';
+import trainDeLArdecheImg from '../images/train-de-l-ardeche.png';
+import viafluviaImg from '../images/viafluvia.jpg';
+import viarhonaImg from '../images/viarhona.png';
+
 export const surroundings = {
   toVisit: [
     {
@@ -11,7 +38,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/safari-peaugres.png',
+          src: safariPeaugresImg,
           altKey: 'surroundings.safari_peaugres.gallery.image1',
         },
       ],
@@ -33,7 +60,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/palais-ideal-du-facteur-cheval.png',
+          src: palaisIdealDuFacteurChevalImg,
           altKey: 'surroundings.palais_ideal_du_facteur_cheval.gallery.image1',
         },
       ],
@@ -64,7 +91,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/acrobois-pilat.png',
+          src: acroboisPilatImg,
           altKey: 'surroundings.acrobois_pilat.gallery.image1',
         },
       ],
@@ -85,7 +112,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/musee-de-l-alambic.png',
+          src: museeDeLAlambicImg,
           altKey: 'surroundings.musee_de_l_alambic.gallery.image1',
         },
       ],
@@ -104,7 +131,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/golf-de-saint-clair.png',
+          src: golfDeSaintClairImg,
           altKey: 'surroundings.golf_de_saint_clair.gallery.image1',
         },
       ],
@@ -132,7 +159,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/viarhona.png',
+          src: viarhonaImg,
           altKey: 'surroundings.viarhona.gallery.image1',
         },
       ],
@@ -152,7 +179,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/viafluvia.jpg',
+          src: viafluviaImg,
           altKey: 'surroundings.viafluvia.gallery.image1',
         },
       ],
@@ -171,7 +198,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/lamas-des-plaines.png',
+          src: lamasDesPlainesImg,
           altKey: 'surroundings.lamas_des_plaines.gallery.image1',
         },
       ],
@@ -192,7 +219,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/montgolfieres-cie.png',
+          src: montgolfieresCieImg,
           altKey: 'surroundings.mongolfieres_et_cie.gallery.image1',
         },
       ],
@@ -215,7 +242,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/train-de-l-ardeche.png',
+          src: trainDeLArdecheImg,
           altKey: 'surroundings.train_de_l_ardeche.gallery.image1',
         },
       ],
@@ -246,7 +273,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/la-fabrique-de-julien.png',
+          src: laFabriqueDeJulienImg,
           altKey: 'surroundings.la_fabrique_de_julien.gallery.image1',
         },
       ],
@@ -265,7 +292,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/le-nougat-de-montsegur.png',
+          src: leNougatDeMontsegurImg,
           altKey: 'surroundings.le_nougat_de_montsegur.gallery.image1',
         },
       ],
@@ -291,7 +318,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/chateau-de-grignan.png',
+          src: chateauDeGrignanImg,
           altKey: 'surroundings.chateau_de_grignan.gallery.image1',
         },
       ],
@@ -318,7 +345,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/labyrinthe-vegetal.png',
+          src: labyrintheVegetalImg,
           altKey: 'surroundings.labyrinthe_vegetal.gallery.image1',
         },
       ],
@@ -345,7 +372,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/compagnie-des-canotiers-rhone-saone.png',
+          src: compagnieDesCanotiersRhoneSaoneImg,
           altKey: 'surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1',
         },
       ],
@@ -371,7 +398,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/le-chateau-d-anet.png',
+          src: leChateauDAnetImg,
           altKey: 'surroundings.le_chateau_d_anet.gallery.image1',
         },
       ],
@@ -389,7 +416,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/le-relais-des-mailles.png',
+          src: leRelaisDesMaillesImg,
           altKey: 'surroundings.le_relais_mailles.gallery.image1',
         },
       ],
@@ -411,7 +438,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/la-table-des-saj.png',
+          src: laTableDesSajImg,
           altKey: 'surroundings.la_table_des_saj.gallery.image1',
         },
       ],
@@ -437,7 +464,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/la-poule-noire.png',
+          src: laPouleNoireImg,
           altKey: 'surroundings.la_poule_noir.gallery.image1',
         },
       ],
@@ -459,7 +486,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/le-picotin.png',
+          src: lePicotinImg,
           altKey: 'surroundings.le_picotin.gallery.image1',
         },
       ],
@@ -481,7 +508,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/au-pre-du-rhone.png',
+          src: auPreDuRhoneImg,
           altKey: 'surroundings.au_pre_du_rhone.gallery.image1',
         },
       ],
@@ -499,11 +526,11 @@ export const surroundings = {
       title: 'La belle époque',
       gallery: [
         {
-          src: '/src/images/la-belle-epoque.png',
+          src: laBelleEpoqueImg,
           altKey: 'surroundings.la_belle_epoque.gallery.image1',
         },
         {
-          src: '/images/surroundings/73.jpg',
+          src: laBelleEpoqueImg,
           altKey: 'surroundings.la_belle_epoque.gallery.image2',
         },
       ],
@@ -527,11 +554,11 @@ export const surroundings = {
       title: 'O\'Daily Truck',
       gallery: [
         {
-          src: '/src/images/o-daily-truck.png',
+          src: oDailyTruckImg,
           altKey: 'surroundings.o_daily_truck.gallery.image1',
         },
         {
-          src: '/images/surroundings/69.jpg',
+          src: oDailyTruckImg,
           altKey: 'surroundings.o_daily_truck.gallery.image2',
         },
       ],
@@ -556,7 +583,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/cesar-pizza.png',
+          src: cesarPizzaImg,
           altKey: 'surroundings.cesar_pizza.gallery.image1',
         },
       ],
@@ -577,7 +604,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/la-villa-champagnere.png',
+          src: laVillaChampagnereImg,
           altKey: 'surroundings.la_villa_champagnere.gallery.image1',
         },
       ],
@@ -599,7 +626,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: '/src/images/les-agapon-restaurant.png',
+          src: lesAgaponRestaurantImg,
           altKey: 'surroundings.les_agapons.gallery.image1',
         },
       ],

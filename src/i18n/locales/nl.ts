@@ -138,6 +138,8 @@ export const nl = {
   'accommodations.rooms.africaine.gallery.image5': 'Afrikaanse kamer - safari-details',
   'accommodations.rooms.africaine.tags.bedding': 'Tweepersoonsbedden',
   'accommodations.rooms.africaine.tags.adults': '2 volwassenen',
+  'accommodations.rooms.marocaine.equipments.note': 'De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.',
+  'accommodations.rooms.africaine.equipments.note': 'De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.',
   'accommodations.rooms.toscane.title': 'Toscaanse kamer',
   'accommodations.rooms.toscane.description': 'Italiaanse sfeer, zachte stoffen en uitzicht op het park voor een romantisch verblijf.',
   'accommodations.rooms.toscane.longDescription': 'Zachte stoffen, terracottatinten en een bed van 160 x 200 cm vormen een romantische cocon met Italiaanse flair. Geniet van het uitzicht op het park, de privébadkamer met inloopdouche, een compact schrijftafeltje en airco voor rustige nachten.',

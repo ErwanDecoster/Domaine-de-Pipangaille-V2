@@ -5,6 +5,10 @@ import { useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import { roomsContent } from "@/constants/rooms";
 import Card from "../Card.astro";
+import { Image } from "astro:assets";
+import exemple from "@/images/exemple.png";
+import pool from "@/images/pool.jpeg";
+import courtyardTerraceCorner from "@/images/courtyard-terrace-corner.jpeg";
 
 const { lang, roomName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -12,14 +16,7 @@ const { lang, roomName } = Astro.props as {
 };
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
-const roomButtonText = t("accommodations.rooms.button");
-const equipmentsTitle = t("accommodations.detail.equipments.title");
-const equipmentsNote = t("accommodations.detail.equipments.note");
-const tableTitle = t("accommodations.detail.table.title");
-const tableText = t("accommodations.detail.table.text");
-const exploreTitle = t("accommodations.detail.explore.title");
-const exploreText = t("accommodations.detail.explore.text");
-const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
+const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
 
 const baseRoom = roomsContent.find((room) => room.key === roomName);
 
@@ -27,11 +24,21 @@ if (!baseRoom) {
   throw new Error(`Unknown room slug: ${roomName}`);
 }
 
+const roomButtonText = t("accommodations.rooms.button");
+const equipmentsTitle = t("accommodations.detail.equipments.title");
+const equipmentsNote = baseRoom.equipmentsNoteKey
+  ? t(toTranslationKey(baseRoom.equipmentsNoteKey))
+  : undefined;
+const tableTitle = t("accommodations.detail.table.title");
+const tableText = t("accommodations.detail.table.text");
+const exploreTitle = t("accommodations.detail.explore.title");
+const exploreText = t("accommodations.detail.explore.text");
+const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
+
 const selectedRoomTitle = t(`accommodations.rooms.${baseRoom.key}.title`);
 const selectedRoomLongDescription = t(
   `accommodations.rooms.${baseRoom.key}.longDescription`
 );
-const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
 const galleryImages = baseRoom.gallery.map((image) => ({
   src: image.src,
   alt: t(toTranslationKey(image.altKey)),
@@ -69,27 +76,27 @@ const otherRooms = roomsContent
   </div>
 
   <div class="grid grid-cols-4 gap-6 px-20 mt-12">
-    <img
+    <Image
       class="col-span-2 row-span-2"
       src={galleryImages[0].src}
       alt={galleryImages[0].alt}
     />
-    <img
+    <Image
       class="aspect-video"
       src={galleryImages[1].src}
       alt={galleryImages[1].alt}
     />
-    <img
+    <Image
       class="aspect-video"
       src={galleryImages[2].src}
       alt={galleryImages[2].alt}
     />
-    <img
+    <Image
       class="aspect-video"
       src={galleryImages[3].src}
       alt={galleryImages[3].alt}
     />
-    <img
+    <Image
       class="aspect-video"
       src={galleryImages[4].src}
       alt={galleryImages[4].alt}
@@ -108,15 +115,17 @@ const otherRooms = roomsContent
         ))
       }
     </ul>
-    <p class="p-4 rounded-lg bg-muted mt-8">
-      {equipmentsNote}
-    </p>
+    {
+      equipmentsNote && (
+        <p class="p-4 rounded-lg bg-muted mt-8">{equipmentsNote}</p>
+      )
+    }
   </section>
 
   <MediaContent
     title={tableTitle}
     text={tableText}
-    image="/header-image.jpg"
+    image={exemple}
     ratio="4-5"
   />
 
@@ -124,8 +133,8 @@ const otherRooms = roomsContent
     <h2>{exploreTitle}</h2>
     <p class="mt-8">{exploreText}</p>
     <div class="grid grid-cols-2 gap-6 mt-12">
-      <img class="aspect-video" src="/example.jpg" alt="Piscine" />
-      <img class="aspect-video" src="/example.jpg" alt="Piscine" />
+      <Image class="aspect-video" src={pool} alt="TODO" />
+      <Image class="aspect-video" src={courtyardTerraceCorner} alt="TODO" />
     </div>
   </section>
 

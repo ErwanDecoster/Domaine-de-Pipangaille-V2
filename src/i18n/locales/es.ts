@@ -138,6 +138,8 @@ export const es = {
   'accommodations.rooms.africaine.gallery.image5': 'Habitación africana - detalles safari',
   'accommodations.rooms.africaine.tags.bedding': 'Camas gemelas',
   'accommodations.rooms.africaine.tags.adults': '2 adultos',
+  'accommodations.rooms.marocaine.equipments.note': 'La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.',
+  'accommodations.rooms.africaine.equipments.note': 'La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.',
   'accommodations.rooms.toscane.title': 'Habitación Toscana',
   'accommodations.rooms.toscane.description': 'Aires italianos, tejidos suaves y vistas al parque para una escapada romántica.',
   'accommodations.rooms.toscane.longDescription': 'Textiles suaves, toques terracota y una cama de 160 x 200 cm crean un refugio italiano romántico. Disfruta de la vista al parque, del baño privado con ducha italiana, de un escritorio compacto y del aire acondicionado para noches serenas.',

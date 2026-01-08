@@ -17,6 +17,23 @@ import {
   Wind,
 } from "@lucide/astro";
 
+import africanRoomBathRoomView from '@/images/african-room-bathroom-view.jpeg';
+import africanRoomDoubleBedsBathroom from '@/images/african-room-double-beds-bathroom.jpeg';
+import africanRoomDoubleBeds from '@/images/african-room-double-beds.jpeg';
+
+import tuscanRoomBedBathroomDesk from '@/images/tuscan-room-bed-bathroom-desk.jpeg'
+import tuscanRoomBedBathroom from '@/images/tuscan-room-bed-bathroom.jpeg'
+import tuscanRoomBedDesk from '@/images/tuscan-room-bed-desk.jpeg'
+
+import maroccanRoomBedSink from '@/images/moroccan-room-bed-sink.jpeg'
+import maroccanRoomBed from '@/images/moroccan-room-bed.jpeg'
+
+import creoleRoomBedWindow from '@/images/creole-room-bed-window.jpeg'
+import creoleRoomBed from '@/images/creole-room-bed.jpeg'
+import creoleRoomDecoration from '@/images/creole-room-decoration.jpeg'
+
+import exemple from '@/images/exemple.png';
+
 export const roomSlugs = [
   "marocaine",
   "africaine",
@@ -38,39 +55,41 @@ export type RoomTag = {
   labelKey: string;
 };
 
-export type GalleryImage = { src: string; altKey: string };
+export type GalleryImage = { src: ImageMetadata; altKey: string };
 
 export type RoomContent = {
   key: RoomSlug;
-  image: string;
+  image: ImageMetadata;
   gallery: GalleryImage[];
   tags: RoomTag[];
   equipments: RoomEquipment[];
+  equipmentsNoteKey?: string;
 };
 
 export const roomsContent: RoomContent[] = [
   {
     key: "marocaine",
-    image: "/example.jpg",
+    image: maroccanRoomBedSink,
+    equipmentsNoteKey: "accommodations.rooms.marocaine.equipments.note",
     gallery: [
       {
-        src: "/example.jpg",
+        src: maroccanRoomBed,
         altKey: "accommodations.rooms.marocaine.gallery.image1",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.marocaine.gallery.image2",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.marocaine.gallery.image3",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.marocaine.gallery.image4",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.marocaine.gallery.image5",
       },
     ],
@@ -124,26 +143,27 @@ export const roomsContent: RoomContent[] = [
   },
   {
     key: "africaine",
-    image: "/example.jpg",
+    image: africanRoomDoubleBedsBathroom,
+    equipmentsNoteKey: "accommodations.rooms.africaine.equipments.note",
     gallery: [
       {
-        src: "/example.jpg",
+        src: africanRoomDoubleBeds,
         altKey: "accommodations.rooms.africaine.gallery.image1",
       },
       {
-        src: "/example.jpg",
+        src: africanRoomBathRoomView,
         altKey: "accommodations.rooms.africaine.gallery.image2",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.africaine.gallery.image3",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.africaine.gallery.image4",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.africaine.gallery.image5",
       },
     ],
@@ -189,26 +209,26 @@ export const roomsContent: RoomContent[] = [
   },
   {
     key: "toscane",
-    image: "/example.jpg",
+    image: tuscanRoomBedDesk,
     gallery: [
       {
-        src: "/example.jpg",
+        src: tuscanRoomBedBathroomDesk,
         altKey: "accommodations.rooms.toscane.gallery.image1",
       },
       {
-        src: "/example.jpg",
+        src: tuscanRoomBedBathroom,
         altKey: "accommodations.rooms.toscane.gallery.image2",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.toscane.gallery.image3",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.toscane.gallery.image4",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.toscane.gallery.image5",
       },
     ],
@@ -254,26 +274,26 @@ export const roomsContent: RoomContent[] = [
   },
   {
     key: "creole",
-    image: "/example.jpg",
+    image: creoleRoomBedWindow,
     gallery: [
       {
-        src: "/example.jpg",
+        src: creoleRoomBed,
         altKey: "accommodations.rooms.creole.gallery.image1",
       },
       {
-        src: "/example.jpg",
+        src: creoleRoomDecoration,
         altKey: "accommodations.rooms.creole.gallery.image2",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.creole.gallery.image3",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.creole.gallery.image4",
       },
       {
-        src: "/example.jpg",
+        src: exemple,
         altKey: "accommodations.rooms.creole.gallery.image5",
       },
     ],
