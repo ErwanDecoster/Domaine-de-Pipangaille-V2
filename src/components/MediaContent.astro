@@ -2,6 +2,7 @@
 import Button from "@/components/ui/button/button.astro";
 import { cn } from "@/lib/utils";
 import { Image } from "astro:assets";
+import IframeConsent from "@/components/IframeConsent.astro";
 
 interface MediaContentImage {
   src: ImageMetadata;
@@ -14,6 +15,7 @@ interface Props {
   image?: ImageMetadata;
   imageAlt?: string;
   images?: MediaContentImage[];
+  iframeUrl?: string;
   buttonText?: string;
   buttonLink?: string;
   direction?: "left" | "right";
@@ -26,6 +28,7 @@ const {
   image,
   imageAlt,
   images = [],
+  iframeUrl,
   buttonText,
   buttonLink,
   direction,
@@ -57,8 +60,8 @@ const paragraphs = Array.isArray(text)
 
 <section
   class={cn("relative grid md:gap-20 px-20 mt-48", {
-    "grid-cols-2": gallery.length > 0,
-    "grid-cols-1": gallery.length === 0,
+    "grid-cols-2": gallery.length > 0 || iframeUrl,
+    "grid-cols-1": gallery.length === 0 && !iframeUrl,
     "grid-cols-9": ratio === "4-5",
   })}
 >
@@ -77,7 +80,7 @@ const paragraphs = Array.isArray(text)
       >
         {gallery.map(({ src, alt }, index) => (
           <Image
-            class={cn("w-full rounded-2xl object-cover", {
+            class={cn("w-full rounded-md object-cover", {
               "aspect-4/3": galleryLayout !== "triple",
               "h-full": galleryLayout === "triple",
               "row-span-2": galleryLayout === "triple" && index === 0,
@@ -93,9 +96,21 @@ const paragraphs = Array.isArray(text)
       </div>
     )
   }
+  {
+    iframeUrl && (
+      <div
+        class={cn("grid gap-4", {
+          "order-last": direction === "left",
+          "col-span-4": ratio === "4-5",
+        })}
+      >
+        <IframeConsent src={iframeUrl} />
+      </div>
+    )
+  }
   <div
     class={cn("flex flex-col justify-center gap-8", {
-      "col-span-2": !gallery.length,
+      "col-span-2": !gallery.length && !iframeUrl,
       "col-span-5": ratio === "4-5",
     })}
   >

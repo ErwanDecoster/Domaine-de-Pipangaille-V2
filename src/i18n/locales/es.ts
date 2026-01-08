@@ -219,4 +219,8 @@ export const es = {
   'surroundings.detail.socialNetworks': 'Redes sociales',
   'surroundings.detail.visitWebsite': 'Visitar el sitio web',
   'surroundings.detail.moreInfo.title': 'Más información',
+  'iframeConsent.title': 'Contenido externo',
+  'iframeConsent.text': 'Este contenido es proporcionado por {serviceName}. Al cargarlo, aceptas nuestras condiciones de uso y la política de privacidad del proveedor.',
+  'iframeConsent.button': 'Aceptar y cargar',
+  'iframeConsent.serviceNameFallback': 'este servicio externo',
 };
