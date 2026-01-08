@@ -630,7 +630,7 @@ export const surroundings = {
           altKey: 'surroundings.les_agapons.gallery.image1',
         },
       ],
-      mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.915753318206!2d5.039340776548699!3d45.23234677909881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f54c3f4c3f4c3f%3A0x8f8f8f8f8f8f8f8f!2sLes%20Agapons%2C%20415%20ROUTE%20DE%20SAINT%20SORLIN%2C%2026210%20MANTHES!5e0!3m2!1sfr!2sfr!4v1234567890123',
+      mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.3689680670077!2d4.997990576442773!3d45.30097184431462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f531aa947df32f%3A0xbc5d1e6a3aa025aa!2sLes%20Agapons%20Restaurant!5e0!3m2!1sen!2sfr!4v1767889769559!5m2!1sen!2sfr',
       website: 'https://les-agapons.eatbu.com/?lang=fr',
       socialMedia: [
         {
