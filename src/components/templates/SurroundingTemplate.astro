@@ -52,7 +52,10 @@ const seeAllButtonText =
   surroundingType === "toVisit"
     ? toKey("surroundings.detail.seeAllActivities")
     : toKey("surroundings.detail.seeAllRestaurants");
-const seeAllButtonLink = translatePath("/surroundings");
+const seeAllButtonLink =
+  surroundingType === "toEat"
+    ? translatePath("/surroundings#to-eat")
+    : translatePath("/surroundings");
 ---
 
 <Layout>
