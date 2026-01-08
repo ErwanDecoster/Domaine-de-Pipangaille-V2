@@ -31,11 +31,11 @@ import tuscanRoomBedDeskShelf from '@/images/tuscan-room-bed-desk-shelf.jpg'
 import tuscanRoomBedBasketSink from '@/images/tuscan-room-bed-basket-sink.jpg'
 import tuscanRoomShower from '@/images/tuscan-room-shower.jpg'
 
-import maroccanRoomBedSink from '@/images/moroccan-room-bed-sink.jpeg'
-import maroccanRoomBed from '@/images/moroccan-room-bed.jpeg'
-import maroccanRoomBedToilet from '@/images/moroccan-room-bed-toilet.jpg'
-import maroccanRoomBedFrenchDoor from '@/images/moroccan-room-bed-french-door.jpg'
-import maroccanRoomShowerSink from '@/images/moroccan-room-shower-sink.jpg'
+import moroccanRoomBedSink from '@/images/moroccan-room-bed-sink.jpeg'
+import moroccanRoomBed from '@/images/moroccan-room-bed.jpeg'
+import moroccanRoomBedToilet from '@/images/moroccan-room-bed-toilet.jpg'
+import moroccanRoomBedFrenchDoor from '@/images/moroccan-room-bed-french-door.jpg'
+import moroccanRoomShowerSink from '@/images/moroccan-room-shower-sink.jpg'
 
 import creoleRoomBedWindow from '@/images/creole-room-bed-window.jpeg'
 import creoleRoomBed from '@/images/creole-room-bed.jpeg'
@@ -43,8 +43,6 @@ import creoleRoomBedBasket from '@/images/creole-room-bed-basket.jpg'
 import creoleRoomBedWindowDesk from '@/images/creole-room-bed-window-desk.jpg'
 import creoleRoomDeskWardrobeMirror from '@/images/creole-room-desk-wardrobe-mirror.jpg'
 import creoleRoomDeskWardrobe from '@/images/creole-room-desk-wardrobe.jpg'
-
-import exemple from '@/images/exemple.png';
 
 export const roomSlugs = [
   "marocaine",
@@ -81,27 +79,27 @@ export type RoomContent = {
 export const roomsContent: RoomContent[] = [
   {
     key: "marocaine",
-    image: maroccanRoomBedSink,
+    image: moroccanRoomBedSink,
     equipmentsNoteKey: "accommodations.rooms.marocaine.equipments.note",
     gallery: [
       {
-        src: maroccanRoomBed,
+        src: moroccanRoomBed,
         altKey: "accommodations.rooms.marocaine.gallery.image1",
       },
       {
-        src: maroccanRoomBedToilet,
+        src: moroccanRoomBedToilet,
         altKey: "accommodations.rooms.marocaine.gallery.image2",
       },
       {
-        src: maroccanRoomBedFrenchDoor,
+        src: moroccanRoomBedFrenchDoor,
         altKey: "accommodations.rooms.marocaine.gallery.image3",
       },
       {
-        src: maroccanRoomShowerSink,
+        src: moroccanRoomShowerSink,
         altKey: "accommodations.rooms.marocaine.gallery.image4",
       },
       {
-        src: maroccanRoomBedSink,
+        src: moroccanRoomBedSink,
         altKey: "accommodations.rooms.marocaine.gallery.image5",
       },
     ],
