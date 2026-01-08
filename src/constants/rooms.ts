@@ -20,17 +20,29 @@ import {
 import africanRoomBathRoomView from '@/images/african-room-bathroom-view.jpeg';
 import africanRoomDoubleBedsBathroom from '@/images/african-room-double-beds-bathroom.jpeg';
 import africanRoomDoubleBeds from '@/images/african-room-double-beds.jpeg';
+import africanRoomDoubleBedSink from '@/images/african-room-double-bed-sink.jpg';
+import africanRoomDoubleBedWindowDecor from '@/images/african-room-double-bed-window-decor.jpg';
+import africanRoomDoubleBed from '@/images/african-room-double-bed.jpg';
 
 import tuscanRoomBedBathroomDesk from '@/images/tuscan-room-bed-bathroom-desk.jpeg'
 import tuscanRoomBedBathroom from '@/images/tuscan-room-bed-bathroom.jpeg'
 import tuscanRoomBedDesk from '@/images/tuscan-room-bed-desk.jpeg'
+import tuscanRoomBedDeskShelf from '@/images/tuscan-room-bed-desk-shelf.jpg'
+import tuscanRoomBedBasketSink from '@/images/tuscan-room-bed-basket-sink.jpg'
+import tuscanRoomShower from '@/images/tuscan-room-shower.jpg'
 
 import maroccanRoomBedSink from '@/images/moroccan-room-bed-sink.jpeg'
 import maroccanRoomBed from '@/images/moroccan-room-bed.jpeg'
+import maroccanRoomBedToilet from '@/images/moroccan-room-bed-toilet.jpg'
+import maroccanRoomBedFrenchDoor from '@/images/moroccan-room-bed-french-door.jpg'
+import maroccanRoomShowerSink from '@/images/moroccan-room-shower-sink.jpg'
 
 import creoleRoomBedWindow from '@/images/creole-room-bed-window.jpeg'
 import creoleRoomBed from '@/images/creole-room-bed.jpeg'
-import creoleRoomDecoration from '@/images/creole-room-decoration.jpeg'
+import creoleRoomBedBasket from '@/images/creole-room-bed-basket.jpg'
+import creoleRoomBedWindowDesk from '@/images/creole-room-bed-window-desk.jpg'
+import creoleRoomDeskWardrobeMirror from '@/images/creole-room-desk-wardrobe-mirror.jpg'
+import creoleRoomDeskWardrobe from '@/images/creole-room-desk-wardrobe.jpg'
 
 import exemple from '@/images/exemple.png';
 
@@ -77,19 +89,19 @@ export const roomsContent: RoomContent[] = [
         altKey: "accommodations.rooms.marocaine.gallery.image1",
       },
       {
-        src: exemple,
+        src: maroccanRoomBedToilet,
         altKey: "accommodations.rooms.marocaine.gallery.image2",
       },
       {
-        src: exemple,
+        src: maroccanRoomBedFrenchDoor,
         altKey: "accommodations.rooms.marocaine.gallery.image3",
       },
       {
-        src: exemple,
+        src: maroccanRoomShowerSink,
         altKey: "accommodations.rooms.marocaine.gallery.image4",
       },
       {
-        src: exemple,
+        src: maroccanRoomBedSink,
         altKey: "accommodations.rooms.marocaine.gallery.image5",
       },
     ],
@@ -155,15 +167,15 @@ export const roomsContent: RoomContent[] = [
         altKey: "accommodations.rooms.africaine.gallery.image2",
       },
       {
-        src: exemple,
+        src: africanRoomDoubleBedWindowDecor,
         altKey: "accommodations.rooms.africaine.gallery.image3",
       },
       {
-        src: exemple,
+        src: africanRoomDoubleBedSink,
         altKey: "accommodations.rooms.africaine.gallery.image4",
       },
       {
-        src: exemple,
+        src: africanRoomDoubleBed,
         altKey: "accommodations.rooms.africaine.gallery.image5",
       },
     ],
@@ -220,15 +232,15 @@ export const roomsContent: RoomContent[] = [
         altKey: "accommodations.rooms.toscane.gallery.image2",
       },
       {
-        src: exemple,
+        src: tuscanRoomBedDeskShelf,
         altKey: "accommodations.rooms.toscane.gallery.image3",
       },
       {
-        src: exemple,
+        src: tuscanRoomBedBasketSink,
         altKey: "accommodations.rooms.toscane.gallery.image4",
       },
       {
-        src: exemple,
+        src: tuscanRoomShower,
         altKey: "accommodations.rooms.toscane.gallery.image5",
       },
     ],
@@ -281,19 +293,19 @@ export const roomsContent: RoomContent[] = [
         altKey: "accommodations.rooms.creole.gallery.image1",
       },
       {
-        src: creoleRoomDecoration,
+        src: creoleRoomBedBasket,
         altKey: "accommodations.rooms.creole.gallery.image2",
       },
       {
-        src: exemple,
+        src: creoleRoomBedWindowDesk,
         altKey: "accommodations.rooms.creole.gallery.image3",
       },
       {
-        src: exemple,
+        src: creoleRoomDeskWardrobeMirror,
         altKey: "accommodations.rooms.creole.gallery.image4",
       },
       {
-        src: exemple,
+        src: creoleRoomDeskWardrobe,
         altKey: "accommodations.rooms.creole.gallery.image5",
       },
     ],
