@@ -28,7 +28,7 @@ const variants = cva(
         secondary: "text-secondary-foreground",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "test-foreground underline-offset-4 hover:underline",
+        link: "test-foreground underline-offset-4 hover:underline gap-1!",
       },
       size: {
         default: "px-6 py-4",
@@ -54,6 +54,7 @@ const {
   text,
   html,
   external,
+  target,
   ...props
 } = Astro.props;
 
@@ -68,6 +69,8 @@ const Comp = href ? "a" : "button";
       data-slot="button"
       class={cn(variants({ variant, size }), className)}
       href={href}
+      target={external ? "_blank" : target}
+      rel={external ? "noopener noreferrer" : undefined}
       {...props}
     >
       <Fragment set:html={slot} />

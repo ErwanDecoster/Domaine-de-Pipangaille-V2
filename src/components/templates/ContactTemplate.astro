@@ -1,0 +1,218 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import MediaContent from "@/components/MediaContent.astro";
+import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import Button from "../ui/button/button.astro";
+import type { reviews } from "@/constants/reviews";
+import Field from "@/components/ui/field/field.astro";
+import FieldLabel from "@/components/ui/field/field-label.astro";
+import Input from "@/components/ui/input/input.astro";
+import Textarea from "@/components/ui/textarea/textarea.astro";
+import { actions } from "astro:actions";
+import IframeConsent from "../IframeConsent.astro";
+import { FieldSet } from "../ui/field/index.astro";
+import courtyardConcert from "@/images/courtyard-concert.jpeg";
+
+const { lang } = Astro.props as { lang: keyof typeof reviews };
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const result = Astro.getActionResult(actions.contact.send);
+---
+
+<Layout>
+  <div
+    data-scroll-animated
+    class="h-28 w-screen sticky top-0 z-10 bg-background"
+  >
+  </div>
+  <div class="px-20 pt-24">
+    <h1>{t("contact.title")}</h1>
+    <p class="p-4 rounded-lg bg-muted mt-12">
+      {t("contact.reservation.textBefore")}
+      <Button class="inline -mx-6" variant="link" href={translatePath("/book")}>
+        {t("nav.book")}
+      </Button>
+      {t("contact.reservation.textAfter")}
+    </p>
+  </div>
+
+  <section class="flex gap-8 md:gap-10 px-20 mt-12">
+    <form
+      method="POST"
+      action={actions.contact.send}
+      class="px-12 grow py-16 bg-muted rounded-md"
+      id="contact-form"
+    >
+      {
+        result?.error && (
+          <div class="col-span-2 p-4 rounded-lg bg-red-100 dark:bg-red-900/20 text-red-900 dark:text-red-200">
+            <p class="font-semibold">{t("contact.error.title")}</p>
+            {result.error.code === "BAD_REQUEST" && result.error.fields ? (
+              <ul class="list-disc list-inside mt-2">
+                {Object.entries(result.error.fields).map(([field, errors]) =>
+                  errors?.map((error) => <li>{error}</li>)
+                )}
+              </ul>
+            ) : (
+              <p class="mt-2">{result.error.message}</p>
+            )}
+          </div>
+        )
+      }
+      {
+        result?.data && (
+          <div class="col-span-2 p-4 rounded-lg bg-green-100 dark:bg-green-900/20 text-green-900 dark:text-green-200">
+            <p class="font-semibold">{t("contact.success.title")}</p>
+            <p class="mt-2">{t("contact.success.text")}</p>
+          </div>
+        )
+      }
+      <FieldSet class="grid md:grid-cols-2 gap-6">
+        <Field>
+          <FieldLabel for="name">{t("contact.form.fullName")}</FieldLabel>
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            placeholder={t("contact.form.fullNamePlaceholder")}
+            required
+          />
+        </Field>
+        <Field>
+          <FieldLabel for="email">{t("contact.form.email")}</FieldLabel>
+          <Input
+            type="email"
+            id="email"
+            name="email"
+            placeholder={t("contact.form.emailPlaceholder")}
+            required
+          />
+        </Field>
+        <Field>
+          <FieldLabel for="object">{t("contact.form.subject")}</FieldLabel>
+          <Input
+            type="text"
+            id="object"
+            name="object"
+            placeholder={t("contact.form.subjectPlaceholder")}
+            required
+          />
+        </Field>
+        <Field>
+          <FieldLabel for="phone"
+            >{t("contact.form.phone")}<span class="ml-auto text-foreground/50"
+              >{t("contact.form.optional")}</span
+            ></FieldLabel
+          >
+          <Input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder={t("contact.form.phonePlaceholder")}
+          />
+        </Field>
+        <Field class="col-span-2">
+          <FieldLabel for="message">{t("contact.form.message")}</FieldLabel>
+          <Textarea
+            id="message"
+            name="message"
+            placeholder={t("contact.form.messagePlaceholder")}
+            class="h-32"
+            required
+          />
+        </Field>
+      </FieldSet>
+      <Button type="submit" class="mt-12 ml-auto" id="submit-btn">
+        {t("contact.form.submit")}
+      </Button>
+    </form>
+
+    <script>
+      const form = document.getElementById("contact-form");
+      const submitBtn = document.getElementById("submit-btn");
+
+      if (form) {
+        form.addEventListener("submit", () => {
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.setAttribute("aria-busy", "true");
+          }
+          form.style.opacity = "0.6";
+          form.style.pointerEvents = "none";
+        });
+      }
+
+      if (window.location.search.includes("_action")) {
+        const url = new URL(window.location);
+        if (url.searchParams.has("_action")) {
+          url.searchParams.delete("_action");
+          window.history.replaceState({}, document.title, url.toString());
+        }
+      }
+    </script>
+    <div class="flex flex-col gap-16 grow max-w-96">
+      <div>
+        <div>
+          <h2 class="text-base font-semibold font-barlow">
+            {t("contact.info.phone")}
+          </h2>
+          <Button variant="link" class="-ml-6 -mt-3" href="tel:+33475682824">
+            +33 4 75 68 28 24
+          </Button>
+        </div>
+        <div>
+          <h2 class="text-base font-semibold font-barlow">
+            {t("contact.info.whatsapp")}
+          </h2>
+          <Button
+            variant="link"
+            class="-ml-6 -mt-3"
+            external
+            href="https://api.whatsapp.com/send?phone=33475682824"
+          >
+            +33 4 75 68 28 24
+          </Button>
+        </div>
+        <div>
+          <h2 class="text-base font-semibold font-barlow">
+            {t("contact.info.email")}
+          </h2>
+          <Button
+            variant="link"
+            class="-ml-6 -mt-3"
+            external
+            href={`mailto:contact@domaine-de-pipangaille.fr`}
+          >
+            contact@domaine-de-pipangaille.com
+          </Button>
+        </div>
+        <div>
+          <h2 class="text-base font-semibold font-barlow">
+            {t("contact.info.address")}
+          </h2>
+          <Button
+            variant="link"
+            class="-ml-6 -mt-3"
+            external
+            href="https://www.google.fr/maps/dir//domaine+de+pipangaille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47f53e41af912869:0xe0c49553166e1500?sa=X&ved=2ahUKEwj59IKk0474AhUa_4UKHTamDM0Q9Rd6BAhbEAQ"
+          >
+            1 Quartier les Marrettes, <br />26140, Andancette, France
+          </Button>
+        </div>
+      </div>
+      <IframeConsent
+        class="self-end"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7639163355725!2d4.807639176440567!3d45.25256654753427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sDomaine%20de%20Pipangaille!5e0!3m2!1sen!2sfr!4v1767979480124!5m2!1sen!2sfr"
+      />
+    </div>
+  </section>
+
+  <MediaContent
+    title={t("contact.privateRequest.title")}
+    text={t("contact.privateRequest.text")}
+    image={courtyardConcert}
+    direction="left"
+    ratio="4-5"
+  />
+</Layout>
