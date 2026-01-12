@@ -16,6 +16,7 @@
 - [ ] Add more information about the pool
 - [ ] Add menu on the-counter page
 - [ ] Add Musée Valrhôna to surroundings
+- [ ] Update the-place SpotlightGallery
 
 ## Restaurant Features
 - [ ] Add phone number in restaurants
