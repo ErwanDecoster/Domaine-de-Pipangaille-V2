@@ -14,7 +14,7 @@ export const en = {
   'footer.legalMentions': 'Legal Mentions',
   'footer.salesConditions': 'General Terms of Sale',
   'home.header.title': 'Le Domaine de Pipangaille',
-  'home.header.text': 'Le Domaine de Pipangaille, a recently renovated former silkworm farm surrounded by a wooded park combining the charm of stone and authenticity in an idyllic setting, offers 4 guest rooms, table d\'hôtes on reservation, swimming pool in season, for a magical stay and an invitation to relax.\n\nThe Domaine de Pipangaille is located near the A7 motorway exit, close to the Nationale 7, one hour from Lyon and Saint-Étienne, 45 minutes from Valence and with direct access to the ViaRhôna, very close to the Via-fluvia.',
+  'home.header.text': 'Le Domaine de Pipangaille, a recently renovated former silkworm farm surrounded by a wooded park combining the charm of stone and authenticity in an idyllic setting, offers 4 guest rooms, table d\'hôtes on reservation, an unheated swimming pool open in season, for a magical stay and an invitation to relax.\n\nThe Domaine de Pipangaille is located near the A7 motorway exit, close to the Nationale 7, one hour from Lyon and Saint-Étienne, 45 minutes from Valence and with direct access to the ViaRhôna, very close to the ViaFluvia.',
   'home.header.button': 'Discover the Domain',
   'home.rooms.title': 'Guest Rooms',
   'home.rooms.text': 'You access the rooms by crossing the wooded park, which brings you into the inner courtyard surrounded by stones which gives it an authentic and soothing setting. The four themed rooms, a suite and three double rooms are located on the second floor, accessible by a large staircase, the decoration of the rooms invites you to travel.',
