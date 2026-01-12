@@ -1,5 +1,5 @@
 import acroboisPilatImg from '../images/acrobois-pilat.png';
-import auPreDuRhoneImg from '../images/au-pre-du-rhone.png';
+// import auPreDuRhoneImg from '../images/au-pre-du-rhone.png';
 import cesarPizzaImg from '../images/cesar-pizza.png';
 import chateauDeGrignanImg from '../images/chateau-de-grignan.png';
 import compagnieDesCanotiersRhoneSaoneImg from '../images/compagnie-des-canotiers-rhone-saone.png';
@@ -508,7 +508,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: auPreDuRhoneImg,
+          src: acroboisPilatImg,
           altKey: 'surroundings.au_pre_du_rhone.gallery.image1',
         },
       ],
