@@ -199,10 +199,6 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.privateBathroom",
       },
       {
-        icon: Baby,
-        labelKey: "accommodations.rooms.equipments.babyCribOnRequest",
-      },
-      {
         icon: Coffee,
         labelKey: "accommodations.rooms.equipments.kettle",
       },
@@ -264,10 +260,6 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.privateBathroom",
       },
       {
-        icon: Baby,
-        labelKey: "accommodations.rooms.equipments.babyCribOnRequest",
-      },
-      {
         icon: Coffee,
         labelKey: "accommodations.rooms.equipments.kettle",
       },
@@ -324,10 +316,6 @@ export const roomsContent: RoomContent[] = [
       {
         icon: Bath,
         labelKey: "accommodations.rooms.equipments.privateBathroom",
-      },
-      {
-        icon: Baby,
-        labelKey: "accommodations.rooms.equipments.babyCribOnRequest",
       },
       {
         icon: Coffee,
