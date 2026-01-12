@@ -1,29 +1,29 @@
-import acroboisPilatImg from '../images/acrobois-pilat.png';
-// import auPreDuRhoneImg from '../images/au-pre-du-rhone.png';
-import cesarPizzaImg from '../images/cesar-pizza.png';
-import chateauDeGrignanImg from '../images/chateau-de-grignan.png';
-import compagnieDesCanotiersRhoneSaoneImg from '../images/compagnie-des-canotiers-rhone-saone.png';
-import golfDeSaintClairImg from '../images/golf-de-saint-clair.png';
-import laBelleEpoqueImg from '../images/la-belle-epoque.png';
-import laFabriqueDeJulienImg from '../images/la-fabrique-de-julien.png';
-import laPouleNoireImg from '../images/la-poule-noire.png';
-import laTableDesSajImg from '../images/la-table-des-saj.png';
-import laVillaChampagnereImg from '../images/la-villa-champagnere.png';
-import labyrintheVegetalImg from '../images/labyrinthe-vegetal.png';
-import lamasDesPlainesImg from '../images/lamas-des-plaines.png';
-import leChateauDAnetImg from '../images/le-chateau-d-anet.png';
-import leNougatDeMontsegurImg from '../images/le-nougat-de-montsegur.png';
-import lePicotinImg from '../images/le-picotin.png';
-import leRelaisDesMaillesImg from '../images/le-relais-des-mailles.png';
-import lesAgaponRestaurantImg from '../images/les-agapon-restaurant.png';
-import montgolfieresCieImg from '../images/montgolfieres-cie.png';
-import museeDeLAlambicImg from '../images/musee-de-l-alambic.png';
-import oDailyTruckImg from '../images/o-daily-truck.png';
-import palaisIdealDuFacteurChevalImg from '../images/palais-ideal-du-facteur-cheval.png';
-import safariPeaugresImg from '../images/safari-peaugres.png';
-import trainDeLArdecheImg from '../images/train-de-l-ardeche.png';
+import acroboisPilatImg from '../images/acrobois-pilat.jpg';
+import auPreDuRhoneImg from '../images/au-pre-du-rhone.jpg';
+import cesarPizzaImg from '../images/cesar-pizza.jpg';
+import chateauDeGrignanImg from '../images/chateau-de-grignan.jpg';
+import compagnieDesCanotiersRhoneSaoneImg from '../images/compagnie-des-canotiers-rhone-saone.jpg';
+import golfDeSaintClairImg from '../images/golf-de-saint-clair.jpg';
+import laBelleEpoqueImg from '../images/la-belle-epoque.jpg';
+import laFabriqueDeJulienImg from '../images/la-fabrique-de-julien.jpg';
+import laPouleNoireImg from '../images/la-poule-noire.jpg';
+import laTableDesSajImg from '../images/la-table-des-saj.jpg';
+import laVillaChampagnereImg from '../images/la-villa-champagnere.jpg';
+import labyrintheVegetalImg from '../images/labyrinthe-vegetal.jpg';
+import lamasDesPlainesImg from '../images/lamas-des-plaines.jpg';
+import leChateauDAnetImg from '../images/le-chateau-d-anet.jpg';
+import leNougatDeMontsegurImg from '../images/le-nougat-de-montsegur.jpg';
+import lePicotinImg from '../images/le-picotin.jpg';
+import leRelaisDesMaillesImg from '../images/le-relais-des-mailles.jpg';
+import lesAgaponRestaurantImg from '../images/les-agapon-restaurant.jpg';
+import montgolfieresCieImg from '../images/montgolfieres-cie.jpg';
+import museeDeLAlambicImg from '../images/musee-de-l-alambic.jpg';
+import oDailyTruckImg from '../images/o-daily-truck.jpg';
+import palaisIdealDuFacteurChevalImg from '../images/palais-ideal-du-facteur-cheval.jpg';
+import safariPeaugresImg from '../images/safari-peaugres.jpg';
+import trainDeLArdecheImg from '../images/train-de-l-ardeche.jpg';
 import viafluviaImg from '../images/viafluvia.jpg';
-import viarhonaImg from '../images/viarhona.png';
+import viarhonaImg from '../images/viarhona.jpg';
 
 export const surroundings = {
   toVisit: [
@@ -508,7 +508,7 @@ export const surroundings = {
       ],
       gallery: [
         {
-          src: acroboisPilatImg,
+          src: auPreDuRhoneImg,
           altKey: 'surroundings.au_pre_du_rhone.gallery.image1',
         },
       ],
