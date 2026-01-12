@@ -18,6 +18,7 @@ import leRelaisDesMaillesImg from '../images/le-relais-des-mailles.jpg';
 import lesAgaponRestaurantImg from '../images/les-agapon-restaurant.jpg';
 import montgolfieresCieImg from '../images/montgolfieres-cie.jpg';
 import museeDeLAlambicImg from '../images/musee-de-l-alambic.jpg';
+import museeValrhonaImg from '../images/musee-valrhona.jpg';
 import oDailyTruckImg from '../images/o-daily-truck.jpg';
 import palaisIdealDuFacteurChevalImg from '../images/palais-ideal-du-facteur-cheval.jpg';
 import safariPeaugresImg from '../images/safari-peaugres.jpg';
@@ -185,6 +186,26 @@ export const surroundings = {
       ],
       website: 'https://www.viafluvia.fr/',
       slug: 'viafluvia',
+    },
+    {
+      title: 'Cité du Chocolat Valrhôna',
+      category: [
+        'family',
+        'visit',
+        'loved',
+      ],
+      shortDesc: 'surroundings.descriptions.musee_valrhona.short',
+      longDesc: [
+        'surroundings.descriptions.musee_valrhona.long',
+      ],
+      gallery: [
+        {
+          src: museeValrhonaImg,
+          altKey: 'surroundings.musee_valrhona.gallery.image1',
+        },
+      ],
+      website: 'https://citeduchocolat.com/',
+      slug: 'musee_valrhona',
     },
     {
       title: 'Lamas des Plaines',
