@@ -205,6 +205,18 @@ export const surroundings = {
         },
       ],
       website: 'https://citeduchocolat.com/',
+      bookLink: 'https://linktr.ee/citeduchocolat',
+      mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.849525935534!2d4.840720676432278!3d45.068563459748944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5449ec36e3cc5%3A0x19f490edcfed10a1!2sCite%20du%20Chocolat%20Valrhona!5e0!3m2!1sen!2sfr!4v1768251979104!5m2!1sen!2sfr',
+      socialMedia: [
+        {
+          platform: 'facebook',
+          link: 'https://www.facebook.com/CiteDuChocolat/',
+        },
+        {
+          platform: 'instagram',
+          link: 'https://www.instagram.com/citeduchocolat/',
+        },
+      ],
       slug: 'musee_valrhona',
     },
     {
