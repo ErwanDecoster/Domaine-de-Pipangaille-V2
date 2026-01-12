@@ -37,6 +37,18 @@ const formatCard = (item: (typeof surroundings.toVisit)[number]) => {
     buttonLink: translatePath(`/surrounding/${item.slug}`),
   };
 };
+
+const featuredSlugs = [
+  "safari_peaugres",
+  "palais_ideal_du_facteur_cheval",
+  "viarhona",
+  "musee_de_l_alambic",
+  "viafluvia",
+];
+
+const featuredSurroundings = featuredSlugs
+  .map((slug) => surroundings.toVisit.find((s) => s.slug === slug))
+  .filter(Boolean) as (typeof surroundings.toVisit)[number][];
 ---
 
 <Layout>
@@ -76,14 +88,17 @@ const formatCard = (item: (typeof surroundings.toVisit)[number]) => {
   <section class="grid grid-cols-6 gap-8 md:gap-10 px-20 mt-48">
     <h2 class="mb-4 col-span-6">{t("home.surroundings.title")}</h2>
     {
-      surroundings.toVisit.slice(0, 5).map((surrounding, index) => {
+      featuredSurroundings.map((surrounding, index) => {
         const card = formatCard(surrounding);
         return (
           <Card {...card} class={index < 2 ? "col-span-3" : "col-span-2"} />
         );
       })
     }
-    <Button href={translatePath('/surroundings')} class="col-span-6 mx-auto mt-6">
+    <Button
+      href={translatePath("/surroundings")}
+      class="col-span-6 mx-auto mt-6"
+    >
       {t("home.surroundings.button")}
     </Button>
   </section>
