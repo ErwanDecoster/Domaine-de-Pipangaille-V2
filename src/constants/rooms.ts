@@ -3,7 +3,6 @@ import {
   Bath,
   Bed,
   BedDouble,
-  BedSingle,
   Coffee,
   CookingPot,
   Heart,
@@ -114,10 +113,6 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.doubleBedSeparable",
       },
       {
-        icon: BedSingle,
-        labelKey: "accommodations.rooms.equipments.singleBed",
-      },
-      {
         icon: Wifi,
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
@@ -127,7 +122,7 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: Bath,
-        labelKey: "accommodations.rooms.equipments.privateBathroom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
         icon: Baby,
@@ -196,7 +191,7 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: Bath,
-        labelKey: "accommodations.rooms.equipments.privateBathroom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
         icon: Coffee,
@@ -206,7 +201,7 @@ export const roomsContent: RoomContent[] = [
         icon: Sparkles,
         labelKey: "accommodations.rooms.equipments.hairDryer",
       },
-      { icon: Table, labelKey: "accommodations.rooms.equipments.desk" },
+      { icon: Table, labelKey: "accommodations.rooms.equipments.smallTable" },
       {
         icon: WashingMachine,
         labelKey: "accommodations.rooms.equipments.commonWashingMachine",
@@ -257,7 +252,7 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: Bath,
-        labelKey: "accommodations.rooms.equipments.privateBathroom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
         icon: Coffee,
@@ -315,11 +310,18 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: Bath,
-        labelKey: "accommodations.rooms.equipments.privateBathroom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
         icon: Coffee,
         labelKey: "accommodations.rooms.equipments.kettle",
+      },
+      {
+        labelKey: "accommodations.rooms.equipments.wardrobe",
+      },
+      {
+        icon: Table,
+        labelKey: "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs",
       },
       {
         icon: Sparkles,
