@@ -182,7 +182,7 @@ export const de = {
   'accommodations.rooms.equipments.wardrobe': 'Kleiderschrank',
   'accommodations.rooms.equipments.pedestalTableWithTwoArmchairs': 'Beistelltisch mit zwei Sesseln',
   'accommodations.breakfast.title': 'Frühstück & Table d’hôtes',
-  'accommodations.breakfast.text': 'Das Frühstück wird von 8:00 bis 9:30 Uhr, auf Wunsch auch früher, serviert – je nach Saison im Speisesaal oder im Innenhof. Am Buffet erwarten Sie traditionelles Brot, Gebäck, Bio-Tee, Kaffee, Fruchtsäfte, lokale Joghurts und saisonales Obst.\n\nWir berücksichtigen gerne alle Ernährungsformen (vegetarisch, vegan, glutenfrei usw.). Teilen Sie uns Ihre Bedürfnisse im Voraus mit.\n\nAuf Reservierung bietet die Table d’hôtes ein hausgemachtes Menü oder Platten mit Aufschnitt, Käse bzw. Salaten aus lokalen Bio-Produkten.',
+  'accommodations.breakfast.text': 'Das Frühstück wird von 8:00 bis 9:30 Uhr, auf Wunsch auch früher, serviert – je nach Saison im Speisesaal oder im Innenhof. Am Buffet erwarten Sie traditionelles Brot, Gebäck, Bio-Tee, Kaffee, Fruchtsäfte, lokale Joghurts und saisonales Obst.\n\nWir wählen unsere Lieferanten sorgfältig aus, um Ihnen lokale und biologische Produkte anzubieten.\n\nHerzhaftes Frühstück optional verfügbar, auf Anfrage und nach Reservierung am Vortag.\n\nAuf Reservierung bietet die Table d\'hôtes ein hausgemachtes Menü oder Platten mit Aufschnitt, Käse bzw. Salaten aus lokalen Bio-Produkten.',
   'accommodations.cta.title': 'Sie möchten alle Zimmer privat nutzen?',
   'accommodations.cta.text': 'Buchen Sie das gesamte Haus für Gruppenveranstaltungen, Familienfeiern oder Wochenenden mit Freunden.',
   'accommodations.cta.button': 'Kontaktieren Sie uns',
