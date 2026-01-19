@@ -1,19 +1,20 @@
 import {
   Baby,
-  Bath,
   Bed,
   BedDouble,
+  Monitor,
   Coffee,
   CookingPot,
   Heart,
+  ShowerHead,
+  Shirt,
   Sofa,
   Sparkles,
-  Table,
   User,
   Users,
   WashingMachine,
   Wifi,
-  Wind,
+  AirVent,
 } from "@lucide/astro";
 
 import africanRoomBathRoomView from '@/images/african-room-bathroom-view.jpeg';
@@ -117,11 +118,11 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
       {
-        icon: Wind,
+        icon: AirVent,
         labelKey: "accommodations.rooms.equipments.airConditioning",
       },
       {
-        icon: Bath,
+        icon: ShowerHead,
         labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
@@ -186,11 +187,11 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
       {
-        icon: Wind,
+        icon: AirVent,
         labelKey: "accommodations.rooms.equipments.airConditioning",
       },
       {
-        icon: Bath,
+        icon: ShowerHead,
         labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
@@ -201,7 +202,7 @@ export const roomsContent: RoomContent[] = [
         icon: Sparkles,
         labelKey: "accommodations.rooms.equipments.hairDryer",
       },
-      { icon: Table, labelKey: "accommodations.rooms.equipments.smallTable" },
+      { icon: Monitor, labelKey: "accommodations.rooms.equipments.smallTable" },
       {
         icon: WashingMachine,
         labelKey: "accommodations.rooms.equipments.commonWashingMachine",
@@ -247,11 +248,11 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
       {
-        icon: Wind,
+        icon: AirVent,
         labelKey: "accommodations.rooms.equipments.airConditioning",
       },
       {
-        icon: Bath,
+        icon: ShowerHead,
         labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
@@ -262,7 +263,7 @@ export const roomsContent: RoomContent[] = [
         icon: Sparkles,
         labelKey: "accommodations.rooms.equipments.hairDryer",
       },
-      { icon: Table, labelKey: "accommodations.rooms.equipments.desk" },
+      { icon: Monitor, labelKey: "accommodations.rooms.equipments.desk" },
       {
         icon: WashingMachine,
         labelKey: "accommodations.rooms.equipments.commonWashingMachine",
@@ -305,11 +306,11 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
       {
-        icon: Wind,
+        icon: AirVent,
         labelKey: "accommodations.rooms.equipments.airConditioning",
       },
       {
-        icon: Bath,
+        icon: ShowerHead,
         labelKey: "accommodations.rooms.equipments.ShowerRoom",
       },
       {
@@ -317,10 +318,11 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.kettle",
       },
       {
+        icon: Shirt,
         labelKey: "accommodations.rooms.equipments.wardrobe",
       },
       {
-        icon: Table,
+        icon: Monitor,
         labelKey: "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs",
       },
       {
