@@ -123,7 +123,7 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: ShowerHead,
-        labelKey: "accommodations.rooms.equipments.ShowerRoom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoomMoroccan",
       },
       {
         icon: Baby,
@@ -192,7 +192,7 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: ShowerHead,
-        labelKey: "accommodations.rooms.equipments.ShowerRoom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoomAfrican",
       },
       {
         icon: Coffee,
@@ -253,7 +253,7 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: ShowerHead,
-        labelKey: "accommodations.rooms.equipments.ShowerRoom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoomTuscan",
       },
       {
         icon: Coffee,
@@ -311,7 +311,7 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: ShowerHead,
-        labelKey: "accommodations.rooms.equipments.ShowerRoom",
+        labelKey: "accommodations.rooms.equipments.ShowerRoomCreole",
       },
       {
         icon: Coffee,
