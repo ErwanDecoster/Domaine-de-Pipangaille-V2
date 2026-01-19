@@ -18,6 +18,7 @@ import leRelaisDesMaillesImg from '../images/le-relais-des-mailles.jpg';
 import lesAgaponRestaurantImg from '../images/les-agapon-restaurant.jpg';
 import montgolfieresCieImg from '../images/montgolfieres-cie.jpg';
 import museeDeLAlambicImg from '../images/musee-de-l-alambic.jpg';
+import museeValrhonaImg from '../images/musee-valrhona.jpg';
 import oDailyTruckImg from '../images/o-daily-truck.jpg';
 import palaisIdealDuFacteurChevalImg from '../images/palais-ideal-du-facteur-cheval.jpg';
 import safariPeaugresImg from '../images/safari-peaugres.jpg';
@@ -185,6 +186,38 @@ export const surroundings = {
       ],
       website: 'https://www.viafluvia.fr/',
       slug: 'viafluvia',
+    },
+    {
+      title: 'Cité du Chocolat Valrhôna',
+      category: [
+        'family',
+        'visit',
+        'loved',
+      ],
+      shortDesc: 'surroundings.descriptions.musee_valrhona.short',
+      longDesc: [
+        'surroundings.descriptions.musee_valrhona.long',
+      ],
+      gallery: [
+        {
+          src: museeValrhonaImg,
+          altKey: 'surroundings.musee_valrhona.gallery.image1',
+        },
+      ],
+      website: 'https://citeduchocolat.com/',
+      bookLink: 'https://linktr.ee/citeduchocolat',
+      mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.849525935534!2d4.840720676432278!3d45.068563459748944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5449ec36e3cc5%3A0x19f490edcfed10a1!2sCite%20du%20Chocolat%20Valrhona!5e0!3m2!1sen!2sfr!4v1768251979104!5m2!1sen!2sfr',
+      socialMedia: [
+        {
+          platform: 'facebook',
+          link: 'https://www.facebook.com/CiteDuChocolat/',
+        },
+        {
+          platform: 'instagram',
+          link: 'https://www.instagram.com/citeduchocolat/',
+        },
+      ],
+      slug: 'musee_valrhona',
     },
     {
       title: 'Lamas des Plaines',
