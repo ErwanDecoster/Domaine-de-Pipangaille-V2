@@ -296,4 +296,5 @@ export const fr = {
   'legalNotices.liability.interruption': 'Le visiteur est informé que l\'accès au Site pourra être interrompu à tout moment par la SAS Domaine de Pipangaille en raison de maintenance, de sécurité ou toute autre contrainte technique.',
   'legalNotices.law.title': 'Droit applicable',
   'legalNotices.law.text': 'Les présentes mentions sont régies par le droit français. Les juridictions françaises sont seules compétentes pour connaître tout litige se rapportant directement ou indirectement à l\'accès au présent Site ou à son utilisation.',
+  'mapProviderDialog.title': 'Ouvrir avec :',
 };

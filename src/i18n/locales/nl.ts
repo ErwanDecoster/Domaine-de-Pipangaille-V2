@@ -298,4 +298,5 @@ export const nl = {
   'legalNotices.liability.interruption': 'De bezoeker wordt ervan op de hoogte gesteld dat de toegang tot de Website op elk moment door SAS Domaine de Pipangaille kan worden onderbroken wegens onderhoud, beveiliging of enige andere technische beperking.',
   'legalNotices.law.title': 'Toepasselijk recht',
   'legalNotices.law.text': 'Deze juridische vermeldingen worden beheerst door Frans recht. Franse rechtbanken zijn exclusief bevoegd voor geschillen die rechtstreeks of onrechtstreeks betrekking hebben op toegang tot of gebruik van deze Website.',
+  'mapProviderDialog.title': 'Openen met:',
 };

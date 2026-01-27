@@ -1,0 +1,88 @@
+---
+import Dialog from "./ui/dialog/dialog.astro";
+import DialogContent from "./ui/dialog/dialog-content.astro";
+import DialogHeader from "./ui/dialog/dialog-header.astro";
+import DialogTitle from "./ui/dialog/dialog-title.astro";
+import DialogTrigger from "./ui/dialog/dialog-trigger.astro";
+import { useTranslations } from "@/lib/i18n";
+import { ui } from "@/i18n/ui";
+
+interface Props {
+  lang: keyof typeof ui;
+  address: string;
+  triggerText?: string;
+  triggerVariant?:
+    | "default"
+    | "destructive"
+    | "outline"
+    | "secondary"
+    | "ghost"
+    | "link";
+  triggerClass?: string;
+}
+
+const { lang, address, triggerText, triggerVariant, triggerClass } =
+  Astro.props;
+
+const t = useTranslations(lang);
+
+const encodedAddress = encodeURIComponent(address);
+
+const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+const appleMapsUrl = `https://maps.apple.com/?q=${encodedAddress}`;
+const wazeUrl = `https://www.waze.com/ul?q=${encodedAddress}&navigate=yes`;
+
+const providers = [
+  {
+    name: "Google Maps",
+    url: googleMapsUrl,
+  },
+  {
+    name: "Apple Plans",
+    url: appleMapsUrl,
+  },
+  {
+    name: "Waze",
+    url: wazeUrl,
+  },
+];
+---
+
+<Dialog>
+  <DialogTrigger variant={triggerVariant} class={triggerClass}>
+    {triggerText}
+  </DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>{t("mapProviderDialog.title")}</DialogTitle>
+    </DialogHeader>
+    <div class="flex flex-col gap-3 py-4">
+      {
+        providers.map((provider) => (
+          <a
+            href={provider.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 rounded-lg border border-border bg-background p-4 transition-colors hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+          >
+            <div class="flex-1">{provider.name}</div>
+            <svg
+              class="size-5 text-muted-foreground"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+        ))
+      }
+    </div>
+  </DialogContent>
+</Dialog>

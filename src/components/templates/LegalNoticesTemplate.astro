@@ -3,6 +3,7 @@ import { useTranslations } from "@/lib/i18n";
 import Layout from "@/layouts/Layout.astro";
 import { ui } from "@/i18n/ui";
 import Button from "../ui/button/button.astro";
+import MapProviderDialog from "@/components/MapProviderDialog.astro";
 
 const { lang } = Astro.props as { lang: keyof typeof ui };
 const t = useTranslations(lang);
@@ -15,9 +16,6 @@ const editorRcsValue = "904 638 814";
 const editorNafValue = "55202";
 const editorCapitalValue = "1500 €";
 const editorCeoValue = "Catherine Lemoine";
-const editorAddressUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  editorAddress,
-)}`;
 
 const designCompany = "Erwan Decoster";
 const designEmail = "contact@erwan-decoster.com";
@@ -51,17 +49,18 @@ const domainUrl = "https://hostinger.fr";
         <h2>{t("legalNotices.editor.title")}</h2>
         <div class="grid gap-2 text-lg">
           <p><strong>{editorCompany}</strong></p>
-          <p>
+          <div
+            class="flex items-center gap-2 text-base/[160%] text-muted-foreground text-pretty"
+          >
             <strong>{t("legalNotices.editor.addressLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={editorAddressUrl}
-              target="_blank"
-            >
-              {editorAddress}
-            </Button>
-          </p>
+            <MapProviderDialog
+              lang={lang}
+              address={editorAddress}
+              triggerText={editorAddress}
+              triggerVariant="link"
+              triggerClass="-mx-6 -my-4 inline-block"
+            />
+          </div>
           <p class="flex flex-wrap gap-6">
             <span
               ><strong>{t("legalNotices.editor.rcsLabel")}:</strong>
@@ -220,7 +219,9 @@ const domainUrl = "https://hostinger.fr";
         <div class="grid gap-2 text-lg">
           <p>{t("legalNotices.personalData.text")}</p>
           <p>{t("legalNotices.personalData.retention")}</p>
-          <p>
+          <div
+            class="flex flex-wrap items-center gap-2 text-base/[160%] text-muted-foreground text-pretty"
+          >
             {t("legalNotices.personalData.requestEmailPrefix")}
             <Button
               variant="link"
@@ -230,15 +231,14 @@ const domainUrl = "https://hostinger.fr";
               {editorEmail}
             </Button>
             {t("legalNotices.personalData.requestAddressPrefix")}
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={editorAddressUrl}
-              target="_blank"
-            >
-              {editorAddress}
-            </Button>
-          </p>
+            <MapProviderDialog
+              lang={lang}
+              address={editorAddress}
+              triggerText={editorAddress}
+              triggerVariant="link"
+              triggerClass="-mx-6 -my-4 inline-block"
+            />
+          </div>
         </div>
       </section>
 

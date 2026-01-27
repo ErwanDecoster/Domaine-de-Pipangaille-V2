@@ -296,4 +296,5 @@ export const en = {
   'legalNotices.liability.interruption': 'The visitor is informed that access to the Site may be interrupted at any time by SAS Domaine de Pipangaille due to maintenance, security or any other technical constraint.',
   'legalNotices.law.title': 'Applicable Law',
   'legalNotices.law.text': 'These legal notices are governed by French law. French courts are exclusively competent to hear any dispute relating directly or indirectly to access to or use of this Site.',
+  'mapProviderDialog.title': 'Open with:',
 };

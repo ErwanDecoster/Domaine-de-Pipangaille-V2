@@ -298,4 +298,5 @@ export const de = {
   'legalNotices.liability.interruption': 'Der Besucher wird darauf hingewiesen, dass der Zugriff auf die Website jederzeit durch die SAS Domaine de Pipangaille wegen Wartung, Sicherheit oder aus sonstigen technischen Gründen unterbrochen werden kann.',
   'legalNotices.law.title': 'Anwendbares Recht',
   'legalNotices.law.text': 'Diese Nutzungsbedingungen unterliegen französischem Recht. Französische Gerichte sind ausschließlich für alle Streitigkeiten zuständig, die sich direkt oder indirekt auf den Zugriff auf oder die Nutzung dieser Website beziehen.',
+  'mapProviderDialog.title': 'Öffnen mit:',
 };
