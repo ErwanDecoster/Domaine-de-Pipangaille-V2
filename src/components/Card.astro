@@ -2,6 +2,17 @@
 import { Image } from "astro:assets";
 import { Button } from "./ui/button";
 
+interface Props {
+  title: string;
+  image: ImageMetadata;
+  imageAlt: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+  tags?: { icon?: any; text: string }[];
+  class?: string;
+}
+
 const {
   title,
   image,
@@ -16,7 +27,7 @@ const {
 
 <article
   class={`space-y-4 relative bg-accent rounded-[16px] p-2 ${className}`}
-  style={`--card-image: url(${image});`}
+  style={`--card-image: url(${image.src});`}
 >
   <Image class="aspect-video" src={image} alt={imageAlt} />
   <div class="flex gap-2.5 absolute top-4 left-4">
