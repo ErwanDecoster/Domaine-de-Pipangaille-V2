@@ -1,6 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Button from "../ui/button/button.astro";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
+import type { Locale } from "@/i18n/routes";
+
+const { lang } = Astro.props as {
+  lang: Locale;
+};
+
+const t = useTranslations(lang);
+const homeUrl = getLocalizedUrl("home", lang);
 ---
 
 <Layout>
@@ -12,10 +21,12 @@ import Button from "../ui/button/button.astro";
   <div
     class="px-20 pb-24 md:w-4/5 justify-center flex flex-col mx-auto h-[80vh] max-w-4xl"
   >
-    <h1>404 Not Found</h1>
+    <h1>{t("notfound.title")}</h1>
     <div class="mt-12 flex flex-col gap-4">
-      The page you are looking for does not exist.
-      <Button class="ml-auto">Go back to home</Button>
+      {t("notfound.message")}
+      <Button class="ml-auto" href={homeUrl}>
+        {t("notfound.button")}
+      </Button>
     </div>
   </div>
 </Layout>

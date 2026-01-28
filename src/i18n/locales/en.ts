@@ -348,4 +348,8 @@ export const en = {
   'generalConditions.article13.content2': 'Acceptance and compliance with these terms of sale are deemed acquired as soon as the deposit is paid.',
   'generalConditions.article14.title': 'Article 14 - Information Technology and Freedoms Law',
   'generalConditions.article14.content1': 'In accordance with Law No. 78-17 of January 6, 1978 relating to information technology, files and freedoms, you have the right to access and correct data concerning you.',
-  'generalConditions.article14.content2': 'We undertake not to transmit the information you have communicated to us to any other companies or organizations.',};
+  'generalConditions.article14.content2': 'We undertake not to transmit the information you have communicated to us to any other companies or organizations.',
+  'notfound.title': '404 - Page Not Found',
+  'notfound.message': 'The page you are looking for does not exist.',
+  'notfound.button': 'Back to Home',
+};

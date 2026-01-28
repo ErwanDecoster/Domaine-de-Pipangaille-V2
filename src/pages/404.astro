@@ -1,6 +1,8 @@
 ---
 import NotFoundTemplate from "@/components/templates/NotFoundTemplate.astro";
-import { defaultLang } from "@/i18n/ui";
+import { getCurrentLang } from "@/lib/i18n";
+
+const lang = getCurrentLang(Astro.currentLocale);
 ---
 
-<NotFoundTemplate lang={defaultLang} />
+<NotFoundTemplate lang={lang} />

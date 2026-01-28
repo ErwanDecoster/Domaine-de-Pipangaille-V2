@@ -351,4 +351,7 @@ export const it = {
   'generalConditions.article14.title': 'Articolo 14 - Legge sull\'informatica e le libertà',
   'generalConditions.article14.content1': 'In conformità alla legge n° 78-17 del 6 gennaio 1978 relativa all\'informatica, ai file e alle libertà, avete il diritto di accedere e rettificare i dati che vi riguardano.',
   'generalConditions.article14.content2': 'Ci impegniamo a non trasmettere in alcun caso le informazioni che ci avete comunicato ad altre società od organismi.',
+  'notfound.title': '404 - Pagina non trovata',
+  'notfound.message': 'La pagina che cerchi non esiste.',
+  'notfound.button': 'Torna alla Home',
 };

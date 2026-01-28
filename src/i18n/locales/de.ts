@@ -351,4 +351,7 @@ export const de = {
   'generalConditions.article14.title': 'Artikel 14 - Informatik und Freiheitsgesetz',
   'generalConditions.article14.content1': 'Gemäß Gesetz Nr. 78-17 vom 6. Januar 1978 über Informatik, Dateien und Freiheiten haben Sie das Recht, auf Daten über Sie zuzugreifen und diese zu berichtigen.',
   'generalConditions.article14.content2': 'Wir verpflichten uns, die Informationen, die Sie uns mitgeteilt haben, keinesfalls an andere Unternehmen oder Organisationen weiterzugeben.',
+  'notfound.title': '404 - Seite nicht gefunden',
+  'notfound.message': 'Die gesuchte Seite existiert nicht.',
+  'notfound.button': 'Zurück zur Startseite',
 };

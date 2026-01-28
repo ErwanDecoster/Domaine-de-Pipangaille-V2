@@ -348,4 +348,8 @@ export const fr = {
   'generalConditions.article13.content2': 'L\'acceptation et le respect de ces conditions de vente sont réputés acquis aussitôt l\'acompte versé.',
   'generalConditions.article14.title': 'Article 14 - Loi informatique et liberté',
   'generalConditions.article14.content1': 'Conformément à la loi n° 78-17 du 6 janvier 1978 relative à l\'informatique, aux fichiers et aux libertés, vous bénéficiez d\'un droit d\'accès et de rectification aux données vous concernant.',
-  'generalConditions.article14.content2': 'Nous nous engageons à ne transmettre en aucun cas les informations que vous nous avez communiquées à d\'autres sociétés ou organismes.',};
+  'generalConditions.article14.content2': 'Nous nous engageons à ne transmettre en aucun cas les informations que vous nous avez communiquées à d\'autres sociétés ou organismes.',
+  'notfound.title': '404 - Page non trouvée',
+  'notfound.message': 'La page que vous recherchez n\'existe pas.',
+  'notfound.button': 'Retour à l\'accueil',
+};

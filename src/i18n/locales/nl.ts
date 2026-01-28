@@ -351,4 +351,7 @@ export const nl = {
   'generalConditions.article14.title': 'Artikel 14 - Wet informatica en vrijheden',
   'generalConditions.article14.content1': 'In overeenstemming met Wet nr. 78-17 van 6 januari 1978 betreffende informatica, dossiers en vrijheden hebt u het recht om gegevens over u in te zien en te corrigeren.',
   'generalConditions.article14.content2': 'Wij verplichten ons om informatie die u ons heeft verstrekt op geen enkele manier aan andere bedrijven of organisaties door te geven.',
+  'notfound.title': '404 - Pagina niet gevonden',
+  'notfound.message': 'De pagina die je zoekt bestaat niet.',
+  'notfound.button': 'Terug naar Home',
 };

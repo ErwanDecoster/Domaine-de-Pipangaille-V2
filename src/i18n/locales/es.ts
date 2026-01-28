@@ -344,4 +344,7 @@ export const es = {
   'generalConditions.article14.title': 'Artículo 14 - Ley de informática y libertades',
   'generalConditions.article14.content1': 'De conformidad con la Ley nº 78-17 de 6 de enero de 1978 sobre informática, archivos y libertades, tiene derecho a acceder y corregir datos sobre usted.',
   'generalConditions.article14.content2': 'Nos comprometemos a no transmitir la información que nos ha comunicado a ninguna otra empresa u organización.',
+  'notfound.title': '404 - Página no encontrada',
+  'notfound.message': 'La página que buscas no existe.',
+  'notfound.button': 'Volver al inicio',
 };
