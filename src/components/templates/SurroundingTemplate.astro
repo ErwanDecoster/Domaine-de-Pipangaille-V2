@@ -8,6 +8,7 @@ import Header from "../Header.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import Button from "../ui/button/button.astro";
 import PlatformIcon from "../ui/icons/PlatformIcon.astro";
+import NotFoundTemplate from "./NotFoundTemplate.astro";
 
 const { lang, surroundingName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -28,18 +29,18 @@ const otherSurroundings = surroundings[surroundingType].filter(
   (s) => s.slug !== surroundingName,
 );
 
-if (!surroundingsInToVisit && !surroundingsInToEat) {
-  throw new Error(`Unknown surrounding slug: ${surroundingName}`);
-}
+const isNotFound = !surroundingsInToVisit && !surroundingsInToEat;
 
-const baseSurrounding = surroundingsInToVisit ?? surroundingsInToEat!;
+const baseSurrounding = !isNotFound
+  ? (surroundingsInToVisit ?? surroundingsInToEat!)
+  : null;
 
-const selectedSurroundingDescription = t(
-  toKey(`surroundings.descriptions.${baseSurrounding.slug}.long`),
-);
-const selectedSurroundingImageAlt = t(
-  toKey(baseSurrounding.gallery?.[0]?.altKey ?? ""),
-);
+const selectedSurroundingDescription = baseSurrounding
+  ? t(toKey(`surroundings.descriptions.${baseSurrounding.slug}.long`))
+  : "";
+const selectedSurroundingImageAlt = baseSurrounding
+  ? t(toKey(baseSurrounding.gallery?.[0]?.altKey ?? ""))
+  : "";
 
 const otherSurroundingsTitle =
   surroundingType === "toVisit"
@@ -57,102 +58,106 @@ const seeAllButtonLink =
     : getLocalizedUrl("surroundings", lang);
 ---
 
-<Layout>
-  <div
-    data-scroll-animated
-    class="h-28 w-screen sticky top-0 z-10 bg-background"
-  >
-  </div>
+{
+  isNotFound ? (
+    <NotFoundTemplate lang={lang} />
+  ) : (
+    <Layout>
+      <div
+        data-scroll-animated
+        class="h-28 w-screen sticky top-0 z-10 bg-background"
+      />
 
-  <Header
-    title={baseSurrounding.title}
-    text={selectedSurroundingDescription}
-    image={baseSurrounding.gallery?.[1]?.src ??
-      baseSurrounding.gallery?.[0]?.src}
-    imageAlt={selectedSurroundingImageAlt}
-    buttonText={t("surroundings.detail.visitWebsite")}
-    buttonLink={baseSurrounding.website ?? ""}
-    buttonExternal={true}
-    buttonVariant="secondary"
-    withBackground={false}
-  />
-
-  <MediaContent
-    title={t("surroundings.detail.moreInfo.title")}
-    text=""
-    iframeUrl={baseSurrounding.mapsUrl}
-    direction="left"
-  >
-    <div class="mt-8 grid gap-8">
-      {
-        baseSurrounding?.socialMedia &&
-          baseSurrounding?.socialMedia?.length > 0 && (
-            <div>
-              <h3 class="text-2xl">
-                {t("surroundings.detail.socialNetworks")}
-              </h3>
-              <ul>
-                <li>
-                  {baseSurrounding.socialMedia.map((social) => (
-                    <Button
-                      class="-ml-4"
-                      variant="link"
-                      href={social.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <PlatformIcon platform={social.platform} class="size-4" />
-                      {social.platform}
-                    </Button>
-                  ))}
-                </li>
-              </ul>
-            </div>
-          )
-      }
-      <div class="flex gap-6">
-        {
-          baseSurrounding.bookLink ? (
-            <Button external href={baseSurrounding.bookLink}>
-              {t("surroundings.detail.book")}
-            </Button>
-          ) : null
+      <Header
+        title={baseSurrounding?.title ?? ""}
+        text={selectedSurroundingDescription}
+        image={
+          baseSurrounding?.gallery?.[1]?.src ??
+          baseSurrounding?.gallery?.[0]?.src
         }
-        {
-          baseSurrounding.website ? (
-            <Button variant="outline" external href={baseSurrounding.website}>
-              {t("surroundings.detail.visitWebsite")}
-            </Button>
-          ) : null
-        }
-      </div>
-    </div>
-  </MediaContent>
+        imageAlt={selectedSurroundingImageAlt}
+        buttonText={t("surroundings.detail.visitWebsite")}
+        buttonLink={baseSurrounding?.website ?? ""}
+        buttonExternal={true}
+        buttonVariant="secondary"
+        withBackground={false}
+      />
 
-  <section class="grid grid-cols-3 gap-8 md:gap-10 px-20 mt-48">
-    <h2 class="col-span-3">{t(otherSurroundingsTitle)}</h2>
-    {
-      otherSurroundings.slice(0, 3).map((surrounding) => (
-        <Card
-          key={surrounding.slug}
-          title={surrounding.title}
-          image={surrounding.gallery?.[0]?.src}
-          imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
-          description={
-            surrounding.shortDesc ? t(toKey(surrounding.shortDesc)) : undefined
-          }
-          tags={(surrounding as { category?: string[] }).category?.map(
-            (cat) => ({
-              text: t(toKey(`surroundings.category.${cat}`)),
-            }),
-          )}
-          buttonText={surroundingButtonText}
-          buttonLink={getLocalizedUrl("surrounding", lang, surrounding.slug)}
-        />
-      ))
-    }
-    <Button class="mx-auto col-span-3" href={seeAllButtonLink}>
-      {t(seeAllButtonText)}
-    </Button>
-  </section>
-</Layout>
+      <MediaContent
+        title={t("surroundings.detail.moreInfo.title")}
+        text=""
+        iframeUrl={baseSurrounding?.mapsUrl ?? ""}
+        direction="left"
+      >
+        <div class="mt-8 grid gap-8">
+          {baseSurrounding?.socialMedia &&
+            baseSurrounding?.socialMedia?.length > 0 && (
+              <div>
+                <h3 class="text-2xl">
+                  {t("surroundings.detail.socialNetworks")}
+                </h3>
+                <ul>
+                  <li>
+                    {baseSurrounding.socialMedia.map((social) => (
+                      <Button
+                        class="-ml-4"
+                        variant="link"
+                        href={social.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <PlatformIcon
+                          platform={social.platform}
+                          class="size-4"
+                        />
+                        {social.platform}
+                      </Button>
+                    ))}
+                  </li>
+                </ul>
+              </div>
+            )}
+          <div class="flex gap-6">
+            {baseSurrounding?.bookLink ? (
+              <Button external href={baseSurrounding.bookLink}>
+                {t("surroundings.detail.book")}
+              </Button>
+            ) : null}
+            {baseSurrounding?.website ? (
+              <Button variant="outline" external href={baseSurrounding.website}>
+                {t("surroundings.detail.visitWebsite")}
+              </Button>
+            ) : null}
+          </div>
+        </div>
+      </MediaContent>
+
+      <section class="grid grid-cols-3 gap-8 md:gap-10 px-20 mt-48">
+        <h2 class="col-span-3">{t(otherSurroundingsTitle)}</h2>
+        {otherSurroundings.slice(0, 3).map((surrounding) => (
+          <Card
+            key={surrounding.slug}
+            title={surrounding.title}
+            image={surrounding.gallery?.[0]?.src}
+            imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
+            description={
+              surrounding.shortDesc
+                ? t(toKey(surrounding.shortDesc))
+                : undefined
+            }
+            tags={(surrounding as { category?: string[] }).category?.map(
+              (cat) => ({
+                text: t(toKey(`surroundings.category.${cat}`)),
+              }),
+            )}
+            buttonText={surroundingButtonText}
+            buttonLink={getLocalizedUrl("surrounding", lang, surrounding.slug)}
+          />
+        ))}
+        <Button class="mx-auto col-span-3" href={seeAllButtonLink}>
+          {t(seeAllButtonText)}
+        </Button>
+      </section>
+    </Layout>
+  )
+}

@@ -3,7 +3,6 @@
 ## SEO & Configuration
 - [ ] Add sitemap
 - [ ] Update robot.txt
-- [ ] Add redirect for 404 page
 - [ ] Check all alt text
 
 ## Translations
@@ -24,3 +23,6 @@
 
 ## UI/UX
 - [ ] Add book overlay
+
+## book
+- [ ] add book page

@@ -9,6 +9,7 @@ import { Image } from "astro:assets";
 import tableDHotes from "@/images/table-d-hotes.JPG";
 import pool from "@/images/pool.jpeg";
 import courtyardTerraceCorner from "@/images/courtyard-terrace-corner.jpeg";
+import NotFoundTemplate from "./NotFoundTemplate.astro";
 
 const { lang, roomName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -18,14 +19,11 @@ const t = useTranslations(lang);
 const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
 
 const baseRoom = roomsContent.find((room) => room.key === roomName);
-
-if (!baseRoom) {
-  throw new Error(`Unknown room slug: ${roomName}`);
-}
+const isNotFound = !baseRoom;
 
 const roomButtonText = t("accommodations.rooms.button");
 const equipmentsTitle = t("accommodations.detail.equipments.title");
-const equipmentsNote = baseRoom.equipmentsNoteKey
+const equipmentsNote = baseRoom?.equipmentsNoteKey
   ? t(toTranslationKey(baseRoom.equipmentsNoteKey))
   : undefined;
 const tableTitle = t("accommodations.detail.table.title");
@@ -34,19 +32,25 @@ const exploreTitle = t("accommodations.detail.explore.title");
 const exploreText = t("accommodations.detail.explore.text");
 const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
 
-const selectedRoomTitle = t(`accommodations.rooms.${baseRoom.key}.title`);
-const selectedRoomLongDescription = t(
-  `accommodations.rooms.${baseRoom.key}.longDescription`,
-);
-const galleryImages = baseRoom.gallery.map((image) => ({
-  src: image.src,
-  alt: t(toTranslationKey(image.altKey)),
-}));
+const selectedRoomTitle = baseRoom
+  ? t(`accommodations.rooms.${baseRoom.key}.title`)
+  : "";
+const selectedRoomLongDescription = baseRoom
+  ? t(`accommodations.rooms.${baseRoom.key}.longDescription`)
+  : "";
+const galleryImages = baseRoom
+  ? baseRoom.gallery.map((image) => ({
+      src: image.src,
+      alt: t(toTranslationKey(image.altKey)),
+    }))
+  : [];
 
-const selectedRoomEquipments = baseRoom.equipments.map((equipment) => ({
-  icon: equipment.icon,
-  text: t(toTranslationKey(equipment.labelKey)),
-}));
+const selectedRoomEquipments = baseRoom
+  ? baseRoom.equipments.map((equipment) => ({
+      icon: equipment.icon,
+      text: t(toTranslationKey(equipment.labelKey)),
+    }))
+  : [];
 const otherRooms = roomsContent
   .filter((room) => room.key !== roomName)
   .map((room) => ({
@@ -63,94 +67,93 @@ const otherRooms = roomsContent
   }));
 ---
 
-<Layout>
-  <div
-    data-scroll-animated
-    class="h-28 w-screen sticky top-0 z-10 bg-background"
-  >
-  </div>
-  <div class="px-20 pt-24">
-    <h1>{selectedRoomTitle}</h1>
-    <p class="mt-12 md:w-4/5 max-w-4xl">{selectedRoomLongDescription}</p>
-  </div>
+{
+  isNotFound ? (
+    <NotFoundTemplate lang={lang} />
+  ) : (
+    <Layout>
+      <div
+        data-scroll-animated
+        class="h-28 w-screen sticky top-0 z-10 bg-background"
+      />
+      <div class="px-20 pt-24">
+        <h1>{selectedRoomTitle}</h1>
+        <p class="mt-12 md:w-4/5 max-w-4xl">{selectedRoomLongDescription}</p>
+      </div>
 
-  <div class="grid grid-cols-4 gap-6 px-20 mt-12">
-    <Image
-      class="col-span-2 row-span-2 h-full"
-      src={galleryImages[0].src}
-      alt={galleryImages[0].alt}
-    />
-    <Image
-      class="aspect-4/3"
-      src={galleryImages[1].src}
-      alt={galleryImages[1].alt}
-    />
-    <Image
-      class="aspect-4/3"
-      src={galleryImages[2].src}
-      alt={galleryImages[2].alt}
-    />
-    <Image
-      class="aspect-4/3"
-      src={galleryImages[3].src}
-      alt={galleryImages[3].alt}
-    />
-    <Image
-      class="aspect-4/3"
-      src={galleryImages[4].src}
-      alt={galleryImages[4].alt}
-    />
-  </div>
-
-  <section class="px-20 pt-48">
-    <h2>{equipmentsTitle}</h2>
-    <ul class="w-full lg:w-4/5 grid sm:grid-cols-2 md:grid-cols-3 gap-1 mt-12">
-      {
-        selectedRoomEquipments.map((equip) => (
-          <li class="flex items-center gap-2">
-            {equip.icon && <equip.icon size={16} />}
-            <span>{equip.text}</span>
-          </li>
-        ))
-      }
-    </ul>
-    {
-      equipmentsNote && (
-        <p class="p-4 rounded-lg bg-muted mt-8">{equipmentsNote}</p>
-      )
-    }
-  </section>
-
-  <MediaContent
-    title={tableTitle}
-    text={tableText}
-    image={tableDHotes}
-    ratio="4-5"
-  />
-
-  <section class="pt-48 px-20">
-    <h2>{exploreTitle}</h2>
-    <p class="mt-8">{exploreText}</p>
-    <div class="grid grid-cols-2 gap-6 mt-12">
-      <Image class="aspect-video" src={pool} alt="TODO" />
-      <Image class="aspect-video" src={courtyardTerraceCorner} alt="TODO" />
-    </div>
-  </section>
-
-  <section class="grid grid-cols-3 gap-8 md:gap-10 px-20 mt-48">
-    <h2 class="col-span-3">{otherRoomsTitle}</h2>
-    {
-      otherRooms.map((room) => (
-        <Card
-          title={room.title}
-          image={room.image}
-          imageAlt={room.imageAlt}
-          description={room.description}
-          tags={room.tags}
-          buttonText={roomButtonText}
-          buttonLink={room.buttonLink}
+      <div class="grid grid-cols-4 gap-6 px-20 mt-12">
+        <Image
+          class="col-span-2 row-span-2 h-full"
+          src={galleryImages[0].src}
+          alt={galleryImages[0].alt}
         />
-      ))
-    }
-  </section>
-</Layout>
+        <Image
+          class="aspect-4/3"
+          src={galleryImages[1].src}
+          alt={galleryImages[1].alt}
+        />
+        <Image
+          class="aspect-4/3"
+          src={galleryImages[2].src}
+          alt={galleryImages[2].alt}
+        />
+        <Image
+          class="aspect-4/3"
+          src={galleryImages[3].src}
+          alt={galleryImages[3].alt}
+        />
+        <Image
+          class="aspect-4/3"
+          src={galleryImages[4].src}
+          alt={galleryImages[4].alt}
+        />
+      </div>
+
+      <section class="px-20 pt-48">
+        <h2>{equipmentsTitle}</h2>
+        <ul class="w-full lg:w-4/5 grid sm:grid-cols-2 md:grid-cols-3 gap-1 mt-12">
+          {selectedRoomEquipments.map((equip) => (
+            <li class="flex items-center gap-2">
+              {equip.icon && <equip.icon size={16} />}
+              <span>{equip.text}</span>
+            </li>
+          ))}
+        </ul>
+        {equipmentsNote && (
+          <p class="p-4 rounded-lg bg-muted mt-8">{equipmentsNote}</p>
+        )}
+      </section>
+
+      <MediaContent
+        title={tableTitle}
+        text={tableText}
+        image={tableDHotes}
+        ratio="4-5"
+      />
+
+      <section class="pt-48 px-20">
+        <h2>{exploreTitle}</h2>
+        <p class="mt-8">{exploreText}</p>
+        <div class="grid grid-cols-2 gap-6 mt-12">
+          <Image class="aspect-video" src={pool} alt="TODO" />
+          <Image class="aspect-video" src={courtyardTerraceCorner} alt="TODO" />
+        </div>
+      </section>
+
+      <section class="grid grid-cols-3 gap-8 md:gap-10 px-20 mt-48">
+        <h2 class="col-span-3">{otherRoomsTitle}</h2>
+        {otherRooms.map((room) => (
+          <Card
+            title={room.title}
+            image={room.image}
+            imageAlt={room.imageAlt}
+            description={room.description}
+            tags={room.tags}
+            buttonText={roomButtonText}
+            buttonLink={room.buttonLink}
+          />
+        ))}
+      </section>
+    </Layout>
+  )
+}
