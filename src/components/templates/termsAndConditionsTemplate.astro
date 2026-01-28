@@ -1,0 +1,174 @@
+---
+import { useTranslations } from "@/lib/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { ui } from "@/i18n/ui";
+import Button from "../ui/button/button.astro";
+
+const { lang } = Astro.props as { lang: keyof typeof ui };
+const t = useTranslations(lang);
+
+const phoneNumber = "+33475682824";
+const phoneNumberFormatted = "+33 4 75 68 28 24";
+---
+
+<Layout>
+  <main class="max-w-7xl w-full mx-auto px-4 grid gap-8 py-16">
+    <div
+      data-scroll-animated
+      class="h-28 w-screen sticky top-0 z-10 bg-background"
+    >
+    </div>
+
+    <div class="grid gap-2">
+      <h1>{t("generalConditions.title")}</h1>
+      <p class="text-xl text-muted-foreground">{t("generalConditions.subtitle")}</p>
+    </div>
+
+    <div class="grid gap-8">
+      <!-- ARTICLE 1 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article1.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article1.content")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 2 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article2.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article2.content1")}</p>
+          <p>{t("generalConditions.article2.content2")}</p>
+          <p>{t("generalConditions.article2.content3")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 3 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article3.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article3.content1")}</p>
+          <p>{t("generalConditions.article3.content2")}</p>
+          <p>{t("generalConditions.article3.content3")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 4 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article4.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article4.content1")}</p>
+          <p>{t("generalConditions.article4.content2")}</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li>{t("generalConditions.article4.bullet1")}</li>
+            <li>{t("generalConditions.article4.bullet2")}</li>
+          </ul>
+          <p>{t("generalConditions.article4.content3")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 5 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article5.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article5.content1")}</p>
+          <p>{t("generalConditions.article5.content2")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 6 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article6.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article6.content1")}</p>
+          <p>{t("generalConditions.article6.content2")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 7 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article7.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article7.content1")}</p>
+          <p>
+            {t("generalConditions.article7.content2")}
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`tel:${phoneNumber}`}
+            >
+              {phoneNumberFormatted}
+            </Button>
+            {t("generalConditions.article7.content3")}
+          </p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 8 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article8.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article8.content")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 9 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article9.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article9.content1")}</p>
+          <p>{t("generalConditions.article9.content2")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 10 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article10.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article10.content1")}</p>
+          <p>{t("generalConditions.article10.content2")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 11 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article11.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article11.content")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 12 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article12.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article12.content1")}</p>
+          <p>{t("generalConditions.article12.content2")}</p>
+          <p>{t("generalConditions.article12.content3")}</p>
+          <p>{t("generalConditions.article12.content4")}</p>
+          <p>{t("generalConditions.article12.content5")}</p>
+          <p>{t("generalConditions.article12.content6")}</p>
+          <p>{t("generalConditions.article12.content7")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 13 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article13.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article13.content1")}</p>
+          <p>{t("generalConditions.article13.content2")}</p>
+        </div>
+      </section>
+
+      <!-- ARTICLE 14 -->
+      <section class="grid gap-4">
+        <h2 class="text-2xl font-bold uppercase">{t("generalConditions.article14.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("generalConditions.article14.content1")}</p>
+          <p>{t("generalConditions.article14.content2")}</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
