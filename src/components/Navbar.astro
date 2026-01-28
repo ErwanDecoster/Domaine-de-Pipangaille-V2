@@ -58,9 +58,13 @@ const t = useTranslations(lang);
       <LanguageSwitcher class="w-full max-w-xs" />
     </li>
     <li>
-      <Button variant="outline" href={getLocalizedUrl("contact", lang)}
-        >{t("nav.contact")}</Button
+      <Button
+        variant="outline"
+        class="bg-transparent hover:bg-background"
+        href={getLocalizedUrl("contact", lang)}
       >
+        {t("nav.contact")}
+      </Button>
     </li>
     <li>
       <Button href={getLocalizedUrl("book", lang)}>{t("nav.book")}</Button>
