@@ -1,9 +1,11 @@
 ---
-import Dialog from "./ui/dialog/dialog.astro";
-import DialogContent from "./ui/dialog/dialog-content.astro";
-import DialogHeader from "./ui/dialog/dialog-header.astro";
-import DialogTitle from "./ui/dialog/dialog-title.astro";
-import DialogTrigger from "./ui/dialog/dialog-trigger.astro";
+import {
+  DialogTrigger,
+  DialogTitle,
+  DialogHeader,
+  DialogContent,
+  Dialog,
+} from "./ui/dialog/index.astro";
 import { useTranslations } from "@/lib/i18n";
 import { ui } from "@/i18n/ui";
 
@@ -25,6 +27,7 @@ const { lang, address, triggerText, triggerVariant, triggerClass } =
   Astro.props;
 
 const t = useTranslations(lang);
+const slot = await Astro.slots.render("default");
 
 const encodedAddress = encodeURIComponent(address);
 
@@ -50,7 +53,7 @@ const providers = [
 
 <Dialog>
   <DialogTrigger variant={triggerVariant} class={triggerClass}>
-    {triggerText}
+    {slot ? <Fragment set:html={slot} /> : triggerText}
   </DialogTrigger>
   <DialogContent>
     <DialogHeader>
