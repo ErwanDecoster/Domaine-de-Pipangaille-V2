@@ -6,7 +6,7 @@ import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import ReviewList from "@/components/ReviewList.astro";
 import Card from "@/components/Card.astro";
-import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import { surroundings } from "@/constants/surroundings";
 
@@ -16,7 +16,6 @@ import gardenCheeseAndCharcuterieBoard from "@/images/garden-cheese-and-charcute
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 
 type TranslationKey = Parameters<typeof t>[0];
 const toKey = (key: string) => key as TranslationKey;
@@ -34,7 +33,7 @@ const formatCard = (item: (typeof surroundings.toVisit)[number]) => {
       text: t(toKey(`surroundings.category.${cat}`)),
     })),
     buttonText: t("surroundings.card.cta"),
-    buttonLink: translatePath(`/surrounding/${item.slug}`),
+    buttonLink: getLocalizedUrl("surrounding", lang, item.slug),
   };
 };
 
@@ -60,7 +59,7 @@ const featuredSurroundings = featuredSlugs
     image={courtyardTerraceLawn}
     imageAlt="TODO"
     buttonText={t("home.header.button")}
-    buttonLink={translatePath("/the-place")}
+    buttonLink={getLocalizedUrl("place", lang)}
   />
   <div
     data-scroll-animated
@@ -74,7 +73,7 @@ const featuredSurroundings = featuredSlugs
     image={moroccanRoomFrenchDoor}
     imageAlt="TODO"
     buttonText={t("home.rooms.button")}
-    buttonLink={translatePath("/accommodations")}
+    buttonLink={getLocalizedUrl("accommodations", lang)}
   />
   <MediaContent
     title={t("home.counter.title")}
@@ -82,7 +81,7 @@ const featuredSurroundings = featuredSlugs
     image={gardenCheeseAndCharcuterieBoard}
     imageAlt="TODO"
     buttonText={t("home.counter.button")}
-    buttonLink={translatePath("/the-counter")}
+    buttonLink={getLocalizedUrl("counter", lang)}
   />
   <ReviewList title={t("home.reviews.title")} reviews={reviews[lang]} />
   <section class="grid grid-cols-6 gap-8 md:gap-10 px-20 mt-48">
@@ -96,7 +95,7 @@ const featuredSurroundings = featuredSlugs
       })
     }
     <Button
-      href={translatePath("/surroundings")}
+      href={getLocalizedUrl("surroundings", lang)}
       class="col-span-6 mx-auto mt-6"
     >
       {t("home.surroundings.button")}

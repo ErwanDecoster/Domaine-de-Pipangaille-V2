@@ -1,14 +1,13 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Card from "@/components/Card.astro";
-import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { surroundings } from "@/constants/surroundings";
 import { languages } from "@/i18n/ui";
 import { Button } from "../ui/button";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 
 type TranslationKey = Parameters<typeof t>[0];
 const toKey = (key: string) => key as TranslationKey;
@@ -18,7 +17,7 @@ const ITEMS_PER_PAGE = 6;
 const formatCard = (
   item:
     | (typeof surroundings.toVisit)[number]
-    | (typeof surroundings.toEat)[number]
+    | (typeof surroundings.toEat)[number],
 ) => {
   const categories = (item as { category?: string[] }).category ?? [];
   const firstImage = item.gallery?.[0];
@@ -34,7 +33,7 @@ const formatCard = (
     })),
     categories,
     buttonText: t("surroundings.card.cta"),
-    buttonLink: translatePath(`/surrounding/${item.slug}`),
+    buttonLink: getLocalizedUrl("surrounding", lang, item.slug),
   };
 };
 
@@ -72,7 +71,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
         variant="outline"
         data-value=""
         size="sm"
-        onClick="window.surroundings.handleFilterClick(event)"
+        onclick="window.surroundings.handleFilterClick(event)"
       >
         {t("surroundings.filter.all")}
       </Button>
@@ -83,7 +82,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
             variant="ghost"
             data-value={category}
             size="sm"
-            onClick="window.surroundings.handleFilterClick(event)"
+            onclick="window.surroundings.handleFilterClick(event)"
           >
             {t(toKey(`surroundings.category.${category}`))}
           </Button>
@@ -113,7 +112,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
           <Button
             variant="link"
             data-page={String(index + 1)}
-            onClick="window.surroundings.handleActivityPageClick(event)"
+            onclick="window.surroundings.handleActivityPageClick(event)"
           >
             {index + 1}
           </Button>
@@ -148,7 +147,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
           <Button
             variant="link"
             data-page={String(index + 1)}
-            onClick="window.surroundings.handleRestaurantPageClick(event)"
+            onclick="window.surroundings.handleRestaurantPageClick(event)"
           >
             {index + 1}
           </Button>
@@ -159,18 +158,28 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
 </Layout>
 
 <script>
+  declare global {
+    interface Window {
+      surroundings: {
+        handleFilterClick: (e: Event) => void;
+        handleActivityPageClick: (e: Event) => void;
+        handleRestaurantPageClick: (e: Event) => void;
+      };
+    }
+  }
+
   const ITEMS_PER_PAGE = 6;
   const activitiesCards = Array.from(
-    document.querySelectorAll<HTMLElement>("[data-kind='activity']")
+    document.querySelectorAll<HTMLElement>("[data-kind='activity']"),
   );
   const restaurantsCards = Array.from(
-    document.querySelectorAll<HTMLElement>("[data-kind='restaurant']")
+    document.querySelectorAll<HTMLElement>("[data-kind='restaurant']"),
   );
   const activitiesNav = document.querySelector<HTMLElement>(
-    "[data-nav='activities']"
+    "[data-nav='activities']",
   );
   const restaurantsNav = document.querySelector<HTMLElement>(
-    "[data-nav='restaurants']"
+    "[data-nav='restaurants']",
   );
 
   const params = new URLSearchParams(window.location.search);
@@ -183,7 +192,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
   const paginateCards = (
     cards: HTMLElement[],
     page: number,
-    nav: HTMLElement | null
+    nav: HTMLElement | null,
   ) => {
     const maxPage = Math.max(1, Math.ceil(cards.length / ITEMS_PER_PAGE));
     const safePage = Math.min(page, maxPage);
@@ -207,14 +216,14 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
   const applyState = () => {
     const filteredActivities = state.category
       ? activitiesCards.filter((card) =>
-          (card.dataset.categories || "").split(",").includes(state.category!)
+          (card.dataset.categories || "").split(",").includes(state.category!),
         )
       : activitiesCards;
 
     state.activitiesPage = paginateCards(
       filteredActivities,
       state.activitiesPage,
-      activitiesNav
+      activitiesNav,
     );
     activitiesCards
       .filter((c) => !filteredActivities.includes(c))
@@ -223,19 +232,19 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
     state.restaurantsPage = paginateCards(
       restaurantsCards,
       state.restaurantsPage,
-      restaurantsNav
+      restaurantsNav,
     );
 
     document.querySelectorAll<HTMLElement>("[data-value]").forEach((btn) => {
       btn.classList.toggle(
         "is-active",
-        (btn.dataset.value || null) === (state.category || null)
+        (btn.dataset.value || null) === (state.category || null),
       );
     });
 
     const url = new URL(window.location.href);
     ["category", "activitiesPage", "restaurantsPage"].forEach((k) =>
-      url.searchParams.delete(k)
+      url.searchParams.delete(k),
     );
     if (state.category) url.searchParams.set("category", state.category);
     if (state.activitiesPage > 1)

@@ -1,0 +1,8 @@
+---
+import { getCurrentLang } from "@/lib/i18n";
+import ThePlaceTemplate from "@/components/templates/ThePlaceTemplate.astro";
+
+const lang = getCurrentLang(Astro.currentLocale);
+---
+
+<ThePlaceTemplate lang={lang} />

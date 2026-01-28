@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import MediaContent from "@/components/MediaContent.astro";
-import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import Button from "../ui/button/button.astro";
 import type { reviews } from "@/constants/reviews";
 import Field from "@/components/ui/field/field.astro";
@@ -16,7 +16,6 @@ import MapProviderDialog from "../MapProviderDialog.astro";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 
 const placeAddress = "1 Quartier Les Marettes, 26140, Andancette";
 
@@ -33,7 +32,11 @@ const result = Astro.getActionResult(actions.contact.send);
     <h1>{t("contact.title")}</h1>
     <p class="p-4 rounded-lg bg-muted mt-12">
       {t("contact.reservation.textBefore")}
-      <Button class="inline -mx-6" variant="link" href={translatePath("/book")}>
+      <Button
+        class="inline -mx-6"
+        variant="link"
+        href={getLocalizedUrl("book", lang)}
+      >
         {t("nav.book")}
       </Button>
       {t("contact.reservation.textAfter")}

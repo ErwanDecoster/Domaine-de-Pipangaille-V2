@@ -2,13 +2,12 @@
 import { Button } from "./ui/button";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
 import Logo from "@/assets/DP_LogoText_black.svg";
-import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getCurrentLang, getLocalizedUrl } from "@/lib/i18n";
 import { Image } from "astro:assets";
 import PlatformIcon from "./ui/icons/PlatformIcon.astro";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = getCurrentLang(Astro.currentLocale);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <footer class="p-16 space-y-48 bg-primary mt-16">
@@ -87,22 +86,32 @@ const translatePath = useTranslatedPath(lang);
       <h5>{t("footer.moreInfo")}</h5>
       <ul>
         <li>
-          <Button variant="link" class="-ml-6 py-2" href="/the-place"
-            >{t("nav.place")}</Button
+          <Button
+            variant="link"
+            class="-ml-6 py-2"
+            href={getLocalizedUrl("place", lang)}>{t("nav.place")}</Button
           >
         </li>
         <li>
-          <Button variant="link" class="-ml-6 py-2" href="/accommodations"
+          <Button
+            variant="link"
+            class="-ml-6 py-2"
+            href={getLocalizedUrl("accommodations", lang)}
             >{t("nav.accommodations")}</Button
           >
         </li>
         <li>
-          <Button variant="link" class="-ml-6 py-2" href="/the-counter"
-            >{t("nav.counter")}</Button
+          <Button
+            variant="link"
+            class="-ml-6 py-2"
+            href={getLocalizedUrl("counter", lang)}>{t("nav.counter")}</Button
           >
         </li>
         <li>
-          <Button variant="link" class="-ml-6 py-2" href="/surroundings"
+          <Button
+            variant="link"
+            class="-ml-6 py-2"
+            href={getLocalizedUrl("surroundings", lang)}
             >{t("nav.surroundings")}</Button
           >
         </li>
@@ -125,7 +134,10 @@ const translatePath = useTranslatedPath(lang);
           >
         </li>
         <li>
-          <Button variant="link" class="-ml-6 py-2" href="/contact"
+          <Button
+            variant="link"
+            class="-ml-6 py-2"
+            href={getLocalizedUrl("contact", lang)}
             >{t("footer.contactPage")}</Button
           >
         </li>
@@ -135,12 +147,14 @@ const translatePath = useTranslatedPath(lang);
   <div>
     <ul class="flex justify-center items-center">
       <li>
-        <Button variant="link" href={translatePath("/legal-notices")}
+        <Button variant="link" href={getLocalizedUrl("legalNotices", lang)}
           >{t("footer.legalMentions")}</Button
         >
       </li>
       <li>
-        <Button variant="link" href={translatePath("/terms-and-conditions")}
+        <Button
+          variant="link"
+          href={getLocalizedUrl("termsAndConditions", lang)}
           >{t("footer.salesConditions")}</Button
         >
       </li>

@@ -1,0 +1,8 @@
+---
+import { getCurrentLang } from "@/lib/i18n";
+import LegalNoticesTemplate from "@/components/templates/LegalNoticesTemplate.astro";
+
+const lang = getCurrentLang(Astro.currentLocale);
+---
+
+<LegalNoticesTemplate lang={lang} />

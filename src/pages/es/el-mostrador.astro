@@ -1,0 +1,8 @@
+---
+import { getCurrentLang } from "@/lib/i18n";
+import TheCounterTemplate from "@/components/templates/TheCounterTemplate.astro";
+
+const lang = getCurrentLang(Astro.currentLocale);
+---
+
+<TheCounterTemplate lang={lang} />

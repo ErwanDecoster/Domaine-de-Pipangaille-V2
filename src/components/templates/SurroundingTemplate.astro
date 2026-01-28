@@ -5,7 +5,7 @@ import { reviews } from "@/constants/reviews";
 import { surroundings } from "@/constants/surroundings";
 import Card from "../Card.astro";
 import Header from "../Header.astro";
-import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import Button from "../ui/button/button.astro";
 import PlatformIcon from "../ui/icons/PlatformIcon.astro";
 
@@ -15,18 +15,17 @@ const { lang, surroundingName } = Astro.props as {
 };
 
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 const toKey = (key: string) => key as Parameters<typeof t>[0];
 
 const surroundingsInToVisit = surroundings.toVisit.find(
-  (surrounding) => surrounding.slug === surroundingName
+  (surrounding) => surrounding.slug === surroundingName,
 );
 const surroundingsInToEat = surroundings.toEat.find(
-  (surrounding) => surrounding.slug === surroundingName
+  (surrounding) => surrounding.slug === surroundingName,
 );
 const surroundingType = surroundingsInToVisit ? "toVisit" : "toEat";
 const otherSurroundings = surroundings[surroundingType].filter(
-  (s) => s.slug !== surroundingName
+  (s) => s.slug !== surroundingName,
 );
 
 if (!surroundingsInToVisit && !surroundingsInToEat) {
@@ -36,10 +35,10 @@ if (!surroundingsInToVisit && !surroundingsInToEat) {
 const baseSurrounding = surroundingsInToVisit ?? surroundingsInToEat!;
 
 const selectedSurroundingDescription = t(
-  toKey(`surroundings.descriptions.${baseSurrounding.slug}.long`)
+  toKey(`surroundings.descriptions.${baseSurrounding.slug}.long`),
 );
 const selectedSurroundingImageAlt = t(
-  toKey(baseSurrounding.gallery?.[0]?.altKey ?? "")
+  toKey(baseSurrounding.gallery?.[0]?.altKey ?? ""),
 );
 
 const otherSurroundingsTitle =
@@ -54,8 +53,8 @@ const seeAllButtonText =
     : toKey("surroundings.detail.seeAllRestaurants");
 const seeAllButtonLink =
   surroundingType === "toEat"
-    ? translatePath("/surroundings#to-eat")
-    : translatePath("/surroundings");
+    ? getLocalizedUrl("surroundings", lang) + "#to-eat"
+    : getLocalizedUrl("surroundings", lang);
 ---
 
 <Layout>
@@ -145,10 +144,10 @@ const seeAllButtonLink =
           tags={(surrounding as { category?: string[] }).category?.map(
             (cat) => ({
               text: t(toKey(`surroundings.category.${cat}`)),
-            })
+            }),
           )}
           buttonText={surroundingButtonText}
-          buttonLink={translatePath(`/surrounding/${surrounding.slug}`)}
+          buttonLink={getLocalizedUrl("surrounding", lang, surrounding.slug)}
         />
       ))
     }

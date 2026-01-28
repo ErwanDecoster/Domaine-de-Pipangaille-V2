@@ -2,12 +2,12 @@
 import Logo from "@/assets/DP_LogoText_black.svg";
 import Button from "./ui/button/button.astro";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
-import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getCurrentLang, getLocalizedUrl } from "@/lib/i18n";
 import { Image } from "astro:assets";
+import { languages } from "@/i18n/ui";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = getCurrentLang(Astro.currentLocale) as keyof typeof languages;
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <nav
@@ -17,25 +17,27 @@ const translatePath = useTranslatedPath(lang);
   <Image src={Logo} alt="Domaine de Pipangaille" class="bg-transparent w-28" />
   <ul class="flex">
     <li>
-      <Button variant="link" href={translatePath("/")}>{t("nav.home")}</Button>
+      <Button variant="link" href={getLocalizedUrl("home", lang)}
+        >{t("nav.home")}</Button
+      >
     </li>
     <li>
-      <Button variant="link" href={translatePath("/the-place")}
+      <Button variant="link" href={getLocalizedUrl("place", lang)}
         >{t("nav.place")}</Button
       >
     </li>
     <li>
-      <Button variant="link" href={translatePath("/accommodations")}
+      <Button variant="link" href={getLocalizedUrl("accommodations", lang)}
         >{t("nav.accommodations")}</Button
       >
     </li>
     <li>
-      <Button variant="link" href={translatePath("/the-counter")}
+      <Button variant="link" href={getLocalizedUrl("counter", lang)}
         >{t("nav.counter")}</Button
       >
     </li>
     <li>
-      <Button variant="link" href={translatePath("/surroundings")}
+      <Button variant="link" href={getLocalizedUrl("surroundings", lang)}
         >{t("nav.surroundings")}</Button
       >
     </li>
@@ -45,12 +47,12 @@ const translatePath = useTranslatedPath(lang);
       <LanguageSwitcher class="w-full max-w-xs" />
     </li>
     <li>
-      <Button variant="outline" href={translatePath("/contact")}
+      <Button variant="outline" href={getLocalizedUrl("contact", lang)}
         >{t("nav.contact")}</Button
       >
     </li>
     <li>
-      <Button href={translatePath("/book")}>{t("nav.book")}</Button>
+      <Button href={getLocalizedUrl("contact", lang)}>{t("nav.book")}</Button>
     </li>
   </ul>
 </nav>

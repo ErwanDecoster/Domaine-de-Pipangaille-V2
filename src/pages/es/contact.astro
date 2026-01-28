@@ -1,0 +1,8 @@
+---
+import { getCurrentLang } from "@/lib/i18n";
+import ContactTemplate from "@/components/templates/ContactTemplate.astro";
+
+const lang = getCurrentLang(Astro.currentLocale);
+---
+
+<ContactTemplate lang={lang} />

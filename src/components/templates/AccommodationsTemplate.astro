@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import MediaContent from "@/components/MediaContent.astro";
-import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import { roomsContent } from "@/constants/rooms";
 import Button from "../ui/button/button.astro";
@@ -10,7 +10,6 @@ import breakfastWindow from "@/images/breakfast-window.JPG";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 const roomButtonText = t("accommodations.rooms.button");
 
 const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
@@ -24,7 +23,7 @@ const rooms = roomsContent.map((room) => ({
     icon: tag.icon,
     text: t(toTranslationKey(tag.labelKey)),
   })),
-  buttonLink: translatePath(`/accommodation/${room.key}`),
+  buttonLink: getLocalizedUrl("accommodation", lang, room.key),
 }));
 
 const accommodationsHeroParagraphs = t("accommodations.hero.text")
@@ -49,7 +48,6 @@ const accommodationsHeroParagraphs = t("accommodations.hero.text")
     {
       rooms.map((room) => (
         <Card
-          key={room.key}
           title={room.title}
           image={room.image}
           imageAlt={room.title}
@@ -74,7 +72,7 @@ const accommodationsHeroParagraphs = t("accommodations.hero.text")
       <div class="w-fit max-w-2xl mx-auto space-y-10 text-center">
         <h3>{t("accommodations.cta.title")}</h3>
         <p>{t("accommodations.cta.text")}</p>
-        <Button href={translatePath("/booking")}>
+        <Button href={getLocalizedUrl("book", lang)}>
           {t("accommodations.cta.button")}
         </Button>
       </div>

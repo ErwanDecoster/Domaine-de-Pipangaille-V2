@@ -1,8 +1,11 @@
 ---
 import type { HTMLAttributes } from "astro/types";
 
-import { getLangFromUrl } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
+import { getLocalizedUrl, getRouteKey } from "@/lib/i18n";
+import { getCurrentLang } from "@/lib/i18n";
+import type { Locale } from "@/i18n/routes";
+import { routes } from "@/i18n/routes";
 import {
   NativeSelect,
   NativeSelectOption,
@@ -11,9 +14,52 @@ import {
 interface Props extends HTMLAttributes<"select"> {}
 
 const { class: className, onchange, ...props } = Astro.props as Props;
-const lang = getLangFromUrl(Astro.url);
+const lang = getCurrentLang(Astro.currentLocale);
 const handleChange = onchange ?? "window.location.href = this.value";
-const getLangHref = (code: string) => (code === "fr" ? "/" : `/${code}`);
+const currentPath = Astro.url.pathname;
+
+/**
+ * Generates the translated URL for a given language
+ * Detects the current route and translates it to the target language
+ */
+const getLangHref = (targetLocale: Locale) => {
+  const cleanPath =
+    currentPath.replace(/^\/(en|de|es|it|nl)(\/|$)/, "$2") || "/";
+
+  if (cleanPath === "/" || cleanPath === "") {
+    return targetLocale === "fr" ? "/" : `/${targetLocale}/`;
+  }
+
+  const routeKey = getRouteKey(cleanPath);
+
+  if (routeKey) {
+    return getLocalizedUrl(routeKey, targetLocale);
+  }
+
+  const segments = cleanPath.split("/").filter(Boolean);
+  if (segments.length >= 2) {
+    const basePath = "/" + segments[0];
+    const slug = segments.slice(1).join("/");
+    const dynamicRouteKey = Object.entries(routes).find(
+      ([key, translations]) => {
+        return (
+          translations.fr === basePath ||
+          Object.values(translations).includes(basePath)
+        );
+      },
+    )?.[0];
+
+    if (
+      dynamicRouteKey &&
+      (dynamicRouteKey === "accommodation" || dynamicRouteKey === "surrounding")
+    ) {
+      return getLocalizedUrl(dynamicRouteKey as any, targetLocale, slug);
+    }
+  }
+
+  console.warn(`Route not found: ${currentPath}`);
+  return targetLocale === "fr" ? "/" : `/${targetLocale}/`;
+};
 ---
 
 <NativeSelect
@@ -24,7 +70,10 @@ const getLangHref = (code: string) => (code === "fr" ? "/" : `/${code}`);
 >
   {
     Object.entries(languages).map(([code, label]) => (
-      <NativeSelectOption value={getLangHref(code)} selected={code === lang}>
+      <NativeSelectOption
+        value={getLangHref(code as Locale)}
+        selected={code === lang}
+      >
         {label}
       </NativeSelectOption>
     ))

@@ -1,0 +1,8 @@
+---
+import { getCurrentLang } from "@/lib/i18n";
+import SurroundingsTemplate from "@/components/templates/SurroundingsTemplate.astro";
+
+const lang = getCurrentLang(Astro.currentLocale);
+---
+
+<SurroundingsTemplate lang={lang} />

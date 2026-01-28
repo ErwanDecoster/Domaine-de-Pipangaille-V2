@@ -1,0 +1,8 @@
+---
+import { getCurrentLang } from "@/lib/i18n";
+import TermsAndConditionsTemplate from "@/components/templates/TermsAndConditionsTemplate.astro";
+
+const lang = getCurrentLang(Astro.currentLocale);
+---
+
+<TermsAndConditionsTemplate {lang} />

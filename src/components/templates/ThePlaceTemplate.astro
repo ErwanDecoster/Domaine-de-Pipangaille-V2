@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
-import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import SpotlightGallery from "@/components/SpotlightGallery.astro";
 import poolLoungers from "@/images/pool-loungers.jpeg";
@@ -13,7 +13,6 @@ import gardenTerrace from "@/images/garden-terrace.jpeg";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <Layout>
@@ -25,7 +24,7 @@ const translatePath = useTranslatedPath(lang);
     image={poolLoungers}
     imageAlt="TODO"
     buttonText={t("place.header.button")}
-    buttonLink={translatePath("/book")}
+    buttonLink={getLocalizedUrl("book", lang)}
     buttonVariant="secondary"
   />
   <div
@@ -49,7 +48,7 @@ const translatePath = useTranslatedPath(lang);
       { src: carportsWedding, alt: "TODO" },
     ]}
     buttonText={t("place.events.button")}
-    buttonLink={translatePath("/contact")}
+    buttonLink={getLocalizedUrl("contact", lang)}
   />
   <section class="mt-48 px-20">
     <h2>{t("place.spotlight.title")}</h2>

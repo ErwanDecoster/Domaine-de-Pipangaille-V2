@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import MediaContent from "@/components/MediaContent.astro";
-import { useTranslations, useTranslatedPath } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import { roomsContent } from "@/constants/rooms";
 import Card from "../Card.astro";
@@ -15,7 +15,6 @@ const { lang, roomName } = Astro.props as {
   roomName: string;
 };
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
 
 const baseRoom = roomsContent.find((room) => room.key === roomName);
@@ -37,7 +36,7 @@ const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
 
 const selectedRoomTitle = t(`accommodations.rooms.${baseRoom.key}.title`);
 const selectedRoomLongDescription = t(
-  `accommodations.rooms.${baseRoom.key}.longDescription`
+  `accommodations.rooms.${baseRoom.key}.longDescription`,
 );
 const galleryImages = baseRoom.gallery.map((image) => ({
   src: image.src,
@@ -60,7 +59,7 @@ const otherRooms = roomsContent
       icon: tag.icon,
       text: t(toTranslationKey(tag.labelKey)),
     })),
-    buttonLink: translatePath(`/accommodation/${room.key}`),
+    buttonLink: getLocalizedUrl("accommodation", lang, room.key),
   }));
 ---
 
@@ -143,7 +142,6 @@ const otherRooms = roomsContent
     {
       otherRooms.map((room) => (
         <Card
-          key={room.key}
           title={room.title}
           image={room.image}
           imageAlt={room.imageAlt}
