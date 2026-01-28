@@ -2,12 +2,13 @@
 import { Button } from "./ui/button";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
 import Logo from "@/assets/DP_LogoTexte_noir.svg";
-import { getLangFromUrl, useTranslations } from "@/lib/i18n";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { Image } from "astro:assets";
 import PlatformIcon from "./ui/icons/PlatformIcon.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <footer class="p-16 space-y-48 bg-primary mt-16">
@@ -134,7 +135,7 @@ const t = useTranslations(lang);
   <div>
     <ul class="flex justify-center items-center">
       <li>
-        <Button variant="link" href="/legal-mentions"
+        <Button variant="link" href={translatePath("/legal-notices")}
           >{t("footer.legalMentions")}</Button
         >
       </li>

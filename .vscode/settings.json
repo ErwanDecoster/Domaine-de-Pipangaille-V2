@@ -1,6 +1,13 @@
 {
   "cSpell.words": [
+    "Andancette",
     "fulldev",
-    "pipangaille"
+    "Lemoine",
+    "Marettes",
+    "pipangaille",
+    "Quartier"
+  ],
+  "cSpell.ignorePaths": [
+    "src/i18n/locales/**"
   ]
 }

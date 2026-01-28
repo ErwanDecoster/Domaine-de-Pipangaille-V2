@@ -12,10 +12,13 @@ import { actions } from "astro:actions";
 import IframeConsent from "../IframeConsent.astro";
 import { FieldSet } from "../ui/field/index.astro";
 import courtyardConcert from "@/images/courtyard-concert.jpeg";
+import MapProviderDialog from "../MapProviderDialog.astro";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const placeAddress = "1 Quartier Les Marettes, 26140, Andancette";
 
 const result = Astro.getActionResult(actions.contact.send);
 ---
@@ -51,7 +54,7 @@ const result = Astro.getActionResult(actions.contact.send);
             {result.error.code === "BAD_REQUEST" && result.error.fields ? (
               <ul class="list-disc list-inside mt-2">
                 {Object.entries(result.error.fields).map(([field, errors]) =>
-                  errors?.map((error) => <li>{error}</li>)
+                  errors?.map((error) => <li>{error}</li>),
                 )}
               </ul>
             ) : (
@@ -191,14 +194,14 @@ const result = Astro.getActionResult(actions.contact.send);
           <h2 class="text-base font-semibold font-barlow">
             {t("contact.info.address")}
           </h2>
-          <Button
-            variant="link"
-            class="-ml-6 -mt-3"
-            external
-            href="https://www.google.fr/maps/dir//domaine+de+pipangaille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47f53e41af912869:0xe0c49553166e1500?sa=X&ved=2ahUKEwj59IKk0474AhUa_4UKHTamDM0Q9Rd6BAhbEAQ"
+          <MapProviderDialog
+            lang={lang}
+            address={placeAddress}
+            triggerVariant="link"
+            triggerClass="-mx-6 -my-4 inline-block text-left"
           >
-            1 Quartier les Marrettes, <br />26140, Andancette, France
-          </Button>
+            1 Quartier les Marettes, <br />26140, Andancette, France
+          </MapProviderDialog>
         </div>
       </div>
       <IframeConsent

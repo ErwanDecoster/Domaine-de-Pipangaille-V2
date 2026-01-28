@@ -131,7 +131,7 @@ body.theme-counter {
   }
   button,
   a {
-    @apply cursor-pointer;
+    @apply cursor-pointer text-base;
   }
   h1 {
     @apply text-7.5xl/[100%] tracking-tight font-serif-4 font-light;
@@ -148,7 +148,7 @@ body.theme-counter {
   h5 {
     @apply text-2xl/[150%] tracking-tight font-serif-4 font-light;
   }
-  p {
+  p, ul {
     @apply text-base/[160%] text-muted-foreground text-pretty;
   }
   img {

@@ -1,0 +1,265 @@
+---
+import { useTranslations } from "@/lib/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { ui } from "@/i18n/ui";
+import Button from "../ui/button/button.astro";
+import MapProviderDialog from "@/components/MapProviderDialog.astro";
+
+const { lang } = Astro.props as { lang: keyof typeof ui };
+const t = useTranslations(lang);
+
+const editorCompany = "SAS Domaine de Pipangaille";
+const editorEmail = "contact@domaine-de-pipangaille.fr";
+const editorPhone = "+33 4 75 68 28 24";
+const editorAddress = "1 Quartier Les Marettes, 26140, Andancette";
+const editorRcsValue = "904 638 814";
+const editorNafValue = "55202";
+const editorCapitalValue = "1500 €";
+const editorCeoValue = "Catherine Lemoine";
+
+const designCompany = "Erwan Decoster";
+const designEmail = "contact@erwan-decoster.com";
+const designPhone = "+33 6 25 30 68 13";
+const designWebsiteUrl = "https://erwan-decoster.com";
+const designWebsiteLabel = "erwan-decoster.com";
+const designGithubUrl = "https://github.com/ErwanDecoster";
+const designGithubLabel = "github.com/ErwanDecoster";
+const designRepoUrl =
+  "https://github.com/ErwanDecoster/domaine-de-pipangaille-v2-astro";
+const designRepoLabel =
+  "github.com/ErwanDecoster/domaine-de-pipangaille-v2-astro";
+
+const hostingProvider = "Vercel Inc";
+const hostingUrl = "https://vercel.com";
+const domainProvider = "Hostinger International Ltd";
+const domainUrl = "https://hostinger.fr";
+---
+
+<Layout>
+  <main class="max-w-7xl w-full mx-auto px-4 grid gap-8 py-16">
+    <div
+      data-scroll-animated
+      class="h-28 w-screen sticky top-0 z-10 bg-background"
+    >
+    </div>
+    <h1>{t("legalNotices.title")}</h1>
+
+    <div class="grid gap-8">
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.editor.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p><strong>{editorCompany}</strong></p>
+          <div
+            class="flex items-center gap-2 text-base/[160%] text-muted-foreground text-pretty"
+          >
+            <strong>{t("legalNotices.editor.addressLabel")}:</strong>
+            <MapProviderDialog
+              lang={lang}
+              address={editorAddress}
+              triggerText={editorAddress}
+              triggerVariant="link"
+              triggerClass="-mx-6 -my-4 inline-block"
+            />
+          </div>
+          <p class="flex flex-wrap gap-6">
+            <span
+              ><strong>{t("legalNotices.editor.rcsLabel")}:</strong>
+              {editorRcsValue}</span
+            >
+            <span
+              ><strong>{t("legalNotices.editor.nafLabel")}:</strong>
+              {editorNafValue}</span
+            >
+            <span
+              ><strong>{t("legalNotices.editor.capitalLabel")}:</strong>
+              {editorCapitalValue}</span
+            >
+          </p>
+          <p>
+            <strong>{t("legalNotices.editor.phoneLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`tel:${editorPhone.replace(/\s/g, "")}`}
+            >
+              {editorPhone}
+            </Button>
+          </p>
+          <p>
+            <strong>{t("legalNotices.editor.emailLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`mailto:${editorEmail}`}
+            >
+              {editorEmail}
+            </Button>
+          </p>
+          <p>
+            <strong>{t("legalNotices.editor.ceoLabel")}:</strong>
+            {editorCeoValue}
+          </p>
+          <p>
+            <strong>{t("legalNotices.editor.publisherLabel")}:</strong>
+            {t("legalNotices.editor.publisherValue")}
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.design.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p><strong>{designCompany}</strong></p>
+          <p>
+            <strong>{t("legalNotices.design.phoneLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`tel:${designPhone.replace(/\s/g, "")}`}
+            >
+              {designPhone}
+            </Button>
+          </p>
+          <p>
+            <strong>{t("legalNotices.design.emailLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`mailto:${designEmail}`}
+            >
+              {designEmail}
+            </Button>
+          </p>
+          <p>
+            <strong>{t("legalNotices.design.websiteLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={designWebsiteUrl}
+              target="_blank"
+            >
+              {designWebsiteLabel}
+            </Button>
+          </p>
+          <p>
+            <strong>{t("legalNotices.design.githubLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={designGithubUrl}
+              target="_blank"
+            >
+              {designGithubLabel}
+            </Button>
+          </p>
+          <p>
+            <strong>{t("legalNotices.design.repoLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={designRepoUrl}
+              target="_blank"
+            >
+              {designRepoLabel}
+            </Button>
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.hosting.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>
+            <strong>{t("legalNotices.hosting.providerLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={hostingUrl}
+              target="_blank"
+            >
+              {hostingProvider}
+            </Button>
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.domain.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>
+            <strong>{t("legalNotices.domain.providerLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={domainUrl}
+              target="_blank"
+            >
+              {domainProvider}
+            </Button>
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.photos.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("legalNotices.photos.text")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.cookies.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("legalNotices.cookies.text")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.personalData.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("legalNotices.personalData.text")}</p>
+          <p>{t("legalNotices.personalData.retention")}</p>
+          <div
+            class="flex flex-wrap items-center gap-2 text-base/[160%] text-muted-foreground text-pretty"
+          >
+            {t("legalNotices.personalData.requestEmailPrefix")}
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`mailto:${editorEmail}`}
+            >
+              {editorEmail}
+            </Button>
+            {t("legalNotices.personalData.requestAddressPrefix")}
+            <MapProviderDialog
+              lang={lang}
+              address={editorAddress}
+              triggerText={editorAddress}
+              triggerVariant="link"
+              triggerClass="-mx-6 -my-4 inline-block"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.liability.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("legalNotices.liability.text")}</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li>{t("legalNotices.liability.inaccuracy")}</li>
+            <li>{t("legalNotices.liability.unauthorized")}</li>
+            <li>{t("legalNotices.liability.interruption")}</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("legalNotices.law.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("legalNotices.law.text")}</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
