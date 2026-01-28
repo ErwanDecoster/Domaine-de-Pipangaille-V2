@@ -13,9 +13,8 @@ import {
 
 interface Props extends HTMLAttributes<"select"> {}
 
-const { class: className, onchange, ...props } = Astro.props as Props;
+const { class: className, ...props } = Astro.props as Props;
 const lang = getCurrentLang(Astro.currentLocale);
-const handleChange = onchange ?? "window.location.href = this.value";
 const currentPath = Astro.url.pathname;
 
 /**
@@ -24,7 +23,11 @@ const currentPath = Astro.url.pathname;
  */
 const getLangHref = (targetLocale: Locale) => {
   const cleanPath =
-    currentPath.replace(/^\/(en|de|es|it|nl)(\/|$)/, "$2") || "/";
+    (
+      currentPath
+        .replace(/^\/(en|de|es|it|nl)\//, "/")
+        .replace(/^\/(en|de|es|it|nl)$/, "/") || "/"
+    ).replace(/\/$/, "") || "/";
 
   if (cleanPath === "/" || cleanPath === "") {
     return targetLocale === "fr" ? "/" : `/${targetLocale}/`;
@@ -37,9 +40,11 @@ const getLangHref = (targetLocale: Locale) => {
   }
 
   const segments = cleanPath.split("/").filter(Boolean);
+
   if (segments.length >= 2) {
     const basePath = "/" + segments[0];
     const slug = segments.slice(1).join("/");
+
     const dynamicRouteKey = Object.entries(routes).find(
       ([key, translations]) => {
         return (
@@ -57,25 +62,41 @@ const getLangHref = (targetLocale: Locale) => {
     }
   }
 
-  console.warn(`Route not found: ${currentPath}`);
   return targetLocale === "fr" ? "/" : `/${targetLocale}/`;
 };
 ---
 
 <NativeSelect
+  id="language-switcher"
   class={className}
-  onchange={handleChange}
   aria-label="Change language"
   {...props}
 >
   {
     Object.entries(languages).map(([code, label]) => (
       <NativeSelectOption
-        value={getLangHref(code as Locale)}
+        value={code}
         selected={code === lang}
+        data-url={getLangHref(code as Locale)}
       >
         {label}
       </NativeSelectOption>
     ))
   }
 </NativeSelect>
+
+<script>
+  const select = document.getElementById(
+    "language-switcher",
+  ) as HTMLSelectElement;
+  if (select) {
+    select.addEventListener("change", (event) => {
+      const target = event.target as HTMLSelectElement;
+      const selectedOption = target.options[target.selectedIndex];
+      const url = selectedOption.getAttribute("data-url");
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  }
+</script>
