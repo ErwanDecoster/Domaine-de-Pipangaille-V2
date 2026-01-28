@@ -1,7 +1,7 @@
 ---
 import { Button } from "./ui/button";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
-import Logo from "@/assets/DP_LogoTexte_noir.svg";
+import Logo from "@/assets/DP_LogoText_Black.svg";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
 import { Image } from "astro:assets";
 import PlatformIcon from "./ui/icons/PlatformIcon.astro";
@@ -140,9 +140,7 @@ const translatePath = useTranslatedPath(lang);
         >
       </li>
       <li>
-        <Button
-          variant="link"
-          href={translatePath("/terms-and-conditions")}
+        <Button variant="link" href={translatePath("/terms-and-conditions")}
           >{t("footer.salesConditions")}</Button
         >
       </li>

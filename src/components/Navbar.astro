@@ -1,5 +1,5 @@
 ---
-import Logo from "@/assets/DP_LogoTexte_noir.svg";
+import Logo from "@/assets/DP_LogoText_Black.svg";
 import Button from "./ui/button/button.astro";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/lib/i18n";
@@ -20,7 +20,9 @@ const translatePath = useTranslatedPath(lang);
       <Button variant="link" href={translatePath("/")}>{t("nav.home")}</Button>
     </li>
     <li>
-      <Button variant="link" href={translatePath("/the-place")}>{t("nav.place")}</Button>
+      <Button variant="link" href={translatePath("/the-place")}
+        >{t("nav.place")}</Button
+      >
     </li>
     <li>
       <Button variant="link" href={translatePath("/accommodations")}
