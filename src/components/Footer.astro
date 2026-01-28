@@ -12,11 +12,18 @@ const t = useTranslations(lang);
 
 <footer class="p-16 space-y-48 bg-primary mt-16">
   <div class="flex justify-between">
-    <Image
-      src={Logo}
-      alt="Domaine de Pipangaille"
-      class="bg-transparent w-48 self-baseline"
-    />
+    <Button
+      href={getLocalizedUrl("home", lang)}
+      variant="link"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <Image
+        src={Logo}
+        alt="Domaine de Pipangaille"
+        class="bg-transparent w-48 self-baseline"
+      />
+    </Button>
     <div>
       <h5>{t("footer.usefulLinks")}</h5>
       <ul>
@@ -25,15 +32,20 @@ const t = useTranslations(lang);
             variant="link"
             class="-ml-6 py-2"
             href="https://www.tripadvisor.fr/Hotel_Review-g11695688-d5990107-Reviews-Domaine_de_Pipangaille-Andancette_Drome_Auvergne_Rhone_Alpes.html"
-            >Tripadvisor</Button
+            external
           >
+            Tripadvisor
+          </Button>
         </li>
         <li>
           <Button
             variant="link"
             class="-ml-6 py-2"
-            href="https://www.pagesjaunes.fr/pros/56007503">Pages Jaunes</Button
+            href="https://www.pagesjaunes.fr/pros/56007503"
+            external
           >
+            Pages Jaunes
+          </Button>
         </li>
       </ul>
     </div>

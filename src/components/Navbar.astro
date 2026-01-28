@@ -14,7 +14,18 @@ const t = useTranslations(lang);
   data-scroll-animated
   class="fixed inset-x-0 z-20 px-20 h-28 flex justify-between items-center"
 >
-  <Image src={Logo} alt="Domaine de Pipangaille" class="bg-transparent w-28" />
+  <Button
+    href={getLocalizedUrl("home", lang)}
+    variant="link"
+    aria-hidden="true"
+    tabindex="-1"
+  >
+    <Image
+      src={Logo}
+      alt="Domaine de Pipangaille"
+      class="bg-transparent w-28"
+    />
+  </Button>
   <ul class="flex">
     <li>
       <Button variant="link" href={getLocalizedUrl("home", lang)}
