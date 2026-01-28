@@ -67,7 +67,7 @@ const {
     background-image: var(--card-image);
     background-size: cover;
     background-position: center;
-    filter: blur(1000px) saturate(160%);
+    filter: blur(1200px) saturate(200%);
     transform: scale(1.1);
     opacity: 0;
     z-index: -1;
@@ -75,5 +75,8 @@ const {
   }
   article:hover::before {
     opacity: 0.4;
+  }
+  article:focus-within::before {
+    opacity: 0.6;
   }
 </style>
