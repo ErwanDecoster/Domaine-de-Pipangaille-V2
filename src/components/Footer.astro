@@ -140,7 +140,9 @@ const translatePath = useTranslatedPath(lang);
         >
       </li>
       <li>
-        <Button variant="link" href="/sales-conditions"
+        <Button
+          variant="link"
+          href={translatePath("/terms-and-conditions")}
           >{t("footer.salesConditions")}</Button
         >
       </li>

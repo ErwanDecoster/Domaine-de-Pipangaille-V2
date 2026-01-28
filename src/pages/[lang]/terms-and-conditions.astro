@@ -1,0 +1,12 @@
+---
+import TermsAndConditionsTemplate from '../../components/templates/TermsAndConditionsTemplate.astro';
+import { languages } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+---
+
+<TermsAndConditionsTemplate {lang} />
