@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /
+
+Sitemap: https://domaine-de-pipangaille.fr/sitemap-index.xml

@@ -1,7 +1,6 @@
 # TODO
 
 ## SEO & Configuration
-- [ ] Add sitemap
 - [ ] Update robot.txt
 - [ ] Check all alt text
 

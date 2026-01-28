@@ -7,9 +7,27 @@ import tailwindcss from '@tailwindcss/vite';
 
 import vercel from '@astrojs/vercel';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [vue()],
+  site: 'https://domaine-de-pipangaille.fr',
+  integrations: [
+    vue(), 
+    sitemap({
+      i18n: {
+        defaultLocale: 'fr',
+        locales: {
+          fr: 'fr-FR',
+          en: 'en-US',
+          de: 'de-DE',
+          es: 'es-ES',
+          it: 'it-IT',
+          nl: 'nl-NL',
+        },
+      },
+    }),
+  ],
 
   output: 'server',
 
