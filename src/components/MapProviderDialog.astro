@@ -8,6 +8,7 @@ import {
 } from "./ui/dialog/index.astro";
 import { useTranslations } from "@/lib/i18n";
 import { ui } from "@/i18n/ui";
+import { Button } from "./ui/button";
 
 interface Props {
   lang: keyof typeof ui;
@@ -62,28 +63,9 @@ const providers = [
     <div class="flex flex-col gap-3 py-4">
       {
         providers.map((provider) => (
-          <a
-            href={provider.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center gap-4 rounded-lg border border-border bg-background p-4 transition-colors hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-          >
-            <div class="flex-1">{provider.name}</div>
-            <svg
-              class="size-5 text-muted-foreground"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
+          <Button href={provider.url} external variant="outline">
+            {provider.name}
+          </Button>
         ))
       }
     </div>

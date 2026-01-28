@@ -22,9 +22,5 @@
 - [ ] Add phone number in restaurants
 - [ ] Add book link in restaurants
 
-## Legal & Policies
-- [ ] Add CGV (Conditions Générales de Vente)
-- [ ] Add legal notice
-
 ## UI/UX
 - [ ] Add book overlay
