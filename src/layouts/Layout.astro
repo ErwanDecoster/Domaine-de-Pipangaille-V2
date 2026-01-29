@@ -5,14 +5,23 @@ import Navbar from "@/components/Navbar.astro";
 import "@fontsource/source-serif-4/300.css";
 import "@fontsource/barlow/400.css";
 import "@fontsource/barlow/700.css";
-import { getLangFromUrl } from "../lib/i18n";
+import { getLangFromUrl, useTranslations } from "../lib/i18n";
 
 type Props = {
   bodyClass?: string;
+  title?: string;
+  description?: string;
+  ogImage?: string;
 };
 
-const { bodyClass = "" } = Astro.props as Props;
+const { bodyClass = "", title, description, ogImage = "/og-image.png" } = Astro.props as Props;
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Use provided title/description or fallback to defaults
+const finalTitle = title || t("seo.title");
+const finalDescription = description || t("seo.description");
+const siteUrl = "https://domaine-de-pipangaille.fr";
 ---
 
 <!doctype html>
@@ -20,16 +29,39 @@ const lang = getLangFromUrl(Astro.url);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    
+    <!-- SEO -->
+    <title>{finalTitle}</title>
+    <meta name="description" content={finalDescription} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={siteUrl} />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={t("seo.og.title")} />
+    <meta property="og:description" content={t("seo.og.description")} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={new URL(ogImage, siteUrl).toString()} />
+    <meta property="og:locale" content={lang} />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={t("seo.twitter.title")} />
+    <meta name="twitter:description" content={t("seo.twitter.description")} />
+    <meta name="twitter:image" content={new URL(ogImage, siteUrl).toString()} />
+    
+    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Pipangaille" />
+    
+    <!-- Manifest & Sitemap -->
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <title>Domaine de Pipangaille</title>
   </head>
   <body class={bodyClass}>
     <Navbar />
