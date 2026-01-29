@@ -19,11 +19,6 @@
 - [ ] Add menu on the-counter page
 - [ ] Update the-place SpotlightGallery
 
-## Restaurant Features
-
-- [ ] Add phone number in restaurants
-- [ ] Add book link in restaurants
-
 ## UI/UX
 
 - [ ] Add book overlay

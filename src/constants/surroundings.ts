@@ -43,6 +43,20 @@ export const surroundings = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25399.90187538962!2d4.711628222803869!3d45.26310487550016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f51417d31f614f%3A0x762be489cc59804e!2sSafari%20de%20Peaugres!5e0!3m2!1sen!2sfr!4v165953927",
       website: "https://www.safari-peaugres.com/",
       bookLink: "https://www.safari-peaugres.com/horaires-et-tarifs",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/safari.de.peaugres/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/wowsafaripeaugres/",
+        },
+        {
+          platform: "tiktok",
+          link: "https://www.tiktok.com/@wowsafaripeaugres",
+        },
+      ],
       slug: "safari_peaugres",
     },
     {
@@ -90,6 +104,17 @@ export const surroundings = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89692.58883524877!2d4.380942982021311!3d45.37114609720795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5084b3bafc339%3A0xf17cc27dad426b1d!2sAcrobois%20Pilat!5e0!3m2!1sfr!2sfr!4v1668710836619",
       website: "https://pilat.les-acrobois.fr/",
       bookLink: "https://pilat.les-acrobois.fr/le-parc/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/acroboispilat",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/acrobois_pilat",
+        },
+      ],
+      phoneNumber: "+33 4 82 29 80 01",
       slug: "acrobois_pilat",
     },
     {
@@ -105,7 +130,18 @@ export const surroundings = {
       ],
       mapsUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.470119451013!2d4.789534115550604!3d45.25850677909912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e1ecf9f32d7%3A0x963ede95fbaa5f1f!2sMus%C3%A9e%20De%20L'alambic!5e0!3m2!1sfr!2sfr!4v166896806589",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/distilleriejeangauthier",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/distilleriejeangauthier/",
+        },
+      ],
       website: "http://www.jeangauthier.com/",
+      phoneNumber: "+33 4 75 34 23 11",
       slug: "musee_de_l_alambic",
     },
     {
@@ -127,6 +163,10 @@ export const surroundings = {
         {
           platform: "facebook",
           link: "https://www.facebook.com/golfdudomainestclair.fr/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/golfdestclair",
         },
       ],
       slug: "golf_de_saint_clair",
@@ -184,6 +224,7 @@ export const surroundings = {
           link: "https://www.instagram.com/citeduchocolat/",
         },
       ],
+      phoneNumber: "+33 4 75 09 27 27",
       slug: "musee_valrhona",
     },
     {
@@ -200,6 +241,7 @@ export const surroundings = {
       website: "http://www.lamasdesplaines.com/",
       bookLink:
         "http://www.lamasdesplaines.com/Mediation%20animale/Prestations%20et%20tarifs.htm",
+      phoneNumber: "+33 6 14 38 82 00",
       slug: "lamas_des_plaines",
     },
     {
@@ -218,6 +260,17 @@ export const surroundings = {
       website: "https://www.montgolfieres-cie.com/",
       bookLink:
         "https://www.montgolfieres-cie.com/tarifs-montgolfiere-ardeche/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/MONTGOLFIERESCie/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/montgolfieresetcie/",
+        },
+      ],
+      phoneNumber: "+33 4 75 34 41 14",
       slug: "mongolfieres_et_cie",
     },
     {
@@ -245,6 +298,7 @@ export const surroundings = {
           link: "https://www.instagram.com/traindelardeche/",
         },
       ],
+      phoneNumber: "+33 4 75 06 07 00",
       slug: "train_de_l_ardeche",
     },
     {
@@ -261,6 +315,21 @@ export const surroundings = {
       mapsUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5632220.474156089!2d-3.7942353004358234!3d46.42674576287124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f50e9245aa9609%3A0xfdb142f0cca33da4!2sLa%20Fabrique%20de%20Julien!5e0!3m2!1sfr!2sfr!4v1699292916482",
       website: "https://www.fabrique-julien.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/Fabrique.Julien/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/fabrique.julien/",
+        },
+        {
+          platform: "tiktok",
+          link: "https://www.tiktok.com/@la.fabrique.de.julien",
+        },
+      ],
+      phoneNumber: "+33 4 77 51 55 88",
       slug: "la_fabrique_de_julien",
     },
     {
@@ -307,6 +376,7 @@ export const surroundings = {
           link: "https://www.facebook.com/chateauxdeladrome",
         },
       ],
+      phoneNumber: "+33 4 75 91 83 50",
       slug: "chateau_de_grignan",
     },
     {
@@ -329,6 +399,7 @@ export const surroundings = {
           link: "https://www.facebook.com/labyrinthevegetal/",
         },
       ],
+      phoneNumber: "+33 4 75 25 80 65",
       slug: "labyrinthe_vegetal",
     },
     {
@@ -354,7 +425,16 @@ export const surroundings = {
           platform: "facebook",
           link: "https://www.facebook.com/canotiersboatnbike",
         },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/compagnie_des_canotiers/",
+        },
+        {
+          platform: "tiktok",
+          link: "https://www.tiktok.com/@compagniecanotiers",
+        },
       ],
+      phoneNumber: "+33 6 44 30 79 76",
       slug: "compagnie_des_canotiers_rhone_et_saone",
     },
     {
@@ -371,6 +451,7 @@ export const surroundings = {
       mapsUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.989469225792!2d1.436084077113906!3d48.85841120070413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6ad9b9fc12581%3A0xb9ee1bb171a28a!2sCh%C3%A2teau%20d'Anet!5e0!3m2!1sfr!2sfr!4v1699293510016",
       website: "https://www.chateau-d-anet.com/",
+      phoneNumber: "+33 2 37 41 90 07",
       slug: "le_chateau_d_anet",
     },
   ],
@@ -394,6 +475,7 @@ export const surroundings = {
           link: "https://www.facebook.com/lerelaisdesmailles",
         },
       ],
+      phoneNumber: "+33 4 75 23 42 26",
       slug: "le_relais_mailles",
     },
     {
@@ -419,6 +501,7 @@ export const surroundings = {
           link: "https://www.instagram.com/latabledessaj.resto",
         },
       ],
+      phoneNumber: "+33 4 75 32 96 08",
       slug: "la_table_des_saj",
     },
     {
@@ -440,6 +523,7 @@ export const surroundings = {
           link: "https://www.facebook.com/lapoulenoire26",
         },
       ],
+      phoneNumber: "+33475030882",
       slug: "la_poule_noir",
     },
     {
@@ -461,6 +545,7 @@ export const surroundings = {
           link: "https://www.facebook.com/GaelleHermandsecretant/",
         },
       ],
+      phoneNumber: "+33 4 75 34 21 01",
       slug: "le_picotin",
     },
     {
@@ -482,6 +567,7 @@ export const surroundings = {
           link: "https://www.facebook.com/AuPreDuRhone",
         },
       ],
+      phoneNumber: "+33 4 75 23 03 44",
       slug: "au_pre_du_rhone",
     },
     {
@@ -508,6 +594,7 @@ export const surroundings = {
           link: "https://www.instagram.com/restaurant_la_belle_epoque26/",
         },
       ],
+      phoneNumber: "+33 4 75 68 81 86",
       slug: "la_belle_epoque",
     },
     {
@@ -531,6 +618,7 @@ export const surroundings = {
           link: "https://www.facebook.com/profile.php?id=100083238615438",
         },
       ],
+      phoneNumber: "+33 7 84 75 76 46",
       slug: "o_daily_truck",
     },
     {
@@ -551,6 +639,7 @@ export const surroundings = {
           link: "https://www.facebook.com/Pizza.andance/",
         },
       ],
+      phoneNumber: "+33 4 75 32 75 12",
       slug: "cesar_pizza",
     },
     {
@@ -572,6 +661,7 @@ export const surroundings = {
           link: "https://www.facebook.com/NathalieOttogalli/",
         },
       ],
+      phoneNumber: "+33 4 75 31 69 50",
       slug: "la_villa_champagnere",
     },
     {
@@ -597,6 +687,7 @@ export const surroundings = {
           link: "https://www.instagram.com/lesagapons_restaurant/",
         },
       ],
+      phoneNumber: "+33 4 75 03 02 56",
       slug: "les_agapons",
     },
   ],

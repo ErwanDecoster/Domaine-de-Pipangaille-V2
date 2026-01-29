@@ -361,6 +361,7 @@ export const nl = {
   "surroundings.descriptions.les_agapons.long":
     "Welkom bij Les Agapons, gelegen in het charmante stadje Manthes. Ons warm team serveert u huisgemaakte keuken van kwaliteit, bereid met lokale en regionale producten, evenals traditionele gerechten.\n\nHet restaurant biedt veel services: terras, speelhoek voor kinderen, gratis parkeren, privéfeesten, trouwerijen, gratis Wi-Fi en huisdieren welkom. Geopend van woensdag tot zaterdag van 12 tot 14 uur en van 19 tot 21 uur, evenals zondagsmiddag.",
   "surroundings.detail.book": "Boeken",
+  "surroundings.detail.call": "Bellen",
   "surroundings.detail.socialNetworks": "Sociale media",
   "surroundings.detail.visitWebsite": "Bezoek de website",
   "surroundings.detail.moreInfo.title": "Meer informatie",

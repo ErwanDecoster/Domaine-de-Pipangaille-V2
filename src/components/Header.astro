@@ -40,15 +40,17 @@ const paragraphs = Array.isArray(text)
         </div>
       )
     }
-    {buttonLink && buttonText && (
-      <Button
-        class={cn("self-baseline", buttonVariant === "secondary" && "-ml-6")}
-        variant={buttonVariant}
-        href={buttonLink}
-        external={buttonExternal}
-      >
-        {buttonText}
-      </Button>
-    )}
+    {
+      buttonLink && buttonText && (
+        <Button
+          class={cn("self-baseline", buttonVariant === "secondary" && "-ml-6")}
+          variant={buttonVariant}
+          href={buttonLink}
+          external={buttonExternal}
+        >
+          {buttonText}
+        </Button>
+      )
+    }
   </div>
 </header>

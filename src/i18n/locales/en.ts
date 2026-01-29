@@ -355,8 +355,7 @@ export const en = {
     "Authentic French cuisine restaurant in Manthes, quality home-cooked food with local and regional products.",
   "surroundings.descriptions.les_agapons.long":
     "Welcome to Les Agapons, located in the charming town of Manthes. Our warm team will serve you quality home-cooked cuisine, prepared with local and regional products, as well as traditional dishes.\n\nThe restaurant offers many services: terrace, children's area, free parking, private events, wedding receptions, free Wi-Fi and pets allowed. Open Wednesday to Saturday from 12pm to 2pm and 7pm to 9pm, as well as Sunday lunch.",
-  "surroundings.detail.book": "Book",
-  "surroundings.detail.socialNetworks": "Social media",
+  "surroundings.detail.book": "Book",  "surroundings.detail.call": "Call",  "surroundings.detail.socialNetworks": "Social media",
   "surroundings.detail.visitWebsite": "Visit the website",
   "surroundings.detail.moreInfo.title": "More information",
   "iframeConsent.title": "External content",

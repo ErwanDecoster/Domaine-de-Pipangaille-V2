@@ -366,6 +366,7 @@ export const es = {
   "surroundings.descriptions.les_agapons.long":
     "Bienvenido a Les Agapons, ubicado en la encantadora ciudad de Manthes. Nuestro equipo cálido le servirá comida casera de calidad, preparada con productos locales y regionales, así como platos tradicionales.\n\nEl restaurante ofrece muchos servicios: terraza, zona infantil, aparcamiento gratuito, eventos privados, recepciones de bodas, Wi-Fi gratuito y mascotas permitidas. Abierto de miércoles a sábado de 12 a 14 horas y de 19 a 21 horas, así como almuerzo de domingo.",
   "surroundings.detail.book": "Reservar",
+  "surroundings.detail.call": "Llamar",
   "surroundings.detail.socialNetworks": "Redes sociales",
   "surroundings.detail.visitWebsite": "Visitar el sitio web",
   "surroundings.detail.moreInfo.title": "Más información",

@@ -361,6 +361,7 @@ export const fr = {
   "surroundings.descriptions.les_agapons.long":
     "Bienvenue aux Les Agapons, situé dans la charmante ville de Manthes. Notre équipe chaleureuse vous servira une cuisine maison de qualité, préparée avec des produits locaux et régionaux, ainsi que des plats traditionnels.\n\nLe restaurant offre de nombreux services : terrasse, coin enfants, parking gratuit, événements privés, réceptions de mariage, Wi-Fi gratuit et animaux domestiques autorisés. Ouvert du mercredi au samedi de 12h à 14h et de 19h à 21h, ainsi que le dimanche midi.",
   "surroundings.detail.book": "Réserver",
+  "surroundings.detail.call": "Appeler",
   "surroundings.detail.socialNetworks": "Réseaux sociaux",
   "surroundings.detail.visitWebsite": "Visiter le site internet",
   "surroundings.detail.moreInfo.title": "Plus d'informations",

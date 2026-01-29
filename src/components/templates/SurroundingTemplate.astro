@@ -9,6 +9,7 @@ import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import Button from "../ui/button/button.astro";
 import PlatformIcon from "../ui/icons/PlatformIcon.astro";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
+import { Phone } from "@lucide/astro";
 
 const { lang, surroundingName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -123,8 +124,22 @@ const seeAllButtonLink =
                 {t("surroundings.detail.book")}
               </Button>
             ) : null}
+            {baseSurrounding?.phoneNumber ? (
+              <Button
+                variant="outline"
+                href={`tel:${baseSurrounding.phoneNumber}`}
+              >
+                <Phone />
+                {t("surroundings.detail.call")}
+              </Button>
+            ) : null}
             {baseSurrounding?.website ? (
-              <Button variant="outline" external href={baseSurrounding.website}>
+              <Button
+                variant="link"
+                class="-mx-6 gap-3!"
+                external
+                href={baseSurrounding.website}
+              >
                 {t("surroundings.detail.visitWebsite")}
               </Button>
             ) : null}
