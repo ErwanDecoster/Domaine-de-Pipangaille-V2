@@ -1,7 +1,9 @@
 export const contact = {
   "contact.title": "Contatti",
-  "contact.reservation.textBefore": "Tutte le prenotazioni vengono effettuate esclusivamente tramite la pagina",
-  "contact.reservation.textAfter": "Non accettiamo prenotazioni tramite questo modulo, eccetto per gruppi o soggiorni di lunga durata.",
+  "contact.reservation.textBefore":
+    "Tutte le prenotazioni vengono effettuate esclusivamente tramite la pagina",
+  "contact.reservation.textAfter":
+    "Non accettiamo prenotazioni tramite questo modulo, eccetto per gruppi o soggiorni di lunga durata.",
   "contact.form.fullName": "Nome completo",
   "contact.form.email": "E-mail",
   "contact.form.subject": "Oggetto",
@@ -16,7 +18,8 @@ export const contact = {
   "contact.validation.emailInvalid": "Email non valida.",
   "contact.validation.subjectRequired": "L'oggetto è obbligatorio.",
   "contact.validation.messageRequired": "Il messaggio è obbligatorio.",
-  "contact.genericError": "Si è verificato un errore durante l'invio del messaggio.",
+  "contact.genericError":
+    "Si è verificato un errore durante l'invio del messaggio.",
   "contact.info.phone": "Telefono",
   "contact.info.whatsapp": "Whatsapp",
   "contact.info.email": "E-mail",
@@ -27,5 +30,6 @@ export const contact = {
   "contact.form.phonePlaceholder": "+33 4 75 68 28 24",
   "contact.form.messagePlaceholder": "Il tuo messaggio qui",
   "contact.privateRequest.title": "Richiesta speciale",
-  "contact.privateRequest.text": "Possiamo privatizzare il luogo per i vostri eventi privati, con o senza alloggio. Cercate un luogo per organizzare un evento familiare, un ricevimento, un evento artistico, seminari... Domaine de Pipangaille, un edificio storico circondato da un parco alberato con molti spazi, è ideale per ospitare i vostri eventi. Il parco, il cortile, la corte interna, l'installazione di tende... rimaniamo a vostra disposizione per qualsiasi richiesta."
+  "contact.privateRequest.text":
+    "Possiamo privatizzare il luogo per i vostri eventi privati, con o senza alloggio. Cercate un luogo per organizzare un evento familiare, un ricevimento, un evento artistico, seminari... Domaine de Pipangaille, un edificio storico circondato da un parco alberato con molti spazi, è ideale per ospitare i vostri eventi. Il parco, il cortile, la corte interna, l'installazione di tende... rimaniamo a vostra disposizione per qualsiasi richiesta.",
 };

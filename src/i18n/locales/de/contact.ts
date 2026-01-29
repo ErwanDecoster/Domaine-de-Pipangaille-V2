@@ -1,7 +1,9 @@
 export const contact = {
   "contact.title": "Kontakt",
-  "contact.reservation.textBefore": "Alle Reservierungen werden ausschließlich über die Seite",
-  "contact.reservation.textAfter": "vorgenommen. Wir akzeptieren keine Reservierungen über dieses Formular, außer für Gruppen oder Langzeitaufenthalte.",
+  "contact.reservation.textBefore":
+    "Alle Reservierungen werden ausschließlich über die Seite",
+  "contact.reservation.textAfter":
+    "vorgenommen. Wir akzeptieren keine Reservierungen über dieses Formular, außer für Gruppen oder Langzeitaufenthalte.",
   "contact.form.fullName": "Vollständiger Name",
   "contact.form.email": "E-Mail",
   "contact.form.subject": "Betreff",
@@ -16,7 +18,8 @@ export const contact = {
   "contact.validation.emailInvalid": "Ungültige E-Mail-Adresse.",
   "contact.validation.subjectRequired": "Betreff ist erforderlich.",
   "contact.validation.messageRequired": "Nachricht ist erforderlich.",
-  "contact.genericError": "Ein Fehler ist beim Versenden der Nachricht aufgetreten.",
+  "contact.genericError":
+    "Ein Fehler ist beim Versenden der Nachricht aufgetreten.",
   "contact.info.phone": "Telefon",
   "contact.info.whatsapp": "Whatsapp",
   "contact.info.email": "E-Mail",
@@ -27,5 +30,6 @@ export const contact = {
   "contact.form.phonePlaceholder": "+33 4 75 68 28 24",
   "contact.form.messagePlaceholder": "Ihre Nachricht hier",
   "contact.privateRequest.title": "Besondere Anfrage",
-  "contact.privateRequest.text": "Wir können den Veranstaltungsort für Ihre privaten Veranstaltungen mit oder ohne Unterkunft privatisieren. Sie suchen einen Ort für Familienfeierlichkeiten, Empfänge, künstlerische Veranstaltungen, Seminare... Das Domaine de Pipangaille, ein historisches Gebäude inmitten eines Parklandschaft mit vielen Räumlichkeiten, ist ideal für die Ausrichtung Ihrer Veranstaltungen. Der Park, der Hof, der Innenhof, die Aufstellung von Zelten... wir stehen Ihnen gerne zur Verfügung."
+  "contact.privateRequest.text":
+    "Wir können den Veranstaltungsort für Ihre privaten Veranstaltungen mit oder ohne Unterkunft privatisieren. Sie suchen einen Ort für Familienfeierlichkeiten, Empfänge, künstlerische Veranstaltungen, Seminare... Das Domaine de Pipangaille, ein historisches Gebäude inmitten eines Parklandschaft mit vielen Räumlichkeiten, ist ideal für die Ausrichtung Ihrer Veranstaltungen. Der Park, der Hof, der Innenhof, die Aufstellung von Zelten... wir stehen Ihnen gerne zur Verfügung.",
 };

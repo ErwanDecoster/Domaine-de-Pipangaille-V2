@@ -71,7 +71,26 @@ const otherRooms = roomsContent
   isNotFound ? (
     <NotFoundTemplate lang={lang} />
   ) : (
-    <Layout>
+    <Layout
+      title={
+        baseRoom
+          ? t(
+              `seo.pages.accommodations.${baseRoom.key}.title` as Parameters<
+                typeof t
+              >[0],
+            )
+          : t("seo.pages.accommodations.title")
+      }
+      description={
+        baseRoom
+          ? t(
+              `seo.pages.accommodations.${baseRoom.key}.description` as Parameters<
+                typeof t
+              >[0],
+            )
+          : t("seo.pages.accommodations.description")
+      }
+    >
       <div
         data-scroll-animated
         class="bg-background sticky top-0 z-10 h-28 w-screen"

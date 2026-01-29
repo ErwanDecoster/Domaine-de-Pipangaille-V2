@@ -50,7 +50,10 @@ const activitiesTotalPages = getTotalPages(activities.length);
 const restaurantsTotalPages = getTotalPages(restaurants.length);
 ---
 
-<Layout>
+<Layout
+  title={t("seo.pages.surroundings.title")}
+  description={t("seo.pages.surroundings.description")}
+>
   <div
     data-scroll-animated
     class="bg-background sticky top-0 z-10 h-28 w-screen"

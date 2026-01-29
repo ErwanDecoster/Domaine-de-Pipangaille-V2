@@ -1,7 +1,9 @@
 export const contact = {
   "contact.title": "Contacto",
-  "contact.reservation.textBefore": "Todas las reservas se realizan exclusivamente a través de la página",
-  "contact.reservation.textAfter": "No aceptamos reservas a través de este formulario, excepto para grupos o estancias de larga duración.",
+  "contact.reservation.textBefore":
+    "Todas las reservas se realizan exclusivamente a través de la página",
+  "contact.reservation.textAfter":
+    "No aceptamos reservas a través de este formulario, excepto para grupos o estancias de larga duración.",
   "contact.form.fullName": "Nombre completo",
   "contact.form.email": "Correo electrónico",
   "contact.form.subject": "Asunto",
@@ -20,5 +22,5 @@ export const contact = {
   "contact.info.phone": "Teléfono",
   "contact.info.whatsapp": "Whatsapp",
   "contact.info.email": "Correo electrónico",
-  "contact.info.address": "Dirección"
+  "contact.info.address": "Dirección",
 };

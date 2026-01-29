@@ -1,76 +1,122 @@
 export const accommodations = {
   "accommodations.hero.title": "Le nostre camere, tra comfort e autenticità",
-  "accommodations.hero.text": "Le quattro camere decorate in modo unico, che invitano al viaggio, si trovano al secondo piano. È disponibile un'area di accoglienza con poltrone, giochi da tavolo, libri e informazioni turistiche. Le nostre camere climatizzate dispongono di doccia e servizi privati.\n\nOrari: accoglienza: 17h-21h - Partenza fino alle 10:30. Arrivo anticipato possibile su richiesta e a pagamento.",
+  "accommodations.hero.text":
+    "Le quattro camere decorate in modo unico, che invitano al viaggio, si trovano al secondo piano. È disponibile un'area di accoglienza con poltrone, giochi da tavolo, libri e informazioni turistiche. Le nostre camere climatizzate dispongono di doccia e servizi privati.\n\nOrari: accoglienza: 17h-21h - Partenza fino alle 10:30. Arrivo anticipato possibile su richiesta e a pagamento.",
   "accommodations.rooms.button": "Vedi la camera",
   "accommodations.rooms.marocaine.title": "Camera Marocchina",
-  "accommodations.rooms.marocaine.description": "La suite marocchina, con un'atmosfera calda ispirata ai riad e ai materiali naturali, è ideale per una coppia in cerca di evasione e un momento romantico. Questa camera può ospitare una coppia con un bambino.",
-  "accommodations.rooms.marocaine.longDescription": "L'atmosfera marocchina con colori caldi vi trasporterà in questa camera, adatta per 2 adulti e un bambino o per un soggiorno romantico. Vista sul giardino e sul cortile, dispone di un letto da 1,80 m x 2 m, trasformabile in due letti singoli, un grande divano (trasformabile in letto per bambini), doppio lavabo, ampia doccia a filo pavimento in tadelakt, WC separato, ripostiglio. L'aria condizionata garantisce un comfort ottimale in estate.",
-  "accommodations.rooms.marocaine.gallery.image1": "Suite marocchina - vista principale",
-  "accommodations.rooms.marocaine.gallery.image2": "Suite marocchina - tessuti e materiali naturali",
-  "accommodations.rooms.marocaine.gallery.image3": "Suite marocchina - bagno in tadelakt",
-  "accommodations.rooms.marocaine.gallery.image4": "Suite marocchina - zona living con divano letto",
-  "accommodations.rooms.marocaine.gallery.image5": "Suite marocchina - dettagli artigianali",
-  "accommodations.rooms.marocaine.tags.bedding": "Letto matrimoniale o letti gemelli",
+  "accommodations.rooms.marocaine.description":
+    "La suite marocchina, con un'atmosfera calda ispirata ai riad e ai materiali naturali, è ideale per una coppia in cerca di evasione e un momento romantico. Questa camera può ospitare una coppia con un bambino.",
+  "accommodations.rooms.marocaine.longDescription":
+    "L'atmosfera marocchina con colori caldi vi trasporterà in questa camera, adatta per 2 adulti e un bambino o per un soggiorno romantico. Vista sul giardino e sul cortile, dispone di un letto da 1,80 m x 2 m, trasformabile in due letti singoli, un grande divano (trasformabile in letto per bambini), doppio lavabo, ampia doccia a filo pavimento in tadelakt, WC separato, ripostiglio. L'aria condizionata garantisce un comfort ottimale in estate.",
+  "accommodations.rooms.marocaine.gallery.image1":
+    "Suite marocchina - vista principale",
+  "accommodations.rooms.marocaine.gallery.image2":
+    "Suite marocchina - tessuti e materiali naturali",
+  "accommodations.rooms.marocaine.gallery.image3":
+    "Suite marocchina - bagno in tadelakt",
+  "accommodations.rooms.marocaine.gallery.image4":
+    "Suite marocchina - zona living con divano letto",
+  "accommodations.rooms.marocaine.gallery.image5":
+    "Suite marocchina - dettagli artigianali",
+  "accommodations.rooms.marocaine.tags.bedding":
+    "Letto matrimoniale o letti gemelli",
   "accommodations.rooms.marocaine.tags.family": "Coppia con 1 bambino",
   "accommodations.rooms.marocaine.tags.couple": "Coppia",
   "accommodations.rooms.africaine.title": "Camera Africana",
-  "accommodations.rooms.africaine.description": "La camera africana con atmosfera ispirata al safari e decorazione unica, ideale per una coppia, amici o professionisti.",
-  "accommodations.rooms.africaine.longDescription": "Questa camera di 18 m² con vista sul giardino e accenti safari offre un letto da 1,80 x 2 m trasformabile in 2 letti singoli, una scrivania con 2 sedie, un lavabo, una doccia a filo pavimento in tadelakt, WC separato e ripostiglio. Ideale per i ciclisti di passaggio sulla ViaRhôna, questa camera climatizzata permette di recuperare prima della tappa successiva.",
-  "accommodations.rooms.africaine.gallery.image1": "Camera africana - vista principale",
-  "accommodations.rooms.africaine.gallery.image2": "Camera africana - luce naturale",
-  "accommodations.rooms.africaine.gallery.image3": "Camera africana - bagno privato",
-  "accommodations.rooms.africaine.gallery.image4": "Camera africana - angolo scrivania",
-  "accommodations.rooms.africaine.gallery.image5": "Camera africana - dettagli safari",
-  "accommodations.rooms.africaine.tags.bedding": "Letto matrimoniale o letti gemelli",
+  "accommodations.rooms.africaine.description":
+    "La camera africana con atmosfera ispirata al safari e decorazione unica, ideale per una coppia, amici o professionisti.",
+  "accommodations.rooms.africaine.longDescription":
+    "Questa camera di 18 m² con vista sul giardino e accenti safari offre un letto da 1,80 x 2 m trasformabile in 2 letti singoli, una scrivania con 2 sedie, un lavabo, una doccia a filo pavimento in tadelakt, WC separato e ripostiglio. Ideale per i ciclisti di passaggio sulla ViaRhôna, questa camera climatizzata permette di recuperare prima della tappa successiva.",
+  "accommodations.rooms.africaine.gallery.image1":
+    "Camera africana - vista principale",
+  "accommodations.rooms.africaine.gallery.image2":
+    "Camera africana - luce naturale",
+  "accommodations.rooms.africaine.gallery.image3":
+    "Camera africana - bagno privato",
+  "accommodations.rooms.africaine.gallery.image4":
+    "Camera africana - angolo scrivania",
+  "accommodations.rooms.africaine.gallery.image5":
+    "Camera africana - dettagli safari",
+  "accommodations.rooms.africaine.tags.bedding":
+    "Letto matrimoniale o letti gemelli",
   "accommodations.rooms.africaine.tags.adults": "2 adulti",
-  "accommodations.rooms.marocaine.equipments.note": "La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.",
-  "accommodations.rooms.africaine.equipments.note": "La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.",
+  "accommodations.rooms.marocaine.equipments.note":
+    "La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.",
+  "accommodations.rooms.africaine.equipments.note":
+    "La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.",
   "accommodations.rooms.toscane.title": "Camera Toscana",
-  "accommodations.rooms.toscane.description": "La camera toscana, ispirata all'Italia, unisce romanticismo e passione con i suoi colori pastello. Ideale per una coppia in cerca di un momento di serenità.",
-  "accommodations.rooms.toscane.longDescription": "Una camera di 17 m² con decorazione ispirata alla Toscana che vi trasporta in un nido italiano romantico. Questa camera con vista sul giardino offre un letto da 1,60 x 2 m, una doccia a filo pavimento, un lavabo, WC separato, un tavolo murale alto con 2 sgabelli e ripostiglio. È dotata di aria condizionata per notti serene.",
-  "accommodations.rooms.toscane.gallery.image1": "Camera toscana - vista principale",
-  "accommodations.rooms.toscane.gallery.image2": "Camera toscana - tessuti terracotta",
-  "accommodations.rooms.toscane.gallery.image3": "Camera toscana - bagno ensuite",
-  "accommodations.rooms.toscane.gallery.image4": "Camera toscana - area scrittoio",
-  "accommodations.rooms.toscane.gallery.image5": "Camera toscana - dettagli decorativi",
+  "accommodations.rooms.toscane.description":
+    "La camera toscana, ispirata all'Italia, unisce romanticismo e passione con i suoi colori pastello. Ideale per una coppia in cerca di un momento di serenità.",
+  "accommodations.rooms.toscane.longDescription":
+    "Una camera di 17 m² con decorazione ispirata alla Toscana che vi trasporta in un nido italiano romantico. Questa camera con vista sul giardino offre un letto da 1,60 x 2 m, una doccia a filo pavimento, un lavabo, WC separato, un tavolo murale alto con 2 sgabelli e ripostiglio. È dotata di aria condizionata per notti serene.",
+  "accommodations.rooms.toscane.gallery.image1":
+    "Camera toscana - vista principale",
+  "accommodations.rooms.toscane.gallery.image2":
+    "Camera toscana - tessuti terracotta",
+  "accommodations.rooms.toscane.gallery.image3":
+    "Camera toscana - bagno ensuite",
+  "accommodations.rooms.toscane.gallery.image4":
+    "Camera toscana - area scrittoio",
+  "accommodations.rooms.toscane.gallery.image5":
+    "Camera toscana - dettagli decorativi",
   "accommodations.rooms.toscane.tags.couple": "Coppia",
   "accommodations.rooms.toscane.tags.romantic": "Romantico",
   "accommodations.rooms.creole.title": "Camera Creola",
-  "accommodations.rooms.creole.description": "La camera Creola è ispirata a un viaggio verso le isole con i suoi colori blu e il mobilio in rattan. Questa camera è ideale per una coppia.",
-  "accommodations.rooms.creole.longDescription": "La bellissima altezza del soffitto, la vista sul giardino e le fibre naturali del mobilio inondano questa camera di luce. Questa camera è composta da un letto matrimoniale da 1,60 x 2 m, un'area con cabina doccia e lavabo, WC separato. Il mobilio ispirato alle isole: due poltrone in rattan, un tavolino e un armadio. Questa camera climatizzata promette una dolce parentesi.",
-  "accommodations.rooms.creole.gallery.image1": "Camera creola - vista principale",
-  "accommodations.rooms.creole.gallery.image2": "Camera creola - palette tropicale",
+  "accommodations.rooms.creole.description":
+    "La camera Creola è ispirata a un viaggio verso le isole con i suoi colori blu e il mobilio in rattan. Questa camera è ideale per una coppia.",
+  "accommodations.rooms.creole.longDescription":
+    "La bellissima altezza del soffitto, la vista sul giardino e le fibre naturali del mobilio inondano questa camera di luce. Questa camera è composta da un letto matrimoniale da 1,60 x 2 m, un'area con cabina doccia e lavabo, WC separato. Il mobilio ispirato alle isole: due poltrone in rattan, un tavolino e un armadio. Questa camera climatizzata promette una dolce parentesi.",
+  "accommodations.rooms.creole.gallery.image1":
+    "Camera creola - vista principale",
+  "accommodations.rooms.creole.gallery.image2":
+    "Camera creola - palette tropicale",
   "accommodations.rooms.creole.gallery.image3": "Camera creola - bagno privato",
   "accommodations.rooms.creole.gallery.image4": "Camera creola - area notte",
-  "accommodations.rooms.creole.gallery.image5": "Camera creola - dettagli artigianali",
+  "accommodations.rooms.creole.gallery.image5":
+    "Camera creola - dettagli artigianali",
   "accommodations.detail.equipments.title": "Dotazioni disponibili",
-  "accommodations.detail.equipments.note": "La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.",
+  "accommodations.detail.equipments.note":
+    "La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.",
   "accommodations.detail.table.title": "La table d’hôtes",
-  "accommodations.detail.table.text": "Su prenotazione proponiamo la nostra table d’hôtes conviviale: menù unico di stagione oppure taglieri e insalate generose preparate con prodotti locali e biologici.",
+  "accommodations.detail.table.text":
+    "Su prenotazione proponiamo la nostra table d’hôtes conviviale: menù unico di stagione oppure taglieri e insalate generose preparate con prodotti locali e biologici.",
   "accommodations.detail.explore.title": "Luoghi da vivere",
-  "accommodations.detail.explore.text": "In stagione approfittate della piscina con lettini, del padiglione estivo per un drink o un gelato e della sala comune con divani, libri e giochi di società.",
+  "accommodations.detail.explore.text":
+    "In stagione approfittate della piscina con lettini, del padiglione estivo per un drink o un gelato e della sala comune con divani, libri e giochi di società.",
   "accommodations.detail.otherRooms.title": "Altri alloggi",
-  "accommodations.rooms.equipments.doubleBedSeparable": "Letto matrimoniale 180 cm divisibile",
-  "accommodations.rooms.equipments.doubleBed160": "Letto matrimoniale 160 x 200 cm",
-  "accommodations.rooms.equipments.freeHighSpeedWifi": "Wi-Fi ad alta velocità gratuito",
+  "accommodations.rooms.equipments.doubleBedSeparable":
+    "Letto matrimoniale 180 cm divisibile",
+  "accommodations.rooms.equipments.doubleBed160":
+    "Letto matrimoniale 160 x 200 cm",
+  "accommodations.rooms.equipments.freeHighSpeedWifi":
+    "Wi-Fi ad alta velocità gratuito",
   "accommodations.rooms.equipments.airConditioning": "Aria condizionata",
   "accommodations.rooms.equipments.ShowerRoom": "Bagno privato",
-  "accommodations.rooms.equipments.ShowerRoomMoroccan": "Doppio lavabo, ampia doccia a filo pavimento, WC separato",
-  "accommodations.rooms.equipments.ShowerRoomAfrican": "Lavabo, doccia a filo pavimento, WC separato",
-  "accommodations.rooms.equipments.ShowerRoomTuscan": "Lavabo, doccia a filo pavimento, WC separato",
-  "accommodations.rooms.equipments.ShowerRoomCreole": "Cabina doccia, lavabo, WC separato",
-  "accommodations.rooms.equipments.babyCribOnRequest": "Culla disponibile su richiesta",
+  "accommodations.rooms.equipments.ShowerRoomMoroccan":
+    "Doppio lavabo, ampia doccia a filo pavimento, WC separato",
+  "accommodations.rooms.equipments.ShowerRoomAfrican":
+    "Lavabo, doccia a filo pavimento, WC separato",
+  "accommodations.rooms.equipments.ShowerRoomTuscan":
+    "Lavabo, doccia a filo pavimento, WC separato",
+  "accommodations.rooms.equipments.ShowerRoomCreole":
+    "Cabina doccia, lavabo, WC separato",
+  "accommodations.rooms.equipments.babyCribOnRequest":
+    "Culla disponibile su richiesta",
   "accommodations.rooms.equipments.kettle": "Bollitore e vassoio di cortesia",
   "accommodations.rooms.equipments.hairDryer": "Asciugacapelli",
   "accommodations.rooms.equipments.sofaBed": "Divano letto",
-  "accommodations.rooms.equipments.commonWashingMachine": "Accesso alla lavatrice su richiesta (a pagamento)",
+  "accommodations.rooms.equipments.commonWashingMachine":
+    "Accesso alla lavatrice su richiesta (a pagamento)",
   "accommodations.rooms.equipments.desk": "Tavolo murale alto",
   "accommodations.rooms.equipments.smallTable": "Piccolo tavolino",
   "accommodations.rooms.equipments.wardrobe": "Armadio",
-  "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs": "Tavolino con due poltrone",
+  "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
+    "Tavolino con due poltrone",
   "accommodations.breakfast.title": "Colazione, table d'hôtes e bar",
-  "accommodations.breakfast.text": "La colazione è servita dalle 8:00 alle 9:30, o prima su richiesta. Viene servita nella sala da pranzo o nel cortile interno, con bel tempo. A buffet, troverete pane tradizionale, pasticceria, tè biologico, caffè, succhi di frutta, yogurt locali e frutta di stagione.\n\nSelezioniamo i nostri fornitori per offrirvi prodotti locali e biologici.\n\nColazione salata opzionale disponibile, su richiesta e con prenotazione il giorno prima.\n\nSu prenotazione, la table d'hôtes propone un menù unico fatto in casa o taglieri di salumi, formaggi o insalate composte con prodotti locali e biologici. Le nostre proposte possono variare a seconda della stagione.\n\nServizio bar: proponiamo una carta delle bevande e una carta dei vini.",
+  "accommodations.breakfast.text":
+    "La colazione è servita dalle 8:00 alle 9:30, o prima su richiesta. Viene servita nella sala da pranzo o nel cortile interno, con bel tempo. A buffet, troverete pane tradizionale, pasticceria, tè biologico, caffè, succhi di frutta, yogurt locali e frutta di stagione.\n\nSelezioniamo i nostri fornitori per offrirvi prodotti locali e biologici.\n\nColazione salata opzionale disponibile, su richiesta e con prenotazione il giorno prima.\n\nSu prenotazione, la table d'hôtes propone un menù unico fatto in casa o taglieri di salumi, formaggi o insalate composte con prodotti locali e biologici. Le nostre proposte possono variare a seconda della stagione.\n\nServizio bar: proponiamo una carta delle bevande e una carta dei vini.",
   "accommodations.cta.title": "Vuoi privatizzare tutte le camere?",
-  "accommodations.cta.text": "È possibile riservare l’intera casa per eventi di gruppo, weekend in famiglia o serate tra amici.",
-  "accommodations.cta.button": "Contattaci"
+  "accommodations.cta.text":
+    "È possibile riservare l’intera casa per eventi di gruppo, weekend in famiglia o serate tra amici.",
+  "accommodations.cta.button": "Contattaci",
 };

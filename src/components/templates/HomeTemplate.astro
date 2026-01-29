@@ -49,7 +49,10 @@ const featuredSurroundings = featuredSlugs
   .filter(Boolean) as (typeof surroundings.toVisit)[number][];
 ---
 
-<Layout>
+<Layout
+  title={t("seo.pages.home.title")}
+  description={t("seo.pages.home.description")}
+>
   <div data-scroll-animated class="bg-muted sticky top-0 z-10 h-28 w-screen">
   </div>
   <Header

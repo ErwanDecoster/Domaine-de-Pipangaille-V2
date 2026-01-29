@@ -11,7 +11,11 @@ const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
 ---
 
-<Layout bodyClass="theme-counter">
+<Layout
+  bodyClass="theme-counter"
+  title={t("seo.pages.counter.title")}
+  description={t("seo.pages.counter.description")}
+>
   <div data-scroll-animated class="bg-muted sticky top-0 z-10 h-28 w-screen">
   </div>
   <Header

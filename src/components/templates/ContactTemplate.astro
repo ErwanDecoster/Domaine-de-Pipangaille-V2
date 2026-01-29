@@ -22,7 +22,10 @@ const placeAddress = "1 Quartier Les Marettes, 26140, Andancette";
 const result = Astro.getActionResult(actions.contact.send);
 ---
 
-<Layout>
+<Layout
+  title={t("seo.pages.contact.title")}
+  description={t("seo.pages.contact.description")}
+>
   <div
     data-scroll-animated
     class="bg-background sticky top-0 z-10 h-28 w-screen"

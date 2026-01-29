@@ -1,7 +1,9 @@
 export const contact = {
   "contact.title": "Nous contacter",
-  "contact.reservation.textBefore": "Toutes les réservations se font exclusivement via la page",
-  "contact.reservation.textAfter": "Nous n'acceptons pas de réservations par ce formulaire, excepté pour les groupes ou les séjours de longue durée.",
+  "contact.reservation.textBefore":
+    "Toutes les réservations se font exclusivement via la page",
+  "contact.reservation.textAfter":
+    "Nous n'acceptons pas de réservations par ce formulaire, excepté pour les groupes ou les séjours de longue durée.",
   "contact.form.fullName": "Nom complet",
   "contact.form.email": "E-mail",
   "contact.form.subject": "Objet",
@@ -27,5 +29,6 @@ export const contact = {
   "contact.form.phonePlaceholder": "+33 4 75 68 28 24",
   "contact.form.messagePlaceholder": "Votre message ici",
   "contact.privateRequest.title": "Demande particulière",
-  "contact.privateRequest.text": "Nous pouvons privatiser le lieu pour vos événements privés, avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, des séminaires... Le domaine de Pipangaille, ancienne bâtisse de caractère entourée d'un parc arboré, avec de nombreux espaces, est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux... nous restons à votre disposition pour toutes demandes."
+  "contact.privateRequest.text":
+    "Nous pouvons privatiser le lieu pour vos événements privés, avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, des séminaires... Le domaine de Pipangaille, ancienne bâtisse de caractère entourée d'un parc arboré, avec de nombreux espaces, est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux... nous restons à votre disposition pour toutes demandes.",
 };

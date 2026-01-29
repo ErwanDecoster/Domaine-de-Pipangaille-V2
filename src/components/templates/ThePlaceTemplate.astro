@@ -14,7 +14,10 @@ const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
 ---
 
-<Layout>
+<Layout
+  title={t("seo.pages.place.title")}
+  description={t("seo.pages.place.description")}
+>
   <div data-scroll-animated class="bg-muted sticky top-0 z-10 h-28 w-screen">
   </div>
   <Header

@@ -1,7 +1,9 @@
 export const contact = {
   "contact.title": "Contact Us",
-  "contact.reservation.textBefore": "All bookings are made exclusively through the",
-  "contact.reservation.textAfter": "page. We do not accept reservations through this form, except for groups or long-term stays.",
+  "contact.reservation.textBefore":
+    "All bookings are made exclusively through the",
+  "contact.reservation.textAfter":
+    "page. We do not accept reservations through this form, except for groups or long-term stays.",
   "contact.form.fullName": "Full Name",
   "contact.form.email": "E-mail",
   "contact.form.subject": "Subject",
@@ -27,5 +29,6 @@ export const contact = {
   "contact.form.phonePlaceholder": "+33 4 75 68 28 24",
   "contact.form.messagePlaceholder": "Your message here",
   "contact.privateRequest.title": "Special Request",
-  "contact.privateRequest.text": "We can privatize the venue for your private events, with or without accommodation. Are you looking for a place to organize a family event, reception, artistic event, seminars... Domaine de Pipangaille, a historic building surrounded by a wooded park with numerous spaces, is ideal for hosting your events. The park, the yard, the inner courtyard, marquee installation... we remain at your disposal for all requests."
+  "contact.privateRequest.text":
+    "We can privatize the venue for your private events, with or without accommodation. Are you looking for a place to organize a family event, reception, artistic event, seminars... Domaine de Pipangaille, a historic building surrounded by a wooded park with numerous spaces, is ideal for hosting your events. The park, the yard, the inner courtyard, marquee installation... we remain at your disposal for all requests.",
 };

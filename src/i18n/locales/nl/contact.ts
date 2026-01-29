@@ -1,7 +1,9 @@
 export const contact = {
   "contact.title": "Neem contact op",
-  "contact.reservation.textBefore": "Alle reserveringen worden uitsluitend via de pagina",
-  "contact.reservation.textAfter": "gemaakt. We accepteren geen reserveringen via dit formulier, behalve voor groepen of langdurige verblijven.",
+  "contact.reservation.textBefore":
+    "Alle reserveringen worden uitsluitend via de pagina",
+  "contact.reservation.textAfter":
+    "gemaakt. We accepteren geen reserveringen via dit formulier, behalve voor groepen of langdurige verblijven.",
   "contact.form.fullName": "Volledige naam",
   "contact.form.email": "E-mail",
   "contact.form.subject": "Onderwerp",
@@ -16,7 +18,8 @@ export const contact = {
   "contact.validation.emailInvalid": "Ongeldig e-mailadres.",
   "contact.validation.subjectRequired": "Onderwerp is verplicht.",
   "contact.validation.messageRequired": "Bericht is verplicht.",
-  "contact.genericError": "Er is een fout opgetreden bij het verzenden van het bericht.",
+  "contact.genericError":
+    "Er is een fout opgetreden bij het verzenden van het bericht.",
   "contact.info.phone": "Telefoon",
   "contact.info.whatsapp": "Whatsapp",
   "contact.info.email": "E-mail",
@@ -27,5 +30,6 @@ export const contact = {
   "contact.form.phonePlaceholder": "+33 4 75 68 28 24",
   "contact.form.messagePlaceholder": "Uw bericht hier",
   "contact.privateRequest.title": "Speciaal verzoek",
-  "contact.privateRequest.text": "We kunnen de locatie privatiseren voor uw privé-evenementen, met of zonder accommodatie. Bent u op zoek naar een plek om een familiebijeenkomst, receptie, kunstzinnig evenement, seminars... te organiseren. Domaine de Pipangaille, een historisch gebouw omgeven door een parklandschap met vele ruimtes, is ideaal voor het organiseren van uw evenementen. Het park, de werf, de binnenplaats, tentopstelling... we staan tot uw beschikking voor alle verzoeken."
+  "contact.privateRequest.text":
+    "We kunnen de locatie privatiseren voor uw privé-evenementen, met of zonder accommodatie. Bent u op zoek naar een plek om een familiebijeenkomst, receptie, kunstzinnig evenement, seminars... te organiseren. Domaine de Pipangaille, een historisch gebouw omgeven door een parklandschap met vele ruimtes, is ideaal voor het organiseren van uw evenementen. Het park, de werf, de binnenplaats, tentopstelling... we staan tot uw beschikking voor alle verzoeken.",
 };

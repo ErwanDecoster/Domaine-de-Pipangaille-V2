@@ -1,10 +1,12 @@
 export const surroundings = {
   "surroundings.hero.title": "Aktivitäten und Adressen rund um das Anwesen",
-  "surroundings.hero.text": "Im Herzen des Rhônetals, nur wenige Minuten von der A7 (1 h von Lyon, 50 min von Valence, 1 h 15 von Grenoble) entfernt, genießt das Domaine de Pipangaille eine privilegierte Lage. Die ViaRhôna führt direkt am Anwesen vorbei – perfekt für Radfahrer –, und Familien wechseln zwischen Wanderungen, Weinrouten, dem Palais Idéal du Facteur Cheval, dem Safari de Peaugres oder der Vivarais-Bahn.",
+  "surroundings.hero.text":
+    "Im Herzen des Rhônetals, nur wenige Minuten von der A7 (1 h von Lyon, 50 min von Valence, 1 h 15 von Grenoble) entfernt, genießt das Domaine de Pipangaille eine privilegierte Lage. Die ViaRhôna führt direkt am Anwesen vorbei – perfekt für Radfahrer –, und Familien wechseln zwischen Wanderungen, Weinrouten, dem Palais Idéal du Facteur Cheval, dem Safari de Peaugres oder der Vivarais-Bahn.",
   "surroundings.sections.activities.title": "Aktivitäten in der Nähe",
   "surroundings.sections.food.title": "Wo man essen kann",
   "surroundings.card.cta": "Adresse entdecken",
-  "surroundings.card.description.default": "Empfehlung in der Nähe des Anwesens",
+  "surroundings.card.description.default":
+    "Empfehlung in der Nähe des Anwesens",
   "surroundings.filter.all": "Alle anzeigen",
   "surroundings.category.family": "Familie",
   "surroundings.category.visit": "Kultureller Besuch",
@@ -12,96 +14,176 @@ export const surroundings = {
   "surroundings.category.sport": "Sport",
   "surroundings.category.ride": "Ausflug",
   "surroundings.category.bike": "Radfahren",
-  "surroundings.descriptions.safari_peaugres.short": "Starten Sie mit Familie, Partner oder Freunden zu einem Safari-Abenteuer mit mehr als 130 Arten und 1 200 Tieren auf 80 Hektar.",
-  "surroundings.descriptions.safari_peaugres.long": "Ein weitläufiger Tierpark mit Auto- und Fußgänger-Rundkursen. Begegnen Sie über 130 Arten auf 80 Hektar, durchqueren Sie das Großkatzengelände durch einen gläsernen Tunnel, betreten Sie das tropische Terre-des-minus-Gewächshaus, entdecken Sie die Seelöwenbucht, das Versteckhaus der 1 000 Überraschungen, den Giraffensteg und vieles mehr.",
-  "surroundings.descriptions.palais_ideal_du_facteur_cheval.short": "Ein steinernes Palais, von einem einzigen Mann – dem Briefträger Cheval – in Handarbeit erbaut: die fesselnde Geschichte eines Lebenswerks.",
-  "surroundings.descriptions.palais_ideal_du_facteur_cheval.long": "Mitten in einem üppigen Garten erhebt sich dieses Palais, das Briefträger Cheval in 93 000 Stunden und 33 Jahren errichtet hat. Inspiriert von zugestellten Postkarten vereint es Kaimane, Elefanten, Pelikane, Bären, Vögel, Giganten, Feen, mythologische Figuren, Kaskaden und Architekturen aller Kontinente zu einem ebenso einzigartigen wie universellen Bauwerk.",
-  "surroundings.descriptions.acrobois_pilat.short": "Mitten im Wald warten 14 Parcours für jedes Niveau auf Familien, Paare oder Freunde.",
-  "surroundings.descriptions.acrobois_pilat.long": "Vierzehn Baumkronen-Parcours führen durch den Wald und fordern mit Seilrutschen und vielfältigen Hindernissen heraus – wagen Sie sich bis zum Finalparcours vor.",
-  "surroundings.descriptions.musee_de_l_alambic.short": "Tauchen Sie ein in den Charme der wandernden Destillateure und bewundern Sie prächtige Kupferbrennblasen aus ganz Frankreich.",
-  "surroundings.descriptions.musee_de_l_alambic.long": "Im Herzen des Rhônetals erzählt das Musée de l’Alambic der Distillerie Jean Gauthier in Saint-Désirat die Geschichte der bouilleurs ambulants. Auf 1 400 m² zeigen Kupferapparate, Geräte und Werkzeuge aus allen Regionen in 30 Szenen ein Stück ländisches Erbe.",
-  "surroundings.descriptions.golf_de_saint_clair.short": "Zwischen Rhônetal und Ardèche-Hügeln erwarten Sie malerische Golfbahnen im Park eines Schlosses aus dem 18. Jahrhundert.",
-  "surroundings.descriptions.golf_de_saint_clair.long": "Die Anlage im Schlosspark des 18. Jahrhunderts ist für ihre Panoramablicke und breiten, baumgesäumten Fairways bekannt, die ein großzügiges Raumgefühl vermitteln.",
-  "surroundings.descriptions.viarhona.short": "Diese Radroute verbindet alpine Panoramen mit den Stränden der Camargue und führt durch die Weinlandschaften des Rhônetals.",
-  "surroundings.descriptions.viarhona.long": "Die 815 km lange ViaRhôna verbindet den Genfersee mit dem Mittelmeer entlang der Rhône – von alpinen Kulissen über die Weinberge der Côtes du Rhône bis zur Camargueküste.",
-  "surroundings.descriptions.viafluvia.short": "Ein Naturerlebnis durch die Landschaften von Loire, Haute-Loire und Ardèche – Outdoor-Genuss rundum.",
-  "surroundings.descriptions.viafluvia.long": "Die Via Fluvia ist ein über 80 km langer, sicherer Radweg auf einer ehemaligen Bahnlinie quer durch Loire, Haute-Loire und Ardèche; abwechslungsreich und für Räder, Fußgänger oder Roller gleichermaßen geeignet.",
-  "surroundings.descriptions.musee_valrhona.short": "Eintauchen in die Cité du Chocolat Valrhôna: interaktiver Rundgang, Verkostungen und Workshops für die ganze Familie.",
-  "surroundings.descriptions.musee_valrhona.long": "In Tain-l’Hermitage zeigt die Cité du Chocolat Valrhôna die Geheimnisse des Kakaos mit Sinnesstationen, Live-Demonstrationen, Verkostungen und Workshops. Treffen Sie Pâtissiers, entdecken Sie die Rohstoffe und nehmen Sie Rezeptideen sowie genussvolle Mitbringsel mit.",
-  "surroundings.descriptions.mongolfieres_et_cie.short": "Teilen Sie einen geselligen Moment mit bis zu acht Passagieren pro Ballon und genießen Sie das Gefühl völliger Freiheit.",
-  "surroundings.descriptions.mongolfieres_et_cie.long": "Steigen Sie in einen unserer Heißluftballons für maximal acht Personen – genug Raum für Gespräche mit Crew und Mitreisenden. In einem sicheren, komfortablen Korb erleben Sie einen besonderen Moment der Freiheit.",
-  "surroundings.descriptions.train_de_l_ardeche.short": "Steigen Sie in den historischen Dampfzug und erleben Sie eine einzigartige Ardèche-Reise mit grandiosen Landschaften.",
-  "surroundings.descriptions.train_de_l_ardeche.long": "Ein Muss für Ihren Ardèche-Urlaub: die Fahrt mit dem einzigen Personenzug, der das gesamte Departement durchquert.\n\nAuthentische Dampfloks führen Sie entlang eines wilden Flusses durch unberührte Natur – von den Doux-Schluchten bis zu den Ardèche-Bergen – und bieten spektakuläre Ausblicke.",
-  "surroundings.descriptions.la_fabrique_de_julien.short": "Erleben Sie Ihre Kindheit neu in der Fabrique de Julien – handgemachte Süßigkeiten, Führungen und nostalgische Leckereien.",
-  "surroundings.descriptions.la_fabrique_de_julien.long": "Tauchen Sie in Bourg-Argental in Ihre Kindheit ein: handwerkliche Bonbons ohne Gluten und Konservierungsstoffe, erhältlich in Lyon und Bourg-Argental.\n\nUnsere lyoner Maître-Confiseure kreieren Lutscher, Karamellen, Marshmallows, schokolierte Köstlichkeiten und vieles mehr.\n\nBesichtigen Sie Fabrik und Museum, entdecken Sie das Know-how und genießen Sie eine Gourmet-Erfahrung mit nostalgischen Aromen.",
-  "surroundings.descriptions.le_nougat_de_montsegur.short": "Artisanale Köstlichkeiten aus Montségur-sur-Lauzon: traditionelles Nougat ohne Zusätze, tief verwurzelt in der provenzalischen Tradition.",
-  "surroundings.descriptions.le_nougat_de_montsegur.long": "Im idyllischen Dorf Montségur-sur-Lauzon in der Drôme provençale stellen wir unsere eigenen Süßwaren her und verkaufen sie vor Ort.\n\nJedes Produkt wird sorgfältig in Kupferkesseln gekocht, um authentische Qualität zu garantieren.\n\nUnser traditionelles Nougat kommt ohne Farb- und Konservierungsstoffe aus und bleibt vollkommen pur.\n\nSorgfältig ausgewählte Zutaten bewahren die zeitlose Tradition des provenzalischen Terroirs.",
-  "surroundings.descriptions.chateau_de_grignan.short": "Das Château de Grignan, ein herausragendes historisches Juwel zwischen Renaissance und Klassizismus, lässt Sie in Jahrhunderte französischer Lebensart eintauchen.",
-  "surroundings.descriptions.chateau_de_grignan.long": "Hoch über dem Dorf vereint das Château de Grignan französischen Klassizismus und Renaissance-Inspiration. Im 17. Jahrhundert wurde es zur Lustresidenz und Heimat der Marquise de Sévigné, während der Revolution zerstört, im 20. Jahrhundert wieder aufgebaut und gehört seit 1979 dem Département Drôme. Als Monument historique und Musée de France lädt es zu einer Reise durch die Lebensart der Epochen ein.",
-  "surroundings.descriptions.labyrinthe_vegetal.short": "Maislabyrinth in Charmes: seit 2001 ein spielerisches, sportliches und kniffliges Abenteuer in geschützter Natur.",
-  "surroundings.descriptions.labyrinthe_vegetal.long": "In geschützter Umgebung auf den Höhen von Charmes begeistert dieses Maislabyrinth seit 2001 Klein und Groß mit einem spielerischen, sportlichen und geistigen Erlebnis.",
-  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.short": "Solarboot auf der Rhône: Gourmet-Kreuzfahrt, Blick auf Saint-Joseph, Weinverkostung und fahrradfreundliche Programme.",
-  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long": "Gehen Sie an Bord eines elektro-solar betriebenen Canotiers für eine Gourmet-Kreuzfahrt, einen Ausflug oder ein Dinner auf der Rhône. Genießen Sie Weinverkostungen mit Blick auf die Saint-Joseph-Hänge und nehmen Sie je nach Programm Ihr Fahrrad mit.",
-  "surroundings.descriptions.le_chateau_d_anet.short": "Entdecken Sie das Château d’Anet, ein Renaissance-Juwel in Eure-et-Loir, und erleben Sie die Geschichte von Heinrich II. und Diane de Poitiers bei einer Führung.",
-  "surroundings.descriptions.le_chateau_d_anet.long": "Die Gastgeber des Château d’Anet laden zu Entspannung und kulturellem Austausch ein. Folgen Sie einer Führung durch das 1548 von Heinrich II. für Diane de Poitiers errichtete Monument, entdecken Sie ihre persönlichen Objekte und die Kapelle, in der sie ruht.",
-  "surroundings.descriptions.le_relais_mailles.short": "Locker gelegenes Restaurant in Laveyron direkt am Rhône, ideal für ViaRhôna-Radler und entspannte Stopps.",
-  "surroundings.descriptions.le_relais_mailles.long": "In einem baumbestandenen Park: Tagesgerichte, Pizza und Burger zum Vor Ort essen, Mitnehmen oder Bestellen.\n\nGrünes Umfeld mit Blick auf den Fluss und die Ardèche-Hügel, fröhliche Stimmung für Radfahrer und Familien.",
-  "surroundings.descriptions.la_table_des_saj.short": "Kreatives französisches Bistro in Saint-Désirat, verbindet feine Küche mit lässiger Atmosphäre.",
-  "surroundings.descriptions.la_table_des_saj.long": "Saisonkarte, die nach Inspiration des Küchenchefs wechselt, frische Produkte und sorgfältiges Anrichten.\n\nWarmherzige, intime Stimmung für Mittag- oder Abendessen nur wenige Minuten vom Domaine entfernt.",
-  "surroundings.descriptions.la_poule_noire.short": "Regionale Klassiker in einem gemütlichen Restaurant in Albon mit Terrasse und behaglichem Gastraum.",
-  "surroundings.descriptions.la_poule_noire.long": "Chef Gérald Bondelu kocht Spezialitäten wie Froschschenkel, gebratene Foie gras, Gambas und verfeinerte Regionalgerichte.\n\nAufmerksames Team und eigener Raum für Familienessen oder kleine Feiern.",
-  "surroundings.descriptions.le_picotin.short": "Traditionelle französische Küche in Andance, schlichtes Ambiente mit schattiger Terrasse oder klimatisiertem Raum.",
-  "surroundings.descriptions.le_picotin.long": "Kräftige, hausgemachte Klassiker für eine unkomplizierte Mittagspause.\n\nLocker-freundlicher Empfang, praktischer Halt nach Spaziergang oder Radtour am Rhône-Ufer.",
-  "surroundings.descriptions.au_pre_du_rhone.short": "Panoramarestaurant zwischen Saint-Vallier und Tain-l’Hermitage mit Blick auf die Ardèche-Hügel.",
-  "surroundings.descriptions.au_pre_du_rhone.long": "Große Veranda direkt am Wasser, saisonale Frischeküche, auch für Gruppen geeignet.\n\nHelles, ruhiges Ambiente, um die Rhône-Landschaft zu genießen.",
-  "surroundings.descriptions.cesar_pizza.short": "Beliebte Pizzeria in Andance für ihre Mitnahme-Pizzen und großzügigen Rezepte.",
-  "surroundings.descriptions.cesar_pizza.long": "Knusprige Ofenpizzen, Burger und Sharing-Boards in freundlicher, zügiger Atmosphäre.\n\nIdeal für ein Familienessen oder einen Abend mit Freunden nahe Place du Cloître.",
-  "surroundings.descriptions.la_villa_champagnere.short": "Bistronomie mit lokalen Produkten in Saint-Rambert-d’Albon, gemütlicher Stil mit Terrasse.",
-  "surroundings.descriptions.la_villa_champagnere.long": "Hausgemachte Saisonküche — Gourmet-Burger, Froschschenkel, Marktgerichte — drinnen oder draußen serviert.\n\nBegrüßt Gruppen mit eigenem Raum für Team-Lunches, Abende oder Runden unter Freunden.",
-  "surroundings.descriptions.lamas_des_plaines.short": "Entdeckungshof und tiergestützte Therapiezentrum mit Lamas, bietet Workshops und Schulungsprogramme.",
-  "surroundings.descriptions.lamas_des_plaines.long": "Entdecken Sie die Ruhe und Gelassenheit von Lamas des Plaines, einem umweltbewussten Hof, der sich der tiergestützten Therapie und der Lamaentdeckung widmet.\n\nGenießen Sie Sensibilisierungsworkshops, Agility-Parcours mit den Tieren oder Schulungen in tiergestützter Therapie, Tierkommunikation und persönlicher Entwicklung. Der Hof folgt einer strengen ethischen Charta und gewährleistet das Wohlergehen von Lamas, die mit Sorgfalt aufgezogen und als echte Arbeitspartner behandelt werden.\n\nEin einzigartiger Ort, um Werte wie Respekt, Ethik und Solidarität zu erleben, alles in einer ruhigen Umgebung nur wenige Minuten von Lyon entfernt.",
-  "surroundings.lamas_des_plaines.gallery.image1": "Lamas auf den Ebenen des Entdeckungshofs",
-  "surroundings.descriptions.la_belle_epoque.short": "Traditionelle, hausgemachte Küche mit möglichst kurzen Lieferketten.",
-  "surroundings.descriptions.la_belle_epoque.long": "Restaurant La Belle Époque in Le Creux de la Thine, nur 2 km entfernt.\n\nHerzlicher, geselliger Empfang.\n\nHausgemachte Traditionsküche, die auf lokale Produzenten und kurze Wege setzt.\n\nBeschattete Terrasse und Parkmöglichkeiten.\n\nMittags geöffnet von Montag bis Freitag sowie Dienstag- und Donnerstagabend.",
-  "surroundings.descriptions.o_daily_truck.short": "Auf der Karte: 100 % hausgemachte Burger, Schmorgerichte oder Snacks, Sharing-Platten, Veggie-Gerichte und frische Pommes.",
-  "surroundings.descriptions.o_daily_truck.long": "Auf der Speisekarte stehen 100 % hausgemachte Burger, Fleischgerichte mit Sauce oder Snacks, Aufschnitt- und Käseplatten zum Teilen, vegetarische Optionen und frisch geschnittene Pommes.\n\nDas Team variiert die Angebote, um saisonale Produkte hervorzuheben: italienische oder spanische Charcuterie, Käse aus der Region oder den Schweizer Bergen, Obst und Gemüse lokaler Gärtner, Aubrac-Rind, Geflügel vom Terroir und Kräuter von den Drôme-Hügeln.\n\nAuch Desserts sind hausgemacht: Schokoladenmousse, Tartes, luftig-cremige Panna Cotta und handwerkliche Eiscreme.",
+  "surroundings.descriptions.safari_peaugres.short":
+    "Starten Sie mit Familie, Partner oder Freunden zu einem Safari-Abenteuer mit mehr als 130 Arten und 1 200 Tieren auf 80 Hektar.",
+  "surroundings.descriptions.safari_peaugres.long":
+    "Ein weitläufiger Tierpark mit Auto- und Fußgänger-Rundkursen. Begegnen Sie über 130 Arten auf 80 Hektar, durchqueren Sie das Großkatzengelände durch einen gläsernen Tunnel, betreten Sie das tropische Terre-des-minus-Gewächshaus, entdecken Sie die Seelöwenbucht, das Versteckhaus der 1 000 Überraschungen, den Giraffensteg und vieles mehr.",
+  "surroundings.descriptions.palais_ideal_du_facteur_cheval.short":
+    "Ein steinernes Palais, von einem einzigen Mann – dem Briefträger Cheval – in Handarbeit erbaut: die fesselnde Geschichte eines Lebenswerks.",
+  "surroundings.descriptions.palais_ideal_du_facteur_cheval.long":
+    "Mitten in einem üppigen Garten erhebt sich dieses Palais, das Briefträger Cheval in 93 000 Stunden und 33 Jahren errichtet hat. Inspiriert von zugestellten Postkarten vereint es Kaimane, Elefanten, Pelikane, Bären, Vögel, Giganten, Feen, mythologische Figuren, Kaskaden und Architekturen aller Kontinente zu einem ebenso einzigartigen wie universellen Bauwerk.",
+  "surroundings.descriptions.acrobois_pilat.short":
+    "Mitten im Wald warten 14 Parcours für jedes Niveau auf Familien, Paare oder Freunde.",
+  "surroundings.descriptions.acrobois_pilat.long":
+    "Vierzehn Baumkronen-Parcours führen durch den Wald und fordern mit Seilrutschen und vielfältigen Hindernissen heraus – wagen Sie sich bis zum Finalparcours vor.",
+  "surroundings.descriptions.musee_de_l_alambic.short":
+    "Tauchen Sie ein in den Charme der wandernden Destillateure und bewundern Sie prächtige Kupferbrennblasen aus ganz Frankreich.",
+  "surroundings.descriptions.musee_de_l_alambic.long":
+    "Im Herzen des Rhônetals erzählt das Musée de l’Alambic der Distillerie Jean Gauthier in Saint-Désirat die Geschichte der bouilleurs ambulants. Auf 1 400 m² zeigen Kupferapparate, Geräte und Werkzeuge aus allen Regionen in 30 Szenen ein Stück ländisches Erbe.",
+  "surroundings.descriptions.golf_de_saint_clair.short":
+    "Zwischen Rhônetal und Ardèche-Hügeln erwarten Sie malerische Golfbahnen im Park eines Schlosses aus dem 18. Jahrhundert.",
+  "surroundings.descriptions.golf_de_saint_clair.long":
+    "Die Anlage im Schlosspark des 18. Jahrhunderts ist für ihre Panoramablicke und breiten, baumgesäumten Fairways bekannt, die ein großzügiges Raumgefühl vermitteln.",
+  "surroundings.descriptions.viarhona.short":
+    "Diese Radroute verbindet alpine Panoramen mit den Stränden der Camargue und führt durch die Weinlandschaften des Rhônetals.",
+  "surroundings.descriptions.viarhona.long":
+    "Die 815 km lange ViaRhôna verbindet den Genfersee mit dem Mittelmeer entlang der Rhône – von alpinen Kulissen über die Weinberge der Côtes du Rhône bis zur Camargueküste.",
+  "surroundings.descriptions.viafluvia.short":
+    "Ein Naturerlebnis durch die Landschaften von Loire, Haute-Loire und Ardèche – Outdoor-Genuss rundum.",
+  "surroundings.descriptions.viafluvia.long":
+    "Die Via Fluvia ist ein über 80 km langer, sicherer Radweg auf einer ehemaligen Bahnlinie quer durch Loire, Haute-Loire und Ardèche; abwechslungsreich und für Räder, Fußgänger oder Roller gleichermaßen geeignet.",
+  "surroundings.descriptions.musee_valrhona.short":
+    "Eintauchen in die Cité du Chocolat Valrhôna: interaktiver Rundgang, Verkostungen und Workshops für die ganze Familie.",
+  "surroundings.descriptions.musee_valrhona.long":
+    "In Tain-l’Hermitage zeigt die Cité du Chocolat Valrhôna die Geheimnisse des Kakaos mit Sinnesstationen, Live-Demonstrationen, Verkostungen und Workshops. Treffen Sie Pâtissiers, entdecken Sie die Rohstoffe und nehmen Sie Rezeptideen sowie genussvolle Mitbringsel mit.",
+  "surroundings.descriptions.mongolfieres_et_cie.short":
+    "Teilen Sie einen geselligen Moment mit bis zu acht Passagieren pro Ballon und genießen Sie das Gefühl völliger Freiheit.",
+  "surroundings.descriptions.mongolfieres_et_cie.long":
+    "Steigen Sie in einen unserer Heißluftballons für maximal acht Personen – genug Raum für Gespräche mit Crew und Mitreisenden. In einem sicheren, komfortablen Korb erleben Sie einen besonderen Moment der Freiheit.",
+  "surroundings.descriptions.train_de_l_ardeche.short":
+    "Steigen Sie in den historischen Dampfzug und erleben Sie eine einzigartige Ardèche-Reise mit grandiosen Landschaften.",
+  "surroundings.descriptions.train_de_l_ardeche.long":
+    "Ein Muss für Ihren Ardèche-Urlaub: die Fahrt mit dem einzigen Personenzug, der das gesamte Departement durchquert.\n\nAuthentische Dampfloks führen Sie entlang eines wilden Flusses durch unberührte Natur – von den Doux-Schluchten bis zu den Ardèche-Bergen – und bieten spektakuläre Ausblicke.",
+  "surroundings.descriptions.la_fabrique_de_julien.short":
+    "Erleben Sie Ihre Kindheit neu in der Fabrique de Julien – handgemachte Süßigkeiten, Führungen und nostalgische Leckereien.",
+  "surroundings.descriptions.la_fabrique_de_julien.long":
+    "Tauchen Sie in Bourg-Argental in Ihre Kindheit ein: handwerkliche Bonbons ohne Gluten und Konservierungsstoffe, erhältlich in Lyon und Bourg-Argental.\n\nUnsere lyoner Maître-Confiseure kreieren Lutscher, Karamellen, Marshmallows, schokolierte Köstlichkeiten und vieles mehr.\n\nBesichtigen Sie Fabrik und Museum, entdecken Sie das Know-how und genießen Sie eine Gourmet-Erfahrung mit nostalgischen Aromen.",
+  "surroundings.descriptions.le_nougat_de_montsegur.short":
+    "Artisanale Köstlichkeiten aus Montségur-sur-Lauzon: traditionelles Nougat ohne Zusätze, tief verwurzelt in der provenzalischen Tradition.",
+  "surroundings.descriptions.le_nougat_de_montsegur.long":
+    "Im idyllischen Dorf Montségur-sur-Lauzon in der Drôme provençale stellen wir unsere eigenen Süßwaren her und verkaufen sie vor Ort.\n\nJedes Produkt wird sorgfältig in Kupferkesseln gekocht, um authentische Qualität zu garantieren.\n\nUnser traditionelles Nougat kommt ohne Farb- und Konservierungsstoffe aus und bleibt vollkommen pur.\n\nSorgfältig ausgewählte Zutaten bewahren die zeitlose Tradition des provenzalischen Terroirs.",
+  "surroundings.descriptions.chateau_de_grignan.short":
+    "Das Château de Grignan, ein herausragendes historisches Juwel zwischen Renaissance und Klassizismus, lässt Sie in Jahrhunderte französischer Lebensart eintauchen.",
+  "surroundings.descriptions.chateau_de_grignan.long":
+    "Hoch über dem Dorf vereint das Château de Grignan französischen Klassizismus und Renaissance-Inspiration. Im 17. Jahrhundert wurde es zur Lustresidenz und Heimat der Marquise de Sévigné, während der Revolution zerstört, im 20. Jahrhundert wieder aufgebaut und gehört seit 1979 dem Département Drôme. Als Monument historique und Musée de France lädt es zu einer Reise durch die Lebensart der Epochen ein.",
+  "surroundings.descriptions.labyrinthe_vegetal.short":
+    "Maislabyrinth in Charmes: seit 2001 ein spielerisches, sportliches und kniffliges Abenteuer in geschützter Natur.",
+  "surroundings.descriptions.labyrinthe_vegetal.long":
+    "In geschützter Umgebung auf den Höhen von Charmes begeistert dieses Maislabyrinth seit 2001 Klein und Groß mit einem spielerischen, sportlichen und geistigen Erlebnis.",
+  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.short":
+    "Solarboot auf der Rhône: Gourmet-Kreuzfahrt, Blick auf Saint-Joseph, Weinverkostung und fahrradfreundliche Programme.",
+  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
+    "Gehen Sie an Bord eines elektro-solar betriebenen Canotiers für eine Gourmet-Kreuzfahrt, einen Ausflug oder ein Dinner auf der Rhône. Genießen Sie Weinverkostungen mit Blick auf die Saint-Joseph-Hänge und nehmen Sie je nach Programm Ihr Fahrrad mit.",
+  "surroundings.descriptions.le_chateau_d_anet.short":
+    "Entdecken Sie das Château d’Anet, ein Renaissance-Juwel in Eure-et-Loir, und erleben Sie die Geschichte von Heinrich II. und Diane de Poitiers bei einer Führung.",
+  "surroundings.descriptions.le_chateau_d_anet.long":
+    "Die Gastgeber des Château d’Anet laden zu Entspannung und kulturellem Austausch ein. Folgen Sie einer Führung durch das 1548 von Heinrich II. für Diane de Poitiers errichtete Monument, entdecken Sie ihre persönlichen Objekte und die Kapelle, in der sie ruht.",
+  "surroundings.descriptions.le_relais_mailles.short":
+    "Locker gelegenes Restaurant in Laveyron direkt am Rhône, ideal für ViaRhôna-Radler und entspannte Stopps.",
+  "surroundings.descriptions.le_relais_mailles.long":
+    "In einem baumbestandenen Park: Tagesgerichte, Pizza und Burger zum Vor Ort essen, Mitnehmen oder Bestellen.\n\nGrünes Umfeld mit Blick auf den Fluss und die Ardèche-Hügel, fröhliche Stimmung für Radfahrer und Familien.",
+  "surroundings.descriptions.la_table_des_saj.short":
+    "Kreatives französisches Bistro in Saint-Désirat, verbindet feine Küche mit lässiger Atmosphäre.",
+  "surroundings.descriptions.la_table_des_saj.long":
+    "Saisonkarte, die nach Inspiration des Küchenchefs wechselt, frische Produkte und sorgfältiges Anrichten.\n\nWarmherzige, intime Stimmung für Mittag- oder Abendessen nur wenige Minuten vom Domaine entfernt.",
+  "surroundings.descriptions.la_poule_noire.short":
+    "Regionale Klassiker in einem gemütlichen Restaurant in Albon mit Terrasse und behaglichem Gastraum.",
+  "surroundings.descriptions.la_poule_noire.long":
+    "Chef Gérald Bondelu kocht Spezialitäten wie Froschschenkel, gebratene Foie gras, Gambas und verfeinerte Regionalgerichte.\n\nAufmerksames Team und eigener Raum für Familienessen oder kleine Feiern.",
+  "surroundings.descriptions.le_picotin.short":
+    "Traditionelle französische Küche in Andance, schlichtes Ambiente mit schattiger Terrasse oder klimatisiertem Raum.",
+  "surroundings.descriptions.le_picotin.long":
+    "Kräftige, hausgemachte Klassiker für eine unkomplizierte Mittagspause.\n\nLocker-freundlicher Empfang, praktischer Halt nach Spaziergang oder Radtour am Rhône-Ufer.",
+  "surroundings.descriptions.au_pre_du_rhone.short":
+    "Panoramarestaurant zwischen Saint-Vallier und Tain-l’Hermitage mit Blick auf die Ardèche-Hügel.",
+  "surroundings.descriptions.au_pre_du_rhone.long":
+    "Große Veranda direkt am Wasser, saisonale Frischeküche, auch für Gruppen geeignet.\n\nHelles, ruhiges Ambiente, um die Rhône-Landschaft zu genießen.",
+  "surroundings.descriptions.cesar_pizza.short":
+    "Beliebte Pizzeria in Andance für ihre Mitnahme-Pizzen und großzügigen Rezepte.",
+  "surroundings.descriptions.cesar_pizza.long":
+    "Knusprige Ofenpizzen, Burger und Sharing-Boards in freundlicher, zügiger Atmosphäre.\n\nIdeal für ein Familienessen oder einen Abend mit Freunden nahe Place du Cloître.",
+  "surroundings.descriptions.la_villa_champagnere.short":
+    "Bistronomie mit lokalen Produkten in Saint-Rambert-d’Albon, gemütlicher Stil mit Terrasse.",
+  "surroundings.descriptions.la_villa_champagnere.long":
+    "Hausgemachte Saisonküche — Gourmet-Burger, Froschschenkel, Marktgerichte — drinnen oder draußen serviert.\n\nBegrüßt Gruppen mit eigenem Raum für Team-Lunches, Abende oder Runden unter Freunden.",
+  "surroundings.descriptions.lamas_des_plaines.short":
+    "Entdeckungshof und tiergestützte Therapiezentrum mit Lamas, bietet Workshops und Schulungsprogramme.",
+  "surroundings.descriptions.lamas_des_plaines.long":
+    "Entdecken Sie die Ruhe und Gelassenheit von Lamas des Plaines, einem umweltbewussten Hof, der sich der tiergestützten Therapie und der Lamaentdeckung widmet.\n\nGenießen Sie Sensibilisierungsworkshops, Agility-Parcours mit den Tieren oder Schulungen in tiergestützter Therapie, Tierkommunikation und persönlicher Entwicklung. Der Hof folgt einer strengen ethischen Charta und gewährleistet das Wohlergehen von Lamas, die mit Sorgfalt aufgezogen und als echte Arbeitspartner behandelt werden.\n\nEin einzigartiger Ort, um Werte wie Respekt, Ethik und Solidarität zu erleben, alles in einer ruhigen Umgebung nur wenige Minuten von Lyon entfernt.",
+  "surroundings.lamas_des_plaines.gallery.image1":
+    "Lamas auf den Ebenen des Entdeckungshofs",
+  "surroundings.descriptions.la_belle_epoque.short":
+    "Traditionelle, hausgemachte Küche mit möglichst kurzen Lieferketten.",
+  "surroundings.descriptions.la_belle_epoque.long":
+    "Restaurant La Belle Époque in Le Creux de la Thine, nur 2 km entfernt.\n\nHerzlicher, geselliger Empfang.\n\nHausgemachte Traditionsküche, die auf lokale Produzenten und kurze Wege setzt.\n\nBeschattete Terrasse und Parkmöglichkeiten.\n\nMittags geöffnet von Montag bis Freitag sowie Dienstag- und Donnerstagabend.",
+  "surroundings.descriptions.o_daily_truck.short":
+    "Auf der Karte: 100 % hausgemachte Burger, Schmorgerichte oder Snacks, Sharing-Platten, Veggie-Gerichte und frische Pommes.",
+  "surroundings.descriptions.o_daily_truck.long":
+    "Auf der Speisekarte stehen 100 % hausgemachte Burger, Fleischgerichte mit Sauce oder Snacks, Aufschnitt- und Käseplatten zum Teilen, vegetarische Optionen und frisch geschnittene Pommes.\n\nDas Team variiert die Angebote, um saisonale Produkte hervorzuheben: italienische oder spanische Charcuterie, Käse aus der Region oder den Schweizer Bergen, Obst und Gemüse lokaler Gärtner, Aubrac-Rind, Geflügel vom Terroir und Kräuter von den Drôme-Hügeln.\n\nAuch Desserts sind hausgemacht: Schokoladenmousse, Tartes, luftig-cremige Panna Cotta und handwerkliche Eiscreme.",
   "surroundings.detail.otherActivities.title": "Weitere Aktivitäten entdecken",
   "surroundings.detail.otherRestaurants.title": "Weitere Restaurants entdecken",
   "surroundings.detail.seeAllActivities": "Alle Aktivitäten anzeigen",
   "surroundings.detail.seeAllRestaurants": "Alle Restaurants anzeigen",
-  "surroundings.safari_peaugres.gallery.image1": "Panoramablick auf den Safari de Peaugres",
-  "surroundings.palais_ideal_du_facteur_cheval.gallery.image1": "Fassade des Palais Idéal du Facteur Cheval",
-  "surroundings.acrobois_pilat.gallery.image1": "Besucher auf dem Baumwipfelparcours von Acrobois Pilat",
-  "surroundings.musee_de_l_alambic.gallery.image1": "Kupferbrennblasen im Musée de l’Alambic",
-  "surroundings.golf_de_saint_clair.gallery.image1": "Fairways des Golf de Saint-Clair",
-  "surroundings.viarhona.gallery.image1": "Radfahrer auf der ViaRhôna entlang des Flusses",
+  "surroundings.safari_peaugres.gallery.image1":
+    "Panoramablick auf den Safari de Peaugres",
+  "surroundings.palais_ideal_du_facteur_cheval.gallery.image1":
+    "Fassade des Palais Idéal du Facteur Cheval",
+  "surroundings.acrobois_pilat.gallery.image1":
+    "Besucher auf dem Baumwipfelparcours von Acrobois Pilat",
+  "surroundings.musee_de_l_alambic.gallery.image1":
+    "Kupferbrennblasen im Musée de l’Alambic",
+  "surroundings.golf_de_saint_clair.gallery.image1":
+    "Fairways des Golf de Saint-Clair",
+  "surroundings.viarhona.gallery.image1":
+    "Radfahrer auf der ViaRhôna entlang des Flusses",
   "surroundings.viafluvia.gallery.image1": "Familienausflug auf der ViaFluvia",
-  "surroundings.musee_valrhona.gallery.image1": "Verkostungsworkshop in der Cité du Chocolat Valrhôna",
-  "surroundings.mongolfieres_et_cie.gallery.image1": "Heißluftballon von Montgolfières & Cie über dem Tal",
-  "surroundings.train_de_l_ardeche.gallery.image1": "Historische Lokomotive des Train de l’Ardèche",
-  "surroundings.la_fabrique_de_julien.gallery.image1": "Süßigkeitenregale in der Fabrique de Julien",
-  "surroundings.le_nougat_de_montsegur.gallery.image1": "Nougatriegel von Le Nougat de Montségur",
-  "surroundings.chateau_de_grignan.gallery.image1": "Außenansicht des Château de Grignan",
-  "surroundings.labyrinthe_vegetal.gallery.image1": "Luftaufnahme des Labyrinthe végétal",
-  "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1": "Boot der Compagnie des Canotiers Rhône & Saône auf dem Fluss",
-  "surroundings.le_chateau_d_anet.gallery.image1": "Innenhof des Château d’Anet",
-  "surroundings.le_relais_mailles.gallery.image1": "Speisesaal des Relais des Mailles",
-  "surroundings.la_table_des_saj.gallery.image1": "Angerichtete Teller in La Table des SAJ",
+  "surroundings.musee_valrhona.gallery.image1":
+    "Verkostungsworkshop in der Cité du Chocolat Valrhôna",
+  "surroundings.mongolfieres_et_cie.gallery.image1":
+    "Heißluftballon von Montgolfières & Cie über dem Tal",
+  "surroundings.train_de_l_ardeche.gallery.image1":
+    "Historische Lokomotive des Train de l’Ardèche",
+  "surroundings.la_fabrique_de_julien.gallery.image1":
+    "Süßigkeitenregale in der Fabrique de Julien",
+  "surroundings.le_nougat_de_montsegur.gallery.image1":
+    "Nougatriegel von Le Nougat de Montségur",
+  "surroundings.chateau_de_grignan.gallery.image1":
+    "Außenansicht des Château de Grignan",
+  "surroundings.labyrinthe_vegetal.gallery.image1":
+    "Luftaufnahme des Labyrinthe végétal",
+  "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
+    "Boot der Compagnie des Canotiers Rhône & Saône auf dem Fluss",
+  "surroundings.le_chateau_d_anet.gallery.image1":
+    "Innenhof des Château d’Anet",
+  "surroundings.le_relais_mailles.gallery.image1":
+    "Speisesaal des Relais des Mailles",
+  "surroundings.la_table_des_saj.gallery.image1":
+    "Angerichtete Teller in La Table des SAJ",
   "surroundings.la_poule_noir.gallery.image1": "Gastraum von La Poule Noire",
-  "surroundings.le_picotin.gallery.image1": "Fassade des Restaurants Le Picotin",
-  "surroundings.au_pre_du_rhone.gallery.image1": "Terrasse mit Rhône-Blick im Au Pré du Rhône",
-  "surroundings.la_belle_epoque.gallery.image1": "Speisesaal von La Belle Époque",
-  "surroundings.la_belle_epoque.gallery.image2": "Terrassenservice bei La Belle Époque",
-  "surroundings.o_daily_truck.gallery.image1": "Gourmet-Burger vom O'Daily Truck",
-  "surroundings.o_daily_truck.gallery.image2": "O'Daily Truck bereit zum Service",
+  "surroundings.le_picotin.gallery.image1":
+    "Fassade des Restaurants Le Picotin",
+  "surroundings.au_pre_du_rhone.gallery.image1":
+    "Terrasse mit Rhône-Blick im Au Pré du Rhône",
+  "surroundings.la_belle_epoque.gallery.image1":
+    "Speisesaal von La Belle Époque",
+  "surroundings.la_belle_epoque.gallery.image2":
+    "Terrassenservice bei La Belle Époque",
+  "surroundings.o_daily_truck.gallery.image1":
+    "Gourmet-Burger vom O'Daily Truck",
+  "surroundings.o_daily_truck.gallery.image2":
+    "O'Daily Truck bereit zum Service",
   "surroundings.cesar_pizza.gallery.image1": "Theke und Ofen von César Pizza",
-  "surroundings.la_villa_champagnere.gallery.image1": "Garten und Terrasse der Villa Champagnère",
-  "surroundings.les_agapons.gallery.image1": "Restaurant Les Agapons in Manthes",
-  "surroundings.descriptions.les_agapons.short": "Authentisches französisches Restaurant in Manthes, hochwertige hausgemachte Küche mit lokalen und regionalen Produkten.",
-  "surroundings.descriptions.les_agapons.long": "Willkommen zu Les Agapons, gelegen in der charmanten Stadt Manthes. Unser warmes Team serviert Ihnen hochwertige hausgemachte Küche, zubereitet mit lokalen und regionalen Produkten sowie traditionellen Gerichten.\n\nDas Restaurant bietet viele Services: Terrasse, Kinderbereich, kostenlose Parkplätze, private Veranstaltungen, Hochzeitsfeiern, kostenloses WLAN und Haustiere erlaubt. Geöffnet von Mittwoch bis Samstag von 12 bis 14 Uhr und von 19 bis 21 Uhr sowie Sonntagmittag.",
+  "surroundings.la_villa_champagnere.gallery.image1":
+    "Garten und Terrasse der Villa Champagnère",
+  "surroundings.les_agapons.gallery.image1":
+    "Restaurant Les Agapons in Manthes",
+  "surroundings.descriptions.les_agapons.short":
+    "Authentisches französisches Restaurant in Manthes, hochwertige hausgemachte Küche mit lokalen und regionalen Produkten.",
+  "surroundings.descriptions.les_agapons.long":
+    "Willkommen zu Les Agapons, gelegen in der charmanten Stadt Manthes. Unser warmes Team serviert Ihnen hochwertige hausgemachte Küche, zubereitet mit lokalen und regionalen Produkten sowie traditionellen Gerichten.\n\nDas Restaurant bietet viele Services: Terrasse, Kinderbereich, kostenlose Parkplätze, private Veranstaltungen, Hochzeitsfeiern, kostenloses WLAN und Haustiere erlaubt. Geöffnet von Mittwoch bis Samstag von 12 bis 14 Uhr und von 19 bis 21 Uhr sowie Sonntagmittag.",
   "surroundings.detail.book": "Buchen",
   "surroundings.detail.call": "Anrufen",
   "surroundings.detail.socialNetworks": "Soziale Netzwerke",
   "surroundings.detail.visitWebsite": "Website besuchen",
-  "surroundings.detail.moreInfo.title": "Weitere Informationen"
+  "surroundings.detail.moreInfo.title": "Weitere Informationen",
 };

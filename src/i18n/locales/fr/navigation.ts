@@ -12,5 +12,5 @@ export const navigation = {
   "footer.contactUs": "Nous contacter",
   "footer.contactPage": "page “nous contacter”",
   "footer.legalMentions": "Mentions légales",
-  "footer.salesConditions": "Conditions générales de vente"
+  "footer.salesConditions": "Conditions générales de vente",
 };
