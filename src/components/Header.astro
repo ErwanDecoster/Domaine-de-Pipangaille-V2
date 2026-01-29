@@ -22,11 +22,11 @@ const paragraphs = Array.isArray(text)
     : [];
 ---
 
-<header class="relative grid sm:grid-cols-2 md:gap-20 px-20 pt-12">
+<header class="relative grid px-20 pt-12 sm:grid-cols-2 md:gap-20">
   <span
     class={cn(
       "-z-10 absolute inset-x-0 top-0 bottom-16",
-      withBackground && "bg-muted"
+      withBackground && "bg-muted",
     )}></span>
   <Image class="aspect-11/12" src={image} alt={imageAlt} />
   <div class="flex flex-col justify-center gap-8 pb-16">

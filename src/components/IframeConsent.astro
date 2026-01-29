@@ -22,13 +22,13 @@ const serviceName = (() => {
 })();
 ---
 
-<div class="w-full aspect-video rounded-md border-0">
+<div class="aspect-video w-full rounded-md border-0">
   <div
-    class="iframe-consent w-full h-full flex flex-col items-center justify-center gap-4 bg-muted rounded-md border p-6 text-center"
+    class="iframe-consent bg-muted flex h-full w-full flex-col items-center justify-center gap-4 rounded-md border p-6 text-center"
     data-iframe-src={src}
   >
     <div>
-      <h3 class="text-lg font-semibold mb-2">{t("iframeConsent.title")}</h3>
+      <h3 class="mb-2 text-lg font-semibold">{t("iframeConsent.title")}</h3>
       <p>
         {t("iframeConsent.text").replace("{serviceName}", serviceName)}
       </p>
@@ -47,7 +47,7 @@ const serviceName = (() => {
     const hostPath = getHostPath(src);
     const consentKey = `iframe-consent-${hostPath ?? src ?? "unknown"}`;
     const button = element.querySelector(
-      BUTTON_SELECTOR
+      BUTTON_SELECTOR,
     ) as HTMLButtonElement | null;
 
     // Check if consent was already given
@@ -90,7 +90,7 @@ const serviceName = (() => {
 
     element.parentElement?.replaceChild(
       iframeContainer.firstElementChild!,
-      element
+      element,
     );
   }
 </script>

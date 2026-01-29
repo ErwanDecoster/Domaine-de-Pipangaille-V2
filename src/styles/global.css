@@ -134,22 +134,23 @@ body.theme-counter {
     @apply cursor-pointer text-base;
   }
   h1 {
-    @apply text-7.5xl/[100%] tracking-tight font-serif-4 font-light;
+    @apply text-7.5xl/[100%] font-serif-4 font-light tracking-tight;
   }
   h2 {
-    @apply text-6xl/[110%] tracking-tight font-serif-4 font-light;
+    @apply font-serif-4 text-6xl/[110%] font-light tracking-tight;
   }
   h3 {
-    @apply text-5xl/[110%] tracking-tight font-serif-4 font-light;
+    @apply font-serif-4 text-5xl/[110%] font-light tracking-tight;
   }
   h4 {
-    @apply text-4xl/[130%] tracking-tight font-serif-4 font-light;
+    @apply font-serif-4 text-4xl/[130%] font-light tracking-tight;
   }
   h5 {
-    @apply text-2xl/[150%] tracking-tight font-serif-4 font-light;
+    @apply font-serif-4 text-2xl/[150%] font-light tracking-tight;
   }
-  p, ul {
-    @apply text-base/[160%] text-muted-foreground text-pretty;
+  p,
+  ul {
+    @apply text-muted-foreground text-base/[160%] text-pretty;
   }
   img {
     @apply bg-primary rounded-md object-cover;

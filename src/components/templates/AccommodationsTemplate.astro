@@ -34,17 +34,17 @@ const accommodationsHeroParagraphs = t("accommodations.hero.text")
 <Layout>
   <div
     data-scroll-animated
-    class="h-28 w-screen sticky top-0 z-10 bg-background"
+    class="bg-background sticky top-0 z-10 h-28 w-screen"
   >
   </div>
   <div class="px-20 pt-24">
     <h1>{t("accommodations.hero.title")}</h1>
-    <div class="mt-12 md:w-4/5 max-w-4xl flex flex-col gap-4">
+    <div class="mt-12 flex max-w-4xl flex-col gap-4 md:w-4/5">
       {accommodationsHeroParagraphs.map((p) => <p>{p}</p>)}
     </div>
   </div>
 
-  <section class="grid grid-cols-2 gap-8 md:gap-10 px-20 mt-12">
+  <section class="mt-12 grid grid-cols-2 gap-8 px-20 md:gap-10">
     {
       rooms.map((room) => (
         <Card
@@ -67,9 +67,9 @@ const accommodationsHeroParagraphs = t("accommodations.hero.text")
     ratio="4-5"
   />
 
-  <section class="px-20 my-48">
-    <div class="mx-auto bg-muted px-6 py-24 max-w-5xl rounded-3xl">
-      <div class="w-fit max-w-2xl mx-auto space-y-10 text-center">
+  <section class="my-48 px-20">
+    <div class="bg-muted mx-auto max-w-5xl rounded-3xl px-6 py-24">
+      <div class="mx-auto w-fit max-w-2xl space-y-10 text-center">
         <h3>{t("accommodations.cta.title")}</h3>
         <p>{t("accommodations.cta.text")}</p>
         <Button href={getLocalizedUrl("contact", lang)}>

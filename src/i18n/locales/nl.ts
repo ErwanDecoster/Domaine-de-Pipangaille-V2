@@ -1,357 +1,551 @@
 export const nl = {
-  'nav.home': 'Home',
-  'nav.place': 'De Locatie',
-  'nav.accommodations': 'Accommodaties',
-  'nav.counter': 'De Toonbank',
-  'nav.surroundings': 'Omgeving',
-  'nav.contact': 'Contact',
-  'nav.book': 'Boeken',
-  'footer.usefulLinks': 'Nuttige links',
-  'footer.knowUsBetter': 'Leer ons kennen',
-  'footer.moreInfo': 'Meer informatie',
-  'footer.contactUs': 'Neem contact op',
-  'footer.contactPage': '“contact” pagina',
-  'footer.legalMentions': 'Juridische vermeldingen',
-  'footer.salesConditions': 'Algemene verkoopvoorwaarden',
-  'home.header.title': 'Le Domaine de Pipangaille',
-  'home.header.text': 'Le Domaine de Pipangaille, een onlangs gerenoveerde voormalige zijdewormkwekerij omgeven door een bosrijk park dat de charme van steen en authenticiteit in een idyllische omgeving combineert, biedt 4 gastenkamers, table d\'hôtes op reservering, een onverwarmd zwembad geopend in het seizoen, voor een magisch verblijf en een uitnodiging om te ontspannen.\n\nHet Domaine de Pipangaille ligt vlakbij de afrit van de snelweg A7, dicht bij de Nationale 7, op een uur van Lyon en Saint-Étienne, 45 minuten van Valence en met directe toegang tot de ViaRhôna, zeer dicht bij de ViaFluvia.',
-  'home.header.button': 'Ontdek het Domein',
-  'home.rooms.title': 'Gastenkamers',
-  'home.rooms.text': 'U bereikt de kamers door het bosrijke park over te steken, wat u naar de binnenplaats brengt die omgeven is door stenen, wat zorgt voor een authentieke en rustgevende omgeving. Onze kamers bevinden zich op de tweede verdieping, bereikbaar via een grote trap.\n\nWij bieden vier kamers met airconditioning en unieke decoratie: een suite en drie tweepersoonskamers. De kamerdecoratie nodigt uit tot reizen en sereniteit.',
-  'home.rooms.button': 'Bekijk de kamers',
-  'home.counter.title': 'De Toonbank',
-  'home.counter.text': 'Voor fietsers die de Via Rhona passeren of toeristen op vakantie die op zoek zijn naar een ideale plek voor een lunchpauze of tussendoortje, verwelkomt de Pipangaille-toonbank bij de ingang van het landgoed u in het hoogseizoen onder het overdekte terras voor een zoete of hartige gastronomische pauze op een atypische plek in het hart van de vegetatie.',
-  'home.counter.button': 'Meer weten',
-  'counter.hero.title': 'De Toonbank',
-  'counter.hero.text': 'Le Comptoir de Pipangaille is een plek om even te pauzeren en te delen – een gastronomische tussenstop in het hart van het domein. Je komt er voor koffie, warme chocolademelk, matcha of een frisse drank met een zoete of hartige lekkernij, in een warme en rustgevende sfeer.',
-  'counter.hero.imageAlt': 'Zicht op Le Comptoir de Pipangaille',
-  'counter.story.title': 'Geniet van een maaltijd of drinkpauze',
-  'counter.story.text': 'De Comptoir biedt ook een selectie lokale producten en delicatessen om ter plaatse te proeven of mee te nemen.\n\nGeopend van woensdag tot maandag, van 11.00 tot 18.00 uur, is het een eenvoudige, gezellige en levendige plek om af te spreken, bij te praten en volop van de unieke omgeving van Pipangaille te genieten.',
-  'counter.story.imageAlt': 'Selectie van drankjes en lekkernijen aan de toonbank',
-  'home.reviews.title': 'Wat onze gasten zeggen',
-  'home.surroundings.title': 'Te ontdekken in de omgeving',
-  'home.surroundings.button': 'Bekijk activiteiten en restaurants in de buurt',
-  'surroundings.hero.title': 'Activiteiten en fijne adressen rond het domein',
-  'surroundings.hero.text': 'In het hart van de Rhônevallei, op enkele minuten van de A7 (1 u van Lyon, 50 min van Valence, 1 u 15 van Grenoble), profiteert Domaine de Pipangaille van een uitzonderlijke ligging. De ViaRhôna loopt vlak langs het domein – ideaal voor fietsers – en families wisselen wandelingen, wijnroutes, het Palais Idéal du Facteur Cheval, Safari de Peaugres of de Vivarais-spoorlijn af.',
-  'surroundings.sections.activities.title': 'Activiteiten in de buurt',
-  'surroundings.sections.food.title': 'Waar eten',
-  'surroundings.card.cta': 'Adres ontdekken',
-  'surroundings.card.description.default': 'Aanrader dicht bij het domein',
-  'surroundings.filter.all': 'Alles bekijken',
-  'surroundings.category.family': 'Familie',
-  'surroundings.category.visit': 'Cultureel bezoek',
-  'surroundings.category.loved': 'Favoriet',
-  'surroundings.category.sport': 'Sport',
-  'surroundings.category.ride': 'Uitstapje',
-  'surroundings.category.bike': 'Fietsen',
-  'surroundings.descriptions.safari_peaugres.short': 'Trek er met gezin, partner of vrienden op uit naar het safaripark met meer dan 130 soorten en 1 200 dieren op 80 hectare.',
-  'surroundings.descriptions.safari_peaugres.long': 'Een uitgestrekt dierenpark met zowel autoroutes als wandelparcours. Ontmoet meer dan 130 soorten op 80 hectare, loop door de kattentunnel van glas, bezoek de tropische Terre-des-minus-serre, de zeeleeuwenbaai, het duizend-schuilplaatsenhuis, de giraffenbrug en nog veel meer.',
-  'surroundings.descriptions.palais_ideal_du_facteur_cheval.short': 'Een stenen paleis dat door één man, postbode Cheval, met de hand werd gebouwd: het meeslepende verhaal van een levenswerk.',
-  'surroundings.descriptions.palais_ideal_du_facteur_cheval.long': 'In een weelderige tuin staat dit paleis dat postbode Cheval in 93 000 uur en 33 jaar tijd steen voor steen optrok. Geïnspireerd door de kaarten die hij bezorgde, wemelt het van kaaimannen, olifanten, pelikanen, beren, vogels, reuzen, feeën, mythologische figuren, watervallen en architecturen van alle continenten: een ongrijpbaar maar universeel kunstwerk.',
-  'surroundings.descriptions.acrobois_pilat.short': 'Midden in het bos wachten 14 parcours voor elk niveau, ideaal met gezin, partner of vrienden.',
-  'surroundings.descriptions.acrobois_pilat.long': 'Veertien boomparcours slingeren door het woud en zitten vol tokkelbanen en uiteenlopende hindernissen. Daag jezelf uit en probeer ook het ultieme parcours te voltooien.',
-  'surroundings.descriptions.musee_de_l_alambic.short': 'Herbeleef de charme van rondreizende stokers en bewonder prachtige koperen alambieken uit heel Frankrijk.',
-  'surroundings.descriptions.musee_de_l_alambic.long': 'In Saint-Désirat vertelt het Musée de l’Alambic van Distillerie Jean Gauthier het verhaal van de bouilleurs ambulants. Over 1 400 m² tonen koperen toestellen, gereedschap en gebruiksvoorwerpen uit alle hoeken van Frankrijk dertig scènes van dit plattelands-erfgoed.',
-  'surroundings.descriptions.golf_de_saint_clair.short': 'Tussen de Rhônevallei en de Ardèche-hellingen geniet je van fraaie golfholes in het park van een kasteel uit de 18e eeuw.',
-  'surroundings.descriptions.golf_de_saint_clair.long': 'Het parcours ligt in het park van een 18e-eeuws château en staat bekend om zijn panoramische uitzichten en brede, met bomen omzoomde fairways die veel ruimtegevoel geven.',
-  'surroundings.descriptions.viarhona.short': 'Deze fietsroute voert je van Alpenpanorama’s naar de stranden van de Camargue langs de iconische Rhône-wijngaarden.',
-  'surroundings.descriptions.viarhona.long': 'ViaRhôna slingert 815 km van het Meer van Genève naar de Middellandse Zee langs de Rhône, met Alpenlandschappen, Côtes du Rhône-wijngaarden en de Camarguekust.',
-  'surroundings.descriptions.viafluvia.short': 'Een natuurervaring door de landschappen van Loire, Haute-Loire en Ardèche: 360° buitenpret.',
-  'surroundings.descriptions.viafluvia.long': 'Via Fluvia is een meer dan 80 km lang, beveiligd fietspad op een voormalige spoorlijn door Loire, Haute-Loire en Ardèche, herkenbaar aan het gevarieerde landschap en toegankelijk voor fietsen, wandelaars en steps.',
-  'surroundings.descriptions.musee_valrhona.short': 'Duik in de Cité du Chocolat Valrhôna: interactieve route, proeverijen en workshops voor jong en oud.',
-  'surroundings.descriptions.musee_valrhona.long': 'In Tain-l’Hermitage onthult de Cité du Chocolat Valrhôna de geheimen van cacao met een zintuiglijk parcours, chef-demo’s, proeverijen en familieworkshops. Ontmoet patissiers, ontdek de herkomst en ga naar huis met receptideeën en smakelijke cadeaus.',
-  'surroundings.descriptions.mongolfieres_et_cie.short': 'Deel een gezellig moment met maximaal acht passagiers per luchtballon en ervaar totale vrijheid.',
-  'surroundings.descriptions.mongolfieres_et_cie.long': 'Stap in een van onze luchtballonnen voor hoogstens acht personen, zodat je echt contact hebt met crew en medepassagiers. In de veilige, comfortabele mand beleef je een onvergetelijk vrijheidsgevoel.',
-  'surroundings.descriptions.train_de_l_ardeche.short': 'Stap aan boord van de stoomtrein voor een unieke tocht door de Ardèche en bewonder spectaculaire uitzichten.',
-  'surroundings.descriptions.train_de_l_ardeche.long': 'Een absolute aanrader: de enige passagierstrein die het departement Ardèche doorkruist.\n\nAuthentieke stoomlocomotieven voeren je langs een wilde rivier door ongerepte natuur, van de Douxkloven tot het Ardèche-gebergte – adembenemende panorama’s.',
-  'surroundings.descriptions.la_fabrique_de_julien.short': 'Herontdek je kindertijd bij La Fabrique de Julien: ambachtelijk snoep, rondleidingen en nostalgische lekkernijen.',
-  'surroundings.descriptions.la_fabrique_de_julien.long': 'Beleef je kindertijd opnieuw in La Fabrique de Julien in Bourg-Argental. Ambachtelijke snoepjes zonder gluten of conserveermiddelen zijn verkrijgbaar in Lyon en Bourg-Argental.\n\nOnze Lyonese meester-confiseurs maken lolly’s, karamel, marshmallows, chocoladesnoep en veel meer.\n\nBezoek de fabriek en het museum om hun vakmanschap te zien en geniet van een gastronomische ervaring met smaken van vroeger.',
-  'surroundings.descriptions.le_nougat_de_montsegur.short': 'Ambachtelijke lekkernijen uit Montségur-sur-Lauzon: traditioneel nougat zonder toevoegingen, geworteld in de Provençaalse traditie.',
-  'surroundings.descriptions.le_nougat_de_montsegur.long': 'In het dorp Montségur-sur-Lauzon in de Drôme provençale maken en verkopen we onze eigen zoetigheden.\n\nElk product wordt zorgvuldig in koperen ketels bereid voor een authentieke kwaliteit.\n\nOns traditionele nougat blijft puur en vrij van kleurstoffen of conserveermiddelen.\n\nElke zorgvuldig gekozen grondstof houdt de tijdloze Provençaalse traditie in ere.',
-  'surroundings.descriptions.chateau_de_grignan.short': 'Château de Grignan, een imposant historisch juweel tussen renaissance en classicisme, dompelt je onder in eeuwen Franse levenskunst.',
-  'surroundings.descriptions.chateau_de_grignan.long': 'Hoog boven het dorp verenigt Château de Grignan Franse classicistische lijnen en renaissance-invloeden. In de 17e eeuw werd het een lustresidentie en thuis van Madame de Sévigné, tijdens de Revolutie deels afgebroken, in de 20e eeuw heropgebouwd en sinds 1979 eigendom van het departement Drôme. Als Monument historique en Musée de France biedt het een reis door de art de vivre van verschillende tijdperken.',
-  'surroundings.descriptions.labyrinthe_vegetal.short': 'Maisdoolhof in Charmes: sinds 2001 een speels, sportief en slim avontuur in een beschermd decor.',
-  'surroundings.descriptions.labyrinthe_vegetal.long': 'Op een boerderij boven Charmes biedt dit maisdoolhof sinds 2001 plezier voor jong en oud met een speelse, sportieve en intellectuele uitdaging in een behouden landschap.',
-  'surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.short': 'Zonneboot op de Rhône: gastronomische cruise, uitzicht op Saint-Joseph, wijnproeverij en fiets-vriendelijke formules.',
-  'surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long': 'Stap aan boord van een elektro-zonnecanotier voor een gastronomische cruise, een tocht of een diner op de Rhône. Proef wijnen terwijl je de heuvels van Saint-Joseph bewondert en neem, afhankelijk van het programma, je fiets mee aan boord.',
-  'surroundings.descriptions.le_chateau_d_anet.short': 'Ontdek Château d’Anet, een renaissancejuweel in Eure-et-Loir, en beleef het verhaal van Hendrik II en Diane de Poitiers tijdens een rondleiding.',
-  'surroundings.descriptions.le_chateau_d_anet.long': 'De gastheren van Château d’Anet nodigen je uit om te ontspannen en cultuur te delen. Volg een rondleiding door dit monument uit 1548 dat Hendrik II voor Diane de Poitiers liet bouwen, bekijk haar persoonlijke objecten en de kapel waar zij rust.',
-  'surroundings.descriptions.le_relais_mailles.short': 'Informele plek aan het water in Laveyron, handig voor ViaRhôna-fietsers en een ongedwongen stop.',
-  'surroundings.descriptions.le_relais_mailles.long': 'In een boomrijk park met dagschotels, pizza’s en burgers om ter plekke te eten, mee te nemen of vooraf te bestellen.\n\nGroene setting open naar de Rhône en Ardèche-hellingen, met een vrolijke sfeer voor fietsers en gezinnen.',
-  'surroundings.descriptions.la_table_des_saj.short': 'Creatief Frans bistro in Saint-Désirat met verfijnde keuken en relaxed gevoel.',
-  'surroundings.descriptions.la_table_des_saj.long': 'Seizoensmenu dat meebeweegt met de inspiratie van de chef, gebaseerd op verse producten en elegante borden.\n\nWarme, intieme sfeer voor lunch of diner op enkele minuten van het domein.',
-  'surroundings.descriptions.la_poule_noire.short': 'Regionale klassiekers in een knus restaurant in Albon met terras en verzorgde eetzaal.',
-  'surroundings.descriptions.la_poule_noire.long': 'Chef Gérald Bondelu kookt favorieten als kikkerbilletjes, gebakken foie gras, gambas en verfijnde streekgerechten.\n\nAttent team en een zaal voor familie-etentjes of kleinschalige events.',
-  'surroundings.descriptions.le_picotin.short': 'Traditionele Franse keuken in Andance, eenvoudige setting met schaduwrijk terras of gekoelde zaal.',
-  'surroundings.descriptions.le_picotin.long': 'Riante, huiselijke klassiekers voor een ongecompliceerde lunchstop.\n\nOntspannen ontvangst, makkelijke halte na een wandeling of rit langs de Rhône-oever.',
-  'surroundings.descriptions.au_pre_du_rhone.short': 'Panoramisch restaurant tussen Saint-Vallier en Tain-l’Hermitage met uitzicht op de Ardèche-hellingen.',
-  'surroundings.descriptions.au_pre_du_rhone.long': 'Grote veranda aan het water voor groepen, met seizoenskeuken gericht op versheid.\n\nLichte, rustige sfeer om het Rhône-landschap in je op te nemen.',
-  'surroundings.descriptions.cesar_pizza.short': 'Populaire pizzeria in Andance voor afhaalpizza’s en gulle recepten.',
-  'surroundings.descriptions.cesar_pizza.long': 'Knapperige ovenpizza’s, burgers en deelplanken in een vriendelijke, vlotte setting.\n\nIdeaal voor een gezinsmaaltijd of avond met vrienden vlakbij Place du Cloître.',
-  'surroundings.descriptions.la_villa_champagnere.short': 'Bistronomie met lokale producten in Saint-Rambert-d’Albon, met knusse uitstraling en terras.',
-  'surroundings.descriptions.la_villa_champagnere.long': 'Huisgemaakte seizoenskeuken (gourmetburgers, kikkerbilletjes, marktgerechten) geserveerd binnen of buiten.\n\nOntvangt groepen met een zaal voor teamlunches, avonden of vriendentreffen.',  
-  'surroundings.descriptions.lamas_des_plaines.short': 'Ontdekkingsboerderij en centrum voor dierondersteunde therapie met lama\'s, biedt workshops en opleidingsprogramma\'s.',
-  'surroundings.descriptions.lamas_des_plaines.long': 'Ontdek de rust en sereniteit van Lamas des Plaines, een milieubewuste boerderij gewijd aan dierondersteunde therapie en lama-ontdekking.\n\nGeniet van bewustmakingsworkshops, behendigheidsparcours met de dieren of training in dierondersteunde therapie, diercommunicatie en persoonlijke ontwikkeling. De boerderij volgt een strikte ethische code en garandeert het welzijn van lama\'s die met zorg worden grootgebracht en als echte werkpartners worden behandeld.\n\nEen unieke plek om waarden van respect, ethiek en solidariteit te omarmen, allemaal in een serene omgeving op slechts enkele minuten van Lyon.',
-  'surroundings.lamas_des_plaines.gallery.image1': 'Lama\'s in de vlakten van de ontdekkingsboerderij',  
-  'surroundings.descriptions.la_belle_epoque.short': 'Traditionele, huisgemaakte keuken met zoveel mogelijk korte ketens.',
-  'surroundings.descriptions.la_belle_epoque.long': 'Restaurant La Belle Époque in Le Creux de la Thine, op slechts 2 km.\n\nHartelijke ontvangst in een gemoedelijke sfeer.\n\nHuisgemaakte klassiekers die lokale producenten en korte ketens centraal zetten.\n\nSchaduwterras en parkeergelegenheid.\n\nOpen voor lunch van maandag tot en met vrijdag, plus dinsdag- en donderdagavond.',
-  'surroundings.descriptions.o_daily_truck.short': 'Op het menu: 100% huisgemaakte burgers, gestoofd vlees of snacks, plankjes om te delen, vega-opties en verse friet.',
-  'surroundings.descriptions.o_daily_truck.long': 'De kaart biedt 100% huisgemaakte burgers, vlees in saus of snacks, charcuterie- en kaasplanken om te delen, vegetarische schotels en versgesneden friet.\n\nHet team wisselt de suggesties om seizoensproducten te laten schitteren: Italiaanse of Spaanse charcuterie, kazen uit onze streken of de Zwitserse bergen, groenten en fruit van lokale telers, Aubrac-rund, streekgevogelte en kruiden van de Drôme-heuvels.\n\nEr zijn ook huisgemaakte desserts: chocolademousse, taarten, zijdezachte panna cotta en ambachtelijk ijs.',
-  'home.booking.title': 'Klaar om uw koffers te pakken?',
-  'home.booking.button': 'Boek een kamer',
-  'home.booking.secondaryButton': 'Bekijk accommodaties',
-  'card.safari.title': 'Safari de Peaugres',
-  'card.safari.description': 'Ga met het gezin, als koppel of met vrienden op ontdekking in de Safari, meer dan 130 soorten en 1200 verschillende dieren, in een groot park van 80 hectare.',
-  'card.safari.button': 'Meer weten',
-  'card.tag.family': 'Familie',
-  'place.header.title': 'De locatie',
-  'place.header.text': 'Een 180 jaar oude voormalige magnanerie, het authentieke stenen huis vol karakter en charme wordt omgeven door het zachte kolken van de Rhône. Naast de charme van het gebouw kunt u genieten van het park, het onbeheizde zwembad en het zomerpaviljoen voor een rustgevende, natuurlijke pauze.\n\nWij bieden de table d\'hôtes, een bar-service en zoete of hartige lekkernijen, een buitenparkeerplaats. Domaine de Pipangaille ligt dicht bij de afrit van de A7, nabij de Route Nationale 7, op 1 uur van Lyon en Saint-Étienne, 45 minuten van Valence en met directe toegang tot de ViaRhôna, vlak bij de ViaFluvia, fietsroutes en wandelpaden.',
-  'place.header.button': 'Een kamer reserveren',
-  'place.services.title': 'Ruimtes en services',
-  'place.services.text': 'Een buitenparkeerplaats, een fietsenstalling, een onbeheizd zwembad, het paviljoen, relaxruimtes aan de binnenplaats en de tuin, evenals de table d’hôtes (voor verblijvende gasten) en de bar.\n\nLe Comptoir de Pipangaille: voor lokale of passerende gasten bieden we bij de ingang van het domein op het overdekte terras, omringd door groen, een tijdloze pauze. Hartig aanbod: bruschetta, ravioli, bowls & salads, charcuterie- en kaasplanken… Zoet aanbod: ijs (15 smaken), wafels, crêpes, luxe granola.',
-  'place.events.title': 'Evenementen organiseren',
-  'place.events.text': 'Een plek voor een privé-evenement, brunch, seminar, vergadering of zakelijke ontmoeting; neem contact met ons op en we stellen onze eetzaal beschikbaar met catering- en drankservice.',
-  'place.events.button': 'Neem contact op',
-  'place.spotlight.title': 'Het domein in beeld',
-  'place.spotlight.gallery1.title': 'Het boomrijke park',
-  'place.spotlight.gallery2.title': 'Ontspanningsruimtes',
-  'place.spotlight.gallery3.title': 'Het hoofdgebouw',
-  'accommodations.hero.title': 'Onze gastenkamers: comfort en authenticiteit',
-  'accommodations.hero.text': 'De vier uniek ingerichte kamers, die uitnodigen tot reizen, bevinden zich op de tweede verdieping. Een ontvangstruimte met fauteuils, gezelschapsspellen, boeken en toeristische informatie is beschikbaar. Onze kamers met airconditioning hebben een privé-douche en toilet.\n\nOpeningstijden: ontvangst: 17u-21u - Vertrek tot 10:30 uur. Vroege aankomst mogelijk op aanvraag en tegen betaling.',
-  'accommodations.rooms.button': 'Bekijk de kamer',
-  'accommodations.rooms.marocaine.title': 'Marokkaanse kamer',
-  'accommodations.rooms.marocaine.description': 'De Marokkaanse suite, met een warme sfeer geïnspireerd door riads en natuurlijke materialen, is ideaal voor een koppel op zoek naar ontsnapping en een romantisch moment. Deze kamer kan een koppel met een kind herbergen.',
-  'accommodations.rooms.marocaine.longDescription': 'De Marokkaanse sfeer met warme kleuren zal u transporteren in deze kamer, geschikt voor 2 volwassenen en een kind of voor een romantisch verblijf. Met uitzicht op de tuin en de binnenplaats, beschikt het over een bed van 1,80 m x 2 m, omzetbaar in twee eenpersoonsbedden, een grote bank (omzetbaar in een kinderbed), dubbele wastafel, grote inloopdouche in tadelakt, apart toilet, opbergruimte. Airconditioning zorgt voor optimaal comfort in de zomer.',
-  'accommodations.rooms.marocaine.gallery.image1': 'Marokkaanse suite - hoofdbeeld',
-  'accommodations.rooms.marocaine.gallery.image2': 'Marokkaanse suite - textiel en natuurlijke materialen',
-  'accommodations.rooms.marocaine.gallery.image3': 'Marokkaanse suite - tadelakt-badkamer',
-  'accommodations.rooms.marocaine.gallery.image4': 'Marokkaanse suite - zithoek met slaapbank',
-  'accommodations.rooms.marocaine.gallery.image5': 'Marokkaanse suite - handgemaakte details',
-  'accommodations.rooms.marocaine.tags.bedding': 'Tweepersoonsbed of twee eenpersoonsbedden',
-  'accommodations.rooms.marocaine.tags.family': 'Koppel met 1 kind',
-  'accommodations.rooms.marocaine.tags.couple': 'Koppel',
-  'accommodations.rooms.africaine.title': 'Afrikaanse kamer',
-  'accommodations.rooms.africaine.description': 'De Afrikaanse kamer met safari-geïnspireerde sfeer en unieke decoratie, ideaal voor een koppel, vrienden of professionals.',
-  'accommodations.rooms.africaine.longDescription': 'Deze kamer van 18 m² met uitzicht op de tuin en safari-accenten biedt een bed van 1,80 x 2 m omzetbaar in 2 eenpersoonsbedden, een bureau met 2 stoelen, een wastafel, een inloopdouche in tadelakt, apart toilet en opbergruimte. Ideaal voor fietsers op de ViaRhôna, deze kamer met airconditioning stelt u in staat te herstellen vóór de volgende etappe.',
-  'accommodations.rooms.africaine.gallery.image1': 'Afrikaanse kamer - hoofdbeeld',
-  'accommodations.rooms.africaine.gallery.image2': 'Afrikaanse kamer - natuurlijk licht',
-  'accommodations.rooms.africaine.gallery.image3': 'Afrikaanse kamer - privébadkamer',
-  'accommodations.rooms.africaine.gallery.image4': 'Afrikaanse kamer - bureauhoek',
-  'accommodations.rooms.africaine.gallery.image5': 'Afrikaanse kamer - safari-details',
-  'accommodations.rooms.africaine.tags.bedding': 'Tweepersoonsbed of twee eenpersoonsbedden',
-  'accommodations.rooms.africaine.tags.adults': '2 volwassenen',
-  'accommodations.rooms.marocaine.equipments.note': 'De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.',
-  'accommodations.rooms.africaine.equipments.note': 'De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.',
-  'accommodations.rooms.toscane.title': 'Toscaanse kamer',
-  'accommodations.rooms.toscane.description': 'De Toscaanse kamer, geïnspireerd door Italië, combineert romantiek en passie met zijn pasteltinten. Ideaal voor een koppel op zoek naar een moment van sereniteit.',
-  'accommodations.rooms.toscane.longDescription': 'Een kamer van 17 m² met Toscaans geïnspireerde decoratie die u transporteert in een romantische Italiaanse cocon. Deze kamer met uitzicht op de tuin biedt een bed van 1,60 x 2 m, een inloopdouche, een wastafel, apart toilet, een hoge wandtafel met 2 krukken en opbergruimte. Het is uitgerust met airconditioning voor vreedzame nachten.',
-  'accommodations.rooms.toscane.gallery.image1': 'Toscaanse kamer - hoofdbeeld',
-  'accommodations.rooms.toscane.gallery.image2': 'Toscaanse kamer - terracottatextiel',
-  'accommodations.rooms.toscane.gallery.image3': 'Toscaanse kamer - ensuite badkamer',
-  'accommodations.rooms.toscane.gallery.image4': 'Toscaanse kamer - schrijfhoek',
-  'accommodations.rooms.toscane.gallery.image5': 'Toscaanse kamer - decoratieve details',
-  'accommodations.rooms.toscane.tags.couple': 'Koppel',
-  'accommodations.rooms.toscane.tags.romantic': 'Romantisch',
-  'accommodations.rooms.creole.title': 'Creoolse kamer',
-  'accommodations.rooms.creole.description': 'De Creoolse kamer is geïnspireerd door een reis naar de eilanden met zijn blauwe kleuren en rattanmeubilair. Deze kamer is ideaal voor een koppel.',
-  'accommodations.rooms.creole.longDescription': 'De prachtige plafondhoogte, het uitzicht op de tuin en de natuurlijke vezels van het meubilair baden deze kamer in licht. Deze kamer bestaat uit een tweepersoonsbed van 1,60 x 2 m, een ruimte met douchecabine en wastafel, apart toilet. Het door de eilanden geïnspireerde meubilair: twee rattanfauteuils, een bijzettafel en een kledingkast. Deze kamer met airconditioning belooft een zachte pauze.',
-  'accommodations.rooms.creole.gallery.image1': 'Creoolse kamer - hoofdbeeld',
-  'accommodations.rooms.creole.gallery.image2': 'Creoolse kamer - tropisch kleurenpalet',
-  'accommodations.rooms.creole.gallery.image3': 'Creoolse kamer - badkamer',
-  'accommodations.rooms.creole.gallery.image4': 'Creoolse kamer - slaapgedeelte',
-  'accommodations.rooms.creole.gallery.image5': 'Creoolse kamer - ambachtelijke details',
-  'accommodations.detail.equipments.title': 'Beschikbare voorzieningen',
-  'accommodations.detail.equipments.note': 'De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.',
-  'accommodations.detail.table.title': 'De table d’hôtes',
-  'accommodations.detail.table.text': 'Op reservatie serveren we een gezellige table d’hôtes: een seizoensmenu of royale planken en salades met lokale, biologische producten.',
-  'accommodations.detail.explore.title': 'Plekken om te ontdekken',
-  'accommodations.detail.explore.text': 'In het seizoen kunt u genieten van het zwembad met ligbedden, het zomerpaviljoen voor een drankje of ijsje en de gemeenschappelijke ruimte met banken, boeken en gezelschapsspellen.',
-  'accommodations.detail.otherRooms.title': 'Andere accommodaties',
-  'accommodations.rooms.equipments.doubleBedSeparable': '180 cm tweepersoonsbed deelbaar in twee singles',
-  'accommodations.rooms.equipments.doubleBed160': 'Tweepersoonsbed 160 x 200 cm',
-  'accommodations.rooms.equipments.freeHighSpeedWifi': 'Gratis snelle wifi',
-  'accommodations.rooms.equipments.airConditioning': 'Airconditioning',
-  'accommodations.rooms.equipments.ShowerRoom': 'Privébadkamer',
-  'accommodations.rooms.equipments.ShowerRoomMoroccan': 'Dubbele wastafel, grote inloopdouche, apart toilet',
-  'accommodations.rooms.equipments.ShowerRoomAfrican': 'Wastafel, inloopdouche, apart toilet',
-  'accommodations.rooms.equipments.ShowerRoomTuscan': 'Wastafel, inloopdouche, apart toilet',
-  'accommodations.rooms.equipments.ShowerRoomCreole': 'Douchecabine, wastafel, apart toilet',
-  'accommodations.rooms.equipments.babyCribOnRequest': 'Babybed op aanvraag',
-  'accommodations.rooms.equipments.kettle': 'Waterkoker en welkomstset',
-  'accommodations.rooms.equipments.hairDryer': 'Haardroger',
-  'accommodations.rooms.equipments.sofaBed': 'Slaapbank',
-  'accommodations.rooms.equipments.commonWashingMachine': 'Toegang tot wasmachine op aanvraag (tegen betaling)',
-  'accommodations.rooms.equipments.desk': 'Hoge wandtafel',
-  'accommodations.rooms.equipments.smallTable': 'Klein tafeltje',
-  'accommodations.rooms.equipments.wardrobe': 'Kledingkast',
-  'accommodations.rooms.equipments.pedestalTableWithTwoArmchairs': 'Bijzettafel met twee fauteuils',
-  'accommodations.breakfast.title': 'Ontbijt, table d\'hôtes en bar',
-  'accommodations.breakfast.text': 'Het ontbijt wordt geserveerd van 8.00 tot 9.30 uur, of eerder op aanvraag. Het wordt geserveerd in de eetzaal of bij mooi weer in de binnenplaats. Als buffet vindt u traditioneel brood, viennoiserie, biologische thee, koffie, vruchtensappen, lokale yoghurt en seizoensfruit.\n\nWij selecteren onze leveranciers om u lokale en biologische producten aan te bieden.\n\nHartig ontbijt optioneel beschikbaar, op aanvraag en na reservering de dag ervoor.\n\nOp reservering biedt de table d\'hôtes een huisgemaakt vast menu of borden met charcuterie, kazen of samengestelde salades met lokale en biologische producten. Onze aanbiedingen kunnen variëren naargelang het seizoen.\n\nBar-service: wij bieden een drankenkaart en een wijnkaart.',
-  'accommodations.cta.title': 'Wilt u alle kamers privatiseren?',
-  'accommodations.cta.text': 'Het is mogelijk om het volledige huis te reserveren voor groepsactiviteiten, familie-uitstapjes of weekends met vrienden.',
-  'accommodations.cta.button': 'Neem contact op',
-  'surroundings.detail.otherActivities.title': 'Andere activiteiten om te ontdekken',
-  'surroundings.detail.otherRestaurants.title': 'Andere restaurants om te ontdekken',
-  'surroundings.detail.seeAllActivities': 'Bekijk alle activiteiten',
-  'surroundings.detail.seeAllRestaurants': 'Bekijk alle restaurants',
-  'surroundings.safari_peaugres.gallery.image1': 'Panoramisch uitzicht op Safari de Peaugres',
-  'surroundings.palais_ideal_du_facteur_cheval.gallery.image1': 'Gevel van het Palais Idéal du Facteur Cheval',
-  'surroundings.acrobois_pilat.gallery.image1': 'Bezoekers op het boomparcours van Acrobois Pilat',
-  'surroundings.musee_de_l_alambic.gallery.image1': 'Koperen ketels in het Musée de l’Alambic',
-  'surroundings.golf_de_saint_clair.gallery.image1': 'Fairways van Golf de Saint-Clair',
-  'surroundings.viarhona.gallery.image1': 'Fietsers op de ViaRhôna langs de rivier',
-  'surroundings.viafluvia.gallery.image1': 'Gezin op de ViaFluvia-route',
-  'surroundings.musee_valrhona.gallery.image1': 'Proeverij-workshop in de Cité du Chocolat Valrhôna',
-  'surroundings.mongolfieres_et_cie.gallery.image1': 'Heteluchtballon van Montgolfières & Cie boven het dal',
-  'surroundings.train_de_l_ardeche.gallery.image1': 'Historische locomotief van de Train de l’Ardèche',
-  'surroundings.la_fabrique_de_julien.gallery.image1': 'Snoepschappen bij La Fabrique de Julien',
-  'surroundings.le_nougat_de_montsegur.gallery.image1': 'Nougatrepen van Le Nougat de Montségur',
-  'surroundings.chateau_de_grignan.gallery.image1': 'Buitenaanzicht van Château de Grignan',
-  'surroundings.labyrinthe_vegetal.gallery.image1': 'Luchtbeeld van het Labyrinthe végétal',
-  'surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1': 'Boot van Compagnie des Canotiers Rhône & Saône op de rivier',
-  'surroundings.le_chateau_d_anet.gallery.image1': 'Binnenhof van Château d’Anet',
-  'surroundings.le_relais_mailles.gallery.image1': 'Eetzaal van Le Relais des Mailles',
-  'surroundings.la_table_des_saj.gallery.image1': 'Opgemaakte borden bij La Table des SAJ',
-  'surroundings.la_poule_noir.gallery.image1': 'Restaurantzaal van La Poule Noire',
-  'surroundings.le_picotin.gallery.image1': 'Gevel van restaurant Le Picotin',
-  'surroundings.au_pre_du_rhone.gallery.image1': 'Terras met zicht op de Rhône bij Au Pré du Rhône',
-  'surroundings.la_belle_epoque.gallery.image1': 'Restaurantzaal van La Belle Époque',
-  'surroundings.la_belle_epoque.gallery.image2': 'Terrasservice bij La Belle Époque',
-  'surroundings.o_daily_truck.gallery.image1': 'Gourmetburger van O\'Daily Truck',
-  'surroundings.o_daily_truck.gallery.image2': 'O\'Daily Truck klaar voor service',
-  'surroundings.cesar_pizza.gallery.image1': 'Toog en oven van César Pizza',
-  'surroundings.la_villa_champagnere.gallery.image1': 'Tuin en terras van La Villa Champagnère',
-  'surroundings.les_agapons.gallery.image1': 'Restaurant Les Agapons in Manthes',
-  'surroundings.descriptions.les_agapons.short': 'Restaurant met authentieke Franse keuken in Manthes, huisgemaakte kwaliteitskeuken met lokale en regionale producten.',
-  'surroundings.descriptions.les_agapons.long': 'Welkom bij Les Agapons, gelegen in het charmante stadje Manthes. Ons warm team serveert u huisgemaakte keuken van kwaliteit, bereid met lokale en regionale producten, evenals traditionele gerechten.\n\nHet restaurant biedt veel services: terras, speelhoek voor kinderen, gratis parkeren, privéfeesten, trouwerijen, gratis Wi-Fi en huisdieren welkom. Geopend van woensdag tot zaterdag van 12 tot 14 uur en van 19 tot 21 uur, evenals zondagsmiddag.',
-  'surroundings.detail.book': 'Boeken',
-  'surroundings.detail.socialNetworks': 'Sociale media',
-  'surroundings.detail.visitWebsite': 'Bezoek de website',
-  'surroundings.detail.moreInfo.title': 'Meer informatie',
-  'iframeConsent.title': 'Externe inhoud',
-  'iframeConsent.text': 'Deze inhoud wordt geleverd door {serviceName}. Door dit te laden, ga je akkoord met onze gebruiksvoorwaarden en het privacybeleid van de aanbieder.',
-  'iframeConsent.button': 'Accepteren en laden',
-  'iframeConsent.serviceNameFallback': 'deze externe dienst',
-  'contact.title': 'Neem contact op',
-  'contact.reservation.textBefore': 'Alle reserveringen worden uitsluitend via de pagina',
-  'contact.reservation.textAfter': 'gemaakt. We accepteren geen reserveringen via dit formulier, behalve voor groepen of langdurige verblijven.',
-  'contact.form.fullName': 'Volledige naam',
-  'contact.form.email': 'E-mail',
-  'contact.form.subject': 'Onderwerp',
-  'contact.form.phone': 'Telefoon',
-  'contact.form.optional': 'optioneel',
-  'contact.form.message': 'Bericht',
-  'contact.form.submit': 'Verzenden',
-  'contact.error.title': 'Fout bij verzenden van bericht',
-  'contact.success.title': 'Bericht succesvol verzonden!',
-  'contact.success.text': 'We zullen u snel beantwoorden.',
-  'contact.validation.nameRequired': 'Naam is verplicht.',
-  'contact.validation.emailInvalid': 'Ongeldig e-mailadres.',
-  'contact.validation.subjectRequired': 'Onderwerp is verplicht.',
-  'contact.validation.messageRequired': 'Bericht is verplicht.',
-  'contact.genericError': 'Er is een fout opgetreden bij het verzenden van het bericht.',
-  'contact.info.phone': 'Telefoon',
-  'contact.info.whatsapp': 'Whatsapp',
-  'contact.info.email': 'E-mail',
-  'contact.info.address': 'Adres',
-  'contact.form.fullNamePlaceholder': 'Jan Jansen',
-  'contact.form.emailPlaceholder': 'jan.jansen@example.com',
-  'contact.form.subjectPlaceholder': 'Onderwerp van uw bericht',
-  'contact.form.phonePlaceholder': '+33 4 75 68 28 24',
-  'contact.form.messagePlaceholder': 'Uw bericht hier',
-  'contact.privateRequest.title': 'Speciaal verzoek',
-  'contact.privateRequest.text': 'We kunnen de locatie privatiseren voor uw privé-evenementen, met of zonder accommodatie. Bent u op zoek naar een plek om een familiebijeenkomst, receptie, kunstzinnig evenement, seminars... te organiseren. Domaine de Pipangaille, een historisch gebouw omgeven door een parklandschap met vele ruimtes, is ideaal voor het organiseren van uw evenementen. Het park, de werf, de binnenplaats, tentopstelling... we staan tot uw beschikking voor alle verzoeken.',
-  'legalNotices.title': 'Juridische vermeldingen',
-  'legalNotices.editor.title': 'Website-uitgever',
-  'legalNotices.editor.addressLabel': 'Adres',
-  'legalNotices.editor.rcsLabel': 'RCS',
-  'legalNotices.editor.nafLabel': 'NAF-code',
-  'legalNotices.editor.capitalLabel': 'Maatschappelijk kapitaal',
-  'legalNotices.editor.phoneLabel': 'Telefoon',
-  'legalNotices.editor.emailLabel': 'E-mail',
-  'legalNotices.editor.ceoLabel': 'Directeur',
-  'legalNotices.editor.publisherLabel': 'Publicatiedirecteur',
-  'legalNotices.editor.publisherValue': 'Catherine Lemoine',
-  'legalNotices.design.title': 'Webdesign en -ontwikkeling',
-  'legalNotices.design.phoneLabel': 'Telefoon',
-  'legalNotices.design.emailLabel': 'E-mail',
-  'legalNotices.design.websiteLabel': 'Website',
-  'legalNotices.design.githubLabel': 'Github',
-  'legalNotices.design.repoLabel': 'Github-repository',
-  'legalNotices.hosting.title': 'Website-hosting',
-  'legalNotices.hosting.providerLabel': 'Provider',
-  'legalNotices.domain.title': 'Domeinnaam-eigendom',
-  'legalNotices.domain.providerLabel': 'Domeinnaambeheerder',
-  'legalNotices.photos.title': 'Fotoverantwoording',
-  'legalNotices.photos.text': 'Alle foto\'s zijn eigendom van Domaine de Pipangaille.',
-  'legalNotices.cookies.title': 'Gebruik van cookies',
-  'legalNotices.cookies.text': 'Deze website gebruikt cookies alleen voor statistieken en operationele doeleinden.',
-  'legalNotices.personalData.title': 'Gebruik van persoonlijke gegevens',
-  'legalNotices.personalData.text': 'Door de formulieren op de website te gebruiken, accepteert u de opslag en verwerking van de verzonden gegevens. Ze worden opgeslagen en verwerkt voor beheer, archivering en verbeteringsdoeleinden van onze diensten.',
-  'legalNotices.personalData.retention': 'Gegevens worden gedurende een redelijke periode van 10 jaar bewaard.',
-  'legalNotices.personalData.requestEmailPrefix': 'Voor verzoeken om verwijdering, correctie of toegang tot gegevens kunt u een verzoek indienen via e-mail ',
-  'legalNotices.personalData.requestAddressPrefix': ' of per post naar: ',
-  'legalNotices.liability.title': 'Aansprakelijkheid van SAS Domaine de Pipangaille',
-  'legalNotices.liability.text': 'Voor zover wettelijk toegestaan, is SAS Domaine de Pipangaille niet aansprakelijk voor:',
-  'legalNotices.liability.inaccuracy': 'Onnauwkeurigheden, fouten, weglatingen of schade voortvloeiend uit ongeoorloofde wijzigingen van informatie op de Website.',
-  'legalNotices.liability.unauthorized': 'Schade veroorzaakt door ongeoorloofde toegang tot de Website of deze ontoegankelijk makend.',
-  'legalNotices.liability.interruption': 'De bezoeker wordt ervan op de hoogte gesteld dat de toegang tot de Website op elk moment door SAS Domaine de Pipangaille kan worden onderbroken wegens onderhoud, beveiliging of enige andere technische beperking.',
-  'legalNotices.law.title': 'Toepasselijk recht',
-  'legalNotices.law.text': 'Deze juridische vermeldingen worden beheerst door Frans recht. Franse rechtbanken zijn exclusief bevoegd voor geschillen die rechtstreeks of onrechtstreeks betrekking hebben op toegang tot of gebruik van deze Website.',
-  'mapProviderDialog.title': 'Openen met:',
-  'generalConditions.title': 'Algemene voorwaarden voor bed- en breakfastovernachtingen',
-  'generalConditions.subtitle': 'Domaine de Pipangaille',
-  'generalConditions.article1.title': 'Artikel 1 - Duur van het verblijf',
-  'generalConditions.article1.content': 'De gast die deze overeenkomst voor een bepaalde periode ondertekent, kan onder geen enkele omstandigheid aanspraken maken op het recht om ter plaatse te verblijven.',
-  'generalConditions.article2.title': 'Artikel 2 - Boekingsformaliteiten',
-  'generalConditions.article2.content1': 'Een boeking wordt pas geldig zodra de gast een aanbetaling van 25% van het totale verblijfstarief aan de eigenaar heeft betaald, met een minimum van één nacht per geboekte kamer, en een ondertekend exemplaar van het contract voor de aangegeven datum.',
-  'generalConditions.article2.content2': 'De gast dient het tweede exemplaar van het contract te bewaren.',
-  'generalConditions.article2.content3': 'De prijzen zijn inclusief alle toeslagen volgens het productblad, exclusief de toeristenbelasting.',
-  'generalConditions.article3.title': 'Artikel 3 - Consumentenwetgeving - Herroepingsrecht',
-  'generalConditions.article3.content1': 'Een online, telefonisch of schriftelijk gemaakte boeking is een aankoop op afstand. Het betreft een op afstand gesloten overeenkomst in de zin van de definitie van de consumentenwetgeving.',
-  'generalConditions.article3.content2': 'Wij zijn onderworpen aan artikelen L. 121-17 e.v. van de consumentenwetgeving.',
-  'generalConditions.article3.content3': 'Wij wijzen u erop dat het herroepingsrecht niet van toepassing is op verblijfsdienstenovereenkomsten.',
-  'generalConditions.article4.title': 'Artikel 4 - Annulering door de gast',
-  'generalConditions.article4.content1': 'Wijzigingen zijn alleen mogelijk met toestemming van "Domaine de Pipangaille" en kunnen extra kosten met zich meebrengen.',
-  'generalConditions.article4.content2': 'Wij informeren u dat bij annulering van de boeking vóór het begin van het verblijf, een vastgestelde schadevergoeding verschuldigd is als volgt:',
-  'generalConditions.article4.bullet1': 'als de annulering meer dan 1 week vóór de aankomdatum plaatsvindt, wordt de aanbetaling volledig terugbetaald;',
-  'generalConditions.article4.bullet2': 'als de annulering minder dan 1 week vóór de aankomdatum plaatsvindt, blijft de aanbetaling eigendom van Domaine de Pipangaille, dat gerechtigd is het restantbedrag van het verblijfstarief (in overeenstemming met de boekingsovereenkomst) in rekening te brengen als het verblijf na annulering vacant blijft.',
-  'generalConditions.article4.content3': 'Bij voortijdig vertrek tijdens het verblijf is volledige betaling van de geboekte dienst verschuldigd, ongeacht de reden.',
-  'generalConditions.article5.title': 'Artikel 5 - Annuleringsverzekeringstot lasten van de gast',
-  'generalConditions.article5.content1': 'Wij wijzen u erop dat geen annuleringsverzekeringskosten in onze tarieven zijn begrepen.',
-  'generalConditions.article5.content2': 'Het wordt dan ook sterk aanbevolen er een af te sluiten.',
-  'generalConditions.article6.title': 'Artikel 6 - Annulering door de eigenaar',
-  'generalConditions.article6.content1': 'Indien de eigenaar vóór het begin van het verblijf de boeking moet annuleren, moet hij de gast onmiddellijk op de hoogte brengen.',
-  'generalConditions.article6.content2': 'De gast wordt dan onmiddellijk en volledig terugbetaald van alle reeds betaalde bedragen.',
-  'generalConditions.article7.title': 'Artikel 7 - Aankomsttijd',
-  'generalConditions.article7.content1': 'Aankomst is voorzien in de middag vanaf 17:00 uur en mogelijk tot 22:00 uur.',
-  'generalConditions.article7.content2': 'In geval van een speciale of onverwachte aanvraag dient u ons per telefoon te bellen op ',
-  'generalConditions.article7.content3': ' om ons van vertragingen op de hoogte te stellen.',
-  'generalConditions.article8.title': 'Artikel 8 - Vertrektijd',
-  'generalConditions.article8.content': 'De vertrektijd uit de kamers is vastgesteld op 10:30 uur uiterlijk.',
-  'generalConditions.article9.title': 'Artikel 9 - Betaling van het restantbedrag van het verblijf',
-  'generalConditions.article9.content1': 'Het restantbedrag van het verblijf wordt één dag voor aankomst betaald, in overeenstemming met uw boekingsovereenkomst.',
-  'generalConditions.article9.content2': 'Alle eventuele bijkosten, inclusief die voor tafelserviceen dranken, worden op uw vertrektag in rekening gebracht.',
-  'generalConditions.article10.title': 'Artikel 10 - Kamerwisseling',
-  'generalConditions.article10.content1': 'Zonder dat de gast recht heeft op schadevergoeding, behoudt de eigenaar zich het recht voor de door de gast geboekte kamer voor een kamer met dezelfde of grotere capaciteit in te wisselen.',
-  'generalConditions.article10.content2': 'In dat geval blijven de boekingskosten onveranderd.',
-  'generalConditions.article11.title': 'Artikel 11 - Huisdieren',
-  'generalConditions.article11.content': 'Huisdieren zijn niet toegestaan.',
-  'generalConditions.article12.title': 'Artikel 12 - Levensstijl en gebruik van de accommodatie',
-  'generalConditions.article12.content1': 'Teneinde de rust van de accommodatie en het comfort van de gasten van het Domaine de Pipangaille te waarborgen, is respect voor een zekere "levensstijl" van iedereen vereist.',
-  'generalConditions.article12.content2': 'In het bijzonder is roken binnen niet toegestaan.',
-  'generalConditions.article12.content3': 'De gast verplicht zich de gedragsrichtlijnen die hem zullen worden gegeven in acht te nemen en deze algemene verkoopsvoorwaarden na te leven.',
-  'generalConditions.article12.content4': 'De gast verplicht zich de kamers aan het einde van het verblijf in perfecte staat en zonder schade terug te geven en alle schade waarvoor hij/zij verantwoordelijk is systematisch te melden en financiële verantwoordelijkheid op zich te nemen.',
-  'generalConditions.article12.content5': 'Herstelkosten, inclusief het tijd van ingrepen nodig voor het herstel van de accommodatie, worden betaald volgens afzonderlijke facturering en op basis van bewijsstukken van gemaakte uitgaven.',
-  'generalConditions.article12.content6': 'Gasten worden erop gewezen dat minderjarigen op het terrein onder de uitsluitende en volledige verantwoordelijkheid van hun ouders of personen met bevoegdheid over hen vallen.',
-  'generalConditions.article12.content7': 'Uw verblijf in het Domaine de Pipangaille en het gebruik van onze uitrusting en faciliteiten zoals het zwembad, de gedeelde keuken en parkeerplaats geschiedt vrijwillig en op uw eigen risico. Domaine de Pipangaille is niet aansprakelijk voor verlies, diefstal en/of schade aan goederen en/of letsel aan personen op het terrein, ongeacht de oorzaak.',
-  'generalConditions.article13.title': 'Artikel 13 - Wijziging van verkoopsvoorwaarden',
-  'generalConditions.article13.content1': 'Deze verkoopsvoorwaarden kunnen op elk moment en zonder kennisgeving worden gewijzigd.',
-  'generalConditions.article13.content2': 'Aanvaarding en naleving van deze verkoopsvoorwaarden worden geacht verworven te zijn zodra de aanbetaling is betaald.',
-  'generalConditions.article14.title': 'Artikel 14 - Wet informatica en vrijheden',
-  'generalConditions.article14.content1': 'In overeenstemming met Wet nr. 78-17 van 6 januari 1978 betreffende informatica, dossiers en vrijheden hebt u het recht om gegevens over u in te zien en te corrigeren.',
-  'generalConditions.article14.content2': 'Wij verplichten ons om informatie die u ons heeft verstrekt op geen enkele manier aan andere bedrijven of organisaties door te geven.',
-  'notfound.title': '404 - Pagina niet gevonden',
-  'notfound.message': 'De pagina die je zoekt bestaat niet.',
-  'notfound.button': 'Terug naar Home',
+  "nav.home": "Home",
+  "nav.place": "De Locatie",
+  "nav.accommodations": "Accommodaties",
+  "nav.counter": "De Toonbank",
+  "nav.surroundings": "Omgeving",
+  "nav.contact": "Contact",
+  "nav.book": "Boeken",
+  "footer.usefulLinks": "Nuttige links",
+  "footer.knowUsBetter": "Leer ons kennen",
+  "footer.moreInfo": "Meer informatie",
+  "footer.contactUs": "Neem contact op",
+  "footer.contactPage": "“contact” pagina",
+  "footer.legalMentions": "Juridische vermeldingen",
+  "footer.salesConditions": "Algemene verkoopvoorwaarden",
+  "home.header.title": "Le Domaine de Pipangaille",
+  "home.header.text":
+    "Le Domaine de Pipangaille, een onlangs gerenoveerde voormalige zijdewormkwekerij omgeven door een bosrijk park dat de charme van steen en authenticiteit in een idyllische omgeving combineert, biedt 4 gastenkamers, table d'hôtes op reservering, een onverwarmd zwembad geopend in het seizoen, voor een magisch verblijf en een uitnodiging om te ontspannen.\n\nHet Domaine de Pipangaille ligt vlakbij de afrit van de snelweg A7, dicht bij de Nationale 7, op een uur van Lyon en Saint-Étienne, 45 minuten van Valence en met directe toegang tot de ViaRhôna, zeer dicht bij de ViaFluvia.",
+  "home.header.button": "Ontdek het Domein",
+  "home.rooms.title": "Gastenkamers",
+  "home.rooms.text":
+    "U bereikt de kamers door het bosrijke park over te steken, wat u naar de binnenplaats brengt die omgeven is door stenen, wat zorgt voor een authentieke en rustgevende omgeving. Onze kamers bevinden zich op de tweede verdieping, bereikbaar via een grote trap.\n\nWij bieden vier kamers met airconditioning en unieke decoratie: een suite en drie tweepersoonskamers. De kamerdecoratie nodigt uit tot reizen en sereniteit.",
+  "home.rooms.button": "Bekijk de kamers",
+  "home.counter.title": "De Toonbank",
+  "home.counter.text":
+    "Voor fietsers die de Via Rhona passeren of toeristen op vakantie die op zoek zijn naar een ideale plek voor een lunchpauze of tussendoortje, verwelkomt de Pipangaille-toonbank bij de ingang van het landgoed u in het hoogseizoen onder het overdekte terras voor een zoete of hartige gastronomische pauze op een atypische plek in het hart van de vegetatie.",
+  "home.counter.button": "Meer weten",
+  "counter.hero.title": "De Toonbank",
+  "counter.hero.text":
+    "Le Comptoir de Pipangaille is een plek om even te pauzeren en te delen – een gastronomische tussenstop in het hart van het domein. Je komt er voor koffie, warme chocolademelk, matcha of een frisse drank met een zoete of hartige lekkernij, in een warme en rustgevende sfeer.",
+  "counter.hero.imageAlt": "Zicht op Le Comptoir de Pipangaille",
+  "counter.story.title": "Geniet van een maaltijd of drinkpauze",
+  "counter.story.text":
+    "De Comptoir biedt ook een selectie lokale producten en delicatessen om ter plaatse te proeven of mee te nemen.\n\nGeopend van woensdag tot maandag, van 11.00 tot 18.00 uur, is het een eenvoudige, gezellige en levendige plek om af te spreken, bij te praten en volop van de unieke omgeving van Pipangaille te genieten.",
+  "counter.story.imageAlt":
+    "Selectie van drankjes en lekkernijen aan de toonbank",
+  "home.reviews.title": "Wat onze gasten zeggen",
+  "home.surroundings.title": "Te ontdekken in de omgeving",
+  "home.surroundings.button": "Bekijk activiteiten en restaurants in de buurt",
+  "surroundings.hero.title": "Activiteiten en fijne adressen rond het domein",
+  "surroundings.hero.text":
+    "In het hart van de Rhônevallei, op enkele minuten van de A7 (1 u van Lyon, 50 min van Valence, 1 u 15 van Grenoble), profiteert Domaine de Pipangaille van een uitzonderlijke ligging. De ViaRhôna loopt vlak langs het domein – ideaal voor fietsers – en families wisselen wandelingen, wijnroutes, het Palais Idéal du Facteur Cheval, Safari de Peaugres of de Vivarais-spoorlijn af.",
+  "surroundings.sections.activities.title": "Activiteiten in de buurt",
+  "surroundings.sections.food.title": "Waar eten",
+  "surroundings.card.cta": "Adres ontdekken",
+  "surroundings.card.description.default": "Aanrader dicht bij het domein",
+  "surroundings.filter.all": "Alles bekijken",
+  "surroundings.category.family": "Familie",
+  "surroundings.category.visit": "Cultureel bezoek",
+  "surroundings.category.loved": "Favoriet",
+  "surroundings.category.sport": "Sport",
+  "surroundings.category.ride": "Uitstapje",
+  "surroundings.category.bike": "Fietsen",
+  "surroundings.descriptions.safari_peaugres.short":
+    "Trek er met gezin, partner of vrienden op uit naar het safaripark met meer dan 130 soorten en 1 200 dieren op 80 hectare.",
+  "surroundings.descriptions.safari_peaugres.long":
+    "Een uitgestrekt dierenpark met zowel autoroutes als wandelparcours. Ontmoet meer dan 130 soorten op 80 hectare, loop door de kattentunnel van glas, bezoek de tropische Terre-des-minus-serre, de zeeleeuwenbaai, het duizend-schuilplaatsenhuis, de giraffenbrug en nog veel meer.",
+  "surroundings.descriptions.palais_ideal_du_facteur_cheval.short":
+    "Een stenen paleis dat door één man, postbode Cheval, met de hand werd gebouwd: het meeslepende verhaal van een levenswerk.",
+  "surroundings.descriptions.palais_ideal_du_facteur_cheval.long":
+    "In een weelderige tuin staat dit paleis dat postbode Cheval in 93 000 uur en 33 jaar tijd steen voor steen optrok. Geïnspireerd door de kaarten die hij bezorgde, wemelt het van kaaimannen, olifanten, pelikanen, beren, vogels, reuzen, feeën, mythologische figuren, watervallen en architecturen van alle continenten: een ongrijpbaar maar universeel kunstwerk.",
+  "surroundings.descriptions.acrobois_pilat.short":
+    "Midden in het bos wachten 14 parcours voor elk niveau, ideaal met gezin, partner of vrienden.",
+  "surroundings.descriptions.acrobois_pilat.long":
+    "Veertien boomparcours slingeren door het woud en zitten vol tokkelbanen en uiteenlopende hindernissen. Daag jezelf uit en probeer ook het ultieme parcours te voltooien.",
+  "surroundings.descriptions.musee_de_l_alambic.short":
+    "Herbeleef de charme van rondreizende stokers en bewonder prachtige koperen alambieken uit heel Frankrijk.",
+  "surroundings.descriptions.musee_de_l_alambic.long":
+    "In Saint-Désirat vertelt het Musée de l’Alambic van Distillerie Jean Gauthier het verhaal van de bouilleurs ambulants. Over 1 400 m² tonen koperen toestellen, gereedschap en gebruiksvoorwerpen uit alle hoeken van Frankrijk dertig scènes van dit plattelands-erfgoed.",
+  "surroundings.descriptions.golf_de_saint_clair.short":
+    "Tussen de Rhônevallei en de Ardèche-hellingen geniet je van fraaie golfholes in het park van een kasteel uit de 18e eeuw.",
+  "surroundings.descriptions.golf_de_saint_clair.long":
+    "Het parcours ligt in het park van een 18e-eeuws château en staat bekend om zijn panoramische uitzichten en brede, met bomen omzoomde fairways die veel ruimtegevoel geven.",
+  "surroundings.descriptions.viarhona.short":
+    "Deze fietsroute voert je van Alpenpanorama’s naar de stranden van de Camargue langs de iconische Rhône-wijngaarden.",
+  "surroundings.descriptions.viarhona.long":
+    "ViaRhôna slingert 815 km van het Meer van Genève naar de Middellandse Zee langs de Rhône, met Alpenlandschappen, Côtes du Rhône-wijngaarden en de Camarguekust.",
+  "surroundings.descriptions.viafluvia.short":
+    "Een natuurervaring door de landschappen van Loire, Haute-Loire en Ardèche: 360° buitenpret.",
+  "surroundings.descriptions.viafluvia.long":
+    "Via Fluvia is een meer dan 80 km lang, beveiligd fietspad op een voormalige spoorlijn door Loire, Haute-Loire en Ardèche, herkenbaar aan het gevarieerde landschap en toegankelijk voor fietsen, wandelaars en steps.",
+  "surroundings.descriptions.musee_valrhona.short":
+    "Duik in de Cité du Chocolat Valrhôna: interactieve route, proeverijen en workshops voor jong en oud.",
+  "surroundings.descriptions.musee_valrhona.long":
+    "In Tain-l’Hermitage onthult de Cité du Chocolat Valrhôna de geheimen van cacao met een zintuiglijk parcours, chef-demo’s, proeverijen en familieworkshops. Ontmoet patissiers, ontdek de herkomst en ga naar huis met receptideeën en smakelijke cadeaus.",
+  "surroundings.descriptions.mongolfieres_et_cie.short":
+    "Deel een gezellig moment met maximaal acht passagiers per luchtballon en ervaar totale vrijheid.",
+  "surroundings.descriptions.mongolfieres_et_cie.long":
+    "Stap in een van onze luchtballonnen voor hoogstens acht personen, zodat je echt contact hebt met crew en medepassagiers. In de veilige, comfortabele mand beleef je een onvergetelijk vrijheidsgevoel.",
+  "surroundings.descriptions.train_de_l_ardeche.short":
+    "Stap aan boord van de stoomtrein voor een unieke tocht door de Ardèche en bewonder spectaculaire uitzichten.",
+  "surroundings.descriptions.train_de_l_ardeche.long":
+    "Een absolute aanrader: de enige passagierstrein die het departement Ardèche doorkruist.\n\nAuthentieke stoomlocomotieven voeren je langs een wilde rivier door ongerepte natuur, van de Douxkloven tot het Ardèche-gebergte – adembenemende panorama’s.",
+  "surroundings.descriptions.la_fabrique_de_julien.short":
+    "Herontdek je kindertijd bij La Fabrique de Julien: ambachtelijk snoep, rondleidingen en nostalgische lekkernijen.",
+  "surroundings.descriptions.la_fabrique_de_julien.long":
+    "Beleef je kindertijd opnieuw in La Fabrique de Julien in Bourg-Argental. Ambachtelijke snoepjes zonder gluten of conserveermiddelen zijn verkrijgbaar in Lyon en Bourg-Argental.\n\nOnze Lyonese meester-confiseurs maken lolly’s, karamel, marshmallows, chocoladesnoep en veel meer.\n\nBezoek de fabriek en het museum om hun vakmanschap te zien en geniet van een gastronomische ervaring met smaken van vroeger.",
+  "surroundings.descriptions.le_nougat_de_montsegur.short":
+    "Ambachtelijke lekkernijen uit Montségur-sur-Lauzon: traditioneel nougat zonder toevoegingen, geworteld in de Provençaalse traditie.",
+  "surroundings.descriptions.le_nougat_de_montsegur.long":
+    "In het dorp Montségur-sur-Lauzon in de Drôme provençale maken en verkopen we onze eigen zoetigheden.\n\nElk product wordt zorgvuldig in koperen ketels bereid voor een authentieke kwaliteit.\n\nOns traditionele nougat blijft puur en vrij van kleurstoffen of conserveermiddelen.\n\nElke zorgvuldig gekozen grondstof houdt de tijdloze Provençaalse traditie in ere.",
+  "surroundings.descriptions.chateau_de_grignan.short":
+    "Château de Grignan, een imposant historisch juweel tussen renaissance en classicisme, dompelt je onder in eeuwen Franse levenskunst.",
+  "surroundings.descriptions.chateau_de_grignan.long":
+    "Hoog boven het dorp verenigt Château de Grignan Franse classicistische lijnen en renaissance-invloeden. In de 17e eeuw werd het een lustresidentie en thuis van Madame de Sévigné, tijdens de Revolutie deels afgebroken, in de 20e eeuw heropgebouwd en sinds 1979 eigendom van het departement Drôme. Als Monument historique en Musée de France biedt het een reis door de art de vivre van verschillende tijdperken.",
+  "surroundings.descriptions.labyrinthe_vegetal.short":
+    "Maisdoolhof in Charmes: sinds 2001 een speels, sportief en slim avontuur in een beschermd decor.",
+  "surroundings.descriptions.labyrinthe_vegetal.long":
+    "Op een boerderij boven Charmes biedt dit maisdoolhof sinds 2001 plezier voor jong en oud met een speelse, sportieve en intellectuele uitdaging in een behouden landschap.",
+  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.short":
+    "Zonneboot op de Rhône: gastronomische cruise, uitzicht op Saint-Joseph, wijnproeverij en fiets-vriendelijke formules.",
+  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
+    "Stap aan boord van een elektro-zonnecanotier voor een gastronomische cruise, een tocht of een diner op de Rhône. Proef wijnen terwijl je de heuvels van Saint-Joseph bewondert en neem, afhankelijk van het programma, je fiets mee aan boord.",
+  "surroundings.descriptions.le_chateau_d_anet.short":
+    "Ontdek Château d’Anet, een renaissancejuweel in Eure-et-Loir, en beleef het verhaal van Hendrik II en Diane de Poitiers tijdens een rondleiding.",
+  "surroundings.descriptions.le_chateau_d_anet.long":
+    "De gastheren van Château d’Anet nodigen je uit om te ontspannen en cultuur te delen. Volg een rondleiding door dit monument uit 1548 dat Hendrik II voor Diane de Poitiers liet bouwen, bekijk haar persoonlijke objecten en de kapel waar zij rust.",
+  "surroundings.descriptions.le_relais_mailles.short":
+    "Informele plek aan het water in Laveyron, handig voor ViaRhôna-fietsers en een ongedwongen stop.",
+  "surroundings.descriptions.le_relais_mailles.long":
+    "In een boomrijk park met dagschotels, pizza’s en burgers om ter plekke te eten, mee te nemen of vooraf te bestellen.\n\nGroene setting open naar de Rhône en Ardèche-hellingen, met een vrolijke sfeer voor fietsers en gezinnen.",
+  "surroundings.descriptions.la_table_des_saj.short":
+    "Creatief Frans bistro in Saint-Désirat met verfijnde keuken en relaxed gevoel.",
+  "surroundings.descriptions.la_table_des_saj.long":
+    "Seizoensmenu dat meebeweegt met de inspiratie van de chef, gebaseerd op verse producten en elegante borden.\n\nWarme, intieme sfeer voor lunch of diner op enkele minuten van het domein.",
+  "surroundings.descriptions.la_poule_noire.short":
+    "Regionale klassiekers in een knus restaurant in Albon met terras en verzorgde eetzaal.",
+  "surroundings.descriptions.la_poule_noire.long":
+    "Chef Gérald Bondelu kookt favorieten als kikkerbilletjes, gebakken foie gras, gambas en verfijnde streekgerechten.\n\nAttent team en een zaal voor familie-etentjes of kleinschalige events.",
+  "surroundings.descriptions.le_picotin.short":
+    "Traditionele Franse keuken in Andance, eenvoudige setting met schaduwrijk terras of gekoelde zaal.",
+  "surroundings.descriptions.le_picotin.long":
+    "Riante, huiselijke klassiekers voor een ongecompliceerde lunchstop.\n\nOntspannen ontvangst, makkelijke halte na een wandeling of rit langs de Rhône-oever.",
+  "surroundings.descriptions.au_pre_du_rhone.short":
+    "Panoramisch restaurant tussen Saint-Vallier en Tain-l’Hermitage met uitzicht op de Ardèche-hellingen.",
+  "surroundings.descriptions.au_pre_du_rhone.long":
+    "Grote veranda aan het water voor groepen, met seizoenskeuken gericht op versheid.\n\nLichte, rustige sfeer om het Rhône-landschap in je op te nemen.",
+  "surroundings.descriptions.cesar_pizza.short":
+    "Populaire pizzeria in Andance voor afhaalpizza’s en gulle recepten.",
+  "surroundings.descriptions.cesar_pizza.long":
+    "Knapperige ovenpizza’s, burgers en deelplanken in een vriendelijke, vlotte setting.\n\nIdeaal voor een gezinsmaaltijd of avond met vrienden vlakbij Place du Cloître.",
+  "surroundings.descriptions.la_villa_champagnere.short":
+    "Bistronomie met lokale producten in Saint-Rambert-d’Albon, met knusse uitstraling en terras.",
+  "surroundings.descriptions.la_villa_champagnere.long":
+    "Huisgemaakte seizoenskeuken (gourmetburgers, kikkerbilletjes, marktgerechten) geserveerd binnen of buiten.\n\nOntvangt groepen met een zaal voor teamlunches, avonden of vriendentreffen.",
+  "surroundings.descriptions.lamas_des_plaines.short":
+    "Ontdekkingsboerderij en centrum voor dierondersteunde therapie met lama's, biedt workshops en opleidingsprogramma's.",
+  "surroundings.descriptions.lamas_des_plaines.long":
+    "Ontdek de rust en sereniteit van Lamas des Plaines, een milieubewuste boerderij gewijd aan dierondersteunde therapie en lama-ontdekking.\n\nGeniet van bewustmakingsworkshops, behendigheidsparcours met de dieren of training in dierondersteunde therapie, diercommunicatie en persoonlijke ontwikkeling. De boerderij volgt een strikte ethische code en garandeert het welzijn van lama's die met zorg worden grootgebracht en als echte werkpartners worden behandeld.\n\nEen unieke plek om waarden van respect, ethiek en solidariteit te omarmen, allemaal in een serene omgeving op slechts enkele minuten van Lyon.",
+  "surroundings.lamas_des_plaines.gallery.image1":
+    "Lama's in de vlakten van de ontdekkingsboerderij",
+  "surroundings.descriptions.la_belle_epoque.short":
+    "Traditionele, huisgemaakte keuken met zoveel mogelijk korte ketens.",
+  "surroundings.descriptions.la_belle_epoque.long":
+    "Restaurant La Belle Époque in Le Creux de la Thine, op slechts 2 km.\n\nHartelijke ontvangst in een gemoedelijke sfeer.\n\nHuisgemaakte klassiekers die lokale producenten en korte ketens centraal zetten.\n\nSchaduwterras en parkeergelegenheid.\n\nOpen voor lunch van maandag tot en met vrijdag, plus dinsdag- en donderdagavond.",
+  "surroundings.descriptions.o_daily_truck.short":
+    "Op het menu: 100% huisgemaakte burgers, gestoofd vlees of snacks, plankjes om te delen, vega-opties en verse friet.",
+  "surroundings.descriptions.o_daily_truck.long":
+    "De kaart biedt 100% huisgemaakte burgers, vlees in saus of snacks, charcuterie- en kaasplanken om te delen, vegetarische schotels en versgesneden friet.\n\nHet team wisselt de suggesties om seizoensproducten te laten schitteren: Italiaanse of Spaanse charcuterie, kazen uit onze streken of de Zwitserse bergen, groenten en fruit van lokale telers, Aubrac-rund, streekgevogelte en kruiden van de Drôme-heuvels.\n\nEr zijn ook huisgemaakte desserts: chocolademousse, taarten, zijdezachte panna cotta en ambachtelijk ijs.",
+  "home.booking.title": "Klaar om uw koffers te pakken?",
+  "home.booking.button": "Boek een kamer",
+  "home.booking.secondaryButton": "Bekijk accommodaties",
+  "card.safari.title": "Safari de Peaugres",
+  "card.safari.description":
+    "Ga met het gezin, als koppel of met vrienden op ontdekking in de Safari, meer dan 130 soorten en 1200 verschillende dieren, in een groot park van 80 hectare.",
+  "card.safari.button": "Meer weten",
+  "card.tag.family": "Familie",
+  "place.header.title": "De locatie",
+  "place.header.text":
+    "Een 180 jaar oude voormalige magnanerie, het authentieke stenen huis vol karakter en charme wordt omgeven door het zachte kolken van de Rhône. Naast de charme van het gebouw kunt u genieten van het park, het onbeheizde zwembad en het zomerpaviljoen voor een rustgevende, natuurlijke pauze.\n\nWij bieden de table d'hôtes, een bar-service en zoete of hartige lekkernijen, een buitenparkeerplaats. Domaine de Pipangaille ligt dicht bij de afrit van de A7, nabij de Route Nationale 7, op 1 uur van Lyon en Saint-Étienne, 45 minuten van Valence en met directe toegang tot de ViaRhôna, vlak bij de ViaFluvia, fietsroutes en wandelpaden.",
+  "place.header.button": "Een kamer reserveren",
+  "place.services.title": "Ruimtes en services",
+  "place.services.text":
+    "Een buitenparkeerplaats, een fietsenstalling, een onbeheizd zwembad, het paviljoen, relaxruimtes aan de binnenplaats en de tuin, evenals de table d’hôtes (voor verblijvende gasten) en de bar.\n\nLe Comptoir de Pipangaille: voor lokale of passerende gasten bieden we bij de ingang van het domein op het overdekte terras, omringd door groen, een tijdloze pauze. Hartig aanbod: bruschetta, ravioli, bowls & salads, charcuterie- en kaasplanken… Zoet aanbod: ijs (15 smaken), wafels, crêpes, luxe granola.",
+  "place.events.title": "Evenementen organiseren",
+  "place.events.text":
+    "Een plek voor een privé-evenement, brunch, seminar, vergadering of zakelijke ontmoeting; neem contact met ons op en we stellen onze eetzaal beschikbaar met catering- en drankservice.",
+  "place.events.button": "Neem contact op",
+  "place.spotlight.title": "Het domein in beeld",
+  "place.spotlight.gallery1.title": "Het boomrijke park",
+  "place.spotlight.gallery2.title": "Ontspanningsruimtes",
+  "place.spotlight.gallery3.title": "Het hoofdgebouw",
+  "accommodations.hero.title": "Onze gastenkamers: comfort en authenticiteit",
+  "accommodations.hero.text":
+    "De vier uniek ingerichte kamers, die uitnodigen tot reizen, bevinden zich op de tweede verdieping. Een ontvangstruimte met fauteuils, gezelschapsspellen, boeken en toeristische informatie is beschikbaar. Onze kamers met airconditioning hebben een privé-douche en toilet.\n\nOpeningstijden: ontvangst: 17u-21u - Vertrek tot 10:30 uur. Vroege aankomst mogelijk op aanvraag en tegen betaling.",
+  "accommodations.rooms.button": "Bekijk de kamer",
+  "accommodations.rooms.marocaine.title": "Marokkaanse kamer",
+  "accommodations.rooms.marocaine.description":
+    "De Marokkaanse suite, met een warme sfeer geïnspireerd door riads en natuurlijke materialen, is ideaal voor een koppel op zoek naar ontsnapping en een romantisch moment. Deze kamer kan een koppel met een kind herbergen.",
+  "accommodations.rooms.marocaine.longDescription":
+    "De Marokkaanse sfeer met warme kleuren zal u transporteren in deze kamer, geschikt voor 2 volwassenen en een kind of voor een romantisch verblijf. Met uitzicht op de tuin en de binnenplaats, beschikt het over een bed van 1,80 m x 2 m, omzetbaar in twee eenpersoonsbedden, een grote bank (omzetbaar in een kinderbed), dubbele wastafel, grote inloopdouche in tadelakt, apart toilet, opbergruimte. Airconditioning zorgt voor optimaal comfort in de zomer.",
+  "accommodations.rooms.marocaine.gallery.image1":
+    "Marokkaanse suite - hoofdbeeld",
+  "accommodations.rooms.marocaine.gallery.image2":
+    "Marokkaanse suite - textiel en natuurlijke materialen",
+  "accommodations.rooms.marocaine.gallery.image3":
+    "Marokkaanse suite - tadelakt-badkamer",
+  "accommodations.rooms.marocaine.gallery.image4":
+    "Marokkaanse suite - zithoek met slaapbank",
+  "accommodations.rooms.marocaine.gallery.image5":
+    "Marokkaanse suite - handgemaakte details",
+  "accommodations.rooms.marocaine.tags.bedding":
+    "Tweepersoonsbed of twee eenpersoonsbedden",
+  "accommodations.rooms.marocaine.tags.family": "Koppel met 1 kind",
+  "accommodations.rooms.marocaine.tags.couple": "Koppel",
+  "accommodations.rooms.africaine.title": "Afrikaanse kamer",
+  "accommodations.rooms.africaine.description":
+    "De Afrikaanse kamer met safari-geïnspireerde sfeer en unieke decoratie, ideaal voor een koppel, vrienden of professionals.",
+  "accommodations.rooms.africaine.longDescription":
+    "Deze kamer van 18 m² met uitzicht op de tuin en safari-accenten biedt een bed van 1,80 x 2 m omzetbaar in 2 eenpersoonsbedden, een bureau met 2 stoelen, een wastafel, een inloopdouche in tadelakt, apart toilet en opbergruimte. Ideaal voor fietsers op de ViaRhôna, deze kamer met airconditioning stelt u in staat te herstellen vóór de volgende etappe.",
+  "accommodations.rooms.africaine.gallery.image1":
+    "Afrikaanse kamer - hoofdbeeld",
+  "accommodations.rooms.africaine.gallery.image2":
+    "Afrikaanse kamer - natuurlijk licht",
+  "accommodations.rooms.africaine.gallery.image3":
+    "Afrikaanse kamer - privébadkamer",
+  "accommodations.rooms.africaine.gallery.image4":
+    "Afrikaanse kamer - bureauhoek",
+  "accommodations.rooms.africaine.gallery.image5":
+    "Afrikaanse kamer - safari-details",
+  "accommodations.rooms.africaine.tags.bedding":
+    "Tweepersoonsbed of twee eenpersoonsbedden",
+  "accommodations.rooms.africaine.tags.adults": "2 volwassenen",
+  "accommodations.rooms.marocaine.equipments.note":
+    "De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.",
+  "accommodations.rooms.africaine.equipments.note":
+    "De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.",
+  "accommodations.rooms.toscane.title": "Toscaanse kamer",
+  "accommodations.rooms.toscane.description":
+    "De Toscaanse kamer, geïnspireerd door Italië, combineert romantiek en passie met zijn pasteltinten. Ideaal voor een koppel op zoek naar een moment van sereniteit.",
+  "accommodations.rooms.toscane.longDescription":
+    "Een kamer van 17 m² met Toscaans geïnspireerde decoratie die u transporteert in een romantische Italiaanse cocon. Deze kamer met uitzicht op de tuin biedt een bed van 1,60 x 2 m, een inloopdouche, een wastafel, apart toilet, een hoge wandtafel met 2 krukken en opbergruimte. Het is uitgerust met airconditioning voor vreedzame nachten.",
+  "accommodations.rooms.toscane.gallery.image1": "Toscaanse kamer - hoofdbeeld",
+  "accommodations.rooms.toscane.gallery.image2":
+    "Toscaanse kamer - terracottatextiel",
+  "accommodations.rooms.toscane.gallery.image3":
+    "Toscaanse kamer - ensuite badkamer",
+  "accommodations.rooms.toscane.gallery.image4":
+    "Toscaanse kamer - schrijfhoek",
+  "accommodations.rooms.toscane.gallery.image5":
+    "Toscaanse kamer - decoratieve details",
+  "accommodations.rooms.toscane.tags.couple": "Koppel",
+  "accommodations.rooms.toscane.tags.romantic": "Romantisch",
+  "accommodations.rooms.creole.title": "Creoolse kamer",
+  "accommodations.rooms.creole.description":
+    "De Creoolse kamer is geïnspireerd door een reis naar de eilanden met zijn blauwe kleuren en rattanmeubilair. Deze kamer is ideaal voor een koppel.",
+  "accommodations.rooms.creole.longDescription":
+    "De prachtige plafondhoogte, het uitzicht op de tuin en de natuurlijke vezels van het meubilair baden deze kamer in licht. Deze kamer bestaat uit een tweepersoonsbed van 1,60 x 2 m, een ruimte met douchecabine en wastafel, apart toilet. Het door de eilanden geïnspireerde meubilair: twee rattanfauteuils, een bijzettafel en een kledingkast. Deze kamer met airconditioning belooft een zachte pauze.",
+  "accommodations.rooms.creole.gallery.image1": "Creoolse kamer - hoofdbeeld",
+  "accommodations.rooms.creole.gallery.image2":
+    "Creoolse kamer - tropisch kleurenpalet",
+  "accommodations.rooms.creole.gallery.image3": "Creoolse kamer - badkamer",
+  "accommodations.rooms.creole.gallery.image4":
+    "Creoolse kamer - slaapgedeelte",
+  "accommodations.rooms.creole.gallery.image5":
+    "Creoolse kamer - ambachtelijke details",
+  "accommodations.detail.equipments.title": "Beschikbare voorzieningen",
+  "accommodations.detail.equipments.note":
+    "De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.",
+  "accommodations.detail.table.title": "De table d’hôtes",
+  "accommodations.detail.table.text":
+    "Op reservatie serveren we een gezellige table d’hôtes: een seizoensmenu of royale planken en salades met lokale, biologische producten.",
+  "accommodations.detail.explore.title": "Plekken om te ontdekken",
+  "accommodations.detail.explore.text":
+    "In het seizoen kunt u genieten van het zwembad met ligbedden, het zomerpaviljoen voor een drankje of ijsje en de gemeenschappelijke ruimte met banken, boeken en gezelschapsspellen.",
+  "accommodations.detail.otherRooms.title": "Andere accommodaties",
+  "accommodations.rooms.equipments.doubleBedSeparable":
+    "180 cm tweepersoonsbed deelbaar in twee singles",
+  "accommodations.rooms.equipments.doubleBed160":
+    "Tweepersoonsbed 160 x 200 cm",
+  "accommodations.rooms.equipments.freeHighSpeedWifi": "Gratis snelle wifi",
+  "accommodations.rooms.equipments.airConditioning": "Airconditioning",
+  "accommodations.rooms.equipments.ShowerRoom": "Privébadkamer",
+  "accommodations.rooms.equipments.ShowerRoomMoroccan":
+    "Dubbele wastafel, grote inloopdouche, apart toilet",
+  "accommodations.rooms.equipments.ShowerRoomAfrican":
+    "Wastafel, inloopdouche, apart toilet",
+  "accommodations.rooms.equipments.ShowerRoomTuscan":
+    "Wastafel, inloopdouche, apart toilet",
+  "accommodations.rooms.equipments.ShowerRoomCreole":
+    "Douchecabine, wastafel, apart toilet",
+  "accommodations.rooms.equipments.babyCribOnRequest": "Babybed op aanvraag",
+  "accommodations.rooms.equipments.kettle": "Waterkoker en welkomstset",
+  "accommodations.rooms.equipments.hairDryer": "Haardroger",
+  "accommodations.rooms.equipments.sofaBed": "Slaapbank",
+  "accommodations.rooms.equipments.commonWashingMachine":
+    "Toegang tot wasmachine op aanvraag (tegen betaling)",
+  "accommodations.rooms.equipments.desk": "Hoge wandtafel",
+  "accommodations.rooms.equipments.smallTable": "Klein tafeltje",
+  "accommodations.rooms.equipments.wardrobe": "Kledingkast",
+  "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
+    "Bijzettafel met twee fauteuils",
+  "accommodations.breakfast.title": "Ontbijt, table d'hôtes en bar",
+  "accommodations.breakfast.text":
+    "Het ontbijt wordt geserveerd van 8.00 tot 9.30 uur, of eerder op aanvraag. Het wordt geserveerd in de eetzaal of bij mooi weer in de binnenplaats. Als buffet vindt u traditioneel brood, viennoiserie, biologische thee, koffie, vruchtensappen, lokale yoghurt en seizoensfruit.\n\nWij selecteren onze leveranciers om u lokale en biologische producten aan te bieden.\n\nHartig ontbijt optioneel beschikbaar, op aanvraag en na reservering de dag ervoor.\n\nOp reservering biedt de table d'hôtes een huisgemaakt vast menu of borden met charcuterie, kazen of samengestelde salades met lokale en biologische producten. Onze aanbiedingen kunnen variëren naargelang het seizoen.\n\nBar-service: wij bieden een drankenkaart en een wijnkaart.",
+  "accommodations.cta.title": "Wilt u alle kamers privatiseren?",
+  "accommodations.cta.text":
+    "Het is mogelijk om het volledige huis te reserveren voor groepsactiviteiten, familie-uitstapjes of weekends met vrienden.",
+  "accommodations.cta.button": "Neem contact op",
+  "surroundings.detail.otherActivities.title":
+    "Andere activiteiten om te ontdekken",
+  "surroundings.detail.otherRestaurants.title":
+    "Andere restaurants om te ontdekken",
+  "surroundings.detail.seeAllActivities": "Bekijk alle activiteiten",
+  "surroundings.detail.seeAllRestaurants": "Bekijk alle restaurants",
+  "surroundings.safari_peaugres.gallery.image1":
+    "Panoramisch uitzicht op Safari de Peaugres",
+  "surroundings.palais_ideal_du_facteur_cheval.gallery.image1":
+    "Gevel van het Palais Idéal du Facteur Cheval",
+  "surroundings.acrobois_pilat.gallery.image1":
+    "Bezoekers op het boomparcours van Acrobois Pilat",
+  "surroundings.musee_de_l_alambic.gallery.image1":
+    "Koperen ketels in het Musée de l’Alambic",
+  "surroundings.golf_de_saint_clair.gallery.image1":
+    "Fairways van Golf de Saint-Clair",
+  "surroundings.viarhona.gallery.image1":
+    "Fietsers op de ViaRhôna langs de rivier",
+  "surroundings.viafluvia.gallery.image1": "Gezin op de ViaFluvia-route",
+  "surroundings.musee_valrhona.gallery.image1":
+    "Proeverij-workshop in de Cité du Chocolat Valrhôna",
+  "surroundings.mongolfieres_et_cie.gallery.image1":
+    "Heteluchtballon van Montgolfières & Cie boven het dal",
+  "surroundings.train_de_l_ardeche.gallery.image1":
+    "Historische locomotief van de Train de l’Ardèche",
+  "surroundings.la_fabrique_de_julien.gallery.image1":
+    "Snoepschappen bij La Fabrique de Julien",
+  "surroundings.le_nougat_de_montsegur.gallery.image1":
+    "Nougatrepen van Le Nougat de Montségur",
+  "surroundings.chateau_de_grignan.gallery.image1":
+    "Buitenaanzicht van Château de Grignan",
+  "surroundings.labyrinthe_vegetal.gallery.image1":
+    "Luchtbeeld van het Labyrinthe végétal",
+  "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
+    "Boot van Compagnie des Canotiers Rhône & Saône op de rivier",
+  "surroundings.le_chateau_d_anet.gallery.image1":
+    "Binnenhof van Château d’Anet",
+  "surroundings.le_relais_mailles.gallery.image1":
+    "Eetzaal van Le Relais des Mailles",
+  "surroundings.la_table_des_saj.gallery.image1":
+    "Opgemaakte borden bij La Table des SAJ",
+  "surroundings.la_poule_noir.gallery.image1":
+    "Restaurantzaal van La Poule Noire",
+  "surroundings.le_picotin.gallery.image1": "Gevel van restaurant Le Picotin",
+  "surroundings.au_pre_du_rhone.gallery.image1":
+    "Terras met zicht op de Rhône bij Au Pré du Rhône",
+  "surroundings.la_belle_epoque.gallery.image1":
+    "Restaurantzaal van La Belle Époque",
+  "surroundings.la_belle_epoque.gallery.image2":
+    "Terrasservice bij La Belle Époque",
+  "surroundings.o_daily_truck.gallery.image1":
+    "Gourmetburger van O'Daily Truck",
+  "surroundings.o_daily_truck.gallery.image2":
+    "O'Daily Truck klaar voor service",
+  "surroundings.cesar_pizza.gallery.image1": "Toog en oven van César Pizza",
+  "surroundings.la_villa_champagnere.gallery.image1":
+    "Tuin en terras van La Villa Champagnère",
+  "surroundings.les_agapons.gallery.image1":
+    "Restaurant Les Agapons in Manthes",
+  "surroundings.descriptions.les_agapons.short":
+    "Restaurant met authentieke Franse keuken in Manthes, huisgemaakte kwaliteitskeuken met lokale en regionale producten.",
+  "surroundings.descriptions.les_agapons.long":
+    "Welkom bij Les Agapons, gelegen in het charmante stadje Manthes. Ons warm team serveert u huisgemaakte keuken van kwaliteit, bereid met lokale en regionale producten, evenals traditionele gerechten.\n\nHet restaurant biedt veel services: terras, speelhoek voor kinderen, gratis parkeren, privéfeesten, trouwerijen, gratis Wi-Fi en huisdieren welkom. Geopend van woensdag tot zaterdag van 12 tot 14 uur en van 19 tot 21 uur, evenals zondagsmiddag.",
+  "surroundings.detail.book": "Boeken",
+  "surroundings.detail.socialNetworks": "Sociale media",
+  "surroundings.detail.visitWebsite": "Bezoek de website",
+  "surroundings.detail.moreInfo.title": "Meer informatie",
+  "iframeConsent.title": "Externe inhoud",
+  "iframeConsent.text":
+    "Deze inhoud wordt geleverd door {serviceName}. Door dit te laden, ga je akkoord met onze gebruiksvoorwaarden en het privacybeleid van de aanbieder.",
+  "iframeConsent.button": "Accepteren en laden",
+  "iframeConsent.serviceNameFallback": "deze externe dienst",
+  "contact.title": "Neem contact op",
+  "contact.reservation.textBefore":
+    "Alle reserveringen worden uitsluitend via de pagina",
+  "contact.reservation.textAfter":
+    "gemaakt. We accepteren geen reserveringen via dit formulier, behalve voor groepen of langdurige verblijven.",
+  "contact.form.fullName": "Volledige naam",
+  "contact.form.email": "E-mail",
+  "contact.form.subject": "Onderwerp",
+  "contact.form.phone": "Telefoon",
+  "contact.form.optional": "optioneel",
+  "contact.form.message": "Bericht",
+  "contact.form.submit": "Verzenden",
+  "contact.error.title": "Fout bij verzenden van bericht",
+  "contact.success.title": "Bericht succesvol verzonden!",
+  "contact.success.text": "We zullen u snel beantwoorden.",
+  "contact.validation.nameRequired": "Naam is verplicht.",
+  "contact.validation.emailInvalid": "Ongeldig e-mailadres.",
+  "contact.validation.subjectRequired": "Onderwerp is verplicht.",
+  "contact.validation.messageRequired": "Bericht is verplicht.",
+  "contact.genericError":
+    "Er is een fout opgetreden bij het verzenden van het bericht.",
+  "contact.info.phone": "Telefoon",
+  "contact.info.whatsapp": "Whatsapp",
+  "contact.info.email": "E-mail",
+  "contact.info.address": "Adres",
+  "contact.form.fullNamePlaceholder": "Jan Jansen",
+  "contact.form.emailPlaceholder": "jan.jansen@example.com",
+  "contact.form.subjectPlaceholder": "Onderwerp van uw bericht",
+  "contact.form.phonePlaceholder": "+33 4 75 68 28 24",
+  "contact.form.messagePlaceholder": "Uw bericht hier",
+  "contact.privateRequest.title": "Speciaal verzoek",
+  "contact.privateRequest.text":
+    "We kunnen de locatie privatiseren voor uw privé-evenementen, met of zonder accommodatie. Bent u op zoek naar een plek om een familiebijeenkomst, receptie, kunstzinnig evenement, seminars... te organiseren. Domaine de Pipangaille, een historisch gebouw omgeven door een parklandschap met vele ruimtes, is ideaal voor het organiseren van uw evenementen. Het park, de werf, de binnenplaats, tentopstelling... we staan tot uw beschikking voor alle verzoeken.",
+  "legalNotices.title": "Juridische vermeldingen",
+  "legalNotices.editor.title": "Website-uitgever",
+  "legalNotices.editor.addressLabel": "Adres",
+  "legalNotices.editor.rcsLabel": "RCS",
+  "legalNotices.editor.nafLabel": "NAF-code",
+  "legalNotices.editor.capitalLabel": "Maatschappelijk kapitaal",
+  "legalNotices.editor.phoneLabel": "Telefoon",
+  "legalNotices.editor.emailLabel": "E-mail",
+  "legalNotices.editor.ceoLabel": "Directeur",
+  "legalNotices.editor.publisherLabel": "Publicatiedirecteur",
+  "legalNotices.editor.publisherValue": "Catherine Lemoine",
+  "legalNotices.design.title": "Webdesign en -ontwikkeling",
+  "legalNotices.design.phoneLabel": "Telefoon",
+  "legalNotices.design.emailLabel": "E-mail",
+  "legalNotices.design.websiteLabel": "Website",
+  "legalNotices.design.githubLabel": "Github",
+  "legalNotices.design.repoLabel": "Github-repository",
+  "legalNotices.hosting.title": "Website-hosting",
+  "legalNotices.hosting.providerLabel": "Provider",
+  "legalNotices.domain.title": "Domeinnaam-eigendom",
+  "legalNotices.domain.providerLabel": "Domeinnaambeheerder",
+  "legalNotices.photos.title": "Fotoverantwoording",
+  "legalNotices.photos.text":
+    "Alle foto's zijn eigendom van Domaine de Pipangaille.",
+  "legalNotices.cookies.title": "Gebruik van cookies",
+  "legalNotices.cookies.text":
+    "Deze website gebruikt cookies alleen voor statistieken en operationele doeleinden.",
+  "legalNotices.personalData.title": "Gebruik van persoonlijke gegevens",
+  "legalNotices.personalData.text":
+    "Door de formulieren op de website te gebruiken, accepteert u de opslag en verwerking van de verzonden gegevens. Ze worden opgeslagen en verwerkt voor beheer, archivering en verbeteringsdoeleinden van onze diensten.",
+  "legalNotices.personalData.retention":
+    "Gegevens worden gedurende een redelijke periode van 10 jaar bewaard.",
+  "legalNotices.personalData.requestEmailPrefix":
+    "Voor verzoeken om verwijdering, correctie of toegang tot gegevens kunt u een verzoek indienen via e-mail ",
+  "legalNotices.personalData.requestAddressPrefix": " of per post naar: ",
+  "legalNotices.liability.title":
+    "Aansprakelijkheid van SAS Domaine de Pipangaille",
+  "legalNotices.liability.text":
+    "Voor zover wettelijk toegestaan, is SAS Domaine de Pipangaille niet aansprakelijk voor:",
+  "legalNotices.liability.inaccuracy":
+    "Onnauwkeurigheden, fouten, weglatingen of schade voortvloeiend uit ongeoorloofde wijzigingen van informatie op de Website.",
+  "legalNotices.liability.unauthorized":
+    "Schade veroorzaakt door ongeoorloofde toegang tot de Website of deze ontoegankelijk makend.",
+  "legalNotices.liability.interruption":
+    "De bezoeker wordt ervan op de hoogte gesteld dat de toegang tot de Website op elk moment door SAS Domaine de Pipangaille kan worden onderbroken wegens onderhoud, beveiliging of enige andere technische beperking.",
+  "legalNotices.law.title": "Toepasselijk recht",
+  "legalNotices.law.text":
+    "Deze juridische vermeldingen worden beheerst door Frans recht. Franse rechtbanken zijn exclusief bevoegd voor geschillen die rechtstreeks of onrechtstreeks betrekking hebben op toegang tot of gebruik van deze Website.",
+  "mapProviderDialog.title": "Openen met:",
+  "generalConditions.title":
+    "Algemene voorwaarden voor bed- en breakfastovernachtingen",
+  "generalConditions.subtitle": "Domaine de Pipangaille",
+  "generalConditions.article1.title": "Artikel 1 - Duur van het verblijf",
+  "generalConditions.article1.content":
+    "De gast die deze overeenkomst voor een bepaalde periode ondertekent, kan onder geen enkele omstandigheid aanspraken maken op het recht om ter plaatse te verblijven.",
+  "generalConditions.article2.title": "Artikel 2 - Boekingsformaliteiten",
+  "generalConditions.article2.content1":
+    "Een boeking wordt pas geldig zodra de gast een aanbetaling van 25% van het totale verblijfstarief aan de eigenaar heeft betaald, met een minimum van één nacht per geboekte kamer, en een ondertekend exemplaar van het contract voor de aangegeven datum.",
+  "generalConditions.article2.content2":
+    "De gast dient het tweede exemplaar van het contract te bewaren.",
+  "generalConditions.article2.content3":
+    "De prijzen zijn inclusief alle toeslagen volgens het productblad, exclusief de toeristenbelasting.",
+  "generalConditions.article3.title":
+    "Artikel 3 - Consumentenwetgeving - Herroepingsrecht",
+  "generalConditions.article3.content1":
+    "Een online, telefonisch of schriftelijk gemaakte boeking is een aankoop op afstand. Het betreft een op afstand gesloten overeenkomst in de zin van de definitie van de consumentenwetgeving.",
+  "generalConditions.article3.content2":
+    "Wij zijn onderworpen aan artikelen L. 121-17 e.v. van de consumentenwetgeving.",
+  "generalConditions.article3.content3":
+    "Wij wijzen u erop dat het herroepingsrecht niet van toepassing is op verblijfsdienstenovereenkomsten.",
+  "generalConditions.article4.title": "Artikel 4 - Annulering door de gast",
+  "generalConditions.article4.content1":
+    'Wijzigingen zijn alleen mogelijk met toestemming van "Domaine de Pipangaille" en kunnen extra kosten met zich meebrengen.',
+  "generalConditions.article4.content2":
+    "Wij informeren u dat bij annulering van de boeking vóór het begin van het verblijf, een vastgestelde schadevergoeding verschuldigd is als volgt:",
+  "generalConditions.article4.bullet1":
+    "als de annulering meer dan 1 week vóór de aankomdatum plaatsvindt, wordt de aanbetaling volledig terugbetaald;",
+  "generalConditions.article4.bullet2":
+    "als de annulering minder dan 1 week vóór de aankomdatum plaatsvindt, blijft de aanbetaling eigendom van Domaine de Pipangaille, dat gerechtigd is het restantbedrag van het verblijfstarief (in overeenstemming met de boekingsovereenkomst) in rekening te brengen als het verblijf na annulering vacant blijft.",
+  "generalConditions.article4.content3":
+    "Bij voortijdig vertrek tijdens het verblijf is volledige betaling van de geboekte dienst verschuldigd, ongeacht de reden.",
+  "generalConditions.article5.title":
+    "Artikel 5 - Annuleringsverzekeringstot lasten van de gast",
+  "generalConditions.article5.content1":
+    "Wij wijzen u erop dat geen annuleringsverzekeringskosten in onze tarieven zijn begrepen.",
+  "generalConditions.article5.content2":
+    "Het wordt dan ook sterk aanbevolen er een af te sluiten.",
+  "generalConditions.article6.title": "Artikel 6 - Annulering door de eigenaar",
+  "generalConditions.article6.content1":
+    "Indien de eigenaar vóór het begin van het verblijf de boeking moet annuleren, moet hij de gast onmiddellijk op de hoogte brengen.",
+  "generalConditions.article6.content2":
+    "De gast wordt dan onmiddellijk en volledig terugbetaald van alle reeds betaalde bedragen.",
+  "generalConditions.article7.title": "Artikel 7 - Aankomsttijd",
+  "generalConditions.article7.content1":
+    "Aankomst is voorzien in de middag vanaf 17:00 uur en mogelijk tot 22:00 uur.",
+  "generalConditions.article7.content2":
+    "In geval van een speciale of onverwachte aanvraag dient u ons per telefoon te bellen op ",
+  "generalConditions.article7.content3":
+    " om ons van vertragingen op de hoogte te stellen.",
+  "generalConditions.article8.title": "Artikel 8 - Vertrektijd",
+  "generalConditions.article8.content":
+    "De vertrektijd uit de kamers is vastgesteld op 10:30 uur uiterlijk.",
+  "generalConditions.article9.title":
+    "Artikel 9 - Betaling van het restantbedrag van het verblijf",
+  "generalConditions.article9.content1":
+    "Het restantbedrag van het verblijf wordt één dag voor aankomst betaald, in overeenstemming met uw boekingsovereenkomst.",
+  "generalConditions.article9.content2":
+    "Alle eventuele bijkosten, inclusief die voor tafelserviceen dranken, worden op uw vertrektag in rekening gebracht.",
+  "generalConditions.article10.title": "Artikel 10 - Kamerwisseling",
+  "generalConditions.article10.content1":
+    "Zonder dat de gast recht heeft op schadevergoeding, behoudt de eigenaar zich het recht voor de door de gast geboekte kamer voor een kamer met dezelfde of grotere capaciteit in te wisselen.",
+  "generalConditions.article10.content2":
+    "In dat geval blijven de boekingskosten onveranderd.",
+  "generalConditions.article11.title": "Artikel 11 - Huisdieren",
+  "generalConditions.article11.content": "Huisdieren zijn niet toegestaan.",
+  "generalConditions.article12.title":
+    "Artikel 12 - Levensstijl en gebruik van de accommodatie",
+  "generalConditions.article12.content1":
+    'Teneinde de rust van de accommodatie en het comfort van de gasten van het Domaine de Pipangaille te waarborgen, is respect voor een zekere "levensstijl" van iedereen vereist.',
+  "generalConditions.article12.content2":
+    "In het bijzonder is roken binnen niet toegestaan.",
+  "generalConditions.article12.content3":
+    "De gast verplicht zich de gedragsrichtlijnen die hem zullen worden gegeven in acht te nemen en deze algemene verkoopsvoorwaarden na te leven.",
+  "generalConditions.article12.content4":
+    "De gast verplicht zich de kamers aan het einde van het verblijf in perfecte staat en zonder schade terug te geven en alle schade waarvoor hij/zij verantwoordelijk is systematisch te melden en financiële verantwoordelijkheid op zich te nemen.",
+  "generalConditions.article12.content5":
+    "Herstelkosten, inclusief het tijd van ingrepen nodig voor het herstel van de accommodatie, worden betaald volgens afzonderlijke facturering en op basis van bewijsstukken van gemaakte uitgaven.",
+  "generalConditions.article12.content6":
+    "Gasten worden erop gewezen dat minderjarigen op het terrein onder de uitsluitende en volledige verantwoordelijkheid van hun ouders of personen met bevoegdheid over hen vallen.",
+  "generalConditions.article12.content7":
+    "Uw verblijf in het Domaine de Pipangaille en het gebruik van onze uitrusting en faciliteiten zoals het zwembad, de gedeelde keuken en parkeerplaats geschiedt vrijwillig en op uw eigen risico. Domaine de Pipangaille is niet aansprakelijk voor verlies, diefstal en/of schade aan goederen en/of letsel aan personen op het terrein, ongeacht de oorzaak.",
+  "generalConditions.article13.title":
+    "Artikel 13 - Wijziging van verkoopsvoorwaarden",
+  "generalConditions.article13.content1":
+    "Deze verkoopsvoorwaarden kunnen op elk moment en zonder kennisgeving worden gewijzigd.",
+  "generalConditions.article13.content2":
+    "Aanvaarding en naleving van deze verkoopsvoorwaarden worden geacht verworven te zijn zodra de aanbetaling is betaald.",
+  "generalConditions.article14.title":
+    "Artikel 14 - Wet informatica en vrijheden",
+  "generalConditions.article14.content1":
+    "In overeenstemming met Wet nr. 78-17 van 6 januari 1978 betreffende informatica, dossiers en vrijheden hebt u het recht om gegevens over u in te zien en te corrigeren.",
+  "generalConditions.article14.content2":
+    "Wij verplichten ons om informatie die u ons heeft verstrekt op geen enkele manier aan andere bedrijven of organisaties door te geven.",
+  "notfound.title": "404 - Pagina niet gevonden",
+  "notfound.message": "De pagina die je zoekt bestaat niet.",
+  "notfound.button": "Terug naar Home",
 };

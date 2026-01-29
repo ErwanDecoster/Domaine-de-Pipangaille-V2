@@ -65,7 +65,7 @@ const seeAllButtonLink =
     <Layout>
       <div
         data-scroll-animated
-        class="h-28 w-screen sticky top-0 z-10 bg-background"
+        class="bg-background sticky top-0 z-10 h-28 w-screen"
       />
 
       <Header
@@ -132,7 +132,7 @@ const seeAllButtonLink =
         </div>
       </MediaContent>
 
-      <section class="grid grid-cols-3 gap-8 md:gap-10 px-20 mt-48">
+      <section class="mt-48 grid grid-cols-3 gap-8 px-20 md:gap-10">
         <h2 class="col-span-3">{t(otherSurroundingsTitle)}</h2>
         {otherSurroundings.slice(0, 3).map((surrounding) => (
           <Card
@@ -154,7 +154,7 @@ const seeAllButtonLink =
             buttonLink={getLocalizedUrl("surrounding", lang, surrounding.slug)}
           />
         ))}
-        <Button class="mx-auto col-span-3" href={seeAllButtonLink}>
+        <Button class="col-span-3 mx-auto" href={seeAllButtonLink}>
           {t(seeAllButtonText)}
         </Button>
       </section>

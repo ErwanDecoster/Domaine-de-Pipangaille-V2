@@ -5,7 +5,7 @@ const { review } = Astro.props;
 ---
 
 <div
-  class="relative min-w-441px grid gap-6 p-8 bg-muted rounded-md group"
+  class="min-w-441px bg-muted group relative grid gap-6 rounded-md p-8"
   onmouseleave="this.querySelector('[data-review-overlay]')?.scrollTo({top:0,behavior:'smooth'})"
 >
   <div class="flex gap-1.5">
@@ -18,12 +18,12 @@ const { review } = Astro.props;
     </p>
     <div
       data-review-gradient
-      class="absolute bottom-0 left-0 right-0 h-12 bg-linear-to-t from-muted to-transparent pointer-events-none opacity-0 group-hover:opacity-0 transition-opacity"
+      class="from-muted pointer-events-none absolute right-0 bottom-0 left-0 h-12 bg-linear-to-t to-transparent opacity-0 transition-opacity group-hover:opacity-0"
     >
     </div>
     <div
       data-review-overlay
-      class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity overflow-y-auto bg-muted rounded text-sm"
+      class="bg-muted absolute inset-0 overflow-y-auto rounded text-sm opacity-0 transition-opacity group-hover:opacity-100"
     >
       <p>{review.text}</p>
     </div>
@@ -37,10 +37,10 @@ const { review } = Astro.props;
 <script>
   document.querySelectorAll("[data-review-content]").forEach((container) => {
     const preview = container.querySelector(
-      "[data-review-preview]"
+      "[data-review-preview]",
     ) as HTMLElement;
     const gradient = container.querySelector(
-      "[data-review-gradient]"
+      "[data-review-gradient]",
     ) as HTMLElement;
 
     if (preview && gradient) {

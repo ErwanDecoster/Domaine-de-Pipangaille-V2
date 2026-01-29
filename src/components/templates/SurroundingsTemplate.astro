@@ -53,21 +53,21 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
 <Layout>
   <div
     data-scroll-animated
-    class="h-28 w-screen sticky top-0 z-10 bg-background"
+    class="bg-background sticky top-0 z-10 h-28 w-screen"
   >
   </div>
   <div class="px-20 pt-24">
     <h1>{t("surroundings.hero.title")}</h1>
-    <p class="mt-12 md:w-4/5 max-w-4xl">{t("surroundings.hero.text")}</p>
+    <p class="mt-12 max-w-4xl md:w-4/5">{t("surroundings.hero.text")}</p>
   </div>
 
-  <section class="px-20 mt-20 space-y-10">
+  <section class="mt-20 space-y-10 px-20">
     <div>
       <h2>{t("surroundings.sections.activities.title")}</h2>
     </div>
-    <div id="activities" class="mt-6 flex flex-wrap gap-2 scroll-mt-28">
+    <div id="activities" class="mt-6 flex scroll-mt-28 flex-wrap gap-2">
       <Button
-        class="rounded-full hover:bg-accent/50"
+        class="hover:bg-accent/50 rounded-full"
         variant="outline"
         data-value=""
         size="sm"
@@ -78,7 +78,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
       {
         allCategories.map((category) => (
           <Button
-            class="rounded-full bg-muted hover:bg-accent/50"
+            class="bg-muted hover:bg-accent/50 rounded-full"
             variant="ghost"
             data-value={category}
             size="sm"
@@ -89,7 +89,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
         ))
       }
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
+    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
       {
         activities.map((activity) => (
           <div
@@ -104,7 +104,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
     </div>
     <nav
       data-nav="activities"
-      class="mt-10 flex justify-center items-center gap-2"
+      class="mt-10 flex items-center justify-center gap-2"
       aria-label="Activities pagination"
     >
       {
@@ -121,13 +121,13 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
     </nav>
   </section>
 
-  <section id="to-eat" class="px-20 mt-24 mb-24 space-y-10 scroll-mt-28">
+  <section id="to-eat" class="mt-24 mb-24 scroll-mt-28 space-y-10 px-20">
     <div>
       <h2>{t("surroundings.sections.food.title")}</h2>
     </div>
     <div
       id="restaurants"
-      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12 scroll-mt-28"
+      class="mt-12 grid scroll-mt-28 grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
     >
       {
         restaurants.map((restaurant) => (
@@ -139,7 +139,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
     </div>
     <nav
       data-nav="restaurants"
-      class="mt-10 flex justify-center items-center gap-2"
+      class="mt-10 flex items-center justify-center gap-2"
       aria-label="Restaurants pagination"
     >
       {

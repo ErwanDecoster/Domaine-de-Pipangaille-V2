@@ -1,350 +1,549 @@
 export const es = {
-  'nav.home': 'Inicio',
-  'nav.place': 'El Lugar',
-  'nav.accommodations': 'Alojamientos',
-  'nav.counter': 'El Mostrador',
-  'nav.surroundings': 'Alrededores',
-  'nav.contact': 'Contacto',
-  'nav.book': 'Reservar',
-  'footer.usefulLinks': 'Enlaces útiles',
-  'footer.knowUsBetter': 'Conócenos mejor',
-  'footer.moreInfo': 'Más información',
-  'footer.contactUs': 'Contáctanos',
-  'footer.contactPage': 'página de “contacto”',
-  'footer.legalMentions': 'Menciones legales',
-  'footer.salesConditions': 'Condiciones generales de venta',
-  'home.header.title': 'Le Domaine de Pipangaille',
-  'home.header.text': 'Le Domaine de Pipangaille, una antigua granja de gusanos de seda recientemente renovada rodeada de un parque arbolado que combina el encanto de la piedra y la autenticidad en un entorno idílico, ofrece 4 habitaciones de huéspedes, table d\'hôtes con reserva, una piscina sin calefacción abierta en temporada, para una estancia mágica y una invitación a relajarse.\n\nEl Domaine de Pipangaille se encuentra cerca de la salida de la autopista A7, cerca de la Nacional 7, a una hora de Lyon y Saint-Étienne, a 45 minutos de Valence y con acceso directo a la ViaRhôna, muy cerca de la ViaFluvia.',
-  'home.header.button': 'Descubrir el Dominio',
-  'home.rooms.title': 'Habitaciones de huéspedes',
-  'home.rooms.text': 'Se accede a las habitaciones cruzando el parque arbolado, que le lleva al patio interior rodeado de piedras que le confiere un entorno auténtico y relajante. Nuestras habitaciones están situadas en el segundo piso accesible por una gran escalera.\n\nOfrecemos cuatro habitaciones climatizadas con decoración única: una suite y tres habitaciones dobles. La decoración de las habitaciones invita al viaje y la serenidad.',
-  'home.rooms.button': 'Ver las habitaciones',
-  'home.counter.title': 'El Mostrador',
-  'home.counter.text': 'Para los ciclistas que pasan por la Via Rhona o los turistas en la ruta de vacaciones que buscan un lugar ideal para una pausa para el almuerzo o un refrigerio, el mostrador de Pipangaille ubicado en la entrada de la finca le da la bienvenida en temporada alta bajo la terraza cubierta para una pausa gourmet dulce o salada en un lugar atípico en el corazón de la vegetación.',
-  'home.counter.button': 'Saber más',
-  'counter.hero.title': 'El Mostrador',
-  'counter.hero.text': 'Le Comptoir de Pipangaille es un espacio de pausa y encuentro, pensado como un paréntesis gourmet en el corazón del dominio. Se viene a saborear un café, un chocolate caliente, un matcha o una bebida fresca acompañada de un capricho dulce o salado, en un ambiente acogedor y sereno.',
-  'counter.hero.imageAlt': 'Vista del Comptoir de Pipangaille',
-  'counter.story.title': 'Disfruta de una comida o de una pausa para beber',
-  'counter.story.text': 'El Comptoir también propone una selección de productos locales y de tienda fina para degustar allí o llevar.\n\nAbierto de miércoles a lunes, de 11 a 18 h, es un lugar sencillo, cálido y lleno de vida para reunirse, conversar y disfrutar del entorno único de Pipangaille.',
-  'counter.story.imageAlt': 'Selección de bebidas y dulces servidos en el Comptoir',
-  'home.reviews.title': 'Lo que dicen nuestros huéspedes',
-  'home.surroundings.title': 'Para descubrir a nuestro alrededor',
-  'home.surroundings.button': 'Ver actividades y restaurantes cercanos',
-  'surroundings.hero.title': 'Actividades y buenas direcciones cerca del dominio',
-  'surroundings.hero.text': 'En pleno Valle del Ródano, a pocos minutos de la salida de la A7 (1 h de Lyon, 50 min de Valence, 1 h 15 de Grenoble), el Domaine de Pipangaille goza de una ubicación privilegiada. La ViaRhôna bordea la propiedad para deleite de los ciclistas, y las familias pueden alternar rutas de senderismo, catas de vino, el Palais Idéal du Facteur Cheval, el Safari de Peaugres o el ferrocarril del Vivarais.',
-  'surroundings.sections.activities.title': 'Actividades cercanas',
-  'surroundings.sections.food.title': 'Dónde comer',
-  'surroundings.card.cta': 'Descubrir la dirección',
-  'surroundings.card.description.default': 'Recomendación cerca del dominio',
-  'surroundings.filter.all': 'Ver todo',
-  'surroundings.category.family': 'Familiar',
-  'surroundings.category.visit': 'Visita cultural',
-  'surroundings.category.loved': 'Favorito',
-  'surroundings.category.sport': 'Deporte',
-  'surroundings.category.ride': 'Paseo',
-  'surroundings.category.bike': 'Ciclismo',
-  'surroundings.descriptions.safari_peaugres.short': 'Sal con la familia, en pareja o con amigos a descubrir el safari: más de 130 especies y 1 200 animales en 80 hectáreas.',
-  'surroundings.descriptions.safari_peaugres.long': 'Un gran parque faunístico dividido en dos circuitos, en coche y a pie. Conoce más de 130 especies en 80 hectáreas, atraviesa el recinto de felinos por un túnel de vidrio, entra en el invernadero tropical Terre des minus, descubre la bahía de las focas, el invernadero de los mil escondites, la pasarela de las jirafas y muchas sorpresas más.',
-  'surroundings.descriptions.palais_ideal_du_facteur_cheval.short': 'Un palacio de piedra construido a mano por un solo hombre, el cartero Cheval: la historia apasionante de un proyecto de toda una vida.',
-  'surroundings.descriptions.palais_ideal_du_facteur_cheval.long': 'En medio de un jardín exuberante se alza este palacio de piedra construido a mano por el cartero Cheval: 93 000 horas y 33 años de perseverancia. Inspirado en las postales que repartía, reúne caimanes, elefantes, pelícanos, osos, aves, gigantes, hadas, personajes mitológicos, cascadas y arquitecturas de todos los continentes en una obra tan inclasificable como universal.',
-  'surroundings.descriptions.acrobois_pilat.short': 'En pleno bosque, vive una aventura en 14 circuitos para todos los niveles con familia, pareja o amigos.',
-  'surroundings.descriptions.acrobois_pilat.long': 'Catorce recorridos entre los árboles desafían a todos los niveles. Afronta tirolinas y obstáculos variados y reta a tu grupo a completar el último circuito.',
-  'surroundings.descriptions.musee_de_l_alambic.short': 'Revive el encanto y la historia de los destiladores ambulantes admirando magníficos alambiques de cobre de toda Francia.',
-  'surroundings.descriptions.musee_de_l_alambic.long': 'En Saint-Désirat, el Musée de l’Alambic de la destilería Jean Gauthier narra la época de los bouilleurs ambulants. En 1 400 m² se exponen alambiques de cobre, utensilios y herramientas procedentes de toda Francia en 30 escenas que rinden homenaje al patrimonio rural.',
-  'surroundings.descriptions.golf_de_saint_clair.short': 'Entre el valle del Ródano y las laderas del Ardèche, disfruta de espectaculares campos de golf en una finca del siglo XVIII.',
-  'surroundings.descriptions.golf_de_saint_clair.long': 'Instalado en el parque de un castillo del siglo XVIII, el recorrido es célebre por sus vistas panorámicas y fairways anchos bordeados de árboles que ofrecen una agradable sensación de amplitud.',
-  'surroundings.descriptions.viarhona.short': 'Este itinerario ciclista te lleva de los panoramas alpinos a las playas de la Camarga atravesando los viñedos emblemáticos del valle del Ródano y la Provenza meridional.',
-  'surroundings.descriptions.viarhona.long': 'ViaRhôna recorre 815 km desde el lago Lemán hasta el Mediterráneo siguiendo el río Ródano, entre paisajes alpinos, viñedos de Côtes du Rhône y la costa camarguense.',
-  'surroundings.descriptions.viafluvia.short': 'Una experiencia natural entre los paisajes de Loira, Alta Loira y Ardèche para vivir la naturaleza en 360°.',
-  'surroundings.descriptions.viafluvia.long': 'La Via Fluvia ofrece más de 80 km acondicionados y seguros sobre una antigua vía férrea que cruza Loira, Alta Loira y Ardèche, con paisajes variados accesibles para bicicletas, peatones y patinetes.',
-  'surroundings.descriptions.musee_valrhona.short': 'Sumérgete en la Cité du Chocolat Valrhôna: recorrido inmersivo, degustaciones y talleres para todas las edades.',
-  'surroundings.descriptions.musee_valrhona.long': 'En Tain-l’Hermitage, la Cité du Chocolat Valrhôna revela los secretos del cacao con un recorrido sensorial, demostraciones de chefs, degustaciones y talleres familiares. Conoce a pasteleros, descubre los orígenes y llévate ideas de recetas y regalos gourmet.',
-  'surroundings.descriptions.mongolfieres_et_cie.short': 'Comparte un momento agradable en familia, entre amigos o colegas en un globo para ocho pasajeros y vive una sensación de libertad total.',
-  'surroundings.descriptions.mongolfieres_et_cie.long': 'Sube a bordo de nuestros globos aerostáticos con capacidad máxima para ocho pasajeros, ideales para conversar con la tripulación. Disfruta de un momento acogedor en una barquilla segura y cómoda y saborea esa sensación de libertad absoluta.',
-  'surroundings.descriptions.train_de_l_ardeche.short': 'Embarca en el tren de vapor para un viaje único por Ardèche y descubre paisajes excepcionales.',
-  'surroundings.descriptions.train_de_l_ardeche.long': 'Una actividad imprescindible: sube al único tren de pasajeros que recorre todo el departamento de Ardèche.\n\nAuténticas locomotoras de vapor te llevan por una naturaleza preservada a lo largo de un río salvaje, desde las gargantas del Doux hasta la montaña ardéchoise, con vistas impresionantes.',
-  'surroundings.descriptions.la_fabrique_de_julien.short': 'Redescubre tu infancia en La Fabrique de Julien: caramelos artesanales, visitas y delicias nostálgicas.',
-  'surroundings.descriptions.la_fabrique_de_julien.long': 'Vuelve a la infancia en La Fabrique de Julien, en Bourg-Argental. Caramelos artesanales sin gluten ni conservantes disponibles en Lyon y Bourg-Argental.\n\nNuestros maestros confiteros lioneses elaboran piruletas, caramelos, nubes, confituras de chocolate y muchas delicias más.\n\nVisita la fábrica y el museo para descubrir su saber hacer y disfruta de una experiencia gourmet con sabores de antaño.',
-  'surroundings.descriptions.le_nougat_de_montsegur.short': 'Delicias artesanales de Montségur-sur-Lauzon: nougat tradicional sin aditivos, fiel a la tradición provenzal.',
-  'surroundings.descriptions.le_nougat_de_montsegur.long': 'En la pintoresca Drôme provenzal, en el pueblo de Montségur-sur-Lauzon, elaboramos y vendemos nuestras propias especialidades.\n\nCada producto se cocina con esmero en calderos de cobre para garantizar una calidad auténtica.\n\nNuestro nougat tradicional destaca por su pureza, sin colorantes ni conservantes.\n\nSeleccionamos cada ingrediente con cuidado para perpetuar la tradición del terruño provenzal.',
-  'surroundings.descriptions.chateau_de_grignan.short': 'El castillo de Grignan, joya histórica dominante, combina Renacimiento y clasicismo e invita a sumergirse en siglos de arte de vivir.',
-  'surroundings.descriptions.chateau_de_grignan.long': 'Dominando el pueblo, el castillo de Grignan mezcla classicismo francés e inspiración renacentista. Convertido en residencia de placer en el siglo XVII y hogar de Madame de Sévigné, fue desmantelado durante la Revolución, reconstruido en el siglo XX y pertenece al Departamento de Drôme desde 1979. Clasificado Monumento histórico y etiquetado Museo de Francia, ofrece una inmersión en el arte de vivir a lo largo de los siglos.',
-  'surroundings.descriptions.labyrinthe_vegetal.short': 'Laberinto de maíz en Charmes: aventura lúdica, deportiva e intelectual en un entorno protegido desde 2001.',
-  'surroundings.descriptions.labyrinthe_vegetal.long': 'Enclavado en un entorno preservado, este laberinto de maíz situado en lo alto de Charmes desde 2001 promete diversión a pequeños y grandes con una experiencia lúdica, deportiva e intelectual.',
-  'surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.short': 'Canotier solar en el Ródano: crucero gourmet, vistas a Saint-Joseph, cata de vinos y programas compatibles con la bicicleta.',
-  'surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long': 'Embarca en un canotier electro-solar para un crucero gourmet, un paseo o una cena sobre el Ródano. Degusta vinos mientras admiras las laderas de Saint-Joseph y, según la fórmula, sube tu bicicleta a bordo.',
-  'surroundings.descriptions.le_chateau_d_anet.short': 'Explora el castillo de Anet, joya renacentista en Eure-et-Loir, y revive la historia de Enrique II y Diana de Poitiers en una visita guiada.',
-  'surroundings.descriptions.le_chateau_d_anet.long': 'Los anfitriones del castillo de Anet te invitan a relajarte y a un intercambio cultural. Sigue una visita guiada por este monumento construido en 1548 por Enrique II para Diana de Poitiers, descubre sus objetos personales y la capilla donde descansa.',
-  'surroundings.descriptions.le_relais_mailles.short': 'Lugar informal junto al río en Laveyron, práctico para ciclistas de la ViaRhôna y pausas sencillas.',
-  'surroundings.descriptions.le_relais_mailles.long': 'En un parque arbolado, combina platos del día, pizzas y burgers para comer allí, llevar o encargar.\n\nEntorno verde abierto al Ródano y a las colinas de Ardèche, con un ambiente alegre para ciclistas y familias.',
-  'surroundings.descriptions.la_table_des_saj.short': 'Bistró creativo en Saint-Désirat con cocina cuidada y ambiente relajado.',
-  'surroundings.descriptions.la_table_des_saj.long': 'Carta de temporada que cambia según la inspiración del chef, basada en producto fresco y emplatados elegantes.\n\nClima cálido e íntimo para comer o cenar a pocos minutos del dominio.',
-  'surroundings.descriptions.la_poule_noire.short': 'Clásicos regionales en un restaurante acogedor de Albon con terraza y sala cuidada.',
-  'surroundings.descriptions.la_poule_noire.long': 'El chef Gérald Bondelu cocina imprescindibles como ancas de rana, foie gras salteado, gambas y platos finos del terruño.\n\nEquipo atento y un salón para comidas familiares o pequeños eventos.',
-  'surroundings.descriptions.le_picotin.short': 'Cocina francesa tradicional en Andance, marco sencillo con terraza sombreada o comedor climatizado.',
-  'surroundings.descriptions.le_picotin.long': 'Platos abundantes y caseros para una pausa de mediodía sin complicaciones.\n\nAcogida relajada, una parada fácil tras un paseo o recorrido por la ribera del Ródano.',
-  'surroundings.descriptions.au_pre_du_rhone.short': 'Restaurante panorámico entre Saint-Vallier y Tain-l’Hermitage con vistas a las colinas de Ardèche.',
-  'surroundings.descriptions.au_pre_du_rhone.long': 'Gran veranda junto al agua para grupos, que sirve cocina de temporada centrada en la frescura.\n\nAmbiente luminoso y tranquilo para contemplar el paisaje del Ródano.',
-  'surroundings.descriptions.cesar_pizza.short': 'Pizzería popular en Andance para llevar, con recetas generosas.',
-  'surroundings.descriptions.cesar_pizza.long': 'Pizzas al horno crujientes, burgers y tablas para compartir en un ambiente amistoso y rápido.\n\nIdeal para una comida en familia o una noche con amigos cerca de la Place du Cloître.',
-  'surroundings.descriptions.la_villa_champagnere.short': 'Bistronomía de producto local en Saint-Rambert-d’Albon con decoración acogedora y terraza.',
-  'surroundings.descriptions.la_villa_champagnere.long': 'Cocina de temporada casera (burgers gourmet, ancas de rana, platos de mercado) servida dentro o fuera.\n\nAcoge grupos con un salón para almuerzos de equipo, cenas o encuentros entre amigos.',  
-  'surroundings.descriptions.lamas_des_plaines.short': 'Granja de descubrimiento y centro de terapia asistida con animales con llamas, ofreciendo talleres y programas de formación.',
-  'surroundings.descriptions.lamas_des_plaines.long': 'Descubra la calma y la serenidad de Lamas des Plaines, una granja ecorresponsable dedicada a la terapia asistida con animales y el descubrimiento de llamas.\n\nDisfrute de talleres de sensibilización, recorridos de agilidad con los animales o formación en terapia asistida con animales, comunicación animal y desarrollo personal. La granja sigue una estricta carta ética, garantizando el bienestar de las llamas criadas con cuidado y tratadas como verdaderos socios de trabajo.\n\nUn lugar único para abrazar valores de respeto, ética y solidaridad, todo en un entorno sereno a pocos minutos de Lyon.',
-  'surroundings.lamas_des_plaines.gallery.image1': 'Llamas en las llanuras de la granja de descubrimiento',  
-  'surroundings.descriptions.la_belle_epoque.short': 'Una cocina tradicional y casera, con el máximo de circuitos cortos.',
-  'surroundings.descriptions.la_belle_epoque.long': 'Restaurante La Belle Époque en Le Creux de la Thine, a solo 2 km.\n\nAcogida cálida y totalmente convivencial.\n\nCocina tradicional y casera que apuesta por productores locales y circuitos cortos.\n\nTerraza sombreada y aparcamiento.\n\nAbierto todos los mediodías de lunes a viernes, además del martes y jueves por la noche.',
-  'surroundings.descriptions.o_daily_truck.short': 'En el menú: hamburguesas 100 % caseras, carnes en salsa o snacks, tablas para compartir, platos vegetarianos y patatas fritas frescas.',
-  'surroundings.descriptions.o_daily_truck.long': 'En la carta encontrarás hamburguesas 100 % caseras, carnes en salsa o snacks, tablas de charcutería y quesos para compartir, opciones vegetarianas y patatas fritas recién hechas.\n\nEl equipo varía sus propuestas para destacar la riqueza de los productos de temporada: charcutería italiana o española, quesos de nuestras regiones o de los Alpes suizos, frutas y verduras de productores locales, carnes de Aubrac y aves del terruño, hierbas cultivadas en las colinas drômoises.\n\nTambién hay postres caseros: mousse de chocolate, tartas, pannacottas cremosas y helados artesanales.',
-  'home.booking.title': '¿Listos para hacer las maletas?',
-  'home.booking.button': 'Reservar una habitación',
-  'home.booking.secondaryButton': 'Ver alojamientos',
-  'card.safari.title': 'Safari de Peaugres',
-  'card.safari.description': 'Vaya en familia, en pareja o con amigos a descubrir el Safari, más de 130 especies y 1200 animales diferentes, en un gran parque de 80 hectáreas.',
-  'card.safari.button': 'Saber más',
-  'card.tag.family': 'Familia',
-  'place.header.title': 'El lugar',
-  'place.header.text': 'Antigua magnanería de 180 años, la auténtica casa de piedra, llena de carácter y encanto, se deja mecer por el suave remolino del Ródano. Además del encanto de la casa, podrá disfrutar del parque, de la piscina sin climatizar y del pabellón de verano para regalarse un paréntesis natural y lleno de serenidad.\n\nOfrecemos la mesa de anfitrión, servicio de bar y dulces o salados, aparcamiento exterior. El Domaine de Pipangaille está situado cerca de la salida de la autopista A7, junto a la carretera nacional 7, a 1 hora de Lyon y Saint-Étienne, a 45 minutos de Valence y con acceso directo a la ViaRhôna, muy cerca de la ViaFluvia, de rutas ciclistas y de senderos de excursión.',
-  'place.header.button': 'Reservar una habitación',
-  'place.services.title': 'Espacios y servicios dedicados',
-  'place.services.text': 'Aparcamiento exterior, un resguardo para bicicletas, piscina sin climatizar, el pabellón, zonas de relax junto al patio y el jardín, así como la table d’hôtes (para los huéspedes alojados) y el bar.\n\nLe Comptoir de Pipangaille: para la clientela local o itinerante, a la entrada del dominio le proponemos en la terraza cubierta rodeada de vegetación una pausa fuera del tiempo. Oferta salada: bruschettas, ravioles, bowls y ensaladas, tablas de charcutería y quesos… Oferta dulce: helados (15 sabores), gofres, crêpes, granola gourmet.',
-  'place.events.title': 'Organización de eventos',
-  'place.events.text': 'Un lugar para un evento privado, un brunch, un seminario, una reunión o un encuentro profesional; póngase en contacto con nosotros y pondremos a su disposición nuestro comedor con servicio de catering y bebidas.',
-  'place.events.button': 'Contactarnos',
-  'place.spotlight.title': 'El dominio en imágenes',
-  'place.spotlight.gallery1.title': 'El parque arbolado',
-  'place.spotlight.gallery2.title': 'Zonas de relax',
-  'place.spotlight.gallery3.title': 'La casa principal',
-  'accommodations.hero.title': 'Nuestras habitaciones, entre confort y autenticidad',
-  'accommodations.hero.text': 'Las cuatro habitaciones con decoración única, que invitan al viaje, están situadas en el segundo piso. Hay un área de recepción con sillones, juegos de mesa, libros e información turística disponible. Nuestras habitaciones climatizadas disponen de ducha y aseo privados.\n\nHorarios: recepción: 17h-21h - Salida hasta las 10:30. Llegada anticipada posible bajo petición y de pago.',
-  'accommodations.rooms.button': 'Ver la habitación',
-  'accommodations.rooms.marocaine.title': 'Habitación Marroquí',
-  'accommodations.rooms.marocaine.description': 'La suite marroquí, con una atmósfera cálida inspirada en los riads y los materiales naturales, es ideal para una pareja en busca de evasión y un momento romántico. Esta habitación puede alojar a una pareja con un niño.',
-  'accommodations.rooms.marocaine.longDescription': 'El ambiente marroquí con colores cálidos le transportará en esta habitación, adecuada para 2 adultos y un niño o para una estancia romántica. Con vistas al jardín y al patio, cuenta con una cama de 1,80 m x 2 m, convertible en dos camas individuales, un gran sofá (convertible en cama para niños), doble lavabo, amplia ducha italiana de tadelakt, aseo separado, almacenamiento. El aire acondicionado garantiza un confort óptimo en verano.',
-  'accommodations.rooms.marocaine.gallery.image1': 'Suite marroquí - vista principal',
-  'accommodations.rooms.marocaine.gallery.image2': 'Suite marroquí - textiles y materiales naturales',
-  'accommodations.rooms.marocaine.gallery.image3': 'Suite marroquí - baño en tadelakt',
-  'accommodations.rooms.marocaine.gallery.image4': 'Suite marroquí - rincón salón con sofá cama',
-  'accommodations.rooms.marocaine.gallery.image5': 'Suite marroquí - detalles artesanales',
-  'accommodations.rooms.marocaine.tags.bedding': 'Cama doble o camas gemelas',
-  'accommodations.rooms.marocaine.tags.family': 'Pareja con 1 niño',
-  'accommodations.rooms.marocaine.tags.couple': 'Pareja',
-  'accommodations.rooms.africaine.title': 'Habitación Africana',
-  'accommodations.rooms.africaine.description': 'La habitación africana con ambiente inspirado en safari y decoración única, ideal para una pareja, amigos o profesionales.',
-  'accommodations.rooms.africaine.longDescription': 'Esta habitación de 18 m² con vistas al jardín y toques safari ofrece una cama de 1,80 x 2 m convertible en 2 camas individuales, un escritorio con 2 sillas, un lavabo, una ducha italiana de tadelakt, aseo separado y almacenamiento. Ideal para ciclistas de paso por la ViaRhôna, esta habitación climatizada permite recuperarse antes de la siguiente etapa.',
-  'accommodations.rooms.africaine.gallery.image1': 'Habitación africana - vista principal',
-  'accommodations.rooms.africaine.gallery.image2': 'Habitación africana - luz natural',
-  'accommodations.rooms.africaine.gallery.image3': 'Habitación africana - baño privado',
-  'accommodations.rooms.africaine.gallery.image4': 'Habitación africana - zona de escritorio',
-  'accommodations.rooms.africaine.gallery.image5': 'Habitación africana - detalles safari',
-  'accommodations.rooms.africaine.tags.bedding': 'Cama doble o camas gemelas',
-  'accommodations.rooms.africaine.tags.adults': '2 adultos',
-  'accommodations.rooms.marocaine.equipments.note': 'La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.',
-  'accommodations.rooms.africaine.equipments.note': 'La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.',
-  'accommodations.rooms.toscane.title': 'Habitación Toscana',
-  'accommodations.rooms.toscane.description': 'La habitación toscana, inspirada en Italia, combina romanticismo y pasión con sus colores pastel. Ideal para una pareja en busca de un momento de serenidad.',
-  'accommodations.rooms.toscane.longDescription': 'Una habitación de 17 m² con decoración inspirada en la Toscana que le transporta a un refugio italiano romántico. Esta habitación con vistas al jardín ofrece una cama de 1,60 x 2 m, una ducha italiana, un lavabo, aseo separado, una mesa alta mural con 2 taburetes y almacenamiento. Está equipada con aire acondicionado para noches tranquilas.',
-  'accommodations.rooms.toscane.gallery.image1': 'Habitación Toscana - vista principal',
-  'accommodations.rooms.toscane.gallery.image2': 'Habitación Toscana - textiles terracota',
-  'accommodations.rooms.toscane.gallery.image3': 'Habitación Toscana - baño privado',
-  'accommodations.rooms.toscane.gallery.image4': 'Habitación Toscana - rincón de escritorio',
-  'accommodations.rooms.toscane.gallery.image5': 'Habitación Toscana - detalles decorativos',
-  'accommodations.rooms.toscane.tags.couple': 'Pareja',
-  'accommodations.rooms.toscane.tags.romantic': 'Romántico',
-  'accommodations.rooms.creole.title': 'Habitación Criolla',
-  'accommodations.rooms.creole.description': 'La habitación Criolla está inspirada en un viaje hacia las islas con sus colores azules y su mobiliario de ratán. Esta habitación es ideal para una pareja.',
-  'accommodations.rooms.creole.longDescription': 'La hermosa altura bajo techo, la vista al jardín y las fibras naturales del mobiliario bañan esta habitación de luz. Esta habitación consta de una cama doble de 1,60 x 2 m, un espacio con cabina de ducha y lavabo, aseo separado. El mobiliario inspirado en las islas: dos sillones de ratán, una mesa velador y un armario. Esta habitación climatizada promete un dulce paréntesis.',
-  'accommodations.rooms.creole.gallery.image1': 'Habitación Criolla - vista principal',
-  'accommodations.rooms.creole.gallery.image2': 'Habitación Criolla - paleta tropical',
-  'accommodations.rooms.creole.gallery.image3': 'Habitación Criolla - baño privado',
-  'accommodations.rooms.creole.gallery.image4': 'Habitación Criolla - zona de descanso',
-  'accommodations.rooms.creole.gallery.image5': 'Habitación Criolla - detalles artesanales',
-  'accommodations.detail.equipments.title': 'Equipamientos disponibles',
-  'accommodations.detail.equipments.note': 'La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.',
-  'accommodations.detail.table.title': 'La table d’hôtes',
-  'accommodations.detail.table.text': 'Con reserva previa, disfruta de nuestra mesa compartida: menú único de temporada o tablas y ensaladas generosas elaboradas con productos locales y ecológicos.',
-  'accommodations.detail.explore.title': 'Lugares para explorar',
-  'accommodations.detail.explore.text': 'En temporada tienes a tu disposición la piscina con tumbonas, el pabellón de verano para tomar algo o un helado y la sala común con sofás, libros y juegos de mesa.',
-  'accommodations.detail.otherRooms.title': 'Otros alojamientos',
-  'accommodations.rooms.equipments.doubleBedSeparable': 'Cama doble de 180 cm convertible en dos individuales',
-  'accommodations.rooms.equipments.doubleBed160': 'Cama doble de 160 x 200 cm',
-  'accommodations.rooms.equipments.freeHighSpeedWifi': 'Wi-Fi de alta velocidad gratuito',
-  'accommodations.rooms.equipments.airConditioning': 'Aire acondicionado',
-  'accommodations.rooms.equipments.ShowerRoom': 'Baño privado',
-  'accommodations.rooms.equipments.ShowerRoomMoroccan': 'Doble lavabo, amplia ducha italiana, aseo separado',
-  'accommodations.rooms.equipments.ShowerRoomAfrican': 'Lavabo, ducha italiana, aseo separado',
-  'accommodations.rooms.equipments.ShowerRoomTuscan': 'Lavabo, ducha italiana, aseo separado',
-  'accommodations.rooms.equipments.ShowerRoomCreole': 'Cabina de ducha, lavabo, aseo separado',
-  'accommodations.rooms.equipments.babyCribOnRequest': 'Cuna disponible bajo petición',
-  'accommodations.rooms.equipments.kettle': 'Hervidor y bandeja de cortesía',
-  'accommodations.rooms.equipments.hairDryer': 'Secador de pelo',
-  'accommodations.rooms.equipments.sofaBed': 'Sofá cama',
-  'accommodations.rooms.equipments.commonWashingMachine': 'Acceso a lavadora bajo petición (de pago)',
-  'accommodations.rooms.equipments.desk': 'Mesa alta mural',
-    'accommodations.rooms.equipments.smallTable': 'Mesa pequeña',
-  'accommodations.rooms.equipments.wardrobe': 'Armario',
-  'accommodations.rooms.equipments.pedestalTableWithTwoArmchairs': 'Mesa auxiliar con dos sillones',
-  'accommodations.breakfast.title': 'Desayuno, mesa de anfitrión y bar',
-  'accommodations.breakfast.text': 'El desayuno se sirve de 8:00 a 9:30, o antes bajo petición. Se sirve en el comedor o en el patio interior, con buen tiempo. En forma de buffet, encontrará pan tradicional, bollería, té orgánico, café, zumos de frutas, yogures locales y frutas de temporada.\n\nSeleccionamos a nuestros proveedores para ofrecerle productos locales y ecológicos.\n\nDesayuno salado opcional disponible, bajo petición y con reserva previa el día anterior.\n\nCon reserva previa, la mesa de anfitrión ofrece un menú único casero o tablas de embutidos, quesos o ensaladas compuestas con productos locales y ecológicos. Nuestras propuestas pueden variar según la temporada.\n\nServicio de bar: ofrecemos una carta de bebidas y una carta de vinos.',
-  'accommodations.cta.title': '¿Quieres privatizar todas las habitaciones?',
-  'accommodations.cta.text': 'También puedes reservar todas las habitaciones para eventos de grupo, fines de semana en familia o encuentros con amigos.',
-  'accommodations.cta.button': 'Contáctanos',
-  'surroundings.detail.otherActivities.title': 'Otras actividades por descubrir',
-  'surroundings.detail.otherRestaurants.title': 'Otros restaurantes por descubrir',
-  'surroundings.detail.seeAllActivities': 'Ver todas las actividades',
-  'surroundings.detail.seeAllRestaurants': 'Ver todos los restaurantes',
-  'surroundings.safari_peaugres.gallery.image1': 'Vista panorámica del Safari de Peaugres',
-  'surroundings.palais_ideal_du_facteur_cheval.gallery.image1': 'Fachada del Palais Idéal du Facteur Cheval',
-  'surroundings.acrobois_pilat.gallery.image1': 'Visitantes en el circuito entre los árboles de Acrobois Pilat',
-  'surroundings.musee_de_l_alambic.gallery.image1': 'Alambiques de cobre expuestos en el Musée de l\'Alambic',
-  'surroundings.golf_de_saint_clair.gallery.image1': 'Fairways del Golf de Saint-Clair',
-  'surroundings.viarhona.gallery.image1': 'Ciclistas siguiendo la ViaRhôna junto al río',
-  'surroundings.viafluvia.gallery.image1': 'Familia pedaleando por la ViaFluvia',
-  'surroundings.mongolfieres_et_cie.gallery.image1': 'Globo aerostático de Montgolfières & Cie sobre el valle',
-  'surroundings.train_de_l_ardeche.gallery.image1': 'Locomotora histórica del Train de l\'Ardèche',
-  'surroundings.la_fabrique_de_julien.gallery.image1': 'Estanterías de dulces en La Fabrique de Julien',
-    'surroundings.musee_valrhona.gallery.image1': 'Taller de degustación en la Cité du Chocolat Valrhôna',
-  'surroundings.le_nougat_de_montsegur.gallery.image1': 'Barras de nougat de Le Nougat de Montségur',
-  'surroundings.chateau_de_grignan.gallery.image1': 'Vista exterior del Château de Grignan',
-  'surroundings.labyrinthe_vegetal.gallery.image1': 'Vista aérea del Labyrinthe végétal',
-  'surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1': 'Barco de la Compagnie des Canotiers Rhône & Saône sobre el río',
-  'surroundings.le_chateau_d_anet.gallery.image1': 'Patio del Château d\'Anet',
-  'surroundings.le_relais_mailles.gallery.image1': 'Comedor de Le Relais des Mailles',
-  'surroundings.la_table_des_saj.gallery.image1': 'Platos servidos en La Table des SAJ',
-  'surroundings.la_poule_noir.gallery.image1': 'Sala del restaurante La Poule Noire',
-  'surroundings.le_picotin.gallery.image1': 'Fachada del restaurante Le Picotin',
-  'surroundings.au_pre_du_rhone.gallery.image1': 'Terraza con vistas al Ródano en Au Pré du Rhône',
-  'surroundings.la_belle_epoque.gallery.image1': 'Sala del restaurante La Belle Époque',
-  'surroundings.la_belle_epoque.gallery.image2': 'Servicio en terraza en La Belle Époque',
-  'surroundings.o_daily_truck.gallery.image1': 'Hamburguesa gourmet servida por O\'Daily Truck',
-  'surroundings.o_daily_truck.gallery.image2': 'Food truck O\'Daily Truck listo para servir',
-  'surroundings.cesar_pizza.gallery.image1': 'Mostrador y horno de César Pizza',
-  'surroundings.la_villa_champagnere.gallery.image1': 'Jardín y terraza de La Villa Champagnère',
-  'surroundings.les_agapons.gallery.image1': 'Restaurante Les Agapons en Manthes',
-  'surroundings.descriptions.les_agapons.short': 'Restaurante de auténtica cocina francesa en Manthes, comida casera de calidad con productos locales y regionales.',
-  'surroundings.descriptions.les_agapons.long': 'Bienvenido a Les Agapons, ubicado en la encantadora ciudad de Manthes. Nuestro equipo cálido le servirá comida casera de calidad, preparada con productos locales y regionales, así como platos tradicionales.\n\nEl restaurante ofrece muchos servicios: terraza, zona infantil, aparcamiento gratuito, eventos privados, recepciones de bodas, Wi-Fi gratuito y mascotas permitidas. Abierto de miércoles a sábado de 12 a 14 horas y de 19 a 21 horas, así como almuerzo de domingo.',
-  'surroundings.detail.book': 'Reservar',
-  'surroundings.detail.socialNetworks': 'Redes sociales',
-  'surroundings.detail.visitWebsite': 'Visitar el sitio web',
-  'surroundings.detail.moreInfo.title': 'Más información',
-  'iframeConsent.title': 'Contenido externo',
-  'iframeConsent.text': 'Este contenido es proporcionado por {serviceName}. Al cargarlo, aceptas nuestras condiciones de uso y la política de privacidad del proveedor.',
-  'iframeConsent.button': 'Aceptar y cargar',
-  'iframeConsent.serviceNameFallback': 'este servicio externo',
-  'contact.title': 'Contacto',
-  'contact.reservation.textBefore': 'Todas las reservas se realizan exclusivamente a través de la página',
-  'contact.reservation.textAfter': 'No aceptamos reservas a través de este formulario, excepto para grupos o estancias de larga duración.',
-  'contact.form.fullName': 'Nombre completo',
-  'contact.form.email': 'Correo electrónico',
-  'contact.form.subject': 'Asunto',
-  'contact.form.phone': 'Teléfono',
-  'contact.form.optional': 'opcional',
-  'contact.form.message': 'Mensaje',
-  'contact.form.submit': 'Enviar',
-  'contact.error.title': 'Error al enviar el mensaje',
-  'contact.success.title': '¡Mensaje enviado exitosamente!',
-  'contact.success.text': 'Nos pondremos en contacto pronto.',
-  'contact.validation.nameRequired': 'El nombre es obligatorio.',
-  'contact.validation.emailInvalid': 'Correo electrónico inválido.',
-  'contact.validation.subjectRequired': 'El asunto es obligatorio.',
-  'contact.validation.messageRequired': 'El mensaje es obligatorio.',
-  'contact.genericError': 'Se produjo un error al enviar el mensaje.',
-  'contact.info.phone': 'Teléfono',
-  'contact.info.whatsapp': 'Whatsapp',
-  'contact.info.email': 'Correo electrónico',
-  'contact.info.address': 'Dirección',
-  'legalNotices.title': 'Menciones Legales',
-  'legalNotices.editor.title': 'Editor del sitio',
-  'legalNotices.editor.addressLabel': 'Dirección',
-  'legalNotices.editor.rcsLabel': 'RCS',
-  'legalNotices.editor.nafLabel': 'Código NAF',
-  'legalNotices.editor.capitalLabel': 'Capital social',
-  'legalNotices.editor.phoneLabel': 'Teléfono',
-  'legalNotices.editor.emailLabel': 'Correo',
-  'legalNotices.editor.ceoLabel': 'Directora',
-  'legalNotices.editor.publisherLabel': 'Directora de Publicación',
-  'legalNotices.editor.publisherValue': 'Catherine Lemoine',
-  'legalNotices.design.title': 'Diseño y desarrollo del sitio',
-  'legalNotices.design.phoneLabel': 'Teléfono',
-  'legalNotices.design.emailLabel': 'Correo',
-  'legalNotices.design.websiteLabel': 'Sitio',
-  'legalNotices.design.githubLabel': 'Github',
-  'legalNotices.design.repoLabel': 'Repositorio Github',
-  'legalNotices.hosting.title': 'Alojamiento del sitio',
-  'legalNotices.hosting.providerLabel': 'Proveedor',
-  'legalNotices.domain.title': 'Propiedad del nombre de dominio',
-  'legalNotices.domain.providerLabel': 'Gestor del nombre de dominio',
-  'legalNotices.photos.title': 'Crédito de fotos',
-  'legalNotices.photos.text': 'Todas las fotos son propiedad del Domaine de Pipangaille.',
-  'legalNotices.cookies.title': 'Uso de cookies',
-  'legalNotices.cookies.text': 'Este sitio utiliza cookies solo para estadísticas y funcionamiento.',
-  'legalNotices.personalData.title': 'Uso de datos personales',
-  'legalNotices.personalData.text': 'Al utilizar los formularios presentes en el sitio, acepta el almacenamiento de los datos transmitidos y su procesamiento. Se conservan y procesan con fines de gestión, archivo y mejora de nuestros servicios.',
-  'legalNotices.personalData.retention': 'Los datos se conservan durante un período razonable de 10 años.',
-  'legalNotices.personalData.requestEmailPrefix': 'Para cualquier solicitud de eliminación, rectificación o acceso a datos, realice una solicitud por correo a ',
-  'legalNotices.personalData.requestAddressPrefix': ' o por correo postal a: ',
-  'legalNotices.liability.title': 'Responsabilidad de la SAS Domaine de Pipangaille',
-  'legalNotices.liability.text': 'En la medida permitida por la ley, la SAS Domaine de Pipangaille no es responsable de:',
-  'legalNotices.liability.inaccuracy': 'Ninguna inexactitud, error, omisión o daños resultantes de modificaciones no autorizadas de la información disponible en el Sitio.',
-  'legalNotices.liability.unauthorized': 'Daños causados por acceso no autorizado al Sitio o que lo hagan inaccesible.',
-  'legalNotices.liability.interruption': 'Se informa al visitante que el acceso al Sitio puede ser interrumpido en cualquier momento por la SAS Domaine de Pipangaille por razones de mantenimiento, seguridad o cualquier otra limitación técnica.',
-  'legalNotices.law.title': 'Derecho aplicable',
-  'legalNotices.law.text': 'Estas menciones legales se rigen por la ley francesa. Los tribunales franceses son los únicos competentes para conocer cualquier disputa relacionada directa o indirectamente con el acceso o el uso de este Sitio.',
-  'mapProviderDialog.title': 'Abrir con:',
-  'generalConditions.title': 'Condiciones generales de venta de estadías en cama y desayuno',
-  'generalConditions.subtitle': 'Domaine de Pipangaille',
-  'generalConditions.article1.title': 'Artículo 1 - Duración de la estadía',
-  'generalConditions.article1.content': 'El cliente signatario de este contrato celebrado por un período fijo no podrá en ningún caso reclamar ningún derecho a permanecer en las instalaciones.',
-  'generalConditions.article2.title': 'Artículo 2 - Formalidades de reserva',
-  'generalConditions.article2.content1': 'Una reserva se hace efectiva tan pronto como el cliente ha enviado al propietario un depósito del 25 % del precio total de la estadía con un mínimo de una noche por habitación reservada y una copia firmada del contrato antes de la fecha indicada.',
-  'generalConditions.article2.content2': 'El cliente debe guardar el segundo ejemplar del contrato.',
-  'generalConditions.article2.content3': 'Los precios se entienden para incluir todos los gastos según la hoja de especificaciones, excluido el impuesto de estadía.',
-  'generalConditions.article3.title': 'Artículo 3 - Código del consumidor - Derecho de retractación',
-  'generalConditions.article3.content1': 'Una reserva realizada en línea, por teléfono o por correo es una venta a distancia. Es un contrato celebrado a distancia en el sentido de la definición del Código del consumidor.',
-  'generalConditions.article3.content2': 'Estamos sujetos a los artículos L. 121-17 y siguientes del código del consumidor.',
-  'generalConditions.article3.content3': 'Nos gustaría señalar que el derecho de desistimiento no existe para los contratos de servicios de alojamiento.',
-  'generalConditions.article4.title': 'Artículo 4 - Cancelación de la estadía por el cliente',
-  'generalConditions.article4.content1': 'Cualquier modificación solo es posible con el acuerdo del "Domaine de Pipangaille" y puede incurrir en costos adicionales.',
-  'generalConditions.article4.content2': 'Le informamos que en caso de cancelación de la reserva antes del inicio de la estadía, se deberá una indemnización fija como se indica a continuación:',
-  'generalConditions.article4.bullet1': 'si la cancelación ocurre más de 1 semana antes de la fecha de llegada, el depósito se reembolsará en su totalidad;',
-  'generalConditions.article4.bullet2': 'si la cancelación ocurre menos de 1 semana antes de la fecha de llegada, el depósito seguirá siendo propiedad de Domaine de Pipangaille, que tiene derecho a reclamar y facturar el saldo del precio de la estadía (de conformidad con el contrato de reserva) si la estadía sigue siendo vacante después de la cancelación.',
-  'generalConditions.article4.content3': 'En caso de salida anticipada durante la estadía: el pago completo del servicio reservado es obligatorio independientemente de la razón.',
-  'generalConditions.article5.title': 'Artículo 5 - Seguro de cancelación a cargo del cliente',
-  'generalConditions.article5.content1': 'Le llamamos la atención sobre el hecho de que ninguno de nuestros precios incluye un seguro de cancelación.',
-  'generalConditions.article5.content2': 'Por lo tanto, se recomienda encarecidamente que contrate uno.',
-  'generalConditions.article6.title': 'Artículo 6 - Cancelación por el propietario',
-  'generalConditions.article6.content1': 'Si antes del inicio de la estadía, el propietario se ve obligado a cancelar la reserva, debe informar inmediatamente al cliente de cualquier forma.',
-  'generalConditions.article6.content2': 'El cliente será entonces reembolsado inmediatamente y en su totalidad de las cantidades ya pagadas.',
-  'generalConditions.article7.title': 'Artículo 7 - Hora de llegada',
-  'generalConditions.article7.content1': 'La llegada está programada a partir de las 17:00 y es posible hasta las 22:00.',
-  'generalConditions.article7.content2': 'En caso de solicitud especial o imprevista, será necesario contactarnos por teléfono en ',
-  'generalConditions.article7.content3': ' para informarnos de cualquier retraso.',
-  'generalConditions.article8.title': 'Artículo 8 - Hora de partida',
-  'generalConditions.article8.content': 'La hora de salida de las habitaciones se establece a las 10:30 como máximo.',
-  'generalConditions.article9.title': 'Artículo 9 - Pago del saldo del alojamiento',
-  'generalConditions.article9.content1': 'El pago del saldo de la estadía se realizará un día antes de su llegada, de conformidad con su contrato de reserva.',
-  'generalConditions.article9.content2': 'Los gastos adicionales, incluidos los relativos a los servicios de mesa y bebidas, se facturarán el día de su salida.',
-  'generalConditions.article10.title': 'Artículo 10 - Cambio de habitaciones',
-  'generalConditions.article10.content1': 'Sin que el cliente pueda reclamar compensación, el propietario se reserva el derecho de cambiar la habitación inicialmente reservada por el cliente por una habitación de la misma o mayor capacidad.',
-  'generalConditions.article10.content2': 'En tal caso, el costo de la reserva permanece sin cambios.',
-  'generalConditions.article11.title': 'Artículo 11 - Mascotas',
-  'generalConditions.article11.content': 'No se permiten animales domésticos.',
-  'generalConditions.article12.title': 'Artículo 12 - Arte de vivir y uso de las instalaciones',
-  'generalConditions.article12.content1': 'Para garantizar la tranquilidad de las instalaciones y la comodidad de los huéspedes en el Domaine de Pipangaille, el respeto por un cierto "arte de vivir" es requerido por todos.',
-  'generalConditions.article12.content2': 'En particular, no se permite fumar en interiores.',
-  'generalConditions.article12.content3': 'El cliente se compromete a respetar las directrices de comportamiento que se le proporcionarán y estas condiciones generales de venta.',
-  'generalConditions.article12.content4': 'El cliente se compromete a devolver las habitaciones en perfecto estado y sin daños al final de la estadía y a declarar sistemáticamente y asumir financieramente cualquier daño del que sea responsable.',
-  'generalConditions.article12.content5': 'Los costos de reparación, incluido el tiempo de intervenciones necesarias para restaurar las instalaciones, se liquidarán de acuerdo con facturas separadas y sobre la base de recibos de gastos realizados.',
-  'generalConditions.article12.content6': 'Se advierte a los huéspedes que los menores presentes en la propiedad se colocan bajo la responsabilidad única y completa de sus padres o personas autorizadas sobre ellos.',
-  'generalConditions.article12.content7': 'Su estadía en el Domaine de Pipangaille y el uso de nuestro equipo e instalaciones como la piscina, la cocina compartida y el estacionamiento se realizan voluntariamente y bajo su propio riesgo. Domaine de Pipangaille no es responsable de pérdidas, robos y/o daños o lesiones a bienes y/o personas en la propiedad, independientemente de la causa.',
-  'generalConditions.article13.title': 'Artículo 13 - Modificación de los términos de venta',
-  'generalConditions.article13.content1': 'Estas condiciones de venta pueden ser modificadas en cualquier momento y sin previo aviso.',
-  'generalConditions.article13.content2': 'La aceptación y cumplimiento de estas condiciones de venta se consideran adquiridas una vez que se paga el depósito.',
-  'generalConditions.article14.title': 'Artículo 14 - Ley de informática y libertades',
-  'generalConditions.article14.content1': 'De conformidad con la Ley nº 78-17 de 6 de enero de 1978 sobre informática, archivos y libertades, tiene derecho a acceder y corregir datos sobre usted.',
-  'generalConditions.article14.content2': 'Nos comprometemos a no transmitir la información que nos ha comunicado a ninguna otra empresa u organización.',
-  'notfound.title': '404 - Página no encontrada',
-  'notfound.message': 'La página que buscas no existe.',
-  'notfound.button': 'Volver al inicio',
+  "nav.home": "Inicio",
+  "nav.place": "El Lugar",
+  "nav.accommodations": "Alojamientos",
+  "nav.counter": "El Mostrador",
+  "nav.surroundings": "Alrededores",
+  "nav.contact": "Contacto",
+  "nav.book": "Reservar",
+  "footer.usefulLinks": "Enlaces útiles",
+  "footer.knowUsBetter": "Conócenos mejor",
+  "footer.moreInfo": "Más información",
+  "footer.contactUs": "Contáctanos",
+  "footer.contactPage": "página de “contacto”",
+  "footer.legalMentions": "Menciones legales",
+  "footer.salesConditions": "Condiciones generales de venta",
+  "home.header.title": "Le Domaine de Pipangaille",
+  "home.header.text":
+    "Le Domaine de Pipangaille, una antigua granja de gusanos de seda recientemente renovada rodeada de un parque arbolado que combina el encanto de la piedra y la autenticidad en un entorno idílico, ofrece 4 habitaciones de huéspedes, table d'hôtes con reserva, una piscina sin calefacción abierta en temporada, para una estancia mágica y una invitación a relajarse.\n\nEl Domaine de Pipangaille se encuentra cerca de la salida de la autopista A7, cerca de la Nacional 7, a una hora de Lyon y Saint-Étienne, a 45 minutos de Valence y con acceso directo a la ViaRhôna, muy cerca de la ViaFluvia.",
+  "home.header.button": "Descubrir el Dominio",
+  "home.rooms.title": "Habitaciones de huéspedes",
+  "home.rooms.text":
+    "Se accede a las habitaciones cruzando el parque arbolado, que le lleva al patio interior rodeado de piedras que le confiere un entorno auténtico y relajante. Nuestras habitaciones están situadas en el segundo piso accesible por una gran escalera.\n\nOfrecemos cuatro habitaciones climatizadas con decoración única: una suite y tres habitaciones dobles. La decoración de las habitaciones invita al viaje y la serenidad.",
+  "home.rooms.button": "Ver las habitaciones",
+  "home.counter.title": "El Mostrador",
+  "home.counter.text":
+    "Para los ciclistas que pasan por la Via Rhona o los turistas en la ruta de vacaciones que buscan un lugar ideal para una pausa para el almuerzo o un refrigerio, el mostrador de Pipangaille ubicado en la entrada de la finca le da la bienvenida en temporada alta bajo la terraza cubierta para una pausa gourmet dulce o salada en un lugar atípico en el corazón de la vegetación.",
+  "home.counter.button": "Saber más",
+  "counter.hero.title": "El Mostrador",
+  "counter.hero.text":
+    "Le Comptoir de Pipangaille es un espacio de pausa y encuentro, pensado como un paréntesis gourmet en el corazón del dominio. Se viene a saborear un café, un chocolate caliente, un matcha o una bebida fresca acompañada de un capricho dulce o salado, en un ambiente acogedor y sereno.",
+  "counter.hero.imageAlt": "Vista del Comptoir de Pipangaille",
+  "counter.story.title": "Disfruta de una comida o de una pausa para beber",
+  "counter.story.text":
+    "El Comptoir también propone una selección de productos locales y de tienda fina para degustar allí o llevar.\n\nAbierto de miércoles a lunes, de 11 a 18 h, es un lugar sencillo, cálido y lleno de vida para reunirse, conversar y disfrutar del entorno único de Pipangaille.",
+  "counter.story.imageAlt":
+    "Selección de bebidas y dulces servidos en el Comptoir",
+  "home.reviews.title": "Lo que dicen nuestros huéspedes",
+  "home.surroundings.title": "Para descubrir a nuestro alrededor",
+  "home.surroundings.button": "Ver actividades y restaurantes cercanos",
+  "surroundings.hero.title":
+    "Actividades y buenas direcciones cerca del dominio",
+  "surroundings.hero.text":
+    "En pleno Valle del Ródano, a pocos minutos de la salida de la A7 (1 h de Lyon, 50 min de Valence, 1 h 15 de Grenoble), el Domaine de Pipangaille goza de una ubicación privilegiada. La ViaRhôna bordea la propiedad para deleite de los ciclistas, y las familias pueden alternar rutas de senderismo, catas de vino, el Palais Idéal du Facteur Cheval, el Safari de Peaugres o el ferrocarril del Vivarais.",
+  "surroundings.sections.activities.title": "Actividades cercanas",
+  "surroundings.sections.food.title": "Dónde comer",
+  "surroundings.card.cta": "Descubrir la dirección",
+  "surroundings.card.description.default": "Recomendación cerca del dominio",
+  "surroundings.filter.all": "Ver todo",
+  "surroundings.category.family": "Familiar",
+  "surroundings.category.visit": "Visita cultural",
+  "surroundings.category.loved": "Favorito",
+  "surroundings.category.sport": "Deporte",
+  "surroundings.category.ride": "Paseo",
+  "surroundings.category.bike": "Ciclismo",
+  "surroundings.descriptions.safari_peaugres.short":
+    "Sal con la familia, en pareja o con amigos a descubrir el safari: más de 130 especies y 1 200 animales en 80 hectáreas.",
+  "surroundings.descriptions.safari_peaugres.long":
+    "Un gran parque faunístico dividido en dos circuitos, en coche y a pie. Conoce más de 130 especies en 80 hectáreas, atraviesa el recinto de felinos por un túnel de vidrio, entra en el invernadero tropical Terre des minus, descubre la bahía de las focas, el invernadero de los mil escondites, la pasarela de las jirafas y muchas sorpresas más.",
+  "surroundings.descriptions.palais_ideal_du_facteur_cheval.short":
+    "Un palacio de piedra construido a mano por un solo hombre, el cartero Cheval: la historia apasionante de un proyecto de toda una vida.",
+  "surroundings.descriptions.palais_ideal_du_facteur_cheval.long":
+    "En medio de un jardín exuberante se alza este palacio de piedra construido a mano por el cartero Cheval: 93 000 horas y 33 años de perseverancia. Inspirado en las postales que repartía, reúne caimanes, elefantes, pelícanos, osos, aves, gigantes, hadas, personajes mitológicos, cascadas y arquitecturas de todos los continentes en una obra tan inclasificable como universal.",
+  "surroundings.descriptions.acrobois_pilat.short":
+    "En pleno bosque, vive una aventura en 14 circuitos para todos los niveles con familia, pareja o amigos.",
+  "surroundings.descriptions.acrobois_pilat.long":
+    "Catorce recorridos entre los árboles desafían a todos los niveles. Afronta tirolinas y obstáculos variados y reta a tu grupo a completar el último circuito.",
+  "surroundings.descriptions.musee_de_l_alambic.short":
+    "Revive el encanto y la historia de los destiladores ambulantes admirando magníficos alambiques de cobre de toda Francia.",
+  "surroundings.descriptions.musee_de_l_alambic.long":
+    "En Saint-Désirat, el Musée de l’Alambic de la destilería Jean Gauthier narra la época de los bouilleurs ambulants. En 1 400 m² se exponen alambiques de cobre, utensilios y herramientas procedentes de toda Francia en 30 escenas que rinden homenaje al patrimonio rural.",
+  "surroundings.descriptions.golf_de_saint_clair.short":
+    "Entre el valle del Ródano y las laderas del Ardèche, disfruta de espectaculares campos de golf en una finca del siglo XVIII.",
+  "surroundings.descriptions.golf_de_saint_clair.long":
+    "Instalado en el parque de un castillo del siglo XVIII, el recorrido es célebre por sus vistas panorámicas y fairways anchos bordeados de árboles que ofrecen una agradable sensación de amplitud.",
+  "surroundings.descriptions.viarhona.short":
+    "Este itinerario ciclista te lleva de los panoramas alpinos a las playas de la Camarga atravesando los viñedos emblemáticos del valle del Ródano y la Provenza meridional.",
+  "surroundings.descriptions.viarhona.long":
+    "ViaRhôna recorre 815 km desde el lago Lemán hasta el Mediterráneo siguiendo el río Ródano, entre paisajes alpinos, viñedos de Côtes du Rhône y la costa camarguense.",
+  "surroundings.descriptions.viafluvia.short":
+    "Una experiencia natural entre los paisajes de Loira, Alta Loira y Ardèche para vivir la naturaleza en 360°.",
+  "surroundings.descriptions.viafluvia.long":
+    "La Via Fluvia ofrece más de 80 km acondicionados y seguros sobre una antigua vía férrea que cruza Loira, Alta Loira y Ardèche, con paisajes variados accesibles para bicicletas, peatones y patinetes.",
+  "surroundings.descriptions.musee_valrhona.short":
+    "Sumérgete en la Cité du Chocolat Valrhôna: recorrido inmersivo, degustaciones y talleres para todas las edades.",
+  "surroundings.descriptions.musee_valrhona.long":
+    "En Tain-l’Hermitage, la Cité du Chocolat Valrhôna revela los secretos del cacao con un recorrido sensorial, demostraciones de chefs, degustaciones y talleres familiares. Conoce a pasteleros, descubre los orígenes y llévate ideas de recetas y regalos gourmet.",
+  "surroundings.descriptions.mongolfieres_et_cie.short":
+    "Comparte un momento agradable en familia, entre amigos o colegas en un globo para ocho pasajeros y vive una sensación de libertad total.",
+  "surroundings.descriptions.mongolfieres_et_cie.long":
+    "Sube a bordo de nuestros globos aerostáticos con capacidad máxima para ocho pasajeros, ideales para conversar con la tripulación. Disfruta de un momento acogedor en una barquilla segura y cómoda y saborea esa sensación de libertad absoluta.",
+  "surroundings.descriptions.train_de_l_ardeche.short":
+    "Embarca en el tren de vapor para un viaje único por Ardèche y descubre paisajes excepcionales.",
+  "surroundings.descriptions.train_de_l_ardeche.long":
+    "Una actividad imprescindible: sube al único tren de pasajeros que recorre todo el departamento de Ardèche.\n\nAuténticas locomotoras de vapor te llevan por una naturaleza preservada a lo largo de un río salvaje, desde las gargantas del Doux hasta la montaña ardéchoise, con vistas impresionantes.",
+  "surroundings.descriptions.la_fabrique_de_julien.short":
+    "Redescubre tu infancia en La Fabrique de Julien: caramelos artesanales, visitas y delicias nostálgicas.",
+  "surroundings.descriptions.la_fabrique_de_julien.long":
+    "Vuelve a la infancia en La Fabrique de Julien, en Bourg-Argental. Caramelos artesanales sin gluten ni conservantes disponibles en Lyon y Bourg-Argental.\n\nNuestros maestros confiteros lioneses elaboran piruletas, caramelos, nubes, confituras de chocolate y muchas delicias más.\n\nVisita la fábrica y el museo para descubrir su saber hacer y disfruta de una experiencia gourmet con sabores de antaño.",
+  "surroundings.descriptions.le_nougat_de_montsegur.short":
+    "Delicias artesanales de Montségur-sur-Lauzon: nougat tradicional sin aditivos, fiel a la tradición provenzal.",
+  "surroundings.descriptions.le_nougat_de_montsegur.long":
+    "En la pintoresca Drôme provenzal, en el pueblo de Montségur-sur-Lauzon, elaboramos y vendemos nuestras propias especialidades.\n\nCada producto se cocina con esmero en calderos de cobre para garantizar una calidad auténtica.\n\nNuestro nougat tradicional destaca por su pureza, sin colorantes ni conservantes.\n\nSeleccionamos cada ingrediente con cuidado para perpetuar la tradición del terruño provenzal.",
+  "surroundings.descriptions.chateau_de_grignan.short":
+    "El castillo de Grignan, joya histórica dominante, combina Renacimiento y clasicismo e invita a sumergirse en siglos de arte de vivir.",
+  "surroundings.descriptions.chateau_de_grignan.long":
+    "Dominando el pueblo, el castillo de Grignan mezcla classicismo francés e inspiración renacentista. Convertido en residencia de placer en el siglo XVII y hogar de Madame de Sévigné, fue desmantelado durante la Revolución, reconstruido en el siglo XX y pertenece al Departamento de Drôme desde 1979. Clasificado Monumento histórico y etiquetado Museo de Francia, ofrece una inmersión en el arte de vivir a lo largo de los siglos.",
+  "surroundings.descriptions.labyrinthe_vegetal.short":
+    "Laberinto de maíz en Charmes: aventura lúdica, deportiva e intelectual en un entorno protegido desde 2001.",
+  "surroundings.descriptions.labyrinthe_vegetal.long":
+    "Enclavado en un entorno preservado, este laberinto de maíz situado en lo alto de Charmes desde 2001 promete diversión a pequeños y grandes con una experiencia lúdica, deportiva e intelectual.",
+  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.short":
+    "Canotier solar en el Ródano: crucero gourmet, vistas a Saint-Joseph, cata de vinos y programas compatibles con la bicicleta.",
+  "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
+    "Embarca en un canotier electro-solar para un crucero gourmet, un paseo o una cena sobre el Ródano. Degusta vinos mientras admiras las laderas de Saint-Joseph y, según la fórmula, sube tu bicicleta a bordo.",
+  "surroundings.descriptions.le_chateau_d_anet.short":
+    "Explora el castillo de Anet, joya renacentista en Eure-et-Loir, y revive la historia de Enrique II y Diana de Poitiers en una visita guiada.",
+  "surroundings.descriptions.le_chateau_d_anet.long":
+    "Los anfitriones del castillo de Anet te invitan a relajarte y a un intercambio cultural. Sigue una visita guiada por este monumento construido en 1548 por Enrique II para Diana de Poitiers, descubre sus objetos personales y la capilla donde descansa.",
+  "surroundings.descriptions.le_relais_mailles.short":
+    "Lugar informal junto al río en Laveyron, práctico para ciclistas de la ViaRhôna y pausas sencillas.",
+  "surroundings.descriptions.le_relais_mailles.long":
+    "En un parque arbolado, combina platos del día, pizzas y burgers para comer allí, llevar o encargar.\n\nEntorno verde abierto al Ródano y a las colinas de Ardèche, con un ambiente alegre para ciclistas y familias.",
+  "surroundings.descriptions.la_table_des_saj.short":
+    "Bistró creativo en Saint-Désirat con cocina cuidada y ambiente relajado.",
+  "surroundings.descriptions.la_table_des_saj.long":
+    "Carta de temporada que cambia según la inspiración del chef, basada en producto fresco y emplatados elegantes.\n\nClima cálido e íntimo para comer o cenar a pocos minutos del dominio.",
+  "surroundings.descriptions.la_poule_noire.short":
+    "Clásicos regionales en un restaurante acogedor de Albon con terraza y sala cuidada.",
+  "surroundings.descriptions.la_poule_noire.long":
+    "El chef Gérald Bondelu cocina imprescindibles como ancas de rana, foie gras salteado, gambas y platos finos del terruño.\n\nEquipo atento y un salón para comidas familiares o pequeños eventos.",
+  "surroundings.descriptions.le_picotin.short":
+    "Cocina francesa tradicional en Andance, marco sencillo con terraza sombreada o comedor climatizado.",
+  "surroundings.descriptions.le_picotin.long":
+    "Platos abundantes y caseros para una pausa de mediodía sin complicaciones.\n\nAcogida relajada, una parada fácil tras un paseo o recorrido por la ribera del Ródano.",
+  "surroundings.descriptions.au_pre_du_rhone.short":
+    "Restaurante panorámico entre Saint-Vallier y Tain-l’Hermitage con vistas a las colinas de Ardèche.",
+  "surroundings.descriptions.au_pre_du_rhone.long":
+    "Gran veranda junto al agua para grupos, que sirve cocina de temporada centrada en la frescura.\n\nAmbiente luminoso y tranquilo para contemplar el paisaje del Ródano.",
+  "surroundings.descriptions.cesar_pizza.short":
+    "Pizzería popular en Andance para llevar, con recetas generosas.",
+  "surroundings.descriptions.cesar_pizza.long":
+    "Pizzas al horno crujientes, burgers y tablas para compartir en un ambiente amistoso y rápido.\n\nIdeal para una comida en familia o una noche con amigos cerca de la Place du Cloître.",
+  "surroundings.descriptions.la_villa_champagnere.short":
+    "Bistronomía de producto local en Saint-Rambert-d’Albon con decoración acogedora y terraza.",
+  "surroundings.descriptions.la_villa_champagnere.long":
+    "Cocina de temporada casera (burgers gourmet, ancas de rana, platos de mercado) servida dentro o fuera.\n\nAcoge grupos con un salón para almuerzos de equipo, cenas o encuentros entre amigos.",
+  "surroundings.descriptions.lamas_des_plaines.short":
+    "Granja de descubrimiento y centro de terapia asistida con animales con llamas, ofreciendo talleres y programas de formación.",
+  "surroundings.descriptions.lamas_des_plaines.long":
+    "Descubra la calma y la serenidad de Lamas des Plaines, una granja ecorresponsable dedicada a la terapia asistida con animales y el descubrimiento de llamas.\n\nDisfrute de talleres de sensibilización, recorridos de agilidad con los animales o formación en terapia asistida con animales, comunicación animal y desarrollo personal. La granja sigue una estricta carta ética, garantizando el bienestar de las llamas criadas con cuidado y tratadas como verdaderos socios de trabajo.\n\nUn lugar único para abrazar valores de respeto, ética y solidaridad, todo en un entorno sereno a pocos minutos de Lyon.",
+  "surroundings.lamas_des_plaines.gallery.image1":
+    "Llamas en las llanuras de la granja de descubrimiento",
+  "surroundings.descriptions.la_belle_epoque.short":
+    "Una cocina tradicional y casera, con el máximo de circuitos cortos.",
+  "surroundings.descriptions.la_belle_epoque.long":
+    "Restaurante La Belle Époque en Le Creux de la Thine, a solo 2 km.\n\nAcogida cálida y totalmente convivencial.\n\nCocina tradicional y casera que apuesta por productores locales y circuitos cortos.\n\nTerraza sombreada y aparcamiento.\n\nAbierto todos los mediodías de lunes a viernes, además del martes y jueves por la noche.",
+  "surroundings.descriptions.o_daily_truck.short":
+    "En el menú: hamburguesas 100 % caseras, carnes en salsa o snacks, tablas para compartir, platos vegetarianos y patatas fritas frescas.",
+  "surroundings.descriptions.o_daily_truck.long":
+    "En la carta encontrarás hamburguesas 100 % caseras, carnes en salsa o snacks, tablas de charcutería y quesos para compartir, opciones vegetarianas y patatas fritas recién hechas.\n\nEl equipo varía sus propuestas para destacar la riqueza de los productos de temporada: charcutería italiana o española, quesos de nuestras regiones o de los Alpes suizos, frutas y verduras de productores locales, carnes de Aubrac y aves del terruño, hierbas cultivadas en las colinas drômoises.\n\nTambién hay postres caseros: mousse de chocolate, tartas, pannacottas cremosas y helados artesanales.",
+  "home.booking.title": "¿Listos para hacer las maletas?",
+  "home.booking.button": "Reservar una habitación",
+  "home.booking.secondaryButton": "Ver alojamientos",
+  "card.safari.title": "Safari de Peaugres",
+  "card.safari.description":
+    "Vaya en familia, en pareja o con amigos a descubrir el Safari, más de 130 especies y 1200 animales diferentes, en un gran parque de 80 hectáreas.",
+  "card.safari.button": "Saber más",
+  "card.tag.family": "Familia",
+  "place.header.title": "El lugar",
+  "place.header.text":
+    "Antigua magnanería de 180 años, la auténtica casa de piedra, llena de carácter y encanto, se deja mecer por el suave remolino del Ródano. Además del encanto de la casa, podrá disfrutar del parque, de la piscina sin climatizar y del pabellón de verano para regalarse un paréntesis natural y lleno de serenidad.\n\nOfrecemos la mesa de anfitrión, servicio de bar y dulces o salados, aparcamiento exterior. El Domaine de Pipangaille está situado cerca de la salida de la autopista A7, junto a la carretera nacional 7, a 1 hora de Lyon y Saint-Étienne, a 45 minutos de Valence y con acceso directo a la ViaRhôna, muy cerca de la ViaFluvia, de rutas ciclistas y de senderos de excursión.",
+  "place.header.button": "Reservar una habitación",
+  "place.services.title": "Espacios y servicios dedicados",
+  "place.services.text":
+    "Aparcamiento exterior, un resguardo para bicicletas, piscina sin climatizar, el pabellón, zonas de relax junto al patio y el jardín, así como la table d’hôtes (para los huéspedes alojados) y el bar.\n\nLe Comptoir de Pipangaille: para la clientela local o itinerante, a la entrada del dominio le proponemos en la terraza cubierta rodeada de vegetación una pausa fuera del tiempo. Oferta salada: bruschettas, ravioles, bowls y ensaladas, tablas de charcutería y quesos… Oferta dulce: helados (15 sabores), gofres, crêpes, granola gourmet.",
+  "place.events.title": "Organización de eventos",
+  "place.events.text":
+    "Un lugar para un evento privado, un brunch, un seminario, una reunión o un encuentro profesional; póngase en contacto con nosotros y pondremos a su disposición nuestro comedor con servicio de catering y bebidas.",
+  "place.events.button": "Contactarnos",
+  "place.spotlight.title": "El dominio en imágenes",
+  "place.spotlight.gallery1.title": "El parque arbolado",
+  "place.spotlight.gallery2.title": "Zonas de relax",
+  "place.spotlight.gallery3.title": "La casa principal",
+  "accommodations.hero.title":
+    "Nuestras habitaciones, entre confort y autenticidad",
+  "accommodations.hero.text":
+    "Las cuatro habitaciones con decoración única, que invitan al viaje, están situadas en el segundo piso. Hay un área de recepción con sillones, juegos de mesa, libros e información turística disponible. Nuestras habitaciones climatizadas disponen de ducha y aseo privados.\n\nHorarios: recepción: 17h-21h - Salida hasta las 10:30. Llegada anticipada posible bajo petición y de pago.",
+  "accommodations.rooms.button": "Ver la habitación",
+  "accommodations.rooms.marocaine.title": "Habitación Marroquí",
+  "accommodations.rooms.marocaine.description":
+    "La suite marroquí, con una atmósfera cálida inspirada en los riads y los materiales naturales, es ideal para una pareja en busca de evasión y un momento romántico. Esta habitación puede alojar a una pareja con un niño.",
+  "accommodations.rooms.marocaine.longDescription":
+    "El ambiente marroquí con colores cálidos le transportará en esta habitación, adecuada para 2 adultos y un niño o para una estancia romántica. Con vistas al jardín y al patio, cuenta con una cama de 1,80 m x 2 m, convertible en dos camas individuales, un gran sofá (convertible en cama para niños), doble lavabo, amplia ducha italiana de tadelakt, aseo separado, almacenamiento. El aire acondicionado garantiza un confort óptimo en verano.",
+  "accommodations.rooms.marocaine.gallery.image1":
+    "Suite marroquí - vista principal",
+  "accommodations.rooms.marocaine.gallery.image2":
+    "Suite marroquí - textiles y materiales naturales",
+  "accommodations.rooms.marocaine.gallery.image3":
+    "Suite marroquí - baño en tadelakt",
+  "accommodations.rooms.marocaine.gallery.image4":
+    "Suite marroquí - rincón salón con sofá cama",
+  "accommodations.rooms.marocaine.gallery.image5":
+    "Suite marroquí - detalles artesanales",
+  "accommodations.rooms.marocaine.tags.bedding": "Cama doble o camas gemelas",
+  "accommodations.rooms.marocaine.tags.family": "Pareja con 1 niño",
+  "accommodations.rooms.marocaine.tags.couple": "Pareja",
+  "accommodations.rooms.africaine.title": "Habitación Africana",
+  "accommodations.rooms.africaine.description":
+    "La habitación africana con ambiente inspirado en safari y decoración única, ideal para una pareja, amigos o profesionales.",
+  "accommodations.rooms.africaine.longDescription":
+    "Esta habitación de 18 m² con vistas al jardín y toques safari ofrece una cama de 1,80 x 2 m convertible en 2 camas individuales, un escritorio con 2 sillas, un lavabo, una ducha italiana de tadelakt, aseo separado y almacenamiento. Ideal para ciclistas de paso por la ViaRhôna, esta habitación climatizada permite recuperarse antes de la siguiente etapa.",
+  "accommodations.rooms.africaine.gallery.image1":
+    "Habitación africana - vista principal",
+  "accommodations.rooms.africaine.gallery.image2":
+    "Habitación africana - luz natural",
+  "accommodations.rooms.africaine.gallery.image3":
+    "Habitación africana - baño privado",
+  "accommodations.rooms.africaine.gallery.image4":
+    "Habitación africana - zona de escritorio",
+  "accommodations.rooms.africaine.gallery.image5":
+    "Habitación africana - detalles safari",
+  "accommodations.rooms.africaine.tags.bedding": "Cama doble o camas gemelas",
+  "accommodations.rooms.africaine.tags.adults": "2 adultos",
+  "accommodations.rooms.marocaine.equipments.note":
+    "La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.",
+  "accommodations.rooms.africaine.equipments.note":
+    "La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.",
+  "accommodations.rooms.toscane.title": "Habitación Toscana",
+  "accommodations.rooms.toscane.description":
+    "La habitación toscana, inspirada en Italia, combina romanticismo y pasión con sus colores pastel. Ideal para una pareja en busca de un momento de serenidad.",
+  "accommodations.rooms.toscane.longDescription":
+    "Una habitación de 17 m² con decoración inspirada en la Toscana que le transporta a un refugio italiano romántico. Esta habitación con vistas al jardín ofrece una cama de 1,60 x 2 m, una ducha italiana, un lavabo, aseo separado, una mesa alta mural con 2 taburetes y almacenamiento. Está equipada con aire acondicionado para noches tranquilas.",
+  "accommodations.rooms.toscane.gallery.image1":
+    "Habitación Toscana - vista principal",
+  "accommodations.rooms.toscane.gallery.image2":
+    "Habitación Toscana - textiles terracota",
+  "accommodations.rooms.toscane.gallery.image3":
+    "Habitación Toscana - baño privado",
+  "accommodations.rooms.toscane.gallery.image4":
+    "Habitación Toscana - rincón de escritorio",
+  "accommodations.rooms.toscane.gallery.image5":
+    "Habitación Toscana - detalles decorativos",
+  "accommodations.rooms.toscane.tags.couple": "Pareja",
+  "accommodations.rooms.toscane.tags.romantic": "Romántico",
+  "accommodations.rooms.creole.title": "Habitación Criolla",
+  "accommodations.rooms.creole.description":
+    "La habitación Criolla está inspirada en un viaje hacia las islas con sus colores azules y su mobiliario de ratán. Esta habitación es ideal para una pareja.",
+  "accommodations.rooms.creole.longDescription":
+    "La hermosa altura bajo techo, la vista al jardín y las fibras naturales del mobiliario bañan esta habitación de luz. Esta habitación consta de una cama doble de 1,60 x 2 m, un espacio con cabina de ducha y lavabo, aseo separado. El mobiliario inspirado en las islas: dos sillones de ratán, una mesa velador y un armario. Esta habitación climatizada promete un dulce paréntesis.",
+  "accommodations.rooms.creole.gallery.image1":
+    "Habitación Criolla - vista principal",
+  "accommodations.rooms.creole.gallery.image2":
+    "Habitación Criolla - paleta tropical",
+  "accommodations.rooms.creole.gallery.image3":
+    "Habitación Criolla - baño privado",
+  "accommodations.rooms.creole.gallery.image4":
+    "Habitación Criolla - zona de descanso",
+  "accommodations.rooms.creole.gallery.image5":
+    "Habitación Criolla - detalles artesanales",
+  "accommodations.detail.equipments.title": "Equipamientos disponibles",
+  "accommodations.detail.equipments.note":
+    "La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.",
+  "accommodations.detail.table.title": "La table d’hôtes",
+  "accommodations.detail.table.text":
+    "Con reserva previa, disfruta de nuestra mesa compartida: menú único de temporada o tablas y ensaladas generosas elaboradas con productos locales y ecológicos.",
+  "accommodations.detail.explore.title": "Lugares para explorar",
+  "accommodations.detail.explore.text":
+    "En temporada tienes a tu disposición la piscina con tumbonas, el pabellón de verano para tomar algo o un helado y la sala común con sofás, libros y juegos de mesa.",
+  "accommodations.detail.otherRooms.title": "Otros alojamientos",
+  "accommodations.rooms.equipments.doubleBedSeparable":
+    "Cama doble de 180 cm convertible en dos individuales",
+  "accommodations.rooms.equipments.doubleBed160": "Cama doble de 160 x 200 cm",
+  "accommodations.rooms.equipments.freeHighSpeedWifi":
+    "Wi-Fi de alta velocidad gratuito",
+  "accommodations.rooms.equipments.airConditioning": "Aire acondicionado",
+  "accommodations.rooms.equipments.ShowerRoom": "Baño privado",
+  "accommodations.rooms.equipments.ShowerRoomMoroccan":
+    "Doble lavabo, amplia ducha italiana, aseo separado",
+  "accommodations.rooms.equipments.ShowerRoomAfrican":
+    "Lavabo, ducha italiana, aseo separado",
+  "accommodations.rooms.equipments.ShowerRoomTuscan":
+    "Lavabo, ducha italiana, aseo separado",
+  "accommodations.rooms.equipments.ShowerRoomCreole":
+    "Cabina de ducha, lavabo, aseo separado",
+  "accommodations.rooms.equipments.babyCribOnRequest":
+    "Cuna disponible bajo petición",
+  "accommodations.rooms.equipments.kettle": "Hervidor y bandeja de cortesía",
+  "accommodations.rooms.equipments.hairDryer": "Secador de pelo",
+  "accommodations.rooms.equipments.sofaBed": "Sofá cama",
+  "accommodations.rooms.equipments.commonWashingMachine":
+    "Acceso a lavadora bajo petición (de pago)",
+  "accommodations.rooms.equipments.desk": "Mesa alta mural",
+  "accommodations.rooms.equipments.smallTable": "Mesa pequeña",
+  "accommodations.rooms.equipments.wardrobe": "Armario",
+  "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
+    "Mesa auxiliar con dos sillones",
+  "accommodations.breakfast.title": "Desayuno, mesa de anfitrión y bar",
+  "accommodations.breakfast.text":
+    "El desayuno se sirve de 8:00 a 9:30, o antes bajo petición. Se sirve en el comedor o en el patio interior, con buen tiempo. En forma de buffet, encontrará pan tradicional, bollería, té orgánico, café, zumos de frutas, yogures locales y frutas de temporada.\n\nSeleccionamos a nuestros proveedores para ofrecerle productos locales y ecológicos.\n\nDesayuno salado opcional disponible, bajo petición y con reserva previa el día anterior.\n\nCon reserva previa, la mesa de anfitrión ofrece un menú único casero o tablas de embutidos, quesos o ensaladas compuestas con productos locales y ecológicos. Nuestras propuestas pueden variar según la temporada.\n\nServicio de bar: ofrecemos una carta de bebidas y una carta de vinos.",
+  "accommodations.cta.title": "¿Quieres privatizar todas las habitaciones?",
+  "accommodations.cta.text":
+    "También puedes reservar todas las habitaciones para eventos de grupo, fines de semana en familia o encuentros con amigos.",
+  "accommodations.cta.button": "Contáctanos",
+  "surroundings.detail.otherActivities.title":
+    "Otras actividades por descubrir",
+  "surroundings.detail.otherRestaurants.title":
+    "Otros restaurantes por descubrir",
+  "surroundings.detail.seeAllActivities": "Ver todas las actividades",
+  "surroundings.detail.seeAllRestaurants": "Ver todos los restaurantes",
+  "surroundings.safari_peaugres.gallery.image1":
+    "Vista panorámica del Safari de Peaugres",
+  "surroundings.palais_ideal_du_facteur_cheval.gallery.image1":
+    "Fachada del Palais Idéal du Facteur Cheval",
+  "surroundings.acrobois_pilat.gallery.image1":
+    "Visitantes en el circuito entre los árboles de Acrobois Pilat",
+  "surroundings.musee_de_l_alambic.gallery.image1":
+    "Alambiques de cobre expuestos en el Musée de l'Alambic",
+  "surroundings.golf_de_saint_clair.gallery.image1":
+    "Fairways del Golf de Saint-Clair",
+  "surroundings.viarhona.gallery.image1":
+    "Ciclistas siguiendo la ViaRhôna junto al río",
+  "surroundings.viafluvia.gallery.image1":
+    "Familia pedaleando por la ViaFluvia",
+  "surroundings.mongolfieres_et_cie.gallery.image1":
+    "Globo aerostático de Montgolfières & Cie sobre el valle",
+  "surroundings.train_de_l_ardeche.gallery.image1":
+    "Locomotora histórica del Train de l'Ardèche",
+  "surroundings.la_fabrique_de_julien.gallery.image1":
+    "Estanterías de dulces en La Fabrique de Julien",
+  "surroundings.musee_valrhona.gallery.image1":
+    "Taller de degustación en la Cité du Chocolat Valrhôna",
+  "surroundings.le_nougat_de_montsegur.gallery.image1":
+    "Barras de nougat de Le Nougat de Montségur",
+  "surroundings.chateau_de_grignan.gallery.image1":
+    "Vista exterior del Château de Grignan",
+  "surroundings.labyrinthe_vegetal.gallery.image1":
+    "Vista aérea del Labyrinthe végétal",
+  "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
+    "Barco de la Compagnie des Canotiers Rhône & Saône sobre el río",
+  "surroundings.le_chateau_d_anet.gallery.image1": "Patio del Château d'Anet",
+  "surroundings.le_relais_mailles.gallery.image1":
+    "Comedor de Le Relais des Mailles",
+  "surroundings.la_table_des_saj.gallery.image1":
+    "Platos servidos en La Table des SAJ",
+  "surroundings.la_poule_noir.gallery.image1":
+    "Sala del restaurante La Poule Noire",
+  "surroundings.le_picotin.gallery.image1":
+    "Fachada del restaurante Le Picotin",
+  "surroundings.au_pre_du_rhone.gallery.image1":
+    "Terraza con vistas al Ródano en Au Pré du Rhône",
+  "surroundings.la_belle_epoque.gallery.image1":
+    "Sala del restaurante La Belle Époque",
+  "surroundings.la_belle_epoque.gallery.image2":
+    "Servicio en terraza en La Belle Époque",
+  "surroundings.o_daily_truck.gallery.image1":
+    "Hamburguesa gourmet servida por O'Daily Truck",
+  "surroundings.o_daily_truck.gallery.image2":
+    "Food truck O'Daily Truck listo para servir",
+  "surroundings.cesar_pizza.gallery.image1": "Mostrador y horno de César Pizza",
+  "surroundings.la_villa_champagnere.gallery.image1":
+    "Jardín y terraza de La Villa Champagnère",
+  "surroundings.les_agapons.gallery.image1":
+    "Restaurante Les Agapons en Manthes",
+  "surroundings.descriptions.les_agapons.short":
+    "Restaurante de auténtica cocina francesa en Manthes, comida casera de calidad con productos locales y regionales.",
+  "surroundings.descriptions.les_agapons.long":
+    "Bienvenido a Les Agapons, ubicado en la encantadora ciudad de Manthes. Nuestro equipo cálido le servirá comida casera de calidad, preparada con productos locales y regionales, así como platos tradicionales.\n\nEl restaurante ofrece muchos servicios: terraza, zona infantil, aparcamiento gratuito, eventos privados, recepciones de bodas, Wi-Fi gratuito y mascotas permitidas. Abierto de miércoles a sábado de 12 a 14 horas y de 19 a 21 horas, así como almuerzo de domingo.",
+  "surroundings.detail.book": "Reservar",
+  "surroundings.detail.socialNetworks": "Redes sociales",
+  "surroundings.detail.visitWebsite": "Visitar el sitio web",
+  "surroundings.detail.moreInfo.title": "Más información",
+  "iframeConsent.title": "Contenido externo",
+  "iframeConsent.text":
+    "Este contenido es proporcionado por {serviceName}. Al cargarlo, aceptas nuestras condiciones de uso y la política de privacidad del proveedor.",
+  "iframeConsent.button": "Aceptar y cargar",
+  "iframeConsent.serviceNameFallback": "este servicio externo",
+  "contact.title": "Contacto",
+  "contact.reservation.textBefore":
+    "Todas las reservas se realizan exclusivamente a través de la página",
+  "contact.reservation.textAfter":
+    "No aceptamos reservas a través de este formulario, excepto para grupos o estancias de larga duración.",
+  "contact.form.fullName": "Nombre completo",
+  "contact.form.email": "Correo electrónico",
+  "contact.form.subject": "Asunto",
+  "contact.form.phone": "Teléfono",
+  "contact.form.optional": "opcional",
+  "contact.form.message": "Mensaje",
+  "contact.form.submit": "Enviar",
+  "contact.error.title": "Error al enviar el mensaje",
+  "contact.success.title": "¡Mensaje enviado exitosamente!",
+  "contact.success.text": "Nos pondremos en contacto pronto.",
+  "contact.validation.nameRequired": "El nombre es obligatorio.",
+  "contact.validation.emailInvalid": "Correo electrónico inválido.",
+  "contact.validation.subjectRequired": "El asunto es obligatorio.",
+  "contact.validation.messageRequired": "El mensaje es obligatorio.",
+  "contact.genericError": "Se produjo un error al enviar el mensaje.",
+  "contact.info.phone": "Teléfono",
+  "contact.info.whatsapp": "Whatsapp",
+  "contact.info.email": "Correo electrónico",
+  "contact.info.address": "Dirección",
+  "legalNotices.title": "Menciones Legales",
+  "legalNotices.editor.title": "Editor del sitio",
+  "legalNotices.editor.addressLabel": "Dirección",
+  "legalNotices.editor.rcsLabel": "RCS",
+  "legalNotices.editor.nafLabel": "Código NAF",
+  "legalNotices.editor.capitalLabel": "Capital social",
+  "legalNotices.editor.phoneLabel": "Teléfono",
+  "legalNotices.editor.emailLabel": "Correo",
+  "legalNotices.editor.ceoLabel": "Directora",
+  "legalNotices.editor.publisherLabel": "Directora de Publicación",
+  "legalNotices.editor.publisherValue": "Catherine Lemoine",
+  "legalNotices.design.title": "Diseño y desarrollo del sitio",
+  "legalNotices.design.phoneLabel": "Teléfono",
+  "legalNotices.design.emailLabel": "Correo",
+  "legalNotices.design.websiteLabel": "Sitio",
+  "legalNotices.design.githubLabel": "Github",
+  "legalNotices.design.repoLabel": "Repositorio Github",
+  "legalNotices.hosting.title": "Alojamiento del sitio",
+  "legalNotices.hosting.providerLabel": "Proveedor",
+  "legalNotices.domain.title": "Propiedad del nombre de dominio",
+  "legalNotices.domain.providerLabel": "Gestor del nombre de dominio",
+  "legalNotices.photos.title": "Crédito de fotos",
+  "legalNotices.photos.text":
+    "Todas las fotos son propiedad del Domaine de Pipangaille.",
+  "legalNotices.cookies.title": "Uso de cookies",
+  "legalNotices.cookies.text":
+    "Este sitio utiliza cookies solo para estadísticas y funcionamiento.",
+  "legalNotices.personalData.title": "Uso de datos personales",
+  "legalNotices.personalData.text":
+    "Al utilizar los formularios presentes en el sitio, acepta el almacenamiento de los datos transmitidos y su procesamiento. Se conservan y procesan con fines de gestión, archivo y mejora de nuestros servicios.",
+  "legalNotices.personalData.retention":
+    "Los datos se conservan durante un período razonable de 10 años.",
+  "legalNotices.personalData.requestEmailPrefix":
+    "Para cualquier solicitud de eliminación, rectificación o acceso a datos, realice una solicitud por correo a ",
+  "legalNotices.personalData.requestAddressPrefix": " o por correo postal a: ",
+  "legalNotices.liability.title":
+    "Responsabilidad de la SAS Domaine de Pipangaille",
+  "legalNotices.liability.text":
+    "En la medida permitida por la ley, la SAS Domaine de Pipangaille no es responsable de:",
+  "legalNotices.liability.inaccuracy":
+    "Ninguna inexactitud, error, omisión o daños resultantes de modificaciones no autorizadas de la información disponible en el Sitio.",
+  "legalNotices.liability.unauthorized":
+    "Daños causados por acceso no autorizado al Sitio o que lo hagan inaccesible.",
+  "legalNotices.liability.interruption":
+    "Se informa al visitante que el acceso al Sitio puede ser interrumpido en cualquier momento por la SAS Domaine de Pipangaille por razones de mantenimiento, seguridad o cualquier otra limitación técnica.",
+  "legalNotices.law.title": "Derecho aplicable",
+  "legalNotices.law.text":
+    "Estas menciones legales se rigen por la ley francesa. Los tribunales franceses son los únicos competentes para conocer cualquier disputa relacionada directa o indirectamente con el acceso o el uso de este Sitio.",
+  "mapProviderDialog.title": "Abrir con:",
+  "generalConditions.title":
+    "Condiciones generales de venta de estadías en cama y desayuno",
+  "generalConditions.subtitle": "Domaine de Pipangaille",
+  "generalConditions.article1.title": "Artículo 1 - Duración de la estadía",
+  "generalConditions.article1.content":
+    "El cliente signatario de este contrato celebrado por un período fijo no podrá en ningún caso reclamar ningún derecho a permanecer en las instalaciones.",
+  "generalConditions.article2.title": "Artículo 2 - Formalidades de reserva",
+  "generalConditions.article2.content1":
+    "Una reserva se hace efectiva tan pronto como el cliente ha enviado al propietario un depósito del 25 % del precio total de la estadía con un mínimo de una noche por habitación reservada y una copia firmada del contrato antes de la fecha indicada.",
+  "generalConditions.article2.content2":
+    "El cliente debe guardar el segundo ejemplar del contrato.",
+  "generalConditions.article2.content3":
+    "Los precios se entienden para incluir todos los gastos según la hoja de especificaciones, excluido el impuesto de estadía.",
+  "generalConditions.article3.title":
+    "Artículo 3 - Código del consumidor - Derecho de retractación",
+  "generalConditions.article3.content1":
+    "Una reserva realizada en línea, por teléfono o por correo es una venta a distancia. Es un contrato celebrado a distancia en el sentido de la definición del Código del consumidor.",
+  "generalConditions.article3.content2":
+    "Estamos sujetos a los artículos L. 121-17 y siguientes del código del consumidor.",
+  "generalConditions.article3.content3":
+    "Nos gustaría señalar que el derecho de desistimiento no existe para los contratos de servicios de alojamiento.",
+  "generalConditions.article4.title":
+    "Artículo 4 - Cancelación de la estadía por el cliente",
+  "generalConditions.article4.content1":
+    'Cualquier modificación solo es posible con el acuerdo del "Domaine de Pipangaille" y puede incurrir en costos adicionales.',
+  "generalConditions.article4.content2":
+    "Le informamos que en caso de cancelación de la reserva antes del inicio de la estadía, se deberá una indemnización fija como se indica a continuación:",
+  "generalConditions.article4.bullet1":
+    "si la cancelación ocurre más de 1 semana antes de la fecha de llegada, el depósito se reembolsará en su totalidad;",
+  "generalConditions.article4.bullet2":
+    "si la cancelación ocurre menos de 1 semana antes de la fecha de llegada, el depósito seguirá siendo propiedad de Domaine de Pipangaille, que tiene derecho a reclamar y facturar el saldo del precio de la estadía (de conformidad con el contrato de reserva) si la estadía sigue siendo vacante después de la cancelación.",
+  "generalConditions.article4.content3":
+    "En caso de salida anticipada durante la estadía: el pago completo del servicio reservado es obligatorio independientemente de la razón.",
+  "generalConditions.article5.title":
+    "Artículo 5 - Seguro de cancelación a cargo del cliente",
+  "generalConditions.article5.content1":
+    "Le llamamos la atención sobre el hecho de que ninguno de nuestros precios incluye un seguro de cancelación.",
+  "generalConditions.article5.content2":
+    "Por lo tanto, se recomienda encarecidamente que contrate uno.",
+  "generalConditions.article6.title":
+    "Artículo 6 - Cancelación por el propietario",
+  "generalConditions.article6.content1":
+    "Si antes del inicio de la estadía, el propietario se ve obligado a cancelar la reserva, debe informar inmediatamente al cliente de cualquier forma.",
+  "generalConditions.article6.content2":
+    "El cliente será entonces reembolsado inmediatamente y en su totalidad de las cantidades ya pagadas.",
+  "generalConditions.article7.title": "Artículo 7 - Hora de llegada",
+  "generalConditions.article7.content1":
+    "La llegada está programada a partir de las 17:00 y es posible hasta las 22:00.",
+  "generalConditions.article7.content2":
+    "En caso de solicitud especial o imprevista, será necesario contactarnos por teléfono en ",
+  "generalConditions.article7.content3":
+    " para informarnos de cualquier retraso.",
+  "generalConditions.article8.title": "Artículo 8 - Hora de partida",
+  "generalConditions.article8.content":
+    "La hora de salida de las habitaciones se establece a las 10:30 como máximo.",
+  "generalConditions.article9.title":
+    "Artículo 9 - Pago del saldo del alojamiento",
+  "generalConditions.article9.content1":
+    "El pago del saldo de la estadía se realizará un día antes de su llegada, de conformidad con su contrato de reserva.",
+  "generalConditions.article9.content2":
+    "Los gastos adicionales, incluidos los relativos a los servicios de mesa y bebidas, se facturarán el día de su salida.",
+  "generalConditions.article10.title": "Artículo 10 - Cambio de habitaciones",
+  "generalConditions.article10.content1":
+    "Sin que el cliente pueda reclamar compensación, el propietario se reserva el derecho de cambiar la habitación inicialmente reservada por el cliente por una habitación de la misma o mayor capacidad.",
+  "generalConditions.article10.content2":
+    "En tal caso, el costo de la reserva permanece sin cambios.",
+  "generalConditions.article11.title": "Artículo 11 - Mascotas",
+  "generalConditions.article11.content": "No se permiten animales domésticos.",
+  "generalConditions.article12.title":
+    "Artículo 12 - Arte de vivir y uso de las instalaciones",
+  "generalConditions.article12.content1":
+    'Para garantizar la tranquilidad de las instalaciones y la comodidad de los huéspedes en el Domaine de Pipangaille, el respeto por un cierto "arte de vivir" es requerido por todos.',
+  "generalConditions.article12.content2":
+    "En particular, no se permite fumar en interiores.",
+  "generalConditions.article12.content3":
+    "El cliente se compromete a respetar las directrices de comportamiento que se le proporcionarán y estas condiciones generales de venta.",
+  "generalConditions.article12.content4":
+    "El cliente se compromete a devolver las habitaciones en perfecto estado y sin daños al final de la estadía y a declarar sistemáticamente y asumir financieramente cualquier daño del que sea responsable.",
+  "generalConditions.article12.content5":
+    "Los costos de reparación, incluido el tiempo de intervenciones necesarias para restaurar las instalaciones, se liquidarán de acuerdo con facturas separadas y sobre la base de recibos de gastos realizados.",
+  "generalConditions.article12.content6":
+    "Se advierte a los huéspedes que los menores presentes en la propiedad se colocan bajo la responsabilidad única y completa de sus padres o personas autorizadas sobre ellos.",
+  "generalConditions.article12.content7":
+    "Su estadía en el Domaine de Pipangaille y el uso de nuestro equipo e instalaciones como la piscina, la cocina compartida y el estacionamiento se realizan voluntariamente y bajo su propio riesgo. Domaine de Pipangaille no es responsable de pérdidas, robos y/o daños o lesiones a bienes y/o personas en la propiedad, independientemente de la causa.",
+  "generalConditions.article13.title":
+    "Artículo 13 - Modificación de los términos de venta",
+  "generalConditions.article13.content1":
+    "Estas condiciones de venta pueden ser modificadas en cualquier momento y sin previo aviso.",
+  "generalConditions.article13.content2":
+    "La aceptación y cumplimiento de estas condiciones de venta se consideran adquiridas una vez que se paga el depósito.",
+  "generalConditions.article14.title":
+    "Artículo 14 - Ley de informática y libertades",
+  "generalConditions.article14.content1":
+    "De conformidad con la Ley nº 78-17 de 6 de enero de 1978 sobre informática, archivos y libertades, tiene derecho a acceder y corregir datos sobre usted.",
+  "generalConditions.article14.content2":
+    "Nos comprometemos a no transmitir la información que nos ha comunicado a ninguna otra empresa u organización.",
+  "notfound.title": "404 - Página no encontrada",
+  "notfound.message": "La página que buscas no existe.",
+  "notfound.button": "Volver al inicio",
 };

@@ -43,7 +43,7 @@ const variants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 const {
@@ -78,7 +78,7 @@ const Comp = href ? "a" : "button";
         <span
           class={
             variant === "secondary"
-              ? "after:bg-primary after:absolute after:-inset-1 relative after:rounded-full after:-z-10 group-hover:after:scale-125 after:duration-125"
+              ? "after:bg-primary relative after:absolute after:-inset-1 after:-z-10 after:rounded-full after:duration-125 group-hover:after:scale-125"
               : ""
           }
         >

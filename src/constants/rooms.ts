@@ -16,32 +16,32 @@ import {
   AirVent,
 } from "@lucide/astro";
 
-import africanRoomBathRoomView from '@/images/african-room-bathroom-view.jpeg';
-import africanRoomDoubleBedsBathroom from '@/images/african-room-double-beds-bathroom.jpeg';
-import africanRoomDoubleBeds from '@/images/african-room-double-beds.jpeg';
-import africanRoomDoubleBedSink from '@/images/african-room-double-bed-sink.jpg';
-import africanRoomDoubleBedWindowDecor from '@/images/african-room-double-bed-window-decor.jpg';
-import africanRoomDoubleBed from '@/images/african-room-double-bed.jpg';
+import africanRoomBathRoomView from "@/images/african-room-bathroom-view.jpeg";
+import africanRoomDoubleBedsBathroom from "@/images/african-room-double-beds-bathroom.jpeg";
+import africanRoomDoubleBeds from "@/images/african-room-double-beds.jpeg";
+import africanRoomDoubleBedSink from "@/images/african-room-double-bed-sink.jpg";
+import africanRoomDoubleBedWindowDecor from "@/images/african-room-double-bed-window-decor.jpg";
+import africanRoomDoubleBed from "@/images/african-room-double-bed.jpg";
 
-import tuscanRoomBedBathroomDesk from '@/images/tuscan-room-bed-bathroom-desk.jpeg'
-import tuscanRoomBedBathroom from '@/images/tuscan-room-bed-bathroom.jpeg'
-import tuscanRoomBedDesk from '@/images/tuscan-room-bed-desk.jpeg'
-import tuscanRoomBedDeskShelf from '@/images/tuscan-room-bed-desk-shelf.jpg'
-import tuscanRoomBedBasketSink from '@/images/tuscan-room-bed-basket-sink.jpg'
-import tuscanRoomShower from '@/images/tuscan-room-shower.jpg'
+import tuscanRoomBedBathroomDesk from "@/images/tuscan-room-bed-bathroom-desk.jpeg";
+import tuscanRoomBedBathroom from "@/images/tuscan-room-bed-bathroom.jpeg";
+import tuscanRoomBedDesk from "@/images/tuscan-room-bed-desk.jpeg";
+import tuscanRoomBedDeskShelf from "@/images/tuscan-room-bed-desk-shelf.jpg";
+import tuscanRoomBedBasketSink from "@/images/tuscan-room-bed-basket-sink.jpg";
+import tuscanRoomShower from "@/images/tuscan-room-shower.jpg";
 
-import moroccanRoomBedSink from '@/images/moroccan-room-bed-sink.jpeg'
-import moroccanRoomBed from '@/images/moroccan-room-bed.jpeg'
-import moroccanRoomBedToilet from '@/images/moroccan-room-bed-toilet.jpg'
-import moroccanRoomBedFrenchDoor from '@/images/moroccan-room-bed-french-door.jpg'
-import moroccanRoomShowerSink from '@/images/moroccan-room-shower-sink.jpg'
+import moroccanRoomBedSink from "@/images/moroccan-room-bed-sink.jpeg";
+import moroccanRoomBed from "@/images/moroccan-room-bed.jpeg";
+import moroccanRoomBedToilet from "@/images/moroccan-room-bed-toilet.jpg";
+import moroccanRoomBedFrenchDoor from "@/images/moroccan-room-bed-french-door.jpg";
+import moroccanRoomShowerSink from "@/images/moroccan-room-shower-sink.jpg";
 
-import creoleRoomBedWindow from '@/images/creole-room-bed-window.jpeg'
-import creoleRoomBed from '@/images/creole-room-bed.jpeg'
-import creoleRoomBedBasket from '@/images/creole-room-bed-basket.jpg'
-import creoleRoomBedWindowDesk from '@/images/creole-room-bed-window-desk.jpg'
-import creoleRoomDeskWardrobeMirror from '@/images/creole-room-desk-wardrobe-mirror.jpg'
-import creoleRoomDeskWardrobe from '@/images/creole-room-desk-wardrobe.jpg'
+import creoleRoomBedWindow from "@/images/creole-room-bed-window.jpeg";
+import creoleRoomBed from "@/images/creole-room-bed.jpeg";
+import creoleRoomBedBasket from "@/images/creole-room-bed-basket.jpg";
+import creoleRoomBedWindowDesk from "@/images/creole-room-bed-window-desk.jpg";
+import creoleRoomDeskWardrobeMirror from "@/images/creole-room-desk-wardrobe-mirror.jpg";
+import creoleRoomDeskWardrobe from "@/images/creole-room-desk-wardrobe.jpg";
 
 export const roomSlugs = [
   "marocaine",
@@ -318,7 +318,8 @@ export const roomsContent: RoomContent[] = [
       },
       {
         icon: Monitor,
-        labelKey: "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs",
+        labelKey:
+          "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs",
       },
       {
         icon: Coffee,

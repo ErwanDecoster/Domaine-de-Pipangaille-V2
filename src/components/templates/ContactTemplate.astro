@@ -25,15 +25,15 @@ const result = Astro.getActionResult(actions.contact.send);
 <Layout>
   <div
     data-scroll-animated
-    class="h-28 w-screen sticky top-0 z-10 bg-background"
+    class="bg-background sticky top-0 z-10 h-28 w-screen"
   >
   </div>
   <div class="px-20 pt-24">
     <h1>{t("contact.title")}</h1>
-    <p class="p-4 rounded-lg bg-muted mt-12">
+    <p class="bg-muted mt-12 rounded-lg p-4">
       {t("contact.reservation.textBefore")}
       <Button
-        class="inline -mx-6"
+        class="-mx-6 inline"
         variant="link"
         href={getLocalizedUrl("book", lang)}
       >
@@ -43,19 +43,19 @@ const result = Astro.getActionResult(actions.contact.send);
     </p>
   </div>
 
-  <section class="flex gap-8 md:gap-10 px-20 mt-12">
+  <section class="mt-12 flex gap-8 px-20 md:gap-10">
     <form
       method="POST"
       action={actions.contact.send}
-      class="px-12 grow py-16 bg-muted rounded-md"
+      class="bg-muted grow rounded-md px-12 py-16"
       id="contact-form"
     >
       {
         result?.error && (
-          <div class="col-span-2 p-4 rounded-lg bg-red-100 dark:bg-red-900/20 text-red-900 dark:text-red-200">
+          <div class="col-span-2 rounded-lg bg-red-100 p-4 text-red-900 dark:bg-red-900/20 dark:text-red-200">
             <p class="font-semibold">{t("contact.error.title")}</p>
             {result.error.code === "BAD_REQUEST" && result.error.fields ? (
-              <ul class="list-disc list-inside mt-2">
+              <ul class="mt-2 list-inside list-disc">
                 {Object.entries(result.error.fields).map(([field, errors]) =>
                   errors?.map((error) => <li>{error}</li>),
                 )}
@@ -68,13 +68,13 @@ const result = Astro.getActionResult(actions.contact.send);
       }
       {
         result?.data && (
-          <div class="col-span-2 p-4 rounded-lg bg-green-100 dark:bg-green-900/20 text-green-900 dark:text-green-200">
+          <div class="col-span-2 rounded-lg bg-green-100 p-4 text-green-900 dark:bg-green-900/20 dark:text-green-200">
             <p class="font-semibold">{t("contact.success.title")}</p>
             <p class="mt-2">{t("contact.success.text")}</p>
           </div>
         )
       }
-      <FieldSet class="grid md:grid-cols-2 gap-6">
+      <FieldSet class="grid gap-6 md:grid-cols-2">
         <Field>
           <FieldLabel for="name">{t("contact.form.fullName")}</FieldLabel>
           <Input
@@ -107,7 +107,7 @@ const result = Astro.getActionResult(actions.contact.send);
         </Field>
         <Field>
           <FieldLabel for="phone"
-            >{t("contact.form.phone")}<span class="ml-auto text-foreground/50"
+            >{t("contact.form.phone")}<span class="text-foreground/50 ml-auto"
               >{t("contact.form.optional")}</span
             ></FieldLabel
           >
@@ -157,23 +157,23 @@ const result = Astro.getActionResult(actions.contact.send);
         }
       }
     </script>
-    <div class="flex flex-col gap-16 grow max-w-96">
+    <div class="flex max-w-96 grow flex-col gap-16">
       <div>
         <div>
-          <h2 class="text-base font-semibold font-barlow">
+          <h2 class="font-barlow text-base font-semibold">
             {t("contact.info.phone")}
           </h2>
-          <Button variant="link" class="-ml-6 -mt-3" href="tel:+33475682824">
+          <Button variant="link" class="-mt-3 -ml-6" href="tel:+33475682824">
             +33 4 75 68 28 24
           </Button>
         </div>
         <div>
-          <h2 class="text-base font-semibold font-barlow">
+          <h2 class="font-barlow text-base font-semibold">
             {t("contact.info.whatsapp")}
           </h2>
           <Button
             variant="link"
-            class="-ml-6 -mt-3"
+            class="-mt-3 -ml-6"
             external
             href="https://api.whatsapp.com/send?phone=33475682824"
           >
@@ -181,12 +181,12 @@ const result = Astro.getActionResult(actions.contact.send);
           </Button>
         </div>
         <div>
-          <h2 class="text-base font-semibold font-barlow">
+          <h2 class="font-barlow text-base font-semibold">
             {t("contact.info.email")}
           </h2>
           <Button
             variant="link"
-            class="-ml-6 -mt-3"
+            class="-mt-3 -ml-6"
             external
             href={`mailto:contact@domaine-de-pipangaille.fr`}
           >
@@ -194,7 +194,7 @@ const result = Astro.getActionResult(actions.contact.send);
           </Button>
         </div>
         <div>
-          <h2 class="text-base font-semibold font-barlow">
+          <h2 class="font-barlow text-base font-semibold">
             {t("contact.info.address")}
           </h2>
           <MapProviderDialog

@@ -1,47 +1,47 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import vue from '@astrojs/vue';
+import vue from "@astrojs/vue";
 
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 
-import vercel from '@astrojs/vercel';
+import vercel from "@astrojs/vercel";
 
-import sitemap from '@astrojs/sitemap';
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://domaine-de-pipangaille.fr',
+  site: "https://domaine-de-pipangaille.fr",
   integrations: [
-    vue(), 
+    vue(),
     sitemap({
       i18n: {
-        defaultLocale: 'fr',
+        defaultLocale: "fr",
         locales: {
-          fr: 'fr-FR',
-          en: 'en-US',
-          de: 'de-DE',
-          es: 'es-ES',
-          it: 'it-IT',
-          nl: 'nl-NL',
+          fr: "fr-FR",
+          en: "en-US",
+          de: "de-DE",
+          es: "es-ES",
+          it: "it-IT",
+          nl: "nl-NL",
         },
       },
     }),
   ],
 
-  output: 'server',
+  output: "server",
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
 
   adapter: vercel(),
 
   i18n: {
-    locales: ['fr', 'en', 'de', 'es', 'it', 'nl'],
-    defaultLocale: 'fr',
+    locales: ["fr", "en", "de", "es", "it", "nl"],
+    defaultLocale: "fr",
     routing: {
-      prefixDefaultLocale: false
-    }
-  }
+      prefixDefaultLocale: false,
+    },
+  },
 });

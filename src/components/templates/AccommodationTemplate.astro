@@ -74,14 +74,14 @@ const otherRooms = roomsContent
     <Layout>
       <div
         data-scroll-animated
-        class="h-28 w-screen sticky top-0 z-10 bg-background"
+        class="bg-background sticky top-0 z-10 h-28 w-screen"
       />
       <div class="px-20 pt-24">
         <h1>{selectedRoomTitle}</h1>
-        <p class="mt-12 md:w-4/5 max-w-4xl">{selectedRoomLongDescription}</p>
+        <p class="mt-12 max-w-4xl md:w-4/5">{selectedRoomLongDescription}</p>
       </div>
 
-      <div class="grid grid-cols-4 gap-6 px-20 mt-12">
+      <div class="mt-12 grid grid-cols-4 gap-6 px-20">
         <Image
           class="col-span-2 row-span-2 h-full"
           src={galleryImages[0].src}
@@ -111,7 +111,7 @@ const otherRooms = roomsContent
 
       <section class="px-20 pt-48">
         <h2>{equipmentsTitle}</h2>
-        <ul class="w-full lg:w-4/5 grid sm:grid-cols-2 md:grid-cols-3 gap-1 mt-12">
+        <ul class="mt-12 grid w-full gap-1 sm:grid-cols-2 md:grid-cols-3 lg:w-4/5">
           {selectedRoomEquipments.map((equip) => (
             <li class="flex items-center gap-2">
               {equip.icon && <equip.icon size={16} />}
@@ -120,7 +120,7 @@ const otherRooms = roomsContent
           ))}
         </ul>
         {equipmentsNote && (
-          <p class="p-4 rounded-lg bg-muted mt-8">{equipmentsNote}</p>
+          <p class="bg-muted mt-8 rounded-lg p-4">{equipmentsNote}</p>
         )}
       </section>
 
@@ -131,16 +131,16 @@ const otherRooms = roomsContent
         ratio="4-5"
       />
 
-      <section class="pt-48 px-20">
+      <section class="px-20 pt-48">
         <h2>{exploreTitle}</h2>
         <p class="mt-8">{exploreText}</p>
-        <div class="grid grid-cols-2 gap-6 mt-12">
+        <div class="mt-12 grid grid-cols-2 gap-6">
           <Image class="aspect-video" src={pool} alt="TODO" />
           <Image class="aspect-video" src={courtyardTerraceCorner} alt="TODO" />
         </div>
       </section>
 
-      <section class="grid grid-cols-3 gap-8 md:gap-10 px-20 mt-48">
+      <section class="mt-48 grid grid-cols-3 gap-8 px-20 md:gap-10">
         <h2 class="col-span-3">{otherRoomsTitle}</h2>
         {otherRooms.map((room) => (
           <Card

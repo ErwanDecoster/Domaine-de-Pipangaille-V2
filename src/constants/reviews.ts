@@ -491,7 +491,7 @@ export const reviews = {
       reviewUrl:
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbU1EUjNnRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CIHM0ogKEICAgIDqmMDR3gE%7CCgsI98TihgYQgOKwcA%7C?hl=en",
       text: "Accueil et séjour enchanteurs. Hôtes chaleureux et attentionnés. Magnifique demeure, paisible et au bord de la rivière. Nous reviendrons certainement. Parfait !",
-    }
+    },
   ],
   en: [
     {
@@ -985,7 +985,7 @@ export const reviews = {
       reviewUrl:
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbU1EUjNnRRAB!2m1!1s0x0:0xe0c49553166e1500!3m1!1s2@1:CIHM0ogKEICAgIDqmMDR3gE%7CCgsI98TihgYQgOKwcA%7C?hl=en",
       text: "Enchanting welcome and stay. Warm and attentive hosts. Magnificent residence, peaceful and by the river. We will definitely come back. Perfect!",
-    }
+    },
   ],
   it: [
     {

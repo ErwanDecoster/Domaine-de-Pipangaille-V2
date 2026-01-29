@@ -24,7 +24,7 @@ const itemCount = workingReviews.length;
 const bufferSize = tailBuffer.length;
 ---
 
-<section class="relative grid md:gap-20 px-20 mt-48">
+<section class="relative mt-48 grid px-20 md:gap-20">
   <div class="flex w-full items-center justify-between">
     <h2>{title}</h2>
     <div>
@@ -39,7 +39,7 @@ const bufferSize = tailBuffer.length;
   <div class="review-carousel-container overflow-hidden">
     <div
       id="review-carousel"
-      class="no-scrollbar grid auto-cols-[calc(33.333%-1rem)] grid-flow-col gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory"
+      class="no-scrollbar grid snap-x snap-mandatory auto-cols-[calc(33.333%-1rem)] grid-flow-col gap-6 overflow-x-auto scroll-smooth"
       style="scrollbar-width: none;"
       data-item-count={itemCount}
       data-buffer-size={bufferSize}

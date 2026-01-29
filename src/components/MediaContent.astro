@@ -84,9 +84,9 @@ const paragraphs = Array.isArray(text)
               "aspect-4/3": galleryLayout !== "triple",
               "h-full": galleryLayout === "triple",
               "row-span-2": galleryLayout === "triple" && index === 0,
-              "row-start-1 col-start-2 aspect-4/3":
+              "col-start-2 row-start-1 aspect-4/3":
                 galleryLayout === "triple" && index === 1,
-              "row-start-2 col-start-2 aspect-4/3":
+              "col-start-2 row-start-2 aspect-4/3":
                 galleryLayout === "triple" && index === 2,
             })}
             src={src}

@@ -1,13 +1,13 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 interface Props extends HTMLAttributes<"div"> {}
 
-const { class: className, ...props } = Astro.props
+const { class: className, ...props } = Astro.props;
 
-const slot = await Astro.slots.render("default")
+const slot = await Astro.slots.render("default");
 ---
 
 {
@@ -16,7 +16,7 @@ const slot = await Astro.slots.render("default")
       data-slot="field-group"
       class={cn(
         "group/field-group @container/field-group flex w-full flex-col gap-7 data-[slot=checkbox-group]:gap-3 [&>[data-slot=field-group]]:gap-4",
-        className
+        className,
       )}
       {...props}
     >

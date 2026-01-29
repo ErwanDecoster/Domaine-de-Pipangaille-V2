@@ -1,13 +1,13 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 interface Props extends HTMLAttributes<"div"> {}
 
-const { class: className, ...props } = Astro.props
+const { class: className, ...props } = Astro.props;
 
-const slot = await Astro.slots.render("default")
+const slot = await Astro.slots.render("default");
 ---
 
 {
@@ -16,7 +16,7 @@ const slot = await Astro.slots.render("default")
       data-slot="field-label"
       class={cn(
         "flex w-fit items-center gap-2 text-sm leading-snug font-medium group-data-[disabled=true]/field:opacity-50",
-        className
+        className,
       )}
       {...props}
     >

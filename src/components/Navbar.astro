@@ -12,7 +12,7 @@ const t = useTranslations(lang);
 
 <nav
   data-scroll-animated
-  class="fixed inset-x-0 z-20 px-20 h-28 flex justify-between items-center"
+  class="fixed inset-x-0 z-20 flex h-28 items-center justify-between px-20"
 >
   <Button
     href={getLocalizedUrl("home", lang)}
@@ -23,7 +23,7 @@ const t = useTranslations(lang);
     <Image
       src={Logo}
       alt="Domaine de Pipangaille"
-      class="bg-transparent w-28"
+      class="w-28 bg-transparent"
     />
   </Button>
   <ul class="flex">
@@ -53,14 +53,14 @@ const t = useTranslations(lang);
       >
     </li>
   </ul>
-  <ul class="flex gap-4 items-center">
+  <ul class="flex items-center gap-4">
     <li>
       <LanguageSwitcher class="w-full max-w-xs" />
     </li>
     <li>
       <Button
         variant="outline"
-        class="bg-transparent hover:bg-background"
+        class="hover:bg-background bg-transparent"
         href={getLocalizedUrl("contact", lang)}
       >
         {t("nav.contact")}

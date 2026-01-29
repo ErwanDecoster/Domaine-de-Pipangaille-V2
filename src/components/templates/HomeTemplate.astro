@@ -51,7 +51,7 @@ const featuredSurroundings = featuredSlugs
 ---
 
 <Layout>
-  <div data-scroll-animated class="h-28 w-screen sticky top-0 z-10 bg-muted">
+  <div data-scroll-animated class="bg-muted sticky top-0 z-10 h-28 w-screen">
   </div>
   <Header
     title={t("home.header.title")}
@@ -63,7 +63,7 @@ const featuredSurroundings = featuredSlugs
   />
   <div
     data-scroll-animated
-    class="h-28 -mb-20 w-screen sticky top-0 z-10 bg-background"
+    class="bg-background sticky top-0 z-10 -mb-20 h-28 w-screen"
   >
   </div>
   <MediaContent
@@ -84,8 +84,8 @@ const featuredSurroundings = featuredSlugs
     buttonLink={getLocalizedUrl("counter", lang)}
   />
   <ReviewList title={t("home.reviews.title")} reviews={reviews[lang]} />
-  <section class="grid grid-cols-6 gap-8 md:gap-10 px-20 mt-48">
-    <h2 class="mb-4 col-span-6">{t("home.surroundings.title")}</h2>
+  <section class="mt-48 grid grid-cols-6 gap-8 px-20 md:gap-10">
+    <h2 class="col-span-6 mb-4">{t("home.surroundings.title")}</h2>
     {
       featuredSurroundings.map((surrounding, index) => {
         const card = formatCard(surrounding);
@@ -101,9 +101,9 @@ const featuredSurroundings = featuredSlugs
       {t("home.surroundings.button")}
     </Button>
   </section>
-  <section class="px-20 my-48">
-    <div class="mx-auto bg-muted px-6 py-24 max-w-5xl rounded-3xl">
-      <div class="w-fit mx-auto space-y-10">
+  <section class="my-48 px-20">
+    <div class="bg-muted mx-auto max-w-5xl rounded-3xl px-6 py-24">
+      <div class="mx-auto w-fit space-y-10">
         <h3>{t("home.booking.title")}</h3>
         <div class="flex justify-between">
           <Button href={getLocalizedUrl("book", lang)}>

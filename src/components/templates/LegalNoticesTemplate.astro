@@ -36,10 +36,10 @@ const domainUrl = "https://hostinger.fr";
 ---
 
 <Layout>
-  <main class="max-w-7xl w-full mx-auto px-4 grid gap-8 py-16">
+  <main class="mx-auto grid w-full max-w-7xl gap-8 px-4 py-16">
     <div
       data-scroll-animated
-      class="h-28 w-screen sticky top-0 z-10 bg-background"
+      class="bg-background sticky top-0 z-10 h-28 w-screen"
     >
     </div>
     <h1>{t("legalNotices.title")}</h1>
@@ -50,7 +50,7 @@ const domainUrl = "https://hostinger.fr";
         <div class="grid gap-2 text-lg">
           <p><strong>{editorCompany}</strong></p>
           <div
-            class="flex items-center gap-2 text-base/[160%] text-muted-foreground text-pretty"
+            class="text-muted-foreground flex items-center gap-2 text-base/[160%] text-pretty"
           >
             <strong>{t("legalNotices.editor.addressLabel")}:</strong>
             <MapProviderDialog
@@ -220,7 +220,7 @@ const domainUrl = "https://hostinger.fr";
           <p>{t("legalNotices.personalData.text")}</p>
           <p>{t("legalNotices.personalData.retention")}</p>
           <div
-            class="flex flex-wrap items-center gap-2 text-base/[160%] text-muted-foreground text-pretty"
+            class="text-muted-foreground flex flex-wrap items-center gap-2 text-base/[160%] text-pretty"
           >
             {t("legalNotices.personalData.requestEmailPrefix")}
             <Button
@@ -246,7 +246,7 @@ const domainUrl = "https://hostinger.fr";
         <h2>{t("legalNotices.liability.title")}</h2>
         <div class="grid gap-2 text-lg">
           <p>{t("legalNotices.liability.text")}</p>
-          <ul class="list-disc list-inside space-y-2">
+          <ul class="list-inside list-disc space-y-2">
             <li>{t("legalNotices.liability.inaccuracy")}</li>
             <li>{t("legalNotices.liability.unauthorized")}</li>
             <li>{t("legalNotices.liability.interruption")}</li>

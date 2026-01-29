@@ -6,14 +6,24 @@
 import { readdir, rename, stat } from "node:fs/promises";
 import path from "node:path";
 
-const allowedExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg"]);
+const allowedExtensions = new Set([
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".webp",
+  ".avif",
+  ".gif",
+  ".svg",
+]);
 
 const args = process.argv.slice(2);
 const targetDir = args[0];
 const dryRun = args.includes("--dry-run");
 
 if (!targetDir) {
-  console.error("Usage: tsx scripts/normalize-image-filenames.ts <directory> [--dry-run]");
+  console.error(
+    "Usage: tsx scripts/normalize-image-filenames.ts <directory> [--dry-run]",
+  );
   process.exit(1);
 }
 
@@ -27,7 +37,11 @@ function slugify(basename: string): string {
     .replace(/^-|-$/g, "");
 }
 
-async function ensureUniqueName(dir: string, desired: string, extension: string): Promise<string> {
+async function ensureUniqueName(
+  dir: string,
+  desired: string,
+  extension: string,
+): Promise<string> {
   let candidate = desired || "image";
   let counter = 1;
   while (true) {
@@ -55,7 +69,11 @@ async function ensureUniqueName(dir: string, desired: string, extension: string)
     const base = path.basename(oldName, path.extname(oldName));
     const slug = slugify(base);
     const normalized = slug || "image";
-    const targetName = await ensureUniqueName(absoluteDir, normalized, extension);
+    const targetName = await ensureUniqueName(
+      absoluteDir,
+      normalized,
+      extension,
+    );
 
     if (oldName === targetName) {
       console.log(`Skipping ${oldName} (already normalized)`);
