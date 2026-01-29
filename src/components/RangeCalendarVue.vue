@@ -86,13 +86,28 @@ const weekStartsOn = computed(() => {
 });
 
 // Function to check if a date is disabled
+// Dates unavailable to arrival are only disabled when selecting the start date
+// Once a start date is selected, all dates can be selected as end date
 const isDateUnavailable = (date: any) => {
+  // If no unavailable dates or the Set is empty, no dates are disabled
   if (!unavailableDates.value || unavailableDates.value.size === 0) {
     return false;
   }
+
   const dateStr = date.toString();
-  const isUnavailable = unavailableDates.value.has(dateStr);
-  return isUnavailable;
+  const isDateUnavailableToArrival = unavailableDates.value.has(dateStr);
+
+  // If we haven't selected a start date yet, disable unavailable dates
+  // (so user can only click on available arrival dates)
+  if (dateRange.value.start) {
+    return isDateUnavailableToArrival;
+  }
+
+  // If start date is selected but not end date, or we're still in selection mode:
+  // Don't disable any dates for the end date selection
+  // The RangeCalendar component will handle the logic of preventing dates
+  // before the start date
+  return false;
 };
 
 const emit = defineEmits<{
