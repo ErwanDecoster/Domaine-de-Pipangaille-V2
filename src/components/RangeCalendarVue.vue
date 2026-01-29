@@ -10,46 +10,36 @@ import {
 
 const props = defineProps<{
   lang?: string;
-  unavailableDates?: Set<string>;
 }>();
 
 const start = today(getLocalTimeZone());
 const end = start.add({ days: 2 });
 
-const dateRange = ref({
-  start,
-  end,
-}) as Ref<DateRange>;
+const dateRange = ref({ start, end }) as Ref<DateRange>;
+const unavailableDates = ref<Set<string>>(new Set());
+const isSelectingEndDate = ref(false);
 
-const unavailableDates = ref<Set<string>>(props.unavailableDates || new Set());
-
-// Load dates from localStorage on mount and fetch availability
 onMounted(async () => {
-  // Load dates from localStorage
   const stored = localStorage.getItem("booking_date_range");
   if (stored) {
     try {
       const parsed = JSON.parse(stored);
-      // Convert ISO strings back to CalendarDate objects
       if (parsed.start && parsed.end) {
         dateRange.value = {
           start: parseDate(parsed.start),
           end: parseDate(parsed.end),
         };
-        // Update the display immediately
         updateDateDisplay();
       }
     } catch (e) {
-      // If localStorage data is corrupted, use defaults
       console.error("Failed to parse stored date range:", e);
     }
   }
 
-  // Fetch availability data from Amenitiz
   try {
-    const today_date = today(getLocalTimeZone());
-    const startDate = today_date.toString();
-    const endDate = today_date.add({ days: 90 }).toString();
+    const todayDate = today(getLocalTimeZone());
+    const startDate = todayDate.toString();
+    const endDate = todayDate.add({ days: 90 }).toString();
 
     const availabilityData = await fetchAmenitizAvailability(
       startDate,
@@ -67,7 +57,6 @@ onMounted(async () => {
   }
 });
 
-// Map lang codes to locale strings for the calendar
 const locale = computed(() => {
   const localeMap: Record<string, string> = {
     fr: "fr-FR",
@@ -80,19 +69,29 @@ const locale = computed(() => {
   return localeMap[props.lang || "fr"] || "fr-FR";
 });
 
-// First day of week: 0 = Sunday (en), 1 = Monday (fr, de, es, it, nl)
-const weekStartsOn = computed(() => {
-  return props.lang === "en" ? 0 : 1;
-});
+const weekStartsOn = computed(() => (props.lang === "en" ? 0 : 1));
 
-// Function to check if a date is disabled
 const isDateUnavailable = (date: any) => {
-  if (!unavailableDates.value || unavailableDates.value.size === 0) {
+  if (!unavailableDates.value.size) return false;
+
+  const dateStr = date.toString();
+  const isDateUnavailableToArrival = unavailableDates.value.has(dateStr);
+
+  if (isSelectingEndDate.value && dateRange.value.start) {
+    const startDateStr = dateRange.value.start.toString();
+    const sortedUnavailableDates = Array.from(unavailableDates.value).sort();
+    const nextUnavailableDate = sortedUnavailableDates.find(
+      (unavailableDate) => unavailableDate > startDateStr,
+    );
+
+    if (nextUnavailableDate) {
+      return dateStr > nextUnavailableDate;
+    }
+
     return false;
   }
-  const dateStr = date.toString();
-  const isUnavailable = unavailableDates.value.has(dateStr);
-  return isUnavailable;
+
+  return isDateUnavailableToArrival;
 };
 
 const emit = defineEmits<{
@@ -100,7 +99,6 @@ const emit = defineEmits<{
 }>();
 
 const updateDateDisplay = () => {
-  // Update the date button with the selected dates
   const dateButton = document.getElementById("date-button");
   if (dateButton) {
     const startDate = dateRange.value.start.toString();
@@ -109,7 +107,6 @@ const updateDateDisplay = () => {
     dateButton.dataset.startDate = startDate;
     dateButton.dataset.endDate = endDate;
 
-    // Format the display text (e.g., "12 Jan - 14 Jan")
     const formatDate = (date: any) => {
       const options = { month: "short", day: "numeric" } as const;
       return date
@@ -128,16 +125,23 @@ const updateDateDisplay = () => {
 const handleChange = () => {
   emit("change", dateRange.value);
 
-  // Save to localStorage in ISO format
-  localStorage.setItem(
-    "booking_date_range",
-    JSON.stringify({
-      start: dateRange.value.start.toString(),
-      end: dateRange.value.end.toString(),
-    }),
-  );
+  if (dateRange.value.start && !dateRange.value.end) {
+    isSelectingEndDate.value = true;
+  } else if (dateRange.value.start && dateRange.value.end) {
+    isSelectingEndDate.value = false;
 
-  updateDateDisplay();
+    localStorage.setItem(
+      "booking_date_range",
+      JSON.stringify({
+        start: dateRange.value.start.toString(),
+        end: dateRange.value.end.toString(),
+      }),
+    );
+
+    updateDateDisplay();
+  } else {
+    isSelectingEndDate.value = false;
+  }
 };
 </script>
 
