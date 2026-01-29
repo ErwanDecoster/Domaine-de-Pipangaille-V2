@@ -29,7 +29,9 @@ const forwardedProps = useForwardProps(delegatedProps);
         // Outside months
         'data-[outside-month]:text-muted-foreground [&[data-outside-month][data-selected]]:bg-accent/50 [&[data-outside-month][data-selected]]:text-muted-foreground data-[outside-month]:pointer-events-none data-[outside-month]:opacity-50 [&[data-outside-month][data-selected]]:opacity-30',
         // Disabled
-        'data-[disabled]:text-muted-foreground data-[disabled]:opacity-50',
+        'data-[unavailable]:text-muted-foreground data-[disabled]:opacity-50',
+        // Unavailable
+        'data-[unavailable]:text-muted-foreground data-[unavailable]:pointer-events-none data-[unavailable]:line-through data-[unavailable]:opacity-60',
         // Selection Start
         'data-[selection-start]:bg-primary data-[selection-start]:text-primary-foreground data-[selection-start]:hover:bg-primary data-[selection-start]:hover:text-primary-foreground data-[selection-start]:focus:bg-primary data-[selection-start]:focus:text-primary-foreground',
         // Selection End

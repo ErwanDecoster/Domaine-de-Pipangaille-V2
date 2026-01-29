@@ -3,9 +3,14 @@ import type { DateRange } from "reka-ui";
 import { ref, type Ref, computed, onMounted } from "vue";
 import { getLocalTimeZone, today, parseDate } from "@internationalized/date";
 import { RangeCalendar } from "@/components/ui/range-calendar";
+import {
+  fetchAmenitizAvailability,
+  buildUnavailableDatesMap,
+} from "@/lib/amenitiz";
 
 const props = defineProps<{
   lang?: string;
+  unavailableDates?: Set<string>;
 }>();
 
 const start = today(getLocalTimeZone());
@@ -16,8 +21,11 @@ const dateRange = ref({
   end,
 }) as Ref<DateRange>;
 
-// Load dates from localStorage on mount
-onMounted(() => {
+const unavailableDates = ref<Set<string>>(props.unavailableDates || new Set());
+
+// Load dates from localStorage on mount and fetch availability
+onMounted(async () => {
+  // Load dates from localStorage
   const stored = localStorage.getItem("booking_date_range");
   if (stored) {
     try {
@@ -35,6 +43,27 @@ onMounted(() => {
       // If localStorage data is corrupted, use defaults
       console.error("Failed to parse stored date range:", e);
     }
+  }
+
+  // Fetch availability data from Amenitiz
+  try {
+    const today_date = today(getLocalTimeZone());
+    const startDate = today_date.toString();
+    const endDate = today_date.add({ days: 90 }).toString();
+
+    const availabilityData = await fetchAmenitizAvailability(
+      startDate,
+      endDate,
+      props.lang || "fr",
+    );
+
+    if (availabilityData?.data?.availabilities) {
+      unavailableDates.value = buildUnavailableDatesMap(
+        availabilityData.data.availabilities,
+      );
+    }
+  } catch (error) {
+    console.error("Failed to fetch availability:", error);
   }
 });
 
@@ -55,6 +84,16 @@ const locale = computed(() => {
 const weekStartsOn = computed(() => {
   return props.lang === "en" ? 0 : 1;
 });
+
+// Function to check if a date is disabled
+const isDateUnavailable = (date: any) => {
+  if (!unavailableDates.value || unavailableDates.value.size === 0) {
+    return false;
+  }
+  const dateStr = date.toString();
+  const isUnavailable = unavailableDates.value.has(dateStr);
+  return isUnavailable;
+};
 
 const emit = defineEmits<{
   change: [value: DateRange];
@@ -109,6 +148,7 @@ const handleChange = () => {
     :min-value="today(getLocalTimeZone())"
     :locale="locale"
     :week-starts-on="weekStartsOn"
+    :is-date-unavailable="isDateUnavailable"
     class="rounded-md"
     @update:model-value="handleChange"
   />
