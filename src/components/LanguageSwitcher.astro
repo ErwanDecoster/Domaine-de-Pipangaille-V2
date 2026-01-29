@@ -16,10 +16,12 @@ interface Props extends HTMLAttributes<"select"> {}
 const { class: className, ...props } = Astro.props as Props;
 const lang = getCurrentLang(Astro.currentLocale);
 const currentPath = Astro.url.pathname;
+const queryString = Astro.url.search; // Preserve query parameters
 
 /**
  * Generates the translated URL for a given language
  * Detects the current route and translates it to the target language
+ * Preserves query parameters
  */
 const getLangHref = (targetLocale: Locale) => {
   const cleanPath =
@@ -29,38 +31,56 @@ const getLangHref = (targetLocale: Locale) => {
         .replace(/^\/(en|de|es|it|nl)$/, "/") || "/"
     ).replace(/\/$/, "") || "/";
 
+  let translatedUrl = "";
+
   if (cleanPath === "/" || cleanPath === "") {
-    return targetLocale === "fr" ? "/" : `/${targetLocale}/`;
-  }
+    translatedUrl = targetLocale === "fr" ? "/" : `/${targetLocale}/`;
+  } else {
+    const routeKey = getRouteKey(cleanPath);
 
-  const routeKey = getRouteKey(cleanPath);
+    if (routeKey) {
+      translatedUrl = getLocalizedUrl(routeKey, targetLocale);
+    } else {
+      const segments = cleanPath.split("/").filter(Boolean);
 
-  if (routeKey) {
-    return getLocalizedUrl(routeKey, targetLocale);
-  }
+      if (segments.length >= 2) {
+        const basePath = "/" + segments[0];
+        const slug = segments.slice(1).join("/");
 
-  const segments = cleanPath.split("/").filter(Boolean);
+        const dynamicRouteKey = Object.entries(routes).find(
+          ([, translations]) => {
+            return (
+              translations.fr === basePath ||
+              Object.values(translations).includes(basePath)
+            );
+          },
+        )?.[0];
 
-  if (segments.length >= 2) {
-    const basePath = "/" + segments[0];
-    const slug = segments.slice(1).join("/");
-
-    const dynamicRouteKey = Object.entries(routes).find(([, translations]) => {
-      return (
-        translations.fr === basePath ||
-        Object.values(translations).includes(basePath)
-      );
-    })?.[0];
-
-    if (
-      dynamicRouteKey &&
-      (dynamicRouteKey === "accommodation" || dynamicRouteKey === "surrounding")
-    ) {
-      return getLocalizedUrl(dynamicRouteKey as any, targetLocale, slug);
+        if (
+          dynamicRouteKey &&
+          (dynamicRouteKey === "accommodation" ||
+            dynamicRouteKey === "surrounding")
+        ) {
+          translatedUrl = getLocalizedUrl(
+            dynamicRouteKey as any,
+            targetLocale,
+            slug,
+          );
+        } else {
+          // Keep current path if route not found, just change language prefix
+          translatedUrl =
+            targetLocale === "fr" ? cleanPath : `/${targetLocale}${cleanPath}`;
+        }
+      } else {
+        // Keep current path if route not found, just change language prefix
+        translatedUrl =
+          targetLocale === "fr" ? cleanPath : `/${targetLocale}${cleanPath}`;
+      }
     }
   }
 
-  return targetLocale === "fr" ? "/" : `/${targetLocale}/`;
+  // Append query string if present
+  return translatedUrl + queryString;
 };
 ---
 
