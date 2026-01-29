@@ -15,9 +15,11 @@ function getLangFromRequest(context: any): Language {
 }
 
 function getTranslation(lang: Language, key: string): string {
-  return (ui[lang][key as keyof (typeof ui)[Language]] ||
+  return (
+    ui[lang][key as keyof (typeof ui)[Language]] ||
     ui[defaultLang][key as keyof (typeof ui)[Language]] ||
-    key) as string;
+    key
+  );
 }
 
 export const contact = {
@@ -31,7 +33,7 @@ export const contact = {
       phone: z.string().optional(),
     }),
     handler: async ({ name, email, object, message, phone }, context) => {
-      const lang = getLangFromRequest(context) as Language;
+      const lang = getLangFromRequest(context);
 
       // Validate with translated messages
       const validationSchema = z.object({
