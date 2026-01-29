@@ -19,19 +19,12 @@
 - [ ] Add menu on the-counter page
 - [ ] Update the-place SpotlightGallery
 
-## UI/UX
-
-- [ ] Add book overlay
-
-## book
-
-- [ ] add book page
-
 ## Tests Fonctionnels
 
 ### cron ci
+
 - [ ] ensure iframe are loading
-- [ ] ensure amenitiz API is working 
+- [ ] ensure amenitiz API is working
 
 ### push ci
 

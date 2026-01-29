@@ -32,7 +32,9 @@ const handleChange = () => {
     // Format the display text (e.g., "12 Jan - 14 Jan")
     const formatDate = (date: any) => {
       const options = { month: "short", day: "numeric" } as const;
-      return date.toDate(getLocalTimeZone()).toLocaleDateString("en-US", options);
+      return date
+        .toDate(getLocalTimeZone())
+        .toLocaleDateString("en-US", options);
     };
 
     const displayText = `${formatDate(dateRange.value.start)} - ${formatDate(dateRange.value.end)}`;
