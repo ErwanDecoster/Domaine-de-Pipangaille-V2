@@ -26,3 +26,13 @@
 ## book
 
 - [ ] add book page
+
+## Tests Fonctionnels
+
+### cron ci
+- [ ] ensure iframe are loading
+- [ ] ensure amenitiz API is working 
+
+### push ci
+
+- [ ] ensure all page are available in all language
