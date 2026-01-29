@@ -14,5 +14,5 @@
     "viafluvia",
     "viarhona"
   ],
-  "cSpell.ignorePaths": ["src/i18n/locales/**"]
+  "cSpell.ignorePaths": ["src/i18n/**/**", "src/constants/**", "TODO.md"]
 }
