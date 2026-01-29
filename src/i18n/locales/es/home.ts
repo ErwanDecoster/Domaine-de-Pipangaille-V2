@@ -17,4 +17,7 @@ export const home = {
   "home.booking.title": "¿Listos para hacer las maletas?",
   "home.booking.button": "Reservar una habitación",
   "home.booking.secondaryButton": "Ver alojamientos",
+  "home.booking.selectDates": "Seleccionar fechas",
+  "home.booking.adults": "Adultos",
+  "home.booking.children": "Niños",
 };

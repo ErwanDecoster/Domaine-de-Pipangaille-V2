@@ -1,0 +1,45 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ui } from "@/i18n/ui";
+
+const { lang } = Astro.props as { lang: keyof typeof ui };
+
+// Get query parameters from URL
+const url = new URL(Astro.request.url);
+const startDate = url.searchParams.get("start_date") || "";
+const endDate = url.searchParams.get("end_date") || "";
+const adults = url.searchParams.get("adults") || "1";
+const children = url.searchParams.get("children") || "0";
+
+// Map language codes to Amenitiz language codes
+const langMap: Record<string, string> = {
+  fr: "fr",
+  en: "en",
+  de: "de",
+  es: "es",
+  it: "it",
+  nl: "nl",
+};
+
+const amenitizLang = langMap[lang] || "fr";
+
+// Build the Amenitiz booking URL
+const bookingUrl = new URL(
+  `https://domaine-de-pipangaille.amenitiz.io/${amenitizLang}/booking/room`
+);
+bookingUrl.searchParams.set("start_date", startDate);
+bookingUrl.searchParams.set("end_date", endDate);
+bookingUrl.searchParams.set("adults", adults);
+bookingUrl.searchParams.set("children", children);
+---
+
+<Layout title={`Booking - Domaine de Pipangaille`} lang={lang} reduce={true} reducedNavHeight="h-18" navBackground="bg-background">
+  <main class="flex min-h-screen items-center justify-center pt-18">
+    <iframe
+      src={bookingUrl.toString()}
+      title="Amenitiz Booking"
+      class="h-screen w-full"
+      frameborder="0"
+    ></iframe>
+  </main>
+</Layout>

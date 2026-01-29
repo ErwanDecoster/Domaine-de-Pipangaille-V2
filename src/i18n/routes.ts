@@ -55,7 +55,7 @@ export const routes = {
     it: "/contact",
     nl: "/contact",
   },
-  book: {
+  booking: {
     fr: "/reservation",
     en: "/booking",
     de: "/buchung",

@@ -12,6 +12,10 @@ type Props = {
   title?: string;
   description?: string;
   ogImage?: string;
+  reduce?: boolean;
+  navHeight?: string;
+  reducedNavHeight?: string;
+  navBackground?: string;
 };
 
 const {
@@ -19,6 +23,10 @@ const {
   title,
   description,
   ogImage = "/og-image.png",
+  reduce = false,
+  navHeight,
+  reducedNavHeight,
+  navBackground,
 } = Astro.props as Props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -69,11 +77,16 @@ const siteUrl = "https://domaine-de-pipangaille.fr";
     <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body class={bodyClass}>
-    <Navbar />
+    <Navbar
+      reduce={reduce}
+      navHeight={navHeight}
+      reducedNavHeight={reducedNavHeight}
+      navBackground={navBackground}
+    />
     <main>
       <slot />
     </main>
-    <Footer />
+    {reduce ? null : <Footer />}
   </body>
 </html>
 

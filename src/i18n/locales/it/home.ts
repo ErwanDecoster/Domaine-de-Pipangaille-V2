@@ -17,4 +17,7 @@ export const home = {
   "home.booking.title": "Pronti a fare le valigie?",
   "home.booking.button": "Prenota una camera",
   "home.booking.secondaryButton": "Vedi alloggi",
+  "home.booking.selectDates": "Seleziona date",
+  "home.booking.adults": "Adulti",
+  "home.booking.children": "Bambini",
 };

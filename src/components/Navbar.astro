@@ -6,13 +6,28 @@ import { useTranslations, getCurrentLang, getLocalizedUrl } from "@/lib/i18n";
 import { Image } from "astro:assets";
 import { languages } from "@/i18n/ui";
 
+type Props = {
+  reduce?: boolean;
+  navHeight?: string;
+  reducedNavHeight?: string;
+  navBackground?: string;
+};
+
+const {
+  reduce = false,
+  navHeight = "h-28",
+  reducedNavHeight,
+  navBackground = "bg-transparent",
+} = Astro.props as Props;
+
 const lang = getCurrentLang(Astro.currentLocale) as keyof typeof languages;
 const t = useTranslations(lang);
+const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
 ---
 
 <nav
   data-scroll-animated
-  class="fixed inset-x-0 z-20 flex h-28 items-center justify-between px-20"
+  class={`fixed inset-x-0 z-20 flex ${navbarHeightClass} ${navBackground} items-center justify-between px-20`}
 >
   <Button
     href={getLocalizedUrl("home", lang)}
@@ -67,7 +82,7 @@ const t = useTranslations(lang);
       </Button>
     </li>
     <li>
-      <Button href={getLocalizedUrl("book", lang)}>{t("nav.book")}</Button>
+      <Button href={getLocalizedUrl("booking", lang)}>{t("nav.book")}</Button>
     </li>
   </ul>
 </nav>
