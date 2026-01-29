@@ -9,7 +9,6 @@ const { lang } = Astro.props as {
 };
 
 const t = useTranslations(lang);
-const homeUrl = getLocalizedUrl("home", lang);
 ---
 
 <Layout>
@@ -24,7 +23,7 @@ const homeUrl = getLocalizedUrl("home", lang);
     <h1>{t("notfound.title")}</h1>
     <div class="mt-12 flex flex-col gap-4">
       {t("notfound.message")}
-      <Button class="ml-auto" href={homeUrl}>
+      <Button class="ml-auto" href={getLocalizedUrl("home", lang)}>
         {t("notfound.button")}
       </Button>
     </div>
