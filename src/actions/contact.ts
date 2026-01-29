@@ -120,7 +120,7 @@ export const contact = {
         }
 
         return { success: true, data };
-      } catch (err) {
+      } catch {
         throw new ActionError({
           code: "INTERNAL_SERVER_ERROR",
           message: getTranslation(lang, "contact.genericError"),

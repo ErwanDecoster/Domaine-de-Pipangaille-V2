@@ -27,6 +27,11 @@ export default [
     languageOptions: {
       parser: tsParser,
       sourceType: 'module',
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        URL: 'readonly',
+      },
     },
   },
 ]

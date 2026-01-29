@@ -10,8 +10,6 @@ type Props = VariantProps<typeof variants> &
   HTMLAttributes<"a"> &
   HTMLAttributes<"label"> & {
     as?: "button" | "a" | "label";
-    text?: string;
-    html?: string;
     external?: boolean;
   };
 
@@ -51,8 +49,6 @@ const {
   variant = "default",
   size,
   href,
-  text,
-  html,
   external,
   target,
   ...props

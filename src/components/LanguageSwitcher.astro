@@ -45,14 +45,12 @@ const getLangHref = (targetLocale: Locale) => {
     const basePath = "/" + segments[0];
     const slug = segments.slice(1).join("/");
 
-    const dynamicRouteKey = Object.entries(routes).find(
-      ([key, translations]) => {
-        return (
-          translations.fr === basePath ||
-          Object.values(translations).includes(basePath)
-        );
-      },
-    )?.[0];
+    const dynamicRouteKey = Object.entries(routes).find(([, translations]) => {
+      return (
+        translations.fr === basePath ||
+        Object.values(translations).includes(basePath)
+      );
+    })?.[0];
 
     if (
       dynamicRouteKey &&

@@ -16,7 +16,7 @@ const serviceName = (() => {
     return parsed.hostname === "placeholder.local"
       ? t("iframeConsent.serviceNameFallback")
       : parsed.hostname;
-  } catch (fallbackError) {
+  } catch {
     return t("iframeConsent.serviceNameFallback");
   }
 })();

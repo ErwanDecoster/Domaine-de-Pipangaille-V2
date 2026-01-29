@@ -158,16 +158,6 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
 </Layout>
 
 <script>
-  declare global {
-    interface Window {
-      surroundings: {
-        handleFilterClick: (e: Event) => void;
-        handleActivityPageClick: (e: Event) => void;
-        handleRestaurantPageClick: (e: Event) => void;
-      };
-    }
-  }
-
   const ITEMS_PER_PAGE = 6;
   const activitiesCards = Array.from(
     document.querySelectorAll<HTMLElement>("[data-kind='activity']"),

@@ -1,3 +1,4 @@
+import type { ImageMetadata } from "astro";
 import {
   Baby,
   Bed,
