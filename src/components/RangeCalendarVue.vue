@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { DateRange } from "reka-ui";
-import { ref, type Ref, computed } from "vue";
-import { getLocalTimeZone, today } from "@internationalized/date";
+import { ref, type Ref, computed, onMounted } from "vue";
+import { getLocalTimeZone, today, parseDate } from "@internationalized/date";
 import { RangeCalendar } from "@/components/ui/range-calendar";
 
 const props = defineProps<{
@@ -15,6 +15,28 @@ const dateRange = ref({
   start,
   end,
 }) as Ref<DateRange>;
+
+// Load dates from localStorage on mount
+onMounted(() => {
+  const stored = localStorage.getItem("booking_date_range");
+  if (stored) {
+    try {
+      const parsed = JSON.parse(stored);
+      // Convert ISO strings back to CalendarDate objects
+      if (parsed.start && parsed.end) {
+        dateRange.value = {
+          start: parseDate(parsed.start),
+          end: parseDate(parsed.end),
+        };
+        // Update the display immediately
+        updateDateDisplay();
+      }
+    } catch (e) {
+      // If localStorage data is corrupted, use defaults
+      console.error("Failed to parse stored date range:", e);
+    }
+  }
+});
 
 // Map lang codes to locale strings for the calendar
 const locale = computed(() => {
@@ -38,9 +60,7 @@ const emit = defineEmits<{
   change: [value: DateRange];
 }>();
 
-const handleChange = () => {
-  emit("change", dateRange.value);
-
+const updateDateDisplay = () => {
   // Update the date button with the selected dates
   const dateButton = document.getElementById("date-button");
   if (dateButton) {
@@ -64,6 +84,21 @@ const handleChange = () => {
       dateDisplay.textContent = displayText;
     }
   }
+};
+
+const handleChange = () => {
+  emit("change", dateRange.value);
+
+  // Save to localStorage in ISO format
+  localStorage.setItem(
+    "booking_date_range",
+    JSON.stringify({
+      start: dateRange.value.start.toString(),
+      end: dateRange.value.end.toString(),
+    }),
+  );
+
+  updateDateDisplay();
 };
 </script>
 
