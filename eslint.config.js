@@ -1,37 +1,36 @@
-import js from '@eslint/js'
-import astro from 'eslint-plugin-astro'
-import astroParser from 'astro-eslint-parser'
-import tsParser from '@typescript-eslint/parser'
+import js from "@eslint/js";
+import astro from "eslint-plugin-astro";
+import astroParser from "astro-eslint-parser";
+import tsParser from "@typescript-eslint/parser";
 
 export default [
   {
-    ignores: ['dist/**', '.vercel/**', '.astro/**'],
+    ignores: ["dist/**", ".vercel/**", ".astro/**"],
   },
   js.configs.recommended,
   ...astro.configs.recommended,
   {
-    files: ['**/*.astro'],
+    files: ["**/*.astro"],
     languageOptions: {
       parser: astroParser,
       parserOptions: {
         parser: tsParser,
-        extraFileExtensions: ['.astro'],
-        sourceType: 'module',
+        extraFileExtensions: [".astro"],
+        sourceType: "module",
       },
     },
-    rules: {
-    },
+    rules: {},
   },
   {
-    files: ['**/*.{js,cjs,mjs,ts,tsx}'],
+    files: ["**/*.{js,cjs,mjs,ts,tsx}"],
     languageOptions: {
       parser: tsParser,
-      sourceType: 'module',
+      sourceType: "module",
       globals: {
-        console: 'readonly',
-        process: 'readonly',
-        URL: 'readonly',
+        console: "readonly",
+        process: "readonly",
+        URL: "readonly",
       },
     },
   },
-]
+];
