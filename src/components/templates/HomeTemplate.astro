@@ -106,8 +106,13 @@ const featuredSurroundings = featuredSlugs
       <div class="w-fit mx-auto space-y-10">
         <h3>{t("home.booking.title")}</h3>
         <div class="flex justify-between">
-          <Button href="/booking">{t("home.booking.button")}</Button>
-          <Button href="/booking" variant="secondary">
+          <Button href={getLocalizedUrl("book", lang)}>
+            {t("home.booking.button")}
+          </Button>
+          <Button
+            href={getLocalizedUrl("accommodations", lang)}
+            variant="secondary"
+          >
             {t("home.booking.secondaryButton")}
           </Button>
         </div>
