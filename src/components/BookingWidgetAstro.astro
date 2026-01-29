@@ -98,7 +98,7 @@ const bookingPath = getLocalizedUrl("booking", lang);
         <label class="text-sm font-medium">{t("home.booking.children")}</label>
         <NativeSelect class="w-20" id="children-select">
           {
-            Array.from({ length: 11 }, (_, i) => i).map((n) => (
+            Array.from({ length: 6 }, (_, i) => i).map((n) => (
               <NativeSelectOption value={n.toString()} selected={n === 0}>
                 {n}
               </NativeSelectOption>
