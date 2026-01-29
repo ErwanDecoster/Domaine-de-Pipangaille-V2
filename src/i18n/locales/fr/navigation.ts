@@ -1,0 +1,16 @@
+export const navigation = {
+  "nav.home": "Accueil",
+  "nav.place": "Le lieu",
+  "nav.accommodations": "Les hébergements",
+  "nav.counter": "Le comptoir",
+  "nav.surroundings": "Les alentours",
+  "nav.contact": "Contact",
+  "nav.book": "Réserver",
+  "footer.usefulLinks": "Liens utiles",
+  "footer.knowUsBetter": "Mieux nous connaitre",
+  "footer.moreInfo": "Plus d’informations",
+  "footer.contactUs": "Nous contacter",
+  "footer.contactPage": "page “nous contacter”",
+  "footer.legalMentions": "Mentions légales",
+  "footer.salesConditions": "Conditions générales de vente"
+};

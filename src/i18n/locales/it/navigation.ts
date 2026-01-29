@@ -1,0 +1,16 @@
+export const navigation = {
+  "nav.home": "Home",
+  "nav.place": "Il Luogo",
+  "nav.accommodations": "Alloggi",
+  "nav.counter": "Il Bancone",
+  "nav.surroundings": "Dintorni",
+  "nav.contact": "Contatti",
+  "nav.book": "Prenota",
+  "footer.usefulLinks": "Link utili",
+  "footer.knowUsBetter": "Conoscici meglio",
+  "footer.moreInfo": "Maggiori informazioni",
+  "footer.contactUs": "Contattaci",
+  "footer.contactPage": "pagina “contattaci”",
+  "footer.legalMentions": "Note legali",
+  "footer.salesConditions": "Condizioni generali di vendita"
+};
