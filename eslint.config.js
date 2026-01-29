@@ -10,7 +10,7 @@ export default [
   js.configs.recommended,
   ...astro.configs.recommended,
   {
-    files: ['**/*.astro', '**/*.js', '**/*.ts'],
+    files: ['**/*.astro'],
     languageOptions: {
       parser: astroParser,
       parserOptions: {
@@ -20,6 +20,13 @@ export default [
       },
     },
     rules: {
+    },
+  },
+  {
+    files: ['**/*.{js,cjs,mjs,ts,tsx}'],
+    languageOptions: {
+      parser: tsParser,
+      sourceType: 'module',
     },
   },
 ]
