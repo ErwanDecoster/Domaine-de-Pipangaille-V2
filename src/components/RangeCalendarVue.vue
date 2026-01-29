@@ -99,7 +99,7 @@ const isDateUnavailable = (date: any) => {
 
   // If we haven't selected a start date yet, disable unavailable dates
   // (so user can only click on available arrival dates)
-  if (dateRange.value.start) {
+  if (!dateRange.value.start) {
     return isDateUnavailableToArrival;
   }
 
