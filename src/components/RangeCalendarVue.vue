@@ -69,7 +69,7 @@ const locale = computed(() => {
   return localeMap[props.lang || "fr"] || "fr-FR";
 });
 
-const weekStartsOn = computed(() => props.lang === "en" ? 0 : 1);
+const weekStartsOn = computed(() => (props.lang === "en" ? 0 : 1));
 
 const isDateUnavailable = (date: any) => {
   if (!unavailableDates.value.size) return false;
@@ -81,13 +81,13 @@ const isDateUnavailable = (date: any) => {
     const startDateStr = dateRange.value.start.toString();
     const sortedUnavailableDates = Array.from(unavailableDates.value).sort();
     const nextUnavailableDate = sortedUnavailableDates.find(
-      unavailableDate => unavailableDate > startDateStr
+      (unavailableDate) => unavailableDate > startDateStr,
     );
-    
+
     if (nextUnavailableDate) {
       return dateStr > nextUnavailableDate;
     }
-    
+
     return false;
   }
 
@@ -124,12 +124,12 @@ const updateDateDisplay = () => {
 
 const handleChange = () => {
   emit("change", dateRange.value);
-  
+
   if (dateRange.value.start && !dateRange.value.end) {
     isSelectingEndDate.value = true;
   } else if (dateRange.value.start && dateRange.value.end) {
     isSelectingEndDate.value = false;
-    
+
     localStorage.setItem(
       "booking_date_range",
       JSON.stringify({
@@ -137,7 +137,7 @@ const handleChange = () => {
         end: dateRange.value.end.toString(),
       }),
     );
-    
+
     updateDateDisplay();
   } else {
     isSelectingEndDate.value = false;
