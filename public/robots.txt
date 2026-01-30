@@ -1,10 +1,7 @@
 User-agent: *
 Disallow: /
 
-User-agent: Lighthouse
-Allow: /
-
-User-agent: Unlighthouse
+User-agent: Chrome-Lighthouse
 Allow: /
 
 Sitemap: https://domaine-de-pipangaille-v2.vercel.app/sitemap-index.xml
