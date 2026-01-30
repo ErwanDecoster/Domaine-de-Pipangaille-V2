@@ -4,6 +4,7 @@
 
 - [ ] Update robot.txt
 - [ ] Check all alt text
+- [ ] Add redirection for all old page to URL to new one
 
 ## Translations
 
@@ -17,6 +18,7 @@
 - [ ] Add more information about what to do on site
 - [ ] Add more information about the pool
 - [ ] Add menu on the-counter page
+- [ ] Add plants section with planmap link
 - [ ] Update the-place SpotlightGallery
 
 ## Tests Fonctionnels
