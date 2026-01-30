@@ -81,7 +81,7 @@ const bookingPath = getLocalizedUrl("booking", lang);
 
       <!-- Adults Selector -->
       <div class="flex items-center gap-2">
-        <label class="text-sm font-medium">{t("home.booking.adults")}</label>
+        <label for="adults-select" class="text-sm font-medium">{t("home.booking.adults")}</label>
         <NativeSelect class="w-20" id="adults-select">
           {
             Array.from({ length: 10 }, (_, i) => i + 1).map((n) => (
@@ -95,7 +95,7 @@ const bookingPath = getLocalizedUrl("booking", lang);
 
       <!-- Children Selector -->
       <div class="flex items-center gap-2">
-        <label class="text-sm font-medium">{t("home.booking.children")}</label>
+        <label for="children-select" class="text-sm font-medium">{t("home.booking.children")}</label>
         <NativeSelect class="w-20" id="children-select">
           {
             Array.from({ length: 6 }, (_, i) => i).map((n) => (
