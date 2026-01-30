@@ -11,7 +11,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://domaine-de-pipangaille.fr",
+  site: "https://domaine-de-pipangaille-v2.vercel.app",
   integrations: [
     vue(),
     sitemap({
