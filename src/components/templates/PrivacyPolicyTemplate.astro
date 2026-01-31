@@ -243,16 +243,15 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
         <div class="grid gap-2 text-lg">
           <p>{t("privacyPolicy.section12.text")}</p>
           <p>
-            <strong>{t("privacyPolicy.section12.authority")}</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={cnilUrl}
+              target="_blank"
+            >
+              {t("privacyPolicy.section12.authority")}
+            </Button>
           </p>
-          <Button
-            variant="link"
-            class="-mx-6 -my-4"
-            href={cnilUrl}
-            target="_blank"
-          >
-            {cnilUrl}
-          </Button>
         </div>
       </section>
 
