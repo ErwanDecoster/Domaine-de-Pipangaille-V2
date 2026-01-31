@@ -28,13 +28,11 @@ export const legalNotices = {
   "legalNotices.personalData.text":
     "The processing of personal data and the use of cookies on this website are described in detail in our",
   "legalNotices.personalData.privacyPolicyLink": "Privacy Policy",
-  "legalNotices.personalData.suffix":
-    ", accessible from the website footer.",
+  "legalNotices.personalData.suffix": ", accessible from the website footer.",
   "legalNotices.liability.title": "Liability",
   "legalNotices.liability.text":
     "SAS Domaine de Pipangaille makes every effort to provide reliable and up-to-date information. However, it cannot be held responsible for:",
-  "legalNotices.liability.inaccuracy":
-    "any errors, omissions or inaccuracies,",
+  "legalNotices.liability.inaccuracy": "any errors, omissions or inaccuracies,",
   "legalNotices.liability.unauthorized":
     "damages resulting from fraudulent intrusion by a third party,",
   "legalNotices.liability.interruption":

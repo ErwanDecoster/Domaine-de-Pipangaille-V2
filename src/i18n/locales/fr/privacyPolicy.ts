@@ -13,7 +13,8 @@ export const privacyPolicy = {
 
   // Section 2
   "privacyPolicy.section2.title": "2. Données personnelles collectées",
-  "privacyPolicy.section2.text": "Le site peut collecter les données personnelles suivantes :",
+  "privacyPolicy.section2.text":
+    "Le site peut collecter les données personnelles suivantes :",
   "privacyPolicy.section2.item1": "Nom et prénom",
   "privacyPolicy.section2.item2": "Adresse email",
   "privacyPolicy.section2.item3": "Numéro de téléphone",
@@ -96,7 +97,8 @@ export const privacyPolicy = {
   "privacyPolicy.section8.item3": "informations de paiement.",
   "privacyPolicy.section8.footer":
     "Le traitement de ces données est régi par la",
-  "privacyPolicy.section8.footerLink": "politique de confidentialité propre à Amenitiz",
+  "privacyPolicy.section8.footerLink":
+    "politique de confidentialité propre à Amenitiz",
   "privacyPolicy.section8.footerEnd":
     ", à laquelle l'utilisateur est invité à se référer avant toute réservation.",
 
@@ -146,4 +148,3 @@ export const privacyPolicy = {
   "privacyPolicy.section13.footer":
     "Les utilisateurs sont invités à la consulter régulièrement.",
 };
-

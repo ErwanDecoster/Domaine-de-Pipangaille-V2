@@ -7,7 +7,8 @@ export const legalNotices = {
   "legalNotices.editor.capitalLabel": "Capitale sociale",
   "legalNotices.editor.phoneLabel": "Telefono",
   "legalNotices.editor.emailLabel": "Email",
-  "legalNotices.editor.ceoLabel": "Amministratrice e Direttrice della Pubblicazione",
+  "legalNotices.editor.ceoLabel":
+    "Amministratrice e Direttrice della Pubblicazione",
   "legalNotices.editor.ceoValue": "Signora Catherine Lemoine",
   "legalNotices.design.title": "Design e sviluppo del sito",
   "legalNotices.design.phoneLabel": "Telefono",

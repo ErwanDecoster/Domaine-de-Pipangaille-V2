@@ -5,8 +5,10 @@ export const privacyPolicy = {
     "Diese Datenschutzerklärung soll die Nutzer der Website domaine-de-pipangaille.fr darüber informieren, wie ihre personenbezogenen Daten gemäß der Verordnung (EU) 2016/679, bekannt als Datenschutz-Grundverordnung (DSGVO), erfasst, verwendet und geschützt werden.",
 
   // Section 1
-  "privacyPolicy.section1.title": "1. Verantwortlicher für die Datenverarbeitung",
-  "privacyPolicy.section1.text": "Der Verantwortliche für die Datenverarbeitung ist:",
+  "privacyPolicy.section1.title":
+    "1. Verantwortlicher für die Datenverarbeitung",
+  "privacyPolicy.section1.text":
+    "Der Verantwortliche für die Datenverarbeitung ist:",
   "privacyPolicy.section1.emailLabel": "E-Mail",
   "privacyPolicy.section1.phoneLabel": "Telefon",
 
@@ -94,8 +96,7 @@ export const privacyPolicy = {
   "privacyPolicy.section8.item1": "Navigationsdaten,",
   "privacyPolicy.section8.item2": "Buchungsinformationen,",
   "privacyPolicy.section8.item3": "Zahlungsinformationen.",
-  "privacyPolicy.section8.footer":
-    "Die Verarbeitung dieser Daten unterliegt",
+  "privacyPolicy.section8.footer": "Die Verarbeitung dieser Daten unterliegt",
   "privacyPolicy.section8.footerLink": "der Datenschutzrichtlinie von Amenitiz",
   "privacyPolicy.section8.footerEnd":
     ", die Nutzer vor jeder Buchung konsultieren sollten.",
@@ -111,11 +112,12 @@ export const privacyPolicy = {
 
   // Section 10
   "privacyPolicy.section10.title": "10. Nutzerrechte",
-  "privacyPolicy.section10.text":
-    "Gemäß DSGVO haben Nutzer folgende Rechte:",
-  "privacyPolicy.section10.item1": "Recht auf Zugang zu ihren personenbezogenen Daten",
+  "privacyPolicy.section10.text": "Gemäß DSGVO haben Nutzer folgende Rechte:",
+  "privacyPolicy.section10.item1":
+    "Recht auf Zugang zu ihren personenbezogenen Daten",
   "privacyPolicy.section10.item2": "Recht auf Berichtigung",
-  "privacyPolicy.section10.item3": "Recht auf Löschung (Recht auf Vergessenwerden)",
+  "privacyPolicy.section10.item3":
+    "Recht auf Löschung (Recht auf Vergessenwerden)",
   "privacyPolicy.section10.item4": "Recht auf Einschränkung der Verarbeitung",
   "privacyPolicy.section10.item5": "Widerspruchsrecht gegen die Verarbeitung",
   "privacyPolicy.section10.item6": "Recht auf Datenübertragbarkeit",
@@ -135,8 +137,7 @@ export const privacyPolicy = {
   "privacyPolicy.section12.title": "12. Beschwerde",
   "privacyPolicy.section12.text":
     "Wenn Nutzer nach Kontaktaufnahme mit uns der Ansicht sind, dass ihre Rechte nicht respektiert werden, können sie eine Beschwerde bei der zuständigen Aufsichtsbehörde einreichen:",
-  "privacyPolicy.section12.authority":
-    "CNIL – Französische Datenschutzbehörde",
+  "privacyPolicy.section12.authority": "CNIL – Französische Datenschutzbehörde",
 
   // Section 13
   "privacyPolicy.section13.title": "13. Änderungen der Datenschutzerklärung",
@@ -145,4 +146,3 @@ export const privacyPolicy = {
   "privacyPolicy.section13.footer":
     "Nutzer werden gebeten, sie regelmäßig zu konsultieren.",
 };
-

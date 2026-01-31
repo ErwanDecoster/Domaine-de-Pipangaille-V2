@@ -39,8 +39,7 @@ export const privacyPolicy = {
 
   // Section 4
   "privacyPolicy.section4.title": "4. Legal Basis for Processing",
-  "privacyPolicy.section4.text":
-    "Personal data processing is based on:",
+  "privacyPolicy.section4.text": "Personal data processing is based on:",
   "privacyPolicy.section4.item1":
     "User consent (Article 6.1.a of GDPR), particularly when submitting forms or displaying external content",
   "privacyPolicy.section4.item2":
@@ -94,8 +93,7 @@ export const privacyPolicy = {
   "privacyPolicy.section8.item1": "browsing data,",
   "privacyPolicy.section8.item2": "booking information,",
   "privacyPolicy.section8.item3": "payment information.",
-  "privacyPolicy.section8.footer":
-    "Processing of this data is governed by",
+  "privacyPolicy.section8.footer": "Processing of this data is governed by",
   "privacyPolicy.section8.footerLink": "Amenitiz's privacy policy",
   "privacyPolicy.section8.footerEnd":
     ", which users are invited to consult before making any booking.",
@@ -145,4 +143,3 @@ export const privacyPolicy = {
   "privacyPolicy.section13.footer":
     "Users are invited to consult it regularly.",
 };
-
