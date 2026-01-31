@@ -81,7 +81,7 @@ const paragraphs = Array.isArray(text)
             galleryLayout === "double" || galleryLayout === "triple",
           "grid-cols-3": galleryLayout === "multi",
           "grid-rows-2": galleryLayout === "triple",
-          "col-span-4": ratio === "4-5",
+          "lg:col-span-4": ratio === "4-5",
         })}
       >
         {gallery.map(({ src, alt }, index) => (
@@ -117,7 +117,7 @@ const paragraphs = Array.isArray(text)
   <div
     class={cn("flex flex-col justify-center gap-8", {
       "col-span-2": !gallery.length && !iframeUrl,
-      "col-span-5": ratio === "4-5",
+      "lg:col-span-5": ratio === "4-5",
     })}
   >
     <h2>{title}</h2>

@@ -95,40 +95,40 @@ const otherRooms = roomsContent
         data-scroll-animated
         class="bg-background sticky top-0 z-10 h-28 w-screen"
       />
-      <div class="px-20 pt-24">
+      <div class="px-4 pt-24 sm:px-6 md:px-10 lg:px-20">
         <h1>{selectedRoomTitle}</h1>
         <p class="mt-12 max-w-4xl md:w-4/5">{selectedRoomLongDescription}</p>
       </div>
 
-      <div class="mt-12 grid grid-cols-4 gap-6 px-20">
+      <div class="mt-12 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 sm:gap-6 sm:px-6 md:px-10 lg:grid-cols-4 lg:px-20">
         <Image
-          class="col-span-2 row-span-2 h-full"
+          class="aspect-video sm:col-span-2 sm:row-span-2 sm:aspect-auto sm:h-full"
           src={galleryImages[0].src}
           alt={galleryImages[0].alt}
         />
         <Image
-          class="aspect-4/3"
+          class="aspect-video sm:aspect-4/3"
           src={galleryImages[1].src}
           alt={galleryImages[1].alt}
         />
         <Image
-          class="aspect-4/3"
+          class="aspect-video sm:aspect-4/3"
           src={galleryImages[2].src}
           alt={galleryImages[2].alt}
         />
         <Image
-          class="aspect-4/3"
+          class="aspect-video sm:aspect-4/3"
           src={galleryImages[3].src}
           alt={galleryImages[3].alt}
         />
         <Image
-          class="aspect-4/3"
+          class="aspect-video sm:aspect-4/3"
           src={galleryImages[4].src}
           alt={galleryImages[4].alt}
         />
       </div>
 
-      <section class="px-20 pt-48">
+      <section class="px-4 pt-48 sm:px-6 md:px-10 lg:px-20">
         <h2>{equipmentsTitle}</h2>
         <ul class="mt-12 grid w-full gap-1 sm:grid-cols-2 md:grid-cols-3 lg:w-4/5">
           {selectedRoomEquipments.map((equip) => (
@@ -150,17 +150,17 @@ const otherRooms = roomsContent
         ratio="4-5"
       />
 
-      <section class="px-20 pt-48">
+      <section class="px-4 pt-48 sm:px-6 md:px-10 lg:px-20">
         <h2>{exploreTitle}</h2>
         <p class="mt-8">{exploreText}</p>
-        <div class="mt-12 grid grid-cols-2 gap-6">
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
           <Image class="aspect-video" src={pool} alt="TODO" />
           <Image class="aspect-video" src={courtyardTerraceCorner} alt="TODO" />
         </div>
       </section>
 
-      <section class="mt-48 grid grid-cols-3 gap-8 px-20 md:gap-10">
-        <h2 class="col-span-3">{otherRoomsTitle}</h2>
+      <section class="mt-48 grid gap-8 px-4 sm:px-6 md:grid-cols-3 md:gap-10 md:px-10 lg:px-20">
+        <h2 class="md:col-span-3">{otherRoomsTitle}</h2>
         {otherRooms.map((room) => (
           <Card
             title={room.title}

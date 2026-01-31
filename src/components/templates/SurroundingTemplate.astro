@@ -148,8 +148,8 @@ const seeAllButtonLink =
         </div>
       </MediaContent>
 
-      <section class="mt-48 grid grid-cols-3 gap-8 px-20 md:gap-10">
-        <h2 class="col-span-3">{t(otherSurroundingsTitle)}</h2>
+      <section class="mt-48 grid gap-8 px-4 sm:px-6 md:grid-cols-3 md:gap-10 md:px-10 lg:px-20">
+        <h2 class="md:col-span-3">{t(otherSurroundingsTitle)}</h2>
         {otherSurroundings.slice(0, 3).map((surrounding) => (
           <Card
             key={surrounding.slug}
@@ -170,7 +170,7 @@ const seeAllButtonLink =
             buttonLink={getLocalizedUrl("surrounding", lang, surrounding.slug)}
           />
         ))}
-        <Button class="col-span-3 mx-auto" href={seeAllButtonLink}>
+        <Button class="mx-auto md:col-span-3" href={seeAllButtonLink}>
           {t(seeAllButtonText)}
         </Button>
       </section>
