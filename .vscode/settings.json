@@ -15,7 +15,8 @@
     "Quartier",
     "reka",
     "viafluvia",
-    "viarhona"
+    "viarhona",
+    "vueuse"
   ],
   "cSpell.ignorePaths": ["src/i18n/**/**", "src/constants/**", "TODO.md"]
 }
