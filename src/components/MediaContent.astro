@@ -62,17 +62,20 @@ const paragraphs = Array.isArray(text)
 ---
 
 <section
-  class={cn("relative grid md:gap-20 px-20 mt-48", {
-    "grid-cols-2": gallery.length > 0 || iframeUrl,
-    "grid-cols-1": gallery.length === 0 && !iframeUrl,
-    "grid-cols-9": ratio === "4-5",
-  })}
+  class={cn(
+    "relative grid gap-10 md:gap-20 px-4 sm:px-6 md:px-10 lg:px-20 mt-48",
+    {
+      "lg:grid-cols-2": gallery.length > 0 || iframeUrl,
+      "lg:grid-cols-1": gallery.length === 0 && !iframeUrl,
+      "lg:grid-cols-9": ratio === "4-5",
+    },
+  )}
 >
   {
     gallery.length > 0 && (
       <div
         class={cn("grid gap-4", {
-          "order-last": direction === "left",
+          "lg:order-last": direction === "left",
           "grid-cols-1": galleryLayout === "single",
           "grid-cols-2":
             galleryLayout === "double" || galleryLayout === "triple",
@@ -84,12 +87,12 @@ const paragraphs = Array.isArray(text)
         {gallery.map(({ src, alt }, index) => (
           <Image
             class={cn("w-full rounded-md object-cover", {
-              "aspect-4/3": galleryLayout !== "triple",
+              "aspect-video lg:aspect-4/3": galleryLayout !== "triple",
               "h-full": galleryLayout === "triple",
               "row-span-2": galleryLayout === "triple" && index === 0,
-              "col-start-2 row-start-1 aspect-4/3":
+              "col-start-2 row-start-1 aspect-video lg:aspect-4/3":
                 galleryLayout === "triple" && index === 1,
-              "col-start-2 row-start-2 aspect-4/3":
+              "col-start-2 row-start-2 aspect-video lg:aspect-4/3":
                 galleryLayout === "triple" && index === 2,
             })}
             src={src}
@@ -103,7 +106,7 @@ const paragraphs = Array.isArray(text)
     iframeUrl && iframeServiceName && (
       <div
         class={cn("grid gap-4", {
-          "order-last": direction === "left",
+          "lg:order-last": direction === "left",
           "col-span-4": ratio === "4-5",
         })}
       >

@@ -24,22 +24,24 @@ const itemCount = workingReviews.length;
 const bufferSize = tailBuffer.length;
 ---
 
-<section class="relative mt-48 grid px-20 md:gap-20">
+<section
+  class="relative mt-48 grid gap-10 px-4 sm:px-6 md:gap-20 md:px-10 lg:px-20"
+>
   <div class="flex w-full items-center justify-between">
     <h2>{title}</h2>
-    <div>
-      <Button onclick="window.scrollCarousel(-1)" variant="ghost"
-        ><ArrowLeft /></Button
-      >
-      <Button onclick="window.scrollCarousel(1)" variant="ghost"
-        ><ArrowRight /></Button
-      >
+    <div class="flex-none">
+      <Button onclick="window.scrollCarousel(-1)" variant="ghost">
+        <ArrowLeft />
+      </Button>
+      <Button onclick="window.scrollCarousel(1)" variant="ghost">
+        <ArrowRight />
+      </Button>
     </div>
   </div>
   <div class="review-carousel-container overflow-hidden">
     <div
       id="review-carousel"
-      class="no-scrollbar grid snap-x snap-mandatory auto-cols-[calc(33.333%-1rem)] grid-flow-col gap-6 overflow-x-auto scroll-smooth"
+      class="no-scrollbar grid snap-x snap-mandatory auto-cols-[calc(100%)] grid-flow-col gap-6 overflow-x-auto scroll-smooth md:auto-cols-[calc(33.333%-1rem)]"
       style="scrollbar-width: none;"
       data-item-count={itemCount}
       data-buffer-size={bufferSize}

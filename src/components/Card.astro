@@ -34,8 +34,10 @@ const {
   <div class="absolute top-4 left-4 flex gap-2.5">
     {
       tags &&
-        tags.map((tag) => (
-          <span class="bg-background flex items-center gap-1.5 rounded-sm px-2 py-1 text-sm">
+        tags.map((tag, index) => (
+          <span
+            class={`bg-background flex items-center gap-1.5 rounded-sm px-2 py-1 text-sm ${index >= 2 ? "hidden xl:flex" : ""}`}
+          >
             {tag.icon && <tag.icon size={16} />}
             <span>{tag.text}</span>
           </span>
