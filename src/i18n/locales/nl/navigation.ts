@@ -12,5 +12,6 @@ export const navigation = {
   "footer.contactUs": "Neem contact op",
   "footer.contactPage": "“contact” pagina",
   "footer.legalMentions": "Juridische vermeldingen",
+  "footer.privacyPolicy": "Privacybeleid",
   "footer.salesConditions": "Algemene verkoopvoorwaarden",
 };

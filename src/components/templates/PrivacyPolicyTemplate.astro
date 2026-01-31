@@ -1,0 +1,269 @@
+---
+import { useTranslations } from "@/lib/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { ui } from "@/i18n/ui";
+import Button from "../ui/button/button.astro";
+import MapProviderDialog from "@/components/MapProviderDialog.astro";
+
+const { lang } = Astro.props as { lang: keyof typeof ui };
+const t = useTranslations(lang);
+
+const editorCompany = "SAS Domaine de Pipangaille";
+const editorEmail = "contact@domaine-de-pipangaille.fr";
+const editorPhone = "+33 4 75 68 28 24";
+const editorAddress = "1 Quartier Les Marettes, 26140 Andancette – France";
+
+const hostingProvider = "Vercel Inc";
+const cnilUrl = "https://www.cnil.fr";
+
+const googlePrivacyUrl = "https://policies.google.com/privacy";
+const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
+---
+
+<Layout
+  title={t("seo.pages.privacy.title")}
+  description={t("seo.pages.privacy.description")}
+>
+  <main class="mx-auto grid w-full max-w-7xl gap-8 px-4 py-16">
+    <div
+      data-scroll-animated
+      class="bg-background sticky top-0 z-10 h-28 w-screen"
+    >
+    </div>
+    <h1>{t("privacyPolicy.title")}</h1>
+    <p class="text-muted-foreground">{t("privacyPolicy.lastUpdate")}</p>
+
+    <div class="grid gap-8">
+      <section class="grid gap-4">
+        <p class="text-lg">{t("privacyPolicy.intro")}</p>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section1.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section1.text")}</p>
+          <p><strong>{editorCompany}</strong></p>
+          <MapProviderDialog
+            lang={lang}
+            address={editorAddress}
+            triggerText={editorAddress}
+            triggerVariant="link"
+            triggerClass="-mx-6 -my-4 inline-block"
+          />
+          <p>
+            <strong>{t("privacyPolicy.section1.emailLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`mailto:${editorEmail}`}
+            >
+              {editorEmail}
+            </Button>
+          </p>
+          <p>
+            <strong>{t("privacyPolicy.section1.phoneLabel")}:</strong>
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`tel:${editorPhone.replace(/\s/g, "")}`}
+            >
+              {editorPhone}
+            </Button>
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section2.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section2.text")}</p>
+          <ul class="list-inside list-disc space-y-2">
+            <li>{t("privacyPolicy.section2.item1")}</li>
+            <li>{t("privacyPolicy.section2.item2")}</li>
+            <li>{t("privacyPolicy.section2.item3")}</li>
+            <li>{t("privacyPolicy.section2.item4")}</li>
+            <li>{t("privacyPolicy.section2.item5")}</li>
+          </ul>
+          <p>{t("privacyPolicy.section2.footer")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section3.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section3.text")}</p>
+          <ul class="list-inside list-disc space-y-2">
+            <li>{t("privacyPolicy.section3.item1")}</li>
+            <li>{t("privacyPolicy.section3.item2")}</li>
+            <li>{t("privacyPolicy.section3.item3")}</li>
+          </ul>
+          <p>{t("privacyPolicy.section3.footer")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section4.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section4.text")}</p>
+          <ul class="list-inside list-disc space-y-2">
+            <li>{t("privacyPolicy.section4.item1")}</li>
+            <li>{t("privacyPolicy.section4.item2")}</li>
+            <li>{t("privacyPolicy.section4.item3")}</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section5.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section5.text")}</p>
+          <ul class="list-inside list-disc space-y-2">
+            <li>{t("privacyPolicy.section5.item1")}</li>
+            <li>{t("privacyPolicy.section5.item2")}</li>
+          </ul>
+          <p>{t("privacyPolicy.section5.footer")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section6.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section6.text")}</p>
+          <p><strong>{hostingProvider}</strong></p>
+          <p>{t("privacyPolicy.section6.location")}</p>
+          <p>{t("privacyPolicy.section6.footer")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section7.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section7.intro")}</p>
+          <p>{t("privacyPolicy.section7.text")}</p>
+          <ul class="list-inside list-disc space-y-2">
+            <li>{t("privacyPolicy.section7.item1")}</li>
+            <li>{t("privacyPolicy.section7.item2")}</li>
+          </ul>
+          <p>{t("privacyPolicy.section7.transfer")}</p>
+          <p>
+            {t("privacyPolicy.section7.footer")}
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={googlePrivacyUrl}
+              target="_blank"
+            >
+              {t("privacyPolicy.section7.footerLink")}
+            </Button>{t("privacyPolicy.section7.footerEnd")}
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section8.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section8.intro")}</p>
+          <p>{t("privacyPolicy.section8.loading")}</p>
+          <p>{t("privacyPolicy.section8.responsibility")}</p>
+          <p>{t("privacyPolicy.section8.data")}</p>
+          <ul class="list-inside list-disc space-y-2">
+            <li>{t("privacyPolicy.section8.item1")}</li>
+            <li>{t("privacyPolicy.section8.item2")}</li>
+            <li>{t("privacyPolicy.section8.item3")}</li>
+          </ul>
+          <p>
+            {t("privacyPolicy.section8.footer")}
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={amenitizPrivacyUrl}
+              target="_blank"
+            >
+              {t("privacyPolicy.section8.footerLink")}
+            </Button>{t("privacyPolicy.section8.footerEnd")}
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section9.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section9.text")}</p>
+          <p>{t("privacyPolicy.section9.activation")}</p>
+          <p>{t("privacyPolicy.section9.manage")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section10.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section10.text")}</p>
+          <ul class="list-inside list-disc space-y-2">
+            <li>{t("privacyPolicy.section10.item1")}</li>
+            <li>{t("privacyPolicy.section10.item2")}</li>
+            <li>{t("privacyPolicy.section10.item3")}</li>
+            <li>{t("privacyPolicy.section10.item4")}</li>
+            <li>{t("privacyPolicy.section10.item5")}</li>
+            <li>{t("privacyPolicy.section10.item6")}</li>
+          </ul>
+          <p>{t("privacyPolicy.section10.exercise")}</p>
+          <p>
+            {t("privacyPolicy.section10.emailPrefix")}
+            <Button
+              variant="link"
+              class="-mx-6 -my-4"
+              href={`mailto:${editorEmail}`}
+            >
+              {editorEmail}
+            </Button>
+          </p>
+          <p>
+            {t("privacyPolicy.section10.addressPrefix")}
+            <MapProviderDialog
+              lang={lang}
+              address={editorAddress}
+              triggerText={editorAddress}
+              triggerVariant="link"
+              triggerClass="-mx-6 -my-4 inline-block"
+            />
+          </p>
+          <p>{t("privacyPolicy.section10.delay")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section11.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section11.text")}</p>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section12.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section12.text")}</p>
+          <p>
+            <strong>{t("privacyPolicy.section12.authority")}</strong>
+          </p>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={cnilUrl}
+            target="_blank"
+          >
+            {cnilUrl}
+          </Button>
+        </div>
+      </section>
+
+      <section class="grid gap-4">
+        <h2>{t("privacyPolicy.section13.title")}</h2>
+        <div class="grid gap-2 text-lg">
+          <p>{t("privacyPolicy.section13.text")}</p>
+          <p>{t("privacyPolicy.section13.footer")}</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+

@@ -79,6 +79,14 @@ export const routes = {
     it: "/condizioni-generali-vendita",
     nl: "/algemene-verkoopvoorwaarden",
   },
+  privacyPolicy: {
+    fr: "/politique-confidentialite",
+    en: "/privacy-policy",
+    de: "/datenschutzerklarung",
+    es: "/politica-privacidad",
+    it: "/informativa-privacy",
+    nl: "/privacybeleid",
+  },
   // Routes dynamiques - prefix uniquement
   accommodation: {
     fr: "/hebergement",

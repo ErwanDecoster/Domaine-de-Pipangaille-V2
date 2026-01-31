@@ -63,6 +63,11 @@ export const seo = {
   "seo.pages.legal.description":
     "Note legali del sito Domaine de Pipangaille - Camere per ospiti ad Andancette, Drôme.",
 
+  "seo.pages.privacy.title":
+    "Informativa sulla privacy | Domaine de Pipangaille",
+  "seo.pages.privacy.description":
+    "Informativa sulla privacy e protezione dei dati personali del Domaine de Pipangaille.",
+
   "seo.pages.terms.title":
     "Condizioni Generali di Vendita | Domaine de Pipangaille",
   "seo.pages.terms.description":

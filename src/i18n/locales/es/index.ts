@@ -8,6 +8,7 @@ import { common } from "./common";
 import { place } from "./place";
 import { counter } from "./counter";
 import { legalNotices } from "./legalNotices";
+import { privacyPolicy } from "./privacyPolicy";
 import { generalConditions } from "./generalConditions";
 import { notfound } from "./notfound";
 
@@ -22,6 +23,7 @@ export const es = {
   ...place,
   ...counter,
   ...legalNotices,
+  ...privacyPolicy,
   ...generalConditions,
   ...notfound,
 };

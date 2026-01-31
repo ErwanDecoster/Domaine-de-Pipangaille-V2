@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro";
 import { ui } from "@/i18n/ui";
 import Button from "../ui/button/button.astro";
 import MapProviderDialog from "@/components/MapProviderDialog.astro";
+import { getLocalizedUrl } from "@/lib/routeTranslator";
 
 const { lang } = Astro.props as { lang: keyof typeof ui };
 const t = useTranslations(lang);
@@ -31,6 +32,8 @@ const designRepoLabel =
 const hostingUrl = "https://vercel.com";
 const domainProvider = "Hostinger International Ltd";
 const domainUrl = "https://hostinger.fr";
+
+const privacyPolicyUrl = getLocalizedUrl("privacyPolicy", lang);
 ---
 
 <Layout
@@ -213,7 +216,7 @@ const domainUrl = "https://hostinger.fr";
             <Button
               variant="link"
               class="-mx-6 -my-4"
-              href="#"
+              href={privacyPolicyUrl}
             >
               {t("legalNotices.personalData.privacyPolicyLink")}
             </Button>{t("legalNotices.personalData.suffix")}
