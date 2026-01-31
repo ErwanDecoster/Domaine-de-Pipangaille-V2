@@ -5,7 +5,6 @@ import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import ReviewList from "@/components/ReviewList.astro";
 import Card from "@/components/Card.astro";
-import BookingWidget from "@/components/BookingWidgetAstro.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import { surroundings } from "@/constants/surroundings";
@@ -122,7 +121,4 @@ const featuredSurroundings = featuredSlugs
       </div>
     </div>
   </section>
-
-  <!-- Booking Widget -->
-  <BookingWidget lang={lang} />
 </Layout>

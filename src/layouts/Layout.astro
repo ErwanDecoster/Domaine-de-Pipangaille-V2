@@ -6,6 +6,7 @@ import "@fontsource/source-serif-4/300.css";
 import "@fontsource/barlow/400.css";
 import "@fontsource/barlow/700.css";
 import { getLangFromUrl, useTranslations } from "../lib/i18n";
+import BookingWidget from "@/components/BookingWidgetAstro.astro";
 
 type Props = {
   bodyClass?: string;
@@ -87,6 +88,9 @@ const siteUrl = "https://domaine-de-pipangaille.fr";
       <slot />
     </main>
     {reduce ? null : <Footer />}
+
+    <!-- Booking Widget -->
+    {reduce ? null : <BookingWidget lang={lang} />}
   </body>
 </html>
 
