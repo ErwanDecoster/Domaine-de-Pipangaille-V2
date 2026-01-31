@@ -1,7 +1,9 @@
 export const common = {
-  "iframeConsent.title": "Contenu externe",
+  "iframeConsent.mapLabel": "Carte",
   "iframeConsent.text":
-    "Ce contenu est fourni par {serviceName}. En chargeant ce contenu, vous acceptez nos conditions d'utilisation et la politique de confidentialité du prestataire.",
-  "iframeConsent.button": "Accepter et charger",
+    "Ce contenu externe peut entraîner un transfert de données vers {hostname}.",
+  "iframeConsent.button": "Charger",
   "iframeConsent.serviceNameFallback": "ce service externe",
+  "iframeConsent.privacyPrefix": "Consultez notre",
+  "iframeConsent.privacyLink": "Politique de confidentialité",
 };

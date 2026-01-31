@@ -1,21 +1,22 @@
 ---
 import Button from "@/components/ui/button/button.astro";
-import { getLangFromUrl, useTranslations } from "@/lib/i18n";
+import { getLangFromUrl, useTranslations, getLocalizedUrl } from "@/lib/i18n";
 
 interface Props {
   src: string;
+  serviceName: string;
 }
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const { src } = Astro.props as Props;
+const { src, serviceName } = Astro.props as Props;
 
-const serviceName = (() => {
+const privacyPolicyUrl = getLocalizedUrl("privacyPolicy", lang);
+
+const hostname = (() => {
   try {
-    const parsed = new URL(src, "https://placeholder.local");
-    return parsed.hostname === "placeholder.local"
-      ? t("iframeConsent.serviceNameFallback")
-      : parsed.hostname;
+    const parsed = new URL(src);
+    return parsed.hostname;
   } catch {
     return t("iframeConsent.serviceNameFallback");
   }
@@ -28,9 +29,18 @@ const serviceName = (() => {
     data-iframe-src={src}
   >
     <div>
-      <h3 class="mb-2 text-lg font-semibold">{t("iframeConsent.title")}</h3>
+      <h3 class="mb-2 text-lg font-semibold">
+        {t("iframeConsent.mapLabel")}
+        {serviceName}
+      </h3>
+      <p class="mb-4">
+        {t("iframeConsent.text").replace("{hostname}", hostname)}
+      </p>
       <p>
-        {t("iframeConsent.text").replace("{serviceName}", serviceName)}
+        {t("iframeConsent.privacyPrefix")}
+        <Button variant="link" class="-mx-6 -my-4" href={privacyPolicyUrl}>
+          {t("iframeConsent.privacyLink")}
+        </Button>
       </p>
     </div>
     <Button data-consent-button>{t("iframeConsent.button")}</Button>

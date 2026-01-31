@@ -17,6 +17,7 @@ interface Props {
   imageAlt?: string;
   images?: MediaContentImage[];
   iframeUrl?: string;
+  iframeServiceName?: string;
   buttonText?: string;
   buttonLink?: string;
   direction?: "left" | "right";
@@ -30,6 +31,7 @@ const {
   imageAlt,
   images = [],
   iframeUrl,
+  iframeServiceName,
   buttonText,
   buttonLink,
   direction,
@@ -98,14 +100,14 @@ const paragraphs = Array.isArray(text)
     )
   }
   {
-    iframeUrl && (
+    iframeUrl && iframeServiceName && (
       <div
         class={cn("grid gap-4", {
           "order-last": direction === "left",
           "col-span-4": ratio === "4-5",
         })}
       >
-        <IframeConsent src={iframeUrl} />
+        <IframeConsent src={iframeUrl} serviceName={iframeServiceName} />
       </div>
     )
   }
