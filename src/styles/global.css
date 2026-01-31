@@ -178,4 +178,16 @@ body.theme-counter {
       height: 5rem;
     }
   }
+
+  [data-scroll-animated-booking-widget] {
+    animation: shrink-booking-widget linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes shrink-booking-widget {
+    to {
+      padding: 0.5rem;
+    }
+  }
 }
