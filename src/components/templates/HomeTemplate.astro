@@ -86,28 +86,33 @@ const featuredSurroundings = featuredSlugs
     buttonLink={getLocalizedUrl("counter", lang)}
   />
   <ReviewList title={t("home.reviews.title")} reviews={reviews[lang]} />
-  <section class="mt-48 grid grid-cols-6 gap-8 px-20 md:gap-10">
-    <h2 class="col-span-6 mb-4">{t("home.surroundings.title")}</h2>
+  <section
+    class="mt-48 grid gap-8 px-4 sm:px-6 md:grid-cols-6 md:gap-10 md:px-10 lg:px-20"
+  >
+    <h2 class="mb-4 md:col-span-6">{t("home.surroundings.title")}</h2>
     {
       featuredSurroundings.map((surrounding, index) => {
         const card = formatCard(surrounding);
         return (
-          <Card {...card} class={index < 2 ? "col-span-3" : "col-span-2"} />
+          <Card
+            {...card}
+            class={index < 2 ? "md:col-span-3" : "md:col-span-2"}
+          />
         );
       })
     }
     <Button
       href={getLocalizedUrl("surroundings", lang)}
-      class="col-span-6 mx-auto mt-6"
+      class="mx-auto mt-6 md:col-span-6"
     >
       {t("home.surroundings.button")}
     </Button>
   </section>
-  <section class="my-48 px-20">
+  <section class="my-48 px-4 sm:px-6 md:px-10 lg:px-20">
     <div class="bg-muted mx-auto max-w-5xl rounded-3xl px-6 py-24">
       <div class="mx-auto w-fit space-y-10">
         <h3>{t("home.booking.title")}</h3>
-        <div class="flex justify-between">
+        <div class="flex flex-col items-center justify-between md:flex-row">
           <Button href={getLocalizedUrl("booking", lang)}>
             {t("home.booking.button")}
           </Button>
