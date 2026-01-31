@@ -27,10 +27,11 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
 
 <nav
   data-scroll-animated
-  class={`fixed inset-x-0 z-20 flex ${navbarHeightClass} ${navBackground} items-center justify-between px-20`}
+  class={`fixed inset-x-0 z-20 flex ${navbarHeightClass} ${navBackground} items-center justify-between px-4 md:px-8 lg:px-20`}
 >
   <Button
     href={getLocalizedUrl("home", lang)}
+    class="-mx-6 hidden xl:block"
     variant="link"
     aria-hidden="true"
     tabindex="-1"
@@ -41,31 +42,51 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
       class="w-28 bg-transparent"
     />
   </Button>
-  <ul class="flex">
+  <ul class="-mx-6 flex md:mx-0">
     <li>
-      <Button variant="link" href={getLocalizedUrl("home", lang)}
-        >{t("nav.home")}</Button
+      <Button
+        variant="link"
+        class="px-1 md:pr-2.5 lg:pr-3.5 xl:pr-6"
+        href={getLocalizedUrl("home", lang)}
       >
+        {t("nav.home")}
+      </Button>
     </li>
     <li>
-      <Button variant="link" href={getLocalizedUrl("place", lang)}
-        >{t("nav.place")}</Button
+      <Button
+        variant="link"
+        class="px-1 md:px-2.5 lg:px-3.5 xl:px-6"
+        href={getLocalizedUrl("place", lang)}
       >
+        {t("nav.place")}
+      </Button>
     </li>
     <li>
-      <Button variant="link" href={getLocalizedUrl("accommodations", lang)}
-        >{t("nav.accommodations")}</Button
+      <Button
+        variant="link"
+        class="px-1 md:px-2.5 lg:px-3.5 xl:px-6"
+        href={getLocalizedUrl("accommodations", lang)}
       >
+        {t("nav.accommodations")}
+      </Button>
     </li>
     <li>
-      <Button variant="link" href={getLocalizedUrl("counter", lang)}
-        >{t("nav.counter")}</Button
+      <Button
+        variant="link"
+        class="px-1 md:px-2.5 lg:px-3.5 xl:px-6"
+        href={getLocalizedUrl("counter", lang)}
       >
+        {t("nav.counter")}
+      </Button>
     </li>
     <li>
-      <Button variant="link" href={getLocalizedUrl("surroundings", lang)}
-        >{t("nav.surroundings")}</Button
+      <Button
+        variant="link"
+        class="px-1 md:px-2.5 lg:px-3.5 xl:px-6"
+        href={getLocalizedUrl("surroundings", lang)}
       >
+        {t("nav.surroundings")}
+      </Button>
     </li>
   </ul>
   <ul class="flex items-center gap-4">

@@ -84,9 +84,30 @@ const getLangHref = (targetLocale: Locale) => {
 };
 ---
 
+<!-- Mobile version: 2 characters -->
 <NativeSelect
-  id="language-switcher"
-  class={className}
+  id="language-switcher-mobile"
+  class={`xl:hidden ${className}`}
+  aria-label="Change language"
+  {...props}
+>
+  {
+    Object.entries(languages).map(([code, label]) => (
+      <NativeSelectOption
+        value={code}
+        selected={code === lang}
+        data-url={getLangHref(code as Locale)}
+      >
+        {code.substring(0, 2).toUpperCase()}
+      </NativeSelectOption>
+    ))
+  }
+</NativeSelect>
+
+<!-- Desktop version: full label -->
+<NativeSelect
+  id="language-switcher-desktop"
+  class={`hidden xl:block ${className}`}
   aria-label="Change language"
   {...props}
 >
@@ -104,17 +125,18 @@ const getLangHref = (targetLocale: Locale) => {
 </NativeSelect>
 
 <script>
-  const select = document.getElementById(
-    "language-switcher",
-  ) as HTMLSelectElement;
-  if (select) {
-    select.addEventListener("change", (event) => {
-      const target = event.target as HTMLSelectElement;
-      const selectedOption = target.options[target.selectedIndex];
-      const url = selectedOption.getAttribute("data-url");
-      if (url) {
-        window.location.href = url;
-      }
-    });
-  }
+  // Handle both mobile and desktop selects
+  ["language-switcher-mobile", "language-switcher-desktop"].forEach((id) => {
+    const select = document.getElementById(id) as HTMLSelectElement;
+    if (select) {
+      select.addEventListener("change", (event) => {
+        const target = event.target as HTMLSelectElement;
+        const selectedOption = target.options[target.selectedIndex];
+        const url = selectedOption.getAttribute("data-url");
+        if (url) {
+          window.location.href = url;
+        }
+      });
+    }
+  });
 </script>
