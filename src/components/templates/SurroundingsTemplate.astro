@@ -81,7 +81,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
       {
         allCategories.map((category) => (
           <Button
-            class="bg-muted hover:bg-accent/50 rounded-full"
+            class="bg-muted hover:bg-accent/50 [.is-active]:bg-primary [.is-active]:text-primary-foreground rounded-full"
             variant="ghost"
             data-value={category}
             size="sm"
@@ -115,7 +115,9 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
           <Button
             variant="link"
             data-page={String(index + 1)}
+            class="[.is-active]:before:bg-primary relative z-10 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
             onclick="window.surroundings.handleActivityPageClick(event)"
+            size="icon-lg"
           >
             {index + 1}
           </Button>
@@ -153,7 +155,9 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
           <Button
             variant="link"
             data-page={String(index + 1)}
+            class="[.is-active]:before:bg-primary relative z-10 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
             onclick="window.surroundings.handleRestaurantPageClick(event)"
+            size="icon-lg"
           >
             {index + 1}
           </Button>
