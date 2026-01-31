@@ -10,10 +10,13 @@ import {
   NativeSelect,
   NativeSelectOption,
 } from "@/components/ui/native-select";
+import { cn } from "@/lib/utils";
 
-interface Props extends HTMLAttributes<"select"> {}
+interface Props extends HTMLAttributes<"select"> {
+  reduce?: boolean;
+}
 
-const { class: className, ...props } = Astro.props as Props;
+const { class: className, reduce, ...props } = Astro.props as Props;
 const lang = getCurrentLang(Astro.currentLocale);
 const currentPath = Astro.url.pathname;
 const queryString = Astro.url.search; // Preserve query parameters
@@ -87,18 +90,19 @@ const getLangHref = (targetLocale: Locale) => {
 <!-- Mobile version: 2 characters -->
 <NativeSelect
   id="language-switcher-mobile"
-  class={`xl:hidden ${className}`}
+  class={cn(reduce ? "xl:hidden" : "hidden", className)}
   aria-label="Change language"
   {...props}
 >
   {
-    Object.entries(languages).map(([code, label]) => (
+    Object.entries(languages).map(([code]) => (
       <NativeSelectOption
         value={code}
         selected={code === lang}
         data-url={getLangHref(code as Locale)}
+        class="capitalize"
       >
-        {code.substring(0, 2).toUpperCase()}
+        {code.substring(0, 2)}
       </NativeSelectOption>
     ))
   }
@@ -107,7 +111,7 @@ const getLangHref = (targetLocale: Locale) => {
 <!-- Desktop version: full label -->
 <NativeSelect
   id="language-switcher-desktop"
-  class={`hidden xl:block ${className}`}
+  class={cn(reduce ? "hidden xl:block" : "", className)}
   aria-label="Change language"
   {...props}
 >

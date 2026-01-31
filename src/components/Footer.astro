@@ -11,9 +11,12 @@ const t = useTranslations(lang);
 ---
 
 <footer class="bg-primary mt-16 space-y-32 p-16 pb-24">
-  <div class="flex justify-between">
+  <div
+    class="flex flex-col items-center justify-between gap-x-4 gap-y-12 md:flex-row md:items-start"
+  >
     <Button
       href={getLocalizedUrl("home", lang)}
+      class="hidden xl:block"
       variant="link"
       aria-hidden="true"
       tabindex="-1"
@@ -25,12 +28,12 @@ const t = useTranslations(lang);
       />
     </Button>
     <div>
-      <h5>{t("footer.usefulLinks")}</h5>
-      <ul>
+      <h5 class="mb-2 text-center md:text-left">{t("footer.usefulLinks")}</h5>
+      <ul class="flex flex-wrap justify-center md:flex-col">
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href="https://www.tripadvisor.fr/Hotel_Review-g11695688-d5990107-Reviews-Domaine_de_Pipangaille-Andancette_Drome_Auvergne_Rhone_Alpes.html"
           >
             Tripadvisor
@@ -39,7 +42,7 @@ const t = useTranslations(lang);
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href="https://www.pagesjaunes.fr/pros/56007503"
           >
             Pages Jaunes
@@ -48,12 +51,12 @@ const t = useTranslations(lang);
       </ul>
     </div>
     <div>
-      <h5>{t("footer.knowUsBetter")}</h5>
-      <ul>
+      <h5 class="mb-2 text-center md:text-left">{t("footer.knowUsBetter")}</h5>
+      <ul class="flex flex-wrap justify-center md:flex-col">
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href="https://facebook.com/domainedepipangaille"
           >
             <PlatformIcon platform="facebook" class="size-5" />
@@ -63,7 +66,7 @@ const t = useTranslations(lang);
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href="https://instagram.com/domaine_de_pipangaille"
           >
             <PlatformIcon platform="instagram" class="size-5" />
@@ -73,7 +76,7 @@ const t = useTranslations(lang);
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href="https://linkedin.com/company/domaine-de-pipangaille/"
           >
             <PlatformIcon platform="linkedin" class="size-5" />
@@ -83,7 +86,7 @@ const t = useTranslations(lang);
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href="https://x.com/D_Pipangaille"
           >
             <PlatformIcon platform="x" class="size-5" />
@@ -93,19 +96,19 @@ const t = useTranslations(lang);
       </ul>
     </div>
     <div>
-      <h5>{t("footer.moreInfo")}</h5>
-      <ul>
+      <h5 class="mb-2 text-center md:text-left">{t("footer.moreInfo")}</h5>
+      <ul class="flex flex-wrap justify-center md:flex-col">
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href={getLocalizedUrl("place", lang)}>{t("nav.place")}</Button
           >
         </li>
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href={getLocalizedUrl("accommodations", lang)}
             >{t("nav.accommodations")}</Button
           >
@@ -113,14 +116,14 @@ const t = useTranslations(lang);
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href={getLocalizedUrl("counter", lang)}>{t("nav.counter")}</Button
           >
         </li>
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href={getLocalizedUrl("surroundings", lang)}
             >{t("nav.surroundings")}</Button
           >
@@ -128,17 +131,19 @@ const t = useTranslations(lang);
       </ul>
     </div>
     <div>
-      <h5>{t("footer.contactUs")}</h5>
-      <ul>
+      <h5 class="mb-2 text-center md:text-left">{t("footer.contactUs")}</h5>
+      <ul class="flex flex-wrap justify-center md:flex-col">
         <li>
-          <Button variant="link" class="-ml-6 py-2" href="tel:+33456747382"
-            >+33 4 56 74 73 82</Button
+          <Button
+            variant="link"
+            class="px-4 py-2 md:-ml-6 md:px-6"
+            href="tel:+33456747382">+33 4 56 74 73 82</Button
           >
         </li>
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href="mailto:contact@domaine-de-pipangaille.fr"
             >contact@domaine-de-pipangaille.fr</Button
           >
@@ -146,7 +151,7 @@ const t = useTranslations(lang);
         <li>
           <Button
             variant="link"
-            class="-ml-6 py-2"
+            class="px-4 py-2 md:-ml-6 md:px-6"
             href={getLocalizedUrl("contact", lang)}
             >{t("footer.contactPage")}</Button
           >
@@ -155,7 +160,7 @@ const t = useTranslations(lang);
     </div>
   </div>
   <div>
-    <ul class="flex items-center justify-center">
+    <ul class="flex flex-col-reverse items-center justify-center md:flex-row">
       <li>
         <Button variant="link" href={getLocalizedUrl("legalNotices", lang)}
           >{t("footer.legalMentions")}</Button
@@ -175,7 +180,7 @@ const t = useTranslations(lang);
       </li>
       <li>
         <LanguageSwitcher
-          class="my-auto w-full max-w-xs hover:bg-transparent"
+          class="my-2 my-auto w-full max-w-xs hover:bg-transparent"
         />
       </li>
     </ul>
