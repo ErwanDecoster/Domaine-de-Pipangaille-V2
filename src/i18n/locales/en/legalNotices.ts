@@ -7,43 +7,39 @@ export const legalNotices = {
   "legalNotices.editor.capitalLabel": "Share Capital",
   "legalNotices.editor.phoneLabel": "Phone",
   "legalNotices.editor.emailLabel": "Email",
-  "legalNotices.editor.ceoLabel": "CEO",
-  "legalNotices.editor.publisherLabel": "Publication Director",
-  "legalNotices.editor.publisherValue": "Catherine Lemoine",
+  "legalNotices.editor.ceoLabel": "CEO and Publication Director",
+  "legalNotices.editor.ceoValue": "Madame Catherine Lemoine",
   "legalNotices.design.title": "Website Design and Development",
   "legalNotices.design.phoneLabel": "Phone",
   "legalNotices.design.emailLabel": "Email",
   "legalNotices.design.websiteLabel": "Website",
-  "legalNotices.design.githubLabel": "Github",
-  "legalNotices.design.repoLabel": "Github Repository",
-  "legalNotices.hosting.title": "Website Hosting",
-  "legalNotices.hosting.providerLabel": "Provider",
-  "legalNotices.domain.title": "Domain Name Ownership",
+  "legalNotices.design.githubLabel": "GitHub",
+  "legalNotices.design.repoLabel": "Website Repository",
+  "legalNotices.hosting.title": "Hosting",
+  "legalNotices.hosting.text": "The website is hosted by:",
+  "legalNotices.hosting.provider": "Vercel Inc",
+  "legalNotices.hosting.legalStatus": "American company",
+  "legalNotices.domain.title": "Domain Name",
   "legalNotices.domain.providerLabel": "Domain name manager",
-  "legalNotices.photos.title": "Photo Credits",
+  "legalNotices.photos.title": "Photographic Credits",
   "legalNotices.photos.text":
-    "All photos are the property of Domaine de Pipangaille.",
-  "legalNotices.cookies.title": "Use of Cookies",
-  "legalNotices.cookies.text":
-    "This site uses cookies for statistics and operation only.",
-  "legalNotices.personalData.title": "Use of Personal Data",
+    "All photographs on this website are the exclusive property of Domaine de Pipangaille. Any reproduction or use without authorization is prohibited.",
+  "legalNotices.personalData.title": "Personal Data & Cookies",
   "legalNotices.personalData.text":
-    "By using the forms present on the site, you accept the storage of the data transmitted and the processing thereof. They are kept and processed for management, archival and improvement purposes of our services.",
-  "legalNotices.personalData.retention":
-    "Data is retained for a reasonable period of 10 years.",
-  "legalNotices.personalData.requestEmailPrefix":
-    "For any request for deletion, correction or access to data, please make a request by email at ",
-  "legalNotices.personalData.requestAddressPrefix": " or by mail at: ",
-  "legalNotices.liability.title": "Liability of SAS Domaine de Pipangaille",
+    "The processing of personal data and the use of cookies on this website are described in detail in our",
+  "legalNotices.personalData.privacyPolicyLink": "Privacy Policy",
+  "legalNotices.personalData.suffix":
+    ", accessible from the website footer.",
+  "legalNotices.liability.title": "Liability",
   "legalNotices.liability.text":
-    "To the extent permitted by law, SAS Domaine de Pipangaille shall not be liable:",
+    "SAS Domaine de Pipangaille makes every effort to provide reliable and up-to-date information. However, it cannot be held responsible for:",
   "legalNotices.liability.inaccuracy":
-    "For any inaccuracy, error, omission or for any damages resulting from unauthorized modification of information made available on the Site.",
+    "any errors, omissions or inaccuracies,",
   "legalNotices.liability.unauthorized":
-    "In case of damages caused by unauthorized access to the Site or rendering it inaccessible.",
+    "damages resulting from fraudulent intrusion by a third party,",
   "legalNotices.liability.interruption":
-    "The visitor is informed that access to the Site may be interrupted at any time by SAS Domaine de Pipangaille due to maintenance, security or any other technical constraint.",
+    "temporary unavailability of the website due to maintenance or technical incident.",
   "legalNotices.law.title": "Applicable Law",
   "legalNotices.law.text":
-    "These legal notices are governed by French law. French courts are exclusively competent to hear any dispute relating directly or indirectly to access to or use of this Site.",
+    "These legal notices are governed by French law. Any dispute relating to the use of this website falls under the exclusive jurisdiction of French courts.",
 };

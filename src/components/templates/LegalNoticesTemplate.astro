@@ -11,11 +11,10 @@ const t = useTranslations(lang);
 const editorCompany = "SAS Domaine de Pipangaille";
 const editorEmail = "contact@domaine-de-pipangaille.fr";
 const editorPhone = "+33 4 75 68 28 24";
-const editorAddress = "1 Quartier Les Marettes, 26140, Andancette";
+const editorAddress = "1 Quartier Les Marettes, 26140 Andancette – France";
 const editorRcsValue = "904 638 814";
 const editorNafValue = "55202";
-const editorCapitalValue = "1500 €";
-const editorCeoValue = "Catherine Lemoine";
+const editorCapitalValue = "1 500 €";
 
 const designCompany = "Erwan Decoster";
 const designEmail = "contact@erwan-decoster.com";
@@ -29,7 +28,6 @@ const designRepoUrl =
 const designRepoLabel =
   "github.com/ErwanDecoster/domaine-de-pipangaille-v2-astro";
 
-const hostingProvider = "Vercel Inc";
 const hostingUrl = "https://vercel.com";
 const domainProvider = "Hostinger International Ltd";
 const domainUrl = "https://hostinger.fr";
@@ -100,11 +98,7 @@ const domainUrl = "https://hostinger.fr";
           </p>
           <p>
             <strong>{t("legalNotices.editor.ceoLabel")}:</strong>
-            {editorCeoValue}
-          </p>
-          <p>
-            <strong>{t("legalNotices.editor.publisherLabel")}:</strong>
-            {t("legalNotices.editor.publisherValue")}
+            {t("legalNotices.editor.ceoValue")}
           </p>
         </div>
       </section>
@@ -172,17 +166,18 @@ const domainUrl = "https://hostinger.fr";
       <section class="grid gap-4">
         <h2>{t("legalNotices.hosting.title")}</h2>
         <div class="grid gap-2 text-lg">
+          <p>{t("legalNotices.hosting.text")}</p>
           <p>
-            <strong>{t("legalNotices.hosting.providerLabel")}:</strong>
             <Button
               variant="link"
               class="-mx-6 -my-4"
               href={hostingUrl}
               target="_blank"
             >
-              {hostingProvider}
+              {t("legalNotices.hosting.provider")}
             </Button>
           </p>
+          <p>{t("legalNotices.hosting.legalStatus")}</p>
         </div>
       </section>
 
@@ -211,37 +206,18 @@ const domainUrl = "https://hostinger.fr";
       </section>
 
       <section class="grid gap-4">
-        <h2>{t("legalNotices.cookies.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p>{t("legalNotices.cookies.text")}</p>
-        </div>
-      </section>
-
-      <section class="grid gap-4">
         <h2>{t("legalNotices.personalData.title")}</h2>
         <div class="grid gap-2 text-lg">
-          <p>{t("legalNotices.personalData.text")}</p>
-          <p>{t("legalNotices.personalData.retention")}</p>
-          <div
-            class="text-muted-foreground flex flex-wrap items-center gap-2 text-base/[160%] text-pretty"
-          >
-            {t("legalNotices.personalData.requestEmailPrefix")}
+          <p>
+            {t("legalNotices.personalData.text")}
             <Button
               variant="link"
               class="-mx-6 -my-4"
-              href={`mailto:${editorEmail}`}
+              href="#"
             >
-              {editorEmail}
-            </Button>
-            {t("legalNotices.personalData.requestAddressPrefix")}
-            <MapProviderDialog
-              lang={lang}
-              address={editorAddress}
-              triggerText={editorAddress}
-              triggerVariant="link"
-              triggerClass="-mx-6 -my-4 inline-block"
-            />
-          </div>
+              {t("legalNotices.personalData.privacyPolicyLink")}
+            </Button>{t("legalNotices.personalData.suffix")}
+          </p>
         </div>
       </section>
 

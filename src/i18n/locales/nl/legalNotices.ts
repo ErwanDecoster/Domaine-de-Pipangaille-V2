@@ -7,44 +7,39 @@ export const legalNotices = {
   "legalNotices.editor.capitalLabel": "Maatschappelijk kapitaal",
   "legalNotices.editor.phoneLabel": "Telefoon",
   "legalNotices.editor.emailLabel": "E-mail",
-  "legalNotices.editor.ceoLabel": "Directeur",
-  "legalNotices.editor.publisherLabel": "Publicatiedirecteur",
-  "legalNotices.editor.publisherValue": "Catherine Lemoine",
+  "legalNotices.editor.ceoLabel": "Directrice en Publicatiedirectrice",
+  "legalNotices.editor.ceoValue": "Mevrouw Catherine Lemoine",
   "legalNotices.design.title": "Webdesign en -ontwikkeling",
   "legalNotices.design.phoneLabel": "Telefoon",
   "legalNotices.design.emailLabel": "E-mail",
   "legalNotices.design.websiteLabel": "Website",
-  "legalNotices.design.githubLabel": "Github",
-  "legalNotices.design.repoLabel": "Github-repository",
-  "legalNotices.hosting.title": "Website-hosting",
-  "legalNotices.hosting.providerLabel": "Provider",
-  "legalNotices.domain.title": "Domeinnaam-eigendom",
+  "legalNotices.design.githubLabel": "GitHub",
+  "legalNotices.design.repoLabel": "Website-repository",
+  "legalNotices.hosting.title": "Hosting",
+  "legalNotices.hosting.text": "De website wordt gehost door:",
+  "legalNotices.hosting.provider": "Vercel Inc",
+  "legalNotices.hosting.legalStatus": "Amerikaans rechtspersoon",
+  "legalNotices.domain.title": "Domeinnaam",
   "legalNotices.domain.providerLabel": "Domeinnaambeheerder",
-  "legalNotices.photos.title": "Fotoverantwoording",
+  "legalNotices.photos.title": "Fotografische credits",
   "legalNotices.photos.text":
-    "Alle foto's zijn eigendom van Domaine de Pipangaille.",
-  "legalNotices.cookies.title": "Gebruik van cookies",
-  "legalNotices.cookies.text":
-    "Deze website gebruikt cookies alleen voor statistieken en operationele doeleinden.",
-  "legalNotices.personalData.title": "Gebruik van persoonlijke gegevens",
+    "Alle foto's op deze website zijn exclusief eigendom van Domaine de Pipangaille. Elke reproductie of gebruik zonder toestemming is verboden.",
+  "legalNotices.personalData.title": "Persoonlijke gegevens & cookies",
   "legalNotices.personalData.text":
-    "Door de formulieren op de website te gebruiken, accepteert u de opslag en verwerking van de verzonden gegevens. Ze worden opgeslagen en verwerkt voor beheer, archivering en verbeteringsdoeleinden van onze diensten.",
-  "legalNotices.personalData.retention":
-    "Gegevens worden gedurende een redelijke periode van 10 jaar bewaard.",
-  "legalNotices.personalData.requestEmailPrefix":
-    "Voor verzoeken om verwijdering, correctie of toegang tot gegevens kunt u een verzoek indienen via e-mail ",
-  "legalNotices.personalData.requestAddressPrefix": " of per post naar: ",
-  "legalNotices.liability.title":
-    "Aansprakelijkheid van SAS Domaine de Pipangaille",
+    "De verwerking van persoonlijke gegevens en het gebruik van cookies op deze website worden in detail beschreven in ons",
+  "legalNotices.personalData.privacyPolicyLink": "Privacybeleid",
+  "legalNotices.personalData.suffix":
+    ", toegankelijk vanuit de voettekst van de website.",
+  "legalNotices.liability.title": "Aansprakelijkheid",
   "legalNotices.liability.text":
-    "Voor zover wettelijk toegestaan, is SAS Domaine de Pipangaille niet aansprakelijk voor:",
+    "SAS Domaine de Pipangaille doet al het mogelijke om betrouwbare en actuele informatie te verstrekken. Zij kan echter niet aansprakelijk worden gesteld voor:",
   "legalNotices.liability.inaccuracy":
-    "Onnauwkeurigheden, fouten, weglatingen of schade voortvloeiend uit ongeoorloofde wijzigingen van informatie op de Website.",
+    "eventuele fouten, weglatingen of onnauwkeurigheden,",
   "legalNotices.liability.unauthorized":
-    "Schade veroorzaakt door ongeoorloofde toegang tot de Website of deze ontoegankelijk makend.",
+    "schade als gevolg van frauduleuze inbraak door een derde partij,",
   "legalNotices.liability.interruption":
-    "De bezoeker wordt ervan op de hoogte gesteld dat de toegang tot de Website op elk moment door SAS Domaine de Pipangaille kan worden onderbroken wegens onderhoud, beveiliging of enige andere technische beperking.",
+    "tijdelijke onbeschikbaarheid van de website door onderhoud of een technisch incident.",
   "legalNotices.law.title": "Toepasselijk recht",
   "legalNotices.law.text":
-    "Deze juridische vermeldingen worden beheerst door Frans recht. Franse rechtbanken zijn exclusief bevoegd voor geschillen die rechtstreeks of onrechtstreeks betrekking hebben op toegang tot of gebruik van deze Website.",
+    "Deze juridische vermeldingen worden beheerst door Frans recht. Elk geschil met betrekking tot het gebruik van de website valt onder de exclusieve bevoegdheid van de Franse rechtbanken.",
 };

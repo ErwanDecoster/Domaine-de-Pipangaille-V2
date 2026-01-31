@@ -7,44 +7,39 @@ export const legalNotices = {
   "legalNotices.editor.capitalLabel": "Capitale sociale",
   "legalNotices.editor.phoneLabel": "Telefono",
   "legalNotices.editor.emailLabel": "Email",
-  "legalNotices.editor.ceoLabel": "Amministratrice",
-  "legalNotices.editor.publisherLabel": "Direttrice della Pubblicazione",
-  "legalNotices.editor.publisherValue": "Catherine Lemoine",
+  "legalNotices.editor.ceoLabel": "Amministratrice e Direttrice della Pubblicazione",
+  "legalNotices.editor.ceoValue": "Signora Catherine Lemoine",
   "legalNotices.design.title": "Design e sviluppo del sito",
   "legalNotices.design.phoneLabel": "Telefono",
   "legalNotices.design.emailLabel": "Email",
   "legalNotices.design.websiteLabel": "Sito",
-  "legalNotices.design.githubLabel": "Github",
-  "legalNotices.design.repoLabel": "Repository Github",
-  "legalNotices.hosting.title": "Hosting del sito",
-  "legalNotices.hosting.providerLabel": "Provider",
-  "legalNotices.domain.title": "Proprietà del nome di dominio",
+  "legalNotices.design.githubLabel": "GitHub",
+  "legalNotices.design.repoLabel": "Repository del sito",
+  "legalNotices.hosting.title": "Hosting",
+  "legalNotices.hosting.text": "Il sito è ospitato da:",
+  "legalNotices.hosting.provider": "Vercel Inc",
+  "legalNotices.hosting.legalStatus": "Società di diritto americano",
+  "legalNotices.domain.title": "Nome di dominio",
   "legalNotices.domain.providerLabel": "Gestore del nome di dominio",
   "legalNotices.photos.title": "Crediti fotografici",
   "legalNotices.photos.text":
-    "Tutte le foto sono proprietà del Domaine de Pipangaille.",
-  "legalNotices.cookies.title": "Uso dei cookie",
-  "legalNotices.cookies.text":
-    "Questo sito utilizza cookie solo per scopi statistici e di funzionamento.",
-  "legalNotices.personalData.title": "Uso dei dati personali",
+    "L'insieme delle fotografie presenti sul sito è di proprietà esclusiva del Domaine de Pipangaille. Qualsiasi riproduzione o utilizzo senza autorizzazione è vietato.",
+  "legalNotices.personalData.title": "Dati personali e cookie",
   "legalNotices.personalData.text":
-    "Utilizzando i moduli presenti sul sito, accettate l'archiviazione e il trattamento dei dati trasmessi. Sono conservati e trattati per finalità di gestione, archivio e miglioramento dei nostri servizi.",
-  "legalNotices.personalData.retention":
-    "I dati sono conservati per un periodo ragionevole di 10 anni.",
-  "legalNotices.personalData.requestEmailPrefix":
-    "Per qualsiasi richiesta di cancellazione, rettifica o accesso ai dati, inoltrate una richiesta via email a ",
-  "legalNotices.personalData.requestAddressPrefix": " o per posta a: ",
-  "legalNotices.liability.title":
-    "Responsabilità della SAS Domaine de Pipangaille",
+    "Il trattamento dei dati personali e l'uso dei cookie su questo sito sono descritti in dettaglio nella nostra",
+  "legalNotices.personalData.privacyPolicyLink": "Informativa sulla privacy",
+  "legalNotices.personalData.suffix":
+    ", accessibile dal piè di pagina del sito.",
+  "legalNotices.liability.title": "Responsabilità",
   "legalNotices.liability.text":
-    "Nei limiti consentiti dalla legge, la SAS Domaine de Pipangaille non è responsabile di:",
+    "La SAS Domaine de Pipangaille fa tutto il possibile per fornire informazioni affidabili e aggiornate. Tuttavia, non può essere ritenuta responsabile per:",
   "legalNotices.liability.inaccuracy":
-    "Alcuna inesattezza, errore, omissione o danni risultanti da modifiche non autorizzate delle informazioni rese disponibili sul Sito.",
+    "eventuali errori, omissioni o inesattezze,",
   "legalNotices.liability.unauthorized":
-    "Danni causati da accesso non autorizzato al Sito o che lo rendono inaccessibile.",
+    "danni risultanti da un'intrusione fraudolenta di terzi,",
   "legalNotices.liability.interruption":
-    "Si informa il visitatore che l'accesso al Sito può essere interrotto in qualsiasi momento dalla SAS Domaine de Pipangaille per motivi di manutenzione, sicurezza o qualsiasi altro vincolo tecnico.",
+    "indisponibilità temporanea del sito legata a un'operazione di manutenzione o a un incidente tecnico.",
   "legalNotices.law.title": "Legge applicabile",
   "legalNotices.law.text":
-    "Queste note legali sono disciplinate dalla legge francese. I tribunali francesi sono esclusivamente competenti a conoscere qualsiasi controversia direttamente o indirettamente relativa all'accesso o all'uso di questo Sito.",
+    "Le presenti note legali sono disciplinate dalla legge francese. Qualsiasi controversia relativa all'utilizzo del sito è di competenza esclusiva dei tribunali francesi.",
 };
