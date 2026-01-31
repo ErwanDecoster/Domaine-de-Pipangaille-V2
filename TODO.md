@@ -32,3 +32,11 @@
 ### push ci
 
 - [ ] ensure all page are available in all language
+
+## Additional Items
+
+- [ ] Rephrase: "Open from Wednesday to Monday, 11am–6pm, Le Comptoir de Pipangaille is a simple, warm, and lively place designed to meet, share, and fully enjoy the unique setting of Pipangaille." (hours are unclear)
+- [ ] Find wellness venues such as spas or thermal baths
+- [ ] Add hiking options
+- [ ] Find MTB activities
+- [ ] Add fullscreen image on click
