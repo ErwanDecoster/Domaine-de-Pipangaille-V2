@@ -10,6 +10,7 @@ import tableDHotes from "@/images/table-d-hotes.JPG";
 import pool from "@/images/pool.jpeg";
 import courtyardTerraceCorner from "@/images/courtyard-terrace-corner.jpeg";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
+import FullscreenGallery from "@/components/FullscreenGallery.astro";
 
 const { lang, roomName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -102,29 +103,39 @@ const otherRooms = roomsContent
 
       <div class="mt-12 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 sm:gap-6 sm:px-6 md:px-10 lg:grid-cols-4 lg:px-20">
         <Image
-          class="aspect-video sm:col-span-2 sm:row-span-2 sm:aspect-auto sm:h-full"
+          class="aspect-video cursor-zoom-in sm:col-span-2 sm:row-span-2 sm:aspect-auto sm:h-full"
           src={galleryImages[0].src}
           alt={galleryImages[0].alt}
+          data-gallery="room-gallery"
+          data-index="0"
         />
         <Image
-          class="aspect-video sm:aspect-4/3"
+          class="aspect-video cursor-zoom-in sm:aspect-4/3"
           src={galleryImages[1].src}
           alt={galleryImages[1].alt}
+          data-gallery="room-gallery"
+          data-index="1"
         />
         <Image
-          class="aspect-video sm:aspect-4/3"
+          class="aspect-video cursor-zoom-in sm:aspect-4/3"
           src={galleryImages[2].src}
           alt={galleryImages[2].alt}
+          data-gallery="room-gallery"
+          data-index="2"
         />
         <Image
-          class="aspect-video sm:aspect-4/3"
+          class="aspect-video cursor-zoom-in sm:aspect-4/3"
           src={galleryImages[3].src}
           alt={galleryImages[3].alt}
+          data-gallery="room-gallery"
+          data-index="3"
         />
         <Image
-          class="aspect-video sm:aspect-4/3"
+          class="aspect-video cursor-zoom-in sm:aspect-4/3"
           src={galleryImages[4].src}
           alt={galleryImages[4].alt}
+          data-gallery="room-gallery"
+          data-index="4"
         />
       </div>
 
@@ -173,6 +184,15 @@ const otherRooms = roomsContent
           />
         ))}
       </section>
+      {galleryImages.length ? (
+        <FullscreenGallery
+          galleryId="room-gallery"
+          images={galleryImages.map((img) => ({
+            src: img.src,
+            alt: img.alt,
+          }))}
+        />
+      ) : null}
     </Layout>
   )
 }

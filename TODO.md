@@ -39,4 +39,3 @@
 - [ ] Find wellness venues such as spas or thermal baths
 - [ ] Add hiking options
 - [ ] Find MTB activities
-- [ ] Add fullscreen image on click

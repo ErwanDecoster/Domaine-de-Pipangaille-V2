@@ -1,0 +1,163 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { Button } from "@/components/ui/button";
+import { X, ChevronLeft, ChevronRight } from "@lucide/astro";
+
+type ImageData = {
+  src: ImageMetadata;
+  alt: string;
+};
+
+type Props = {
+  images: ImageData[];
+  galleryId: string;
+};
+
+const { images = [], galleryId } = Astro.props as Props;
+---
+
+<div
+  id={`fullscreen-gallery-${galleryId}`}
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4"
+  role="dialog"
+  aria-modal="true"
+  aria-hidden="true"
+  data-gallery-id={galleryId}
+>
+  <div class="relative w-full max-w-6xl rounded-2xl border bg-white p-8">
+    <Button
+      type="button"
+      data-fullscreen-action="close"
+      variant="ghost"
+      size="icon"
+      class="absolute top-2 right-2 z-10 rounded-full bg-white/90 hover:bg-white"
+      aria-label="Close"
+    >
+      <X size={20} />
+    </Button>
+
+    <Button
+      type="button"
+      data-fullscreen-action="prev"
+      variant="ghost"
+      size="icon"
+      class="absolute top-1/2 left-2 -translate-y-1/2 rounded-full bg-white/90 hover:bg-white"
+      aria-label="Previous image"
+    >
+      <ChevronLeft size={24} />
+    </Button>
+
+    <Button
+      type="button"
+      data-fullscreen-action="next"
+      variant="ghost"
+      size="icon"
+      class="absolute top-1/2 right-2 -translate-y-1/2 rounded-full bg-white/90 hover:bg-white"
+      aria-label="Next image"
+    >
+      <ChevronRight size={24} />
+    </Button>
+
+    <div data-fullscreen-images class="overflow-hidden">
+      {
+        images.map((image, index) => (
+          <Image
+            src={image.src}
+            alt={image.alt}
+            data-index={index}
+            data-gallery={galleryId}
+            class="mx-auto hidden max-h-[85vh] w-auto object-contain"
+          />
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ galleryId }}>
+  function initGallery(id) {
+    const overlay = document.getElementById(`fullscreen-gallery-${id}`);
+    if (!overlay) return;
+
+    const imagesContainer = overlay.querySelector("[data-fullscreen-images]");
+    const internalImages = Array.from(
+      imagesContainer?.querySelectorAll("[data-gallery]") || [],
+    );
+
+    const externalImages = Array.from(
+      document.querySelectorAll(`[data-gallery="${id}"]`),
+    ).filter((img) => !overlay.contains(img));
+
+    const closeBtn = overlay.querySelector("[data-fullscreen-action='close']");
+    const prevBtn = overlay.querySelector("[data-fullscreen-action='prev']");
+    const nextBtn = overlay.querySelector("[data-fullscreen-action='next']");
+
+    let currentIndex = 0;
+
+    const showImage = (index) => {
+      internalImages.forEach((img, i) => {
+        if (i === index) {
+          img.classList.remove("hidden");
+          img.classList.add("block");
+        } else {
+          img.classList.remove("block");
+          img.classList.add("hidden");
+        }
+      });
+      currentIndex = index;
+    };
+
+    const open = (index = 0) => {
+      showImage(index);
+      overlay.classList.remove("hidden");
+      overlay.classList.add("flex");
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    };
+
+    const close = () => {
+      overlay.classList.add("hidden");
+      overlay.classList.remove("flex");
+      overlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    };
+
+    const prev = () => {
+      showImage(
+        (currentIndex - 1 + internalImages.length) % internalImages.length,
+      );
+    };
+
+    const next = () => {
+      showImage((currentIndex + 1) % internalImages.length);
+    };
+
+    closeBtn?.addEventListener("click", close);
+    prevBtn?.addEventListener("click", prev);
+    nextBtn?.addEventListener("click", next);
+
+    overlay?.addEventListener("click", (e) => {
+      if (e.target === overlay) close();
+    });
+
+    const handleKeydown = (e) => {
+      if (overlay?.classList.contains("hidden")) return;
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
+    };
+
+    document.addEventListener("keydown", handleKeydown);
+
+    externalImages.forEach((img, index) => {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", (e) => {
+        e.stopPropagation();
+        open(index);
+      });
+    });
+  }
+
+  initGallery(galleryId);
+</script>
