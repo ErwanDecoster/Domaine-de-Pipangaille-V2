@@ -84,69 +84,75 @@ const seeAllButtonLink =
         withBackground={false}
       />
 
-      <MediaContent
-        title={t("surroundings.detail.moreInfo.title")}
-        text=""
-        iframeUrl={baseSurrounding?.mapsUrl ?? ""}
-        iframeServiceName="Google Maps"
-        direction="left"
-      >
-        <div class="mt-8 grid gap-8">
-          {baseSurrounding?.socialMedia &&
-            baseSurrounding?.socialMedia?.length > 0 && (
-              <div>
-                <h3 class="text-2xl">
-                  {t("surroundings.detail.socialNetworks")}
-                </h3>
-                <ul>
-                  <li>
-                    {baseSurrounding.socialMedia.map((social) => (
-                      <Button
-                        class="-ml-4"
-                        variant="link"
-                        href={social.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <PlatformIcon
-                          platform={social.platform}
-                          class="size-4"
-                        />
-                        {social.platform}
-                      </Button>
-                    ))}
-                  </li>
-                </ul>
+      {baseSurrounding?.website &&
+        (baseSurrounding?.mapsUrl ||
+          baseSurrounding?.socialMedia ||
+          baseSurrounding?.bookLink ||
+          baseSurrounding?.phoneNumber) && (
+          <MediaContent
+            title={t("surroundings.detail.moreInfo.title")}
+            text=""
+            iframeUrl={baseSurrounding?.mapsUrl ?? ""}
+            iframeServiceName="Google Maps"
+            direction="left"
+          >
+            <div class="mt-8 grid gap-8">
+              {baseSurrounding?.socialMedia &&
+                baseSurrounding?.socialMedia?.length > 0 && (
+                  <div>
+                    <h3 class="text-2xl">
+                      {t("surroundings.detail.socialNetworks")}
+                    </h3>
+                    <ul>
+                      <li>
+                        {baseSurrounding.socialMedia.map((social) => (
+                          <Button
+                            class="-ml-4"
+                            variant="link"
+                            href={social.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <PlatformIcon
+                              platform={social.platform}
+                              class="size-4"
+                            />
+                            {social.platform}
+                          </Button>
+                        ))}
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              <div class="flex flex-wrap gap-6">
+                {baseSurrounding?.bookLink ? (
+                  <Button external href={baseSurrounding.bookLink}>
+                    {t("surroundings.detail.book")}
+                  </Button>
+                ) : null}
+                {baseSurrounding?.phoneNumber ? (
+                  <Button
+                    variant="outline"
+                    href={`tel:${baseSurrounding.phoneNumber}`}
+                  >
+                    <Phone />
+                    {t("surroundings.detail.call")}
+                  </Button>
+                ) : null}
+                {baseSurrounding?.website ? (
+                  <Button
+                    variant="link"
+                    class="-mx-6 gap-3!"
+                    external
+                    href={baseSurrounding.website}
+                  >
+                    {t("surroundings.detail.visitWebsite")}
+                  </Button>
+                ) : null}
               </div>
-            )}
-          <div class="flex gap-6">
-            {baseSurrounding?.bookLink ? (
-              <Button external href={baseSurrounding.bookLink}>
-                {t("surroundings.detail.book")}
-              </Button>
-            ) : null}
-            {baseSurrounding?.phoneNumber ? (
-              <Button
-                variant="outline"
-                href={`tel:${baseSurrounding.phoneNumber}`}
-              >
-                <Phone />
-                {t("surroundings.detail.call")}
-              </Button>
-            ) : null}
-            {baseSurrounding?.website ? (
-              <Button
-                variant="link"
-                class="-mx-6 gap-3!"
-                external
-                href={baseSurrounding.website}
-              >
-                {t("surroundings.detail.visitWebsite")}
-              </Button>
-            ) : null}
-          </div>
-        </div>
-      </MediaContent>
+            </div>
+          </MediaContent>
+        )}
 
       <section class="mt-48 grid gap-8 px-4 sm:px-6 md:grid-cols-3 md:gap-10 md:px-10 lg:px-20">
         <h2 class="md:col-span-3">{t(otherSurroundingsTitle)}</h2>
