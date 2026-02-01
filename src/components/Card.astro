@@ -27,7 +27,7 @@ const {
 ---
 
 <article
-  class={`space-y-4 relative bg-accent rounded-[16px] p-2 ${className}`}
+  class={`space-y-4 relative bg-accent rounded-[16px] -mx-1 p-2 ${className}`}
   style={`--card-image: url(${image.src});`}
   tabindex="-1"
   onclick={`window.location.href='${buttonLink}'`}
@@ -73,13 +73,13 @@ const {
     background-size: cover;
     background-position: center;
     filter: blur(1200px) saturate(200%);
-    transform: scale(1.1);
+    transform: scale(1.5);
     opacity: 0;
     z-index: -1;
     transition: opacity 0.2s ease-in-out;
   }
   article:hover::before {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   article:focus-within::before {
     opacity: 0.6;
