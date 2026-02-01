@@ -30,10 +30,18 @@ const bufferSize = tailBuffer.length;
   <div class="flex w-full items-center justify-between">
     <h2>{title}</h2>
     <div class="flex-none">
-      <Button onclick="window.scrollCarousel(-1)" variant="ghost">
+      <Button
+        onclick="window.scrollCarousel(-1)"
+        variant="ghost"
+        class="touch-manipulation"
+      >
         <ArrowLeft />
       </Button>
-      <Button onclick="window.scrollCarousel(1)" variant="ghost">
+      <Button
+        onclick="window.scrollCarousel(1)"
+        variant="ghost"
+        class="touch-manipulation"
+      >
         <ArrowRight />
       </Button>
     </div>
