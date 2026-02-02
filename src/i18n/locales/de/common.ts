@@ -6,4 +6,5 @@ export const common = {
   "iframeConsent.serviceNameFallback": "diesem externen Dienst",
   "iframeConsent.privacyPrefix": "Siehe unsere",
   "iframeConsent.privacyLink": "Datenschutzrichtlinie",
+  "mapProviderDialog.title": "Öffnen mit",
 };
