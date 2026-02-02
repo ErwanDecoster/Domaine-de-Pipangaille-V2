@@ -112,6 +112,8 @@ export const accommodations = {
   "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
     "Table guéridon avec deux fauteuils",
   "accommodations.breakfast.title": "Petit déjeuner, table d'hôte et bar",
+  "accommodations.breakfast.text":
+    "Le petit déjeuner est servi de 8h à 9h30, ou plus tôt sur demande. Il est servi en salle à manger ou dans la cour intérieure, en cas de beau temps. En formule buffet, vous trouverez un assortiment de pains, viennoiseries, thés biologiques, café, jus de fruits, yaourts locaux et fruits de saison.\n\nNous sélectionnons nos fournisseurs pour vous proposer des produits locaux et biologiques.\n\nOption petit déjeuner salé disponible, sur demande et réservation la veille.\n\nSur réservation, la table d'hôtes offre un menu unique fait maison ou des planches de charcuterie, fromages ou salades composées avec des produits locaux et bio. Nos propositions varient selon les saisons.\n\nService bar : nous proposons une carte des boissons et une liste de vins.",
   "accommodations.cta.title": "Vous souhaitez privatiser toutes les chambres ?",
   "accommodations.cta.text":
     "Il est également possible de réserver l’intégralité des chambres pour des événements de groupe, des soirées ou des week-ends en famille ou entre amis.",
