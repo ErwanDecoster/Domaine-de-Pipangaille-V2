@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { DateRange } from "reka-ui";
-import { ref, type Ref, computed, onMounted } from "vue";
+import { ref, type Ref, computed, onMounted, onUnmounted } from "vue";
 import { getLocalTimeZone, today, parseDate } from "@internationalized/date";
 import { RangeCalendar } from "@/components/ui/range-calendar";
 import {
@@ -18,8 +18,15 @@ const end = start.add({ days: 2 });
 const dateRange = ref({ start, end }) as Ref<DateRange>;
 const unavailableDates = ref<Set<string>>(new Set());
 const isSelectingEndDate = ref(false);
+const numberOfMonths = ref(1);
+
+const updateNumberOfMonths = () => {
+  numberOfMonths.value = window.innerWidth >= 768 ? 2 : 1;
+};
 
 onMounted(async () => {
+  updateNumberOfMonths();
+  window.addEventListener("resize", updateNumberOfMonths);
   const stored = localStorage.getItem("booking_date_range");
   if (stored) {
     try {
@@ -143,12 +150,16 @@ const handleChange = () => {
     isSelectingEndDate.value = false;
   }
 };
+
+onUnmounted(() => {
+  window.removeEventListener("resize", updateNumberOfMonths);
+});
 </script>
 
 <template>
   <RangeCalendar
     v-model="dateRange"
-    :number-of-months="2"
+    :number-of-months="numberOfMonths"
     :min-value="today(getLocalTimeZone())"
     :locale="locale"
     :week-starts-on="weekStartsOn"
