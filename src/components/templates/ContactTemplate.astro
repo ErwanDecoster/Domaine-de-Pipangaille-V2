@@ -96,6 +96,7 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
             type="text"
             id="name"
             name="name"
+            autocomplete="name"
             placeholder={t("contact.form.fullNamePlaceholder")}
             required
           />
@@ -106,6 +107,7 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
             type="email"
             id="email"
             name="email"
+            autocomplete="email"
             placeholder={t("contact.form.emailPlaceholder")}
             required
           />
@@ -116,6 +118,7 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
             type="text"
             id="object"
             name="object"
+            autocomplete="off"
             placeholder={t("contact.form.subjectPlaceholder")}
             required
           />
@@ -131,6 +134,7 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
             type="tel"
             id="phone"
             name="phone"
+            autocomplete="tel"
             placeholder={t("contact.form.phonePlaceholder")}
           />
         </Field>
@@ -139,6 +143,7 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
           <Textarea
             id="message"
             name="message"
+            autocomplete="off"
             placeholder={t("contact.form.messagePlaceholder")}
             class="h-32"
             required
