@@ -9,6 +9,7 @@ import {
 import { useTranslations } from "@/lib/i18n";
 import { ui } from "@/i18n/ui";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 interface Props {
   lang: keyof typeof ui;
@@ -53,7 +54,7 @@ const providers = [
 ---
 
 <Dialog>
-  <DialogTrigger variant={triggerVariant} class={triggerClass}>
+  <DialogTrigger variant={triggerVariant} class={cn(triggerClass, "text-left")}>
     {slot ? <Fragment set:html={slot} /> : triggerText}
   </DialogTrigger>
   <DialogContent>

@@ -43,14 +43,16 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
       <h2>{t("privacyPolicy.section1.title")}</h2>
       <div class="grid gap-2 text-lg">
         <p>{t("privacyPolicy.section1.text")}</p>
-        <p><strong>{editorCompany}</strong></p>
-        <MapProviderDialog
-          lang={lang}
-          address={editorAddress}
-          triggerText={editorAddress}
-          triggerVariant="link"
-          triggerClass="-mx-6 -my-4 inline-block"
-        />
+        <p>
+          <strong>{editorCompany}</strong>
+          <MapProviderDialog
+            lang={lang}
+            address={editorAddress}
+            triggerText={editorAddress}
+            triggerVariant="link"
+            triggerClass="-mx-6 -my-4 inline-block"
+          />
+        </p>
         <p>
           <strong>{t("privacyPolicy.section1.emailLabel")}:</strong>
           <Button
