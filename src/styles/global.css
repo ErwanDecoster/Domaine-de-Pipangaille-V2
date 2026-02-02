@@ -182,7 +182,15 @@ body.theme-counter {
 
   @keyframes shrink-nav {
     to {
-      height: 5rem;
+      height: 4rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    @keyframes shrink-nav {
+      to {
+        height: 5rem;
+      }
     }
   }
 

@@ -15,7 +15,7 @@ type Props = {
 
 const {
   reduce = false,
-  navHeight = "h-28",
+  navHeight = "h-20 md:h-28",
   reducedNavHeight,
   navBackground = "bg-transparent",
 } = Astro.props as Props;
@@ -25,13 +25,17 @@ const t = useTranslations(lang);
 const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
 ---
 
+<!-- Mobile menu checkbox (hidden, controls the menu state) -->
+<input type="checkbox" id="mobile-menu-toggle" class="peer/menu fixed hidden" />
+
 <nav
   data-scroll-animated
-  class={`fixed inset-x-0 z-20 flex ${navbarHeightClass} ${navBackground} items-center justify-between px-4 md:px-8 lg:px-20`}
+  class={`fixed inset-x-0 z-40 flex ${navbarHeightClass} ${navBackground} items-center justify-between px-4 md:px-8 lg:px-20`}
 >
+  <!-- Logo (visible on mobile and desktop) -->
   <Button
     href={getLocalizedUrl("home", lang)}
-    class="-mx-6 hidden xl:block"
+    class="-mx-6"
     variant="link"
     aria-hidden="true"
     tabindex="-1"
@@ -39,10 +43,12 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
     <Image
       src={Logo}
       alt="Domaine de Pipangaille"
-      class="w-28 bg-transparent"
+      class="w-20 bg-transparent md:w-28"
     />
   </Button>
-  <ul class="-mx-6 flex md:mx-0">
+
+  <!-- Desktop Navigation -->
+  <ul class="-mx-6 hidden md:mx-0 lg:flex">
     <li>
       <Button
         variant="link"
@@ -89,7 +95,9 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
       </Button>
     </li>
   </ul>
-  <ul class="flex items-center gap-4">
+
+  <!-- Desktop Actions -->
+  <ul class="hidden items-center gap-4 lg:flex">
     <li>
       <LanguageSwitcher
         idPrefix="navbar-language-switcher"
@@ -110,4 +118,88 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
       <Button href={getLocalizedUrl("booking", lang)}>{t("nav.book")}</Button>
     </li>
   </ul>
+
+  <!-- Mobile Burger Button -->
+  <label
+    for="mobile-menu-toggle"
+    class="flex cursor-pointer flex-col items-center justify-center gap-1.5 lg:hidden"
+    aria-label="Toggle menu"
+  >
+    <span
+      class="bg-foreground block h-0.5 w-6 origin-center transition-all duration-300 ease-in-out peer-checked/menu:translate-y-2 peer-checked/menu:rotate-45"
+    ></span>
+    <span
+      class="bg-foreground block h-0.5 w-6 transition-all duration-300 ease-in-out peer-checked/menu:opacity-0"
+    ></span>
+    <span
+      class="bg-foreground block h-0.5 w-6 origin-center transition-all duration-300 ease-in-out peer-checked/menu:-translate-y-2 peer-checked/menu:-rotate-45"
+    ></span>
+  </label>
 </nav>
+
+<!-- Mobile Menu -->
+<div
+  class="bg-background fixed inset-x-0 top-0 z-30 flex h-screen w-screen translate-x-full flex-col gap-8 overflow-y-auto px-4 pt-32 transition-transform duration-300 ease-in-out peer-checked/menu:translate-x-0 lg:hidden"
+>
+  <ul class="flex flex-col gap-2">
+    <li>
+      <Button
+        variant="link"
+        class="-mx-6 w-full justify-start text-2xl"
+        href={getLocalizedUrl("home", lang)}
+      >
+        {t("nav.home")}
+      </Button>
+    </li>
+    <li>
+      <Button
+        variant="link"
+        class="-mx-6 w-full justify-start text-2xl"
+        href={getLocalizedUrl("place", lang)}
+      >
+        {t("nav.place")}
+      </Button>
+    </li>
+    <li>
+      <Button
+        variant="link"
+        class="-mx-6 w-full justify-start text-2xl"
+        href={getLocalizedUrl("accommodations", lang)}
+      >
+        {t("nav.accommodations")}
+      </Button>
+    </li>
+    <li>
+      <Button
+        variant="link"
+        class="-mx-6 w-full justify-start text-2xl"
+        href={getLocalizedUrl("counter", lang)}
+      >
+        {t("nav.counter")}
+      </Button>
+    </li>
+    <li>
+      <Button
+        variant="link"
+        class="-mx-6 w-full justify-start text-2xl"
+        href={getLocalizedUrl("surroundings", lang)}
+      >
+        {t("nav.surroundings")}
+      </Button>
+    </li>
+  </ul>
+
+  <div class="flex flex-col gap-4">
+    <LanguageSwitcher idPrefix="mobile-menu-language-switcher" class="w-full" />
+    <Button
+      variant="outline"
+      class="w-full"
+      href={getLocalizedUrl("contact", lang)}
+    >
+      {t("nav.contact")}
+    </Button>
+    <Button class="w-full" href={getLocalizedUrl("booking", lang)}
+      >{t("nav.book")}</Button
+    >
+  </div>
+</div>
