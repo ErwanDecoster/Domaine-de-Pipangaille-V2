@@ -24,20 +24,20 @@ const forwardedProps = useForwardProps(delegatedProps);
     data-slot="range-calendar-trigger"
     :class="
       cn(
-        'hover:bg-accent hover:text-accent-foreground focus-visible:ring-ring inline-flex h-8 w-8 items-center justify-center rounded-md p-0 text-sm font-normal transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[selected]:opacity-100',
+        'hover:bg-accent hover:text-accent-foreground focus-visible:ring-ring inline-flex h-8 w-8 items-center justify-center rounded-md p-0 text-sm font-normal transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-selected:opacity-100',
         '[&[data-today]:not([data-selected])]:bg-accent [&[data-today]:not([data-selected])]:text-accent-foreground',
         // Outside months
-        'data-[outside-month]:text-muted-foreground [&[data-outside-month][data-selected]]:bg-accent/50 [&[data-outside-month][data-selected]]:text-muted-foreground data-[outside-month]:pointer-events-none data-[outside-month]:opacity-50 [&[data-outside-month][data-selected]]:opacity-30',
+        'data-outside-month:text-muted-foreground [&[data-outside-month][data-selected]]:bg-accent/50 [&[data-outside-month][data-selected]]:text-muted-foreground data-outside-month:pointer-events-none data-outside-month:opacity-50 [&[data-outside-month][data-selected]]:opacity-30',
         // Disabled
-        'data-[unavailable]:text-muted-foreground data-[disabled]:opacity-50',
+        'data-unavailable:text-muted-foreground data-disabled:opacity-50',
         // Unavailable
-        'data-[unavailable]:text-muted-foreground data-[unavailable]:pointer-events-none data-[unavailable]:line-through data-[unavailable]:opacity-60',
+        'data-unavailable:text-muted-foreground data-unavailable:pointer-events-none data-unavailable:line-through data-unavailable:opacity-60',
         // Selection Start
-        'data-[selection-start]:bg-primary data-[selection-start]:text-primary-foreground data-[selection-start]:hover:bg-primary data-[selection-start]:hover:text-primary-foreground data-[selection-start]:focus:bg-primary data-[selection-start]:focus:text-primary-foreground',
+        'data-selection-start:bg-primary data-selection-start:text-primary-foreground data-selection-start:hover:bg-primary data-selection-start:hover:text-primary-foreground data-selection-start:focus:bg-primary data-selection-start:focus:text-primary-foreground',
         // Selection End
-        'data-[selection-end]:bg-primary data-[selection-end]:text-primary-foreground data-[selection-end]:hover:bg-primary data-[selection-end]:hover:text-primary-foreground data-[selection-end]:focus:bg-primary data-[selection-end]:focus:text-primary-foreground',
+        'data-selection-end:bg-primary data-selection-end:text-primary-foreground data-selection-end:hover:bg-primary data-selection-end:hover:text-primary-foreground data-selection-end:focus:bg-primary data-selection-end:focus:text-primary-foreground',
         // Selected
-        'data-[selected]:bg-accent data-[selected]:text-accent-foreground data-[selected]:hover:bg-accent data-[selected]:hover:text-accent-foreground data-[selected]:focus:bg-accent data-[selected]:focus:text-accent-foreground',
+        'data-selected:bg-accent data-selected:text-accent-foreground data-selected:hover:bg-accent data-selected:hover:text-accent-foreground data-selected:focus:bg-accent data-selected:focus:text-accent-foreground',
         props.class,
       )
     "
