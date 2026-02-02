@@ -91,7 +91,11 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
   </ul>
   <ul class="flex items-center gap-4">
     <li>
-      <LanguageSwitcher reduce class="w-full max-w-xs" />
+      <LanguageSwitcher
+        idPrefix="navbar-language-switcher"
+        reduce
+        class="w-full max-w-xs"
+      />
     </li>
     <li>
       <Button

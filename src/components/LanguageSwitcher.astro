@@ -14,9 +14,15 @@ import { cn } from "@/lib/utils";
 
 interface Props extends HTMLAttributes<"select"> {
   reduce?: boolean;
+  idPrefix?: string;
 }
 
-const { class: className, reduce, ...props } = Astro.props as Props;
+const {
+  class: className,
+  reduce,
+  idPrefix = "language-switcher",
+  ...props
+} = Astro.props as Props;
 const lang = getCurrentLang(Astro.currentLocale);
 const currentPath = Astro.url.pathname;
 const queryString = Astro.url.search; // Preserve query parameters
@@ -94,7 +100,7 @@ const getLangHref = (targetLocale: Locale) => {
 
 <!-- Mobile version: 2 characters -->
 <NativeSelect
-  id="language-switcher-mobile"
+  id={`${idPrefix}-mobile`}
   class={cn(reduce ? "xl:hidden" : "hidden", className)}
   aria-label="Change language"
   {...props}
@@ -115,7 +121,7 @@ const getLangHref = (targetLocale: Locale) => {
 
 <!-- Desktop version: full label -->
 <NativeSelect
-  id="language-switcher-desktop"
+  id={`${idPrefix}-desktop`}
   class={cn(reduce ? "hidden xl:block" : "", className)}
   aria-label="Change language"
   {...props}
@@ -134,18 +140,22 @@ const getLangHref = (targetLocale: Locale) => {
 </NativeSelect>
 
 <script>
-  // Handle both mobile and desktop selects
-  ["language-switcher-mobile", "language-switcher-desktop"].forEach((id) => {
-    const select = document.getElementById(id) as HTMLSelectElement;
-    if (select) {
-      select.addEventListener("change", (event) => {
-        const target = event.target as HTMLSelectElement;
-        const selectedOption = target.options[target.selectedIndex];
-        const url = selectedOption.getAttribute("data-url");
-        if (url) {
-          window.location.href = url;
-        }
-      });
-    }
-  });
+  // Handle all language switchers on the page
+  document
+    .querySelectorAll('select[id$="-mobile"], select[id$="-desktop"]')
+    .forEach((select) => {
+      if (
+        select instanceof HTMLSelectElement &&
+        select.id.includes("language-switcher")
+      ) {
+        select.addEventListener("change", (event) => {
+          const target = event.target as HTMLSelectElement;
+          const selectedOption = target.options[target.selectedIndex];
+          const url = selectedOption.getAttribute("data-url");
+          if (url) {
+            window.location.href = url;
+          }
+        });
+      }
+    });
 </script>
