@@ -19,9 +19,35 @@ const dateRange = ref({ start, end }) as Ref<DateRange>;
 const unavailableDates = ref<Set<string>>(new Set());
 const isSelectingEndDate = ref(false);
 const numberOfMonths = ref(1);
+const availabilityLoaded = ref(false);
 
 const updateNumberOfMonths = () => {
   numberOfMonths.value = window.innerWidth >= 768 ? 2 : 1;
+};
+
+const loadAvailability = async () => {
+  if (availabilityLoaded.value) return;
+  availabilityLoaded.value = true;
+
+  try {
+    const todayDate = today(getLocalTimeZone());
+    const startDate = todayDate.toString();
+    const endDate = todayDate.add({ days: 90 }).toString();
+
+    const availabilityData = await fetchAmenitizAvailability(
+      startDate,
+      endDate,
+      props.lang || "fr",
+    );
+
+    if (availabilityData?.data?.availabilities) {
+      unavailableDates.value = buildUnavailableDatesMap(
+        availabilityData.data.availabilities,
+      );
+    }
+  } catch (error) {
+    console.error("Failed to fetch availability:", error);
+  }
 };
 
 onMounted(async () => {
@@ -43,25 +69,8 @@ onMounted(async () => {
     }
   }
 
-  try {
-    const todayDate = today(getLocalTimeZone());
-    const startDate = todayDate.toString();
-    const endDate = todayDate.add({ days: 90 }).toString();
-
-    const availabilityData = await fetchAmenitizAvailability(
-      startDate,
-      endDate,
-      props.lang || "fr",
-    );
-
-    if (availabilityData?.data?.availabilities) {
-      unavailableDates.value = buildUnavailableDatesMap(
-        availabilityData.data.availabilities,
-      );
-    }
-  } catch (error) {
-    console.error("Failed to fetch availability:", error);
-  }
+  // Defer availability loading until first interaction with calendar
+  // This prevents blocking the initial page load and improves LCP
 });
 
 const locale = computed(() => {
@@ -130,6 +139,11 @@ const updateDateDisplay = () => {
 };
 
 const handleChange = () => {
+  // Load availability data on first interaction with calendar
+  if (!availabilityLoaded.value) {
+    loadAvailability();
+  }
+
   emit("change", dateRange.value);
 
   if (dateRange.value.start && !dateRange.value.end) {
