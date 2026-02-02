@@ -51,7 +51,7 @@ function validateI18n() {
   languages.forEach((lang) => {
     const langDir = path.join(localesDir, lang);
     const files = fs.readdirSync(langDir).filter((f) => f.endsWith(".ts"));
-    moduleSets[lang] = files.sort();
+    moduleSets[lang] = files.toSorted((a, b) => a.localeCompare(b));
   });
 
   const referenceModules = moduleSets[languages[0]];
