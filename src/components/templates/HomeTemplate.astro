@@ -96,10 +96,15 @@ const featuredSurroundings = featuredSlugs
     {
       featuredSurroundings.map((surrounding, index) => {
         const card = formatCard(surrounding);
+        const sizes =
+          index < 2
+            ? "(min-width: 768px) 50vw, 100vw"
+            : "(min-width: 768px) 33vw, 100vw";
         return (
           <Card
             {...card}
             class={index < 2 ? "md:col-span-3" : "md:col-span-2"}
+            sizes={sizes}
           />
         );
       })
