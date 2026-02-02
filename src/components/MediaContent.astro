@@ -124,8 +124,8 @@ const paragraphs = Array.isArray(text)
     {
       paragraphs.length ? (
         <div class="flex flex-col gap-4">
-          {paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
+          {paragraphs.map((p) => (
+            <p>{p}</p>
           ))}
         </div>
       ) : null

@@ -39,7 +39,9 @@ const getLangHref = (targetLocale: Locale) => {
   if (cleanPath === "/" || cleanPath === "") {
     translatedUrl = targetLocale === "fr" ? "/" : `/${targetLocale}/`;
   } else {
-    const routeKey = getRouteKey(cleanPath);
+    const routeKey = getRouteKey(
+      cleanPath as Parameters<typeof getRouteKey>[0],
+    );
 
     if (routeKey) {
       translatedUrl = getLocalizedUrl(routeKey, targetLocale);
@@ -53,8 +55,11 @@ const getLangHref = (targetLocale: Locale) => {
         const dynamicRouteKey = Object.entries(routes).find(
           ([, translations]) => {
             return (
-              translations.fr === basePath ||
-              Object.values(translations).includes(basePath)
+              translations.fr ===
+                (basePath as (typeof translations)[keyof typeof translations]) ||
+              Object.values(translations).includes(
+                basePath as (typeof translations)[keyof typeof translations],
+              )
             );
           },
         )?.[0];

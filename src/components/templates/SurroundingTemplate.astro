@@ -87,7 +87,9 @@ const seeAllButtonLink =
       {baseSurrounding?.website &&
         (baseSurrounding?.mapsUrl ||
           baseSurrounding?.socialMedia ||
-          baseSurrounding?.bookLink ||
+          (baseSurrounding && "bookLink" in baseSurrounding
+            ? baseSurrounding.bookLink
+            : undefined) ||
           baseSurrounding?.phoneNumber) && (
           <MediaContent
             title={t("surroundings.detail.moreInfo.title")}
@@ -125,7 +127,9 @@ const seeAllButtonLink =
                   </div>
                 )}
               <div class="flex flex-wrap gap-6">
-                {baseSurrounding?.bookLink ? (
+                {baseSurrounding &&
+                "bookLink" in baseSurrounding &&
+                baseSurrounding.bookLink ? (
                   <Button external href={baseSurrounding.bookLink}>
                     {t("surroundings.detail.book")}
                   </Button>
@@ -158,7 +162,6 @@ const seeAllButtonLink =
         <h2 class="md:col-span-3">{t(otherSurroundingsTitle)}</h2>
         {otherSurroundings.slice(0, 3).map((surrounding) => (
           <Card
-            key={surrounding.slug}
             title={surrounding.title}
             image={surrounding.gallery?.[0]?.src}
             imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
