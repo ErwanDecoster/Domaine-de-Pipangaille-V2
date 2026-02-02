@@ -156,6 +156,10 @@ body.theme-counter {
   ul {
     @apply text-muted-foreground text-base/[160%] text-pretty;
   }
+  p button,
+  p a {
+    @apply text-left!;
+  }
   img {
     @apply bg-primary rounded-md object-cover;
   }
