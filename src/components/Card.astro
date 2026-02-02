@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import { Button } from "./ui/button";
 
@@ -32,11 +32,19 @@ const {
 } = Astro.props;
 
 const TitleComponent = titleLevel;
+
+// Optimize background image for blur effect
+const optimizedBgImage = await getImage({
+  src: image,
+  width: 400,
+  quality: 10,
+  format: "webp",
+});
 ---
 
 <article
   class={`space-y-4 relative bg-accent rounded-3xl -mx-1 p-2 ${className}`}
-  style={`--card-image: url(${image.src});`}
+  style={`--card-image: url(${optimizedBgImage.src});`}
   tabindex="-1"
   onclick={`window.location.href='${buttonLink}'`}
 >
