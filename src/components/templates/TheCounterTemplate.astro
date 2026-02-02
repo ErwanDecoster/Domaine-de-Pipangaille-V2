@@ -4,8 +4,8 @@ import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import { useTranslations } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
-import carportCounter from "@/images/carport-counter.JPG";
-import carportCounterBikes from "@/images/carport-counter-bikes.JPG";
+import carportCounter from "@/images/carport-counter.jpg";
+import carportCounterBikes from "@/images/carport-counter-bikes.jpg";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
