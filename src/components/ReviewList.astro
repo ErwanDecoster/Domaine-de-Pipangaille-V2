@@ -69,9 +69,6 @@ const bufferSize = tailBuffer.length;
   const carousel = document.getElementById("review-carousel");
 
   if (carousel) {
-    const globalWindow = globalThis as unknown as Window & {
-      scrollCarousel?: (_direction: number) => void;
-    };
     const SCROLL_DEBOUNCE = 100;
     const SCROLL_THRESHOLD = 5;
     const TRANSITION_DELAY = 10;
@@ -128,16 +125,16 @@ const bufferSize = tailBuffer.length;
       calculateDimensions();
     });
 
-    if ("ResizeObserver" in globalWindow) {
+    if ("ResizeObserver" in window) {
       const resizeObserver = new ResizeObserver(() => {
         calculateDimensions();
       });
       resizeObserver.observe(carousel);
     } else {
-      globalWindow.addEventListener("resize", calculateDimensions);
+      (window as any).addEventListener("resize", calculateDimensions);
     }
 
-    globalWindow.scrollCarousel = (direction: number) => {
+    (window as any).scrollCarousel = (direction: number) => {
       const scrollAmount = itemWidth * direction;
       carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
     };
