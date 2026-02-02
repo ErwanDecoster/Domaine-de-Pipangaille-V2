@@ -74,7 +74,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
         variant="outline"
         data-value=""
         size="sm"
-        onclick="window.surroundings.handleFilterClick(event)"
+        data-action="filter"
       >
         {t("surroundings.filter.all")}
       </Button>
@@ -85,7 +85,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
             variant="ghost"
             data-value={category}
             size="sm"
-            onclick="window.surroundings.handleFilterClick(event)"
+            data-action="filter"
           >
             {t(toKey(`surroundings.category.${category}`))}
           </Button>
@@ -116,7 +116,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
             variant="link"
             data-page={String(index + 1)}
             class="[.is-active]:before:bg-primary relative z-0 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
-            onclick="window.surroundings.handleActivityPageClick(event)"
+            data-action="activity-page"
             size="icon-lg"
           >
             {index + 1}
@@ -156,7 +156,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
             variant="link"
             data-page={String(index + 1)}
             class="[.is-active]:before:bg-primary relative z-0 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
-            onclick="window.surroundings.handleRestaurantPageClick(event)"
+            data-action="restaurant-page"
             size="icon-lg"
           >
             {index + 1}
@@ -254,36 +254,52 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
     window.history.replaceState({}, "", url);
   };
 
-  window.surroundings = {
-    handleFilterClick: (e: Event) => {
-      state.category = (e.currentTarget as HTMLElement).dataset.value || null;
-      state.activitiesPage = 1;
+  const handleFilterClick = (e: Event) => {
+    state.category = (e.currentTarget as HTMLElement).dataset.value || null;
+    state.activitiesPage = 1;
+    applyState();
+    document
+      .getElementById("activities")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleActivityPageClick = (e: Event) => {
+    const page = Number((e.currentTarget as HTMLElement).dataset.page);
+    if (!isNaN(page)) {
+      state.activitiesPage = page;
       applyState();
       document
         .getElementById("activities")
         ?.scrollIntoView({ behavior: "smooth" });
-    },
-    handleActivityPageClick: (e: Event) => {
-      const page = Number((e.currentTarget as HTMLElement).dataset.page);
-      if (!isNaN(page)) {
-        state.activitiesPage = page;
-        applyState();
-        document
-          .getElementById("activities")
-          ?.scrollIntoView({ behavior: "smooth" });
-      }
-    },
-    handleRestaurantPageClick: (e: Event) => {
-      const page = Number((e.currentTarget as HTMLElement).dataset.page);
-      if (!isNaN(page)) {
-        state.restaurantsPage = page;
-        applyState();
-        document
-          .getElementById("restaurants")
-          ?.scrollIntoView({ behavior: "smooth" });
-      }
-    },
+    }
   };
+
+  const handleRestaurantPageClick = (e: Event) => {
+    const page = Number((e.currentTarget as HTMLElement).dataset.page);
+    if (!isNaN(page)) {
+      state.restaurantsPage = page;
+      applyState();
+      document
+        .getElementById("restaurants")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  document
+    .querySelectorAll<HTMLElement>("[data-action='filter']")
+    .forEach((btn) => {
+      btn.addEventListener("click", handleFilterClick);
+    });
+  document
+    .querySelectorAll<HTMLElement>("[data-action='activity-page']")
+    .forEach((btn) => {
+      btn.addEventListener("click", handleActivityPageClick);
+    });
+  document
+    .querySelectorAll<HTMLElement>("[data-action='restaurant-page']")
+    .forEach((btn) => {
+      btn.addEventListener("click", handleRestaurantPageClick);
+    });
 
   applyState();
 </script>
