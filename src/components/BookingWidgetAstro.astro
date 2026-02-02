@@ -58,9 +58,7 @@ const bookingPath = getLocalizedUrl("booking", lang);
       <div
         class="pointer-events-none grid w-full grid-rows-[0fr] opacity-0 transition-[grid-template-rows,opacity] duration-300 ease-in-out peer-checked/widget:pointer-events-auto peer-checked/widget:grid-rows-[1fr] peer-checked/widget:opacity-100 md:pointer-events-auto md:contents md:opacity-100"
       >
-        <div
-          class="min-h-0 overflow-hidden peer-checked/widget:p-1 md:contents"
-        >
+        <div class="min-h-0 peer-checked/widget:p-1 md:contents">
           <div
             class="flex min-h-0 flex-col gap-3 md:flex-row md:flex-wrap md:items-center"
           >
@@ -92,43 +90,6 @@ const bookingPath = getLocalizedUrl("booking", lang);
                 </svg>
                 <span id="date-display">{t("home.booking.selectDates")}</span>
               </Button>
-
-              <div
-                id="calendar-dropdown"
-                role="dialog"
-                aria-label={t("home.booking.selectDates")}
-                class="bg-background absolute bottom-full left-0 mb-2 hidden rounded-lg border p-4 shadow-lg"
-              >
-                <div class="mb-4 flex items-center justify-between">
-                  <h3 class="text-sm font-medium">
-                    {t("home.booking.selectDates")}
-                  </h3>
-                  <button
-                    type="button"
-                    id="close-dropdown"
-                    class="rounded-sm opacity-70 transition-opacity hover:opacity-100"
-                    aria-label={t("home.booking.close")}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="size-4"
-                      aria-hidden="true"
-                    >
-                      <path d="M18 6 6 18"></path>
-                      <path d="m6 6 12 12"></path>
-                    </svg>
-                  </button>
-                </div>
-                <RangeCalendarVue client:only="vue" lang={lang} />
-              </div>
             </div>
 
             <div class="flex w-full items-center gap-2 md:w-auto">
@@ -174,6 +135,43 @@ const bookingPath = getLocalizedUrl("booking", lang);
       </div>
     </div>
   </div>
+
+  <div
+    id="calendar-dropdown"
+    role="dialog"
+    aria-label={t("home.booking.selectDates")}
+    class="bg-background fixed bottom-full left-0 z-50 mb-2 hidden rounded-lg border p-4 shadow-lg"
+  >
+    <div class="mb-4 flex items-center justify-between">
+      <h3 class="text-sm font-medium">
+        {t("home.booking.selectDates")}
+      </h3>
+      <button
+        type="button"
+        id="close-dropdown"
+        class="rounded-sm opacity-70 transition-opacity hover:opacity-100"
+        aria-label={t("home.booking.close")}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-4"
+          aria-hidden="true"
+        >
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <RangeCalendarVue client:only="vue" lang={lang} />
+  </div>
 </div>
 
 <script>
@@ -188,6 +186,13 @@ const bookingPath = getLocalizedUrl("booking", lang);
       e.stopPropagation();
       const isHidden = calendarDropdown.classList.toggle("hidden");
       dateButton.setAttribute("aria-expanded", String(!isHidden));
+
+      // Position the dropdown relative to the button
+      if (!isHidden) {
+        const buttonRect = dateButton.getBoundingClientRect();
+        calendarDropdown.style.left = `${buttonRect.left}px`;
+        calendarDropdown.style.bottom = `${window.innerHeight - buttonRect.top + 8}px`;
+      }
     });
   }
 
