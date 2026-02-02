@@ -107,6 +107,7 @@ const otherRooms = roomsContent
           quality="40"
           width={650}
           height={480}
+          sizes="(min-width: 650px) 650px, 100vw"
           src={galleryImages[0].src}
           alt={galleryImages[0].alt}
           data-gallery="room-gallery"
@@ -117,6 +118,7 @@ const otherRooms = roomsContent
           quality="40"
           width={300}
           height={225}
+          sizes="(min-width: 300px) 300px, 100vw"
           src={galleryImages[1].src}
           alt={galleryImages[1].alt}
           data-gallery="room-gallery"
@@ -127,6 +129,7 @@ const otherRooms = roomsContent
           quality="40"
           width={300}
           height={225}
+          sizes="(min-width: 300px) 300px, 100vw"
           src={galleryImages[2].src}
           alt={galleryImages[2].alt}
           data-gallery="room-gallery"
@@ -137,6 +140,7 @@ const otherRooms = roomsContent
           quality="40"
           width={300}
           height={225}
+          sizes="(min-width: 300px) 300px, 100vw"
           src={galleryImages[3].src}
           alt={galleryImages[3].alt}
           data-gallery="room-gallery"
@@ -147,6 +151,7 @@ const otherRooms = roomsContent
           quality="40"
           width={300}
           height={225}
+          sizes="(min-width: 300px) 300px, 100vw"
           src={galleryImages[4].src}
           alt={galleryImages[4].alt}
           data-gallery="room-gallery"
@@ -180,10 +185,17 @@ const otherRooms = roomsContent
         <h2>{exploreTitle}</h2>
         <p class="mt-8">{exploreText}</p>
         <div class="mt-12 grid gap-6 md:grid-cols-2">
-          <Image class="aspect-video" quality="40" src={pool} alt="TODO" />
           <Image
             class="aspect-video"
             quality="40"
+            sizes="(min-width: 624px) 624px, 100vw"
+            src={pool}
+            alt="TODO"
+          />
+          <Image
+            class="aspect-video"
+            quality="40"
+            sizes="(min-width: 624px) 624px, 100vw"
             src={courtyardTerraceCorner}
             alt="TODO"
           />
