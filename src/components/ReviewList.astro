@@ -70,7 +70,7 @@ const bufferSize = tailBuffer.length;
 
   if (carousel) {
     const globalWindow = globalThis as unknown as Window & {
-      scrollCarousel?: (direction: number) => void;
+      scrollCarousel?: (_direction: number) => void;
     };
     const SCROLL_DEBOUNCE = 100;
     const SCROLL_THRESHOLD = 5;
