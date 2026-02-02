@@ -16,14 +16,24 @@ const bookingPath = getLocalizedUrl("booking", lang);
 <div class="fixed right-0 bottom-0 left-0 z-20 pb-4">
   <div
     data-scroll-animated-booking-widget
-    class="bg-background mx-auto w-fit max-w-5xl rounded-2xl border px-4 py-4 shadow-lg"
+    class="bg-background relative mx-auto w-fit max-w-5xl rounded-2xl border px-4 py-4 shadow-lg has-peer-checked/widget:p-8"
   >
-    <div class="flex flex-wrap items-center gap-3">
-      <!-- Date Range Selector -->
-      <div class="relative">
+    <div
+      class="flex flex-col items-stretch gap-3 md:flex-row md:flex-wrap md:items-center"
+    >
+      <!-- Mobile expand toggle (hidden checkbox) -->
+      <input
+        type="checkbox"
+        id="booking-widget-toggle"
+        class="peer/widget hidden"
+      />
+      <!-- Date Range Selector - Hidden on mobile until expanded -->
+      <div
+        class="relative hidden w-full peer-checked/widget:block md:block md:w-auto"
+      >
         <Button
           variant="outline"
-          class="min-w-50 justify-start py-2 text-left font-normal"
+          class="w-full min-w-50 justify-start py-2 text-left font-normal md:w-auto"
           id="date-button"
         >
           <svg
@@ -80,8 +90,10 @@ const bookingPath = getLocalizedUrl("booking", lang);
         </div>
       </div>
 
-      <!-- Adults Selector -->
-      <div class="flex items-center gap-2">
+      <!-- Adults Selector - Hidden on mobile until expanded -->
+      <div
+        class="hidden w-full items-center gap-2 peer-checked/widget:flex md:flex md:w-auto"
+      >
         <label for="adults-select" class="text-sm font-medium"
           >{t("home.booking.adults")}</label
         >
@@ -96,8 +108,10 @@ const bookingPath = getLocalizedUrl("booking", lang);
         </NativeSelect>
       </div>
 
-      <!-- Children Selector -->
-      <div class="flex items-center gap-2">
+      <!-- Children Selector - Hidden on mobile until expanded -->
+      <div
+        class="hidden w-full items-center gap-2 peer-checked/widget:flex md:flex md:w-auto"
+      >
         <label for="children-select" class="text-sm font-medium"
           >{t("home.booking.children")}</label
         >
@@ -112,15 +126,46 @@ const bookingPath = getLocalizedUrl("booking", lang);
         </NativeSelect>
       </div>
 
-      <!-- Book Button -->
+      <!-- Mobile Toggle Button - Shows "Search" on mobile, opens widget -->
+      <label
+        for="booking-widget-toggle"
+        class="text-primary-foreground bg-primary hover:bg-primary/90 focus-visible:ring-ring inline-flex h-11 w-full cursor-pointer items-center justify-center rounded-md px-8 text-base font-medium whitespace-nowrap transition-colors peer-checked/widget:hidden focus-visible:ring-1 focus-visible:outline-none md:hidden"
+      >
+        {t("home.booking.button")}
+      </label>
+
+      <!-- Book Button - Hidden on mobile until expanded, always visible on desktop -->
       <Button
-        class="ml-auto"
+        class="ml-auto hidden w-full peer-checked/widget:inline-flex md:inline-flex md:w-auto"
         size="lg"
         id="book-button"
         data-booking-path={bookingPath}
       >
         {t("home.booking.button")}
       </Button>
+
+      <!-- Close button - Only visible on mobile when expanded -->
+      <label
+        for="booking-widget-toggle"
+        class="text-muted-foreground hover:text-foreground absolute top-3 right-3 hidden cursor-pointer rounded-sm opacity-70 transition-opacity peer-checked/widget:block hover:opacity-100 md:hidden"
+        aria-label="Close"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </label>
     </div>
   </div>
 </div>

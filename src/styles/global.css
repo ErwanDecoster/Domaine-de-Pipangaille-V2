@@ -194,7 +194,7 @@ body.theme-counter {
     }
   }
 
-  [data-scroll-animated-booking-widget] {
+  [data-scroll-animated-booking-widget]:not(:has(input:checked)) {
     animation: shrink-booking-widget linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
