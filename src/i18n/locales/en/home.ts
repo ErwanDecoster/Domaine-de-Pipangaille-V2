@@ -21,4 +21,9 @@ export const home = {
   "home.booking.adults": "Adults",
   "home.booking.children": "Children",
   "home.booking.close": "Close",
+  "home.reviews.previous": "Previous review",
+  "home.reviews.next": "Next review",
+  "home.gallery.close": "Close gallery",
+  "home.gallery.previous": "Previous image",
+  "home.gallery.next": "Next image",
 };

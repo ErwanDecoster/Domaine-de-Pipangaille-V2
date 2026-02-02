@@ -2,8 +2,11 @@
 import Button from "@/components/ui/button/button.astro";
 import { ArrowLeft, ArrowRight } from "@lucide/astro";
 import Review from "./Review.astro";
+import { useTranslations } from "@/lib/i18n";
+import { ui } from "@/i18n/ui";
 
-const { title, reviews = [] } = Astro.props;
+const { title, reviews = [], lang = "fr" } = Astro.props as { title: string; reviews: any[]; lang?: keyof typeof ui };
+const t = useTranslations(lang);
 
 const MIN_ITEMS_FOR_SCROLL = 10;
 const BUFFER_SIZE = 4;
@@ -34,6 +37,7 @@ const bufferSize = tailBuffer.length;
         onclick="window.scrollCarousel(-1)"
         variant="ghost"
         class="touch-manipulation"
+        aria-label={t("home.reviews.previous")}
       >
         <ArrowLeft />
       </Button>
@@ -41,6 +45,7 @@ const bufferSize = tailBuffer.length;
         onclick="window.scrollCarousel(1)"
         variant="ghost"
         class="touch-manipulation"
+        aria-label={t("home.reviews.next")}
       >
         <ArrowRight />
       </Button>

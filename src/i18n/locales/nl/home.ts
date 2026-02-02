@@ -21,4 +21,9 @@ export const home = {
   "home.booking.adults": "Volwassenen",
   "home.booking.children": "Kinderen",
   "home.booking.close": "Sluiten",
+  "home.reviews.previous": "Vorige beoordeling",
+  "home.reviews.next": "Volgende beoordeling",
+  "home.gallery.close": "Galerij sluiten",
+  "home.gallery.previous": "Vorige afbeelding",
+  "home.gallery.next": "Volgende afbeelding",
 };

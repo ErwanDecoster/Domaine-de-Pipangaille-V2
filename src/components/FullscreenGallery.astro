@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import { Button } from "@/components/ui/button";
 import { X, ChevronLeft, ChevronRight } from "@lucide/astro";
+import { useTranslations } from "@/lib/i18n";
+import { ui } from "@/i18n/ui";
 
 type ImageData = {
   src: ImageMetadata;
@@ -12,9 +14,11 @@ type ImageData = {
 type Props = {
   images: ImageData[];
   galleryId: string;
+  lang?: keyof typeof ui;
 };
 
-const { images = [], galleryId } = Astro.props as Props;
+const { images = [], galleryId, lang = "fr" } = Astro.props as Props;
+const t = useTranslations(lang);
 ---
 
 <div
@@ -32,7 +36,7 @@ const { images = [], galleryId } = Astro.props as Props;
       variant="ghost"
       size="icon"
       class="absolute top-2 right-2 z-10 touch-manipulation rounded-full bg-white/90 hover:bg-white"
-      aria-label="Close"
+      aria-label={t("home.gallery.close")}
     >
       <X size={20} />
     </Button>
@@ -43,7 +47,7 @@ const { images = [], galleryId } = Astro.props as Props;
       variant="ghost"
       size="icon"
       class="absolute top-1/2 left-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
-      aria-label="Previous image"
+      aria-label={t("home.gallery.previous")}
     >
       <ChevronLeft size={24} />
     </Button>
@@ -54,7 +58,7 @@ const { images = [], galleryId } = Astro.props as Props;
       variant="ghost"
       size="icon"
       class="absolute top-1/2 right-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
-      aria-label="Next image"
+      aria-label={t("home.gallery.next")}
     >
       <ChevronRight size={24} />
     </Button>
