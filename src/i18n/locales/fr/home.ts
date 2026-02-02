@@ -20,4 +20,5 @@ export const home = {
   "home.booking.selectDates": "Sélectionner les dates",
   "home.booking.adults": "Adultes",
   "home.booking.children": "Enfants",
+  "home.booking.close": "Fermer",
 };

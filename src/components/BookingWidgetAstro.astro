@@ -13,23 +13,22 @@ const t = useTranslations(lang);
 const bookingPath = getLocalizedUrl("booking", lang);
 ---
 
-<div class="fixed right-0 bottom-0 left-0 z-20 pb-4">
+<div class="fixed inset-x-0 bottom-0 z-20 pb-4">
   <div
     data-scroll-animated-booking-widget
     class="bg-background group/widget relative mx-auto w-fit max-w-5xl rounded-2xl border px-4 py-4 shadow-lg has-peer-checked/widget:p-8"
   >
     <div class="flex flex-col items-stretch gap-0 md:items-center">
-      <!-- Mobile expand toggle (hidden checkbox) -->
       <input
         type="checkbox"
         id="booking-widget-toggle"
         class="peer/widget sr-only"
       />
-      <!-- Close button - Only visible on mobile when expanded -->
+
       <label
         for="booking-widget-toggle"
         class="text-muted-foreground hover:text-foreground absolute top-3 right-3 hidden cursor-pointer rounded-sm opacity-70 transition-opacity peer-checked/widget:block hover:opacity-100 md:hidden"
-        aria-label="Close"
+        aria-label={t("home.booking.close")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,13 +40,14 @@ const bookingPath = getLocalizedUrl("booking", lang);
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-6 w-6"
+          class="size-6"
+          aria-hidden="true"
         >
           <path d="M18 6 6 18"></path>
           <path d="m6 6 12 12"></path>
         </svg>
       </label>
-      <!-- Mobile Toggle Button - Shows "Search" on mobile, opens widget -->
+
       <label
         for="booking-widget-toggle"
         class="text-primary-foreground bg-primary hover:bg-primary/90 focus-visible:ring-ring inline-flex h-11 w-full cursor-pointer items-center justify-center rounded-md px-8 text-base font-medium whitespace-nowrap transition-colors peer-checked/widget:hidden focus-visible:ring-1 focus-visible:outline-none md:hidden"
@@ -55,7 +55,6 @@ const bookingPath = getLocalizedUrl("booking", lang);
         {t("home.booking.button")}
       </label>
 
-      <!-- Expandable content (animated on mobile with grid) -->
       <div
         class="pointer-events-none grid w-full grid-rows-[0fr] opacity-0 transition-[grid-template-rows,opacity] duration-300 ease-in-out peer-checked/widget:pointer-events-auto peer-checked/widget:grid-rows-[1fr] peer-checked/widget:opacity-100 md:pointer-events-auto md:contents md:opacity-100"
       >
@@ -65,12 +64,13 @@ const bookingPath = getLocalizedUrl("booking", lang);
           <div
             class="flex min-h-0 flex-col gap-3 md:flex-row md:flex-wrap md:items-center"
           >
-            <!-- Date Range Selector -->
             <div class="relative w-full md:w-auto">
               <Button
                 variant="outline"
                 class="w-full min-w-50 justify-start py-2 text-left font-normal md:w-auto"
                 id="date-button"
+                aria-haspopup="dialog"
+                aria-expanded="false"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,8 @@ const bookingPath = getLocalizedUrl("booking", lang);
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="mr-2 h-4 w-4"
+                  class="mr-2 size-4"
+                  aria-hidden="true"
                 >
                   <path d="M8 2v4"></path>
                   <path d="M16 2v4"></path>
@@ -92,9 +93,10 @@ const bookingPath = getLocalizedUrl("booking", lang);
                 <span id="date-display">{t("home.booking.selectDates")}</span>
               </Button>
 
-              <!-- Calendar Dropdown -->
               <div
                 id="calendar-dropdown"
+                role="dialog"
+                aria-label={t("home.booking.selectDates")}
                 class="bg-background absolute bottom-full left-0 mb-2 hidden rounded-lg border p-4 shadow-lg"
               >
                 <div class="mb-4 flex items-center justify-between">
@@ -102,8 +104,10 @@ const bookingPath = getLocalizedUrl("booking", lang);
                     {t("home.booking.selectDates")}
                   </h3>
                   <button
+                    type="button"
                     id="close-dropdown"
                     class="rounded-sm opacity-70 transition-opacity hover:opacity-100"
+                    aria-label={t("home.booking.close")}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +119,8 @@ const bookingPath = getLocalizedUrl("booking", lang);
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="h-4 w-4"
+                      class="size-4"
+                      aria-hidden="true"
                     >
                       <path d="M18 6 6 18"></path>
                       <path d="m6 6 12 12"></path>
@@ -126,11 +131,10 @@ const bookingPath = getLocalizedUrl("booking", lang);
               </div>
             </div>
 
-            <!-- Adults Selector -->
             <div class="flex w-full items-center gap-2 md:w-auto">
-              <label for="adults-select" class="text-sm font-medium"
-                >{t("home.booking.adults")}</label
-              >
+              <label for="adults-select" class="text-sm font-medium">
+                {t("home.booking.adults")}
+              </label>
               <NativeSelect class="w-20" id="adults-select">
                 {
                   Array.from({ length: 10 }, (_, i) => i + 1).map((n) => (
@@ -142,11 +146,10 @@ const bookingPath = getLocalizedUrl("booking", lang);
               </NativeSelect>
             </div>
 
-            <!-- Children Selector -->
             <div class="flex w-full items-center gap-2 md:w-auto">
-              <label for="children-select" class="text-sm font-medium"
-                >{t("home.booking.children")}</label
-              >
+              <label for="children-select" class="text-sm font-medium">
+                {t("home.booking.children")}
+              </label>
               <NativeSelect class="w-20" id="children-select">
                 {
                   Array.from({ length: 6 }, (_, i) => i).map((n) => (
@@ -158,7 +161,6 @@ const bookingPath = getLocalizedUrl("booking", lang);
               </NativeSelect>
             </div>
 
-            <!-- Book Button -->
             <Button
               class="w-full md:ml-auto md:w-auto"
               size="lg"
@@ -175,7 +177,6 @@ const bookingPath = getLocalizedUrl("booking", lang);
 </div>
 
 <script>
-  // Client-side script for booking functionality
   const dateButton = document.getElementById("date-button");
   const calendarDropdown = document.getElementById("calendar-dropdown");
   const closeDropdown = document.getElementById("close-dropdown");
@@ -185,22 +186,30 @@ const bookingPath = getLocalizedUrl("booking", lang);
   if (dateButton && calendarDropdown) {
     dateButton.addEventListener("click", (e) => {
       e.stopPropagation();
-      calendarDropdown.classList.toggle("hidden");
+      const isHidden = calendarDropdown.classList.toggle("hidden");
+      dateButton.setAttribute("aria-expanded", String(!isHidden));
     });
   }
 
   // Close calendar dropdown
-  if (closeDropdown && calendarDropdown) {
+  if (closeDropdown && calendarDropdown && dateButton) {
     closeDropdown.addEventListener("click", (e) => {
       e.stopPropagation();
       calendarDropdown.classList.add("hidden");
+      dateButton.setAttribute("aria-expanded", "false");
     });
   }
 
   // Close dropdown when clicking outside
   document.addEventListener("click", (e) => {
-    if (calendarDropdown && !calendarDropdown.contains(e.target as Node)) {
+    if (
+      calendarDropdown &&
+      dateButton &&
+      !calendarDropdown.contains(e.target as Node) &&
+      !dateButton.contains(e.target as Node)
+    ) {
       calendarDropdown.classList.add("hidden");
+      dateButton.setAttribute("aria-expanded", "false");
     }
   });
 
@@ -217,17 +226,12 @@ const bookingPath = getLocalizedUrl("booking", lang);
       const adults = adultsSelect?.value || "2";
       const children = childrenSelect?.value || "0";
 
-      let startDate = "";
-      let endDate = "";
+      const startDate = dateButton?.dataset.startDate || "";
+      const endDate = dateButton?.dataset.endDate || "";
 
-      // Use the data attributes from the date button
-      const dateButton = document.getElementById("date-button");
-      startDate = dateButton?.dataset.startDate || "";
-      endDate = dateButton?.dataset.endDate || "";
-
-      // Build booking page URL
       const bookingPath = bookButton.dataset.bookingPath || "/reservation";
       const bookUrl = new URL(bookingPath, window.location.origin);
+
       if (startDate) bookUrl.searchParams.set("start_date", startDate);
       if (endDate) bookUrl.searchParams.set("end_date", endDate);
       bookUrl.searchParams.set("adults", adults);
