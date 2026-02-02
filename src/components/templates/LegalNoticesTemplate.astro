@@ -40,204 +40,202 @@ const privacyPolicyUrl = getLocalizedUrl("privacyPolicy", lang);
   title={t("seo.pages.legal.title")}
   description={t("seo.pages.legal.description")}
 >
-  <main class="mx-auto grid w-full max-w-7xl gap-8 px-4 py-16">
-    <div
-      data-scroll-animated
-      class="bg-background sticky top-0 z-10 h-28 w-screen"
-    >
-    </div>
+  <div
+    data-scroll-animated
+    class="bg-background sticky top-0 z-10 h-28 w-screen"
+  >
+  </div>
+
+  <div class="grid gap-8 px-4 pt-16 sm:px-6 md:px-10 lg:px-20">
     <h1>{t("legalNotices.title")}</h1>
-
-    <div class="grid gap-8">
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.editor.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p><strong>{editorCompany}</strong></p>
-          <div
-            class="text-muted-foreground flex items-center gap-2 text-base/[160%] text-pretty"
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.editor.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p><strong>{editorCompany}</strong></p>
+        <div
+          class="text-muted-foreground flex items-center gap-2 text-base/[160%] text-pretty"
+        >
+          <strong>{t("legalNotices.editor.addressLabel")}:</strong>
+          <MapProviderDialog
+            lang={lang}
+            address={editorAddress}
+            triggerText={editorAddress}
+            triggerVariant="link"
+            triggerClass="-mx-6 -my-4 inline-block"
+          />
+        </div>
+        <p class="flex flex-wrap gap-6">
+          <span
+            ><strong>{t("legalNotices.editor.rcsLabel")}:</strong>
+            {editorRcsValue}</span
           >
-            <strong>{t("legalNotices.editor.addressLabel")}:</strong>
-            <MapProviderDialog
-              lang={lang}
-              address={editorAddress}
-              triggerText={editorAddress}
-              triggerVariant="link"
-              triggerClass="-mx-6 -my-4 inline-block"
-            />
-          </div>
-          <p class="flex flex-wrap gap-6">
-            <span
-              ><strong>{t("legalNotices.editor.rcsLabel")}:</strong>
-              {editorRcsValue}</span
-            >
-            <span
-              ><strong>{t("legalNotices.editor.nafLabel")}:</strong>
-              {editorNafValue}</span
-            >
-            <span
-              ><strong>{t("legalNotices.editor.capitalLabel")}:</strong>
-              {editorCapitalValue}</span
-            >
-          </p>
-          <p>
-            <strong>{t("legalNotices.editor.phoneLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={`tel:${editorPhone.replace(/\s/g, "")}`}
-            >
-              {editorPhone}
-            </Button>
-          </p>
-          <p>
-            <strong>{t("legalNotices.editor.emailLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={`mailto:${editorEmail}`}
-            >
-              {editorEmail}
-            </Button>
-          </p>
-          <p>
-            <strong>{t("legalNotices.editor.ceoLabel")}:</strong>
-            {t("legalNotices.editor.ceoValue")}
-          </p>
-        </div>
-      </section>
+          <span
+            ><strong>{t("legalNotices.editor.nafLabel")}:</strong>
+            {editorNafValue}</span
+          >
+          <span
+            ><strong>{t("legalNotices.editor.capitalLabel")}:</strong>
+            {editorCapitalValue}</span
+          >
+        </p>
+        <p>
+          <strong>{t("legalNotices.editor.phoneLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={`tel:${editorPhone.replace(/\s/g, "")}`}
+          >
+            {editorPhone}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.editor.emailLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={`mailto:${editorEmail}`}
+          >
+            {editorEmail}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.editor.ceoLabel")}:</strong>
+          {t("legalNotices.editor.ceoValue")}
+        </p>
+      </div>
+    </section>
 
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.design.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p><strong>{designCompany}</strong></p>
-          <p>
-            <strong>{t("legalNotices.design.phoneLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={`tel:${designPhone.replace(/\s/g, "")}`}
-            >
-              {designPhone}
-            </Button>
-          </p>
-          <p>
-            <strong>{t("legalNotices.design.emailLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={`mailto:${designEmail}`}
-            >
-              {designEmail}
-            </Button>
-          </p>
-          <p>
-            <strong>{t("legalNotices.design.websiteLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={designWebsiteUrl}
-              target="_blank"
-            >
-              {designWebsiteLabel}
-            </Button>
-          </p>
-          <p>
-            <strong>{t("legalNotices.design.githubLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={designGithubUrl}
-              target="_blank"
-            >
-              {designGithubLabel}
-            </Button>
-          </p>
-          <p>
-            <strong>{t("legalNotices.design.repoLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={designRepoUrl}
-              target="_blank"
-            >
-              {designRepoLabel}
-            </Button>
-          </p>
-        </div>
-      </section>
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.design.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p><strong>{designCompany}</strong></p>
+        <p>
+          <strong>{t("legalNotices.design.phoneLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={`tel:${designPhone.replace(/\s/g, "")}`}
+          >
+            {designPhone}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.design.emailLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={`mailto:${designEmail}`}
+          >
+            {designEmail}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.design.websiteLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={designWebsiteUrl}
+            target="_blank"
+          >
+            {designWebsiteLabel}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.design.githubLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={designGithubUrl}
+            target="_blank"
+          >
+            {designGithubLabel}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.design.repoLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={designRepoUrl}
+            target="_blank"
+          >
+            {designRepoLabel}
+          </Button>
+        </p>
+      </div>
+    </section>
 
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.hosting.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p>{t("legalNotices.hosting.text")}</p>
-          <p>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={hostingUrl}
-              target="_blank"
-            >
-              {t("legalNotices.hosting.provider")}
-            </Button>
-          </p>
-          <p>{t("legalNotices.hosting.legalStatus")}</p>
-        </div>
-      </section>
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.hosting.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>{t("legalNotices.hosting.text")}</p>
+        <p>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={hostingUrl}
+            target="_blank"
+          >
+            {t("legalNotices.hosting.provider")}
+          </Button>
+        </p>
+        <p>{t("legalNotices.hosting.legalStatus")}</p>
+      </div>
+    </section>
 
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.domain.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p>
-            <strong>{t("legalNotices.domain.providerLabel")}:</strong>
-            <Button
-              variant="link"
-              class="-mx-6 -my-4"
-              href={domainUrl}
-              target="_blank"
-            >
-              {domainProvider}
-            </Button>
-          </p>
-        </div>
-      </section>
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.domain.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>
+          <strong>{t("legalNotices.domain.providerLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={domainUrl}
+            target="_blank"
+          >
+            {domainProvider}
+          </Button>
+        </p>
+      </div>
+    </section>
 
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.photos.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p>{t("legalNotices.photos.text")}</p>
-        </div>
-      </section>
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.photos.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>{t("legalNotices.photos.text")}</p>
+      </div>
+    </section>
 
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.personalData.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p>
-            {t("legalNotices.personalData.text")}
-            <Button variant="link" class="-mx-6 -my-4" href={privacyPolicyUrl}>
-              {t("legalNotices.personalData.privacyPolicyLink")}
-            </Button>{t("legalNotices.personalData.suffix")}
-          </p>
-        </div>
-      </section>
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.personalData.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>
+          {t("legalNotices.personalData.text")}
+          <Button variant="link" class="-mx-6 -my-4" href={privacyPolicyUrl}>
+            {t("legalNotices.personalData.privacyPolicyLink")}
+          </Button>{t("legalNotices.personalData.suffix")}
+        </p>
+      </div>
+    </section>
 
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.liability.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p>{t("legalNotices.liability.text")}</p>
-          <ul class="list-inside list-disc space-y-2">
-            <li>{t("legalNotices.liability.inaccuracy")}</li>
-            <li>{t("legalNotices.liability.unauthorized")}</li>
-            <li>{t("legalNotices.liability.interruption")}</li>
-          </ul>
-        </div>
-      </section>
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.liability.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>{t("legalNotices.liability.text")}</p>
+        <ul class="list-inside list-disc space-y-2">
+          <li>{t("legalNotices.liability.inaccuracy")}</li>
+          <li>{t("legalNotices.liability.unauthorized")}</li>
+          <li>{t("legalNotices.liability.interruption")}</li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="grid gap-4">
-        <h2>{t("legalNotices.law.title")}</h2>
-        <div class="grid gap-2 text-lg">
-          <p>{t("legalNotices.law.text")}</p>
-        </div>
-      </section>
-    </div>
-  </main>
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.law.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>{t("legalNotices.law.text")}</p>
+      </div>
+    </section>
+  </div>
 </Layout>

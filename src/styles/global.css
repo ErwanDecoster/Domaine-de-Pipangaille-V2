@@ -138,19 +138,19 @@ body.theme-counter {
     @apply cursor-pointer text-base;
   }
   h1 {
-    @apply text-5.5xl/[115%] 2xl:text-7.5xl/[95%] font-serif-4 font-light tracking-tight md:text-6xl/[110%] xl:text-7xl/[100%];
+    @apply 2xl:text-7.5xl/[95%] font-serif-4 text-5xl/[110%] font-light tracking-tight md:text-6xl/[110%] xl:text-7xl/[100%];
   }
   h2 {
-    @apply font-serif-4 text-5xl/[110%] font-light tracking-tight md:text-6xl/[110%];
+    @apply font-serif-4 text-4xl/[130%] font-light tracking-tight md:text-6xl/[110%];
   }
   h3 {
-    @apply font-serif-4 text-4xl/[130%] font-light tracking-tight md:text-5xl/[110%];
+    @apply font-serif-4 text-3xl/[140%] font-light tracking-tight md:text-5xl/[110%];
   }
   h4 {
-    @apply font-serif-4 text-3xl/[140%] font-light tracking-tight md:text-4xl/[130%];
+    @apply font-serif-4 text-2xl/[150%] font-light tracking-tight md:text-4xl/[130%];
   }
   h5 {
-    @apply font-serif-4 text-xl/[160%] font-light tracking-tight md:text-2xl/[150%];
+    @apply font-serif-4 text-lg/[170%] font-light tracking-tight md:text-2xl/[150%];
   }
   p,
   ul {
