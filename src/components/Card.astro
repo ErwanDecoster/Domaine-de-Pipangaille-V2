@@ -16,6 +16,7 @@ interface Props {
   class?: string;
   titleLevel?: HeadingLevel;
   isLCP?: boolean;
+  sizes?: string;
 }
 
 const {
@@ -29,6 +30,7 @@ const {
   class: className,
   titleLevel = "h3",
   isLCP = false,
+  sizes = "(min-width: 724px) 724px, 100vw",
 } = Astro.props;
 
 const TitleComponent = titleLevel;
@@ -53,7 +55,7 @@ const optimizedBgImage = await getImage({
     quality="40"
     width="724"
     height="408"
-    sizes="(min-width: 724px) 724px, 100vw"
+    sizes={sizes}
     src={image}
     alt={imageAlt}
     fetchpriority={isLCP ? "high" : "auto"}

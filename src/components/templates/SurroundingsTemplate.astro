@@ -100,7 +100,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
             data-kind="activity"
             data-categories={(activity.categories ?? []).join(",")}
           >
-            <Card {...activity} />
+            <Card {...activity} sizes="(min-width: 1280px) 472px, (min-width: 768px) 50vw, 100vw" />
           </div>
         ))
       }
@@ -140,7 +140,7 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
       {
         restaurants.map((restaurant) => (
           <div class="restaurant-card" data-kind="restaurant">
-            <Card {...restaurant} />
+            <Card {...restaurant} sizes="(min-width: 1280px) 472px, (min-width: 768px) 50vw, 100vw" />
           </div>
         ))
       }
