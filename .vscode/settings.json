@@ -18,5 +18,6 @@
     "viarhona",
     "vueuse"
   ],
-  "cSpell.ignorePaths": ["src/i18n/**/**", "src/constants/**", "TODO.md"]
+  "cSpell.ignorePaths": ["src/i18n/**/**", "src/constants/**", "TODO.md"],
+  "css.lint.unknownAtRules": "ignore"
 }
