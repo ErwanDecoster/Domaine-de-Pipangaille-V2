@@ -5,7 +5,11 @@ import Review from "./Review.astro";
 import { useTranslations } from "@/lib/i18n";
 import { ui } from "@/i18n/ui";
 
-const { title, reviews = [], lang = "fr" } = Astro.props as { title: string; reviews: any[]; lang?: keyof typeof ui };
+const {
+  title,
+  reviews = [],
+  lang = "fr",
+} = Astro.props as { title: string; reviews: any[]; lang?: keyof typeof ui };
 const t = useTranslations(lang);
 
 const MIN_ITEMS_FOR_SCROLL = 10;
