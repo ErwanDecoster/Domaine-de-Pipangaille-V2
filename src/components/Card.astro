@@ -40,10 +40,10 @@ const TitleComponent = titleLevel;
   tabindex="-1"
   onclick={`window.location.href='${buttonLink}'`}
 >
->  <Image 
-    class="aspect-video" 
-    quality="60" 
-    src={image} 
+  <Image
+    class="aspect-video"
+    quality="60"
+    src={image}
     alt={imageAlt}
     fetchpriority={isLCP ? "high" : "auto"}
     loading={isLCP ? "eager" : "lazy"}

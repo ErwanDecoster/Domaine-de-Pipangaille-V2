@@ -32,7 +32,9 @@ const paragraphs = Array.isArray(text)
     )}></span>
   <Image
     class="aspect-video lg:aspect-11/12"
-    quality="60" 
+    quality="60"
+    fetchpriority="high"
+    loading="eager"
     src={image}
     alt={imageAlt}
   />
