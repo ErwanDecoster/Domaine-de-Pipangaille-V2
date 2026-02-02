@@ -20,6 +20,14 @@ const t = useTranslations(lang);
 const placeAddress = "1 Quartier Les Marettes, 26140, Andancette";
 
 const result = Astro.getActionResult(actions.contact.send);
+
+const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
+  if (error && typeof error === "object" && "fields" in error) {
+    const fields = (error as { fields?: Record<string, string[]> }).fields;
+    return fields && typeof fields === "object" ? fields : null;
+  }
+  return null;
+};
 ---
 
 <Layout
@@ -59,10 +67,12 @@ const result = Astro.getActionResult(actions.contact.send);
         result?.error && (
           <div class="col-span-2 mb-4 rounded-lg bg-red-100 p-4 text-red-900 dark:bg-red-900/20 dark:text-red-200">
             <p class="font-semibold">{t("contact.error.title")}</p>
-            {result.error.code === "BAD_REQUEST" && result.error.fields ? (
+            {result.error.code === "BAD_REQUEST" &&
+            getFieldErrors(result.error) ? (
               <ul class="mt-2 list-inside list-disc">
-                {Object.entries(result.error.fields).map(([, errors]) =>
-                  errors?.map((error) => <li>{error}</li>),
+                {Object.entries(getFieldErrors(result.error) ?? {}).flatMap(
+                  ([, errors]) =>
+                    (errors ?? []).map((error) => <li>{error}</li>),
                 )}
               </ul>
             ) : (
@@ -145,8 +155,12 @@ const result = Astro.getActionResult(actions.contact.send);
     </form>
 
     <script>
-      const form = document.getElementById("contact-form");
-      const submitBtn = document.getElementById("submit-btn");
+      const form = document.getElementById(
+        "contact-form",
+      ) as HTMLFormElement | null;
+      const submitBtn = document.getElementById(
+        "submit-btn",
+      ) as HTMLButtonElement | null;
 
       if (form) {
         form.addEventListener("submit", () => {
@@ -160,7 +174,7 @@ const result = Astro.getActionResult(actions.contact.send);
       }
 
       if (window.location.search.includes("_action")) {
-        const url = new URL(window.location);
+        const url = new URL(window.location.href);
         if (url.searchParams.has("_action")) {
           url.searchParams.delete("_action");
           window.history.replaceState({}, document.title, url.toString());
@@ -217,11 +231,12 @@ const result = Astro.getActionResult(actions.contact.send);
           </MapProviderDialog>
         </div>
       </div>
-      <IframeConsent
-        class="self-end"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7639163355725!2d4.807639176440567!3d45.25256654753427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sDomaine%20de%20Pipangaille!5e0!3m2!1sen!2sfr!4v1767979480124!5m2!1sen!2sfr"
-        serviceName="Google Maps"
-      />
+      <div class="self-end">
+        <IframeConsent
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7639163355725!2d4.807639176440567!3d45.25256654753427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sDomaine%20de%20Pipangaille!5e0!3m2!1sen!2sfr!4v1767979480124!5m2!1sen!2sfr"
+          serviceName="Google Maps"
+        />
+      </div>
     </div>
   </section>
 
