@@ -4,6 +4,8 @@ import { roomSlugs, type RoomSlug } from "@/constants/rooms";
 import { languages } from "@/i18n/ui";
 import { getCurrentLang } from "@/lib/i18n";
 
+export const prerender = true;
+
 export function getStaticPaths() {
   return roomSlugs.map((roomName) => ({ params: { roomName } }));
 }
