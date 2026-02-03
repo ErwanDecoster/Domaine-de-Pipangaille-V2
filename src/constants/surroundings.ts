@@ -63,18 +63,12 @@ export const surroundings = {
         distanceKm: 7.4,
         elevationGainMeters: 303,
         routeType: "Path",
-        bikeScore: 67,
-        difficulty: "challenging",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-        ],
+        bikeScore: 66,
+        difficulty: "moderate",
+        tag: {
+          icon: "trending-up",
+          label: "Short but steep climb",
+        },
       },
     },
     {
@@ -111,18 +105,12 @@ export const surroundings = {
         distanceKm: 24,
         elevationGainMeters: 539,
         routeType: "Path",
-        bikeScore: 48,
+        bikeScore: 81,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Moderate half-day trip",
+        },
       },
     },
     {
@@ -157,22 +145,12 @@ export const surroundings = {
         distanceKm: 46.4,
         elevationGainMeters: 1596,
         routeType: "Path",
-        bikeScore: 37,
+        bikeScore: 70,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Long distance",
-          },
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "trending-up",
+          label: "Long hilly adventure",
+        },
       },
     },
     {
@@ -206,22 +184,12 @@ export const surroundings = {
         distanceKm: 1.6,
         elevationGainMeters: 20,
         routeType: "Path",
-        bikeScore: 89,
+        bikeScore: 71,
         difficulty: "easy",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-          {
-            icon: "star",
-            label: "Flat route",
-          },
-          {
-            icon: "star",
-            label: "Recommended",
-          },
-        ],
+        tag: {
+          icon: "bike",
+          label: "Quick neighborhood ride",
+        },
       },
     },
     {
@@ -255,14 +223,12 @@ export const surroundings = {
         distanceKm: 11,
         elevationGainMeters: 393,
         routeType: "Path",
-        bikeScore: 60,
-        difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-        ],
+        bikeScore: 71,
+        difficulty: "moderate",
+        tag: {
+          icon: "trending-up",
+          label: "Challenging hills",
+        },
       },
     },
     {
@@ -325,18 +291,12 @@ export const surroundings = {
         distanceKm: 29.3,
         elevationGainMeters: 294,
         routeType: "Path",
-        bikeScore: 62,
+        bikeScore: 86,
         difficulty: "moderate",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Half-day expedition",
+        },
       },
     },
     {
@@ -389,14 +349,12 @@ export const surroundings = {
         distanceKm: 14.2,
         elevationGainMeters: 627,
         routeType: "Path",
-        bikeScore: 51,
+        bikeScore: 67,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-        ],
+        tag: {
+          icon: "trending-up",
+          label: "Challenging hills",
+        },
       },
     },
     {
@@ -431,18 +389,12 @@ export const surroundings = {
         distanceKm: 29.1,
         elevationGainMeters: 287,
         routeType: "Path",
-        bikeScore: 63,
+        bikeScore: 86,
         difficulty: "moderate",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Half-day expedition",
+        },
       },
     },
     {
@@ -502,22 +454,12 @@ export const surroundings = {
         distanceKm: 145.9,
         elevationGainMeters: 1167,
         routeType: "Path",
-        bikeScore: 31,
+        bikeScore: 68,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Long distance",
-          },
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Full-day adventure",
+        },
       },
     },
     {
@@ -549,22 +491,12 @@ export const surroundings = {
         distanceKm: 129.4,
         elevationGainMeters: 1322,
         routeType: "Path",
-        bikeScore: 31,
+        bikeScore: 67,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Long distance",
-          },
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Full-day adventure",
+        },
       },
     },
     {
@@ -594,22 +526,12 @@ export const surroundings = {
         distanceKm: 60.1,
         elevationGainMeters: 591,
         routeType: "Path",
-        bikeScore: 33,
+        bikeScore: 76,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Long distance",
-          },
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Full-day adventure",
+        },
       },
     },
     {
@@ -651,22 +573,12 @@ export const surroundings = {
         distanceKm: 76,
         elevationGainMeters: 880,
         routeType: "Path",
-        bikeScore: 31,
+        bikeScore: 70,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Long distance",
-          },
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Full-day adventure",
+        },
       },
     },
     {
@@ -690,22 +602,12 @@ export const surroundings = {
         distanceKm: 647.4,
         elevationGainMeters: 5311,
         routeType: "Path",
-        bikeScore: 31,
+        bikeScore: 68,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Long distance",
-          },
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Full-day adventure",
+        },
       },
     },
   ],
@@ -737,17 +639,11 @@ export const surroundings = {
         elevationGainMeters: 116,
         routeType: "Path",
         bikeScore: 82,
-        difficulty: "moderate",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-          {
-            icon: "star",
-            label: "Recommended",
-          },
-        ],
+        difficulty: "easy",
+        tag: {
+          icon: "star",
+          label: "Easy short ride",
+        },
       },
     },
     {
@@ -780,22 +676,12 @@ export const surroundings = {
         distanceKm: 1.7,
         elevationGainMeters: 31,
         routeType: "Path",
-        bikeScore: 89,
+        bikeScore: 67,
         difficulty: "easy",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-          {
-            icon: "star",
-            label: "Flat route",
-          },
-          {
-            icon: "star",
-            label: "Recommended",
-          },
-        ],
+        tag: {
+          icon: "bike",
+          label: "Quick neighborhood ride",
+        },
       },
     },
     {
@@ -825,13 +711,11 @@ export const surroundings = {
         elevationGainMeters: 145,
         routeType: "Path",
         bikeScore: 79,
-        difficulty: "moderate",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-        ],
+        difficulty: "easy",
+        tag: {
+          icon: "star",
+          label: "Easy short ride",
+        },
       },
     },
     {
@@ -860,18 +744,12 @@ export const surroundings = {
         distanceKm: 2.9,
         elevationGainMeters: 98,
         routeType: "Path",
-        bikeScore: 83,
+        bikeScore: 62,
         difficulty: "moderate",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-          {
-            icon: "star",
-            label: "Recommended",
-          },
-        ],
+        tag: {
+          icon: "bike",
+          label: "Short scenic ride",
+        },
       },
     },
     {
@@ -900,14 +778,12 @@ export const surroundings = {
         distanceKm: 15.1,
         elevationGainMeters: 222,
         routeType: "Path",
-        bikeScore: 73,
+        bikeScore: 83,
         difficulty: "moderate",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Moderate half-day trip",
+        },
       },
     },
     {
@@ -986,18 +862,12 @@ export const surroundings = {
         distanceKm: 2.7,
         elevationGainMeters: 82,
         routeType: "Path",
-        bikeScore: 84,
+        bikeScore: 64,
         difficulty: "moderate",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-          {
-            icon: "star",
-            label: "Recommended",
-          },
-        ],
+        tag: {
+          icon: "bike",
+          label: "Short scenic ride",
+        },
       },
     },
     {
@@ -1027,13 +897,11 @@ export const surroundings = {
         elevationGainMeters: 135,
         routeType: "Path",
         bikeScore: 80,
-        difficulty: "moderate",
-        tags: [
-          {
-            icon: "bike",
-            label: "Short ride",
-          },
-        ],
+        difficulty: "easy",
+        tag: {
+          icon: "star",
+          label: "Easy short ride",
+        },
       },
     },
     {
@@ -1066,18 +934,12 @@ export const surroundings = {
         distanceKm: 23.8,
         elevationGainMeters: 465,
         routeType: "Path",
-        bikeScore: 51,
+        bikeScore: 82,
         difficulty: "challenging",
-        tags: [
-          {
-            icon: "trending-up",
-            label: "Hilly",
-          },
-          {
-            icon: "clock",
-            label: "Half day",
-          },
-        ],
+        tag: {
+          icon: "clock",
+          label: "Moderate half-day trip",
+        },
       },
     },
   ],

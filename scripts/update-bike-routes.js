@@ -16,9 +16,9 @@
  * @global setTimeout - Node.js native timer
  */
 
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -58,9 +58,23 @@ function extractGPSFromMapsUrl(mapsUrl) {
   const lngMatch = mapsUrl.match(/!2d(-?\d+\.?\d*)/);
   if (!latMatch || !lngMatch) return null;
   return {
-    lat: parseFloat(latMatch[1]),
-    lng: parseFloat(lngMatch[1]),
+    lat: Number.parseFloat(latMatch[1]),
+    lng: Number.parseFloat(lngMatch[1]),
   };
+}
+
+function calculateTotalGainFromArray(
+  elevationArray,
+  extractValue = (val) => val,
+) {
+  let totalGain = 0;
+  for (let i = 1; i < elevationArray.length; i++) {
+    const curr = extractValue(elevationArray[i]);
+    const prev = extractValue(elevationArray[i - 1]);
+    const diff = curr - prev;
+    if (diff > 0) totalGain += diff;
+  }
+  return Math.max(0, totalGain);
 }
 
 function extractElevationGain(routeData) {
@@ -71,26 +85,19 @@ function extractElevationGain(routeData) {
   if (routeData.ascent) return routeData.ascent;
 
   if (Array.isArray(routeData.elevation)) {
-    let totalGain = 0;
-    for (let i = 1; i < routeData.elevation.length; i++) {
-      const diff = routeData.elevation[i] - routeData.elevation[i - 1];
-      if (diff > 0) totalGain += diff;
-    }
-    if (totalGain > 0) return totalGain;
+    const gain = calculateTotalGainFromArray(routeData.elevation);
+    if (gain > 0) return gain;
   }
 
   if (
     routeData.extras?.elevation?.values &&
     Array.isArray(routeData.extras.elevation.values)
   ) {
-    let totalGain = 0;
-    for (let i = 1; i < routeData.extras.elevation.values.length; i++) {
-      const curr = routeData.extras.elevation.values[i][0] || 0;
-      const prev = routeData.extras.elevation.values[i - 1][0] || 0;
-      const diff = curr - prev;
-      if (diff > 0) totalGain += diff;
-    }
-    if (totalGain > 0) return totalGain;
+    const gain = calculateTotalGainFromArray(
+      routeData.extras.elevation.values,
+      (val) => val[0] || 0,
+    );
+    if (gain > 0) return gain;
   }
 
   return 0;
@@ -99,8 +106,15 @@ function extractElevationGain(routeData) {
 function calculateDifficulty(elevationGain, distance) {
   if (distance === 0) return "easy";
   const elevationPerKm = elevationGain / distance;
-  if (elevationPerKm < 30 && elevationGain < 100) return "easy";
-  if (elevationPerKm < 50 && elevationGain < 300) return "moderate";
+
+  // High elevation on short distance is harder than on long distance
+  // Use weighted formula: base difficulty from elevation/km ratio,
+  // but reduce impact for longer distances
+  const distanceFactor = Math.min(1, distance / 20); // Normalize at 20km
+  const adjustedElevationPerKm = elevationPerKm / (1 + distanceFactor * 0.3);
+
+  if (adjustedElevationPerKm < 25 && elevationGain < 150) return "easy";
+  if (adjustedElevationPerKm < 40 && elevationGain < 400) return "moderate";
   return "challenging";
 }
 
@@ -117,16 +131,109 @@ function calculateRouteType(routeData) {
   return "Cycletrack";
 }
 
+function getShortRideTag(elevationPerKm, difficulty) {
+  if (elevationPerKm > 40) {
+    return { icon: "trending-up", label: "Short but steep climb" };
+  }
+  if (difficulty === "easy") {
+    return { icon: "star", label: "Easy short ride" };
+  }
+  return { icon: "bike", label: "Short scenic ride" };
+}
+
+function getMediumRideTag(elevation, elevationPerKm, difficulty) {
+  if (elevationPerKm > 30) {
+    return { icon: "trending-up", label: "Challenging hills" };
+  }
+  if (elevation < 100) {
+    return { icon: "star", label: "Pleasant flat ride" };
+  }
+  if (difficulty === "easy") {
+    return { icon: "bike", label: "Easy half-day ride" };
+  }
+  return { icon: "clock", label: "Moderate half-day trip" };
+}
+
+function getLongRideTag(elevation, elevationPerKm) {
+  if (elevationPerKm > 25) {
+    return { icon: "trending-up", label: "Long hilly adventure" };
+  }
+  if (elevation < 200) {
+    return { icon: "star", label: "Long scenic route" };
+  }
+  return { icon: "clock", label: "Half-day expedition" };
+}
+
+function getVeryLongRideTag(elevationPerKm, difficulty) {
+  if (elevationPerKm > 20) {
+    return { icon: "trending-up", label: "Epic mountain challenge" };
+  }
+  if (difficulty === "easy") {
+    return { icon: "star", label: "Long easy touring route" };
+  }
+  return { icon: "clock", label: "Full-day adventure" };
+}
+
+function generateRouteTag(distance, duration, elevation, difficulty) {
+  const elevationPerKm = distance > 0 ? elevation / distance : 0;
+
+  // Very short, easy rides
+  if (distance < 5 && difficulty === "easy") {
+    return { icon: "bike", label: "Quick neighborhood ride" };
+  }
+
+  // Short rides (< 10km)
+  if (distance < 10) {
+    return getShortRideTag(elevationPerKm, difficulty);
+  }
+
+  // Medium distance rides (10-25km)
+  if (distance < 25) {
+    return getMediumRideTag(elevation, elevationPerKm, difficulty);
+  }
+
+  // Long distance rides (25-50km)
+  if (distance < 50) {
+    return getLongRideTag(elevation, elevationPerKm);
+  }
+
+  // Very long rides (50km+)
+  return getVeryLongRideTag(elevationPerKm, difficulty);
+}
+
 function calculateBikeScore(route) {
   const distance = route.summary.distance / 1000;
   const duration = route.summary.duration / 60;
   const elevation = extractElevationGain(route);
+  const elevationPerKm = distance > 0 ? elevation / distance : 0;
 
-  const distanceScore =
-    distance <= 20 ? 1 : Math.max(0, 1 - (distance - 20) / 50);
-  const durationScore =
-    duration <= 60 ? 1 : Math.max(0, 1 - (duration - 60) / 120);
-  const elevationScore = Math.max(0, 1 - elevation / 500);
+  // Distance score: optimal range 5-25km
+  let distanceScore;
+  if (distance <= 5) {
+    distanceScore = distance / 5;
+  } else if (distance <= 25) {
+    distanceScore = 1;
+  } else {
+    distanceScore = Math.max(0, 1 - (distance - 25) / 75);
+  }
+
+  // Duration score: optimal range 15-90 minutes
+  let durationScore;
+  if (duration <= 15) {
+    durationScore = duration / 15;
+  } else if (duration <= 90) {
+    durationScore = 1;
+  } else {
+    durationScore = Math.max(0, 1 - (duration - 90) / 180);
+  }
+
+  // Elevation score: penalize steep gradients on short distances more
+  // For long distances, high elevation is less of a penalty
+  const distanceFactor = Math.min(1, distance / 30);
+  const baseElevationPenalty = elevationPerKm / 60; // 60m/km = full penalty
+  const adjustedElevationPenalty =
+    baseElevationPenalty * (1 - distanceFactor * 0.4);
+  const elevationScore = Math.max(0, 1 - adjustedElevationPenalty);
 
   const score = Math.round(
     distanceScore * SCORING_WEIGHTS.distance * 100 +
@@ -136,17 +243,12 @@ function calculateBikeScore(route) {
       0.75 * SCORING_WEIGHTS.popularity * 100,
   );
 
-  const tags = [];
-  if (distance < 10) tags.push({ icon: "bike", label: "Short ride" });
-  if (distance > 30) tags.push({ icon: "trending-up", label: "Long distance" });
-  if (elevation < 50) tags.push({ icon: "star", label: "Flat route" });
-  if (elevation > 200) tags.push({ icon: "trending-up", label: "Hilly" });
-  if (duration > 60) tags.push({ icon: "clock", label: "Half day" });
-  if (score > 80) tags.push({ icon: "star", label: "Recommended" });
+  const difficulty = calculateDifficulty(elevation, distance);
+  const tag = generateRouteTag(distance, duration, elevation, difficulty);
 
   return {
     score: Math.min(100, Math.max(0, score)),
-    tags,
+    tag, // Single tag object instead of array
   };
 }
 
@@ -189,7 +291,8 @@ async function fetchBikeRoute(startLat, startLng, endLat, endLng) {
  * @returns {string} Data object string
  */
 function extractDataFromTS(content) {
-  const exportMatch = content.match(/export const surroundings = ({[\s\S]*});/);
+  const exportRegex = /export const surroundings = ({[\s\S]*});/;
+  const exportMatch = exportRegex.exec(content);
   if (!exportMatch) throw new Error("Could not find surroundings export");
 
   // Evaluate this object in a safe context
@@ -197,10 +300,17 @@ function extractDataFromTS(content) {
   let dataString = exportMatch[1];
 
   // Extract all image variable names used
-  const imageVars = content.match(/import (\w+) from/g);
-  if (imageVars) {
+  const imageVarRegex = /import (\w+) from/g;
+  const imageVars = [];
+  let match;
+  while ((match = imageVarRegex.exec(content)) !== null) {
+    imageVars.push(match[0]);
+  }
+  if (imageVars.length > 0) {
+    const varNameRegex = /import (\w+)/;
     imageVars.forEach((imp) => {
-      const varName = imp.match(/import (\w+)/)[1];
+      const varMatch = varNameRegex.exec(imp);
+      const varName = varMatch[1];
       // Replace with placeholder
       dataString = dataString.replaceAll(varName, `"__IMAGE__${varName}"`);
     });
@@ -216,7 +326,7 @@ function extractDataFromTS(content) {
  */
 function parseData(dataString) {
   // Use eval in a controlled context (only for our own code)
-   
+
   const data = eval(`(${dataString})`);
   return data;
 }
@@ -228,18 +338,19 @@ function parseData(dataString) {
  * @returns {string} Regenerated TS file content
  */
 function generateTS(data, originalContent) {
-  // Extract imports section
-  const importsMatch = originalContent.match(/(import[\s\S]*?from.*?;[\s]*)+/);
-  const imports = importsMatch ? importsMatch[0] : "";
+  // Extract all content before the export statement (all imports)
+  const exportIndex = originalContent.indexOf("export const surroundings");
+  const imports =
+    exportIndex === -1 ? "" : originalContent.substring(0, exportIndex).trim();
 
   // Convert data to TypeScript string
   const dataString = JSON.stringify(data, null, 2)
     // Restore image variable references
-    .replace(/"__IMAGE__(\w+)"/g, "$1")
+    .replaceAll(/"__IMAGE__(\w+)"/g, "$1")
     // Clean up quotes on object keys
-    .replace(/"(\w+)":/g, "$1:");
+    .replaceAll(/"(\w+)":/g, "$1:");
 
-  return `${imports}\nexport const surroundings = ${dataString};\n`;
+  return `${imports}\n\nexport const surroundings = ${dataString};\n`;
 }
 
 // ============================================================================
@@ -289,7 +400,7 @@ async function main() {
         const distance = routeData.summary.distance / 1000;
         const duration = routeData.summary.duration / 60;
         const elevation = extractElevationGain(routeData);
-        const { score, tags } = calculateBikeScore(routeData);
+        const { score, tag } = calculateBikeScore(routeData);
 
         item.bikeRoute = {
           durationMinutes: Math.round(duration),
@@ -298,7 +409,7 @@ async function main() {
           routeType: calculateRouteType(routeData),
           bikeScore: score,
           difficulty: calculateDifficulty(elevation, distance),
-          tags: tags,
+          tag,
         };
 
         console.log(
@@ -335,4 +446,4 @@ async function main() {
   }
 }
 
-main();
+await main();
