@@ -9,7 +9,7 @@ import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import Button from "../ui/button/button.astro";
 import PlatformIcon from "../ui/icons/PlatformIcon.astro";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
-import { Phone } from "@lucide/astro";
+import { Phone, Bike, Mountain, Route } from "@lucide/astro";
 
 const { lang, surroundingName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -57,6 +57,47 @@ const seeAllButtonLink =
   surroundingType === "toEat"
     ? getLocalizedUrl("surroundings", lang) + "#to-eat"
     : getLocalizedUrl("surroundings", lang);
+
+// Get bike route data if available
+const bikeRoute = (
+  baseSurrounding as {
+    bikeRoute?: {
+      tag?: string;
+      durationMinutes?: number;
+      distanceKm?: number;
+      elevationGainMeters?: number;
+    };
+  }
+)?.bikeRoute;
+const headerTags: { icon?: any; text: string }[] = [];
+
+if (bikeRoute?.durationMinutes) {
+  headerTags.push({
+    icon: Bike,
+    text: `${bikeRoute.durationMinutes}min`,
+  });
+}
+
+if (bikeRoute?.elevationGainMeters) {
+  headerTags.push({
+    icon: Mountain,
+    text: `${bikeRoute.elevationGainMeters}m`,
+  });
+}
+
+if (bikeRoute?.distanceKm) {
+  headerTags.push({
+    icon: Route,
+    text: `${bikeRoute.distanceKm}km`,
+  });
+}
+
+if (bikeRoute?.tag) {
+  headerTags.push({
+    icon: Bike,
+    text: t(toKey(`surroundings.tags.${bikeRoute.tag}`)),
+  });
+}
 ---
 
 {
@@ -82,6 +123,7 @@ const seeAllButtonLink =
         buttonExternal={true}
         buttonVariant="secondary"
         withBackground={false}
+        tags={headerTags}
       />
 
       {baseSurrounding?.website &&
