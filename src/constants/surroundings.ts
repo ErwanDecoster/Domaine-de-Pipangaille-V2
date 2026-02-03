@@ -58,6 +58,24 @@ export const surroundings = {
         },
       ],
       slug: "safari_peaugres",
+      bikeRoute: {
+        durationMinutes: 27,
+        distanceKm: 7.4,
+        elevationGainMeters: 303,
+        routeType: "Path",
+        bikeScore: 67,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+        ],
+      },
     },
     {
       title: "Palais Idéal du Facteur Cheval",
@@ -88,6 +106,24 @@ export const surroundings = {
         },
       ],
       slug: "palais_ideal_du_facteur_cheval",
+      bikeRoute: {
+        durationMinutes: 83,
+        distanceKm: 24,
+        elevationGainMeters: 539,
+        routeType: "Path",
+        bikeScore: 48,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "Acrobois Pilat",
@@ -116,6 +152,28 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 82 29 80 01",
       slug: "acrobois_pilat",
+      bikeRoute: {
+        durationMinutes: 168,
+        distanceKm: 46.4,
+        elevationGainMeters: 1596,
+        routeType: "Path",
+        bikeScore: 37,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Long distance",
+          },
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "Musée de l'Alambic",
@@ -143,6 +201,28 @@ export const surroundings = {
       website: "http://www.jeangauthier.com/",
       phoneNumber: "+33 4 75 34 23 11",
       slug: "musee_de_l_alambic",
+      bikeRoute: {
+        durationMinutes: 6,
+        distanceKm: 1.6,
+        elevationGainMeters: 20,
+        routeType: "Path",
+        bikeScore: 89,
+        difficulty: "easy",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+          {
+            icon: "star",
+            label: "Flat route",
+          },
+          {
+            icon: "star",
+            label: "Recommended",
+          },
+        ],
+      },
     },
     {
       title: "Golf de Saint-Clair",
@@ -170,6 +250,20 @@ export const surroundings = {
         },
       ],
       slug: "golf_de_saint_clair",
+      bikeRoute: {
+        durationMinutes: 40,
+        distanceKm: 11,
+        elevationGainMeters: 393,
+        routeType: "Path",
+        bikeScore: 60,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+        ],
+      },
     },
     {
       title: "ViaRhôna",
@@ -226,6 +320,24 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 09 27 27",
       slug: "musee_valrhona",
+      bikeRoute: {
+        durationMinutes: 101,
+        distanceKm: 29.3,
+        elevationGainMeters: 294,
+        routeType: "Path",
+        bikeScore: 62,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "Lamas des Plaines",
@@ -272,6 +384,20 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 34 41 14",
       slug: "mongolfieres_et_cie",
+      bikeRoute: {
+        durationMinutes: 54,
+        distanceKm: 14.2,
+        elevationGainMeters: 627,
+        routeType: "Path",
+        bikeScore: 51,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+        ],
+      },
     },
     {
       title: "Train de l'ardèche",
@@ -300,6 +426,24 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 06 07 00",
       slug: "train_de_l_ardeche",
+      bikeRoute: {
+        durationMinutes: 100,
+        distanceKm: 29.1,
+        elevationGainMeters: 287,
+        routeType: "Path",
+        bikeScore: 63,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "La fabrique de Julien",
@@ -353,6 +497,28 @@ export const surroundings = {
         },
       ],
       slug: "le_nougat_de_montsegur",
+      bikeRoute: {
+        durationMinutes: 500,
+        distanceKm: 145.9,
+        elevationGainMeters: 1167,
+        routeType: "Path",
+        bikeScore: 31,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Long distance",
+          },
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "Château de Grignan",
@@ -378,6 +544,28 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 91 83 50",
       slug: "chateau_de_grignan",
+      bikeRoute: {
+        durationMinutes: 440,
+        distanceKm: 129.4,
+        elevationGainMeters: 1322,
+        routeType: "Path",
+        bikeScore: 31,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Long distance",
+          },
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "Labyrinthe végétal",
@@ -401,6 +589,28 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 25 80 65",
       slug: "labyrinthe_vegetal",
+      bikeRoute: {
+        durationMinutes: 207,
+        distanceKm: 60.1,
+        elevationGainMeters: 591,
+        routeType: "Path",
+        bikeScore: 33,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Long distance",
+          },
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "Compagnie des Canotiers Rhône & Saône",
@@ -436,6 +646,28 @@ export const surroundings = {
       ],
       phoneNumber: "+33 6 44 30 79 76",
       slug: "compagnie_des_canotiers_rhone_et_saone",
+      bikeRoute: {
+        durationMinutes: 263,
+        distanceKm: 76,
+        elevationGainMeters: 880,
+        routeType: "Path",
+        bikeScore: 31,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Long distance",
+          },
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
     {
       title: "Le chateau d'Anet",
@@ -453,6 +685,28 @@ export const surroundings = {
       website: "https://www.chateau-d-anet.com/",
       phoneNumber: "+33 2 37 41 90 07",
       slug: "le_chateau_d_anet",
+      bikeRoute: {
+        durationMinutes: 2220,
+        distanceKm: 647.4,
+        elevationGainMeters: 5311,
+        routeType: "Path",
+        bikeScore: 31,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Long distance",
+          },
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
   ],
   toEat: [
@@ -477,6 +731,24 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 23 42 26",
       slug: "le_relais_mailles",
+      bikeRoute: {
+        durationMinutes: 28,
+        distanceKm: 8.1,
+        elevationGainMeters: 116,
+        routeType: "Path",
+        bikeScore: 82,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+          {
+            icon: "star",
+            label: "Recommended",
+          },
+        ],
+      },
     },
     {
       title: "La Table des SAJ",
@@ -503,6 +775,28 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 32 96 08",
       slug: "la_table_des_saj",
+      bikeRoute: {
+        durationMinutes: 7,
+        distanceKm: 1.7,
+        elevationGainMeters: 31,
+        routeType: "Path",
+        bikeScore: 89,
+        difficulty: "easy",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+          {
+            icon: "star",
+            label: "Flat route",
+          },
+          {
+            icon: "star",
+            label: "Recommended",
+          },
+        ],
+      },
     },
     {
       title: "La Poule Noire",
@@ -525,6 +819,20 @@ export const surroundings = {
       ],
       phoneNumber: "+33475030882",
       slug: "la_poule_noir",
+      bikeRoute: {
+        durationMinutes: 26,
+        distanceKm: 7,
+        elevationGainMeters: 145,
+        routeType: "Path",
+        bikeScore: 79,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+        ],
+      },
     },
     {
       title: "Le Picotin",
@@ -547,6 +855,24 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 34 21 01",
       slug: "le_picotin",
+      bikeRoute: {
+        durationMinutes: 11,
+        distanceKm: 2.9,
+        elevationGainMeters: 98,
+        routeType: "Path",
+        bikeScore: 83,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+          {
+            icon: "star",
+            label: "Recommended",
+          },
+        ],
+      },
     },
     {
       title: "Au Pré du Rhône",
@@ -569,6 +895,20 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 23 03 44",
       slug: "au_pre_du_rhone",
+      bikeRoute: {
+        durationMinutes: 53,
+        distanceKm: 15.1,
+        elevationGainMeters: 222,
+        routeType: "Path",
+        bikeScore: 73,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+        ],
+      },
     },
     {
       title: "La belle époque",
@@ -641,6 +981,24 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 32 75 12",
       slug: "cesar_pizza",
+      bikeRoute: {
+        durationMinutes: 10,
+        distanceKm: 2.7,
+        elevationGainMeters: 82,
+        routeType: "Path",
+        bikeScore: 84,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+          {
+            icon: "star",
+            label: "Recommended",
+          },
+        ],
+      },
     },
     {
       title: "La Villa Champagnère",
@@ -663,6 +1021,20 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 31 69 50",
       slug: "la_villa_champagnere",
+      bikeRoute: {
+        durationMinutes: 27,
+        distanceKm: 7.6,
+        elevationGainMeters: 135,
+        routeType: "Path",
+        bikeScore: 80,
+        difficulty: "moderate",
+        tags: [
+          {
+            icon: "bike",
+            label: "Short ride",
+          },
+        ],
+      },
     },
     {
       title: "Les Agapons",
@@ -689,6 +1061,24 @@ export const surroundings = {
       ],
       phoneNumber: "+33 4 75 03 02 56",
       slug: "les_agapons",
+      bikeRoute: {
+        durationMinutes: 85,
+        distanceKm: 23.8,
+        elevationGainMeters: 465,
+        routeType: "Path",
+        bikeScore: 51,
+        difficulty: "challenging",
+        tags: [
+          {
+            icon: "trending-up",
+            label: "Hilly",
+          },
+          {
+            icon: "clock",
+            label: "Half day",
+          },
+        ],
+      },
     },
   ],
 };

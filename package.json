@@ -10,7 +10,8 @@
     "lint": "eslint --fix .",
     "format": "prettier --write .",
     "check:format": "prettier --check .",
-    "check:lint": "eslint ."
+    "check:lint": "eslint .",
+    "update-bike-routes": "bash scripts/run-update-bike-routes.sh"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

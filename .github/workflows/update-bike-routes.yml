@@ -1,0 +1,49 @@
+name: Update Bike Routes Data
+
+on:
+  schedule:
+    # Every Monday at 02:00 UTC
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update-routes:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Configure git
+        run: |
+          git config user.name "Bot Cycle scores update"
+          git config user.email "bot@domaine-de-pipangaille.fr"
+
+      - name: Update bike routes
+        env:
+          ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
+        run: node scripts/update-bike-routes.js
+
+      - name: Check for changes
+        id: verify
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.verify.outputs.has_changes == 'true'
+        run: |
+          git add src/constants/surroundings.ts
+          git commit -m "chore: update bike routes data via OpenRouteService API"
+          git push
