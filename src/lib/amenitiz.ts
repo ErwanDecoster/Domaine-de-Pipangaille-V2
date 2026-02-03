@@ -2,8 +2,6 @@
  * Amenitiz API utilities
  */
 
-/* global fetch */
-
 export interface AvailabilityData {
   date: string;
   min_stay: number;

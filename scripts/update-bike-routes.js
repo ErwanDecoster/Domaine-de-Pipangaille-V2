@@ -2,15 +2,18 @@
 
 /**
  * Update Bike Routes - Version 2
- * Utilise JSON pour manipuler les données de manière fiable
+ * Uses JSON to reliably manipulate data
  *
  * Workflow:
- * 1. Lit surroundings.ts et extrait les données JSON brutes
- * 2. Parse le JSON pour obtenir des objets JavaScript
- * 3. Met à jour les objets avec les données de bikeRoute
- * 4. Régénère surroundings.ts avec les nouvelles données
+ * 1. Read surroundings.ts and extract raw JSON data
+ * 2. Parse JSON to get JavaScript objects
+ * 3. Update objects with bikeRoute data
+ * 4. Regenerate surroundings.ts with new data
  *
  * Usage: node scripts/update-bike-routes-v2.js
+ *
+ * @global fetch - Node.js 18+ has native fetch
+ * @global setTimeout - Node.js native timer
  */
 
 import fs from "fs";
@@ -46,7 +49,7 @@ const RATE_LIMIT = {
 };
 
 // ============================================================================
-// Utilitaires
+// Utility Functions
 // ============================================================================
 
 function extractGPSFromMapsUrl(mapsUrl) {
@@ -147,6 +150,10 @@ function calculateBikeScore(route) {
   };
 }
 
+// ============================================================================
+// API Functions
+// ============================================================================
+
 async function fetchBikeRoute(startLat, startLng, endLat, endLng) {
   const url = `${ORS_BASE_URL}/directions/cycling-regular?api_key=${ORS_API_KEY}`;
 
@@ -173,26 +180,28 @@ async function fetchBikeRoute(startLat, startLng, endLat, endLng) {
 }
 
 // ============================================================================
-// Manipulation du fichier TypeScript
+// TypeScript File Manipulation
 // ============================================================================
 
 /**
- * Extrait la partie données du fichier TS (sans les imports)
+ * Extract data section from TS file (without imports)
+ * @param {string} content - Content of the TS file
+ * @returns {string} Data object string
  */
 function extractDataFromTS(content) {
   const exportMatch = content.match(/export const surroundings = ({[\s\S]*});/);
   if (!exportMatch) throw new Error("Could not find surroundings export");
 
-  // On va évaluer cet objet dans un contexte sécurisé
-  // Remplacer les références d'images par des strings temporaires
+  // Evaluate this object in a safe context
+  // Replace image variable references with temporary strings
   let dataString = exportMatch[1];
 
-  // Extraire tous les noms de variables d'images utilisés
+  // Extract all image variable names used
   const imageVars = content.match(/import (\w+) from/g);
   if (imageVars) {
     imageVars.forEach((imp) => {
       const varName = imp.match(/import (\w+)/)[1];
-      // Remplacer par un placeholder
+      // Replace with placeholder
       dataString = dataString.replaceAll(varName, `"__IMAGE__${varName}"`);
     });
   }
@@ -201,27 +210,33 @@ function extractDataFromTS(content) {
 }
 
 /**
- * Parse les données en objet JavaScript
+ * Parse data string into JavaScript object
+ * @param {string} dataString - Data string to parse
+ * @returns {Object} Parsed data object
  */
 function parseData(dataString) {
-  // Utiliser eval dans un contexte contrôlé (seulement pour notre propre code)
+  // Use eval in a controlled context (only for our own code)
+   
   const data = eval(`(${dataString})`);
   return data;
 }
 
 /**
- * Régénère le fichier TypeScript avec les nouvelles données
+ * Regenerate TypeScript file with new data
+ * @param {Object} data - Updated data object
+ * @param {string} originalContent - Original file content
+ * @returns {string} Regenerated TS file content
  */
 function generateTS(data, originalContent) {
-  // Extraire la partie imports
+  // Extract imports section
   const importsMatch = originalContent.match(/(import[\s\S]*?from.*?;[\s]*)+/);
   const imports = importsMatch ? importsMatch[0] : "";
 
-  // Convertir les données en string TypeScript
+  // Convert data to TypeScript string
   const dataString = JSON.stringify(data, null, 2)
-    // Restaurer les références d'images
+    // Restore image variable references
     .replace(/"__IMAGE__(\w+)"/g, "$1")
-    // Nettoyer les quotes sur les clés d'objet
+    // Clean up quotes on object keys
     .replace(/"(\w+)":/g, "$1:");
 
   return `${imports}\nexport const surroundings = ${dataString};\n`;
@@ -240,7 +255,7 @@ async function main() {
   try {
     console.log("🚴 Starting bike routes update (JSON method)...\n");
 
-    // Lire et parser le fichier
+    // Read and parse the file
     const fileContent = fs.readFileSync(SURROUNDINGS_FILE, "utf-8");
     const dataString = extractDataFromTS(fileContent);
     const data = parseData(dataString);
@@ -294,7 +309,7 @@ async function main() {
         console.log(`  ❌ Failed to fetch route`);
       }
 
-      // Rate limiting
+      // Rate limiting - pause between API calls
       if (
         (i + 1) % RATE_LIMIT.itemsPerPause === 0 &&
         i + 1 < itemsWithMaps.length
@@ -306,7 +321,7 @@ async function main() {
       }
     }
 
-    // Régénérer le fichier TS
+    // Regenerate the TypeScript file
     const newContent = generateTS(data, fileContent);
     fs.writeFileSync(SURROUNDINGS_FILE, newContent);
 
