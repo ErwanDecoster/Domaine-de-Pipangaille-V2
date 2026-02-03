@@ -5,6 +5,7 @@ import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { surroundings } from "@/constants/surroundings";
 import { languages } from "@/i18n/ui";
 import { Button } from "../ui/button";
+import { Bike } from "@lucide/astro";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
@@ -21,6 +22,22 @@ const formatCard = (
 ) => {
   const categories = (item as { category?: string[] }).category ?? [];
   const firstImage = item.gallery?.[0];
+  const bikeRoute = (item as { bikeRoute?: { tag?: string } }).bikeRoute;
+
+  // Build tags array: categories + bike tag if exists
+  const allTags: { icon?: any; text: string }[] = [
+    ...categories.map((cat) => ({
+      text: t(toKey(`surroundings.category.${cat}`)),
+    })),
+  ];
+
+  // Add bike route tag if it exists
+  if (bikeRoute?.tag) {
+    allTags.push({
+      icon: Bike,
+      text: t(toKey(`surroundings.tags.${bikeRoute.tag}`)),
+    } as { icon: any; text: string });
+  }
 
   return {
     key: item.slug,
@@ -28,9 +45,7 @@ const formatCard = (
     image: firstImage?.src,
     imageAlt: t(toKey(firstImage?.altKey ?? "")),
     description: item.shortDesc ? t(toKey(item.shortDesc)) : undefined,
-    tags: categories.map((cat) => ({
-      text: t(toKey(`surroundings.category.${cat}`)),
-    })),
+    tags: allTags,
     categories,
     buttonText: t("surroundings.card.cta"),
     buttonLink: getLocalizedUrl("surrounding", lang, item.slug),

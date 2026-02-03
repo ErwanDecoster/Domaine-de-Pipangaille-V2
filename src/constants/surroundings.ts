@@ -65,10 +65,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 66,
         difficulty: "moderate",
-        tag: {
-          icon: "trending-up",
-          label: "Short but steep climb",
-        },
+        tag: "short_but_steep_climb",
       },
     },
     {
@@ -107,10 +104,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 81,
         difficulty: "challenging",
-        tag: {
-          icon: "clock",
-          label: "Moderate half-day trip",
-        },
+        tag: "moderate_trip",
       },
     },
     {
@@ -147,10 +141,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 70,
         difficulty: "challenging",
-        tag: {
-          icon: "trending-up",
-          label: "Long hilly adventure",
-        },
+        tag: "long_hilly_adventure",
       },
     },
     {
@@ -186,10 +177,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 71,
         difficulty: "easy",
-        tag: {
-          icon: "bike",
-          label: "Quick neighborhood ride",
-        },
+        tag: "quick_neighborhood_ride",
       },
     },
     {
@@ -225,10 +213,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 71,
         difficulty: "moderate",
-        tag: {
-          icon: "trending-up",
-          label: "Challenging hills",
-        },
+        tag: "challenging_hills",
       },
     },
     {
@@ -293,10 +278,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 86,
         difficulty: "moderate",
-        tag: {
-          icon: "clock",
-          label: "Half-day expedition",
-        },
+        tag: "half_day_expedition",
       },
     },
     {
@@ -351,10 +333,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 67,
         difficulty: "challenging",
-        tag: {
-          icon: "trending-up",
-          label: "Challenging hills",
-        },
+        tag: "challenging_hills",
       },
     },
     {
@@ -391,10 +370,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 86,
         difficulty: "moderate",
-        tag: {
-          icon: "clock",
-          label: "Half-day expedition",
-        },
+        tag: "half_day_expedition",
       },
     },
     {
@@ -456,10 +432,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 68,
         difficulty: "challenging",
-        tag: {
-          icon: "clock",
-          label: "Full-day adventure",
-        },
+        tag: "full_day_adventure",
       },
     },
     {
@@ -493,10 +466,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 67,
         difficulty: "challenging",
-        tag: {
-          icon: "clock",
-          label: "Full-day adventure",
-        },
+        tag: "full_day_adventure",
       },
     },
     {
@@ -528,10 +498,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 76,
         difficulty: "challenging",
-        tag: {
-          icon: "clock",
-          label: "Full-day adventure",
-        },
+        tag: "full_day_adventure",
       },
     },
     {
@@ -575,10 +542,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 70,
         difficulty: "challenging",
-        tag: {
-          icon: "clock",
-          label: "Full-day adventure",
-        },
+        tag: "full_day_adventure",
       },
     },
     {
@@ -604,10 +568,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 68,
         difficulty: "challenging",
-        tag: {
-          icon: "clock",
-          label: "Full-day adventure",
-        },
+        tag: "full_day_adventure",
       },
     },
   ],
@@ -640,10 +601,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 82,
         difficulty: "easy",
-        tag: {
-          icon: "star",
-          label: "Easy short ride",
-        },
+        tag: "easy_short_ride",
       },
     },
     {
@@ -678,10 +636,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 67,
         difficulty: "easy",
-        tag: {
-          icon: "bike",
-          label: "Quick neighborhood ride",
-        },
+        tag: "quick_neighborhood_ride",
       },
     },
     {
@@ -712,10 +667,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 79,
         difficulty: "easy",
-        tag: {
-          icon: "star",
-          label: "Easy short ride",
-        },
+        tag: "easy_short_ride",
       },
     },
     {
@@ -746,10 +698,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 62,
         difficulty: "moderate",
-        tag: {
-          icon: "bike",
-          label: "Short scenic ride",
-        },
+        tag: "short_scenic_ride",
       },
     },
     {
@@ -780,10 +729,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 83,
         difficulty: "moderate",
-        tag: {
-          icon: "clock",
-          label: "Moderate half-day trip",
-        },
+        tag: "moderate_trip",
       },
     },
     {
@@ -864,10 +810,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 64,
         difficulty: "moderate",
-        tag: {
-          icon: "bike",
-          label: "Short scenic ride",
-        },
+        tag: "short_scenic_ride",
       },
     },
     {
@@ -898,10 +841,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 80,
         difficulty: "easy",
-        tag: {
-          icon: "star",
-          label: "Easy short ride",
-        },
+        tag: "easy_short_ride",
       },
     },
     {
@@ -936,10 +876,7 @@ export const surroundings = {
         routeType: "Path",
         bikeScore: 82,
         difficulty: "challenging",
-        tag: {
-          icon: "clock",
-          label: "Moderate half-day trip",
-        },
+        tag: "moderate_trip",
       },
     },
   ],

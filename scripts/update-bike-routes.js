@@ -133,45 +133,45 @@ function calculateRouteType(routeData) {
 
 function getShortRideTag(elevationPerKm, difficulty) {
   if (elevationPerKm > 40) {
-    return { icon: "trending-up", label: "Short but steep climb" };
+    return "short_but_steep_climb";
   }
   if (difficulty === "easy") {
-    return { icon: "star", label: "Easy short ride" };
+    return "easy_short_ride";
   }
-  return { icon: "bike", label: "Short scenic ride" };
+  return "short_scenic_ride";
 }
 
 function getMediumRideTag(elevation, elevationPerKm, difficulty) {
   if (elevationPerKm > 30) {
-    return { icon: "trending-up", label: "Challenging hills" };
+    return "challenging_hills";
   }
   if (elevation < 100) {
-    return { icon: "star", label: "Pleasant flat ride" };
+    return "pleasant_flat_ride";
   }
   if (difficulty === "easy") {
-    return { icon: "bike", label: "Easy half-day ride" };
+    return "easy_half_day_ride";
   }
-  return { icon: "clock", label: "Moderate half-day trip" };
+  return "moderate_trip";
 }
 
 function getLongRideTag(elevation, elevationPerKm) {
   if (elevationPerKm > 25) {
-    return { icon: "trending-up", label: "Long hilly adventure" };
+    return "long_hilly_adventure";
   }
   if (elevation < 200) {
-    return { icon: "star", label: "Long scenic route" };
+    return "long_scenic_route";
   }
-  return { icon: "clock", label: "Half-day expedition" };
+  return "half_day_expedition";
 }
 
 function getVeryLongRideTag(elevationPerKm, difficulty) {
   if (elevationPerKm > 20) {
-    return { icon: "trending-up", label: "Epic mountain challenge" };
+    return "epic_mountain_challenge";
   }
   if (difficulty === "easy") {
-    return { icon: "star", label: "Long easy touring route" };
+    return "long_easy_touring_route";
   }
-  return { icon: "clock", label: "Full-day adventure" };
+  return "full_day_adventure";
 }
 
 function generateRouteTag(distance, duration, elevation, difficulty) {
@@ -179,7 +179,7 @@ function generateRouteTag(distance, duration, elevation, difficulty) {
 
   // Very short, easy rides
   if (distance < 5 && difficulty === "easy") {
-    return { icon: "bike", label: "Quick neighborhood ride" };
+    return "quick_neighborhood_ride";
   }
 
   // Short rides (< 10km)
