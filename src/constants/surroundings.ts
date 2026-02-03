@@ -545,32 +545,6 @@ export const surroundings = {
         tag: "full_day_adventure",
       },
     },
-    {
-      title: "Le chateau d'Anet",
-      category: ["family", "visit"],
-      shortDesc: "surroundings.descriptions.le_chateau_d_anet.short",
-      longDesc: ["surroundings.descriptions.le_chateau_d_anet.long"],
-      gallery: [
-        {
-          src: leChateauDAnetImg,
-          altKey: "surroundings.le_chateau_d_anet.gallery.image1",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.989469225792!2d1.436084077113906!3d48.85841120070413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6ad9b9fc12581%3A0xb9ee1bb171a28a!2sCh%C3%A2teau%20d'Anet!5e0!3m2!1sfr!2sfr!4v1699293510016",
-      website: "https://www.chateau-d-anet.com/",
-      phoneNumber: "+33 2 37 41 90 07",
-      slug: "le_chateau_d_anet",
-      bikeRoute: {
-        durationMinutes: 2220,
-        distanceKm: 647.4,
-        elevationGainMeters: 5311,
-        routeType: "Path",
-        bikeScore: 68,
-        difficulty: "challenging",
-        tag: "full_day_adventure",
-      },
-    },
   ],
   toEat: [
     {
