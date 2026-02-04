@@ -33,17 +33,17 @@ jobs:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: npm run update-business-hours
 
-      - name: Check if changes were made
-        id: git-check
+      - name: Check for changes
+        id: verify
         run: |
           if git diff --quiet; then
-            echo "has-changes=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> $GITHUB_OUTPUT
           else
-            echo "has-changes=true" >> $GITHUB_OUTPUT
+            echo "has_changes=true" >> $GITHUB_OUTPUT
           fi
 
       - name: Create Pull Request
-        if: steps.git-check.outputs.has-changes == 'true'
+        if: steps.verify.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
           commit-message: "chore: update business hours from Google Places API"
@@ -58,12 +58,3 @@ jobs:
           branch: update/business-hours
           delete-branch: true
           labels: "🤖 automated"
-
-      - name: Commit and push (if no PR)
-        if: steps.git-check.outputs.has-changes == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/constants/businessHours.json
-          git commit -m "chore: update business hours from Google Places API"
-          git push
