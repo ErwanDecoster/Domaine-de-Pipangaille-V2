@@ -142,8 +142,6 @@ async function updateBusinessHours() {
       }),
     );
 
-    const now = new Date().toISOString();
-
     const businessHours = results.reduce((acc, { key, placeId, data }) => {
       acc[key] = {
         googlePlaceId: placeId,
