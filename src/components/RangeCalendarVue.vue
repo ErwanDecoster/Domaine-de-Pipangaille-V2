@@ -20,19 +20,21 @@ const unavailableDates = ref<Set<string>>(new Set());
 const isSelectingEndDate = ref(false);
 const numberOfMonths = ref(1);
 const availabilityLoaded = ref(false);
+const loadedDateRange = ref({ start: "", end: "" });
+const isLoadingMore = ref(false);
 
 const updateNumberOfMonths = () => {
   numberOfMonths.value = window.innerWidth >= 768 ? 2 : 1;
 };
 
-const loadAvailability = async () => {
-  if (availabilityLoaded.value) return;
-  availabilityLoaded.value = true;
+const loadAvailability = async (fromDate?: string, toDate?: string) => {
+  if (isLoadingMore.value) return;
 
   try {
+    isLoadingMore.value = true;
     const todayDate = today(getLocalTimeZone());
-    const startDate = todayDate.toString();
-    const endDate = todayDate.add({ days: 90 }).toString();
+    const startDate = fromDate || todayDate.toString();
+    const endDate = toDate || todayDate.add({ days: 90 }).toString();
 
     const availabilityData = await fetchAmenitizAvailability(
       startDate,
@@ -41,12 +43,61 @@ const loadAvailability = async () => {
     );
 
     if (availabilityData?.data?.availabilities) {
-      unavailableDates.value = buildUnavailableDatesMap(
+      const newDates = buildUnavailableDatesMap(
         availabilityData.data.availabilities,
       );
+
+      // Merge with existing dates
+      unavailableDates.value = new Set([
+        ...unavailableDates.value,
+        ...newDates,
+      ]);
+
+      // Update loaded range
+      if (
+        !loadedDateRange.value.start ||
+        startDate < loadedDateRange.value.start
+      ) {
+        loadedDateRange.value.start = startDate;
+      }
+      if (!loadedDateRange.value.end || endDate > loadedDateRange.value.end) {
+        loadedDateRange.value.end = endDate;
+      }
     }
+
+    availabilityLoaded.value = true;
   } catch (error) {
     console.error("Failed to fetch availability:", error);
+  } finally {
+    isLoadingMore.value = false;
+  }
+};
+
+const handlePlaceholderChange = (newPlaceholder: any) => {
+  if (!availabilityLoaded.value) {
+    loadAvailability();
+    return;
+  }
+
+  // Check if we need to load more data
+  const placeholderDate = parseDate(newPlaceholder.toString());
+  const placeholderEndOfMonth = placeholderDate.add({
+    months: numberOfMonths.value,
+  });
+
+  const loadedEnd = loadedDateRange.value.end
+    ? parseDate(loadedDateRange.value.end)
+    : null;
+
+  // Load more if we're within 30 days of the end of loaded range
+  if (loadedEnd) {
+    const daysUntilEnd = loadedEnd.compare(placeholderEndOfMonth);
+
+    if (daysUntilEnd < 30) {
+      const newStartDate = loadedEnd.add({ days: 1 }).toString();
+      const newEndDate = loadedEnd.add({ days: 90 }).toString();
+      loadAvailability(newStartDate, newEndDate);
+    }
   }
 };
 
@@ -116,7 +167,7 @@ const emit = defineEmits<{
 
 const updateDateDisplay = () => {
   const dateButton = document.getElementById("date-button");
-  if (dateButton) {
+  if (dateButton && dateRange.value.start && dateRange.value.end) {
     const startDate = dateRange.value.start.toString();
     const endDate = dateRange.value.end.toString();
 
@@ -180,5 +231,6 @@ onUnmounted(() => {
     :is-date-unavailable="isDateUnavailable"
     class="rounded-md"
     @update:model-value="handleChange"
+    @update:placeholder="handlePlaceholderChange"
   />
 </template>
