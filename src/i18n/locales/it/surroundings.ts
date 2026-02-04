@@ -188,10 +188,28 @@ export const surroundings = {
   "surroundings.la_villa_champagnere.gallery.image1":
     "Giardino e terrazza di La Villa Champagnère",
   "surroundings.les_agapons.gallery.image1": "Ristorante Les Agapons a Manthes",
+  "surroundings.domaine_golf_albon.gallery.image1":
+    "Vista del Domaine du Golf d'Albon",
+  "surroundings.le_hangar_n7.gallery.image1":
+    "Facciata di Le Hangar N7 ad Andancette",
+  "surroundings.restaurant_de_la_treille.gallery.image1":
+    "Restaurant de la Treille a Champagne",
   "surroundings.descriptions.les_agapons.short":
     "Ristorante di autentica cucina francese a Manthes, cibo fatto in casa di qualità con prodotti locali e regionali.",
   "surroundings.descriptions.les_agapons.long":
     "Benvenuti a Les Agapons, situato nell'affascinante città di Manthes. Il nostro team caloroso vi servirà cucina casalinga di qualità, preparata con prodotti locali e regionali, nonché piatti tradizionali.\n\nIl ristorante offre molti servizi: terrazza, zona bambini, parcheggio gratuito, eventi privati, ricevimenti di matrimonio, Wi-Fi gratuito e animali domestici ammessi. Aperto da mercoledì a sabato dalle 12 alle 14 e dalle 19 alle 21, nonché domenica a pranzo.",
+  "surroundings.descriptions.domaine_golf_albon.short":
+    "Un dominio dedicato al tempo libero e al relax in un paesaggio naturale.",
+  "surroundings.descriptions.domaine_golf_albon.long":
+    "Il Domaine du Golf d'Albon è un vasto resort dedicato al tempo libero e al benessere, immerso in un paesaggio naturale preservato. Dispone di numerosi campi da golf adatti sia ai principianti che ai giocatori esperti. La proprietà offre anche un ristorante che serve cucina francese tradizionale con vista sui campi da golf, più un hotel per un'esperienza prolungata. È una destinazione apprezzata per una pausa sportiva, scoperta gastronomica o semplicemente per godersi un ambiente tranquillo vicino al Domaine de Pipangaille.",
+  "surroundings.descriptions.le_hangar_n7.short":
+    "Bar e ristorante amichevole ad Andancette, apprezzato per la cucina semplice e l'atmosfera rilassata.",
+  "surroundings.descriptions.le_hangar_n7.long":
+    "Situato ad Andancette, Le Hangar N7 è un bar, pub e ristorante che offre cucina accessibile e varia in un'atmosfera conviviale. Il locale presenta un menu di hamburger, pizze, tapas e specialità del giorno, completato da una selezione di bevande che include birra e vino. Il posto si distingue per il suo ambiente rilassato e lo spirito aperto, con eventi o serate a tema regolari. È un indirizzo ideale per cenare senza pretese o trascorrere un momento divertente con amici o famiglia, proprio accanto al Domaine de Pipangaille.",
+  "surroundings.descriptions.restaurant_de_la_treille.short":
+    "Ristorante tradizionale che offre cucina francese regionale in un ambiente tranquillo e verdeggiante.",
+  "surroundings.descriptions.restaurant_de_la_treille.long":
+    "Situato a Champagne, a pochi minuti da Andancette, il Restaurant de la Treille si trova nel cuore di un paesaggio rurale e viticolo. Offre cucina francese tradizionale basata su ricette locali e prodotti regionali. L'établissement dispone di una sala da pranzo accogliente e di una piacevole terrazza in stagione. È un indirizzo apprezzato per cenare in autenticità in un ambiente tranquillo, ideale per una tappa golosa durante un soggiorno nella Valle del Rodano.",
   "surroundings.detail.book": "Prenota",
   "surroundings.detail.call": "Chiama",
   "surroundings.detail.socialNetworks": "Canali social",

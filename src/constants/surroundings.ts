@@ -24,6 +24,9 @@ import safariPeaugresImg from "../images/safari-peaugres.jpg";
 import trainDeLArdecheImg from "../images/train-de-l-ardeche.jpg";
 import viafluviaImg from "../images/viafluvia.jpg";
 import viarhonaImg from "../images/viarhona.jpg";
+import domaineDuGolfDAlbon from "../images/domaine_du_golf_d_albon.jpg";
+import restaurantLaTreille from "../images/restaurant_la_treille.jpg";
+import leHangarN7BarPub from "../images/le_hangar_n7_bar_pub.png";
 
 export const surroundings = {
   toVisit: [
@@ -544,6 +547,32 @@ export const surroundings = {
         tag: "full_day_adventure",
       },
     },
+    {
+      title: "Domaine du Golf d'Albon",
+      shortDesc: "surroundings.descriptions.domaine_golf_albon.short",
+      longDesc: ["surroundings.descriptions.domaine_golf_albon.long"],
+      gallery: [
+        {
+          src: domaineDuGolfDAlbon,
+          altKey: "surroundings.domaine_golf_albon.gallery.image1",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.6463547548374!2d4.841219089939405!3d45.234720996480334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f1e5b68e91b%3A0x5d4527496f5f1d0b!2sDomaine%20du%20Golf%20d&#39;Albon!5e0!3m2!1sen!2sfr!4v1770202573323!5m2!1sen!2sfr",
+      website: "http://www.domainegolfalbon.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/domainegolfalbon/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/domainegolfalbon/",
+        },
+      ],
+      phoneNumber: "+33 4 75 03 03 90",
+      slug: "domaine_golf_albon",
+    },
   ],
   toEat: [
     {
@@ -851,6 +880,56 @@ export const surroundings = {
         difficulty: "challenging",
         tag: "moderate_trip",
       },
+    },
+    {
+      title: "Le Hangar N7",
+      shortDesc: "surroundings.descriptions.le_hangar_n7.short",
+      longDesc: ["surroundings.descriptions.le_hangar_n7.long"],
+      gallery: [
+        {
+          src: leHangarN7BarPub,
+          altKey: "surroundings.le_hangar_n7.gallery.image1",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.391074543576!2d4.820551676615481!3d45.2601048710712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e646c8e6cf5%3A0xa26aa5377b082544!2sLe%20Hangar%20N7%20%E2%80%A2%20Bar%20%2F%20Pub%20%2F%20Restaurant!5e0!3m2!1sen!2sfr!4v1770201673243!5m2!1sen!2sfr",
+      website: "https://www.hangar-n7-restaurant-andancette.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/lehangarn7",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/lehangarn7",
+        },
+      ],
+      bookLink:
+        "https://www.hangar-n7-restaurant-andancette.fr/v2/reservation/date",
+      phoneNumber: "+33 4 75 68 45 54",
+      slug: "le_hangar_n7",
+    },
+    {
+      title: "Restaurant de la Treille",
+      shortDesc: "surroundings.descriptions.restaurant_de_la_treille.short",
+      longDesc: ["surroundings.descriptions.restaurant_de_la_treille.long"],
+      gallery: [
+        {
+          src: restaurantLaTreille,
+          altKey: "surroundings.restaurant_de_la_treille.gallery.image1",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.1320215222268!2d4.79585447661572!3d45.26534197107133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e0f8983f541%3A0x204c4a81978f9496!2sRestaurant%20de%20la%20Treille!5e0!3m2!1sen!2sfr!4v1770201893930!5m2!1sen!2sfr",
+      website: "http://www.restaurant-latreille.com/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/p/Restaurant-la-Treille-100065281608840/",
+        },
+      ],
+      phoneNumber: "+33 4 75 34 20 68",
+      slug: "restaurant_de_la_treille",
     },
   ],
 };

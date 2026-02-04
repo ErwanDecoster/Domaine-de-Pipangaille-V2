@@ -190,10 +190,28 @@ export const surroundings = {
     "Garden and terrace of La Villa Champagnère",
   "surroundings.les_agapons.gallery.image1":
     "Les Agapons restaurant in Manthes",
+  "surroundings.domaine_golf_albon.gallery.image1":
+    "View of Domaine du Golf d'Albon",
+  "surroundings.le_hangar_n7.gallery.image1":
+    "Front of Le Hangar N7 in Andancette",
+  "surroundings.restaurant_de_la_treille.gallery.image1":
+    "Restaurant de la Treille in Champagne",
   "surroundings.descriptions.les_agapons.short":
     "Authentic French cuisine restaurant in Manthes, quality home-cooked food with local and regional products.",
   "surroundings.descriptions.les_agapons.long":
     "Welcome to Les Agapons, located in the charming town of Manthes. Our warm team will serve you quality home-cooked cuisine, prepared with local and regional products, as well as traditional dishes.\n\nThe restaurant offers many services: terrace, children's area, free parking, private events, wedding receptions, free Wi-Fi and pets allowed. Open Wednesday to Saturday from 12pm to 2pm and 7pm to 9pm, as well as Sunday lunch.",
+  "surroundings.descriptions.domaine_golf_albon.short":
+    "A leisure and relaxation estate set in a natural landscape.",
+  "surroundings.descriptions.domaine_golf_albon.long":
+    "Domaine du Golf d'Albon is a spacious leisure and wellness resort nestled in a preserved natural landscape. It features multiple golf courses suited to both beginners and experienced players. The estate also offers a restaurant serving traditional French cuisine with views over the golf grounds, plus a hotel for an extended experience. It's a favoured destination for a sporty break, gastronomic discovery or simply to enjoy a peaceful setting near Domaine de Pipangaille.",
+  "surroundings.descriptions.le_hangar_n7.short":
+    "Friendly bar and restaurant in Andancette, appreciated for casual cuisine and relaxed atmosphere.",
+  "surroundings.descriptions.le_hangar_n7.long":
+    "Located in Andancette, Le Hangar N7 is a bar, pub and restaurant offering accessible and varied cuisine in a convivial atmosphere. The venue features a menu of burgers, pizzas, tapas and daily specials, complemented by a choice of drinks including beer and wine. The place stands out for its laid-back vibe and open spirit, with regular events or themed evenings. It's a go-to spot for casual dining or a fun moment with friends or family, right near Domaine de Pipangaille.",
+  "surroundings.descriptions.restaurant_de_la_treille.short":
+    "Traditional restaurant offering regional French cuisine in a peaceful, verdant setting.",
+  "surroundings.descriptions.restaurant_de_la_treille.long":
+    "Located in Champagne, just minutes from Andancette, Restaurant de la Treille sits at the heart of a rural and viticultural landscape. It offers traditional French cuisine rooted in local recipes and regional produce. The establishment features a warm dining room and a pleasant terrace in season. It's a treasured address for authentic dining in a calm setting, ideal for a gourmet stop while staying in the Rhône Valley.",
   "surroundings.detail.book": "Book",
   "surroundings.detail.call": "Call",
   "surroundings.detail.socialNetworks": "Social media",
