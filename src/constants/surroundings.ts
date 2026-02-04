@@ -26,7 +26,7 @@ import viafluviaImg from "../images/viafluvia.jpg";
 import viarhonaImg from "../images/viarhona.jpg";
 import domaineDuGolfDAlbon from "../images/domaine_du_golf_d_albon.jpg";
 import restaurantLaTreille from "../images/restaurant_la_treille.jpg";
-import leHangarN7BarPub from "../images/le_hangar_n7_bar_pub.png";
+import leHangarN7BarPub from "../images/le_hangar_n7_bar_pub.jpg";
 
 export const surroundings = {
   toVisit: [
