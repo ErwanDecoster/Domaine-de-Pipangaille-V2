@@ -15,7 +15,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { placeIds } from "../src/constants/placeIds.js";
+import { placeIds } from "../src/constants/placeIds.ts";
 
 const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
