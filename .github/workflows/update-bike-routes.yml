@@ -32,6 +32,9 @@ jobs:
           ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
         run: node scripts/update-bike-routes.js
 
+      - name: Format updated files
+        run: npm run format
+
       - name: Check for changes
         id: verify
         run: |
