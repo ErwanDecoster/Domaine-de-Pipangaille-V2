@@ -19,7 +19,7 @@ const forwardedProps = useForwardProps(delegatedProps);
     data-slot="range-calendar-prev-button"
     :class="
       cn(
-        'border-input bg-background hover:bg-accent hover:text-accent-foreground focus-visible:ring-ring inline-flex items-center justify-center rounded-md border text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
+        'border-input bg-background hover:bg-accent hover:text-accent-foreground focus-visible:ring-ring inline-flex touch-manipulation items-center justify-center rounded-md border text-sm font-medium transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
         'absolute left-1',
         'size-7 bg-transparent p-0 opacity-50 hover:opacity-100',
         props.class,
