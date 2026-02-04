@@ -152,14 +152,7 @@ async function updateBusinessHours() {
       return acc;
     }, {});
 
-    const fileContent = JSON.stringify(
-      {
-        generatedAt: now,
-        businessHours,
-      },
-      null,
-      2,
-    );
+    const fileContent = JSON.stringify(businessHours, null, 2);
 
     const filePath = path.join(
       process.cwd(),
