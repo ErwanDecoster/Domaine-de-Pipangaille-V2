@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Configure git
         run: |
@@ -30,7 +30,7 @@ jobs:
       - name: Update bike routes
         env:
           ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
-        run: node scripts/update-bike-routes.js
+        run: npm run update-bike-routes
 
       - name: Format updated files
         run: npm run format

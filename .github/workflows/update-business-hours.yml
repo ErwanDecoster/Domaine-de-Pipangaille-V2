@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "24"
 
       - name: Install dependencies
         run: npm ci
@@ -31,7 +31,7 @@ jobs:
       - name: Update business hours from Google Places API
         env:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
-        run: node scripts/update-business-hours.js
+        run: npm run update-business-hours
 
       - name: Check if changes were made
         id: git-check
