@@ -1,0 +1,9 @@
+# Images
+src/images/**
+public/**/*.png
+public/**/*.jpg
+public/**/*.jpeg
+public/**/*.gif
+public/**/*.svg
+public/**/*.webp
+public/**/*.ico
