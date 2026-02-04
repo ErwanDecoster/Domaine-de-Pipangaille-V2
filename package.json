@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "check:format": "prettier --check .",
     "check:lint": "eslint .",
-    "update-bike-routes": "bash scripts/run-update-bike-routes.sh"
+    "update-bike-routes": "bash scripts/run-update-bike-routes.sh",
+    "update-business-hours": "node scripts/update-business-hours.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

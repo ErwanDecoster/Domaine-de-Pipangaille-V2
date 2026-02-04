@@ -1,0 +1,1749 @@
+{
+  "generatedAt": "2026-02-04T15:42:20.912Z",
+  "businessHours": {
+    "domaine": {
+      "googlePlaceId": "ChIJaSiRr0E-9UcRABVuFlOVxOA",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "2100"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "2100"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "2100"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "2100"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "2100"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "2100"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "2100"
+            }
+          ]
+        }
+      }
+    },
+    "comptoir": {
+      "googlePlaceId": "ChIJX10ipNs_9UcRIDOzXngfsuw",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": false
+        },
+        "thursday": {
+          "isOpen": false
+        },
+        "friday": {
+          "isOpen": false
+        },
+        "saturday": {
+          "isOpen": false
+        }
+      }
+    },
+    "safariPeaugres": {
+      "googlePlaceId": "ChIJT2Ef0xcU9UcRToBZzInkK3Y",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1630"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1630"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1630"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1630"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1630"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1630"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1630"
+            }
+          ]
+        }
+      }
+    },
+    "palaisIdealDuFacteurCheval": {
+      "googlePlaceId": "ChIJjSFeXbA29UcRKXyFtaB1jcM",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0930",
+              "close": "1730"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0930",
+              "close": "1730"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0930",
+              "close": "1730"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0930",
+              "close": "1730"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0930",
+              "close": "1730"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0930",
+              "close": "1730"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0930",
+              "close": "1730"
+            }
+          ]
+        }
+      }
+    },
+    "acroboisPilat": {
+      "googlePlaceId": "ChIJOcOvO0sI9UcRHWtCrX3CfPE",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": false
+        },
+        "thursday": {
+          "isOpen": false
+        },
+        "friday": {
+          "isOpen": false
+        },
+        "saturday": {
+          "isOpen": false
+        }
+      }
+    },
+    "museeDeLAlambic": {
+      "googlePlaceId": "ChIJ1zKfzx4-9UcRH1-q-5XePpY",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        }
+      }
+    },
+    "golfDeSaintClair": {
+      "googlePlaceId": "ChIJQeZZOJ0T9UcRtz208azTcYA",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1800"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1800"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1800"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1800"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1800"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1800"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0800",
+              "close": "1800"
+            }
+          ]
+        }
+      }
+    },
+    "museeValrhona": {
+      "googlePlaceId": "ChIJxTxuw55E9UcRoRDtz-2Q9Bk",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1300",
+              "close": "1600"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1300",
+              "close": "1700"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1300",
+              "close": "1700"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1300",
+              "close": "1700"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1300",
+              "close": "1700"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1300",
+              "close": "1700"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1300",
+              "close": "1700"
+            }
+          ]
+        }
+      }
+    },
+    "lamasDesPlaines": {
+      "googlePlaceId": "ChIJLcEN-jQ49UcRA8nQaWteXFk",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": false
+        },
+        "thursday": {
+          "isOpen": false
+        },
+        "friday": {
+          "isOpen": false
+        },
+        "saturday": {
+          "isOpen": false
+        }
+      }
+    },
+    "mongolfieresEtCie": {
+      "googlePlaceId": "ChIJYRw01qRs9UcRYZSehc-hTYo",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1900"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1900"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1900"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1900"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1900"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1900"
+            }
+          ]
+        }
+      }
+    },
+    "trainDeLArdeche": {
+      "googlePlaceId": "ChIJ69rkC-5C9UcRhPz7_APt2c4",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": false
+        },
+        "thursday": {
+          "isOpen": false
+        },
+        "friday": {
+          "isOpen": false
+        },
+        "saturday": {
+          "isOpen": false
+        }
+      }
+    },
+    "laFabriqueDeJulien": {
+      "googlePlaceId": "ChIJCZaqRZIO9UcRpD2jzPBCsf0",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1900"
+            }
+          ]
+        }
+      }
+    },
+    "leNougatDeMontsegur": {
+      "googlePlaceId": "ChIJGU7Rctl2tRIRqck0K1lmR_I",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1200"
+            },
+            {
+              "open": "1400",
+              "close": "1830"
+            }
+          ]
+        }
+      }
+    },
+    "chateauDeGrignan": {
+      "googlePlaceId": "ChIJP-Waa5F6tRIRqSQPdGLv3T0",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1230"
+            },
+            {
+              "open": "1400",
+              "close": "1700"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1230"
+            },
+            {
+              "open": "1400",
+              "close": "1700"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1230"
+            },
+            {
+              "open": "1400",
+              "close": "1700"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1230"
+            },
+            {
+              "open": "1400",
+              "close": "1700"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1230"
+            },
+            {
+              "open": "1400",
+              "close": "1700"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1230"
+            },
+            {
+              "open": "1400",
+              "close": "1700"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1230"
+            },
+            {
+              "open": "1400",
+              "close": "1700"
+            }
+          ]
+        }
+      }
+    },
+    "labyrintheVegetal": {
+      "googlePlaceId": "ChIJkyWdg5dMtRIR2LOzQEkuVGc",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": false
+        },
+        "thursday": {
+          "isOpen": false
+        },
+        "friday": {
+          "isOpen": false
+        },
+        "saturday": {
+          "isOpen": false
+        }
+      }
+    },
+    "domaineGolfAlbon": {
+      "googlePlaceId": "ChIJG-loWx4_9UcRCx1fb0knRV0",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0700",
+              "close": "1900"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0700",
+              "close": "1900"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0700",
+              "close": "1900"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0700",
+              "close": "1900"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0700",
+              "close": "1900"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0700",
+              "close": "1900"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0700",
+              "close": "1900"
+            }
+          ]
+        }
+      }
+    },
+    "leRelaisMailles": {
+      "googlePlaceId": "ChIJ810PqoY_9UcR060-CgNA_q0",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            },
+            {
+              "open": "1900",
+              "close": "2100"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            },
+            {
+              "open": "1900",
+              "close": "2100"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            },
+            {
+              "open": "1900",
+              "close": "2130"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            },
+            {
+              "open": "1900",
+              "close": "2130"
+            }
+          ]
+        }
+      }
+    },
+    "laTableDesSaj": {
+      "googlePlaceId": "ChIJS6XfwQsV9UcRx5LvpjTzhYg",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2130"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2130"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2130"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2130"
+            }
+          ]
+        }
+      }
+    },
+    "laPouleNoir": {
+      "googlePlaceId": "ChIJz7X_78I-9UcRkb0ZkQpoAF4",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1330"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1330"
+            },
+            {
+              "open": "1730",
+              "close": "2045"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1330"
+            },
+            {
+              "open": "1730",
+              "close": "2045"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1330"
+            },
+            {
+              "open": "1730",
+              "close": "2045"
+            }
+          ]
+        }
+      }
+    },
+    "lePicotin": {
+      "googlePlaceId": "ChIJWUv66DM-9UcRR9vNZ3YRuRM",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": false
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1000",
+              "close": "1330"
+            },
+            {
+              "open": "1900",
+              "close": "2030"
+            }
+          ]
+        }
+      }
+    },
+    "auPreDuRhone": {
+      "googlePlaceId": "ChIJTc7iKXJB9UcRs7ZFUS-LwKM",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1330"
+            },
+            {
+              "open": "1930",
+              "close": "2100"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1330"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1330"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1930",
+              "close": "2130"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1930",
+              "close": "2130"
+            }
+          ]
+        }
+      }
+    },
+    "laBelleEpoque": {
+      "googlePlaceId": "ChIJh6UPhOE_9UcRQbFXD-FD8PE",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1500"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2200"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1500"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2200"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "0900",
+              "close": "1500"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": false
+        }
+      }
+    },
+    "oDailyTruck": {
+      "googlePlaceId": "ChIJxZHYOe839UcRTMxBVl0e2xM",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1830",
+              "close": "2100"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1830",
+              "close": "2100"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1330"
+            },
+            {
+              "open": "1830",
+              "close": "2100"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1830",
+              "close": "2100"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1830",
+              "close": "2100"
+            }
+          ]
+        }
+      }
+    },
+    "cesarPizza": {
+      "googlePlaceId": "ChIJYXmrUTE-9UcRylzpf3TSEbA",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2200"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2130"
+            }
+          ]
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2130"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2130"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2200"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2230"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2230"
+            }
+          ]
+        }
+      }
+    },
+    "laVillaChampagnere": {
+      "googlePlaceId": "ChIJ14GPank-9UcRO7FJY0zreoA",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2100"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2100"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2100"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1200",
+              "close": "1400"
+            },
+            {
+              "open": "1900",
+              "close": "2100"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1900",
+              "close": "2100"
+            }
+          ]
+        }
+      }
+    },
+    "lesAgapons": {
+      "googlePlaceId": "ChIJL_N9lKox9UcRqiWgOmoeXbw",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": false
+        },
+        "wednesday": {
+          "isOpen": false
+        },
+        "thursday": {
+          "isOpen": false
+        },
+        "friday": {
+          "isOpen": false
+        },
+        "saturday": {
+          "isOpen": false
+        }
+      }
+    },
+    "leHangarN7": {
+      "googlePlaceId": "ChIJ9WyObGQ-9UcRRCUIezelaqI",
+      "hours": {
+        "sunday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1800",
+              "close": "2300"
+            }
+          ]
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1700",
+              "close": "0000"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1700",
+              "close": "0000"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1700",
+              "close": "0100"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1700",
+              "close": "0100"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1700",
+              "close": "0100"
+            }
+          ]
+        }
+      }
+    },
+    "restaurantDeLaTreille": {
+      "googlePlaceId": "ChIJQfWDiQ8-9UcRlpSPl4FKTCA",
+      "hours": {
+        "sunday": {
+          "isOpen": false
+        },
+        "monday": {
+          "isOpen": false
+        },
+        "tuesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1100",
+              "close": "1400"
+            }
+          ]
+        },
+        "wednesday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1100",
+              "close": "1400"
+            }
+          ]
+        },
+        "thursday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1100",
+              "close": "1400"
+            }
+          ]
+        },
+        "friday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1100",
+              "close": "1400"
+            },
+            {
+              "open": "1800",
+              "close": "2200"
+            }
+          ]
+        },
+        "saturday": {
+          "isOpen": true,
+          "periods": [
+            {
+              "open": "1100",
+              "close": "1400"
+            },
+            {
+              "open": "1800",
+              "close": "2200"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
