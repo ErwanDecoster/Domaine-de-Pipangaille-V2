@@ -11,7 +11,6 @@ import laTableDesSajImg from "../images/la-table-des-saj.jpg";
 import laVillaChampagnereImg from "../images/la-villa-champagnere.jpg";
 import labyrintheVegetalImg from "../images/labyrinthe-vegetal.jpg";
 import lamasDesPlainesImg from "../images/lamas-des-plaines.jpg";
-import leChateauDAnetImg from "../images/le-chateau-d-anet.jpg";
 import leNougatDeMontsegurImg from "../images/le-nougat-de-montsegur.jpg";
 import lePicotinImg from "../images/le-picotin.jpg";
 import leRelaisDesMaillesImg from "../images/le-relais-des-mailles.jpg";
