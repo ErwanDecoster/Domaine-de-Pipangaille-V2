@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
-    "@astrojs/vercel": "^8.0.4",
+    "@astrojs/vercel": "^9.0.4",
     "@astrojs/vue": "^5.1.4",
     "@fontsource/barlow": "^5.2.8",
     "@fontsource/source-serif-4": "^5.2.9",
