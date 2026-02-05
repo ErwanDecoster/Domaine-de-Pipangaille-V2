@@ -24,6 +24,7 @@ interface Props {
   ratio?: "4-5" | "5-4";
   objectFit?: "cover" | "contain";
   galleryId?: string;
+  imageClass?: string;
 }
 
 const {
@@ -40,6 +41,7 @@ const {
   ratio,
   objectFit = "cover",
   galleryId,
+  imageClass,
 } = Astro.props as Props;
 
 const gallery = images.length
@@ -91,7 +93,7 @@ const paragraphs = Array.isArray(text)
       >
         {gallery.map(({ src, alt }, index) => (
           <Image
-            class={cn("w-full rounded-md", {
+            class={cn("w-full rounded-md", imageClass, {
               [objectFit === "cover" ? "object-cover" : "object-contain"]: true,
               "aspect-video lg:aspect-4/3": galleryLayout !== "triple",
               "h-full": galleryLayout === "triple",
