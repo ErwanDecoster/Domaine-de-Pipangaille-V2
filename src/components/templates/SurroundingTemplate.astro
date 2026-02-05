@@ -1,15 +1,17 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import MediaContent from "@/components/MediaContent.astro";
+import SurroundingBusinessHours from "@/components/SurroundingBusinessHours.astro";
+import SurroundingContactInfo from "@/components/SurroundingContactInfo.astro";
+import OtherSurroundings from "@/components/OtherSurroundings.astro";
 import { reviews } from "@/constants/reviews";
 import { surroundings } from "@/constants/surroundings";
-import Card from "../Card.astro";
+import businessHours from "@/constants/businessHours.json";
+import { toBusinessHoursKey } from "@/lib/businessHours";
 import Header from "../Header.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
-import Button from "../ui/button/button.astro";
-import PlatformIcon from "../ui/icons/PlatformIcon.astro";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
-import { Phone, Bike, Mountain, Route } from "@lucide/astro";
+import { Bike, Mountain, Route } from "@lucide/astro";
 
 const { lang, surroundingName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -98,6 +100,20 @@ if (bikeRoute?.tag) {
     text: t(toKey(`surroundings.tags.${bikeRoute.tag}`)),
   });
 }
+
+// Check if MediaContent section should be displayed
+const businessHoursKey = toBusinessHoursKey(baseSurrounding?.slug ?? "");
+const hours =
+  businessHours[businessHoursKey as keyof typeof businessHours]?.hours;
+
+const shouldShowMediaContent =
+  baseSurrounding?.mapsUrl ||
+  baseSurrounding?.socialMedia ||
+  (baseSurrounding && "bookLink" in baseSurrounding
+    ? baseSurrounding.bookLink
+    : undefined) ||
+  baseSurrounding?.phoneNumber ||
+  hours;
 ---
 
 {
@@ -126,106 +142,35 @@ if (bikeRoute?.tag) {
         tags={headerTags}
       />
 
-      {baseSurrounding?.website &&
-        (baseSurrounding?.mapsUrl ||
-          baseSurrounding?.socialMedia ||
-          (baseSurrounding && "bookLink" in baseSurrounding
-            ? baseSurrounding.bookLink
-            : undefined) ||
-          baseSurrounding?.phoneNumber) && (
-          <MediaContent
-            title={t("surroundings.detail.moreInfo.title")}
-            text=""
-            iframeUrl={baseSurrounding?.mapsUrl ?? ""}
-            iframeServiceName="Google Maps"
-            direction="left"
-          >
-            <div class="mt-8 grid gap-8">
-              {baseSurrounding?.socialMedia &&
-                baseSurrounding?.socialMedia?.length > 0 && (
-                  <div>
-                    <h3 class="text-2xl">
-                      {t("surroundings.detail.socialNetworks")}
-                    </h3>
-                    <ul>
-                      <li>
-                        {baseSurrounding.socialMedia.map((social) => (
-                          <Button
-                            class="-ml-4"
-                            variant="link"
-                            href={social.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <PlatformIcon
-                              platform={social.platform}
-                              class="size-4"
-                            />
-                            {social.platform}
-                          </Button>
-                        ))}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              <div class="flex flex-wrap gap-6">
-                {baseSurrounding &&
-                "bookLink" in baseSurrounding &&
-                baseSurrounding.bookLink ? (
-                  <Button external href={baseSurrounding.bookLink}>
-                    {t("surroundings.detail.book")}
-                  </Button>
-                ) : null}
-                {baseSurrounding?.phoneNumber ? (
-                  <Button
-                    variant="outline"
-                    href={`tel:${baseSurrounding.phoneNumber}`}
-                  >
-                    <Phone />
-                    {t("surroundings.detail.call")}
-                  </Button>
-                ) : null}
-                {baseSurrounding?.website ? (
-                  <Button
-                    variant="link"
-                    class="-mx-6 gap-3!"
-                    external
-                    href={baseSurrounding.website}
-                  >
-                    {t("surroundings.detail.visitWebsite")}
-                  </Button>
-                ) : null}
-              </div>
-            </div>
-          </MediaContent>
-        )}
-
-      <section class="mt-24 grid gap-8 px-4 sm:px-6 md:mt-48 md:grid-cols-3 md:gap-10 md:px-10 lg:px-20">
-        <h2 class="md:col-span-3">{t(otherSurroundingsTitle)}</h2>
-        {otherSurroundings.slice(0, 3).map((surrounding) => (
-          <Card
-            title={surrounding.title}
-            image={surrounding.gallery?.[0]?.src}
-            imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
-            description={
-              surrounding.shortDesc
-                ? t(toKey(surrounding.shortDesc))
-                : undefined
-            }
-            tags={(surrounding as { category?: string[] }).category?.map(
-              (cat) => ({
-                text: t(toKey(`surroundings.category.${cat}`)),
-              }),
+      {shouldShowMediaContent && (
+        <MediaContent
+          title={t("surroundings.detail.moreInfo.title")}
+          text=""
+          iframeUrl={baseSurrounding?.mapsUrl ?? ""}
+          iframeServiceName="Google Maps"
+          direction="left"
+          ratio="5-4"
+        >
+          <div>
+            {hours && (
+              <SurroundingBusinessHours
+                lang={lang}
+                slug={baseSurrounding?.slug ?? ""}
+              />
             )}
-            buttonText={surroundingButtonText}
-            buttonLink={getLocalizedUrl("surrounding", lang, surrounding.slug)}
-            sizes="(min-width: 768px) 33vw, 100vw"
-          />
-        ))}
-        <Button class="mx-auto md:col-span-3" href={seeAllButtonLink}>
-          {t(seeAllButtonText)}
-        </Button>
-      </section>
+          </div>
+          <SurroundingContactInfo lang={lang} surrounding={baseSurrounding} />
+        </MediaContent>
+      )}
+
+      <OtherSurroundings
+        lang={lang}
+        surroundings={otherSurroundings}
+        title={t(otherSurroundingsTitle)}
+        buttonText={surroundingButtonText}
+        seeAllButtonText={t(seeAllButtonText)}
+        seeAllButtonLink={seeAllButtonLink}
+      />
     </Layout>
   )
 }

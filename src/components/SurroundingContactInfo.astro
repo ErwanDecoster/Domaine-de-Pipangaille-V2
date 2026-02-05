@@ -1,0 +1,73 @@
+---
+import { useTranslations } from "@/lib/i18n";
+import Button from "./ui/button/button.astro";
+import PlatformIcon from "./ui/icons/PlatformIcon.astro";
+import { Phone } from "@lucide/astro";
+
+const { lang, surrounding } = Astro.props as {
+  lang: string;
+  surrounding: {
+    socialMedia?: Array<{ platform: string; link: string }>;
+    phoneNumber?: string;
+    website?: string;
+    bookLink?: string;
+  };
+};
+
+const t = useTranslations(lang as any);
+---
+
+<div class="grid gap-8">
+  {
+    surrounding?.socialMedia && surrounding?.socialMedia?.length > 0 && (
+      <div>
+        <h3 class="text-2xl">{t("surroundings.detail.socialNetworks")}</h3>
+        <ul>
+          <li>
+            {surrounding.socialMedia.map((social) => (
+              <Button
+                class="-ml-4"
+                variant="link"
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <PlatformIcon platform={social.platform} class="size-4" />
+                {social.platform}
+              </Button>
+            ))}
+          </li>
+        </ul>
+      </div>
+    )
+  }
+  <div class="flex flex-wrap gap-6">
+    {
+      surrounding && "bookLink" in surrounding && surrounding.bookLink ? (
+        <Button external href={surrounding.bookLink}>
+          {t("surroundings.detail.book")}
+        </Button>
+      ) : null
+    }
+    {
+      surrounding?.phoneNumber ? (
+        <Button variant="outline" href={`tel:${surrounding.phoneNumber}`}>
+          <Phone />
+          {t("surroundings.detail.call")}
+        </Button>
+      ) : null
+    }
+    {
+      surrounding?.website ? (
+        <Button
+          variant="link"
+          class="-mx-6 gap-3!"
+          external
+          href={surrounding.website}
+        >
+          {t("surroundings.detail.visitWebsite")}
+        </Button>
+      ) : null
+    }
+  </div>
+</div>

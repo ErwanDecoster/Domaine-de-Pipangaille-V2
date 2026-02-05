@@ -1,0 +1,94 @@
+---
+import Button from "@/components/ui/button/button.astro";
+import Card from "@/components/Card.astro";
+import { useTranslations } from "@/lib/i18n";
+import type { languages } from "@/i18n/ui";
+
+interface Props {
+  lang: keyof typeof languages;
+  restaurants: any[];
+  categories: string[];
+  totalPages: number;
+}
+
+const { lang, restaurants, categories, totalPages } = Astro.props;
+const t = useTranslations(lang);
+
+const toKey = (key: string) => key as any;
+---
+
+<section
+  id="to-eat"
+  class="mt-24 mb-24 scroll-mt-28 space-y-10 px-4 sm:px-6 md:px-10 lg:px-20"
+>
+  <div>
+    <h2>{t("surroundings.sections.food.title")}</h2>
+  </div>
+
+  <!-- Filter buttons -->
+  <div id="restaurants" class="mt-6 flex scroll-mt-28 flex-wrap gap-2">
+    <Button
+      class="hover:bg-accent/50 rounded-full"
+      variant="outline"
+      data-value=""
+      size="sm"
+      data-action="filter-restaurants"
+    >
+      {t("surroundings.filter.all")}
+    </Button>
+    {
+      categories.map((category) => (
+        <Button
+          class="bg-muted hover:bg-accent/50 [.is-active]:bg-primary [.is-active]:text-primary-foreground rounded-full"
+          variant="ghost"
+          data-value={category}
+          size="sm"
+          data-action="filter-restaurants"
+        >
+          {t(toKey(`surroundings.category.${category}`))}
+        </Button>
+      ))
+    }
+  </div>
+
+  <!-- Cards grid -->
+  <div
+    class="mt-12 grid scroll-mt-28 grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
+  >
+    {
+      restaurants.map((restaurant) => (
+        <div
+          class="restaurant-card"
+          data-kind="restaurant"
+          data-categories={restaurant.categories.join(",")}
+        >
+          <Card
+            {...restaurant}
+            sizes="(min-width: 1280px) 472px, (min-width: 768px) 50vw, 100vw"
+          />
+        </div>
+      ))
+    }
+  </div>
+
+  <!-- Pagination -->
+  <nav
+    data-nav="restaurants"
+    class="mt-10 flex items-center justify-center gap-2"
+    aria-label="Restaurants pagination"
+  >
+    {
+      [...Array(totalPages)].map((_, index) => (
+        <Button
+          variant="link"
+          data-page={String(index + 1)}
+          class="[.is-active]:before:bg-primary relative z-0 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
+          data-action="restaurant-page"
+          size="icon-lg"
+        >
+          {index + 1}
+        </Button>
+      ))
+    }
+  </nav>
+</section>

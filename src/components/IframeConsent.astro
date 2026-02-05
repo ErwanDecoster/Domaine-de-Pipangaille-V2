@@ -1,15 +1,17 @@
 ---
 import Button from "@/components/ui/button/button.astro";
 import { getLangFromUrl, useTranslations, getLocalizedUrl } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
 
 interface Props {
   src: string;
   serviceName: string;
+  class?: string;
 }
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const { src, serviceName } = Astro.props as Props;
+const { src, serviceName, class: className } = Astro.props as Props;
 
 const privacyPolicyUrl = getLocalizedUrl("privacyPolicy", lang);
 
@@ -23,7 +25,10 @@ const hostname = (() => {
 })();
 ---
 
-<div class="aspect-video w-full rounded-md border-0">
+<div
+  class={cn("w-full rounded-md border-0", className)}
+  data-iframe-class={className ?? ""}
+>
   <div
     class="iframe-consent bg-muted flex h-full w-full flex-col items-center justify-center gap-4 rounded-md border p-6 text-center"
     data-iframe-src={src}
@@ -87,20 +92,20 @@ const hostname = (() => {
     const src = element.getAttribute("data-iframe-src");
     if (!src) return;
 
+    const wrapper = element.parentElement;
+    const wrapperClass = wrapper?.getAttribute("data-iframe-class") ?? "";
+
     const iframeContainer = document.createElement("div");
     iframeContainer.innerHTML = `
       <iframe
         src="${src}"
-        class="w-full h-full aspect-video rounded-md border-0 dark:hue-rotate-180 dark:invert-[0.8] dark:contrast-125"
+        class="w-full h-full rounded-md border-0 dark:hue-rotate-180 dark:invert-[0.8] dark:contrast-125 ${wrapperClass}"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     `;
 
-    element.parentElement?.replaceChild(
-      iframeContainer.firstElementChild!,
-      element,
-    );
+    wrapper?.replaceChild(iframeContainer.firstElementChild!, element);
   }
 </script>

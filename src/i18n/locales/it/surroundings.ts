@@ -13,6 +13,8 @@ export const surroundings = {
   "surroundings.category.sport": "Sport",
   "surroundings.category.ride": "Passeggiata",
   "surroundings.category.bike": "Ciclismo",
+  "surroundings.category.openNoon": "Aperto a pranzo",
+  "surroundings.category.openEvening": "Aperto la sera",
   "surroundings.tags.quick_neighborhood_ride": "Vicino in bicicletta",
   "surroundings.tags.short_but_steep_climb": "Vicino con dislivello",
   "surroundings.tags.easy_short_ride": "Breve e facile",
@@ -215,4 +217,6 @@ export const surroundings = {
   "surroundings.detail.socialNetworks": "Canali social",
   "surroundings.detail.visitWebsite": "Visita il sito web",
   "surroundings.detail.moreInfo.title": "Maggiori informazioni",
+  "surroundings.detail.businessHours.title": "Orari di apertura",
+  "surroundings.detail.businessHours.closed": "Chiuso",
 };
