@@ -16,22 +16,21 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
-    "@astrojs/vercel": "^9.0.4",
+    "@astrojs/vercel": "^8.0.4",
     "@astrojs/vue": "^5.1.4",
     "@fontsource/barlow": "^5.2.8",
     "@fontsource/source-serif-4": "^5.2.9",
-    "@lucide/astro": "^0.562.0",
+    "@lucide/astro": "^0.563.0",
     "@tailwindcss/vite": "^4.1.18",
-    "@vueuse/core": "^14.1.0",
-    "astro": "^5.16.15",
+    "@vueuse/core": "^14.2.0",
+    "astro": "^5.17.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.562.0",
     "reka-ui": "^2.8.0",
-    "resend": "^6.7.0",
+    "resend": "^6.9.1",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18",
-    "vue": "^3.5.26"
+    "vue": "^3.5.27"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.54.0",
