@@ -7,6 +7,7 @@ import { useTranslations } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
 import carportCounter from "@/images/carport-counter.jpg";
 import carportCounterBikes from "@/images/carport-counter-bikes.jpg";
+import menuComptoirDePipangaille from "@/assets/menu_comptoir_de_pipangaille.svg";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
@@ -28,7 +29,11 @@ const t = useTranslations(lang);
     image={carportCounter}
     imageAlt="TODO"
   >
-    <PlaceBusinessHours lang={lang} slug="comptoir" />
+    <PlaceBusinessHours
+      description={t("counter.hero.description")}
+      lang={lang}
+      slug="comptoir"
+    />
   </Header>
   <div
     data-scroll-animated
@@ -41,5 +46,13 @@ const t = useTranslations(lang);
     text={t("counter.story.text")}
     image={carportCounterBikes}
     imageAlt="TODO"
+  />
+  <MediaContent
+    title={t("counter.menu.title")}
+    text={t("counter.menu.text")}
+    image={menuComptoirDePipangaille}
+    imageAlt="TODO"
+    ratio="4-5"
+    objectFit="contain"
   />
 </Layout>
