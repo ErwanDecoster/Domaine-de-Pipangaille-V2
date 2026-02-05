@@ -757,6 +757,8 @@ export const surroundings = {
       ],
       shortDesc: "surroundings.descriptions.la_belle_epoque.short",
       longDesc: ["surroundings.descriptions.la_belle_epoque.long"],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.3788671144976!2d4.82062787661554!3d45.26035167107131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53fe1840fa587%3A0xf1f043e10f57b141!2sLa%20Belle%20Epoque!5e0!3m2!1sen!2sfr!4v1770282969397!5m2!1sen!2sfr",
       socialMedia: [
         {
           platform: "facebook",
