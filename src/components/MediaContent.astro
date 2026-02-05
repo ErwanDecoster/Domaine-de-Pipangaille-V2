@@ -21,7 +21,7 @@ interface Props {
   buttonText?: string;
   buttonLink?: string;
   direction?: "left" | "right";
-  ratio?: "4-5";
+  ratio?: "4-5" | "5-4";
 }
 
 const {
@@ -67,7 +67,7 @@ const paragraphs = Array.isArray(text)
     {
       "lg:grid-cols-2": gallery.length > 0 || iframeUrl,
       "lg:grid-cols-1": gallery.length === 0 && !iframeUrl,
-      "lg:grid-cols-9": ratio === "4-5",
+      "lg:grid-cols-9": ratio === "4-5" || ratio === "5-4",
     },
   )}
 >
@@ -82,6 +82,7 @@ const paragraphs = Array.isArray(text)
           "grid-cols-3": galleryLayout === "multi",
           "grid-rows-2": galleryLayout === "triple",
           "lg:col-span-4": ratio === "4-5",
+          "lg:col-span-5": ratio === "5-4",
         })}
       >
         {gallery.map(({ src, alt }, index) => (
@@ -110,6 +111,7 @@ const paragraphs = Array.isArray(text)
         class={cn("grid gap-4", {
           "lg:order-last": direction === "left",
           "col-span-4": ratio === "4-5",
+          "col-span-5": ratio === "5-4",
         })}
       >
         <IframeConsent src={iframeUrl} serviceName={iframeServiceName} />
@@ -120,6 +122,7 @@ const paragraphs = Array.isArray(text)
     class={cn("flex flex-col justify-center gap-8", {
       "col-span-2": !gallery.length && !iframeUrl,
       "lg:col-span-5": ratio === "4-5",
+      "lg:col-span-4": ratio === "5-4",
     })}
   >
     <h2>{title}</h2>
