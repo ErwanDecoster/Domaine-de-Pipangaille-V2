@@ -219,4 +219,8 @@ export const surroundings = {
   "surroundings.detail.socialNetworks": "Sociale media",
   "surroundings.detail.visitWebsite": "Bezoek de website",
   "surroundings.detail.moreInfo.title": "Meer informatie",
+  "surroundings.detail.businessHours.title": "Openingsuren",
+  "surroundings.detail.businessHours.closed": "Gesloten",
+};
+  "surroundings.detail.moreInfo.title": "Meer informatie",
 };

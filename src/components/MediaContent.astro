@@ -110,8 +110,8 @@ const paragraphs = Array.isArray(text)
       <div
         class={cn("grid gap-4", {
           "lg:order-last": direction === "left",
-          "col-span-4": ratio === "4-5",
-          "col-span-5": ratio === "5-4",
+          "lg:col-span-4": ratio === "4-5",
+          "lg:col-span-5": ratio === "5-4",
         })}
       >
         <IframeConsent src={iframeUrl} serviceName={iframeServiceName} />

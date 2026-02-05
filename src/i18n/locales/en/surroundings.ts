@@ -217,4 +217,6 @@ export const surroundings = {
   "surroundings.detail.socialNetworks": "Social media",
   "surroundings.detail.visitWebsite": "Visit the website",
   "surroundings.detail.moreInfo.title": "More information",
+  "surroundings.detail.businessHours.title": "Opening hours",
+  "surroundings.detail.businessHours.closed": "Closed",
 };

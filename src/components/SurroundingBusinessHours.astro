@@ -1,0 +1,92 @@
+---
+import businessHours from "@/constants/businessHours.json";
+import { useTranslations } from "@/lib/i18n";
+
+const { lang, slug } = Astro.props as {
+  lang: string;
+  slug: string;
+};
+
+const t = useTranslations(lang as any);
+
+// Map slug to businessHours key (convert snake_case to camelCase)
+const toBusinessHoursKey = (slug: string) => {
+  return slug.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+};
+
+const businessHoursKey = toBusinessHoursKey(slug);
+const hours =
+  businessHours[businessHoursKey as keyof typeof businessHours]?.hours;
+
+if (!hours) {
+  throw new Error(`Business hours not found for ${slug}`);
+}
+
+const dayOrder = [
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+  "sunday",
+];
+
+// Use JavaScript's Intl API to get localized day names
+const getDayName = (dayIndex: number) => {
+  const date = new Date(2026, 0, 5 + dayIndex); // Monday = 5 Jan 2026
+  return new Intl.DateTimeFormat(lang, {
+    weekday: "long",
+  }).format(date);
+};
+
+const dayNames = {
+  monday: getDayName(0),
+  tuesday: getDayName(1),
+  wednesday: getDayName(2),
+  thursday: getDayName(3),
+  friday: getDayName(4),
+  saturday: getDayName(5),
+  sunday: getDayName(6),
+};
+
+const formatTime = (time: string) => {
+  return `${time.slice(0, 2)}:${time.slice(2)}`;
+};
+---
+
+<div>
+  <h3 class="mb-4 text-2xl">
+    {t("surroundings.detail.businessHours.title")}
+  </h3>
+  <dl class="grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
+    {
+      dayOrder.map((day) => {
+        const dayData = hours[day as keyof typeof hours];
+        const isOpenWithPeriods =
+          dayData?.isOpen && "periods" in dayData && dayData.periods;
+        return (
+          <div class="flex justify-between gap-4">
+            <dt class="font-medium capitalize">
+              {dayNames[day as keyof typeof dayNames]}
+            </dt>
+            <dd class="text-muted-foreground text-right">
+              {isOpenWithPeriods && dayData && "periods" in dayData ? (
+                dayData.periods.map(
+                  (period: { open: string; close: string }, idx: number) => (
+                    <span>
+                      {formatTime(period.open)} - {formatTime(period.close)}
+                      {idx < dayData.periods!.length - 1 && ", "}
+                    </span>
+                  ),
+                )
+              ) : (
+                <span>{t("surroundings.detail.businessHours.closed")}</span>
+              )}
+            </dd>
+          </div>
+        );
+      })
+    }
+  </dl>
+</div>

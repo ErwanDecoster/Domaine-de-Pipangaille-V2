@@ -1,0 +1,61 @@
+---
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
+import Button from "./ui/button/button.astro";
+import Card from "./Card.astro";
+
+const {
+  lang,
+  surroundings,
+  title,
+  buttonText,
+  seeAllButtonText,
+  seeAllButtonLink,
+} = Astro.props as {
+  lang: string;
+  surroundings: Array<{
+    title: string;
+    slug: string;
+    gallery?: Array<{ src: string; altKey: string }>;
+    shortDesc?: string;
+    category?: string[];
+  }>;
+  title: string;
+  buttonText: string;
+  seeAllButtonText: string;
+  seeAllButtonLink: string;
+};
+
+const t = useTranslations(lang as any);
+const toKey = (key: string) => key as Parameters<typeof t>[0];
+---
+
+<section
+  class="mt-24 grid gap-8 px-4 sm:px-6 md:mt-48 md:grid-cols-3 md:gap-10 md:px-10 lg:px-20"
+>
+  <h2 class="md:col-span-3">{title}</h2>
+  {
+    surroundings.slice(0, 3).map((surrounding) => (
+      <Card
+        title={surrounding.title}
+        image={surrounding.gallery?.[0]?.src as any}
+        imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
+        description={
+          surrounding.shortDesc ? t(toKey(surrounding.shortDesc)) : undefined
+        }
+        tags={(surrounding as { category?: string[] }).category?.map((cat) => ({
+          text: t(toKey(`surroundings.category.${cat}`)),
+        }))}
+        buttonText={buttonText}
+        buttonLink={getLocalizedUrl(
+          "surrounding",
+          lang as any,
+          surrounding.slug,
+        )}
+        sizes="(min-width: 768px) 33vw, 100vw"
+      />
+    ))
+  }
+  <Button class="mx-auto md:col-span-3" href={seeAllButtonLink}>
+    {seeAllButtonText}
+  </Button>
+</section>

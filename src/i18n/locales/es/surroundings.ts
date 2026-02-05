@@ -221,4 +221,10 @@ export const surroundings = {
   "surroundings.detail.socialNetworks": "Redes sociales",
   "surroundings.detail.visitWebsite": "Visitar el sitio web",
   "surroundings.detail.moreInfo.title": "Más información",
+  "surroundings.detail.businessHours.title": "Horario de apertura",
+  "surroundings.detail.businessHours.closed": "Cerrado",
+};
+  "surroundings.detail.socialNetworks": "Redes sociales",
+  "surroundings.detail.visitWebsite": "Visitar el sitio web",
+  "surroundings.detail.moreInfo.title": "Más información",
 };
