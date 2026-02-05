@@ -222,5 +222,3 @@ export const surroundings = {
   "surroundings.detail.businessHours.title": "Openingsuren",
   "surroundings.detail.businessHours.closed": "Gesloten",
 };
-  "surroundings.detail.moreInfo.title": "Meer informatie",
-};

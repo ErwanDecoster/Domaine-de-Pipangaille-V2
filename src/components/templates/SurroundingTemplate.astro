@@ -10,7 +10,7 @@ import businessHours from "@/constants/businessHours.json";
 import Header from "../Header.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
-import { Phone, Bike, Mountain, Route } from "@lucide/astro";
+import { Bike, Mountain, Route } from "@lucide/astro";
 
 const { lang, surroundingName } = Astro.props as {
   lang: keyof typeof reviews;

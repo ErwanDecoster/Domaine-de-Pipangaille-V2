@@ -221,4 +221,3 @@ export const surroundings = {
   "surroundings.detail.businessHours.title": "Öffnungszeiten",
   "surroundings.detail.businessHours.closed": "Geschlossen",
 };
-};
