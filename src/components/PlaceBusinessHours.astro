@@ -3,9 +3,10 @@ import businessHours from "@/constants/businessHours.json";
 import { toBusinessHoursKey } from "@/lib/businessHours";
 import { useTranslations } from "@/lib/i18n";
 
-const { lang, slug } = Astro.props as {
+const { lang, slug, class: className } = Astro.props as {
   lang: string;
   slug: string;
+  class?: string;
 };
 
 const t = useTranslations(lang as any);
@@ -51,7 +52,7 @@ const formatTime = (time: string) => {
 };
 ---
 
-<div>
+<div class={className}>
   <h3 class="mb-4 text-2xl">
     {t("surroundings.detail.businessHours.title")}
   </h3>
