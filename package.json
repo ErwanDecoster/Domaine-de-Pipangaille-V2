@@ -26,7 +26,6 @@
     "astro": "^5.17.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.563.0",
     "reka-ui": "^2.8.0",
     "resend": "^6.9.1",
     "tailwind-merge": "^3.4.0",
