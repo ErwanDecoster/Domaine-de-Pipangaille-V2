@@ -32,21 +32,15 @@ const isOpenAtTime = (
 
   if (!hours) return false;
 
-  // Get today's day of week (0 = Sunday, so we need to adjust)
-  const now = new Date();
-  const dayOfWeek = now.getDay();
-  const dayNames = [
-    "sunday",
-    "monday",
-    "tuesday",
-    "wednesday",
-    "thursday",
-    "friday",
-    "saturday",
-  ];
-  const todayName = dayNames[dayOfWeek];
+  // Get today's day of week using Intl API with Europe/Paris timezone
+  const dayOfWeekIndex = new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    timeZone: "Europe/Paris",
+  })
+    .format(new Date())
+    .toLowerCase();
 
-  const todayHours = hours[todayName as keyof typeof hours];
+  const todayHours = hours[dayOfWeekIndex as keyof typeof hours];
 
   if (!todayHours?.isOpen || !("periods" in todayHours)) {
     return false;
@@ -56,9 +50,11 @@ const isOpenAtTime = (
   // The requested time window is [startHour, endHour)
   return todayHours.periods!.some((period: { open: string; close: string }) => {
     const openHour =
-      parseInt(period.open.slice(0, 2)) + parseInt(period.open.slice(2)) / 60;
+      Number.parseInt(period.open.slice(0, 2), 10) +
+      Number.parseInt(period.open.slice(2), 10) / 60;
     const closeHour =
-      parseInt(period.close.slice(0, 2)) + parseInt(period.close.slice(2)) / 60;
+      Number.parseInt(period.close.slice(0, 2), 10) +
+      Number.parseInt(period.close.slice(2), 10) / 60;
 
     // Check if the period overlaps with the requested time window
     // Overlap occurs if: period.open < endHour AND period.close > startHour
@@ -136,11 +132,7 @@ const allCategories = [
 ].sort();
 
 const restaurantCategories = [
-  ...new Set([
-    ...restaurantFiltersData.flatMap((item) => item.categories),
-    "openNoon",
-    "openEvening",
-  ]),
+  ...new Set(restaurantFiltersData.flatMap((item) => item.categories)),
 ].sort();
 
 const getTotalPages = (count: number) =>

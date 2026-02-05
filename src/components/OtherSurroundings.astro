@@ -15,7 +15,7 @@ const {
   surroundings: Array<{
     title: string;
     slug: string;
-    gallery?: Array<{ src: string; altKey: string }>;
+    gallery?: Array<{ src: any; altKey: string }>;
     shortDesc?: string;
     category?: string[];
   }>;
@@ -34,26 +34,33 @@ const toKey = (key: string) => key as Parameters<typeof t>[0];
 >
   <h2 class="md:col-span-3">{title}</h2>
   {
-    surroundings.slice(0, 3).map((surrounding) => (
-      <Card
-        title={surrounding.title}
-        image={surrounding.gallery?.[0]?.src as any}
-        imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
-        description={
-          surrounding.shortDesc ? t(toKey(surrounding.shortDesc)) : undefined
-        }
-        tags={(surrounding as { category?: string[] }).category?.map((cat) => ({
-          text: t(toKey(`surroundings.category.${cat}`)),
-        }))}
-        buttonText={buttonText}
-        buttonLink={getLocalizedUrl(
-          "surrounding",
-          lang as any,
-          surrounding.slug,
-        )}
-        sizes="(min-width: 768px) 33vw, 100vw"
-      />
-    ))
+    surroundings.slice(0, 3).map((surrounding) => {
+      const image = surrounding.gallery?.[0]?.src;
+      if (!image) return null;
+
+      return (
+        <Card
+          title={surrounding.title}
+          image={image}
+          imageAlt={t(toKey(surrounding.gallery?.[0]?.altKey ?? ""))}
+          description={
+            surrounding.shortDesc ? t(toKey(surrounding.shortDesc)) : undefined
+          }
+          tags={(surrounding as { category?: string[] }).category?.map(
+            (cat) => ({
+              text: t(toKey(`surroundings.category.${cat}`)),
+            }),
+          )}
+          buttonText={buttonText}
+          buttonLink={getLocalizedUrl(
+            "surrounding",
+            lang as any,
+            surrounding.slug,
+          )}
+          sizes="(min-width: 768px) 33vw, 100vw"
+        />
+      );
+    })
   }
   <Button class="mx-auto md:col-span-3" href={seeAllButtonLink}>
     {seeAllButtonText}

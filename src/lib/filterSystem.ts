@@ -79,7 +79,10 @@ export function initializeFilterSystem() {
     // Filter activities
     const filteredActivities = state.category
       ? activitiesCards.filter((card) =>
-          (card.dataset.categories || "").split(",").includes(state.category!),
+          (card.dataset.categories || "")
+            .split(",")
+            .filter(Boolean)
+            .includes(state.category!),
         )
       : activitiesCards;
 
@@ -99,6 +102,7 @@ export function initializeFilterSystem() {
       ? restaurantsCards.filter((card) =>
           (card.dataset.categories || "")
             .split(",")
+            .filter(Boolean)
             .includes(state.restaurantCategory!),
         )
       : restaurantsCards;

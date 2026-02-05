@@ -7,6 +7,7 @@ import OtherSurroundings from "@/components/OtherSurroundings.astro";
 import { reviews } from "@/constants/reviews";
 import { surroundings } from "@/constants/surroundings";
 import businessHours from "@/constants/businessHours.json";
+import { toBusinessHoursKey } from "@/lib/businessHours";
 import Header from "../Header.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
@@ -101,10 +102,6 @@ if (bikeRoute?.tag) {
 }
 
 // Check if MediaContent section should be displayed
-const toBusinessHoursKey = (slug: string) => {
-  return slug.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
-};
-
 const businessHoursKey = toBusinessHoursKey(baseSurrounding?.slug ?? "");
 const hours =
   businessHours[businessHoursKey as keyof typeof businessHours]?.hours;

@@ -1,5 +1,6 @@
 ---
 import businessHours from "@/constants/businessHours.json";
+import { toBusinessHoursKey } from "@/lib/businessHours";
 import { useTranslations } from "@/lib/i18n";
 
 const { lang, slug } = Astro.props as {
@@ -8,11 +9,6 @@ const { lang, slug } = Astro.props as {
 };
 
 const t = useTranslations(lang as any);
-
-// Map slug to businessHours key (convert snake_case to camelCase)
-const toBusinessHoursKey = (slug: string) => {
-  return slug.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
-};
 
 const businessHoursKey = toBusinessHoursKey(slug);
 const hours =
