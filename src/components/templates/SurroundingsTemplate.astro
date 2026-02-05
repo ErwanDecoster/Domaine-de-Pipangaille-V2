@@ -164,12 +164,14 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
   </div>
 
   <ActivitiesSection
+    lang={lang}
     activities={activities}
     categories={allCategories}
     totalPages={activitiesTotalPages}
   />
 
   <RestaurantsSection
+    lang={lang}
     restaurants={restaurantFiltersData}
     categories={restaurantCategories}
     totalPages={restaurantsTotalPages}

@@ -2,20 +2,19 @@
 import Button from "@/components/ui/button/button.astro";
 import Card from "@/components/Card.astro";
 import { useTranslations } from "@/lib/i18n";
-import { languages } from "@/i18n/ui";
-
-const lang = (Astro.params.lang || "fr") as keyof typeof languages;
-const t = useTranslations(lang);
-
-const toKey = (key: string) => key as any;
+import type { languages } from "@/i18n/ui";
 
 interface Props {
+  lang: keyof typeof languages;
   restaurants: any[];
   categories: string[];
   totalPages: number;
 }
 
-const { restaurants, categories, totalPages } = Astro.props;
+const { lang, restaurants, categories, totalPages } = Astro.props;
+const t = useTranslations(lang);
+
+const toKey = (key: string) => key as any;
 ---
 
 <section
