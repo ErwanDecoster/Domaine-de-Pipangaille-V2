@@ -617,6 +617,7 @@ export const surroundings = {
     },
     {
       title: "La Table des SAJ",
+      category: ["loved"],
       shortDesc: "surroundings.descriptions.la_table_des_saj.short",
       longDesc: ["surroundings.descriptions.la_table_des_saj.long"],
       gallery: [
@@ -652,6 +653,7 @@ export const surroundings = {
     },
     {
       title: "La Poule Noire",
+      category: ["loved"],
       shortDesc: "surroundings.descriptions.la_poule_noire.short",
       longDesc: ["surroundings.descriptions.la_poule_noire.long"],
       gallery: [
@@ -714,6 +716,7 @@ export const surroundings = {
     },
     {
       title: "Au Pré du Rhône",
+      category: ["loved"],
       shortDesc: "surroundings.descriptions.au_pre_du_rhone.short",
       longDesc: ["surroundings.descriptions.au_pre_du_rhone.long"],
       gallery: [

@@ -13,6 +13,8 @@ export const surroundings = {
   "surroundings.category.sport": "Sport",
   "surroundings.category.ride": "Uitstapje",
   "surroundings.category.bike": "Fietsen",
+  "surroundings.category.openNoon": "Open 's middags",
+  "surroundings.category.openEvening": "Open 's avonds",
   "surroundings.tags.quick_neighborhood_ride": "Dichtbij op de fiets",
   "surroundings.tags.short_but_steep_climb": "Dichtbij met hoogteverschil",
   "surroundings.tags.easy_short_ride": "Kort en gemakkelijk",

@@ -1,10 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Card from "@/components/Card.astro";
+import ActivitiesSection from "@/components/ActivitiesSection.astro";
+import RestaurantsSection from "@/components/RestaurantsSection.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { surroundings } from "@/constants/surroundings";
+import businessHours from "@/constants/businessHours.json";
 import { languages } from "@/i18n/ui";
-import { Button } from "../ui/button";
 import { Bike } from "@lucide/astro";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
@@ -14,6 +15,64 @@ type TranslationKey = Parameters<typeof t>[0];
 const toKey = (key: string) => key as TranslationKey;
 
 const ITEMS_PER_PAGE = 6;
+
+// Function to check if a restaurant is open at a specific time
+const isOpenAtTime = (
+  slug: string,
+  startHour: number,
+  endHour: number,
+): boolean => {
+  const toBusinessHoursKey = (slug: string) => {
+    return slug.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+  };
+
+  const businessHoursKey = toBusinessHoursKey(slug);
+  const hours =
+    businessHours[businessHoursKey as keyof typeof businessHours]?.hours;
+
+  if (!hours) return false;
+
+  // Get today's day of week (0 = Sunday, so we need to adjust)
+  const now = new Date();
+  const dayOfWeek = now.getDay();
+  const dayNames = [
+    "sunday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+  ];
+  const todayName = dayNames[dayOfWeek];
+
+  const todayHours = hours[todayName as keyof typeof hours];
+
+  if (!todayHours?.isOpen || !("periods" in todayHours)) {
+    return false;
+  }
+
+  // Check if any period overlaps with the requested time window
+  // The requested time window is [startHour, endHour)
+  return todayHours.periods!.some((period: { open: string; close: string }) => {
+    const openHour =
+      parseInt(period.open.slice(0, 2)) + parseInt(period.open.slice(2)) / 60;
+    const closeHour =
+      parseInt(period.close.slice(0, 2)) + parseInt(period.close.slice(2)) / 60;
+
+    // Check if the period overlaps with the requested time window
+    // Overlap occurs if: period.open < endHour AND period.close > startHour
+    return openHour < endHour && closeHour > startHour;
+  });
+};
+
+const isOpenNoon = (slug: string): boolean => {
+  return isOpenAtTime(slug, 12, 14);
+};
+
+const isOpenEvening = (slug: string): boolean => {
+  return isOpenAtTime(slug, 19, 22);
+};
 
 const formatCard = (
   item:
@@ -53,16 +112,41 @@ const formatCard = (
 };
 
 const activities = surroundings.toVisit.map(formatCard);
-const restaurants = surroundings.toEat.map(formatCard);
+
+// Add dynamic filter properties to restaurants
+const restaurantFiltersData = surroundings.toEat.map((item) => {
+  const baseCard = formatCard(item);
+  const openNoon = isOpenNoon(item.slug);
+  const openEvening = isOpenEvening(item.slug);
+
+  const dynamicCategories = [...(item.category ?? [])];
+  if (openNoon) dynamicCategories.push("openNoon");
+  if (openEvening) dynamicCategories.push("openEvening");
+
+  return {
+    ...baseCard,
+    categories: dynamicCategories,
+    openNoon,
+    openEvening,
+  };
+});
 
 const allCategories = [
   ...new Set(surroundings.toVisit.flatMap((item) => item.category ?? [])),
 ].sort();
 
+const restaurantCategories = [
+  ...new Set([
+    ...restaurantFiltersData.flatMap((item) => item.categories),
+    "openNoon",
+    "openEvening",
+  ]),
+].sort();
+
 const getTotalPages = (count: number) =>
   Math.max(1, Math.ceil(count / ITEMS_PER_PAGE));
 const activitiesTotalPages = getTotalPages(activities.length);
-const restaurantsTotalPages = getTotalPages(restaurants.length);
+const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
 ---
 
 <Layout
@@ -79,248 +163,26 @@ const restaurantsTotalPages = getTotalPages(restaurants.length);
     <p class="mt-12 max-w-4xl md:w-4/5">{t("surroundings.hero.text")}</p>
   </div>
 
-  <section class="mt-20 space-y-10 px-4 sm:px-6 md:px-10 lg:px-20">
-    <div>
-      <h2>{t("surroundings.sections.activities.title")}</h2>
-    </div>
-    <div id="activities" class="mt-6 flex scroll-mt-28 flex-wrap gap-2">
-      <Button
-        class="hover:bg-accent/50 rounded-full"
-        variant="outline"
-        data-value=""
-        size="sm"
-        data-action="filter"
-      >
-        {t("surroundings.filter.all")}
-      </Button>
-      {
-        allCategories.map((category) => (
-          <Button
-            class="bg-muted hover:bg-accent/50 [.is-active]:bg-primary [.is-active]:text-primary-foreground rounded-full"
-            variant="ghost"
-            data-value={category}
-            size="sm"
-            data-action="filter"
-          >
-            {t(toKey(`surroundings.category.${category}`))}
-          </Button>
-        ))
-      }
-    </div>
-    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-      {
-        activities.map((activity) => (
-          <div
-            class="activity-card"
-            data-kind="activity"
-            data-categories={(activity.categories ?? []).join(",")}
-          >
-            <Card
-              {...activity}
-              sizes="(min-width: 1280px) 472px, (min-width: 768px) 50vw, 100vw"
-            />
-          </div>
-        ))
-      }
-    </div>
-    <nav
-      data-nav="activities"
-      class="mt-10 flex items-center justify-center gap-2"
-      aria-label="Activities pagination"
-    >
-      {
-        [...Array(activitiesTotalPages)].map((_, index) => (
-          <Button
-            variant="link"
-            data-page={String(index + 1)}
-            class="[.is-active]:before:bg-primary relative z-0 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
-            data-action="activity-page"
-            size="icon-lg"
-          >
-            {index + 1}
-          </Button>
-        ))
-      }
-    </nav>
-  </section>
+  <ActivitiesSection
+    activities={activities}
+    categories={allCategories}
+    totalPages={activitiesTotalPages}
+  />
 
-  <section
-    id="to-eat"
-    class="mt-24 mb-24 scroll-mt-28 space-y-10 px-4 sm:px-6 md:px-10 lg:px-20"
-  >
-    <div>
-      <h2>{t("surroundings.sections.food.title")}</h2>
-    </div>
-    <div
-      id="restaurants"
-      class="mt-12 grid scroll-mt-28 grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
-    >
-      {
-        restaurants.map((restaurant) => (
-          <div class="restaurant-card" data-kind="restaurant">
-            <Card
-              {...restaurant}
-              sizes="(min-width: 1280px) 472px, (min-width: 768px) 50vw, 100vw"
-            />
-          </div>
-        ))
-      }
-    </div>
-    <nav
-      data-nav="restaurants"
-      class="mt-10 flex items-center justify-center gap-2"
-      aria-label="Restaurants pagination"
-    >
-      {
-        [...Array(restaurantsTotalPages)].map((_, index) => (
-          <Button
-            variant="link"
-            data-page={String(index + 1)}
-            class="[.is-active]:before:bg-primary relative z-0 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
-            data-action="restaurant-page"
-            size="icon-lg"
-          >
-            {index + 1}
-          </Button>
-        ))
-      }
-    </nav>
-  </section>
+  <RestaurantsSection
+    restaurants={restaurantFiltersData}
+    categories={restaurantCategories}
+    totalPages={restaurantsTotalPages}
+  />
 </Layout>
 
 <script>
-  const ITEMS_PER_PAGE = 6;
-  const activitiesCards = Array.from(
-    document.querySelectorAll<HTMLElement>("[data-kind='activity']"),
-  );
-  const restaurantsCards = Array.from(
-    document.querySelectorAll<HTMLElement>("[data-kind='restaurant']"),
-  );
-  const activitiesNav = document.querySelector<HTMLElement>(
-    "[data-nav='activities']",
-  );
-  const restaurantsNav = document.querySelector<HTMLElement>(
-    "[data-nav='restaurants']",
-  );
+  import { initializeFilterSystem } from "@/lib/filterSystem";
 
-  const params = new URLSearchParams(window.location.search);
-  const state = {
-    category: params.get("category"),
-    activitiesPage: parseInt(params.get("activitiesPage") || "1", 10) || 1,
-    restaurantsPage: parseInt(params.get("restaurantsPage") || "1", 10) || 1,
-  };
-
-  const paginateCards = (
-    cards: HTMLElement[],
-    page: number,
-    nav: HTMLElement | null,
-  ) => {
-    const maxPage = Math.max(1, Math.ceil(cards.length / ITEMS_PER_PAGE));
-    const safePage = Math.min(page, maxPage);
-    const start = (safePage - 1) * ITEMS_PER_PAGE;
-
-    cards.forEach((card) => card.classList.add("hidden"));
-    cards
-      .slice(start, start + ITEMS_PER_PAGE)
-      .forEach((card) => card.classList.remove("hidden"));
-
-    nav?.querySelectorAll<HTMLElement>("[data-page]").forEach((btn) => {
-      const p = Number(btn.dataset.page);
-      btn.style.display = p <= maxPage ? "" : "none";
-      btn.classList.toggle("is-active", p === safePage);
-    });
-
-    if (nav) nav.style.display = maxPage > 1 ? "" : "none";
-    return safePage;
-  };
-
-  const applyState = () => {
-    const filteredActivities = state.category
-      ? activitiesCards.filter((card) =>
-          (card.dataset.categories || "").split(",").includes(state.category!),
-        )
-      : activitiesCards;
-
-    state.activitiesPage = paginateCards(
-      filteredActivities,
-      state.activitiesPage,
-      activitiesNav,
-    );
-    activitiesCards
-      .filter((c) => !filteredActivities.includes(c))
-      .forEach((c) => c.classList.add("hidden"));
-
-    state.restaurantsPage = paginateCards(
-      restaurantsCards,
-      state.restaurantsPage,
-      restaurantsNav,
-    );
-
-    document.querySelectorAll<HTMLElement>("[data-value]").forEach((btn) => {
-      btn.classList.toggle(
-        "is-active",
-        (btn.dataset.value || null) === (state.category || null),
-      );
-    });
-
-    const url = new URL(window.location.href);
-    ["category", "activitiesPage", "restaurantsPage"].forEach((k) =>
-      url.searchParams.delete(k),
-    );
-    if (state.category) url.searchParams.set("category", state.category);
-    if (state.activitiesPage > 1)
-      url.searchParams.set("activitiesPage", String(state.activitiesPage));
-    if (state.restaurantsPage > 1)
-      url.searchParams.set("restaurantsPage", String(state.restaurantsPage));
-    window.history.replaceState({}, "", url);
-  };
-
-  const handleFilterClick = (e: Event) => {
-    state.category = (e.currentTarget as HTMLElement).dataset.value || null;
-    state.activitiesPage = 1;
-    applyState();
-    document
-      .getElementById("activities")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleActivityPageClick = (e: Event) => {
-    const page = Number((e.currentTarget as HTMLElement).dataset.page);
-    if (!isNaN(page)) {
-      state.activitiesPage = page;
-      applyState();
-      document
-        .getElementById("activities")
-        ?.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleRestaurantPageClick = (e: Event) => {
-    const page = Number((e.currentTarget as HTMLElement).dataset.page);
-    if (!isNaN(page)) {
-      state.restaurantsPage = page;
-      applyState();
-      document
-        .getElementById("restaurants")
-        ?.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  document
-    .querySelectorAll<HTMLElement>("[data-action='filter']")
-    .forEach((btn) => {
-      btn.addEventListener("click", handleFilterClick);
-    });
-  document
-    .querySelectorAll<HTMLElement>("[data-action='activity-page']")
-    .forEach((btn) => {
-      btn.addEventListener("click", handleActivityPageClick);
-    });
-  document
-    .querySelectorAll<HTMLElement>("[data-action='restaurant-page']")
-    .forEach((btn) => {
-      btn.addEventListener("click", handleRestaurantPageClick);
-    });
-
-  applyState();
+  // Initialize the filter system when DOM is ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeFilterSystem);
+  } else {
+    initializeFilterSystem();
+  }
 </script>

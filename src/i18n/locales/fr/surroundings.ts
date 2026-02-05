@@ -13,6 +13,8 @@ export const surroundings = {
   "surroundings.category.sport": "Sport",
   "surroundings.category.ride": "Balade",
   "surroundings.category.bike": "Vélo",
+  "surroundings.category.openNoon": "Ouvert ce midi",
+  "surroundings.category.openEvening": "Ouvert ce soir",
   "surroundings.tags.quick_neighborhood_ride": "Proche à vélo",
   "surroundings.tags.short_but_steep_climb": "Proche, avec dénivelé",
   "surroundings.tags.easy_short_ride": "Accessible sans effort",
