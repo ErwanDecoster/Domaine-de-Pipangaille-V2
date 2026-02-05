@@ -28,7 +28,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",
     "reka-ui": "^2.8.0",
-    "resend": "^6.7.0",
+    "resend": "^6.9.1",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.26"
