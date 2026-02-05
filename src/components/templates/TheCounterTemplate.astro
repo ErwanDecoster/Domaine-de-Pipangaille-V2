@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import PlaceBusinessHours from "@/components/PlaceBusinessHours.astro";
+import FullscreenGallery from "@/components/FullscreenGallery.astro";
 import { useTranslations } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
 import carportCounter from "@/images/carport-counter.jpg";
@@ -51,8 +52,14 @@ const t = useTranslations(lang);
     title={t("counter.menu.title")}
     text={t("counter.menu.text")}
     image={menuComptoirDePipangaille}
-    imageAlt="TODO"
+    imageAlt={t("counter.menu.title")}
     ratio="4-5"
     objectFit="contain"
+    galleryId="counter-menu"
+  />
+  <FullscreenGallery
+    images={[{ src: menuComptoirDePipangaille, alt: t("counter.menu.title") }]}
+    galleryId="counter-menu"
+    lang={lang}
   />
 </Layout>

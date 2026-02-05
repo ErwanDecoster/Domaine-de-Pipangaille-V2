@@ -23,6 +23,7 @@ interface Props {
   direction?: "left" | "right";
   ratio?: "4-5" | "5-4";
   objectFit?: "cover" | "contain";
+  galleryId?: string;
 }
 
 const {
@@ -38,6 +39,7 @@ const {
   direction,
   ratio,
   objectFit = "cover",
+  galleryId,
 } = Astro.props as Props;
 
 const gallery = images.length
@@ -99,6 +101,7 @@ const paragraphs = Array.isArray(text)
               "col-start-2 row-start-2 aspect-video lg:aspect-4/3":
                 galleryLayout === "triple" && index === 2,
             })}
+            data-gallery={galleryId}
             quality="40"
             sizes="(min-width: 624px) 624px, 100vw"
             src={src}
