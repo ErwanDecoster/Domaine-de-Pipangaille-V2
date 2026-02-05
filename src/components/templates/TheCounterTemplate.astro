@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
+import PlaceBusinessHours from "@/components/PlaceBusinessHours.astro";
 import { useTranslations } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
 import carportCounter from "@/images/carport-counter.jpg";
@@ -26,7 +27,9 @@ const t = useTranslations(lang);
     text={t("counter.hero.text")}
     image={carportCounter}
     imageAlt="TODO"
-  />
+  >
+    <PlaceBusinessHours lang={lang} slug="comptoir" />
+  </Header>
   <div
     data-scroll-animated
     class="bg-background sticky top-0 z-10 -mb-20 ml-[calc(50%-50vw)] h-28 w-screen"
