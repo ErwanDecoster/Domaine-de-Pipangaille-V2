@@ -8,9 +8,12 @@ import { reviews } from "@/constants/reviews";
 import { surroundings } from "@/constants/surroundings";
 import businessHours from "@/constants/businessHours.json";
 import { toBusinessHoursKey } from "@/lib/businessHours";
+import businessHours from "@/constants/businessHours.json";
+import { toBusinessHoursKey } from "@/lib/businessHours";
 import Header from "../Header.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
+import { Bike, Mountain, Route } from "@lucide/astro";
 import { Bike, Mountain, Route } from "@lucide/astro";
 
 const { lang, surroundingName } = Astro.props as {
@@ -114,6 +117,20 @@ const shouldShowMediaContent =
     : undefined) ||
   baseSurrounding?.phoneNumber ||
   hours;
+
+// Check if MediaContent section should be displayed
+const businessHoursKey = toBusinessHoursKey(baseSurrounding?.slug ?? "");
+const hours =
+  businessHours[businessHoursKey as keyof typeof businessHours]?.hours;
+
+const shouldShowMediaContent =
+  baseSurrounding?.mapsUrl ||
+  baseSurrounding?.socialMedia ||
+  (baseSurrounding && "bookLink" in baseSurrounding
+    ? baseSurrounding.bookLink
+    : undefined) ||
+  baseSurrounding?.phoneNumber ||
+  hours;
 ---
 
 {
@@ -163,6 +180,14 @@ const shouldShowMediaContent =
         </MediaContent>
       )}
 
+      <OtherSurroundings
+        lang={lang}
+        surroundings={otherSurroundings}
+        title={t(otherSurroundingsTitle)}
+        buttonText={surroundingButtonText}
+        seeAllButtonText={t(seeAllButtonText)}
+        seeAllButtonLink={seeAllButtonLink}
+      />
       <OtherSurroundings
         lang={lang}
         surroundings={otherSurroundings}
