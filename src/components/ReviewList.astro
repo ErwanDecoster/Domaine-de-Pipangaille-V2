@@ -75,77 +75,85 @@ const bufferSize = tailBuffer.length;
 </section>
 
 <script>
-  const carousel = document.getElementById("review-carousel");
+  function initCarousel() {
+    const carousel = document.getElementById("review-carousel");
 
-  if (carousel) {
-    const SCROLL_DEBOUNCE = 100;
-    const SCROLL_THRESHOLD = 5;
-    const TRANSITION_DELAY = 10;
+    if (carousel) {
+      const SCROLL_DEBOUNCE = 100;
+      const SCROLL_THRESHOLD = 5;
+      const TRANSITION_DELAY = 10;
 
-    let scrollTimeout: number | null = null;
-    let itemWidth: number;
+      let scrollTimeout: number | null = null;
+      let itemWidth: number;
 
-    const itemCount = parseInt(carousel.dataset.itemCount || "0");
-    const bufferSize = parseInt(carousel.dataset.bufferSize || "0");
+      const itemCount = parseInt(carousel.dataset.itemCount || "0");
+      const bufferSize = parseInt(carousel.dataset.bufferSize || "0");
 
-    const calculateDimensions = () => {
-      if (carousel.children.length === 0) return;
+      const calculateDimensions = () => {
+        if (carousel.children.length === 0) return;
 
-      if (carousel.children.length > 1) {
-        const first = carousel.children[0].getBoundingClientRect();
-        const second = carousel.children[1].getBoundingClientRect();
-        itemWidth = second.left - first.left;
-      } else {
-        itemWidth = carousel.children[0].getBoundingClientRect().width;
-      }
+        if (carousel.children.length > 1) {
+          const first = carousel.children[0].getBoundingClientRect();
+          const second = carousel.children[1].getBoundingClientRect();
+          itemWidth = second.left - first.left;
+        } else {
+          itemWidth = carousel.children[0].getBoundingClientRect().width;
+        }
 
-      if (carousel.scrollLeft === 0 && bufferSize > 0) {
-        carousel.scrollLeft = itemWidth * bufferSize;
-      }
-    };
+        if (carousel.scrollLeft === 0 && bufferSize > 0) {
+          carousel.scrollLeft = itemWidth * bufferSize;
+        }
+      };
 
-    const resetScroll = (targetPosition: number) => {
-      carousel.style.scrollBehavior = "auto";
-      requestAnimationFrame(() => {
-        carousel.scrollLeft = targetPosition;
-        setTimeout(() => {
-          carousel.style.scrollBehavior = "smooth";
-        }, TRANSITION_DELAY);
+      const resetScroll = (targetPosition: number) => {
+        carousel.style.scrollBehavior = "auto";
+        requestAnimationFrame(() => {
+          carousel.scrollLeft = targetPosition;
+          setTimeout(() => {
+            carousel.style.scrollBehavior = "smooth";
+          }, TRANSITION_DELAY);
+        });
+      };
+
+      const handleInfiniteScroll = () => {
+        const { scrollLeft, scrollWidth, clientWidth } = carousel;
+
+        const realSetWidth = itemWidth * itemCount;
+        if (scrollLeft <= SCROLL_THRESHOLD) {
+          resetScroll(scrollLeft + realSetWidth);
+        } else if (scrollLeft >= scrollWidth - clientWidth - SCROLL_THRESHOLD) {
+          resetScroll(scrollLeft - realSetWidth);
+        }
+      };
+
+      carousel.addEventListener("scroll", () => {
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        scrollTimeout = window.setTimeout(
+          handleInfiniteScroll,
+          SCROLL_DEBOUNCE,
+        );
       });
-    };
 
-    const handleInfiniteScroll = () => {
-      const { scrollLeft, scrollWidth, clientWidth } = carousel;
-
-      const realSetWidth = itemWidth * itemCount;
-      if (scrollLeft <= SCROLL_THRESHOLD) {
-        resetScroll(scrollLeft + realSetWidth);
-      } else if (scrollLeft >= scrollWidth - clientWidth - SCROLL_THRESHOLD) {
-        resetScroll(scrollLeft - realSetWidth);
-      }
-    };
-
-    carousel.addEventListener("scroll", () => {
-      if (scrollTimeout) clearTimeout(scrollTimeout);
-      scrollTimeout = window.setTimeout(handleInfiniteScroll, SCROLL_DEBOUNCE);
-    });
-
-    requestAnimationFrame(() => {
-      calculateDimensions();
-    });
-
-    if ("ResizeObserver" in window) {
-      const resizeObserver = new ResizeObserver(() => {
+      requestAnimationFrame(() => {
         calculateDimensions();
       });
-      resizeObserver.observe(carousel);
-    } else {
-      (window as any).addEventListener("resize", calculateDimensions);
-    }
 
-    (window as any).scrollCarousel = (direction: number) => {
-      const scrollAmount = itemWidth * direction;
-      carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    };
+      if ("ResizeObserver" in window) {
+        const resizeObserver = new ResizeObserver(() => {
+          calculateDimensions();
+        });
+        resizeObserver.observe(carousel);
+      } else {
+        (window as any).addEventListener("resize", calculateDimensions);
+      }
+
+      (window as any).scrollCarousel = (direction: number) => {
+        const scrollAmount = itemWidth * direction;
+        carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      };
+    }
   }
+
+  initCarousel();
+  document.addEventListener("astro:page-load", initCarousel);
 </script>

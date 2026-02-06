@@ -174,4 +174,7 @@ const t = useTranslations(lang);
   }
 
   initGallery(galleryId);
+  document.addEventListener("astro:page-load", () => {
+    initGallery(galleryId);
+  });
 </script>

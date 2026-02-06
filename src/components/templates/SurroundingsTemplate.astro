@@ -174,9 +174,14 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
   import { initializeFilterSystem } from "@/lib/filterSystem";
 
   // Initialize the filter system when DOM is ready
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initializeFilterSystem);
-  } else {
-    initializeFilterSystem();
-  }
+  const init = () => {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initializeFilterSystem);
+    } else {
+      initializeFilterSystem();
+    }
+  };
+
+  init();
+  document.addEventListener("astro:page-load", init);
 </script>
