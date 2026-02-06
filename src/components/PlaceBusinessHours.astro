@@ -37,7 +37,7 @@ const dayOrder = [
 
 // Use JavaScript's Intl API to get localized day names
 // We create a date for a known Monday and add dayIndex to get each day of the week
-// January 4, 1970 was a Sunday, so January 5, 1970 is a Monday
+// January 5, 1970 is a known Monday, used as the base for calculating all weekday names
 const getDayName = (dayIndex: number) => {
   const baseDate = new Date(1970, 0, 5); // January 5, 1970 (Monday)
   baseDate.setDate(baseDate.getDate() + dayIndex);
