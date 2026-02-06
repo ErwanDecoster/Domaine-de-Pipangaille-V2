@@ -18,7 +18,7 @@
 - [ ] Add picture for "Abri vélos" (bike shelter)
 - [ ] Add more information about what to do on site
 - [ ] Add more information about the pool
-- [ ] Add menu on the-counter page
+- [ ] Update menu on the-counter page
 - [ ] Add plants section with planmap link
 - [ ] Update the-place SpotlightGallery
 
