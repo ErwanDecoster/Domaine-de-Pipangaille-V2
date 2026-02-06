@@ -2,10 +2,13 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
+import PlaceBusinessHours from "@/components/PlaceBusinessHours.astro";
+import FullscreenGallery from "@/components/FullscreenGallery.astro";
 import { useTranslations } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
 import carportCounter from "@/images/carport-counter.jpg";
 import carportCounterBikes from "@/images/carport-counter-bikes.jpg";
+import menuComptoirDePipangaille from "@/assets/menu_comptoir_de_pipangaille.svg";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
@@ -26,7 +29,13 @@ const t = useTranslations(lang);
     text={t("counter.hero.text")}
     image={carportCounter}
     imageAlt="TODO"
-  />
+  >
+    <PlaceBusinessHours
+      description={t("counter.hero.description")}
+      lang={lang}
+      slug="comptoir"
+    />
+  </Header>
   <div
     data-scroll-animated
     class="bg-background sticky top-0 z-10 -mb-20 ml-[calc(50%-50vw)] h-28 w-screen"
@@ -38,5 +47,19 @@ const t = useTranslations(lang);
     text={t("counter.story.text")}
     image={carportCounterBikes}
     imageAlt="TODO"
+  />
+  <MediaContent
+    title={t("counter.menu.title")}
+    text={t("counter.menu.text")}
+    image={menuComptoirDePipangaille}
+    imageAlt={t("counter.menu.title")}
+    objectFit="contain"
+    galleryId="counter-menu"
+    imageClass="aspect-4/5! p-4"
+  />
+  <FullscreenGallery
+    images={[{ src: menuComptoirDePipangaille, alt: t("counter.menu.title") }]}
+    galleryId="counter-menu"
+    lang={lang}
   />
 </Layout>

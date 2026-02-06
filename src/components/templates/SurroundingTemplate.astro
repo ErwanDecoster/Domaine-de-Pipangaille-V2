@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import MediaContent from "@/components/MediaContent.astro";
-import SurroundingBusinessHours from "@/components/SurroundingBusinessHours.astro";
+import PlaceBusinessHours from "@/components/PlaceBusinessHours.astro";
 import SurroundingContactInfo from "@/components/SurroundingContactInfo.astro";
 import OtherSurroundings from "@/components/OtherSurroundings.astro";
 import { reviews } from "@/constants/reviews";
@@ -153,7 +153,7 @@ const shouldShowMediaContent =
         >
           <div>
             {hours && (
-              <SurroundingBusinessHours
+              <PlaceBusinessHours
                 lang={lang}
                 slug={baseSurrounding?.slug ?? ""}
               />
@@ -163,6 +163,14 @@ const shouldShowMediaContent =
         </MediaContent>
       )}
 
+      <OtherSurroundings
+        lang={lang}
+        surroundings={otherSurroundings}
+        title={t(otherSurroundingsTitle)}
+        buttonText={surroundingButtonText}
+        seeAllButtonText={t(seeAllButtonText)}
+        seeAllButtonLink={seeAllButtonLink}
+      />
       <OtherSurroundings
         lang={lang}
         surroundings={otherSurroundings}

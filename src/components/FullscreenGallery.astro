@@ -41,27 +41,35 @@ const t = useTranslations(lang);
       <X size={20} />
     </Button>
 
-    <Button
-      type="button"
-      data-fullscreen-action="prev"
-      variant="ghost"
-      size="icon"
-      class="absolute top-1/2 left-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
-      aria-label={t("home.gallery.previous")}
-    >
-      <ChevronLeft size={24} />
-    </Button>
+    {
+      images.length > 1 && (
+        <Button
+          type="button"
+          data-fullscreen-action="prev"
+          variant="ghost"
+          size="icon"
+          class="absolute top-1/2 left-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
+          aria-label={t("home.gallery.previous")}
+        >
+          <ChevronLeft size={24} />
+        </Button>
+      )
+    }
 
-    <Button
-      type="button"
-      data-fullscreen-action="next"
-      variant="ghost"
-      size="icon"
-      class="absolute top-1/2 right-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
-      aria-label={t("home.gallery.next")}
-    >
-      <ChevronRight size={24} />
-    </Button>
+    {
+      images.length > 1 && (
+        <Button
+          type="button"
+          data-fullscreen-action="next"
+          variant="ghost"
+          size="icon"
+          class="absolute top-1/2 right-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
+          aria-label={t("home.gallery.next")}
+        >
+          <ChevronRight size={24} />
+        </Button>
+      )
+    }
 
     <div data-fullscreen-images class="overflow-hidden">
       {
