@@ -8,12 +8,9 @@ import { reviews } from "@/constants/reviews";
 import { surroundings } from "@/constants/surroundings";
 import businessHours from "@/constants/businessHours.json";
 import { toBusinessHoursKey } from "@/lib/businessHours";
-import businessHours from "@/constants/businessHours.json";
-import { toBusinessHoursKey } from "@/lib/businessHours";
 import Header from "../Header.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
-import { Bike, Mountain, Route } from "@lucide/astro";
 import { Bike, Mountain, Route } from "@lucide/astro";
 
 const { lang, surroundingName } = Astro.props as {
@@ -103,20 +100,6 @@ if (bikeRoute?.tag) {
     text: t(toKey(`surroundings.tags.${bikeRoute.tag}`)),
   });
 }
-
-// Check if MediaContent section should be displayed
-const businessHoursKey = toBusinessHoursKey(baseSurrounding?.slug ?? "");
-const hours =
-  businessHours[businessHoursKey as keyof typeof businessHours]?.hours;
-
-const shouldShowMediaContent =
-  baseSurrounding?.mapsUrl ||
-  baseSurrounding?.socialMedia ||
-  (baseSurrounding && "bookLink" in baseSurrounding
-    ? baseSurrounding.bookLink
-    : undefined) ||
-  baseSurrounding?.phoneNumber ||
-  hours;
 
 // Check if MediaContent section should be displayed
 const businessHoursKey = toBusinessHoursKey(baseSurrounding?.slug ?? "");
