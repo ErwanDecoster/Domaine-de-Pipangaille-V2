@@ -22,7 +22,7 @@
     "@fontsource/source-serif-4": "^5.2.9",
     "@lucide/astro": "^0.563.0",
     "@tailwindcss/vite": "^4.1.18",
-    "@vueuse/core": "^14.2.0",
+    "@vueuse/core": "^14.2.1",
     "astro": "^5.17.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
