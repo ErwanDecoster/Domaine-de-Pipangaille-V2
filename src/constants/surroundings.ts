@@ -37,7 +37,7 @@ export const surroundings = {
   toVisit: [
     {
       title: "Safari Peaugres",
-      category: ["family"],
+      category: ["family", "loved"],
       shortDesc: "surroundings.descriptions.safari_peaugres.short",
       longDesc: ["surroundings.descriptions.safari_peaugres.long"],
       gallery: [
@@ -225,7 +225,7 @@ export const surroundings = {
     },
     {
       title: "ViaRhôna",
-      category: ["sport", "ride", "bike"],
+      category: ["sport", "ride", "bike", "loved"],
       shortDesc: "surroundings.descriptions.viarhona.short",
       longDesc: ["surroundings.descriptions.viarhona.long"],
       gallery: [
@@ -478,7 +478,7 @@ export const surroundings = {
     },
     {
       title: "Labyrinthe végétal",
-      category: ["family", "loved"],
+      category: ["family"],
       shortDesc: "surroundings.descriptions.labyrinthe_vegetal.short",
       longDesc: ["surroundings.descriptions.labyrinthe_vegetal.long"],
       gallery: [
@@ -843,6 +843,7 @@ export const surroundings = {
     },
     {
       title: "O'Daily Truck",
+      category: ["loved"],
       gallery: [
         {
           src: oDailyTruckImg,
