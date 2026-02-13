@@ -86,23 +86,23 @@ export const roomsContent: RoomContent[] = [
     gallery: [
       {
         src: moroccanRoomBed,
-        altKey: "accommodations.rooms.marocaine.gallery.image1",
+        altKey: "accommodations.rooms.marocaine.gallery.image1Alt",
       },
       {
         src: moroccanRoomBedToilet,
-        altKey: "accommodations.rooms.marocaine.gallery.image2",
+        altKey: "accommodations.rooms.marocaine.gallery.image2Alt",
       },
       {
         src: moroccanRoomBedFrenchDoor,
-        altKey: "accommodations.rooms.marocaine.gallery.image3",
+        altKey: "accommodations.rooms.marocaine.gallery.image3Alt",
       },
       {
         src: moroccanRoomShowerSink,
-        altKey: "accommodations.rooms.marocaine.gallery.image4",
+        altKey: "accommodations.rooms.marocaine.gallery.image4Alt",
       },
       {
         src: moroccanRoomBedSink,
-        altKey: "accommodations.rooms.marocaine.gallery.image5",
+        altKey: "accommodations.rooms.marocaine.gallery.image5Alt",
       },
     ],
     tags: [
@@ -164,23 +164,23 @@ export const roomsContent: RoomContent[] = [
     gallery: [
       {
         src: africanRoomDoubleBeds,
-        altKey: "accommodations.rooms.africaine.gallery.image1",
+        altKey: "accommodations.rooms.africaine.gallery.image1Alt",
       },
       {
         src: africanRoomBathRoomView,
-        altKey: "accommodations.rooms.africaine.gallery.image2",
+        altKey: "accommodations.rooms.africaine.gallery.image2Alt",
       },
       {
         src: africanRoomDoubleBedWindowDecor,
-        altKey: "accommodations.rooms.africaine.gallery.image3",
+        altKey: "accommodations.rooms.africaine.gallery.image3Alt",
       },
       {
         src: africanRoomDoubleBedSink,
-        altKey: "accommodations.rooms.africaine.gallery.image4",
+        altKey: "accommodations.rooms.africaine.gallery.image4Alt",
       },
       {
         src: africanRoomDoubleBed,
-        altKey: "accommodations.rooms.africaine.gallery.image5",
+        altKey: "accommodations.rooms.africaine.gallery.image5Alt",
       },
     ],
     tags: [
@@ -233,23 +233,23 @@ export const roomsContent: RoomContent[] = [
     gallery: [
       {
         src: tuscanRoomBedBathroomDesk,
-        altKey: "accommodations.rooms.toscane.gallery.image1",
+        altKey: "accommodations.rooms.toscane.gallery.image1Alt",
       },
       {
         src: tuscanRoomBedBathroom,
-        altKey: "accommodations.rooms.toscane.gallery.image2",
+        altKey: "accommodations.rooms.toscane.gallery.image2Alt",
       },
       {
         src: tuscanRoomBedDeskShelf,
-        altKey: "accommodations.rooms.toscane.gallery.image3",
+        altKey: "accommodations.rooms.toscane.gallery.image3Alt",
       },
       {
         src: tuscanRoomBedBasketSink,
-        altKey: "accommodations.rooms.toscane.gallery.image4",
+        altKey: "accommodations.rooms.toscane.gallery.image4Alt",
       },
       {
         src: tuscanRoomShower,
-        altKey: "accommodations.rooms.toscane.gallery.image5",
+        altKey: "accommodations.rooms.toscane.gallery.image5Alt",
       },
     ],
     tags: [
@@ -302,23 +302,23 @@ export const roomsContent: RoomContent[] = [
     gallery: [
       {
         src: creoleRoomBed,
-        altKey: "accommodations.rooms.creole.gallery.image1",
+        altKey: "accommodations.rooms.creole.gallery.image1Alt",
       },
       {
         src: creoleRoomBedBasket,
-        altKey: "accommodations.rooms.creole.gallery.image2",
+        altKey: "accommodations.rooms.creole.gallery.image2Alt",
       },
       {
         src: creoleRoomBedWindowDesk,
-        altKey: "accommodations.rooms.creole.gallery.image3",
+        altKey: "accommodations.rooms.creole.gallery.image3Alt",
       },
       {
         src: creoleRoomDeskWardrobeMirror,
-        altKey: "accommodations.rooms.creole.gallery.image4",
+        altKey: "accommodations.rooms.creole.gallery.image4Alt",
       },
       {
         src: creoleRoomDeskWardrobe,
-        altKey: "accommodations.rooms.creole.gallery.image5",
+        altKey: "accommodations.rooms.creole.gallery.image5Alt",
       },
     ],
     tags: [],

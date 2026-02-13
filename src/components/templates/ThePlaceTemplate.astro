@@ -27,7 +27,7 @@ const t = useTranslations(lang);
     title={t("place.header.title")}
     text={t("place.header.text")}
     image={poolLoungers}
-    imageAlt="TODO"
+    imageAlt={t("place.header.imageAlt")}
     buttonText={t("place.header.button")}
     buttonLink={getLocalizedUrl("booking", lang)}
     buttonVariant="secondary"
@@ -42,15 +42,15 @@ const t = useTranslations(lang);
     title={t("place.services.title")}
     text={t("place.services.text")}
     image={gardenTerrace}
-    imageAlt="TODO"
+    imageAlt={t("place.services.imageAlt")}
   />
   <MediaContent
     title={t("place.events.title")}
     text={t("place.events.text")}
     images={[
-      { src: courtyardCornerConcert, alt: "TODO" },
-      { src: pavilionTerraceEvening, alt: "TODO" },
-      { src: carportsWedding, alt: "TODO" },
+      { src: courtyardCornerConcert, alt: t("place.events.gallery.image1Alt") },
+      { src: pavilionTerraceEvening, alt: t("place.events.gallery.image2Alt") },
+      { src: carportsWedding, alt: t("place.events.gallery.image3Alt") },
     ]}
     buttonText={t("place.events.button")}
     buttonLink={getLocalizedUrl("contact", lang)}

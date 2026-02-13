@@ -9,16 +9,16 @@ export const accommodations = {
     "La suite marocaine, avec une atmosphère chaleureuse inspirée des riads et des matières naturelles, est idéale pour un couple en quête d'évasion et d'un moment romantique. Cette chambre peut accueillir un couple avec un enfant. Cette chambre dispose d'un lit de 1,8 x 2 m séparable.",
   "accommodations.rooms.marocaine.longDescription":
     "Cette suite de 21 m² respire l'ambiance marocaine aux couleurs chaleureuses qui vous dépaysera. Adaptée pour 2 adultes et un enfant ou pour un séjour en amoureux, avec vue sur jardin et côté cour, elle dispose d'un lit de 1,8 m x 2 m modulable en deux lits simples, d'un grand canapé (modulable en un lit enfant), d'une double vasque, d'une grande douche italienne en tadelakt, toilettes séparées et rangements. La climatisation assure un confort optimal en été.",
-  "accommodations.rooms.marocaine.gallery.image1":
-    "Suite marocaine - vue principale",
-  "accommodations.rooms.marocaine.gallery.image2":
-    "Suite marocaine - textiles et matières naturelles",
-  "accommodations.rooms.marocaine.gallery.image3":
-    "Suite marocaine - salle de bain tadelakt",
-  "accommodations.rooms.marocaine.gallery.image4":
-    "Suite marocaine - coin salon et canapé-lit",
-  "accommodations.rooms.marocaine.gallery.image5":
-    "Suite marocaine - détails décoratifs",
+  "accommodations.rooms.marocaine.gallery.image1Alt":
+    "Suite marocaine - Lit double avec lampes de chevet allumées, mur rouge et charpente en bois apparente",
+  "accommodations.rooms.marocaine.gallery.image2Alt":
+    "Suite marocaine - Lit double vu de côté avec porte de la chambre, fenêtre sur cour et serviettes disposées sur le coffre au pied du lit",
+  "accommodations.rooms.marocaine.gallery.image3Alt":
+    "Suite marocaine - Lit double vu de face avec tête de lit éclairée et serviettes disposées sur le coffre au pied du lit",
+  "accommodations.rooms.marocaine.gallery.image4Alt":
+    "Suite marocaine - Double vasque de la salle de bain avec aperçu de la douche en tadelakt",
+  "accommodations.rooms.marocaine.gallery.image5Alt":
+    "Suite marocaine - Vue grand angle de la chambre avec double vasque, lit et coffre au pied du lit.",
   "accommodations.rooms.marocaine.tags.bedding": "Lit double ou lits jumeaux",
   "accommodations.rooms.marocaine.tags.family": "Couple avec 1 enfant",
   "accommodations.rooms.marocaine.tags.couple": "Couple",
@@ -27,16 +27,16 @@ export const accommodations = {
     "La chambre africaine avec une atmosphère inspirée Safari et une décoration atypique, idéale pour un couple, des amis ou des professionnels. Cette chambre dispose d'un lit de 1,8 x 2 m séparable.",
   "accommodations.rooms.africaine.longDescription":
     "Cette chambre de 17 m² aux accents safari, avec vue sur le jardin, vous transporte sous les étoiles africaines. Elle propose un lit de 1,8 x 2 m modulable en 2 lits simples, un bureau avec 2 chaises, une vasque, une douche italienne en tadelakt, des toilettes séparées et des rangements. Idéale pour les cyclistes de passage sur la ViaRhôna, cette chambre climatisée permet de récupérer avant la prochaine étape.",
-  "accommodations.rooms.africaine.gallery.image1":
-    "Chambre africaine - vue principale",
-  "accommodations.rooms.africaine.gallery.image2":
-    "Chambre africaine - lumière naturelle",
-  "accommodations.rooms.africaine.gallery.image3":
-    "Chambre africaine - salle d’eau",
-  "accommodations.rooms.africaine.gallery.image4":
-    "Chambre africaine - coin bureau",
-  "accommodations.rooms.africaine.gallery.image5":
-    "Chambre africaine - détails safari",
+  "accommodations.rooms.africaine.gallery.image1Alt":
+    "Chambre africaine - Lits jumeaux avec lampe de chevet allumée et fenêtre ouverte sur le jardin",
+  "accommodations.rooms.africaine.gallery.image2Alt":
+    "Chambre africaine - Entrée de la chambre avec porte des toilettes à droite et vasque simple avec serviettes disposées à gauche",
+  "accommodations.rooms.africaine.gallery.image3Alt":
+    "Chambre africaine - Décoration de la chambre africaine avec lit en arrière-plan et vue sur le jardin",
+  "accommodations.rooms.africaine.gallery.image4Alt":
+    "Chambre africaine - Entrée de la chambre avec vasque simple et luminaires allumés au-dessus du miroir",
+  "accommodations.rooms.africaine.gallery.image5Alt":
+    "Chambre africaine - Vue de côté des lits jumeaux baignés de lumière naturelle",
   "accommodations.rooms.africaine.tags.bedding": "Lit double ou lits jumeaux",
   "accommodations.rooms.africaine.tags.adults": "2 adultes",
   "accommodations.rooms.marocaine.equipments.note":
@@ -48,16 +48,16 @@ export const accommodations = {
     "La chambre toscane, inspirée de l'Italie, allie romantisme et passion avec ses couleurs pastel. Idéale pour un couple en quête d'un moment de sérénité. Cette chambre dispose d'un lit de 1,6 x 2 m.",
   "accommodations.rooms.toscane.longDescription":
     "Une chambre de 17 m² avec une décoration inspirée de la Toscane qui vous transporte dans un cocon italien romantique. Cette chambre avec vue sur le jardin vous propose un lit de 1,6 x 2 m, une douche italienne, une vasque, des toilettes séparées, une table murale haute avec 2 tabourets et des rangements. Elle est équipée de la climatisation pour des nuits paisibles.",
-  "accommodations.rooms.toscane.gallery.image1":
-    "Chambre toscane - vue principale",
-  "accommodations.rooms.toscane.gallery.image2":
-    "Chambre toscane - textiles terracotta",
-  "accommodations.rooms.toscane.gallery.image3":
-    "Chambre toscane - salle de bain privative",
-  "accommodations.rooms.toscane.gallery.image4":
-    "Chambre toscane - espace bureau",
-  "accommodations.rooms.toscane.gallery.image5":
-    "Chambre toscane - détails décoratifs",
+  "accommodations.rooms.toscane.gallery.image1Alt":
+    "Chambre toscane - Vue d’ensemble de la chambre avec lit double et lampe de chevet allumée, espace de rangement et bureau, vasque simple avec miroir éclairé et fenêtre ouverte sur le jardin",
+  "accommodations.rooms.toscane.gallery.image2Alt":
+    "Chambre toscane - Vue d’ensemble de la chambre avec lit double et lampe de chevet allumée, entrée centrale, porte des toilettes et grande douche en tadelakt avec vasque simple",
+  "accommodations.rooms.toscane.gallery.image3Alt":
+    "Chambre toscane - Chambre baignée de lumière avec vue sur le jardin, serviettes disposées sur le lit et espace de rangement pour les vêtements",
+  "accommodations.rooms.toscane.gallery.image4Alt":
+    "Chambre toscane - Espace de rangement pour les vêtements avec vasque simple et douche en tadelakt en arrière-plan",
+  "accommodations.rooms.toscane.gallery.image5Alt":
+    "Chambre toscane - Grande douche en tadelakt aux murs violets aux teintes chaleureuses",
   "accommodations.rooms.toscane.tags.couple": "Couple",
   "accommodations.rooms.toscane.tags.romantic": "Romantique",
   "accommodations.rooms.creole.title": "Chambre Créole",
@@ -65,24 +65,19 @@ export const accommodations = {
     "La chambre Créole est inspirée d'un voyage vers les îles avec ses couleurs bleues et son mobilier en rotin. Cette chambre est idéale pour un couple. Cette chambre dispose d'un lit de 1,6 x 2 m.",
   "accommodations.rooms.creole.longDescription":
     "Cette chambre de 17 m² à la belle hauteur sous plafond et vue sur le jardin vous transporte vers les îles. Les fibres naturelles du mobilier baignent cette chambre de lumière. Elle est composée d'un lit double de 1,6 x 2 m, d'un espace avec cabine de douche et vasque, des toilettes séparées. Le mobilier inspiré des îles : deux fauteuils en rotin, une table guéridon et une armoire de rangement. Cette chambre climatisée vous promet une douce parenthèse.",
-  "accommodations.rooms.creole.gallery.image1":
-    "Chambre créole - vue principale",
-  "accommodations.rooms.creole.gallery.image2":
-    "Chambre créole - couleurs tropicales",
-  "accommodations.rooms.creole.gallery.image3":
-    "Chambre créole - salle de bain",
-  "accommodations.rooms.creole.gallery.image4": "Chambre créole - espace nuit",
-  "accommodations.rooms.creole.gallery.image5":
-    "Chambre créole - détails artisanaux",
+  "accommodations.rooms.creole.gallery.image1Alt":
+    "Chambre créole - Vue d’ensemble de la chambre bleue avec lit double, lampe de chevet allumée et fenêtre ouverte sur le jardin",
+  "accommodations.rooms.creole.gallery.image2Alt":
+    "Chambre créole - Grand lit double avec panier de serviettes au pied du lit et porte des toilettes en arrière-plan",
+  "accommodations.rooms.creole.gallery.image3Alt":
+    "Chambre créole - Coin bureau de la chambre avec serviettes disposées sur le lit et vue sur le jardin par la fenêtre",
+  "accommodations.rooms.creole.gallery.image4Alt":
+    "Chambre créole - Bureau de la chambre avec grande armoire à miroir",
+  "accommodations.rooms.creole.gallery.image5Alt":
+    "Chambre créole - Armoire de la chambre avec bureau en complément",
   "accommodations.detail.equipments.title": "Les équipements à disposition",
   "accommodations.detail.equipments.note":
     "Cette chambre peut être configurée en deux lits simples ou en lit double (180 cm x 200 cm). Indiquez-nous votre préférence lors de la réservation.",
-  "accommodations.detail.table.title": "La table d’hôte",
-  "accommodations.detail.table.text":
-    "Sur réservation, nous vous proposons la table d'hôtes pour partager un moment convivial et gourmand. Menu unique, cuisine locale et bio, planches ou salades généreuses selon vos envies.",
-  "accommodations.detail.explore.title": "Des endroits à explorer",
-  "accommodations.detail.explore.text":
-    "En saison, profitez de la piscine et des transats, du pavillon d'été pour un verre ou une glace, ainsi que de la salle commune avec canapés, livres et jeux.",
   "accommodations.detail.otherRooms.title": "Nos autres hébergements",
   "accommodations.rooms.equipments.doubleBedSeparable":
     "Lit double 180 cm modulable",

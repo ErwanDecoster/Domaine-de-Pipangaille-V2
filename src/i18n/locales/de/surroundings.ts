@@ -122,7 +122,7 @@ export const surroundings = {
     "Entdeckungshof und tiergestützte Therapiezentrum mit Lamas, bietet Workshops und Schulungsprogramme.",
   "surroundings.descriptions.lamas_des_plaines.long":
     "Entdecken Sie die Ruhe und Gelassenheit von Lamas des Plaines, einem umweltbewussten Hof, der sich der tiergestützten Therapie und der Lamaentdeckung widmet.\n\nGenießen Sie Sensibilisierungsworkshops, Agility-Parcours mit den Tieren oder Schulungen in tiergestützter Therapie, Tierkommunikation und persönlicher Entwicklung. Der Hof folgt einer strengen ethischen Charta und gewährleistet das Wohlergehen von Lamas, die mit Sorgfalt aufgezogen und als echte Arbeitspartner behandelt werden.\n\nEin einzigartiger Ort, um Werte wie Respekt, Ethik und Solidarität zu erleben, alles in einer ruhigen Umgebung nur wenige Minuten von Lyon entfernt.",
-  "surroundings.lamas_des_plaines.gallery.image1":
+  "surroundings.lamas_des_plaines.gallery.image1Alt":
     "Lamas auf den Ebenen des Entdeckungshofs",
   "surroundings.descriptions.la_belle_epoque.short":
     "Traditionelle, hausgemachte Küche mit möglichst kurzen Lieferketten.",
@@ -156,71 +156,73 @@ export const surroundings = {
   "surroundings.detail.otherRestaurants.title": "Weitere Restaurants entdecken",
   "surroundings.detail.seeAllActivities": "Alle Aktivitäten anzeigen",
   "surroundings.detail.seeAllRestaurants": "Alle Restaurants anzeigen",
-  "surroundings.safari_peaugres.gallery.image1":
+  "surroundings.safari_peaugres.gallery.image1Alt":
     "Panoramablick auf den Safari de Peaugres",
-  "surroundings.palais_ideal_du_facteur_cheval.gallery.image1":
+  "surroundings.palais_ideal_du_facteur_cheval.gallery.image1Alt":
     "Fassade des Palais Idéal du Facteur Cheval",
-  "surroundings.acrobois_pilat.gallery.image1":
+  "surroundings.acrobois_pilat.gallery.image1Alt":
     "Besucher auf dem Baumwipfelparcours von Acrobois Pilat",
-  "surroundings.musee_de_l_alambic.gallery.image1":
+  "surroundings.musee_de_l_alambic.gallery.image1Alt":
     "Kupferbrennblasen im Musée de l’Alambic",
-  "surroundings.golf_de_saint_clair.gallery.image1":
+  "surroundings.golf_de_saint_clair.gallery.image1Alt":
     "Fairways des Golf de Saint-Clair",
-  "surroundings.viarhona.gallery.image1":
+  "surroundings.viarhona.gallery.image1Alt":
     "Radfahrer auf der ViaRhôna entlang des Flusses",
-  "surroundings.viafluvia.gallery.image1": "Familienausflug auf der ViaFluvia",
-  "surroundings.musee_valrhona.gallery.image1":
+  "surroundings.viafluvia.gallery.image1Alt":
+    "Familienausflug auf der ViaFluvia",
+  "surroundings.musee_valrhona.gallery.image1Alt":
     "Verkostungsworkshop in der Cité du Chocolat Valrhôna",
-  "surroundings.mongolfieres_et_cie.gallery.image1":
+  "surroundings.mongolfieres_et_cie.gallery.image1Alt":
     "Heißluftballon von Montgolfières & Cie über dem Tal",
-  "surroundings.train_de_l_ardeche.gallery.image1":
+  "surroundings.train_de_l_ardeche.gallery.image1Alt":
     "Historische Lokomotive des Train de l’Ardèche",
-  "surroundings.la_fabrique_de_julien.gallery.image1":
+  "surroundings.la_fabrique_de_julien.gallery.image1Alt":
     "Süßigkeitenregale in der Fabrique de Julien",
-  "surroundings.le_nougat_de_montsegur.gallery.image1":
+  "surroundings.le_nougat_de_montsegur.gallery.image1Alt":
     "Nougatriegel von Le Nougat de Montségur",
-  "surroundings.chateau_de_grignan.gallery.image1":
+  "surroundings.chateau_de_grignan.gallery.image1Alt":
     "Außenansicht des Château de Grignan",
-  "surroundings.labyrinthe_vegetal.gallery.image1":
+  "surroundings.labyrinthe_vegetal.gallery.image1Alt":
     "Luftaufnahme des Labyrinthe végétal",
-  "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
+  "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1Alt":
     "Boot der Compagnie des Canotiers Rhône & Saône auf dem Fluss",
-  "surroundings.le_relais_mailles.gallery.image1":
+  "surroundings.le_relais_mailles.gallery.image1Alt":
     "Speisesaal des Relais des Mailles",
-  "surroundings.la_table_des_saj.gallery.image1":
+  "surroundings.la_table_des_saj.gallery.image1Alt":
     "Angerichtete Teller in La Table des SAJ",
-  "surroundings.la_poule_noir.gallery.image1": "Gastraum von La Poule Noire",
-  "surroundings.le_picotin.gallery.image1":
+  "surroundings.la_poule_noir.gallery.image1Alt": "Gastraum von La Poule Noire",
+  "surroundings.le_picotin.gallery.image1Alt":
     "Fassade des Restaurants Le Picotin",
-  "surroundings.au_pre_du_rhone.gallery.image1":
+  "surroundings.au_pre_du_rhone.gallery.image1Alt":
     "Terrasse mit Rhône-Blick im Au Pré du Rhône",
-  "surroundings.la_belle_epoque.gallery.image1":
+  "surroundings.la_belle_epoque.gallery.image1Alt":
     "Speisesaal von La Belle Époque",
-  "surroundings.la_belle_epoque.gallery.image2":
+  "surroundings.la_belle_epoque.gallery.image2Alt":
     "Terrassenservice bei La Belle Époque",
-  "surroundings.o_daily_truck.gallery.image1":
+  "surroundings.o_daily_truck.gallery.image1Alt":
     "Gourmet-Burger vom O'Daily Truck",
-  "surroundings.o_daily_truck.gallery.image2":
+  "surroundings.o_daily_truck.gallery.image2Alt":
     "O'Daily Truck bereit zum Service",
-  "surroundings.cesar_pizza.gallery.image1": "Theke und Ofen von César Pizza",
-  "surroundings.la_villa_champagnere.gallery.image1":
+  "surroundings.cesar_pizza.gallery.image1Alt":
+    "Theke und Ofen von César Pizza",
+  "surroundings.la_villa_champagnere.gallery.image1Alt":
     "Garten und Terrasse der Villa Champagnère",
-  "surroundings.les_agapons.gallery.image1":
+  "surroundings.les_agapons.gallery.image1Alt":
     "Restaurant Les Agapons in Manthes",
-  "surroundings.domaine_golf_albon.gallery.image1":
+  "surroundings.domaine_golf_albon.gallery.image1Alt":
     "Blick auf das Domaine du Golf d'Albon",
-  "surroundings.le_hangar_n7.gallery.image1":
+  "surroundings.le_hangar_n7.gallery.image1Alt":
     "Fassade von Le Hangar N7 in Andancette",
-  "surroundings.restaurant_de_la_treille.gallery.image1":
+  "surroundings.restaurant_de_la_treille.gallery.image1Alt":
     "Restaurant de la Treille in Champagne",
-  "surroundings.slidesparc.gallery.image1":
+  "surroundings.slidesparc.gallery.image1Alt":
     "Aufblasbarer Wasserparcours des Slidesparc auf dem See",
-  "surroundings.cave_saint_desirat.gallery.image1":
+  "surroundings.cave_saint_desirat.gallery.image1Alt":
     "Weinkeller und Weinberge von Saint-Désirat",
-  "surroundings.accrod_ailes.gallery.image1":
+  "surroundings.accrod_ailes.gallery.image1Alt":
     "Gleitschirmfliegen über dem Rhônetal",
-  "surroundings.la_vallee.gallery.image1": "Restaurant La Vallée in Peyraud",
-  "surroundings.le_lieu.gallery.image1":
+  "surroundings.la_vallee.gallery.image1Alt": "Restaurant La Vallée in Peyraud",
+  "surroundings.le_lieu.gallery.image1Alt":
     "Innenhof und Terrasse von Le Lieu in Annonay",
   "surroundings.descriptions.les_agapons.short":
     "Authentisches französisches Restaurant in Manthes, hochwertige hausgemachte Küche mit lokalen und regionalen Produkten.",
