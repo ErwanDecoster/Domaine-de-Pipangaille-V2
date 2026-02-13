@@ -10,15 +10,15 @@ export const accommodations = {
   "accommodations.rooms.marocaine.longDescription":
     "Diese 21 m² große Suite atmet die marokkanische Atmosphäre mit warmen Farben, die Sie verzaubern wird. Geeignet für 2 Erwachsene und ein Kind oder einen romantischen Aufenthalt, mit Blick auf Garten und Innenhof, verfügt es über ein Bett von 1,8 m x 2 m, in zwei Einzelbetten teilbar, ein großes Sofa (in ein Kinderbett umwandelbar), Doppelwaschbecken, große ebenerdige Tadelakt-Dusche, separates WC und Stauraum. Die Klimaanlage sorgt im Sommer für optimalen Komfort.",
   "accommodations.rooms.marocaine.gallery.image1Alt":
-    "Marokkanische Suite – Hauptansicht",
+    "Marokkanische Suite - Doppelbett mit eingeschalteten Nachttischlampen, roter Wand und sichtbaren Holzbalken",
   "accommodations.rooms.marocaine.gallery.image2Alt":
-    "Marokkanische Suite – Textilien und Naturmaterialien",
+    "Marokkanische Suite - Doppelbett von der Seite mit Zimmertür, Hofblick-Fenster und Handtüchern auf der Truhe am Fußende",
   "accommodations.rooms.marocaine.gallery.image3Alt":
-    "Marokkanische Suite – Tadelakt-Bad",
+    "Marokkanische Suite - Doppelbett von vorne mit beleuchtetem Kopfteil und Handtüchern auf der Truhe am Fußende",
   "accommodations.rooms.marocaine.gallery.image4Alt":
-    "Marokkanische Suite – Lounge mit Schlafsofa",
+    "Marokkanische Suite - Doppelwaschbecken-Badezimmer mit Blick auf die Tadelakt-Dusche",
   "accommodations.rooms.marocaine.gallery.image5Alt":
-    "Marokkanische Suite – handgefertigte Details",
+    "Marokkanische Suite - Weitwinkelansicht des Zimmers mit Doppelwaschbecken, Bett und Truhe am Fußende",
   "accommodations.rooms.marocaine.tags.bedding":
     "Doppelbett oder zwei Einzelbetten",
   "accommodations.rooms.marocaine.tags.family": "Paar mit 1 Kind",
@@ -29,15 +29,15 @@ export const accommodations = {
   "accommodations.rooms.africaine.longDescription":
     "Dieses 17 m² große Zimmer mit Safari-Akzenten und Gartenblick versetzt Sie unter die afrikanischen Sterne. Es verfügt über ein Bett von 1,8 x 2 m, in 2 Einzelbetten teilbar, einen Schreibtisch mit 2 Stühlen, ein Waschbecken, eine ebenerdige Tadelakt-Dusche, separates WC und Stauraum. Ideal für Radfahrer auf der ViaRhôna ermöglicht dieses klimatisierte Zimmer Erholung vor der nächsten Etappe.",
   "accommodations.rooms.africaine.gallery.image1Alt":
-    "Afrikanisches Zimmer – Hauptansicht",
+    "Afrikanisches Zimmer - Zwei Einzelbetten mit eingeschalteter Nachttischlampe und offenem Fenster zum Garten",
   "accommodations.rooms.africaine.gallery.image2Alt":
-    "Afrikanisches Zimmer – natürliches Licht",
+    "Afrikanisches Zimmer - Zimmereingang mit Toilettentür rechts und Einzelwaschbecken mit Handtüchern links",
   "accommodations.rooms.africaine.gallery.image3Alt":
-    "Afrikanisches Zimmer – eigenes Bad",
+    "Afrikanisches Zimmer - Dekoration des afrikanischen Zimmers mit Bett im Hintergrund und Gartenblick",
   "accommodations.rooms.africaine.gallery.image4Alt":
-    "Afrikanisches Zimmer – Schreibtischbereich",
+    "Afrikanisches Zimmer - Zimmereingang mit Einzelwaschbecken und eingeschalteten Lampen über dem Spiegel",
   "accommodations.rooms.africaine.gallery.image5Alt":
-    "Afrikanisches Zimmer – Safari-Details",
+    "Afrikanisches Zimmer - Seitenansicht der Einzelbetten in natürlichem Licht",
   "accommodations.rooms.africaine.tags.bedding":
     "Doppelbett oder zwei Einzelbetten",
   "accommodations.rooms.africaine.tags.adults": "2 Erwachsene",
@@ -51,15 +51,15 @@ export const accommodations = {
   "accommodations.rooms.toscane.longDescription":
     "Ein 17 m² großes Zimmer mit toskanisch inspirierter Dekoration, das Sie in einen romantischen italienischen Kokon versetzt. Dieses Zimmer mit Gartenblick bietet ein Bett von 1,60 x 2 m, eine ebenerdige Dusche, ein Waschbecken, separates WC, einen hohen Wandtisch mit 2 Hockern und Stauraum. Es ist mit Klimaanlage für friedliche Nächte ausgestattet.",
   "accommodations.rooms.toscane.gallery.image1Alt":
-    "Toskanisches Zimmer – Hauptansicht",
+    "Toskanisches Zimmer - Zimmerübersicht mit Doppelbett und eingeschalteter Nachttischlampe, Stauraum und Schreibtisch, Einzelwaschbecken mit beleuchtetem Spiegel und offenem Fenster zum Garten",
   "accommodations.rooms.toscane.gallery.image2Alt":
-    "Toskanisches Zimmer – Terrakotta-Textilien",
+    "Toskanisches Zimmer - Zimmerübersicht mit Doppelbett und eingeschalteter Nachttischlampe, mittlerem Eingang, Toilettentür und großer Tadelakt-Dusche mit Einzelwaschbecken",
   "accommodations.rooms.toscane.gallery.image3Alt":
-    "Toskanisches Zimmer – ensuite Bad",
+    "Toskanisches Zimmer - Lichtdurchflutetes Zimmer mit Gartenblick, Handtüchern auf dem Bett und Stauraum für Kleidung",
   "accommodations.rooms.toscane.gallery.image4Alt":
-    "Toskanisches Zimmer – Schreibtischbereich",
+    "Toskanisches Zimmer - Stauraum für Kleidung mit Einzelwaschbecken und Tadelakt-Dusche im Hintergrund",
   "accommodations.rooms.toscane.gallery.image5Alt":
-    "Toskanisches Zimmer – dekorative Details",
+    "Toskanisches Zimmer - Große Tadelakt-Dusche mit violetten Wänden in warmen Tönen",
   "accommodations.rooms.toscane.tags.couple": "Paar",
   "accommodations.rooms.toscane.tags.romantic": "Romantisch",
   "accommodations.rooms.creole.title": "Kreolisches Zimmer",
@@ -68,15 +68,15 @@ export const accommodations = {
   "accommodations.rooms.creole.longDescription":
     "Die schöne Raumhöhe, der Gartenblick und die Naturholzmöbel durchfluten dieses Zimmer mit Licht. Dieses Zimmer besteht aus einem Doppelbett von 1,60 x 2 m, einem Bereich mit Duschkabine und Waschbecken, separatem WC. Die von den Inseln inspirierten Möbel: zwei Rattansessel, ein Beistelltisch und ein Kleiderschrank. Dieses klimatisierte Zimmer verspricht eine sanfte Auszeit.",
   "accommodations.rooms.creole.gallery.image1Alt":
-    "Kreolisches Zimmer – Hauptansicht",
+    "Kreolisches Zimmer - Übersicht des blauen Zimmers mit Doppelbett, eingeschalteter Nachttischlampe und offenem Fenster zum Garten",
   "accommodations.rooms.creole.gallery.image2Alt":
-    "Kreolisches Zimmer – tropische Farbpalette",
+    "Kreolisches Zimmer - Großes Doppelbett mit Handtuchkorb am Fußende und Toilettentür im Hintergrund",
   "accommodations.rooms.creole.gallery.image3Alt":
-    "Kreolisches Zimmer – privates Bad",
+    "Kreolisches Zimmer - Schreibtischbereich des Zimmers mit Handtüchern auf dem Bett und Gartenblick durchs Fenster",
   "accommodations.rooms.creole.gallery.image4Alt":
-    "Kreolisches Zimmer – Schlafbereich",
+    "Kreolisches Zimmer - Zimmerschreibtisch mit großem Spiegelschrank",
   "accommodations.rooms.creole.gallery.image5Alt":
-    "Kreolisches Zimmer – kunsthandwerkliche Details",
+    "Kreolisches Zimmer - Zimmerschrank mit ergänzendem Schreibtisch",
   "accommodations.detail.equipments.title": "Ausstattung vor Ort",
   "accommodations.detail.equipments.note":
     "Das Zimmer kann als zwei Einzelbetten oder als 180 x 200 cm Doppelbett vorbereitet werden. Geben Sie Ihren Wunsch bei der Buchung an.",

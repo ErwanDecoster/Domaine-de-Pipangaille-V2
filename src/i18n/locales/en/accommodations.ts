@@ -9,15 +9,16 @@ export const accommodations = {
     "The Moroccan suite, with a warm atmosphere inspired by riads and natural materials, is ideal for a couple seeking escape and a romantic moment. This room can accommodate a couple with one child. This room has a 1.8 x 2 m bed that can be separated into twin beds.",
   "accommodations.rooms.marocaine.longDescription":
     "This 21 m² suite breathes the Moroccan atmosphere with warm colors that will transport you. Suitable for 2 adults and a child or for a romantic getaway, with garden and courtyard views, it features a 1.8 m x 2 m bed convertible into two single beds, a large sofa (convertible into a child's bed), double vanity, large walk-in tadelakt shower, separate toilet and storage. Air conditioning ensures optimal comfort in summer.",
-  "accommodations.rooms.marocaine.gallery.image1Alt": "Moroccan suite – main view",
+  "accommodations.rooms.marocaine.gallery.image1Alt":
+    "Moroccan suite - Double bed with bedside lamps on, red wall and exposed wooden beams",
   "accommodations.rooms.marocaine.gallery.image2Alt":
-    "Moroccan suite – textiles and natural materials",
+    "Moroccan suite - Double bed seen from the side with bedroom door, courtyard window and towels arranged on the chest at the foot of the bed",
   "accommodations.rooms.marocaine.gallery.image3Alt":
-    "Moroccan suite – tadelakt bathroom",
+    "Moroccan suite - Double bed seen from the front with illuminated headboard and towels arranged on the chest at the foot of the bed",
   "accommodations.rooms.marocaine.gallery.image4Alt":
-    "Moroccan suite – lounge nook with sofa bed",
+    "Moroccan suite - Double sink bathroom with view of the tadelakt shower",
   "accommodations.rooms.marocaine.gallery.image5Alt":
-    "Moroccan suite – handcrafted details",
+    "Moroccan suite - Wide-angle view of the room with double sink, bed and chest at the foot of the bed",
   "accommodations.rooms.marocaine.tags.bedding": "Double bed or twin beds",
   "accommodations.rooms.marocaine.tags.family": "Couple with 1 child",
   "accommodations.rooms.marocaine.tags.couple": "Couple",
@@ -26,15 +27,16 @@ export const accommodations = {
     "The African room with a safari-inspired atmosphere and unique decoration, ideal for a couple, friends or professionals. This room has a 1.8 x 2 m bed that can be separated into twin beds.",
   "accommodations.rooms.africaine.longDescription":
     "This 17 m² room with safari accents and garden view transports you under the African stars. It features a 1.8 x 2 m bed convertible into 2 single beds, a desk with 2 chairs, a washbasin, a walk-in tadelakt shower, separate toilet and storage. Ideal for cyclists passing through on the ViaRhôna, this air-conditioned room allows you to recover before the next stage.",
-  "accommodations.rooms.africaine.gallery.image1Alt": "African room – main view",
+  "accommodations.rooms.africaine.gallery.image1Alt":
+    "African room - Twin beds with bedside lamp on and window open to the garden",
   "accommodations.rooms.africaine.gallery.image2Alt":
-    "African room – natural light flooding the space",
+    "African room - Room entrance with toilet door on the right and single sink with arranged towels on the left",
   "accommodations.rooms.africaine.gallery.image3Alt":
-    "African room – private bathroom",
+    "African room - African room decoration with bed in the background and garden view",
   "accommodations.rooms.africaine.gallery.image4Alt":
-    "African room – desk and workspace",
+    "African room - Room entrance with single sink and lights on above the mirror",
   "accommodations.rooms.africaine.gallery.image5Alt":
-    "African room – safari-inspired details",
+    "African room - Side view of twin beds bathed in natural light",
   "accommodations.rooms.africaine.tags.bedding": "Double bed or twin beds",
   "accommodations.rooms.africaine.tags.adults": "2 adults",
   "accommodations.rooms.marocaine.equipments.note":
@@ -46,15 +48,16 @@ export const accommodations = {
     "The Tuscan room, inspired by Italy, combines romance and passion with its pastel colors. Ideal for a couple seeking a moment of serenity. This room has a 1.6 x 2 m bed.",
   "accommodations.rooms.toscane.longDescription":
     "A 17 m² room with Tuscan-inspired decor that transports you into a romantic Italian cocoon. This garden-view room offers a 1.6 x 2 m bed, a walk-in shower, a washbasin, separate toilet, a high wall table with 2 stools and storage. It is equipped with air conditioning for peaceful nights.",
-  "accommodations.rooms.toscane.gallery.image1Alt": "Tuscan room – main view",
+  "accommodations.rooms.toscane.gallery.image1Alt":
+    "Tuscan room - Overview of the room with double bed and bedside lamp on, storage space and desk, single sink with illuminated mirror and window open to the garden",
   "accommodations.rooms.toscane.gallery.image2Alt":
-    "Tuscan room – terracotta textiles",
+    "Tuscan room - Overview of the room with double bed and bedside lamp on, central entrance, toilet door and large tadelakt shower with single sink",
   "accommodations.rooms.toscane.gallery.image3Alt":
-    "Tuscan room – ensuite bathroom",
+    "Tuscan room - Room bathed in light with garden view, towels arranged on the bed and storage space for clothes",
   "accommodations.rooms.toscane.gallery.image4Alt":
-    "Tuscan room – writing desk area",
+    "Tuscan room - Storage space for clothes with single sink and tadelakt shower in the background",
   "accommodations.rooms.toscane.gallery.image5Alt":
-    "Tuscan room – decorative accents",
+    "Tuscan room - Large tadelakt shower with purple walls in warm tones",
   "accommodations.rooms.toscane.tags.couple": "Couple",
   "accommodations.rooms.toscane.tags.romantic": "Romantic",
   "accommodations.rooms.creole.title": "Creole Room",
@@ -62,13 +65,16 @@ export const accommodations = {
     "The Creole Room is inspired by a journey to the islands with its blue colors and rattan furniture. This room is ideal for a couple.",
   "accommodations.rooms.creole.longDescription":
     "The beautiful high ceiling, garden view and natural fiber furniture bathe this room in light. This room features a double bed 1.60 x 2 m, an area with shower cabin and washbasin, separate toilet. The island-inspired furniture: two rattan armchairs, a pedestal table and a wardrobe for storage. This air-conditioned room promises a sweet break.",
-  "accommodations.rooms.creole.gallery.image1Alt": "Creole room – main view",
+  "accommodations.rooms.creole.gallery.image1Alt":
+    "Creole room - Overview of the blue room with double bed, bedside lamp on and window open to the garden",
   "accommodations.rooms.creole.gallery.image2Alt":
-    "Creole room – tropical colour palette",
+    "Creole room - Large double bed with basket of towels at the foot of the bed and toilet door in the background",
   "accommodations.rooms.creole.gallery.image3Alt":
-    "Creole room – private bathroom",
-  "accommodations.rooms.creole.gallery.image4Alt": "Creole room – sleeping area",
-  "accommodations.rooms.creole.gallery.image5Alt": "Creole room – artisan details",
+    "Creole room - Desk area of the room with towels arranged on the bed and garden view through the window",
+  "accommodations.rooms.creole.gallery.image4Alt":
+    "Creole room - Room desk with large mirrored wardrobe",
+  "accommodations.rooms.creole.gallery.image5Alt":
+    "Creole room - Room wardrobe with complementary desk",
   "accommodations.detail.equipments.title": "Amenities available",
   "accommodations.detail.equipments.note":
     "This room can be set up as twin beds or a 180 x 200 cm double bed. Please share your preference when booking.",
