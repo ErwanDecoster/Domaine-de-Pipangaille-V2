@@ -48,7 +48,7 @@ const t = useTranslations(lang);
           data-fullscreen-action="prev"
           variant="ghost"
           size="icon"
-          class="absolute top-1/2 left-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
+          class="absolute top-1/2 left-2 z-50 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
           aria-label={t("home.gallery.previous")}
         >
           <ChevronLeft size={24} />
@@ -63,7 +63,7 @@ const t = useTranslations(lang);
           data-fullscreen-action="next"
           variant="ghost"
           size="icon"
-          class="absolute top-1/2 right-2 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
+          class="absolute top-1/2 right-2 z-50 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
           aria-label={t("home.gallery.next")}
         >
           <ChevronRight size={24} />
@@ -71,17 +71,21 @@ const t = useTranslations(lang);
       )
     }
 
-    <div data-fullscreen-images class="overflow-hidden">
+    <div
+      data-fullscreen-images
+      class="relative flex h-[85vh] items-center justify-center overflow-hidden"
+    >
       {
         images.map((image, index) => (
           <Image
             src={image.src}
             alt={image.alt}
             quality="80"
-            sizes="85vh"
+            sizes="(max-width: 768px) 100vw, 85vw"
+            loading="eager"
             data-index={index}
             data-gallery={galleryId}
-            class="mx-auto hidden max-h-[85vh] w-auto object-contain"
+            class="hidden h-full w-full bg-transparent object-contain"
           />
         ))
       }
