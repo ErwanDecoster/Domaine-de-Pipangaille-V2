@@ -31,4 +31,6 @@ export const contact = {
   "contact.privateRequest.title": "Demande particulière",
   "contact.privateRequest.text":
     "Nous pouvons privatiser le lieu pour vos événements privés, avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, des séminaires... Le domaine de Pipangaille, ancienne bâtisse de caractère entourée d'un parc arboré, avec de nombreux espaces, est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux... nous restons à votre disposition pour toutes demandes.",
+  "contact.privateRequest.imageAlt":
+    "Cour du Domaine de Pipangaille lors d’un concert avec tables sur la pelouse, murs illuminés et scène couverte",
 };
