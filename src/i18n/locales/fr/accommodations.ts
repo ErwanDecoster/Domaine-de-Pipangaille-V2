@@ -77,12 +77,6 @@ export const accommodations = {
   "accommodations.detail.equipments.title": "Les équipements à disposition",
   "accommodations.detail.equipments.note":
     "Cette chambre peut être configurée en deux lits simples ou en lit double (180 cm x 200 cm). Indiquez-nous votre préférence lors de la réservation.",
-  "accommodations.detail.table.title": "La table d’hôte",
-  "accommodations.detail.table.text":
-    "Sur réservation, nous vous proposons la table d'hôtes pour partager un moment convivial et gourmand. Menu unique, cuisine locale et bio, planches ou salades généreuses selon vos envies.",
-  "accommodations.detail.explore.title": "Des endroits à explorer",
-  "accommodations.detail.explore.text":
-    "En saison, profitez de la piscine et des transats, du pavillon d'été pour un verre ou une glace, ainsi que de la salle commune avec canapés, livres et jeux.",
   "accommodations.detail.otherRooms.title": "Nos autres hébergements",
   "accommodations.rooms.equipments.doubleBedSeparable":
     "Lit double 180 cm modulable",

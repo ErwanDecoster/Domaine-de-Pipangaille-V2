@@ -76,12 +76,6 @@ export const accommodations = {
   "accommodations.detail.equipments.title": "Beschikbare voorzieningen",
   "accommodations.detail.equipments.note":
     "De kamer kan worden ingericht met twee eenpersoonsbedden of een tweepersoonsbed van 180 x 200 cm. Laat ons uw voorkeur weten bij de reservering.",
-  "accommodations.detail.table.title": "De table d’hôtes",
-  "accommodations.detail.table.text":
-    "Op reservatie serveren we een gezellige table d’hôtes: een seizoensmenu of royale planken en salades met lokale, biologische producten.",
-  "accommodations.detail.explore.title": "Plekken om te ontdekken",
-  "accommodations.detail.explore.text":
-    "In het seizoen kunt u genieten van het zwembad met ligbedden, het zomerpaviljoen voor een drankje of ijsje en de gemeenschappelijke ruimte met banken, boeken en gezelschapsspellen.",
   "accommodations.detail.otherRooms.title": "Andere accommodaties",
   "accommodations.rooms.equipments.doubleBedSeparable":
     "180 cm tweepersoonsbed deelbaar in twee singles",

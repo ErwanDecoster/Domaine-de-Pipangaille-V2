@@ -77,12 +77,6 @@ export const accommodations = {
   "accommodations.detail.equipments.title": "Dotazioni disponibili",
   "accommodations.detail.equipments.note":
     "La camera può essere preparata con due letti singoli o con un letto matrimoniale da 180 x 200 cm. Comunicateci la vostra preferenza al momento della prenotazione.",
-  "accommodations.detail.table.title": "La table d’hôtes",
-  "accommodations.detail.table.text":
-    "Su prenotazione proponiamo la nostra table d’hôtes conviviale: menù unico di stagione oppure taglieri e insalate generose preparate con prodotti locali e biologici.",
-  "accommodations.detail.explore.title": "Luoghi da vivere",
-  "accommodations.detail.explore.text":
-    "In stagione approfittate della piscina con lettini, del padiglione estivo per un drink o un gelato e della sala comune con divani, libri e giochi di società.",
   "accommodations.detail.otherRooms.title": "Altri alloggi",
   "accommodations.rooms.equipments.doubleBedSeparable":
     "Letto matrimoniale 180 cm divisibile",

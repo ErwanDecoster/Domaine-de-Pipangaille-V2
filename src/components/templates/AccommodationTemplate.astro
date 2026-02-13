@@ -1,14 +1,10 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import MediaContent from "@/components/MediaContent.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import { roomsContent } from "@/constants/rooms";
 import Card from "../Card.astro";
 import { Image } from "astro:assets";
-import tableDHotes from "@/images/table-d-hotes.jpg";
-import pool from "@/images/pool.jpeg";
-import courtyardTerraceCorner from "@/images/courtyard-terrace-corner.jpeg";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
 import FullscreenGallery from "@/components/FullscreenGallery.astro";
 
@@ -27,10 +23,6 @@ const equipmentsTitle = t("accommodations.detail.equipments.title");
 const equipmentsNote = baseRoom?.equipmentsNoteKey
   ? t(toTranslationKey(baseRoom.equipmentsNoteKey))
   : undefined;
-const tableTitle = t("accommodations.detail.table.title");
-const tableText = t("accommodations.detail.table.text");
-const exploreTitle = t("accommodations.detail.explore.title");
-const exploreText = t("accommodations.detail.explore.text");
 const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
 
 const selectedRoomTitle = baseRoom
@@ -174,34 +166,6 @@ const otherRooms = roomsContent
         {equipmentsNote && (
           <p class="bg-muted mt-8 rounded-lg p-4">{equipmentsNote}</p>
         )}
-      </section>
-
-      <MediaContent
-        title={tableTitle}
-        text={tableText}
-        image={tableDHotes}
-        ratio="4-5"
-      />
-
-      <section class="px-4 pt-48 sm:px-6 md:px-10 lg:px-20">
-        <h2>{exploreTitle}</h2>
-        <p class="mt-8">{exploreText}</p>
-        <div class="mt-12 grid gap-6 md:grid-cols-2">
-          <Image
-            class="aspect-video"
-            quality="40"
-            sizes="(min-width: 624px) 624px, 100vw"
-            src={pool}
-            alt="TODO"
-          />
-          <Image
-            class="aspect-video"
-            quality="40"
-            sizes="(min-width: 624px) 624px, 100vw"
-            src={courtyardTerraceCorner}
-            alt="TODO"
-          />
-        </div>
       </section>
 
       <section class="my-24 grid gap-8 px-4 sm:px-6 md:my-48 md:grid-cols-3 md:gap-10 md:px-10 lg:px-20">

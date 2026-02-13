@@ -80,12 +80,6 @@ export const accommodations = {
   "accommodations.detail.equipments.title": "Ausstattung vor Ort",
   "accommodations.detail.equipments.note":
     "Das Zimmer kann als zwei Einzelbetten oder als 180 x 200 cm Doppelbett vorbereitet werden. Geben Sie Ihren Wunsch bei der Buchung an.",
-  "accommodations.detail.table.title": "Table d’hôtes",
-  "accommodations.detail.table.text":
-    "Auf Reservierung servieren wir eine gesellige Table d’hôtes: ein saisonales Menü oder reichhaltige Platten und Salate aus lokalen Bio-Produkten.",
-  "accommodations.detail.explore.title": "Orte zum Entdecken",
-  "accommodations.detail.explore.text":
-    "In der warmen Jahreszeit nutzen Sie den Pool mit Liegen, den Sommerpavillon für einen Drink oder ein Eis sowie den Gemeinschaftsraum mit Sofas, Büchern und Spielen.",
   "accommodations.detail.otherRooms.title": "Weitere Unterkünfte",
   "accommodations.rooms.equipments.doubleBedSeparable":
     "180 cm Doppelbett, teilbar in zwei Einzelbetten",

@@ -78,12 +78,6 @@ export const accommodations = {
   "accommodations.detail.equipments.title": "Equipamientos disponibles",
   "accommodations.detail.equipments.note":
     "La habitación puede prepararse con dos camas individuales o con una cama doble de 180 x 200 cm. Indícanos tu preferencia al reservar.",
-  "accommodations.detail.table.title": "La table d’hôtes",
-  "accommodations.detail.table.text":
-    "Con reserva previa, disfruta de nuestra mesa compartida: menú único de temporada o tablas y ensaladas generosas elaboradas con productos locales y ecológicos.",
-  "accommodations.detail.explore.title": "Lugares para explorar",
-  "accommodations.detail.explore.text":
-    "En temporada tienes a tu disposición la piscina con tumbonas, el pabellón de verano para tomar algo o un helado y la sala común con sofás, libros y juegos de mesa.",
   "accommodations.detail.otherRooms.title": "Otros alojamientos",
   "accommodations.rooms.equipments.doubleBedSeparable":
     "Cama doble de 180 cm convertible en dos individuales",

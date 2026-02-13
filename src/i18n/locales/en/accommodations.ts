@@ -72,12 +72,6 @@ export const accommodations = {
   "accommodations.detail.equipments.title": "Amenities available",
   "accommodations.detail.equipments.note":
     "This room can be set up as twin beds or a 180 x 200 cm double bed. Please share your preference when booking.",
-  "accommodations.detail.table.title": "Our table d’hôtes",
-  "accommodations.detail.table.text":
-    "By reservation, enjoy our convivial table d’hôtes: a single seasonal menu or generous boards and salads prepared with local organic produce.",
-  "accommodations.detail.explore.title": "Places to unwind",
-  "accommodations.detail.explore.text":
-    "In season, take advantage of the pool and sun loungers, the summer pavilion for a drink or ice cream, and the communal lounge filled with sofas, books and board games.",
   "accommodations.detail.otherRooms.title": "More accommodations",
   "accommodations.rooms.equipments.doubleBedSeparable":
     "180 cm double bed convertible into twins",

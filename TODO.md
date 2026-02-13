@@ -38,3 +38,4 @@
 - [ ] Find wellness venues such as spas or thermal baths
 - [ ] Add hiking options
 - [ ] Find MTB activities
+- [ ] find place for "@/images/table-d-hotes.jpg"; "@/images/pool.jpeg"; "@/images/courtyard-terrace-corner.jpeg";
