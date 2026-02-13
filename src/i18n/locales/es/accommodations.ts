@@ -9,15 +9,15 @@ export const accommodations = {
     "La suite marroquí, con una atmósfera cálida inspirada en riads y materiales naturales, es ideal para una pareja en busca de evasión y un momento romántico. Esta habitación puede acoger a una pareja con un niño. Esta habitación tiene una cama de 1,8 x 2 m separable.",
   "accommodations.rooms.marocaine.longDescription":
     "Esta suite de 21 m² respira el ambiente marroquí con colores cálidos que te transporta lejos. Adaptada para 2 adultos y un niño o para una estancia en pareja, con vistas al jardín y al patio, dispone de una cama de 1,8 m x 2 m transformable en dos camas simples, un gran sofá (transformable en cama infantil), un lavabo doble, una gran ducha italiana en tadelakt, aseos separados y almacenamiento. El aire acondicionado garantiza un confort óptimo en verano.",
-  "accommodations.rooms.marocaine.gallery.image1":
+  "accommodations.rooms.marocaine.gallery.image1Alt":
     "Suite marroquí - vista principal",
-  "accommodations.rooms.marocaine.gallery.image2":
+  "accommodations.rooms.marocaine.gallery.image2Alt":
     "Suite marroquí - textiles y materiales naturales",
-  "accommodations.rooms.marocaine.gallery.image3":
+  "accommodations.rooms.marocaine.gallery.image3Alt":
     "Suite marroquí - baño en tadelakt",
-  "accommodations.rooms.marocaine.gallery.image4":
+  "accommodations.rooms.marocaine.gallery.image4Alt":
     "Suite marroquí - rincón salón con sofá cama",
-  "accommodations.rooms.marocaine.gallery.image5":
+  "accommodations.rooms.marocaine.gallery.image5Alt":
     "Suite marroquí - detalles artesanales",
   "accommodations.rooms.marocaine.tags.bedding": "Cama doble o camas gemelas",
   "accommodations.rooms.marocaine.tags.family": "Pareja con 1 niño",
@@ -27,15 +27,15 @@ export const accommodations = {
     "La habitación africana con una atmósfera inspirada en Safari y una decoración atípica, ideal para una pareja, amigos o profesionales. Esta habitación dispone de una cama de 1,8 x 2 m separable.",
   "accommodations.rooms.africaine.longDescription":
     "Esta habitación de 17 m² con acentos safari, con vistas al jardín, te transporta bajo las estrellas africanas. Ofrece una cama de 1,8 x 2 m transformable en 2 camas simples, un escritorio con 2 sillas, un lavabo, una ducha italiana en tadelakt, aseos separados y almacenamiento. Ideal para los ciclistas de paso en la ViaRhôna, esta habitación climatizada permite recuperarse antes de la próxima etapa.",
-  "accommodations.rooms.africaine.gallery.image1":
+  "accommodations.rooms.africaine.gallery.image1Alt":
     "Habitación africana - vista principal",
-  "accommodations.rooms.africaine.gallery.image2":
+  "accommodations.rooms.africaine.gallery.image2Alt":
     "Habitación africana - luz natural",
-  "accommodations.rooms.africaine.gallery.image3":
+  "accommodations.rooms.africaine.gallery.image3Alt":
     "Habitación africana - baño privado",
-  "accommodations.rooms.africaine.gallery.image4":
+  "accommodations.rooms.africaine.gallery.image4Alt":
     "Habitación africana - zona de escritorio",
-  "accommodations.rooms.africaine.gallery.image5":
+  "accommodations.rooms.africaine.gallery.image5Alt":
     "Habitación africana - detalles safari",
   "accommodations.rooms.africaine.tags.bedding": "Cama doble o camas gemelas",
   "accommodations.rooms.africaine.tags.adults": "2 adultos",
@@ -48,15 +48,15 @@ export const accommodations = {
     "La habitación toscana, inspirada en Italia, combina romanticismo y pasión con sus colores pastel. Ideal para una pareja en busca de un momento de serenidad. Esta habitación dispone de una cama de 1,6 x 2 m.",
   "accommodations.rooms.toscane.longDescription":
     "Una habitación de 17 m² con una decoración inspirada en la Toscana que te transporta a un acogedor rincón italiano romántico. Esta habitación con vistas al jardín te ofrece una cama de 1,6 x 2 m, una ducha italiana, un lavabo, aseos separados, una mesa mural alta con 2 taburetes y almacenamiento. Está equipada con aire acondicionado para noches tranquilas.",
-  "accommodations.rooms.toscane.gallery.image1":
+  "accommodations.rooms.toscane.gallery.image1Alt":
     "Habitación Toscana - vista principal",
-  "accommodations.rooms.toscane.gallery.image2":
+  "accommodations.rooms.toscane.gallery.image2Alt":
     "Habitación Toscana - textiles terracota",
-  "accommodations.rooms.toscane.gallery.image3":
+  "accommodations.rooms.toscane.gallery.image3Alt":
     "Habitación Toscana - baño privado",
-  "accommodations.rooms.toscane.gallery.image4":
+  "accommodations.rooms.toscane.gallery.image4Alt":
     "Habitación Toscana - rincón de escritorio",
-  "accommodations.rooms.toscane.gallery.image5":
+  "accommodations.rooms.toscane.gallery.image5Alt":
     "Habitación Toscana - detalles decorativos",
   "accommodations.rooms.toscane.tags.couple": "Pareja",
   "accommodations.rooms.toscane.tags.romantic": "Romántico",
@@ -65,15 +65,15 @@ export const accommodations = {
     "La habitación Criolla está inspirada en un viaje hacia las islas con sus colores azules y su mobiliario de ratán. Esta habitación es ideal para una pareja. Esta habitación dispone de una cama de 1,6 x 2 m.",
   "accommodations.rooms.creole.longDescription":
     "Esta habitación de 17 m² con una hermosa altura bajo techo y vistas al jardín te transporta hacia las islas. Las fibras naturales del mobiliario bañan esta habitación de luz. Se compone de una cama doble de 1,6 x 2 m, un espacio con cabina de ducha y lavabo, aseos separados. El mobiliario inspirado en las islas: dos sillones de ratán, una mesa auxiliar y un armario de almacenamiento. Esta habitación climatizada te promete un dulce paréntesis.",
-  "accommodations.rooms.creole.gallery.image1":
+  "accommodations.rooms.creole.gallery.image1Alt":
     "Habitación Criolla - vista principal",
-  "accommodations.rooms.creole.gallery.image2":
+  "accommodations.rooms.creole.gallery.image2Alt":
     "Habitación Criolla - paleta tropical",
-  "accommodations.rooms.creole.gallery.image3":
+  "accommodations.rooms.creole.gallery.image3Alt":
     "Habitación Criolla - baño privado",
-  "accommodations.rooms.creole.gallery.image4":
+  "accommodations.rooms.creole.gallery.image4Alt":
     "Habitación Criolla - zona de descanso",
-  "accommodations.rooms.creole.gallery.image5":
+  "accommodations.rooms.creole.gallery.image5Alt":
     "Habitación Criolla - detalles artesanales",
   "accommodations.detail.equipments.title": "Equipamientos disponibles",
   "accommodations.detail.equipments.note":

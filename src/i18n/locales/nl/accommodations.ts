@@ -8,15 +8,15 @@ export const accommodations = {
     "Het Marokkaanse suite, met een warme sfeer geïnspireerd door riads en natuurlijke materialen, is ideaal voor een stel op zoek naar ontsnapping en een romantisch moment. Deze kamer kan een stel met een kind huisvesten. Deze kamer beschikt over een bed van 1,8 x 2 m dat kan worden gescheiden.",
   "accommodations.rooms.marocaine.longDescription":
     "Deze suite van 21 m² ademt de Marokkaanse sfeer in met warme kleuren die je meeneemt. Geschikt voor 2 volwassenen en een kind of voor een romantisch verblijf, met uitzicht op de tuin en naar de binnenplaats, beschikt het over een bed van 1,8 m x 2 m dat omvormd kan worden tot twee eenpersoonsbedden, een groot sofa (om te vormen tot een kinderbed), een dubbele wastafel, een grote Italiaanse douche in tadelakt, aparte toiletten en opbergruimte. Airconditioning zorgt voor optimaal comfort in de zomer.",
-  "accommodations.rooms.marocaine.gallery.image1":
+  "accommodations.rooms.marocaine.gallery.image1Alt":
     "Marokkaanse suite - hoofdbeeld",
-  "accommodations.rooms.marocaine.gallery.image2":
+  "accommodations.rooms.marocaine.gallery.image2Alt":
     "Marokkaanse suite - textiel en natuurlijke materialen",
-  "accommodations.rooms.marocaine.gallery.image3":
+  "accommodations.rooms.marocaine.gallery.image3Alt":
     "Marokkaanse suite - tadelakt-badkamer",
-  "accommodations.rooms.marocaine.gallery.image4":
+  "accommodations.rooms.marocaine.gallery.image4Alt":
     "Marokkaanse suite - zithoek met slaapbank",
-  "accommodations.rooms.marocaine.gallery.image5":
+  "accommodations.rooms.marocaine.gallery.image5Alt":
     "Marokkaanse suite - handgemaakte details",
   "accommodations.rooms.marocaine.tags.bedding":
     "Tweepersoonsbed of twee eenpersoonsbedden",
@@ -27,15 +27,15 @@ export const accommodations = {
     "De Afrikaanse kamer met een sfeer geïnspireerd door Safari en atypische decoratie, ideaal voor een stel, vrienden of professionals. Deze kamer beschikt over een bed van 1,8 x 2 m dat kan worden gescheiden.",
   "accommodations.rooms.africaine.longDescription":
     "Deze kamer van 17 m² met safari-accenten, met uitzicht op de tuin, brengt je onder de Afrikaanse sterren. Het biedt een bed van 1,8 x 2 m dat om kan worden gevormd tot 2 eenpersoonsbedden, een bureau met 2 stoelen, een wastafel, een Italiaanse douche in tadelakt, aparte toiletten en opbergruimte. Ideaal voor fietsers die de ViaRhôna passeren, deze gekoelde kamer biedt de mogelijkheid om zich te herstellen voor de volgende etappe.",
-  "accommodations.rooms.africaine.gallery.image1":
+  "accommodations.rooms.africaine.gallery.image1Alt":
     "Afrikaanse kamer - hoofdbeeld",
-  "accommodations.rooms.africaine.gallery.image2":
+  "accommodations.rooms.africaine.gallery.image2Alt":
     "Afrikaanse kamer - natuurlijk licht",
-  "accommodations.rooms.africaine.gallery.image3":
+  "accommodations.rooms.africaine.gallery.image3Alt":
     "Afrikaanse kamer - privébadkamer",
-  "accommodations.rooms.africaine.gallery.image4":
+  "accommodations.rooms.africaine.gallery.image4Alt":
     "Afrikaanse kamer - bureauhoek",
-  "accommodations.rooms.africaine.gallery.image5":
+  "accommodations.rooms.africaine.gallery.image5Alt":
     "Afrikaanse kamer - safari-details",
   "accommodations.rooms.africaine.tags.bedding":
     "Tweepersoonsbed of twee eenpersoonsbedden",
@@ -49,14 +49,14 @@ export const accommodations = {
     "De Toscaanse kamer, geïnspireerd door Italië, combineert romantiek en passie met zijn pasteltinten. Ideaal voor een stel op zoek naar een moment van sereniteit. Deze kamer beschikt over een bed van 1,6 x 2 m.",
   "accommodations.rooms.toscane.longDescription":
     "Een kamer van 17 m² met Toscaans geïnspireerde decoratie die u transporteert in een romantische Italiaanse cocon. Deze kamer met uitzicht op de tuin biedt een bed van 1,6 x 2 m, een Italiaanse douche, een wastafel, aparte toiletten, een hoog wandtafeltje met 2 krukken en opbergruimte. Het is uitgerust met airconditioning voor rustige nachten.",
-  "accommodations.rooms.toscane.gallery.image1": "Toscaanse kamer - hoofdbeeld",
-  "accommodations.rooms.toscane.gallery.image2":
+  "accommodations.rooms.toscane.gallery.image1Alt": "Toscaanse kamer - hoofdbeeld",
+  "accommodations.rooms.toscane.gallery.image2Alt":
     "Toscaanse kamer - terracottatextiel",
-  "accommodations.rooms.toscane.gallery.image3":
+  "accommodations.rooms.toscane.gallery.image3Alt":
     "Toscaanse kamer - ensuite badkamer",
-  "accommodations.rooms.toscane.gallery.image4":
+  "accommodations.rooms.toscane.gallery.image4Alt":
     "Toscaanse kamer - schrijfhoek",
-  "accommodations.rooms.toscane.gallery.image5":
+  "accommodations.rooms.toscane.gallery.image5Alt":
     "Toscaanse kamer - decoratieve details",
   "accommodations.rooms.toscane.tags.couple": "Koppel",
   "accommodations.rooms.toscane.tags.romantic": "Romantisch",
@@ -65,13 +65,13 @@ export const accommodations = {
     "De Creoolse kamer is geïnspireerd door een reis naar de eilanden met zijn blauwe kleuren en rattanmeubilair. Deze kamer is ideaal voor een koppel.",
   "accommodations.rooms.creole.longDescription":
     "De prachtige plafondhoogte, het uitzicht op de tuin en de natuurlijke vezels van het meubilair baden deze kamer in licht. Deze kamer bestaat uit een tweepersoonsbed van 1,60 x 2 m, een ruimte met douchecabine en wastafel, apart toilet. Het door de eilanden geïnspireerde meubilair: twee rattanfauteuils, een bijzettafel en een kledingkast. Deze kamer met airconditioning belooft een zachte pauze.",
-  "accommodations.rooms.creole.gallery.image1": "Creoolse kamer - hoofdbeeld",
-  "accommodations.rooms.creole.gallery.image2":
+  "accommodations.rooms.creole.gallery.image1Alt": "Creoolse kamer - hoofdbeeld",
+  "accommodations.rooms.creole.gallery.image2Alt":
     "Creoolse kamer - tropisch kleurenpalet",
-  "accommodations.rooms.creole.gallery.image3": "Creoolse kamer - badkamer",
-  "accommodations.rooms.creole.gallery.image4":
+  "accommodations.rooms.creole.gallery.image3Alt": "Creoolse kamer - badkamer",
+  "accommodations.rooms.creole.gallery.image4Alt":
     "Creoolse kamer - slaapgedeelte",
-  "accommodations.rooms.creole.gallery.image5":
+  "accommodations.rooms.creole.gallery.image5Alt":
     "Creoolse kamer - ambachtelijke details",
   "accommodations.detail.equipments.title": "Beschikbare voorzieningen",
   "accommodations.detail.equipments.note":

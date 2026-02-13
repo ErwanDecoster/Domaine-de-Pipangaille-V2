@@ -43,7 +43,7 @@ export const surroundings = {
       gallery: [
         {
           src: safariPeaugresImg,
-          altKey: "surroundings.safari_peaugres.gallery.image1",
+          altKey: "surroundings.safari_peaugres.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -86,7 +86,7 @@ export const surroundings = {
       gallery: [
         {
           src: palaisIdealDuFacteurChevalImg,
-          altKey: "surroundings.palais_ideal_du_facteur_cheval.gallery.image1",
+          altKey: "surroundings.palais_ideal_du_facteur_cheval.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -122,7 +122,7 @@ export const surroundings = {
       gallery: [
         {
           src: acroboisPilatImg,
-          altKey: "surroundings.acrobois_pilat.gallery.image1",
+          altKey: "surroundings.acrobois_pilat.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -159,7 +159,7 @@ export const surroundings = {
       gallery: [
         {
           src: museeDeLAlambicImg,
-          altKey: "surroundings.musee_de_l_alambic.gallery.image1",
+          altKey: "surroundings.musee_de_l_alambic.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -195,7 +195,7 @@ export const surroundings = {
       gallery: [
         {
           src: golfDeSaintClairImg,
-          altKey: "surroundings.golf_de_saint_clair.gallery.image1",
+          altKey: "surroundings.golf_de_saint_clair.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -231,7 +231,7 @@ export const surroundings = {
       gallery: [
         {
           src: viarhonaImg,
-          altKey: "surroundings.viarhona.gallery.image1",
+          altKey: "surroundings.viarhona.gallery.image1Alt",
         },
       ],
       website: "https://www.viarhona.com/",
@@ -245,7 +245,7 @@ export const surroundings = {
       gallery: [
         {
           src: viafluviaImg,
-          altKey: "surroundings.viafluvia.gallery.image1",
+          altKey: "surroundings.viafluvia.gallery.image1Alt",
         },
       ],
       website: "https://www.viafluvia.fr/",
@@ -259,7 +259,7 @@ export const surroundings = {
       gallery: [
         {
           src: museeValrhonaImg,
-          altKey: "surroundings.musee_valrhona.gallery.image1",
+          altKey: "surroundings.musee_valrhona.gallery.image1Alt",
         },
       ],
       website: "https://citeduchocolat.com/",
@@ -296,7 +296,7 @@ export const surroundings = {
       gallery: [
         {
           src: lamasDesPlainesImg,
-          altKey: "surroundings.lamas_des_plaines.gallery.image1",
+          altKey: "surroundings.lamas_des_plaines.gallery.image1Alt",
         },
       ],
       website: "http://www.lamasdesplaines.com/",
@@ -313,7 +313,7 @@ export const surroundings = {
       gallery: [
         {
           src: montgolfieresCieImg,
-          altKey: "surroundings.mongolfieres_et_cie.gallery.image1",
+          altKey: "surroundings.mongolfieres_et_cie.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -351,7 +351,7 @@ export const surroundings = {
       gallery: [
         {
           src: trainDeLArdecheImg,
-          altKey: "surroundings.train_de_l_ardeche.gallery.image1",
+          altKey: "surroundings.train_de_l_ardeche.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -388,7 +388,7 @@ export const surroundings = {
       gallery: [
         {
           src: laFabriqueDeJulienImg,
-          altKey: "surroundings.la_fabrique_de_julien.gallery.image1",
+          altKey: "surroundings.la_fabrique_de_julien.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -419,7 +419,7 @@ export const surroundings = {
       gallery: [
         {
           src: leNougatDeMontsegurImg,
-          altKey: "surroundings.le_nougat_de_montsegur.gallery.image1",
+          altKey: "surroundings.le_nougat_de_montsegur.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -450,7 +450,7 @@ export const surroundings = {
       gallery: [
         {
           src: chateauDeGrignanImg,
-          altKey: "surroundings.chateau_de_grignan.gallery.image1",
+          altKey: "surroundings.chateau_de_grignan.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -484,7 +484,7 @@ export const surroundings = {
       gallery: [
         {
           src: labyrintheVegetalImg,
-          altKey: "surroundings.labyrinthe_vegetal.gallery.image1",
+          altKey: "surroundings.labyrinthe_vegetal.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -520,7 +520,7 @@ export const surroundings = {
         {
           src: compagnieDesCanotiersRhoneSaoneImg,
           altKey:
-            "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1",
+            "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -559,7 +559,7 @@ export const surroundings = {
       gallery: [
         {
           src: domaineDuGolfDAlbon,
-          altKey: "surroundings.domaine_golf_albon.gallery.image1",
+          altKey: "surroundings.domaine_golf_albon.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -595,7 +595,7 @@ export const surroundings = {
       gallery: [
         {
           src: slidesparcImg,
-          altKey: "surroundings.slidesparc.gallery.image1",
+          altKey: "surroundings.slidesparc.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -622,7 +622,7 @@ export const surroundings = {
       gallery: [
         {
           src: caveSaintDesiratImg,
-          altKey: "surroundings.cave_saint_desirat.gallery.image1",
+          altKey: "surroundings.cave_saint_desirat.gallery.image1Alt",
         },
       ],
       website: "https://cave-saint-desirat.com/",
@@ -658,7 +658,7 @@ export const surroundings = {
       gallery: [
         {
           src: accrodAilesImg,
-          altKey: "surroundings.accrod_ailes.gallery.image1",
+          altKey: "surroundings.accrod_ailes.gallery.image1Alt",
         },
       ],
       website: "https://accrodailes.fr/",
@@ -684,7 +684,7 @@ export const surroundings = {
       gallery: [
         {
           src: leRelaisDesMaillesImg,
-          altKey: "surroundings.le_relais_mailles.gallery.image1",
+          altKey: "surroundings.le_relais_mailles.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -716,7 +716,7 @@ export const surroundings = {
       gallery: [
         {
           src: laTableDesSajImg,
-          altKey: "surroundings.la_table_des_saj.gallery.image1",
+          altKey: "surroundings.la_table_des_saj.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -752,7 +752,7 @@ export const surroundings = {
       gallery: [
         {
           src: laPouleNoireImg,
-          altKey: "surroundings.la_poule_noir.gallery.image1",
+          altKey: "surroundings.la_poule_noir.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -783,7 +783,7 @@ export const surroundings = {
       gallery: [
         {
           src: lePicotinImg,
-          altKey: "surroundings.le_picotin.gallery.image1",
+          altKey: "surroundings.le_picotin.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -815,7 +815,7 @@ export const surroundings = {
       gallery: [
         {
           src: auPreDuRhoneImg,
-          altKey: "surroundings.au_pre_du_rhone.gallery.image1",
+          altKey: "surroundings.au_pre_du_rhone.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -844,11 +844,11 @@ export const surroundings = {
       gallery: [
         {
           src: laBelleEpoqueImg,
-          altKey: "surroundings.la_belle_epoque.gallery.image1",
+          altKey: "surroundings.la_belle_epoque.gallery.image1Alt",
         },
         {
           src: laBelleEpoqueImg,
-          altKey: "surroundings.la_belle_epoque.gallery.image2",
+          altKey: "surroundings.la_belle_epoque.gallery.image2Alt",
         },
       ],
       shortDesc: "surroundings.descriptions.la_belle_epoque.short",
@@ -883,11 +883,11 @@ export const surroundings = {
       gallery: [
         {
           src: oDailyTruckImg,
-          altKey: "surroundings.o_daily_truck.gallery.image1",
+          altKey: "surroundings.o_daily_truck.gallery.image1Alt",
         },
         {
           src: oDailyTruckImg,
-          altKey: "surroundings.o_daily_truck.gallery.image2",
+          altKey: "surroundings.o_daily_truck.gallery.image2Alt",
         },
       ],
       shortDesc: "surroundings.descriptions.o_daily_truck.short",
@@ -909,7 +909,7 @@ export const surroundings = {
       gallery: [
         {
           src: cesarPizzaImg,
-          altKey: "surroundings.cesar_pizza.gallery.image1",
+          altKey: "surroundings.cesar_pizza.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -939,7 +939,7 @@ export const surroundings = {
       gallery: [
         {
           src: laVillaChampagnereImg,
-          altKey: "surroundings.la_villa_champagnere.gallery.image1",
+          altKey: "surroundings.la_villa_champagnere.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -970,7 +970,7 @@ export const surroundings = {
       gallery: [
         {
           src: lesAgaponRestaurantImg,
-          altKey: "surroundings.les_agapons.gallery.image1",
+          altKey: "surroundings.les_agapons.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -1005,7 +1005,7 @@ export const surroundings = {
       gallery: [
         {
           src: leHangarN7BarPub,
-          altKey: "surroundings.le_hangar_n7.gallery.image1",
+          altKey: "surroundings.le_hangar_n7.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -1042,7 +1042,7 @@ export const surroundings = {
       gallery: [
         {
           src: restaurantLaTreille,
-          altKey: "surroundings.restaurant_de_la_treille.gallery.image1",
+          altKey: "surroundings.restaurant_de_la_treille.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -1073,7 +1073,7 @@ export const surroundings = {
       gallery: [
         {
           src: laValleeImg,
-          altKey: "surroundings.la_vallee.gallery.image1",
+          altKey: "surroundings.la_vallee.gallery.image1Alt",
         },
       ],
       mapsUrl:
@@ -1105,7 +1105,7 @@ export const surroundings = {
       gallery: [
         {
           src: leLieuImg,
-          altKey: "surroundings.le_lieu.gallery.image1",
+          altKey: "surroundings.le_lieu.gallery.image1Alt",
         },
       ],
       website: "https://www.lelieulerestaurant.fr/",

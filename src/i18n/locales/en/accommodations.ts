@@ -9,14 +9,14 @@ export const accommodations = {
     "The Moroccan suite, with a warm atmosphere inspired by riads and natural materials, is ideal for a couple seeking escape and a romantic moment. This room can accommodate a couple with one child. This room has a 1.8 x 2 m bed that can be separated into twin beds.",
   "accommodations.rooms.marocaine.longDescription":
     "This 21 m² suite breathes the Moroccan atmosphere with warm colors that will transport you. Suitable for 2 adults and a child or for a romantic getaway, with garden and courtyard views, it features a 1.8 m x 2 m bed convertible into two single beds, a large sofa (convertible into a child's bed), double vanity, large walk-in tadelakt shower, separate toilet and storage. Air conditioning ensures optimal comfort in summer.",
-  "accommodations.rooms.marocaine.gallery.image1": "Moroccan suite – main view",
-  "accommodations.rooms.marocaine.gallery.image2":
+  "accommodations.rooms.marocaine.gallery.image1Alt": "Moroccan suite – main view",
+  "accommodations.rooms.marocaine.gallery.image2Alt":
     "Moroccan suite – textiles and natural materials",
-  "accommodations.rooms.marocaine.gallery.image3":
+  "accommodations.rooms.marocaine.gallery.image3Alt":
     "Moroccan suite – tadelakt bathroom",
-  "accommodations.rooms.marocaine.gallery.image4":
+  "accommodations.rooms.marocaine.gallery.image4Alt":
     "Moroccan suite – lounge nook with sofa bed",
-  "accommodations.rooms.marocaine.gallery.image5":
+  "accommodations.rooms.marocaine.gallery.image5Alt":
     "Moroccan suite – handcrafted details",
   "accommodations.rooms.marocaine.tags.bedding": "Double bed or twin beds",
   "accommodations.rooms.marocaine.tags.family": "Couple with 1 child",
@@ -26,14 +26,14 @@ export const accommodations = {
     "The African room with a safari-inspired atmosphere and unique decoration, ideal for a couple, friends or professionals. This room has a 1.8 x 2 m bed that can be separated into twin beds.",
   "accommodations.rooms.africaine.longDescription":
     "This 17 m² room with safari accents and garden view transports you under the African stars. It features a 1.8 x 2 m bed convertible into 2 single beds, a desk with 2 chairs, a washbasin, a walk-in tadelakt shower, separate toilet and storage. Ideal for cyclists passing through on the ViaRhôna, this air-conditioned room allows you to recover before the next stage.",
-  "accommodations.rooms.africaine.gallery.image1": "African room – main view",
-  "accommodations.rooms.africaine.gallery.image2":
+  "accommodations.rooms.africaine.gallery.image1Alt": "African room – main view",
+  "accommodations.rooms.africaine.gallery.image2Alt":
     "African room – natural light flooding the space",
-  "accommodations.rooms.africaine.gallery.image3":
+  "accommodations.rooms.africaine.gallery.image3Alt":
     "African room – private bathroom",
-  "accommodations.rooms.africaine.gallery.image4":
+  "accommodations.rooms.africaine.gallery.image4Alt":
     "African room – desk and workspace",
-  "accommodations.rooms.africaine.gallery.image5":
+  "accommodations.rooms.africaine.gallery.image5Alt":
     "African room – safari-inspired details",
   "accommodations.rooms.africaine.tags.bedding": "Double bed or twin beds",
   "accommodations.rooms.africaine.tags.adults": "2 adults",
@@ -46,14 +46,14 @@ export const accommodations = {
     "The Tuscan room, inspired by Italy, combines romance and passion with its pastel colors. Ideal for a couple seeking a moment of serenity. This room has a 1.6 x 2 m bed.",
   "accommodations.rooms.toscane.longDescription":
     "A 17 m² room with Tuscan-inspired decor that transports you into a romantic Italian cocoon. This garden-view room offers a 1.6 x 2 m bed, a walk-in shower, a washbasin, separate toilet, a high wall table with 2 stools and storage. It is equipped with air conditioning for peaceful nights.",
-  "accommodations.rooms.toscane.gallery.image1": "Tuscan room – main view",
-  "accommodations.rooms.toscane.gallery.image2":
+  "accommodations.rooms.toscane.gallery.image1Alt": "Tuscan room – main view",
+  "accommodations.rooms.toscane.gallery.image2Alt":
     "Tuscan room – terracotta textiles",
-  "accommodations.rooms.toscane.gallery.image3":
+  "accommodations.rooms.toscane.gallery.image3Alt":
     "Tuscan room – ensuite bathroom",
-  "accommodations.rooms.toscane.gallery.image4":
+  "accommodations.rooms.toscane.gallery.image4Alt":
     "Tuscan room – writing desk area",
-  "accommodations.rooms.toscane.gallery.image5":
+  "accommodations.rooms.toscane.gallery.image5Alt":
     "Tuscan room – decorative accents",
   "accommodations.rooms.toscane.tags.couple": "Couple",
   "accommodations.rooms.toscane.tags.romantic": "Romantic",
@@ -62,13 +62,13 @@ export const accommodations = {
     "The Creole Room is inspired by a journey to the islands with its blue colors and rattan furniture. This room is ideal for a couple.",
   "accommodations.rooms.creole.longDescription":
     "The beautiful high ceiling, garden view and natural fiber furniture bathe this room in light. This room features a double bed 1.60 x 2 m, an area with shower cabin and washbasin, separate toilet. The island-inspired furniture: two rattan armchairs, a pedestal table and a wardrobe for storage. This air-conditioned room promises a sweet break.",
-  "accommodations.rooms.creole.gallery.image1": "Creole room – main view",
-  "accommodations.rooms.creole.gallery.image2":
+  "accommodations.rooms.creole.gallery.image1Alt": "Creole room – main view",
+  "accommodations.rooms.creole.gallery.image2Alt":
     "Creole room – tropical colour palette",
-  "accommodations.rooms.creole.gallery.image3":
+  "accommodations.rooms.creole.gallery.image3Alt":
     "Creole room – private bathroom",
-  "accommodations.rooms.creole.gallery.image4": "Creole room – sleeping area",
-  "accommodations.rooms.creole.gallery.image5": "Creole room – artisan details",
+  "accommodations.rooms.creole.gallery.image4Alt": "Creole room – sleeping area",
+  "accommodations.rooms.creole.gallery.image5Alt": "Creole room – artisan details",
   "accommodations.detail.equipments.title": "Amenities available",
   "accommodations.detail.equipments.note":
     "This room can be set up as twin beds or a 180 x 200 cm double bed. Please share your preference when booking.",
