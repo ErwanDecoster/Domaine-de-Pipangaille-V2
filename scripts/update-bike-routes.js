@@ -40,8 +40,8 @@ const SCORING_WEIGHTS = {
 };
 
 const ACCOMMODATION = {
-  lat: 45.25,
-  lng: 4.78,
+  lat: 45.252593,
+  lng: 4.809788,
 };
 
 const RATE_LIMIT = {
