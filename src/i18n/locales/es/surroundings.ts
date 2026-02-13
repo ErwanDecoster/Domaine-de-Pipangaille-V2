@@ -90,10 +90,6 @@ export const surroundings = {
     "Canotier solar en el Ródano: crucero gourmet, vistas a Saint-Joseph, cata de vinos y programas compatibles con la bicicleta.",
   "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
     "Embarca en un canotier electro-solar para un crucero gourmet, un paseo o una cena sobre el Ródano. Degusta vinos mientras admiras las laderas de Saint-Joseph y, según la fórmula, sube tu bicicleta a bordo.",
-  "surroundings.descriptions.le_chateau_d_anet.short":
-    "Explora el castillo de Anet, joya renacentista en Eure-et-Loir, y revive la historia de Enrique II y Diana de Poitiers en una visita guiada.",
-  "surroundings.descriptions.le_chateau_d_anet.long":
-    "Los anfitriones del castillo de Anet te invitan a relajarte y a un intercambio cultural. Sigue una visita guiada por este monumento construido en 1548 por Enrique II para Diana de Poitiers, descubre sus objetos personales y la capilla donde descansa.",
   "surroundings.descriptions.le_relais_mailles.short":
     "Lugar informal junto al río en Laveyron, práctico para ciclistas de la ViaRhôna y pausas sencillas.",
   "surroundings.descriptions.le_relais_mailles.long":
@@ -192,7 +188,6 @@ export const surroundings = {
     "Vista aérea del Labyrinthe végétal",
   "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
     "Barco de la Compagnie des Canotiers Rhône & Saône sobre el río",
-  "surroundings.le_chateau_d_anet.gallery.image1": "Patio del Château d'Anet",
   "surroundings.le_relais_mailles.gallery.image1":
     "Comedor de Le Relais des Mailles",
   "surroundings.la_table_des_saj.gallery.image1":

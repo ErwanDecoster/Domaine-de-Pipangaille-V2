@@ -89,10 +89,6 @@ export const surroundings = {
     "Zonneboot op de Rhône: gastronomische cruise, uitzicht op Saint-Joseph, wijnproeverij en fiets-vriendelijke formules.",
   "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
     "Stap aan boord van een elektro-zonnecanotier voor een gastronomische cruise, een tocht of een diner op de Rhône. Proef wijnen terwijl je de heuvels van Saint-Joseph bewondert en neem, afhankelijk van het programma, je fiets mee aan boord.",
-  "surroundings.descriptions.le_chateau_d_anet.short":
-    "Ontdek Château d’Anet, een renaissancejuweel in Eure-et-Loir, en beleef het verhaal van Hendrik II en Diane de Poitiers tijdens een rondleiding.",
-  "surroundings.descriptions.le_chateau_d_anet.long":
-    "De gastheren van Château d’Anet nodigen je uit om te ontspannen en cultuur te delen. Volg een rondleiding door dit monument uit 1548 dat Hendrik II voor Diane de Poitiers liet bouwen, bekijk haar persoonlijke objecten en de kapel waar zij rust.",
   "surroundings.descriptions.le_relais_mailles.short":
     "Informele plek aan het water in Laveyron, handig voor ViaRhôna-fietsers en een ongedwongen stop.",
   "surroundings.descriptions.le_relais_mailles.long":
@@ -190,8 +186,6 @@ export const surroundings = {
     "Luchtbeeld van het Labyrinthe végétal",
   "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
     "Boot van Compagnie des Canotiers Rhône & Saône op de rivier",
-  "surroundings.le_chateau_d_anet.gallery.image1":
-    "Binnenhof van Château d’Anet",
   "surroundings.le_relais_mailles.gallery.image1":
     "Eetzaal van Le Relais des Mailles",
   "surroundings.la_table_des_saj.gallery.image1":

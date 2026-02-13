@@ -89,10 +89,6 @@ export const surroundings = {
     "Solar-powered boat on the Rhône: gourmet cruise, views over Saint-Joseph vineyards, wine tasting and bike-friendly programs.",
   "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
     "Embark on an electro-solar canotier for a gourmet cruise, leisurely outing or dinner on the Rhône. Sip wines while admiring the Saint-Joseph hillsides and, depending on the program, bring your bike aboard.",
-  "surroundings.descriptions.le_chateau_d_anet.short":
-    "Explore Château d’Anet, a Renaissance jewel in Eure-et-Loir, and relive the story of Henri II and Diane de Poitiers on a guided tour.",
-  "surroundings.descriptions.le_chateau_d_anet.long":
-    "Your hosts at Château d’Anet invite you to relax and embrace culture. Follow a guided visit through this 1548 monument built by Henri II for Diane de Poitiers, discover her personal objects and the chapel where she rests.",
   "surroundings.descriptions.le_relais_mailles.short":
     "Casual riverside spot in Laveyron, handy for ViaRhôna riders and laid-back food stops.",
   "surroundings.descriptions.le_relais_mailles.long":
@@ -189,8 +185,6 @@ export const surroundings = {
     "Aerial view of the Labyrinthe végétal corn maze",
   "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
     "Boat from Compagnie des Canotiers Rhône & Saône on the river",
-  "surroundings.le_chateau_d_anet.gallery.image1":
-    "Courtyard of Château d'Anet",
   "surroundings.le_relais_mailles.gallery.image1":
     "Dining room at Le Relais des Mailles",
   "surroundings.la_table_des_saj.gallery.image1":

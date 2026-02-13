@@ -87,10 +87,6 @@ export const surroundings = {
     "Canotier solaire sur le Rhône : croisière gourmande, vue sur Saint-Joseph, dégustation de vin et programmes compatibles avec le vélo.",
   "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
     "Embarquez à bord d'un canotier électro-solaire pour une croisière gourmande, une balade ou un dîner sur le Rhône. Savourez une dégustation de vins en admirant les coteaux de Saint-Joseph et, selon la formule, embarquez votre vélo.",
-  "surroundings.descriptions.le_chateau_d_anet.short":
-    "Explorez le château d'Anet, joyau Renaissance en Eure-et-Loir, et vivez l'histoire d'Henri II et de Diane de Poitiers lors d'une visite guidée.",
-  "surroundings.descriptions.le_chateau_d_anet.long":
-    "Les hôtes du château d'Anet vous invitent à la détente et à l'échange culturel. Suivez une visite guidée de ce monument bâti en 1548 par Henri II pour Diane de Poitiers, découvrez ses objets personnels et la chapelle où elle repose.",
   "surroundings.descriptions.le_relais_mailles.short":
     "Restaurant convivial à Laveyron au bord du Rhône, pratique pour la ViaRhôna et les pauses gourmandes.",
   "surroundings.descriptions.le_relais_mailles.long":
@@ -167,8 +163,6 @@ export const surroundings = {
     "Vue aérienne du Labyrinthe végétal",
   "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
     "Bateau de la Compagnie des Canotiers Rhône & Saône sur le fleuve",
-  "surroundings.le_chateau_d_anet.gallery.image1":
-    "Cour d’honneur du château d’Anet",
   "surroundings.le_relais_mailles.gallery.image1":
     "Salle à manger du Relais des Mailles",
   "surroundings.la_table_des_saj.gallery.image1":
