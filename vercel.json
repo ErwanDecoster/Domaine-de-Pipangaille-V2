@@ -99,6 +99,16 @@
       "source": "/es/reservar",
       "destination": "/es/reserva",
       "permanent": true
+    },
+    {
+      "source": "/wayfinding",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/foodwayfinding",
+      "destination": "/le-comptoir",
+      "permanent": false
     }
   ]
 }
