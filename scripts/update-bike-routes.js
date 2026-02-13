@@ -16,6 +16,7 @@
  * @global setTimeout - Node.js native timer
  */
 
+import "dotenv/config.js";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -360,6 +361,9 @@ function generateTS(data, originalContent) {
 async function main() {
   if (!ORS_API_KEY) {
     console.error("❌ Error: ORS_API_KEY environment variable not set");
+    console.error(
+      "   Make sure your .env file contains: ORS_API_KEY=your_api_key",
+    );
     process.exit(1);
   }
 

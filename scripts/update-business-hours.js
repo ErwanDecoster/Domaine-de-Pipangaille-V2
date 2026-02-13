@@ -12,6 +12,7 @@
  *   GOOGLE_PLACES_API_KEY - Google Cloud API key
  */
 
+import "dotenv/config.js";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -117,6 +118,9 @@ function convertGoogleHoursToFormat(googleResponse) {
 async function updateBusinessHours() {
   if (!GOOGLE_PLACES_API_KEY) {
     console.error("❌ GOOGLE_PLACES_API_KEY environment variable is not set");
+    console.error(
+      "   Make sure your .env file contains: GOOGLE_PLACES_API_KEY=your_api_key",
+    );
     process.exit(1);
   }
 
