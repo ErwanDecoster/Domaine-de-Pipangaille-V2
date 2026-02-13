@@ -1,12 +1,17 @@
 export const place = {
   "place.header.title": "De locatie",
+  "place.header.imageAlt": "TODO",
   "place.header.text":
     "Een voormalige zijderupsteelt van meer dan 180 jaar, het Domein Pipangaille is een authentieke stenen woning, vol karakter en charme, gehuild in de nabijheid van de Rhône.\n\nVoorbij de schoonheid van het gebouw, geniet je van een boomgaard, een onverwarmend zwembad open in het seizoen en een zomerpaviljoen bevorderlijk voor ontspanning, voor een echte natuurpauze in het hart van de Rhônedal.\n\nWe bieden de tafel d'hôtes op reservering, voor onze gasten van gastenkamers, een barservice en zoete en hartige lekkernijen. Een open parkeerplaats buiten is ter beschikking.\n\nGelegen in Andancette, in het hart van de Rhônedal, profiteert het domein van directe toegang tot de ViaRhôna en bevindt zich vlak bij de Via Fluvia, fietsroutes en wandelroutes.",
   "place.header.button": "Een kamer reserveren",
   "place.services.title": "Ruimtes en services",
+  "place.services.imageAlt": "TODO",
   "place.services.text":
     "Met het oog op uw gemak biedt het domein een open buitenparkeerplaats, een beveiligde fietsenstalling, een onverwarmend zwembad open in het seizoen, een zomerpaviljoen en ontspanningsruimtes naast de binnenplaats en tuin.\n\nDe tafel d'hôtes wordt op reservering aangeboden en is voorbehouden aan gasten van accommodaties. Een barservice is ook ter plaatse beschikbaar.",
   "place.events.title": "Evenementen organiseren",
+  "place.events.gallery.image1Alt": "TODO",
+  "place.events.gallery.image2Alt": "TODO",
+  "place.events.gallery.image3Alt": "TODO",
   "place.events.text":
     "Het Domein Pipangaille is ook een geschikte plek voor de organisatie van private en professionele evenementen: verjaardag, brunch, seminar, vergadering of zakelijk samenkomen.\n\nWe stellen onze restauratiezaal ter beschikking en bieden catering en dranken op aanvraag.\n\nVoor elke persoonlijke aanvraag, aarzel niet om contact met ons op te nemen om samen uw project te bestuderen.",
   "place.events.button": "Neem contact op",
