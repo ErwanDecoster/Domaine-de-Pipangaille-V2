@@ -90,10 +90,6 @@ export const surroundings = {
     "Canotier solar en el Ródano: crucero gourmet, vistas a Saint-Joseph, cata de vinos y programas compatibles con la bicicleta.",
   "surroundings.descriptions.compagnie_des_canotiers_rhone_et_saone.long":
     "Embarca en un canotier electro-solar para un crucero gourmet, un paseo o una cena sobre el Ródano. Degusta vinos mientras admiras las laderas de Saint-Joseph y, según la fórmula, sube tu bicicleta a bordo.",
-  "surroundings.descriptions.le_chateau_d_anet.short":
-    "Explora el castillo de Anet, joya renacentista en Eure-et-Loir, y revive la historia de Enrique II y Diana de Poitiers en una visita guiada.",
-  "surroundings.descriptions.le_chateau_d_anet.long":
-    "Los anfitriones del castillo de Anet te invitan a relajarte y a un intercambio cultural. Sigue una visita guiada por este monumento construido en 1548 por Enrique II para Diana de Poitiers, descubre sus objetos personales y la capilla donde descansa.",
   "surroundings.descriptions.le_relais_mailles.short":
     "Lugar informal junto al río en Laveyron, práctico para ciclistas de la ViaRhôna y pausas sencillas.",
   "surroundings.descriptions.le_relais_mailles.long":
@@ -136,6 +132,26 @@ export const surroundings = {
     "En el menú: hamburguesas 100 % caseras, carnes en salsa o snacks, tablas para compartir, platos vegetarianos y patatas fritas frescas.",
   "surroundings.descriptions.o_daily_truck.long":
     "En la carta encontrarás hamburguesas 100 % caseras, carnes en salsa o snacks, tablas de charcutería y quesos para compartir, opciones vegetarianas y patatas fritas recién hechas.\n\nEl equipo varía sus propuestas para destacar la riqueza de los productos de temporada: charcutería italiana o española, quesos de nuestras regiones o de los Alpes suizos, frutas y verduras de productores locales, carnes de Aubrac y aves del terruño, hierbas cultivadas en las colinas drômoises.\n\nTambién hay postres caseros: mousse de chocolate, tartas, pannacottas cremosas y helados artesanales.",
+  "surroundings.descriptions.slidesparc.short":
+    "Parque acuático hinchable en el lago des Vernets: toboganes, saltos y risas para toda la familia.",
+  "surroundings.descriptions.slidesparc.long":
+    "El Slidesparc ofrece una actividad lúdica sobre el agua con un circuito acuático hinchable de más de 1500m². ¡Toboganes, saltos y risas están garantizados en cada momento! Accesible para niños a partir de 7 años que sepan nadar y para adultos. Ideal para centros de ocio, colonias de vacaciones, cumpleaños, despedidas de soltero o soltera, comités de empresa. Alquiler de hidropedales y paddles también disponible. Ubicado en la base de ocio del lago des Vernets con una extensión de agua de más de 4,5 hectáreas rodeada de un parque de 11 hectáreas con sombra, perfecto para el picnic. Una zona de snacks y una playa delimitada y vigilada a su disposición.",
+  "surroundings.descriptions.cave_saint_desirat.short":
+    "Bodega cooperativa que produce vinos excepcionales: AOP Saint-Joseph, Condrieu y Côtes du Rhône.",
+  "surroundings.descriptions.cave_saint_desirat.long":
+    "Desde 1960, la Cave de Saint-Désirat está ubicada en las terrazas que bordean la orilla derecha del Ródano, en la AOP Saint-Joseph. Con casi 600 hectáreas, más de 350 viticultores, vendimia manual, vinificación controlada y equipamiento de alto rendimiento, la bodega produce grandes vinos: AOP Saint-Joseph, AOP Condrieu, AOP Côtes du Rhône y vinos de Pays de Ardèche. Visite las bodegas para descubrir estos vinos galardonados, entre ellos la cuvée Côte Diane 2021 elegida mejor vino del Valle del Ródano en el Concurso Internacional de Lyon.",
+  "surroundings.descriptions.accrod_ailes.short":
+    "Club de parapente en Ardèche que ofrece vuelos en varios sitios excepcionales.",
+  "surroundings.descriptions.accrod_ailes.long":
+    "¡Ven a descubrir el parapente en Ardèche con Accro d'Ailes! El club ofrece vuelos en varios sitios magníficos: Saint-Désirat, Burdignes-Nord, Burdignes-Grand Tony y Saint-Clair. Ya sea que estés de paso en la región o seas un apasionado del vuelo libre, únete a la comunidad en Discord para compartir esta experiencia única. Disfruta de paisajes excepcionales y vive un momento de libertad total sobre el valle del Ródano y los montes de Ardèche.",
+  "surroundings.descriptions.la_vallee.short":
+    "Restaurante y alojamiento en Peyraud que ofrece cocina generosa con productos frescos y locales.",
+  "surroundings.descriptions.la_vallee.long":
+    "La Vallée es un restaurante situado en Peyraud que ofrece una cocina generosa preparada con productos frescos. En el menú: una carta que cambia cada mes (entrante-plato-postre a 35€), un menú pierrade a 27€ con selección de carnes cocinadas en piedra caliente, y un menú del mediodía de miércoles a viernes. El establecimiento también dispone de habitaciones familiares y dobles para prolongar su estancia. Abierto de miércoles a domingo, con un ambiente acogedor y cálido.",
+  "surroundings.descriptions.le_lieu.short":
+    "Restaurante, bar de vinos y salón de té en Annonay, espacio de vida cultural y artístico.",
+  "surroundings.descriptions.le_lieu.long":
+    "Le Lieu es un espacio de vida único en el corazón de Annonay, articulado alrededor de un patio interior. Es a la vez restaurante, bar de vinos y salón de té que ofrece una cocina simple, saludable y creativa en un ambiente colorido. El equipo comparte su entusiasmo con platos generosos preparados con productos locales y orgánicos. Le Lieu también acoge eventos culturales: conciertos, exposiciones, festivales, proyecciones, talleres... Un lugar impulsado por una ética humana y ambiental, en resonancia con la vida cultural y comercial del territorio. Agradable terraza para disfrutar de momentos de intercambio entre amigos.",
   "surroundings.detail.otherActivities.title":
     "Otras actividades por descubrir",
   "surroundings.detail.otherRestaurants.title":
@@ -172,7 +188,6 @@ export const surroundings = {
     "Vista aérea del Labyrinthe végétal",
   "surroundings.compagnie_des_canotiers_rhone_et_saone.gallery.image1":
     "Barco de la Compagnie des Canotiers Rhône & Saône sobre el río",
-  "surroundings.le_chateau_d_anet.gallery.image1": "Patio del Château d'Anet",
   "surroundings.le_relais_mailles.gallery.image1":
     "Comedor de Le Relais des Mailles",
   "surroundings.la_table_des_saj.gallery.image1":
@@ -202,6 +217,15 @@ export const surroundings = {
     "Fachada de Le Hangar N7 en Andancette",
   "surroundings.restaurant_de_la_treille.gallery.image1":
     "Restaurant de la Treille en Champagne",
+  "surroundings.slidesparc.gallery.image1":
+    "Circuito acuático hinchable del Slidesparc en el lago",
+  "surroundings.cave_saint_desirat.gallery.image1":
+    "Bodega y viñedos de Saint-Désirat",
+  "surroundings.accrod_ailes.gallery.image1":
+    "Parapente sobre el valle del Ródano",
+  "surroundings.la_vallee.gallery.image1": "Restaurante La Vallée en Peyraud",
+  "surroundings.le_lieu.gallery.image1":
+    "Patio interior y terraza de Le Lieu en Annonay",
   "surroundings.descriptions.les_agapons.short":
     "Restaurante de auténtica cocina francesa en Manthes, comida casera de calidad con productos locales y regionales.",
   "surroundings.descriptions.les_agapons.long":
