@@ -1015,6 +1015,192 @@
       }
     }
   },
+  "slidesParc": {
+    "googlePlaceId": "ChIJETfztSZH9UcR13yE6uCUuA4",
+    "hours": {
+      "sunday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1900"
+          }
+        ]
+      },
+      "monday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1900"
+          }
+        ]
+      },
+      "tuesday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1900"
+          }
+        ]
+      },
+      "wednesday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1900"
+          }
+        ]
+      },
+      "thursday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1900"
+          }
+        ]
+      },
+      "friday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1900"
+          }
+        ]
+      },
+      "saturday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1900"
+          }
+        ]
+      }
+    }
+  },
+  "caveSaintDesirat": {
+    "googlePlaceId": "ChIJpdoQOAU-9UcR7-ncY1J-Seo",
+    "hours": {
+      "sunday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1830"
+          }
+        ]
+      },
+      "monday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1200"
+          },
+          {
+            "open": "1400",
+            "close": "1830"
+          }
+        ]
+      },
+      "tuesday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1200"
+          },
+          {
+            "open": "1400",
+            "close": "1830"
+          }
+        ]
+      },
+      "wednesday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1200"
+          },
+          {
+            "open": "1400",
+            "close": "1830"
+          }
+        ]
+      },
+      "thursday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1200"
+          },
+          {
+            "open": "1400",
+            "close": "1830"
+          }
+        ]
+      },
+      "friday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1200"
+          },
+          {
+            "open": "1400",
+            "close": "1830"
+          }
+        ]
+      },
+      "saturday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1200"
+          },
+          {
+            "open": "1400",
+            "close": "1830"
+          }
+        ]
+      }
+    }
+  },
+  "accrodAiles": {
+    "googlePlaceId": "ChIJj0pGImQ_9UcRd73Xjw-EtxY",
+    "hours": {
+      "sunday": {
+        "isOpen": false
+      },
+      "monday": {
+        "isOpen": false
+      },
+      "tuesday": {
+        "isOpen": false
+      },
+      "wednesday": {
+        "isOpen": false
+      },
+      "thursday": {
+        "isOpen": false
+      },
+      "friday": {
+        "isOpen": false
+      },
+      "saturday": {
+        "isOpen": false
+      }
+    }
+  },
   "leRelaisMailles": {
     "googlePlaceId": "ChIJ810PqoY_9UcR060-CgNA_q0",
     "hours": {
@@ -1766,6 +1952,146 @@
           {
             "open": "1800",
             "close": "2200"
+          }
+        ]
+      }
+    }
+  },
+  "laVallee": {
+    "googlePlaceId": "ChIJy15PVy8W9UcRzQT0TqrgvLk",
+    "hours": {
+      "sunday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0900",
+            "close": "1400"
+          }
+        ]
+      },
+      "monday": {
+        "isOpen": false
+      },
+      "tuesday": {
+        "isOpen": false
+      },
+      "wednesday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0800",
+            "close": "1400"
+          },
+          {
+            "open": "1800",
+            "close": "2100"
+          }
+        ]
+      },
+      "thursday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0800",
+            "close": "1400"
+          },
+          {
+            "open": "1800",
+            "close": "2100"
+          }
+        ]
+      },
+      "friday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0800",
+            "close": "1400"
+          },
+          {
+            "open": "1800",
+            "close": "2100"
+          }
+        ]
+      },
+      "saturday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "0800",
+            "close": "1400"
+          },
+          {
+            "open": "1800",
+            "close": "2100"
+          }
+        ]
+      }
+    }
+  },
+  "leLieu": {
+    "googlePlaceId": "ChIJ4UMABJkT9UcRlVta8mqFTeQ",
+    "hours": {
+      "sunday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1200",
+            "close": "1630"
+          }
+        ]
+      },
+      "monday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1100",
+            "close": "2300"
+          }
+        ]
+      },
+      "tuesday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1100",
+            "close": "2300"
+          }
+        ]
+      },
+      "wednesday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1100",
+            "close": "2300"
+          }
+        ]
+      },
+      "thursday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1100",
+            "close": "2300"
+          }
+        ]
+      },
+      "friday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1100",
+            "close": "2300"
+          }
+        ]
+      },
+      "saturday": {
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1100",
+            "close": "2300"
           }
         ]
       }
