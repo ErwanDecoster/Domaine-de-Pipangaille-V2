@@ -1,6 +1,7 @@
 /**
  * Google Place IDs used across the site and automation scripts.
  * Place IDs are not secrets; they can live in the repo.
+ * Find place IDs on https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
  */
 
 export const placeIds = {
