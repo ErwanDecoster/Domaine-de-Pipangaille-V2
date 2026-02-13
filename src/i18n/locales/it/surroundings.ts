@@ -166,7 +166,8 @@ export const surroundings = {
   "surroundings.golf_de_saint_clair.gallery.image1Alt":
     "Fairway del Golf de Saint-Clair",
   "surroundings.viarhona.gallery.image1Alt": "Ciclisti lungo la ViaRhôna",
-  "surroundings.viafluvia.gallery.image1Alt": "Famiglia in bici sulla ViaFluvia",
+  "surroundings.viafluvia.gallery.image1Alt":
+    "Famiglia in bici sulla ViaFluvia",
   "surroundings.musee_valrhona.gallery.image1Alt":
     "Laboratorio di degustazione alla Cité du Chocolat Valrhôna",
   "surroundings.mongolfieres_et_cie.gallery.image1Alt":
@@ -204,7 +205,8 @@ export const surroundings = {
   "surroundings.cesar_pizza.gallery.image1Alt": "Banco e forno di César Pizza",
   "surroundings.la_villa_champagnere.gallery.image1Alt":
     "Giardino e terrazza di La Villa Champagnère",
-  "surroundings.les_agapons.gallery.image1Alt": "Ristorante Les Agapons a Manthes",
+  "surroundings.les_agapons.gallery.image1Alt":
+    "Ristorante Les Agapons a Manthes",
   "surroundings.domaine_golf_albon.gallery.image1Alt":
     "Vista del Domaine du Golf d'Albon",
   "surroundings.le_hangar_n7.gallery.image1Alt":

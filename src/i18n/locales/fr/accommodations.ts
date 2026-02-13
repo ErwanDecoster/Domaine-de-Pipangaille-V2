@@ -71,7 +71,8 @@ export const accommodations = {
     "Chambre créole - Grand lit double avec panier de serviettes au pied du lit et porte des toilettes en arrière-plan",
   "accommodations.rooms.creole.gallery.image3Alt":
     "Chambre créole - Coin bureau de la chambre avec serviettes disposées sur le lit et vue sur le jardin par la fenêtre",
-  "accommodations.rooms.creole.gallery.image4Alt": "Chambre créole - Bureau de la chambre avec grande armoire à miroir",
+  "accommodations.rooms.creole.gallery.image4Alt":
+    "Chambre créole - Bureau de la chambre avec grande armoire à miroir",
   "accommodations.rooms.creole.gallery.image5Alt":
     "Chambre créole - Armoire de la chambre avec bureau en complément",
   "accommodations.detail.equipments.title": "Les équipements à disposition",

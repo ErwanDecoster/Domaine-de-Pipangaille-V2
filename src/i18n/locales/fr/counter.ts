@@ -2,7 +2,8 @@ export const counter = {
   "counter.hero.title": "Le comptoir",
   "counter.hero.text":
     "Le Comptoir de Pipangaille est un lieu de pause et de partage, pensé comme une parenthèse gourmande au cœur du domaine. On y vient pour savourer un café, un chocolat chaud, un matcha ou une boisson fraîche, accompagné d’une gourmandise sucrée ou salée, dans une atmosphère conviviale et apaisante.",
-  "counter.hero.imageAlt": "Terrasse du Comptoir de Pipangaille à l’entrée du domaine avec tables installées et transats dans l’herbe",
+  "counter.hero.imageAlt":
+    "Terrasse du Comptoir de Pipangaille à l’entrée du domaine avec tables installées et transats dans l’herbe",
   "counter.hero.description":
     "Ouvert d'avril à septembre, les horaires peuvent varier selon la météo.",
   "counter.story.title": "Profitez d’un repas, ou d’une pause boisson",

@@ -189,8 +189,10 @@ export const surroundings = {
     "Dining room at Le Relais des Mailles",
   "surroundings.la_table_des_saj.gallery.image1Alt":
     "Plated dishes from La Table des SAJ",
-  "surroundings.la_poule_noir.gallery.image1Alt": "Dining area at La Poule Noire",
-  "surroundings.le_picotin.gallery.image1Alt": "Exterior of Le Picotin restaurant",
+  "surroundings.la_poule_noir.gallery.image1Alt":
+    "Dining area at La Poule Noire",
+  "surroundings.le_picotin.gallery.image1Alt":
+    "Exterior of Le Picotin restaurant",
   "surroundings.au_pre_du_rhone.gallery.image1Alt":
     "Terrace overlooking the Rhône at Au Pré du Rhône",
   "surroundings.la_belle_epoque.gallery.image1Alt":
@@ -201,7 +203,8 @@ export const surroundings = {
     "Gourmet burger served by O'Daily Truck",
   "surroundings.o_daily_truck.gallery.image2Alt":
     "O'Daily Truck parked and ready to serve",
-  "surroundings.cesar_pizza.gallery.image1Alt": "Counter and oven at César Pizza",
+  "surroundings.cesar_pizza.gallery.image1Alt":
+    "Counter and oven at César Pizza",
   "surroundings.la_villa_champagnere.gallery.image1Alt":
     "Garden and terrace of La Villa Champagnère",
   "surroundings.les_agapons.gallery.image1Alt":

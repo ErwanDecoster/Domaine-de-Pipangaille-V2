@@ -146,7 +146,8 @@ export const surroundings = {
     "Fairways du Golf de Saint-Clair",
   "surroundings.viarhona.gallery.image1Alt":
     "Cyclistes sur la ViaRhôna le long du fleuve",
-  "surroundings.viafluvia.gallery.image1Alt": "Famille en balade sur la ViaFluvia",
+  "surroundings.viafluvia.gallery.image1Alt":
+    "Famille en balade sur la ViaFluvia",
   "surroundings.musee_valrhona.gallery.image1Alt":
     "Atelier de dégustation à la Cité du Chocolat Valrhôna",
   "surroundings.mongolfieres_et_cie.gallery.image1Alt":
@@ -169,7 +170,8 @@ export const surroundings = {
     "Assiettes dressées de La Table des SAJ",
   "surroundings.la_poule_noir.gallery.image1Alt":
     "Salle de restaurant de La Poule Noire",
-  "surroundings.le_picotin.gallery.image1Alt": "Façade du restaurant Le Picotin",
+  "surroundings.le_picotin.gallery.image1Alt":
+    "Façade du restaurant Le Picotin",
   "surroundings.au_pre_du_rhone.gallery.image1Alt":
     "Terrasse sur le Rhône d’Au Pré du Rhône",
   "surroundings.la_belle_epoque.gallery.image1Alt":
@@ -180,10 +182,12 @@ export const surroundings = {
     "Burger gourmand servi par O’Daily Truck",
   "surroundings.o_daily_truck.gallery.image2Alt":
     "Food truck O’Daily Truck prêt à servir",
-  "surroundings.cesar_pizza.gallery.image1Alt": "Comptoir et four de César Pizza",
+  "surroundings.cesar_pizza.gallery.image1Alt":
+    "Comptoir et four de César Pizza",
   "surroundings.la_villa_champagnere.gallery.image1Alt":
     "Jardin et terrasse de La Villa Champagnère",
-  "surroundings.les_agapons.gallery.image1Alt": "Restaurant Les Agapons à Manthes",
+  "surroundings.les_agapons.gallery.image1Alt":
+    "Restaurant Les Agapons à Manthes",
   "surroundings.domaine_golf_albon.gallery.image1Alt":
     "Vue du Domaine du Golf d'Albon",
   "surroundings.le_hangar_n7.gallery.image1Alt":

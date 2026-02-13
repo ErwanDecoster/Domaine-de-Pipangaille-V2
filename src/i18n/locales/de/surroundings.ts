@@ -168,7 +168,8 @@ export const surroundings = {
     "Fairways des Golf de Saint-Clair",
   "surroundings.viarhona.gallery.image1Alt":
     "Radfahrer auf der ViaRhôna entlang des Flusses",
-  "surroundings.viafluvia.gallery.image1Alt": "Familienausflug auf der ViaFluvia",
+  "surroundings.viafluvia.gallery.image1Alt":
+    "Familienausflug auf der ViaFluvia",
   "surroundings.musee_valrhona.gallery.image1Alt":
     "Verkostungsworkshop in der Cité du Chocolat Valrhôna",
   "surroundings.mongolfieres_et_cie.gallery.image1Alt":
@@ -202,7 +203,8 @@ export const surroundings = {
     "Gourmet-Burger vom O'Daily Truck",
   "surroundings.o_daily_truck.gallery.image2Alt":
     "O'Daily Truck bereit zum Service",
-  "surroundings.cesar_pizza.gallery.image1Alt": "Theke und Ofen von César Pizza",
+  "surroundings.cesar_pizza.gallery.image1Alt":
+    "Theke und Ofen von César Pizza",
   "surroundings.la_villa_champagnere.gallery.image1Alt":
     "Garten und Terrasse der Villa Champagnère",
   "surroundings.les_agapons.gallery.image1Alt":

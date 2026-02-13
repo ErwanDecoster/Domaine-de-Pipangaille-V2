@@ -206,7 +206,8 @@ export const surroundings = {
     "Hamburguesa gourmet servida por O'Daily Truck",
   "surroundings.o_daily_truck.gallery.image2Alt":
     "Food truck O'Daily Truck listo para servir",
-  "surroundings.cesar_pizza.gallery.image1Alt": "Mostrador y horno de César Pizza",
+  "surroundings.cesar_pizza.gallery.image1Alt":
+    "Mostrador y horno de César Pizza",
   "surroundings.la_villa_champagnere.gallery.image1Alt":
     "Jardín y terraza de La Villa Champagnère",
   "surroundings.les_agapons.gallery.image1Alt":
@@ -223,7 +224,8 @@ export const surroundings = {
     "Bodega y viñedos de Saint-Désirat",
   "surroundings.accrod_ailes.gallery.image1Alt":
     "Parapente sobre el valle del Ródano",
-  "surroundings.la_vallee.gallery.image1Alt": "Restaurante La Vallée en Peyraud",
+  "surroundings.la_vallee.gallery.image1Alt":
+    "Restaurante La Vallée en Peyraud",
   "surroundings.le_lieu.gallery.image1Alt":
     "Patio interior y terraza de Le Lieu en Annonay",
   "surroundings.descriptions.les_agapons.short":

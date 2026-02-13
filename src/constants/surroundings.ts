@@ -86,7 +86,8 @@ export const surroundings = {
       gallery: [
         {
           src: palaisIdealDuFacteurChevalImg,
-          altKey: "surroundings.palais_ideal_du_facteur_cheval.gallery.image1Alt",
+          altKey:
+            "surroundings.palais_ideal_du_facteur_cheval.gallery.image1Alt",
         },
       ],
       mapsUrl:

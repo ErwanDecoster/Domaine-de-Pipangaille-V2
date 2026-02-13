@@ -192,7 +192,8 @@ export const surroundings = {
     "Opgemaakte borden bij La Table des SAJ",
   "surroundings.la_poule_noir.gallery.image1Alt":
     "Restaurantzaal van La Poule Noire",
-  "surroundings.le_picotin.gallery.image1Alt": "Gevel van restaurant Le Picotin",
+  "surroundings.le_picotin.gallery.image1Alt":
+    "Gevel van restaurant Le Picotin",
   "surroundings.au_pre_du_rhone.gallery.image1Alt":
     "Terras met zicht op de Rhône bij Au Pré du Rhône",
   "surroundings.la_belle_epoque.gallery.image1Alt":
