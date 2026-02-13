@@ -1,15 +1,15 @@
 export const home = {
   "home.header.title": "Le Domaine de Pipangaille",
   "home.header.text":
-    "Le Domaine de Pipangaille, eine kürzlich renovierte ehemalige Seidenraupenfarm, die von einem bewaldeten Park umgeben ist und Charme, Stein und Authentizität in einer idyllischen Umgebung verbindet, bietet 4 Gästezimmer, Table d'hôtes auf Anfrage, ein unbeheiztes Schwimmbad, das in der Saison geöffnet ist, für einen magischen Aufenthalt und eine Einladung zum Entspannen.\n\nDas Domaine de Pipangaille liegt in der Nähe der Ausfahrt der Autobahn A7, in der Nähe der Nationale 7, eine Stunde von Lyon und Saint-Étienne entfernt, 45 Minuten von Valence entfernt und mit direktem Zugang zur ViaRhôna, sehr in der Nähe der ViaFluvia.",
+    "Das Domaine de Pipangaille, eine kürzlich renovierte ehemalige Seidenraupenzuchtfarm, umgeben von einem bewaldeten Park, in dem sich der Charme des Steins und die Authentizität eines geschichtsträchtigen Ortes vermischen.\n\nIn Andancette, im Rhônetal gelegen, empfängt Sie das Anwesen in einer idyllischen und friedlichen Umgebung mit 4 klimatisierten Gästezimmern, Table d'hôtes auf Reservierung, Swimmingpool und Bar für einen Aufenthalt im Zeichen der Entspannung.\n\nLeicht erreichbar, in der Nähe der Autobahnausfahrt A7 und der Nationalstraße 7, eine Stunde von Lyon und Saint-Étienne, 45 Minuten von Valence entfernt, verfügt das Anwesen über direkten Zugang zur ViaRhôna und liegt sehr nah an der ViaFluvia.",
   "home.header.button": "Das Anwesen entdecken",
   "home.rooms.title": "Gästezimmer",
   "home.rooms.text":
-    "Sie erreichen die Zimmer durch den bewaldeten Park, der Sie in den von Steinen umgebenen Innenhof führt, der ihm einen authentischen und beruhigenden Rahmen verleiht. Unsere Zimmer befinden sich im zweiten Stock, erreichbar über eine große Treppe.\n\nWir bieten vier klimatisierte Zimmer mit einzigartiger Dekoration: eine Suite und drei Doppelzimmer. Die Dekoration der Zimmer lädt zum Reisen und zur Gelassenheit ein.",
+    "Sie betreten die Zimmer durch den bewaldeten Park, der Sie zum von Steinen umgebenen Innenhof führt und eine authentische und beruhigende Umgebung bietet. Die Zimmer befinden sich im zweiten Stock des Hauses und sind über eine große Treppe erreichbar.\n\nDas Anwesen bietet vier klimatisierte Zimmer mit einzigartiger Dekoration: eine Familiensuite und drei Doppelzimmer. Jeder Raum lädt zum Reisen und zur Ruhe ein, für einen Aufenthalt unter dem Zeichen der Ruhe und des Komforts.\n\nDas Frühstück, das in Ihrem Aufenthalt inbegriffen ist, wird jeden Morgen serviert und stellt schmackhafte Produkte in den Mittelpunkt, um den Tag gut zu beginnen.",
   "home.rooms.button": "Zimmer ansehen",
   "home.counter.title": "Die Theke",
   "home.counter.text":
-    "Für Radfahrer auf der Durchreise auf der Via Rhona oder Touristen auf der Urlaubsroute, die einen idealen Ort für eine Mittagspause oder einen Snack suchen, empfängt Sie die Theke von Pipangaille am Eingang des Anwesens in der Hochsaison unter der überdachten Terrasse für eine süße oder herzhafte Gourmetpause an einem atypischen Ort inmitten der Vegetation.",
+    "Der Pipangaille-Schalter in der Domäneneingangfläche empfängt in der Hochsaison Radfahrer, die die ViaRhôna durchqueren, sowie Reisende auf der Urlaubsstraße. Unter der überdachten Terrasse, im Herzen der Vegetation, genießen Sie eine süße oder herzhafte Gourmand-Pause in einem atypischen und warmen Rahmen.\n\nOffen für Zimmergäste und externe Besucher.",
   "home.counter.button": "Mehr erfahren",
   "home.reviews.title": "Was unsere Gäste sagen",
   "home.surroundings.title": "In unserer Umgebung zu entdecken",

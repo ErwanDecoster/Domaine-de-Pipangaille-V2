@@ -1,15 +1,15 @@
 export const home = {
   "home.header.title": "Le Domaine de Pipangaille",
   "home.header.text":
-    "Le Domaine de Pipangaille, een onlangs gerenoveerde voormalige zijdewormkwekerij omgeven door een bosrijk park dat de charme van steen en authenticiteit in een idyllische omgeving combineert, biedt 4 gastenkamers, table d'hôtes op reservering, een onverwarmd zwembad geopend in het seizoen, voor een magisch verblijf en een uitnodiging om te ontspannen.\n\nHet Domaine de Pipangaille ligt vlakbij de afrit van de snelweg A7, dicht bij de Nationale 7, op een uur van Lyon en Saint-Étienne, 45 minuten van Valence en met directe toegang tot de ViaRhôna, zeer dicht bij de ViaFluvia.",
+    "Het Domein Pipangaille, een voormalige zijderupsteelt onlangs gerenoveerd, omgeven door een boomgaard waar de charme van steen en de authenticiteit van een plek vol geschiedenis samenkomen.\n\nGelegen in Andancette, in de Rhônedal, verwelkomt het domein je in een idyllisch en rustig kader met zijn 4 gekoelde gastenkamers, zijn tafel d'hôtes op reservering, zijn zwembad en zijn bar, voor een verblijf onder het teken van ontspanning.\n\nGemakkelijk bereikbaar, dicht bij de afrit van de snelweg A7 en de nationale weg 7, op een uur van Lyon en Saint-Étienne, op 45 minuten van Valence, profiteert het domein van directe toegang tot de ViaRhôna en bevindt zich vlak bij de Via Fluvia.",
   "home.header.button": "Ontdek het Domein",
   "home.rooms.title": "Gastenkamers",
   "home.rooms.text":
-    "U bereikt de kamers door het bosrijke park over te steken, wat u naar de binnenplaats brengt die omgeven is door stenen, wat zorgt voor een authentieke en rustgevende omgeving. Onze kamers bevinden zich op de tweede verdieping, bereikbaar via een grote trap.\n\nWij bieden vier kamers met airconditioning en unieke decoratie: een suite en drie tweepersoonskamers. De kamerdecoratie nodigt uit tot reizen en sereniteit.",
+    "U bereikt de kamers via de boomgaard, die u naar de binnenpatio omgeven door steen leidt, wat een authentiek en rustig kader biedt. De kamers bevinden zich op de tweede verdieping van het huis en zijn bereikbaar via een groot trappenhuis.\n\nHet domein biedt vier gekoelde kamers met atypische decoratie: een familiesuite en drie tweepersoonskamers. Elk universum nodigt uit tot reizen en sereniteit, voor een verblijf onder het teken van rust en comfort.\n\nHet ontbijt, inbegrepen in uw verblijf, wordt elke ochtend geserveerd en benadrukt lekkernijen om de dag goed te beginnen.",
   "home.rooms.button": "Bekijk de kamers",
   "home.counter.title": "De Toonbank",
   "home.counter.text":
-    "Voor fietsers die de Via Rhona passeren of toeristen op vakantie die op zoek zijn naar een ideale plek voor een lunchpauze of tussendoortje, verwelkomt de Pipangaille-toonbank bij de ingang van het landgoed u in het hoogseizoen onder het overdekte terras voor een zoete of hartige gastronomische pauze op een atypische plek in het hart van de vegetatie.",
+    "De Winkel van Pipangaille, gelegen bij de ingang van het domein, verwelkomt in het seizoen de fietsers die de ViaRhôna passeren en de reizigers op de vakantieweg. Onder het overdekte terras, in het hart van de begroeiing, geniet van een zoete of hartige lekkernijpauze in een atypisch en gastvrij kader.\n\nOpen voor hotelgasten en externe bezoekers.",
   "home.counter.button": "Meer weten",
   "home.reviews.title": "Wat onze gasten zeggen",
   "home.surroundings.title": "Te ontdekken in de omgeving",

@@ -1,15 +1,15 @@
 export const home = {
   "home.header.title": "Le Domaine de Pipangaille",
   "home.header.text":
-    "Le Domaine de Pipangaille, una antigua granja de gusanos de seda recientemente renovada rodeada de un parque arbolado que combina el encanto de la piedra y la autenticidad en un entorno idílico, ofrece 4 habitaciones de huéspedes, table d'hôtes con reserva, una piscina sin calefacción abierta en temporada, para una estancia mágica y una invitación a relajarse.\n\nEl Domaine de Pipangaille se encuentra cerca de la salida de la autopista A7, cerca de la Nacional 7, a una hora de Lyon y Saint-Étienne, a 45 minutos de Valence y con acceso directo a la ViaRhôna, muy cerca de la ViaFluvia.",
+    "El Dominio de Pipangaille, antiguo criadero de gusanos de seda recientemente renovado, rodeado de un parque arbolado donde se mezclan el encanto de la piedra y la autenticidad de un lugar cargado de historia.\n\nUbicado en Andancette, en el Valle del Ródano, el dominio te acoge en un marco idílico y tranquilo con sus 4 habitaciones de huéspedes climatizadas, su mesa de huéspedes bajo reserva, su piscina y su bar, para una estancia bajo el signo de la relajación.\n\nFácilmente accesible, cerca de la salida de autopista A7 y de la carretera nacional 7, a una hora de Lyon y Saint-Étienne, a 45 minutos de Valence, el dominio se beneficia de un acceso directo a la ViaRhôna y se sitúa muy cerca de la Via Fluvia.",
   "home.header.button": "Descubrir el Dominio",
   "home.rooms.title": "Habitaciones de huéspedes",
   "home.rooms.text":
-    "Se accede a las habitaciones cruzando el parque arbolado, que le lleva al patio interior rodeado de piedras que le confiere un entorno auténtico y relajante. Nuestras habitaciones están situadas en el segundo piso accesible por una gran escalera.\n\nOfrecemos cuatro habitaciones climatizadas con decoración única: una suite y tres habitaciones dobles. La decoración de las habitaciones invita al viaje y la serenidad.",
+    "Se accede a las habitaciones atravesando el parque arbolado, que te conduce hasta el patio interior rodeado de piedra, ofreciendo un marco auténtico y apacible. Las habitaciones se encuentran en la segunda planta de la casa y se accede a través de una gran escalera.\n\nEl dominio propone cuatro habitaciones climatizadas con decoración atípica: una suite familiar y tres habitaciones dobles. Cada universo invita al viaje y a la serenidad, para una estancia bajo el signo de la calma y el confort.\n\nEl desayuno, incluido en tu estancia, se sirve cada mañana y destaca productos gourmand para comenzar bien el día.",
   "home.rooms.button": "Ver las habitaciones",
   "home.counter.title": "El Mostrador",
   "home.counter.text":
-    "Para los ciclistas que pasan por la Via Rhona o los turistas en la ruta de vacaciones que buscan un lugar ideal para una pausa para el almuerzo o un refrigerio, el mostrador de Pipangaille ubicado en la entrada de la finca le da la bienvenida en temporada alta bajo la terraza cubierta para una pausa gourmet dulce o salada en un lugar atípico en el corazón de la vegetación.",
+    "La Tienda de Pipangaille, ubicada en la entrada del dominio, acoge en plena temporada a los ciclistas de paso en la ViaRhôna así como a los viajeros en la ruta de vacaciones. Bajo la terraza cubierta, en el corazón de la vegetación, disfruta de una pausa gourmand dulce o salada en un marco atípico y acogedor.\n\nAbierto a los clientes de las habitaciones y a visitantes externos.",
   "home.counter.button": "Saber más",
   "home.reviews.title": "Lo que dicen nuestros huéspedes",
   "home.surroundings.title": "Para descubrir a nuestro alrededor",
