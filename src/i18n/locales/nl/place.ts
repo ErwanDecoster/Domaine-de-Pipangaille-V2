@@ -1,14 +1,14 @@
 export const place = {
   "place.header.title": "De locatie",
   "place.header.text":
-    "Een 180 jaar oude voormalige magnanerie, het authentieke stenen huis vol karakter en charme wordt omgeven door het zachte kolken van de Rhône. Naast de charme van het gebouw kunt u genieten van het park, het onbeheizde zwembad en het zomerpaviljoen voor een rustgevende, natuurlijke pauze.\n\nWij bieden de table d'hôtes, een bar-service en zoete of hartige lekkernijen, een buitenparkeerplaats. Domaine de Pipangaille ligt dicht bij de afrit van de A7, nabij de Route Nationale 7, op 1 uur van Lyon en Saint-Étienne, 45 minuten van Valence en met directe toegang tot de ViaRhôna, vlak bij de ViaFluvia, fietsroutes en wandelpaden.",
+    "Een voormalige zijderupsteelt van meer dan 180 jaar, het Domein Pipangaille is een authentieke stenen woning, vol karakter en charme, gehuild in de nabijheid van de Rhône.\n\nVoorbij de schoonheid van het gebouw, geniet je van een boomgaard, een onverwarmend zwembad open in het seizoen en een zomerpaviljoen bevorderlijk voor ontspanning, voor een echte natuurpauze in het hart van de Rhônedal.\n\nWe bieden de tafel d'hôtes op reservering, voor onze gasten van gastenkamers, een barservice en zoete en hartige lekkernijen. Een open parkeerplaats buiten is ter beschikking.\n\nGelegen in Andancette, in het hart van de Rhônedal, profiteert het domein van directe toegang tot de ViaRhôna en bevindt zich vlak bij de Via Fluvia, fietsroutes en wandelroutes.",
   "place.header.button": "Een kamer reserveren",
   "place.services.title": "Ruimtes en services",
   "place.services.text":
-    "Een buitenparkeerplaats, een fietsenstalling, een onbeheizd zwembad, het paviljoen, relaxruimtes aan de binnenplaats en de tuin, evenals de table d’hôtes (voor verblijvende gasten) en de bar.\n\nLe Comptoir de Pipangaille: voor lokale of passerende gasten bieden we bij de ingang van het domein op het overdekte terras, omringd door groen, een tijdloze pauze. Hartig aanbod: bruschetta, ravioli, bowls & salads, charcuterie- en kaasplanken… Zoet aanbod: ijs (15 smaken), wafels, crêpes, luxe granola.",
+    "Met het oog op uw gemak biedt het domein een open buitenparkeerplaats, een beveiligde fietsenstalling, een onverwarmend zwembad open in het seizoen, een zomerpaviljoen en ontspanningsruimtes naast de binnenplaats en tuin.\n\nDe tafel d'hôtes wordt op reservering aangeboden en is voorbehouden aan gasten van accommodaties. Een barservice is ook ter plaatse beschikbaar.",
   "place.events.title": "Evenementen organiseren",
   "place.events.text":
-    "Een plek voor een privé-evenement, brunch, seminar, vergadering of zakelijke ontmoeting; neem contact met ons op en we stellen onze eetzaal beschikbaar met catering- en drankservice.",
+    "Het Domein Pipangaille is ook een geschikte plek voor de organisatie van private en professionele evenementen: verjaardag, brunch, seminar, vergadering of zakelijk samenkomen.\n\nWe stellen onze restauratiezaal ter beschikking en bieden catering en dranken op aanvraag.\n\nVoor elke persoonlijke aanvraag, aarzel niet om contact met ons op te nemen om samen uw project te bestuderen.",
   "place.events.button": "Neem contact op",
   "place.spotlight.title": "Het domein in beeld",
   "place.spotlight.gallery1.title": "Het boomrijke park",

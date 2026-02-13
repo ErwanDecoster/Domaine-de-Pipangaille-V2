@@ -140,22 +140,27 @@ const getLangHref = (targetLocale: Locale) => {
 </NativeSelect>
 
 <script>
-  // Handle all language switchers on the page
-  document
-    .querySelectorAll('select[id$="-mobile"], select[id$="-desktop"]')
-    .forEach((select) => {
-      if (
-        select instanceof HTMLSelectElement &&
-        select.id.includes("language-switcher")
-      ) {
-        select.addEventListener("change", (event) => {
-          const target = event.target as HTMLSelectElement;
-          const selectedOption = target.options[target.selectedIndex];
-          const url = selectedOption.getAttribute("data-url");
-          if (url) {
-            window.location.href = url;
-          }
-        });
-      }
-    });
+  function initLanguageSwitcher() {
+    // Handle all language switchers on the page
+    document
+      .querySelectorAll('select[id$="-mobile"], select[id$="-desktop"]')
+      .forEach((select) => {
+        if (
+          select instanceof HTMLSelectElement &&
+          select.id.includes("language-switcher")
+        ) {
+          select.addEventListener("change", (event) => {
+            const target = event.target as HTMLSelectElement;
+            const selectedOption = target.options[target.selectedIndex];
+            const url = selectedOption.getAttribute("data-url");
+            if (url) {
+              window.location.href = url;
+            }
+          });
+        }
+      });
+  }
+
+  initLanguageSwitcher();
+  document.addEventListener("astro:page-load", initLanguageSwitcher);
 </script>

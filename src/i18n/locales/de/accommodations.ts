@@ -6,9 +6,9 @@ export const accommodations = {
   "accommodations.rooms.button": "Zimmer ansehen",
   "accommodations.rooms.marocaine.title": "Marokkanisches Zimmer",
   "accommodations.rooms.marocaine.description":
-    "Die marokkanische Suite mit warmer, von Riads und natürlichen Materialien inspirierter Atmosphäre ist ideal für ein Paar auf der Suche nach Tapetenwechsel und einem romantischen Moment. Dieses Zimmer kann ein Paar mit einem Kind beherbergen.",
+    "Die marokkanische Suite mit einer von Riads und Naturmaterialien inspirierten, warmen Atmosphäre ist ideal für ein Paar auf der Suche nach Tapetenwechsel und einem romantischen Moment. Dieses Zimmer kann ein Paar mit einem Kind beherbergen. Dieses Zimmer hat ein 1,8 x 2 m großes Bett, das in Einzelbetten aufgeteilt werden kann.",
   "accommodations.rooms.marocaine.longDescription":
-    "Warme marokkanische Farbtöne erfüllen dieses Zimmer, das für 2 Erwachsene und ein Kind oder für einen romantischen Aufenthalt geeignet ist. Mit Blick auf Garten und Innenhof verfügt es über ein Bett von 1,80 m x 2 m, in zwei Einzelbetten teilbar, ein großes Sofa (in ein Kinderbett umwandelbar), Doppelwaschbecken, große ebenerdige Tadelakt-Dusche, separates WC, Stauraum. Die Klimaanlage sorgt im Sommer für optimalen Komfort.",
+    "Diese 21 m² große Suite atmet die marokkanische Atmosphäre mit warmen Farben, die Sie verzaubern wird. Geeignet für 2 Erwachsene und ein Kind oder einen romantischen Aufenthalt, mit Blick auf Garten und Innenhof, verfügt es über ein Bett von 1,8 m x 2 m, in zwei Einzelbetten teilbar, ein großes Sofa (in ein Kinderbett umwandelbar), Doppelwaschbecken, große ebenerdige Tadelakt-Dusche, separates WC und Stauraum. Die Klimaanlage sorgt im Sommer für optimalen Komfort.",
   "accommodations.rooms.marocaine.gallery.image1":
     "Marokkanische Suite – Hauptansicht",
   "accommodations.rooms.marocaine.gallery.image2":
@@ -25,9 +25,9 @@ export const accommodations = {
   "accommodations.rooms.marocaine.tags.couple": "Paar",
   "accommodations.rooms.africaine.title": "Afrikanisches Zimmer",
   "accommodations.rooms.africaine.description":
-    "Das afrikanische Zimmer mit Safari-inspirierter Atmosphäre und einzigartiger Dekoration, ideal für ein Paar, Freunde oder Geschäftsleute.",
+    "Das afrikanische Zimmer mit Safari-inspirierter Atmosphäre und einzigartiger Dekoration, ideal für ein Paar, Freunde oder Geschäftsleute. Dieses Zimmer hat ein 1,8 x 2 m großes Bett, das in Einzelbetten aufgeteilt werden kann.",
   "accommodations.rooms.africaine.longDescription":
-    "Dieses 18 m² große Zimmer mit Gartenblick und Safari-Akzenten bietet ein 1,80 x 2 m Bett, in 2 Einzelbetten teilbar, einen Schreibtisch mit 2 Stühlen, ein Waschbecken, eine ebenerdige Tadelakt-Dusche, separates WC und Stauraum. Ideal für Radfahrer auf der ViaRhôna ermöglicht dieses klimatisierte Zimmer Erholung vor der nächsten Etappe.",
+    "Dieses 17 m² große Zimmer mit Safari-Akzenten und Gartenblick versetzt Sie unter die afrikanischen Sterne. Es verfügt über ein Bett von 1,8 x 2 m, in 2 Einzelbetten teilbar, einen Schreibtisch mit 2 Stühlen, ein Waschbecken, eine ebenerdige Tadelakt-Dusche, separates WC und Stauraum. Ideal für Radfahrer auf der ViaRhôna ermöglicht dieses klimatisierte Zimmer Erholung vor der nächsten Etappe.",
   "accommodations.rooms.africaine.gallery.image1":
     "Afrikanisches Zimmer – Hauptansicht",
   "accommodations.rooms.africaine.gallery.image2":
@@ -91,8 +91,10 @@ export const accommodations = {
     "180 cm Doppelbett, teilbar in zwei Einzelbetten",
   "accommodations.rooms.equipments.doubleBed160": "Doppelbett 160 x 200 cm",
   "accommodations.rooms.equipments.freeHighSpeedWifi":
-    "Kostenloses Highspeed-WLAN",
+    "Kostenloses Highspeed-WLAN bis 600 Mbps",
   "accommodations.rooms.equipments.airConditioning": "Klimaanlage",
+  "accommodations.rooms.equipments.pool": "Unbeheizt Schwimmbad in der Saison",
+  "accommodations.rooms.equipments.breakfast": "Frühstück",
   "accommodations.rooms.equipments.ShowerRoom": "Privates Badezimmer",
   "accommodations.rooms.equipments.ShowerRoomMoroccan":
     "Doppelwaschbecken, große ebenerdige Dusche, separates WC",

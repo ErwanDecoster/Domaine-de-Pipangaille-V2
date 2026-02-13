@@ -164,105 +164,110 @@ const bookingPath = getLocalizedUrl("booking", lang);
 </div>
 
 <script>
-  const dateButton = document.getElementById("date-button");
-  const calendarDropdown = document.getElementById("calendar-dropdown");
-  const closeDropdown = document.getElementById("close-dropdown");
-  const bookButton = document.getElementById("book-button");
-  const bookingWidget = document.querySelector(
-    "[data-scroll-animated-booking-widget]",
-  );
-  const bookingWidgetToggle = document.getElementById(
-    "booking-widget-toggle",
-  ) as HTMLInputElement;
+  function initBookingWidget() {
+    const dateButton = document.getElementById("date-button");
+    const calendarDropdown = document.getElementById("calendar-dropdown");
+    const closeDropdown = document.getElementById("close-dropdown");
+    const bookButton = document.getElementById("book-button");
+    const bookingWidget = document.querySelector(
+      "[data-scroll-animated-booking-widget]",
+    );
+    const bookingWidgetToggle = document.getElementById(
+      "booking-widget-toggle",
+    ) as HTMLInputElement;
 
-  // Toggle calendar dropdown
-  if (dateButton && calendarDropdown) {
-    dateButton.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const isHidden = calendarDropdown.classList.toggle("hidden");
-      dateButton.setAttribute("aria-expanded", String(!isHidden));
+    // Toggle calendar dropdown
+    if (dateButton && calendarDropdown) {
+      dateButton.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isHidden = calendarDropdown.classList.toggle("hidden");
+        dateButton.setAttribute("aria-expanded", String(!isHidden));
 
-      // Position the dropdown relative to the button
-      if (!isHidden) {
-        const buttonRect = dateButton.getBoundingClientRect();
-        calendarDropdown.style.left = `${buttonRect.left}px`;
-        calendarDropdown.style.bottom = `${window.innerHeight - buttonRect.top + 8}px`;
-      }
-    });
-  }
-
-  // Close calendar dropdown
-  if (closeDropdown && calendarDropdown && dateButton) {
-    closeDropdown.addEventListener("click", (e) => {
-      e.stopPropagation();
-      calendarDropdown.classList.add("hidden");
-      dateButton.setAttribute("aria-expanded", "false");
-    });
-  }
-
-  // Close dropdown when clicking outside
-  document.addEventListener("click", (e) => {
-    if (
-      calendarDropdown &&
-      dateButton &&
-      !calendarDropdown.contains(e.target as Node) &&
-      !dateButton.contains(e.target as Node)
-    ) {
-      calendarDropdown.classList.add("hidden");
-      dateButton.setAttribute("aria-expanded", "false");
+        // Position the dropdown relative to the button
+        if (!isHidden) {
+          const buttonRect = dateButton.getBoundingClientRect();
+          calendarDropdown.style.left = `${buttonRect.left}px`;
+          calendarDropdown.style.bottom = `${window.innerHeight - buttonRect.top + 8}px`;
+        }
+      });
     }
-  });
 
-  // Close widget when clicking outside
-  if (bookingWidget && bookingWidgetToggle) {
+    // Close calendar dropdown
+    if (closeDropdown && calendarDropdown && dateButton) {
+      closeDropdown.addEventListener("click", (e) => {
+        e.stopPropagation();
+        calendarDropdown.classList.add("hidden");
+        dateButton.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    // Close dropdown when clicking outside
     document.addEventListener("click", (e) => {
       if (
-        !bookingWidget.contains(e.target as Node) &&
-        !calendarDropdown?.contains(e.target as Node)
+        calendarDropdown &&
+        dateButton &&
+        !calendarDropdown.contains(e.target as Node) &&
+        !dateButton.contains(e.target as Node)
       ) {
-        bookingWidgetToggle.checked = false;
-      }
-    });
-  }
-
-  // Close widget and dropdown on Escape key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      if (calendarDropdown && dateButton) {
         calendarDropdown.classList.add("hidden");
         dateButton.setAttribute("aria-expanded", "false");
       }
-      if (bookingWidgetToggle) {
-        bookingWidgetToggle.checked = false;
-      }
-    }
-  });
-
-  // Handle booking
-  if (bookButton) {
-    bookButton.addEventListener("click", () => {
-      const adultsSelect = document.getElementById(
-        "adults-select",
-      ) as HTMLSelectElement;
-      const childrenSelect = document.getElementById(
-        "children-select",
-      ) as HTMLSelectElement;
-
-      const adults = adultsSelect?.value || "2";
-      const children = childrenSelect?.value || "0";
-
-      const startDate = dateButton?.dataset.startDate || "";
-      const endDate = dateButton?.dataset.endDate || "";
-
-      const bookingPath = bookButton.dataset.bookingPath || "/reservation";
-      const bookUrl = new URL(bookingPath, window.location.origin);
-
-      if (startDate) bookUrl.searchParams.set("start_date", startDate);
-      if (endDate) bookUrl.searchParams.set("end_date", endDate);
-      bookUrl.searchParams.set("adults", adults);
-      bookUrl.searchParams.set("children", children);
-
-      window.location.href = bookUrl.toString();
     });
+
+    // Close widget when clicking outside
+    if (bookingWidget && bookingWidgetToggle) {
+      document.addEventListener("click", (e) => {
+        if (
+          !bookingWidget.contains(e.target as Node) &&
+          !calendarDropdown?.contains(e.target as Node)
+        ) {
+          bookingWidgetToggle.checked = false;
+        }
+      });
+    }
+
+    // Close widget and dropdown on Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        if (calendarDropdown && dateButton) {
+          calendarDropdown.classList.add("hidden");
+          dateButton.setAttribute("aria-expanded", "false");
+        }
+        if (bookingWidgetToggle) {
+          bookingWidgetToggle.checked = false;
+        }
+      }
+    });
+
+    // Handle booking
+    if (bookButton) {
+      bookButton.addEventListener("click", () => {
+        const adultsSelect = document.getElementById(
+          "adults-select",
+        ) as HTMLSelectElement;
+        const childrenSelect = document.getElementById(
+          "children-select",
+        ) as HTMLSelectElement;
+
+        const adults = adultsSelect?.value || "2";
+        const children = childrenSelect?.value || "0";
+
+        const startDate = dateButton?.dataset.startDate || "";
+        const endDate = dateButton?.dataset.endDate || "";
+
+        const bookingPath = bookButton.dataset.bookingPath || "/reservation";
+        const bookUrl = new URL(bookingPath, window.location.origin);
+
+        if (startDate) bookUrl.searchParams.set("start_date", startDate);
+        if (endDate) bookUrl.searchParams.set("end_date", endDate);
+        bookUrl.searchParams.set("adults", adults);
+        bookUrl.searchParams.set("children", children);
+
+        window.location.href = bookUrl.toString();
+      });
+    }
   }
+
+  initBookingWidget();
+  document.addEventListener("astro:page-load", initBookingWidget);
 </script>

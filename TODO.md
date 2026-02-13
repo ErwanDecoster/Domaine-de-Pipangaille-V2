@@ -4,7 +4,6 @@
 
 - [ ] Update robot.txt
 - [ ] Check all alt text
-- [ ] Add redirection for all old page to URL to new one
 - [ ] update site URL in astro config file
 
 ## Translations

@@ -64,8 +64,10 @@ export const contact = {
         const errors = validationResult.error.flatten().fieldErrors;
         throw new ActionError({
           code: "BAD_REQUEST",
-          message: getTranslation(lang, "contact.error.title"),
-          fields: errors,
+          message:
+            getTranslation(lang, "contact.error.title") +
+            ": " +
+            JSON.stringify(errors),
         });
       }
       try {

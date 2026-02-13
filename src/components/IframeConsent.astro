@@ -57,25 +57,30 @@ const hostname = (() => {
   const CONSENT_SELECTOR = ".iframe-consent";
   const BUTTON_SELECTOR = "[data-consent-button]";
 
-  document.querySelectorAll(CONSENT_SELECTOR).forEach((element) => {
-    const src = element.getAttribute("data-iframe-src");
-    const hostPath = getHostPath(src);
-    const consentKey = `iframe-consent-${hostPath ?? src ?? "unknown"}`;
-    const button = element.querySelector(
-      BUTTON_SELECTOR,
-    ) as HTMLButtonElement | null;
+  function initIframeConsent() {
+    document.querySelectorAll(CONSENT_SELECTOR).forEach((element) => {
+      const src = element.getAttribute("data-iframe-src");
+      const hostPath = getHostPath(src);
+      const consentKey = `iframe-consent-${hostPath ?? src ?? "unknown"}`;
+      const button = element.querySelector(
+        BUTTON_SELECTOR,
+      ) as HTMLButtonElement | null;
 
-    // Check if consent was already given
-    if (localStorage.getItem(consentKey)) {
-      loadIframe(element);
-      return;
-    }
+      // Check if consent was already given
+      if (localStorage.getItem(consentKey)) {
+        loadIframe(element);
+        return;
+      }
 
-    button?.addEventListener("click", () => {
-      localStorage.setItem(consentKey, "true");
-      loadIframe(element);
+      button?.addEventListener("click", () => {
+        localStorage.setItem(consentKey, "true");
+        loadIframe(element);
+      });
     });
-  });
+  }
+
+  initIframeConsent();
+  document.addEventListener("astro:page-load", initIframeConsent);
 
   function getHostPath(url?: string | null) {
     if (!url) return null;

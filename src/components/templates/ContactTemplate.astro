@@ -160,31 +160,36 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
     </form>
 
     <script>
-      const form = document.getElementById(
-        "contact-form",
-      ) as HTMLFormElement | null;
-      const submitBtn = document.getElementById(
-        "submit-btn",
-      ) as HTMLButtonElement | null;
+      function initContactForm() {
+        const form = document.getElementById(
+          "contact-form",
+        ) as HTMLFormElement | null;
+        const submitBtn = document.getElementById(
+          "submit-btn",
+        ) as HTMLButtonElement | null;
 
-      if (form) {
-        form.addEventListener("submit", () => {
-          if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.setAttribute("aria-busy", "true");
+        if (form) {
+          form.addEventListener("submit", () => {
+            if (submitBtn) {
+              submitBtn.disabled = true;
+              submitBtn.setAttribute("aria-busy", "true");
+            }
+            form.style.opacity = "0.6";
+            form.style.pointerEvents = "none";
+          });
+        }
+
+        if (window.location.search.includes("_action")) {
+          const url = new URL(window.location.href);
+          if (url.searchParams.has("_action")) {
+            url.searchParams.delete("_action");
+            window.history.replaceState({}, document.title, url.toString());
           }
-          form.style.opacity = "0.6";
-          form.style.pointerEvents = "none";
-        });
-      }
-
-      if (window.location.search.includes("_action")) {
-        const url = new URL(window.location.href);
-        if (url.searchParams.has("_action")) {
-          url.searchParams.delete("_action");
-          window.history.replaceState({}, document.title, url.toString());
         }
       }
+
+      initContactForm();
+      document.addEventListener("astro:page-load", initContactForm);
     </script>
     <div class="flex grow flex-col gap-16 lg:max-w-96">
       <div class="flex w-full flex-wrap lg:flex-col">
@@ -236,9 +241,9 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
           </MapProviderDialog>
         </div>
       </div>
-      <div class="self-end">
+      <div class="w-full grow self-end">
         <IframeConsent
-          class="aspect-video"
+          class="h-full min-h-96 lg:min-h-0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7639163355725!2d4.807639176440567!3d45.25256654753427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sDomaine%20de%20Pipangaille!5e0!3m2!1sen!2sfr!4v1767979480124!5m2!1sen!2sfr"
           serviceName="Google Maps"
         />

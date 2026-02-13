@@ -28,9 +28,21 @@ const surroundingsInToEat = surroundings.toEat.find(
   (surrounding) => surrounding.slug === surroundingName,
 );
 const surroundingType = surroundingsInToVisit ? "toVisit" : "toEat";
-const otherSurroundings = surroundings[surroundingType].filter(
-  (s) => s.slug !== surroundingName,
+
+const allSurroundings = surroundings[surroundingType];
+const currentIndex = allSurroundings.findIndex(
+  (s) => s.slug === surroundingName,
 );
+
+const reorderedSurroundings =
+  currentIndex !== -1
+    ? [
+        ...allSurroundings.slice(currentIndex + 1),
+        ...allSurroundings.slice(0, currentIndex),
+      ]
+    : allSurroundings.filter((s) => s.slug !== surroundingName);
+
+const otherSurroundings = reorderedSurroundings;
 
 const isNotFound = !surroundingsInToVisit && !surroundingsInToEat;
 
@@ -163,14 +175,6 @@ const shouldShowMediaContent =
         </MediaContent>
       )}
 
-      <OtherSurroundings
-        lang={lang}
-        surroundings={otherSurroundings}
-        title={t(otherSurroundingsTitle)}
-        buttonText={surroundingButtonText}
-        seeAllButtonText={t(seeAllButtonText)}
-        seeAllButtonLink={seeAllButtonLink}
-      />
       <OtherSurroundings
         lang={lang}
         surroundings={otherSurroundings}

@@ -35,18 +35,23 @@ const { review } = Astro.props;
 </div>
 
 <script>
-  document.querySelectorAll("[data-review-content]").forEach((container) => {
-    const preview = container.querySelector(
-      "[data-review-preview]",
-    ) as HTMLElement;
-    const gradient = container.querySelector(
-      "[data-review-gradient]",
-    ) as HTMLElement;
+  function initReviews() {
+    document.querySelectorAll("[data-review-content]").forEach((container) => {
+      const preview = container.querySelector(
+        "[data-review-preview]",
+      ) as HTMLElement;
+      const gradient = container.querySelector(
+        "[data-review-gradient]",
+      ) as HTMLElement;
 
-    if (preview && gradient) {
-      if (preview.scrollHeight > preview.clientHeight) {
-        gradient.style.opacity = "1";
+      if (preview && gradient) {
+        if (preview.scrollHeight > preview.clientHeight) {
+          gradient.style.opacity = "1";
+        }
       }
-    }
-  });
+    });
+  }
+
+  initReviews();
+  document.addEventListener("astro:page-load", initReviews);
 </script>

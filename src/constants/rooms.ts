@@ -15,6 +15,8 @@ import {
   WashingMachine,
   Wifi,
   AirVent,
+  Waves,
+  UtensilsCrossed,
 } from "@lucide/astro";
 
 import africanRoomBathRoomView from "@/images/african-room-bathroom-view.jpeg";
@@ -122,6 +124,14 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
       {
+        icon: Waves,
+        labelKey: "accommodations.rooms.equipments.pool",
+      },
+      {
+        icon: UtensilsCrossed,
+        labelKey: "accommodations.rooms.equipments.breakfast",
+      },
+      {
         icon: ShowerHead,
         labelKey: "accommodations.rooms.equipments.ShowerRoomMoroccan",
       },
@@ -191,6 +201,14 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
       {
+        icon: Waves,
+        labelKey: "accommodations.rooms.equipments.pool",
+      },
+      {
+        icon: UtensilsCrossed,
+        labelKey: "accommodations.rooms.equipments.breakfast",
+      },
+      {
         icon: ShowerHead,
         labelKey: "accommodations.rooms.equipments.ShowerRoomAfrican",
       },
@@ -252,6 +270,14 @@ export const roomsContent: RoomContent[] = [
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
       },
       {
+        icon: Waves,
+        labelKey: "accommodations.rooms.equipments.pool",
+      },
+      {
+        icon: UtensilsCrossed,
+        labelKey: "accommodations.rooms.equipments.breakfast",
+      },
+      {
         icon: ShowerHead,
         labelKey: "accommodations.rooms.equipments.ShowerRoomTuscan",
       },
@@ -308,6 +334,14 @@ export const roomsContent: RoomContent[] = [
       {
         icon: Wifi,
         labelKey: "accommodations.rooms.equipments.freeHighSpeedWifi",
+      },
+      {
+        icon: Waves,
+        labelKey: "accommodations.rooms.equipments.pool",
+      },
+      {
+        icon: UtensilsCrossed,
+        labelKey: "accommodations.rooms.equipments.breakfast",
       },
       {
         icon: ShowerHead,

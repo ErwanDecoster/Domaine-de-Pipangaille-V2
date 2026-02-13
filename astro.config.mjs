@@ -11,6 +11,10 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: "viewport",
+  },
   site: "https://domaine-de-pipangaille-v2.vercel.app",
   image: {
     layout: "constrained",

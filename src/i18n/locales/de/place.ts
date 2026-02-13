@@ -1,14 +1,14 @@
 export const place = {
   "place.header.title": "Der Ort",
   "place.header.text":
-    "Eine 180 Jahre alte ehemalige Magnanerie, das authentische Steinhaus voller Charakter und Charme, wird vom sanften Wirbel der Rhône umspielt. Neben dem Charme des Gebäudes können Sie den Park, den unbeheizten Pool und den Sommerkiosk genießen und sich eine naturverbundene Auszeit gönnen.\n\nWir bieten die Table d'hôtes, einen Bar-Service und süße oder herzhafte Leckereien, einen Außenparkplatz. Das Domaine de Pipangaille liegt in der Nähe der Ausfahrt der Autobahn A7, unweit der Nationalstraße 7, eine Stunde von Lyon und Saint-Étienne, 45 Minuten von Valence entfernt und bietet direkten Zugang zur ViaRhôna, ganz in der Nähe der ViaFluvia, von Fahrradrouten und Wanderwegen.",
+    "Das über 180 Jahre alte Domaine de Pipangaille ist eine ehemalige Seidenraupenzuchtfarm, ein authentisches Steinressort voller Charakter und Charme, gewiegt durch die Nähe der Rhône.\n\nJenseits der Schönheit des Gebäudes genießen Sie einen bewaldeten Park, einen unbeheizt Swimmingpool, der in der Saison geöffnet ist, und einen Sommerpavillon zur Erholung, für eine echte Naturpause im Herzen des Rhonetals.\n\nWir bieten die Table d'hôtes auf Reservierung an, für unsere Chambres d'hôtes-Gäste, einen Bar-Service und süße und herzhafte Leckereien. Kostenloses Parken im Freien steht Ihnen zur Verfügung.\n\nIn Andancette, im Herzen des Rhonetals gelegen, verfügt das Anwesen über direkten Zugang zur ViaRhôna und liegt in unmittelbarer Nähe von ViaFluvia, Radstrecken und Wanderwegen.",
   "place.header.button": "Ein Zimmer buchen",
   "place.services.title": "Räume und Services",
   "place.services.text":
-    "Ein Außenparkplatz, ein Fahrradunterstand, ein unbeheizter Pool, der Pavillon, Entspannungsbereiche an Hof und Garten sowie die Table d’hôtes (für Hausgäste) und die Bar.\n\nLe Comptoir de Pipangaille: Für lokale oder durchreisende Gäste bieten wir am Eingang des Anwesens auf der überdachten, von Grün umgebenen Terrasse eine zeitlose Pause. Herzhaftes Angebot: Bruschettas, Ravioli, Bowls & Salate, Aufschnitt- und Käseplatten … Süßes Angebot: Eis (15 Sorten), Waffeln, Crêpes, knuspriges Granola.",
+    "Das Anwesen wurde für Ihren Komfort gestaltet und bietet kostenloses Parken im Freien, einen sicheren Unterstand für Fahrräder, einen unbeheizt Swimmingpool in der Saison, einen Sommerpavillon und Ruhezonen auf dem Innenhof und im Garten.\n\nDie Table d'hôtes wird auf Reservierung angeboten und ist den Übernachtungsgästen vorbehalten. Ein Bar-Service ist auch vor Ort verfügbar.",
   "place.events.title": "Veranstaltungen organisieren",
   "place.events.text":
-    "Ein Ort für eine private Feier, einen Brunch, ein Seminar, ein Meeting oder ein geschäftliches Treffen – kontaktieren Sie uns, wir stellen unseren Speiseraum mit Catering- und Getränkeservice zur Verfügung.",
+    "Das Domaine de Pipangaille ist auch ein geeigneter Veranstaltungsort für die Organisation von privaten und geschäftlichen Veranstaltungen: Geburtstag, Brunch, Seminar, Treffen oder Geschäftstreffen.\n\nWir stellen unseren Speisesaal zur Verfügung und bieten Catering und Getränke auf Anfrage an.\n\nFür alle individuellen Anfragen wenden Sie sich bitte an uns, um Ihr Projekt gemeinsam zu studieren.",
   "place.events.button": "Kontakt aufnehmen",
   "place.spotlight.title": "Das Anwesen im Überblick",
   "place.spotlight.gallery1.title": "Der parkartige Garten",

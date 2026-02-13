@@ -1,0 +1,104 @@
+{
+  "redirects": [
+    {
+      "source": "/a-proximite/:path*",
+      "destination": "/alentour/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/a-proximite",
+      "destination": "/les-alentours",
+      "permanent": true
+    },
+    {
+      "source": "/condition-general-de-vente",
+      "destination": "/conditions-generales-vente",
+      "permanent": true
+    },
+    {
+      "source": "/nous-contacter",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/reserver",
+      "destination": "/reservation",
+      "permanent": true
+    },
+    {
+      "source": "/en/accommodation",
+      "destination": "/en/accommodations",
+      "permanent": true
+    },
+    {
+      "source": "/en/book",
+      "destination": "/en/booking",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact-us",
+      "destination": "/en/contact",
+      "permanent": true
+    },
+    {
+      "source": "/en/general-condition-of-sale",
+      "destination": "/en/terms-and-conditions",
+      "permanent": true
+    },
+    {
+      "source": "/en/legal-notice",
+      "destination": "/en/legal-notices",
+      "permanent": true
+    },
+    {
+      "source": "/en/near/:path*",
+      "destination": "/en/surrounding/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/near/:path*",
+      "destination": "/es/alrededor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es/a-proximidad",
+      "destination": "/en/surroundings",
+      "permanent": true
+    },
+    {
+      "source": "/es/a-proximidad",
+      "destination": "/es/alrededores",
+      "permanent": true
+    },
+    {
+      "source": "/es/alojamiento",
+      "destination": "/es/alojamientos",
+      "permanent": true
+    },
+    {
+      "source": "/es/condiciones-generales-de-venta",
+      "destination": "/es/condiciones-generales-venta",
+      "permanent": true
+    },
+    {
+      "source": "/es/cont%C3%A1ctenos",
+      "destination": "/es/contact",
+      "permanent": true
+    },
+    {
+      "source": "/es/contáctenos",
+      "destination": "/es/contact",
+      "permanent": true
+    },
+    {
+      "source": "/es/notas-legales",
+      "destination": "/es/menciones-legales",
+      "permanent": true
+    },
+    {
+      "source": "/es/reservar",
+      "destination": "/es/reserva",
+      "permanent": true
+    }
+  ]
+}

@@ -6,9 +6,9 @@ export const accommodations = {
   "accommodations.rooms.button": "View the room",
   "accommodations.rooms.marocaine.title": "Moroccan Room",
   "accommodations.rooms.marocaine.description":
-    "The Moroccan suite, with a warm atmosphere inspired by riads and natural materials, is ideal for a couple seeking escape and a romantic moment. This room can accommodate a couple with one child.",
+    "The Moroccan suite, with a warm atmosphere inspired by riads and natural materials, is ideal for a couple seeking escape and a romantic moment. This room can accommodate a couple with one child. This room has a 1.8 x 2 m bed that can be separated into twin beds.",
   "accommodations.rooms.marocaine.longDescription":
-    "The Moroccan atmosphere with warm colors will transport you in this room, suitable for 2 adults and one child or for a romantic stay. Garden view and courtyard view, it features a 1.80 m x 2 m bed, convertible into two single beds, a large sofa (convertible into a child's bed), double vanity, large walk-in tadelakt shower, separate toilet, storage. Air conditioning ensures optimal comfort in summer.",
+    "This 21 m² suite breathes the Moroccan atmosphere with warm colors that will transport you. Suitable for 2 adults and a child or for a romantic getaway, with garden and courtyard views, it features a 1.8 m x 2 m bed convertible into two single beds, a large sofa (convertible into a child's bed), double vanity, large walk-in tadelakt shower, separate toilet and storage. Air conditioning ensures optimal comfort in summer.",
   "accommodations.rooms.marocaine.gallery.image1": "Moroccan suite – main view",
   "accommodations.rooms.marocaine.gallery.image2":
     "Moroccan suite – textiles and natural materials",
@@ -23,9 +23,9 @@ export const accommodations = {
   "accommodations.rooms.marocaine.tags.couple": "Couple",
   "accommodations.rooms.africaine.title": "African Room",
   "accommodations.rooms.africaine.description":
-    "The African room with a safari-inspired atmosphere and unique decor, ideal for a couple, friends or professionals.",
+    "The African room with a safari-inspired atmosphere and unique decoration, ideal for a couple, friends or professionals. This room has a 1.8 x 2 m bed that can be separated into twin beds.",
   "accommodations.rooms.africaine.longDescription":
-    "This 18 m² room with garden view and safari accents offers a 1.80 x 2 m bed convertible into 2 single beds, a desk with 2 chairs, a washbasin, a walk-in tadelakt shower, separate toilet and storage. Ideal for cyclists passing through on the ViaRhôna, this air-conditioned room allows you to recover before the next stage.",
+    "This 17 m² room with safari accents and garden view transports you under the African stars. It features a 1.8 x 2 m bed convertible into 2 single beds, a desk with 2 chairs, a washbasin, a walk-in tadelakt shower, separate toilet and storage. Ideal for cyclists passing through on the ViaRhôna, this air-conditioned room allows you to recover before the next stage.",
   "accommodations.rooms.africaine.gallery.image1": "African room – main view",
   "accommodations.rooms.africaine.gallery.image2":
     "African room – natural light flooding the space",
@@ -43,9 +43,9 @@ export const accommodations = {
     "This room can be set up as twin beds or a 180 x 200 cm double bed. Please share your preference when booking.",
   "accommodations.rooms.toscane.title": "Tuscan Room",
   "accommodations.rooms.toscane.description":
-    "The Tuscan room, inspired by Italy, combines romance and passion with its pastel colors. Ideal for a couple seeking a moment of serenity.",
+    "The Tuscan room, inspired by Italy, combines romance and passion with its pastel colors. Ideal for a couple seeking a moment of serenity. This room has a 1.6 x 2 m bed.",
   "accommodations.rooms.toscane.longDescription":
-    "A 17 m² room with Tuscan-inspired decor that transports you into a romantic Italian cocoon. This garden-view room offers a 1.60 x 2 m bed, a walk-in shower, a washbasin, separate toilet, a high wall table with 2 stools and storage. It is equipped with air conditioning for peaceful nights.",
+    "A 17 m² room with Tuscan-inspired decor that transports you into a romantic Italian cocoon. This garden-view room offers a 1.6 x 2 m bed, a walk-in shower, a washbasin, separate toilet, a high wall table with 2 stools and storage. It is equipped with air conditioning for peaceful nights.",
   "accommodations.rooms.toscane.gallery.image1": "Tuscan room – main view",
   "accommodations.rooms.toscane.gallery.image2":
     "Tuscan room – terracotta textiles",
@@ -83,8 +83,10 @@ export const accommodations = {
     "180 cm double bed convertible into twins",
   "accommodations.rooms.equipments.doubleBed160": "160 x 200 cm double bed",
   "accommodations.rooms.equipments.freeHighSpeedWifi":
-    "Fast complimentary Wi-Fi",
+    "Fast complimentary Wi-Fi up to 600 Mbps",
   "accommodations.rooms.equipments.airConditioning": "Air conditioning",
+  "accommodations.rooms.equipments.pool": "Unheated pool in season",
+  "accommodations.rooms.equipments.breakfast": "Breakfast",
   "accommodations.rooms.equipments.ShowerRoom": "Private bathroom",
   "accommodations.rooms.equipments.ShowerRoomMoroccan":
     "Double vanity, large walk-in shower, separate toilet",

@@ -7,6 +7,7 @@ import "@fontsource/barlow/400.css";
 import "@fontsource/barlow/700.css";
 import { getLangFromUrl, useTranslations } from "../lib/i18n";
 import BookingWidget from "@/components/BookingWidgetAstro.astro";
+import { ClientRouter } from "astro:transitions";
 
 type Props = {
   bodyClass?: string;
@@ -68,6 +69,8 @@ const siteUrl = "https://domaine-de-pipangaille.fr";
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <ClientRouter />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
