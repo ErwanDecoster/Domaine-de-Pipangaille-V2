@@ -196,6 +196,15 @@ export const surroundings = {
     "Façade du Hangar N7 à Andancette",
   "surroundings.restaurant_de_la_treille.gallery.image1":
     "Restaurant de la Treille à Champagne",
+  "surroundings.slidesparc.gallery.image1":
+    "Parcours aquatique gonflable du Slidesparc sur le lac",
+  "surroundings.cave_saint_desirat.gallery.image1":
+    "Cave et vignobles de Saint-Désirat",
+  "surroundings.accrod_ailes.gallery.image1":
+    "Parapente au-dessus de la vallée du Rhône",
+  "surroundings.la_vallee.gallery.image1": "Restaurant La Vallée à Peyraud",
+  "surroundings.le_lieu.gallery.image1":
+    "Cour intérieure et terrasse du Lieu à Annonay",
   "surroundings.descriptions.les_agapons.short":
     "Restaurant d'authentique cuisine française à Manthes, cuisine maison de qualité avec produits locaux.",
   "surroundings.descriptions.les_agapons.long":
@@ -212,6 +221,26 @@ export const surroundings = {
     "Restaurant traditionnel proposant une cuisine française régionale dans un cadre calme et verdoyant.",
   "surroundings.descriptions.restaurant_de_la_treille.long":
     "Le Restaurant de la Treille est situé à Champagne, à quelques minutes d'Andancette, au cœur d'un environnement rural et viticole. Il propose une cuisine française traditionnelle mettant en avant des recettes du terroir et des produits régionaux. L'établissement dispose d'une salle chaleureuse ainsi que d'une terrasse agréable en saison. C'est une adresse appréciée pour un repas authentique, dans un cadre paisible, idéale pour une étape gourmande lors d'un séjour dans la vallée du Rhône.",
+  "surroundings.descriptions.slidesparc.short":
+    "Parc aquatique gonflable sur le lac des Vernets : glissades, sauts et rires pour toute la famille.",
+  "surroundings.descriptions.slidesparc.long":
+    "Le Slidesparc vous propose une activité ludique sur l'eau avec un parcours aquatique gonflable de plus de 1500m². Des glissades, des sauts, des rires sont au rendez-vous à chaque instant ! Accessible aux enfants à partir de 7 ans sachant nager et aux adultes. Idéal pour les centres aérés, colonies de vacances, anniversaires, enterrements de vie de jeune fille ou de garçon, comités d'entreprise. Location de pédalos et paddles également disponible. Situé sur la base de loisirs du lac des Vernets avec un plan d'eau de plus de 4,5 ha entouré d'un parc de 11 ha ombragés, parfait pour le pique-nique. Un coin snack et une plage délimitée et surveillée sont à votre disposition.",
+  "surroundings.descriptions.cave_saint_desirat.short":
+    "Cave coopérative produisant des vins d'exception : AOP Saint-Joseph, Condrieu et Côtes du Rhône.",
+  "surroundings.descriptions.cave_saint_desirat.long":
+    "Depuis 1960, la Cave de Saint-Désirat est située sur les terrasses qui bordent la rive droite du Rhône, dans l'AOP Saint-Joseph. Avec près de 600 hectares, plus de 350 vignerons, des vendanges manuelles, une vinification contrôlée et du matériel performant, la cave produit des grands vins : AOP Saint-Joseph, AOP Condrieu, AOP Côtes du Rhône et vins de Pays d'Ardèche. Visitez les caveaux pour découvrir ces vins médaillés, dont la cuvée Côte Diane 2021 élue meilleur vin de la Vallée du Rhône au Concours International de Lyon.",
+  "surroundings.descriptions.accrod_ailes.short":
+    "Club de parapente en Ardèche proposant des vols sur plusieurs sites exceptionnels.",
+  "surroundings.descriptions.accrod_ailes.long":
+    "Venez découvrir le parapente en Ardèche avec Accro d'Ailes ! Le club propose des vols sur plusieurs sites magnifiques : Saint-Désirat, Burdignes-Nord, Burdignes-Grand Tony et Saint-Clair. Que vous soyez de passage dans la région ou passionné de vol libre, rejoignez la communauté sur Discord pour partager cette expérience unique. Profitez de paysages exceptionnels et vivez un moment de totale liberté au-dessus de la vallée du Rhône et des monts d'Ardèche.",
+  "surroundings.descriptions.la_vallee.short":
+    "Restaurant et hébergement à Peyraud proposant une cuisine généreuse avec des produits frais et locaux.",
+  "surroundings.descriptions.la_vallee.long":
+    "La Vallée est un restaurant situé à Peyraud qui propose une cuisine généreuse préparée avec des produits frais. Au menu : une carte qui change tous les mois (entrée-plat-dessert à 35€), un menu pierrade à 27€ avec sélection de viandes cuites sur pierre chaude, et un menu du midi du mercredi au vendredi. L'établissement dispose également de chambres familiales et doubles pour prolonger votre séjour. Ouvert du mercredi au dimanche, avec une ambiance conviviale et chaleureuse.",
+  "surroundings.descriptions.le_lieu.short":
+    "Restaurant, bar à vin et salon de thé à Annonay, lieu de vie culturel et artistique.",
+  "surroundings.descriptions.le_lieu.long":
+    "Le Lieu est un espace de vie unique au cœur d'Annonay, articulé autour d'une cour intérieure. C'est à la fois un restaurant, un bar à vin et un salon de thé proposant une cuisine simple, saine et créative dans une ambiance colorée. L'équipe partage son enthousiasme avec des plats généreux préparés avec des produits locaux et bio. Le Lieu accueille également des événements culturels : concerts, expositions, festivals, projections, stages... Un endroit porté par une éthique humaine et environnementale, en résonance avec la vie culturelle et commerçante du territoire. Terrasse agréable pour profiter de moments de partage entre amis.",
   "surroundings.detail.book": "Réserver",
   "surroundings.detail.call": "Appeler",
   "surroundings.detail.socialNetworks": "Réseaux sociaux",

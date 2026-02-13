@@ -135,6 +135,26 @@ export const surroundings = {
     "Op het menu: 100% huisgemaakte burgers, gestoofd vlees of snacks, plankjes om te delen, vega-opties en verse friet.",
   "surroundings.descriptions.o_daily_truck.long":
     "De kaart biedt 100% huisgemaakte burgers, vlees in saus of snacks, charcuterie- en kaasplanken om te delen, vegetarische schotels en versgesneden friet.\n\nHet team wisselt de suggesties om seizoensproducten te laten schitteren: Italiaanse of Spaanse charcuterie, kazen uit onze streken of de Zwitserse bergen, groenten en fruit van lokale telers, Aubrac-rund, streekgevogelte en kruiden van de Drôme-heuvels.\n\nEr zijn ook huisgemaakte desserts: chocolademousse, taarten, zijdezachte panna cotta en ambachtelijk ijs.",
+  "surroundings.descriptions.slidesparc.short":
+    "Opblaasbaar waterpark op het Lac des Vernets: glijbanen, sprongen en gelach voor het hele gezin.",
+  "surroundings.descriptions.slidesparc.long":
+    "Slidesparc biedt een ludiek waterattractie met een opblaasbaar waterparcours van meer dan 1500m². Glijbanen, sprongen en gelach volgen elkaar op! Toegankelijk voor zwemvaardige kinderen vanaf 7 jaar en volwassenen. Ideaal voor jeugdcentra, vakantiekampen, verjaardagen, vrijgezellenfeesten en bedrijfsevenementen. Verhuur van waterfietsen en paddelboards ook beschikbaar. Gelegen bij de recreatiebasis van het Lac des Vernets met een wateroppervlak van meer dan 4,5 hectare omringd door een schaduwrijk park van 11 hectare, perfect om te picknicken. Een snackhoek en een afgebakend, bewaakt strand staan tot uw beschikking.",
+  "surroundings.descriptions.cave_saint_desirat.short":
+    "Coöperatieve wijnkelder die uitzonderlijke wijnen produceert: AOP Saint-Joseph, Condrieu en Côtes du Rhône.",
+  "surroundings.descriptions.cave_saint_desirat.long":
+    "Sinds 1960 ligt de Cave de Saint-Désirat op de terrassen langs de rechteroever van de Rhône, in de AOP Saint-Joseph. Met bijna 600 hectare, meer dan 350 wijnbouwers, handmatige oogst, gecontroleerde vinificatie en performante uitrusting produceert de kelder grote wijnen: AOP Saint-Joseph, AOP Condrieu, AOP Côtes du Rhône en landwijnen van de Ardèche. Bezoek de kelders om deze bekroonde wijnen te ontdekken, waaronder de cuvée Côte Diane 2021 verkozen tot beste wijn van de Rhônevallei op de Internationale Wedstrijd van Lyon.",
+  "surroundings.descriptions.accrod_ailes.short":
+    "Paraglidingclub in de Ardèche met vluchten vanaf verschillende uitzonderlijke locaties.",
+  "surroundings.descriptions.accrod_ailes.long":
+    "Kom paragliding ontdekken in de Ardèche met Accro d'Ailes! De club biedt vluchten vanaf meerdere prachtige locaties: Saint-Désirat, Burdignes-Nord, Burdignes-Grand Tony en Saint-Clair. Of u nu op doorreis bent in de regio of een gepassioneerde vrijvlieger, sluit u aan bij de community op Discord om deze unieke ervaring te delen. Geniet van uitzonderlijke landschappen en ervaar een moment van totale vrijheid boven de Rhônevallei en de Ardèche-bergen.",
+  "surroundings.descriptions.la_vallee.short":
+    "Restaurant en accommodatie in Peyraud met genereuze keuken met verse, lokale producten.",
+  "surroundings.descriptions.la_vallee.long":
+    "La Vallée is een restaurant in Peyraud dat een genereuze keuken biedt, bereid met verse producten. Op het menu: een maandelijks wisselende kaart (voorgerecht-hoofdgerecht-dessert voor €35), een pierrade-menu voor €27 met een selectie vlees gebakken op hete steen, en een lunchmenu van woensdag tot vrijdag. De zaak beschikt ook over familiekamers en tweepersoonskamers om uw verblijf te verlengen. Geopend van woensdag tot zondag, met een gezellige en warme sfeer.",
+  "surroundings.descriptions.le_lieu.short":
+    "Restaurant, wijnbar en theesalon in Annonay, culturele en artistieke ontmoetingsplek.",
+  "surroundings.descriptions.le_lieu.long":
+    "Le Lieu is een unieke levensplek in het hart van Annonay, rond een binnenhof. Het is tegelijk restaurant, wijnbar en thesalon en biedt een eenvoudige, gezonde en creatieve keuken in een kleurrijke sfeer. Het team deelt zijn enthousiasme met genereuze gerechten bereid met lokale en biologische producten. Le Lieu ontvangt ook culturele evenementen: concerten, tentoonstellingen, festivals, filmvoorstellingen, workshops... Een plek gedreven door menselijke en ecologische ethiek, in resonantie met het culturele en commerciële leven van het gebied. Aangenaam terras om te genieten van momenten van delen met vrienden.",
   "surroundings.detail.otherActivities.title":
     "Andere activiteiten om te ontdekken",
   "surroundings.detail.otherRestaurants.title":
@@ -200,6 +220,15 @@ export const surroundings = {
     "Gevel van Le Hangar N7 in Andancette",
   "surroundings.restaurant_de_la_treille.gallery.image1":
     "Restaurant de la Treille in Champagne",
+  "surroundings.slidesparc.gallery.image1":
+    "Opblaasbaar waterparcours van Slidesparc op het meer",
+  "surroundings.cave_saint_desirat.gallery.image1":
+    "Wijnkelder en wijngaarden van Saint-Désirat",
+  "surroundings.accrod_ailes.gallery.image1":
+    "Paragliding boven de Rhônevallei",
+  "surroundings.la_vallee.gallery.image1": "Restaurant La Vallée in Peyraud",
+  "surroundings.le_lieu.gallery.image1":
+    "Binnenhof en terras van Le Lieu in Annonay",
   "surroundings.descriptions.les_agapons.short":
     "Restaurant met authentieke Franse keuken in Manthes, huisgemaakte kwaliteitskeuken met lokale en regionale producten.",
   "surroundings.descriptions.les_agapons.long":

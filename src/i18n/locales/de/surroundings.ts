@@ -136,6 +136,26 @@ export const surroundings = {
     "Auf der Karte: 100 % hausgemachte Burger, Schmorgerichte oder Snacks, Sharing-Platten, Veggie-Gerichte und frische Pommes.",
   "surroundings.descriptions.o_daily_truck.long":
     "Auf der Speisekarte stehen 100 % hausgemachte Burger, Fleischgerichte mit Sauce oder Snacks, Aufschnitt- und Käseplatten zum Teilen, vegetarische Optionen und frisch geschnittene Pommes.\n\nDas Team variiert die Angebote, um saisonale Produkte hervorzuheben: italienische oder spanische Charcuterie, Käse aus der Region oder den Schweizer Bergen, Obst und Gemüse lokaler Gärtner, Aubrac-Rind, Geflügel vom Terroir und Kräuter von den Drôme-Hügeln.\n\nAuch Desserts sind hausgemacht: Schokoladenmousse, Tartes, luftig-cremige Panna Cotta und handwerkliche Eiscreme.",
+  "surroundings.descriptions.slidesparc.short":
+    "Aufblasbarer Wasserpark am Lac des Vernets: Rutschen, Sprünge und Lachen für die ganze Familie.",
+  "surroundings.descriptions.slidesparc.long":
+    "Der Slidesparc bietet einen spielerischen Wasserspaß mit einem aufblasbaren Wasserparcours von über 1500 m². Rutschen, Sprünge und Lachen erwarten Sie jederzeit! Zugänglich für schwimmfähige Kinder ab 7 Jahren und Erwachsene. Ideal für Freizeitzentren, Ferienlager, Geburtstage, Junggesellen- oder Junggesellinnenabschiede und Betriebsausflüge. Tret- und Paddelbootverleih ebenfalls verfügbar. Am Freizeitgelände Lac des Vernets mit einem über 4,5 Hektar großen Gewässer, umgeben von einem 11 Hektar großen schattenspendenden Park – perfekt zum Picknicken. Ein Snackbereich und ein abgegrenzter, beaufsichtigter Strand stehen zur Verfügung.",
+  "surroundings.descriptions.cave_saint_desirat.short":
+    "Winzergenossenschaft, die exzellente Weine produziert: AOP Saint-Joseph, Condrieu und Côtes du Rhône.",
+  "surroundings.descriptions.cave_saint_desirat.long":
+    "Seit 1960 liegt die Cave de Saint-Désirat auf den Terrassen, die das rechte Ufer der Rhône in der AOP Saint-Joseph säumen. Mit fast 600 Hektar, über 350 Winzern, manueller Lese, kontrollierter Vinifikation und leistungsstarken Anlagen produziert der Keller große Weine: AOP Saint-Joseph, AOP Condrieu, AOP Côtes du Rhône und Landweine der Ardèche. Besuchen Sie die Weinkeller, um diese preisgekrönten Weine zu entdecken, darunter die Cuvée Côte Diane 2021, die beim Internationalen Wettbewerb in Lyon zum besten Wein des Rhônetals gewählt wurde.",
+  "surroundings.descriptions.accrod_ailes.short":
+    "Gleitschirmclub in der Ardèche mit Flügen von mehreren außergewöhnlichen Standorten.",
+  "surroundings.descriptions.accrod_ailes.long":
+    "Entdecken Sie das Gleitschirmfliegen in der Ardèche mit Accro d'Ailes! Der Club bietet Flüge von mehreren herrlichen Standorten: Saint-Désirat, Burdignes-Nord, Burdignes-Grand Tony und Saint-Clair. Ob Sie in der Region zu Besuch sind oder ein leidenschaftlicher Freiflieger – schließen Sie sich der Community auf Discord an, um dieses einzigartige Erlebnis zu teilen. Genießen Sie außergewöhnliche Landschaften und erleben Sie ein Gefühl völliger Freiheit über dem Rhônetal und den Ardèche-Bergen.",
+  "surroundings.descriptions.la_vallee.short":
+    "Restaurant und Unterkunft in Peyraud mit großzügiger Küche aus frischen, lokalen Produkten.",
+  "surroundings.descriptions.la_vallee.long":
+    "La Vallée ist ein Restaurant in Peyraud, das eine großzügige Küche mit frischen Produkten bietet. Auf der Speisekarte: ein monatlich wechselndes Menü (Vorspeise-Hauptgericht-Dessert für 35 €), ein Pierrade-Menü für 27 € mit einer Auswahl an Fleischsorten, die auf heißem Stein zubereitet werden, und ein Mittagsmenü von Mittwoch bis Freitag. Das Haus verfügt auch über Familien- und Doppelzimmer, um Ihren Aufenthalt zu verlängern. Geöffnet von Mittwoch bis Sonntag, mit einer freundlichen und herzlichen Atmosphäre.",
+  "surroundings.descriptions.le_lieu.short":
+    "Restaurant, Weinbar und Teesalon in Annonay, ein kultureller und künstlerischer Lebensraum.",
+  "surroundings.descriptions.le_lieu.long":
+    "Le Lieu ist ein einzigartiger Lebensraum im Herzen von Annonay, der um einen Innenhof herum angelegt ist. Es ist zugleich Restaurant, Weinbar und Teesalon und bietet eine einfache, gesunde und kreative Küche in farbenfroher Atmosphäre. Das Team teilt seine Begeisterung mit großzügigen Gerichten, die aus lokalen und Bio-Produkten zubereitet werden. Le Lieu beherbergt auch kulturelle Veranstaltungen: Konzerte, Ausstellungen, Festivals, Filmvorführungen, Workshops... Ein Ort, der von menschlicher und ökologischer Ethik getragen wird, im Einklang mit dem kulturellen und kommerziellen Leben der Region. Angenehme Terrasse, um gemeinsame Momente mit Freunden zu genießen.",
   "surroundings.detail.otherActivities.title": "Weitere Aktivitäten entdecken",
   "surroundings.detail.otherRestaurants.title": "Weitere Restaurants entdecken",
   "surroundings.detail.seeAllActivities": "Alle Aktivitäten anzeigen",
@@ -199,6 +219,15 @@ export const surroundings = {
     "Fassade von Le Hangar N7 in Andancette",
   "surroundings.restaurant_de_la_treille.gallery.image1":
     "Restaurant de la Treille in Champagne",
+  "surroundings.slidesparc.gallery.image1":
+    "Aufblasbarer Wasserparcours des Slidesparc auf dem See",
+  "surroundings.cave_saint_desirat.gallery.image1":
+    "Weinkeller und Weinberge von Saint-Désirat",
+  "surroundings.accrod_ailes.gallery.image1":
+    "Gleitschirmfliegen über dem Rhônetal",
+  "surroundings.la_vallee.gallery.image1": "Restaurant La Vallée in Peyraud",
+  "surroundings.le_lieu.gallery.image1":
+    "Innenhof und Terrasse von Le Lieu in Annonay",
   "surroundings.descriptions.les_agapons.short":
     "Authentisches französisches Restaurant in Manthes, hochwertige hausgemachte Küche mit lokalen und regionalen Produkten.",
   "surroundings.descriptions.les_agapons.long":

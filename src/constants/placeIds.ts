@@ -23,6 +23,9 @@ export const placeIds = {
   chateauDeGrignan: "ChIJP-Waa5F6tRIRqSQPdGLv3T0",
   labyrintheVegetal: "ChIJkyWdg5dMtRIR2LOzQEkuVGc",
   domaineGolfAlbon: "ChIJG-loWx4_9UcRCx1fb0knRV0",
+  slidesParc: "ChIJETfztSZH9UcR13yE6uCUuA4",
+  caveSaintDesirat: "ChIJpdoQOAU-9UcR7-ncY1J-Seo",
+  accrodAiles: "ChIJj0pGImQ_9UcRd73Xjw-EtxY",
 
   // Restaurants
   leRelaisMailles: "ChIJ810PqoY_9UcR060-CgNA_q0",
@@ -37,4 +40,6 @@ export const placeIds = {
   lesAgapons: "ChIJL_N9lKox9UcRqiWgOmoeXbw",
   leHangarN7: "ChIJ9WyObGQ-9UcRRCUIezelaqI",
   restaurantDeLaTreille: "ChIJQfWDiQ8-9UcRlpSPl4FKTCA",
+  laVallee: "ChIJy15PVy8W9UcRzQT0TqrgvLk",
+  leLieu: "ChIJ4UMABJkT9UcRlVta8mqFTeQ",
 };

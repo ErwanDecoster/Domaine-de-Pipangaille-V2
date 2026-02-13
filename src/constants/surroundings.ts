@@ -27,6 +27,11 @@ import viarhonaImg from "../images/viarhona.jpg";
 import domaineDuGolfDAlbon from "../images/domaine_du_golf_d_albon.jpg";
 import restaurantLaTreille from "../images/restaurant_la_treille.jpg";
 import leHangarN7BarPub from "../images/le_hangar_n7_bar_pub.jpg";
+import slidesparcImg from "../images/slide-parc.jpg";
+import caveSaintDesiratImg from "../images/cave_saint_desirat.jpeg";
+import accrodAilesImg from "../images/accrod-ailes.jpg";
+import laValleeImg from "../images/la-vallee.jpg";
+import leLieuImg from "../images/le-lieu.jpg";
 
 export const surroundings = {
   toVisit: [
@@ -582,6 +587,67 @@ export const surroundings = {
         tag: "short_scenic_ride",
       },
     },
+    {
+      title: "Slidesparc",
+      category: ["family", "sport"],
+      shortDesc: "surroundings.descriptions.slidesparc.short",
+      longDesc: ["surroundings.descriptions.slidesparc.long"],
+      gallery: [
+        {
+          src: slidesparcImg,
+          altKey: "surroundings.slidesparc.gallery.image1",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.806617695187!2d4.880707076611426!3d45.175739571070814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f54726b5f33711%3A0xeb894e0ea847cd7!2sSlidesparc!5e1!3m2!1sen!2sfr!4v1770977743325!5m2!1sen!2sfr",
+      website: "https://slidesparc.fr/",
+      phoneNumber: "+33 7 67 01 40 96",
+      bookLink: "https://slidesparc.fr/tarifs/",
+      slug: "slidesparc",
+    },
+    {
+      title: "Cave Saint-Désirat",
+      category: ["visit"],
+      shortDesc: "surroundings.descriptions.cave_saint_desirat.short",
+      longDesc: ["surroundings.descriptions.cave_saint_desirat.long"],
+      gallery: [
+        {
+          src: caveSaintDesiratImg,
+          altKey: "surroundings.cave_saint_desirat.gallery.image1",
+        },
+      ],
+      website: "https://cave-saint-desirat.com/",
+      phoneNumber: "+33 4 75 34 22 05",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://fr-fr.facebook.com/cave.saintdesirat/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/cavesaintdesirat/",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.844049331331!2d4.7941911766157315!3d45.26518957107144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e053810daa5%3A0xea497e5263dce9ef!2sCave%20Saint%20d%C3%A9sirat!5e1!3m2!1sen!2sfr!4v1770977799883!5m2!1sen!2sfr",
+      slug: "cave_saint_desirat",
+    },
+    {
+      title: "Accro d'Ailes",
+      category: ["sport", "family"],
+      shortDesc: "surroundings.descriptions.accrod_ailes.short",
+      longDesc: ["surroundings.descriptions.accrod_ailes.long"],
+      gallery: [
+        {
+          src: accrodAilesImg,
+          altKey: "surroundings.accrod_ailes.gallery.image1",
+        },
+      ],
+      website: "https://accrodailes.fr/",
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2205417592213!2d4.7918709766153675!3d45.258408171071274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f6422464a8f%3A0x16b7840f8fd7bd77!2sAccro%20d&#39;Ailes!5e1!3m2!1sen!2sfr!4v1770977911902!5m2!1sen!2sfr",
+      slug: "accrod_ailes",
+    },
   ],
   toEat: [
     {
@@ -962,6 +1028,55 @@ export const surroundings = {
         difficulty: "easy",
         tag: "quick_neighborhood_ride",
       },
+    },
+    {
+      title: "La Vallée",
+      shortDesc: "surroundings.descriptions.la_vallee.short",
+      longDesc: ["surroundings.descriptions.la_vallee.long"],
+      gallery: [
+        {
+          src: laValleeImg,
+          altKey: "surroundings.la_vallee.gallery.image1",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8683.687045608754!2d4.78983066962403!3d45.3005991916053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5162f574f5ecb%3A0xb9bce0aa4ef404cd!2sLa%20Vall%C3%A9e%20-%20Restaurant%20%2F%20Bar%20%2F%20H%C3%A9bergements!5e1!3m2!1sen!2sfr!4v1770977981992!5m2!1sen!2sfr",
+      website: "https://la-vallee.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/p/La-Vall%C3%A9e-61575326498458/",
+        },
+      ],
+      phoneNumber: "+33 4 75 34 82 64",
+      slug: "la_vallee",
+    },
+    {
+      title: "Le Lieu",
+      category: ["loved"],
+      shortDesc: "surroundings.descriptions.le_lieu.short",
+      longDesc: ["surroundings.descriptions.le_lieu.long"],
+      gallery: [
+        {
+          src: leLieuImg,
+          altKey: "surroundings.le_lieu.gallery.image1",
+        },
+      ],
+      website: "https://www.lelieulerestaurant.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/lelieu.fr",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/lelieuannonay/",
+        },
+      ],
+      phoneNumber: "+33 7 81 02 85 25",
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1066019884192!2d4.669696976614631!3d45.24244527107111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f51399040043e1%3A0xe44d856af25a5b95!2sLe%20Lieu!5e1!3m2!1sen!2sfr!4v1770978039268!5m2!1sen!2sfr",
+      slug: "le_lieu",
     },
   ],
 };
