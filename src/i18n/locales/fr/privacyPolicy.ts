@@ -1,6 +1,6 @@
 export const privacyPolicy = {
   "privacyPolicy.title": "Politique de confidentialité",
-  "privacyPolicy.lastUpdate": "Dernière mise à jour : 31 janvier 2026",
+  "privacyPolicy.lastUpdate": "Dernière mise à jour : 14 février 2026",
   "privacyPolicy.intro":
     "La présente politique de confidentialité a pour objectif d'informer les utilisateurs du site domaine-de-pipangaille.fr de la manière dont leurs données personnelles sont collectées, utilisées et protégées, conformément au Règlement (UE) 2016/679 dit Règlement Général sur la Protection des Données (RGPD).",
 
@@ -103,48 +103,68 @@ export const privacyPolicy = {
     ", à laquelle l'utilisateur est invité à se référer avant toute réservation.",
 
   // Section 9
-  "privacyPolicy.section9.title": "9. Cookies et technologies similaires",
+  "privacyPolicy.section9.title": "9. Vercel Web Analytics",
+  "privacyPolicy.section9.intro":
+    "Le site utilise Vercel Web Analytics, un service fourni par Vercel Inc. pour analyser l'utilisation du site.",
   "privacyPolicy.section9.text":
-    "Le site utilise des cookies strictement nécessaires à son fonctionnement ainsi que, le cas échéant, des cookies liés à des services tiers.",
-  "privacyPolicy.section9.activation":
-    "Les cookies non essentiels et les contenus externes ne sont activés qu'après action volontaire ou consentement de l'utilisateur.",
-  "privacyPolicy.section9.manage":
-    "L'utilisateur peut à tout moment modifier ou retirer son consentement via le lien « Gérer les cookies » présent sur le site.",
+    "Vercel Web Analytics collecte des données anonymes sur l'utilisation du site pour nous aider à comprendre comment les utilisateurs interagissent avec le site et à améliorer son fonctionnement. Les données collectées incluent :",
+  "privacyPolicy.section9.item1": "Adresse IP (anonymisée)",
+  "privacyPolicy.section9.item2":
+    "Type et version du navigateur, système d'exploitation",
+  "privacyPolicy.section9.item3":
+    "Pages visitées, chemin de navigation, temps passé sur site",
+  "privacyPolicy.section9.item4":
+    "Source du trafic (moteur de recherche, référent, etc.)",
+  "privacyPolicy.section9.transfer":
+    "Ces données peuvent être transférées vers des serveurs situés en dehors de l'Union européenne, notamment aux États-Unis.",
+  "privacyPolicy.section9.footer":
+    "Vercel Web Analytics traite ces données de manière anonyme et ne stocke pas d'identifiants personnels uniques. Pour plus d'informations sur la manière dont Vercel traite les données, consultez la",
+  "privacyPolicy.section9.footerLink": "politique de confidentialité de Vercel",
+  "privacyPolicy.section9.footerEnd": ".",
 
   // Section 10
-  "privacyPolicy.section10.title": "10. Droits des utilisateurs",
+  "privacyPolicy.section10.title": "10. Cookies et technologies similaires",
   "privacyPolicy.section10.text":
-    "Conformément au RGPD, l'utilisateur dispose des droits suivants :",
-  "privacyPolicy.section10.item1": "Droit d'accès à ses données personnelles",
-  "privacyPolicy.section10.item2": "Droit de rectification",
-  "privacyPolicy.section10.item3": "Droit à l'effacement (droit à l'oubli)",
-  "privacyPolicy.section10.item4": "Droit à la limitation du traitement",
-  "privacyPolicy.section10.item5": "Droit d'opposition au traitement",
-  "privacyPolicy.section10.item6": "Droit à la portabilité des données",
-  "privacyPolicy.section10.exercise":
-    "Pour exercer ses droits, l'utilisateur peut contacter le responsable du traitement :",
-  "privacyPolicy.section10.emailPrefix": "Par email :",
-  "privacyPolicy.section10.addressPrefix": "Par courrier :",
-  "privacyPolicy.section10.delay":
-    "Une réponse sera apportée dans un délai maximal d'un mois.",
+    "Le site utilise des cookies strictement nécessaires à son fonctionnement ainsi que, le cas échéant, des cookies liés à des services tiers.",
+  "privacyPolicy.section10.activation":
+    "Les cookies non essentiels et les contenus externes ne sont activés qu'après action volontaire ou consentement de l'utilisateur.",
+  "privacyPolicy.section10.manage":
+    "L'utilisateur peut à tout moment modifier ou retirer son consentement via le lien « Gérer les cookies » présent sur le site.",
 
   // Section 11
-  "privacyPolicy.section11.title": "11. Sécurité des données",
+  "privacyPolicy.section11.title": "11. Droits des utilisateurs",
   "privacyPolicy.section11.text":
-    "Le responsable du traitement met en œuvre toutes les mesures techniques et organisationnelles appropriées afin de garantir la sécurité et la confidentialité des données personnelles et d'empêcher leur accès non autorisé.",
+    "Conformément au RGPD, l'utilisateur dispose des droits suivants :",
+  "privacyPolicy.section11.item1": "Droit d'accès à ses données personnelles",
+  "privacyPolicy.section11.item2": "Droit de rectification",
+  "privacyPolicy.section11.item3": "Droit à l'effacement (droit à l'oubli)",
+  "privacyPolicy.section11.item4": "Droit à la limitation du traitement",
+  "privacyPolicy.section11.item5": "Droit d'opposition au traitement",
+  "privacyPolicy.section11.item6": "Droit à la portabilité des données",
+  "privacyPolicy.section11.exercise":
+    "Pour exercer ses droits, l'utilisateur peut contacter le responsable du traitement :",
+  "privacyPolicy.section11.emailPrefix": "Par email :",
+  "privacyPolicy.section11.addressPrefix": "Par courrier :",
+  "privacyPolicy.section11.delay":
+    "Une réponse sera apportée dans un délai maximal d'un mois.",
 
   // Section 12
-  "privacyPolicy.section12.title": "12. Réclamation",
+  "privacyPolicy.section12.title": "12. Sécurité des données",
   "privacyPolicy.section12.text":
-    "Si l'utilisateur estime, après nous avoir contactés, que ses droits ne sont pas respectés, il peut introduire une réclamation auprès de l'autorité de contrôle compétente :",
-  "privacyPolicy.section12.authority":
-    "CNIL – Commission Nationale de l'Informatique et des Libertés",
+    "Le responsable du traitement met en œuvre toutes les mesures techniques et organisationnelles appropriées afin de garantir la sécurité et la confidentialité des données personnelles et d'empêcher leur accès non autorisé.",
 
   // Section 13
-  "privacyPolicy.section13.title":
-    "13. Modification de la politique de confidentialité",
+  "privacyPolicy.section13.title": "13. Réclamation",
   "privacyPolicy.section13.text":
+    "Si l'utilisateur estime, après nous avoir contactés, que ses droits ne sont pas respectés, il peut introduire une réclamation auprès de l'autorité de contrôle compétente :",
+  "privacyPolicy.section13.authority":
+    "CNIL – Commission Nationale de l'Informatique et des Libertés",
+
+  // Section 14
+  "privacyPolicy.section14.title":
+    "14. Modification de la politique de confidentialité",
+  "privacyPolicy.section14.text":
     "La présente politique de confidentialité peut être modifiée à tout moment afin de rester conforme aux évolutions légales et réglementaires.",
-  "privacyPolicy.section13.footer":
+  "privacyPolicy.section14.footer":
     "Les utilisateurs sont invités à la consulter régulièrement.",
 };

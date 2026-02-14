@@ -1,6 +1,6 @@
 export const privacyPolicy = {
   "privacyPolicy.title": "Datenschutzerklärung",
-  "privacyPolicy.lastUpdate": "Letzte Aktualisierung: 31. Januar 2026",
+  "privacyPolicy.lastUpdate": "Letzte Aktualisierung: 14. Februar 2026",
   "privacyPolicy.intro":
     "Diese Datenschutzerklärung soll die Nutzer der Website domaine-de-pipangaille.fr darüber informieren, wie ihre personenbezogenen Daten gemäß der Verordnung (EU) 2016/679, bekannt als Datenschutz-Grundverordnung (DSGVO), erfasst, verwendet und geschützt werden.",
 
@@ -102,47 +102,66 @@ export const privacyPolicy = {
     ", die Nutzer vor jeder Buchung konsultieren sollten.",
 
   // Section 9
-  "privacyPolicy.section9.title": "9. Cookies und ähnliche Technologien",
+  "privacyPolicy.section9.title": "9. Vercel Web Analytics",
+  "privacyPolicy.section9.intro":
+    "Die Website verwendet Vercel Web Analytics, einen von Vercel Inc. bereitgestellten Service zur Analyse der Website-Nutzung.",
   "privacyPolicy.section9.text":
-    "Die Website verwendet streng notwendige Cookies für ihren Betrieb sowie gegebenenfalls Cookies im Zusammenhang mit Drittanbieterdiensten.",
-  "privacyPolicy.section9.activation":
-    "Nicht wesentliche Cookies und externe Inhalte werden nur nach freiwilliger Aktion oder Zustimmung des Nutzers aktiviert.",
-  "privacyPolicy.section9.manage":
-    "Nutzer können ihre Zustimmung jederzeit über den Link 'Cookies verwalten' auf der Website ändern oder widerrufen.",
+    "Vercel Web Analytics sammelt anonymisierte Daten über die Website-Nutzung, um uns zu helfen, zu verstehen, wie Benutzer mit der Website interagieren, und um deren Betrieb zu verbessern. Die gesammelten Daten umfassen:",
+  "privacyPolicy.section9.item1": "IP-Adresse (anonymisiert)",
+  "privacyPolicy.section9.item2": "Browsertyp und -version, Betriebssystem",
+  "privacyPolicy.section9.item3":
+    "Besuchte Seiten, Navigationspfad, auf der Website verbrachte Zeit",
+  "privacyPolicy.section9.item4":
+    "Verkehrsquelle (Suchmaschine, Referrer, etc.)",
+  "privacyPolicy.section9.transfer":
+    "Diese Daten können auf Server außerhalb der Europäischen Union übertragen werden, besonders in die Vereinigten Staaten.",
+  "privacyPolicy.section9.footer":
+    "Vercel Web Analytics verarbeitet diese Daten anonym und speichert keine eindeutigen persönlichen Identifikatoren. Für weitere Informationen dazu, wie Vercel Daten verarbeitet, lesen Sie bitte ihre",
+  "privacyPolicy.section9.footerLink": "Datenschutzrichtlinie",
+  "privacyPolicy.section9.footerEnd": ".",
 
   // Section 10
-  "privacyPolicy.section10.title": "10. Nutzerrechte",
-  "privacyPolicy.section10.text": "Gemäß DSGVO haben Nutzer folgende Rechte:",
-  "privacyPolicy.section10.item1":
-    "Recht auf Zugang zu ihren personenbezogenen Daten",
-  "privacyPolicy.section10.item2": "Recht auf Berichtigung",
-  "privacyPolicy.section10.item3":
-    "Recht auf Löschung (Recht auf Vergessenwerden)",
-  "privacyPolicy.section10.item4": "Recht auf Einschränkung der Verarbeitung",
-  "privacyPolicy.section10.item5": "Widerspruchsrecht gegen die Verarbeitung",
-  "privacyPolicy.section10.item6": "Recht auf Datenübertragbarkeit",
-  "privacyPolicy.section10.exercise":
-    "Um ihre Rechte auszuüben, können Nutzer den Verantwortlichen kontaktieren:",
-  "privacyPolicy.section10.emailPrefix": "Per E-Mail:",
-  "privacyPolicy.section10.addressPrefix": "Per Post:",
-  "privacyPolicy.section10.delay":
-    "Eine Antwort wird innerhalb maximal eines Monats gegeben.",
+  "privacyPolicy.section10.title": "10. Cookies und ähnliche Technologien",
+  "privacyPolicy.section10.text":
+    "Die Website verwendet streng notwendige Cookies für ihren Betrieb sowie gegebenenfalls Cookies im Zusammenhang mit Drittanbieterdiensten.",
+  "privacyPolicy.section10.activation":
+    "Nicht wesentliche Cookies und externe Inhalte werden nur nach freiwilliger Aktion oder Zustimmung des Nutzers aktiviert.",
+  "privacyPolicy.section10.manage":
+    "Nutzer können ihre Zustimmung jederzeit über den Link 'Cookies verwalten' auf der Website ändern oder widerrufen.",
 
   // Section 11
-  "privacyPolicy.section11.title": "11. Datensicherheit",
-  "privacyPolicy.section11.text":
-    "Der Verantwortliche setzt alle geeigneten technischen und organisatorischen Maßnahmen um, um die Sicherheit und Vertraulichkeit personenbezogener Daten zu gewährleisten und unbefugten Zugriff zu verhindern.",
+  "privacyPolicy.section11.title": "11. Nutzerrechte",
+  "privacyPolicy.section11.text": "Gemäß DSGVO haben Nutzer folgende Rechte:",
+  "privacyPolicy.section11.item1":
+    "Recht auf Zugang zu ihren personenbezogenen Daten",
+  "privacyPolicy.section11.item2": "Recht auf Berichtigung",
+  "privacyPolicy.section11.item3":
+    "Recht auf Löschung (Recht auf Vergessenwerden)",
+  "privacyPolicy.section11.item4": "Recht auf Einschränkung der Verarbeitung",
+  "privacyPolicy.section11.item5": "Widerspruchsrecht gegen die Verarbeitung",
+  "privacyPolicy.section11.item6": "Recht auf Datenübertragbarkeit",
+  "privacyPolicy.section11.exercise":
+    "Um ihre Rechte auszuüben, können Nutzer den Verantwortlichen kontaktieren:",
+  "privacyPolicy.section11.emailPrefix": "Per E-Mail:",
+  "privacyPolicy.section11.addressPrefix": "Per Post:",
+  "privacyPolicy.section11.delay":
+    "Eine Antwort wird innerhalb maximal eines Monats gegeben.",
 
   // Section 12
-  "privacyPolicy.section12.title": "12. Beschwerde",
+  "privacyPolicy.section12.title": "12. Datensicherheit",
   "privacyPolicy.section12.text":
-    "Wenn Nutzer nach Kontaktaufnahme mit uns der Ansicht sind, dass ihre Rechte nicht respektiert werden, können sie eine Beschwerde bei der zuständigen Aufsichtsbehörde einreichen:",
-  "privacyPolicy.section12.authority": "CNIL – Französische Datenschutzbehörde",
+    "Der Verantwortliche setzt alle geeigneten technischen und organisatorischen Maßnahmen um, um die Sicherheit und Vertraulichkeit personenbezogener Daten zu gewährleisten und unbefugten Zugriff zu verhindern.",
 
   // Section 13
-  "privacyPolicy.section13.title": "13. Änderungen der Datenschutzerklärung",
+  "privacyPolicy.section13.title": "13. Beschwerde",
   "privacyPolicy.section13.text":
+    "Wenn Nutzer nach Kontaktaufnahme mit uns der Ansicht sind, dass ihre Rechte nicht respektiert werden, können sie eine Beschwerde bei der zuständigen Aufsichtsbehörde einreichen:",
+  "privacyPolicy.section13.authority": "CNIL – Französische Datenschutzbehörde",
+
+  // Section 14
+  "privacyPolicy.section14.title": "14. Änderungen der Datenschutzerklärung",
+  "privacyPolicy.section14.text":
     "Diese Datenschutzerklärung kann jederzeit geändert werden, um den rechtlichen und regulatorischen Entwicklungen zu entsprechen.",
-  "privacyPolicy.section13.footer":
+  "privacyPolicy.section14.footer":
     "Nutzer werden gebeten, sie regelmäßig zu konsultieren.",
 };
