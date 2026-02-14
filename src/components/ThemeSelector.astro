@@ -3,6 +3,7 @@ import SunIcon from "./ui/icons/SunIcon.astro";
 import MoonIcon from "./ui/icons/MoonIcon.astro";
 import SystemIcon from "./ui/icons/SystemIcon.astro";
 import { getCurrentLang, useTranslations } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
 
 const lang = getCurrentLang(Astro.currentLocale);
 const t = useTranslations(lang);
@@ -14,7 +15,7 @@ export interface Props {
 const { class: className } = Astro.props;
 ---
 
-<div class={`theme-selector ${className || ""}`}>
+<div class={cn("theme-selector", className)}>
   <button
     id="theme-toggle-light"
     data-theme="light"

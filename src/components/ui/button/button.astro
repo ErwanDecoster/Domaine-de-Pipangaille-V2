@@ -22,7 +22,7 @@ const variants = cva(
         destructive:
           "bg-destructive hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 text-white",
         outline:
-          "bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border",
+          "bg-background hover:bg-accent hover:text-accent-foreground hover:bg-input/50 border",
         secondary: "text-secondary-foreground",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
@@ -74,7 +74,7 @@ const Comp = href ? "a" : "button";
         <span
           class={
             variant === "secondary"
-              ? "after:bg-primary relative after:absolute after:-inset-1 after:-z-10 after:rounded-full after:duration-125 group-hover:after:scale-125"
+              ? "after:bg-primary dark:text-background relative after:absolute after:-inset-1 after:-z-10 after:rounded-full after:duration-125 group-hover:after:scale-125"
               : ""
           }
         >
