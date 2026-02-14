@@ -191,9 +191,26 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
     <section class="grid gap-4">
       <h2>{t("privacyPolicy.section9.title")}</h2>
       <div class="grid gap-2 text-lg">
+        <p>{t("privacyPolicy.section9.intro")}</p>
         <p>{t("privacyPolicy.section9.text")}</p>
-        <p>{t("privacyPolicy.section9.activation")}</p>
-        <p>{t("privacyPolicy.section9.manage")}</p>
+        <ul class="list-inside list-disc space-y-2">
+          <li>{t("privacyPolicy.section9.item1")}</li>
+          <li>{t("privacyPolicy.section9.item2")}</li>
+          <li>{t("privacyPolicy.section9.item3")}</li>
+          <li>{t("privacyPolicy.section9.item4")}</li>
+        </ul>
+        <p>{t("privacyPolicy.section9.transfer")}</p>
+        <p>
+          {t("privacyPolicy.section9.footer")}
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href="https://vercel.com/legal/privacy-policy"
+            target="_blank"
+          >
+            {t("privacyPolicy.section9.footerLink")}
+          </Button>{t("privacyPolicy.section9.footerEnd")}
+        </p>
       </div>
     </section>
 
@@ -201,17 +218,26 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
       <h2>{t("privacyPolicy.section10.title")}</h2>
       <div class="grid gap-2 text-lg">
         <p>{t("privacyPolicy.section10.text")}</p>
+        <p>{t("privacyPolicy.section10.activation")}</p>
+        <p>{t("privacyPolicy.section10.manage")}</p>
+      </div>
+    </section>
+
+    <section class="grid gap-4">
+      <h2>{t("privacyPolicy.section11.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>{t("privacyPolicy.section11.text")}</p>
         <ul class="list-inside list-disc space-y-2">
-          <li>{t("privacyPolicy.section10.item1")}</li>
-          <li>{t("privacyPolicy.section10.item2")}</li>
-          <li>{t("privacyPolicy.section10.item3")}</li>
-          <li>{t("privacyPolicy.section10.item4")}</li>
-          <li>{t("privacyPolicy.section10.item5")}</li>
-          <li>{t("privacyPolicy.section10.item6")}</li>
+          <li>{t("privacyPolicy.section11.item1")}</li>
+          <li>{t("privacyPolicy.section11.item2")}</li>
+          <li>{t("privacyPolicy.section11.item3")}</li>
+          <li>{t("privacyPolicy.section11.item4")}</li>
+          <li>{t("privacyPolicy.section11.item5")}</li>
+          <li>{t("privacyPolicy.section11.item6")}</li>
         </ul>
-        <p>{t("privacyPolicy.section10.exercise")}</p>
+        <p>{t("privacyPolicy.section11.exercise")}</p>
         <p>
-          {t("privacyPolicy.section10.emailPrefix")}
+          {t("privacyPolicy.section11.emailPrefix")}
           <Button
             variant="link"
             class="-mx-6 -my-4"
@@ -221,7 +247,7 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
           </Button>
         </p>
         <p>
-          {t("privacyPolicy.section10.addressPrefix")}
+          {t("privacyPolicy.section11.addressPrefix")}
           <MapProviderDialog
             lang={lang}
             address={editorAddress}
@@ -230,14 +256,7 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
             triggerClass="-mx-6 -my-4 inline-block"
           />
         </p>
-        <p>{t("privacyPolicy.section10.delay")}</p>
-      </div>
-    </section>
-
-    <section class="grid gap-4">
-      <h2>{t("privacyPolicy.section11.title")}</h2>
-      <div class="grid gap-2 text-lg">
-        <p>{t("privacyPolicy.section11.text")}</p>
+        <p>{t("privacyPolicy.section11.delay")}</p>
       </div>
     </section>
 
@@ -245,16 +264,6 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
       <h2>{t("privacyPolicy.section12.title")}</h2>
       <div class="grid gap-2 text-lg">
         <p>{t("privacyPolicy.section12.text")}</p>
-        <p>
-          <Button
-            variant="link"
-            class="-mx-6 -my-4 inline-block text-wrap"
-            href={cnilUrl}
-            target="_blank"
-          >
-            {t("privacyPolicy.section12.authority")}
-          </Button>
-        </p>
       </div>
     </section>
 
@@ -262,7 +271,24 @@ const amenitizPrivacyUrl = `https://amenitiz.com/${lang}/legal/privacy-policy`;
       <h2>{t("privacyPolicy.section13.title")}</h2>
       <div class="grid gap-2 text-lg">
         <p>{t("privacyPolicy.section13.text")}</p>
-        <p>{t("privacyPolicy.section13.footer")}</p>
+        <p>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4 inline-block text-wrap"
+            href={cnilUrl}
+            target="_blank"
+          >
+            {t("privacyPolicy.section13.authority")}
+          </Button>
+        </p>
+      </div>
+    </section>
+
+    <section class="grid gap-4">
+      <h2>{t("privacyPolicy.section14.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p>{t("privacyPolicy.section14.text")}</p>
+        <p>{t("privacyPolicy.section14.footer")}</p>
       </div>
     </section>
   </div>

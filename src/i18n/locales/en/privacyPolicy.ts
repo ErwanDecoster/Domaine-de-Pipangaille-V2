@@ -1,6 +1,6 @@
 export const privacyPolicy = {
   "privacyPolicy.title": "Privacy Policy",
-  "privacyPolicy.lastUpdate": "Last updated: January 31, 2026",
+  "privacyPolicy.lastUpdate": "Last updated: February 14, 2026",
   "privacyPolicy.intro":
     "This privacy policy aims to inform users of the domaine-de-pipangaille.fr website how their personal data is collected, used and protected, in accordance with Regulation (EU) 2016/679 known as the General Data Protection Regulation (GDPR).",
 
@@ -99,47 +99,66 @@ export const privacyPolicy = {
     ", which users are invited to consult before making any booking.",
 
   // Section 9
-  "privacyPolicy.section9.title": "9. Cookies and Similar Technologies",
+  "privacyPolicy.section9.title": "9. Vercel Web Analytics",
+  "privacyPolicy.section9.intro":
+    "The website uses Vercel Web Analytics, a service provided by Vercel Inc. to analyze website usage.",
   "privacyPolicy.section9.text":
-    "The website uses strictly necessary cookies for its operation as well as, where applicable, cookies related to third-party services.",
-  "privacyPolicy.section9.activation":
-    "Non-essential cookies and external content are activated only after voluntary action or user consent.",
-  "privacyPolicy.section9.manage":
-    "Users can modify or withdraw their consent at any time via the 'Manage cookies' link on the website.",
+    "Vercel Web Analytics collects anonymized data on website usage to help us understand how users interact with the site and to improve its operation. The data collected includes:",
+  "privacyPolicy.section9.item1": "IP address (anonymized)",
+  "privacyPolicy.section9.item2": "Browser type and version, operating system",
+  "privacyPolicy.section9.item3":
+    "Pages visited, navigation path, time spent on site",
+  "privacyPolicy.section9.item4":
+    "Traffic source (search engine, referrer, etc.)",
+  "privacyPolicy.section9.transfer":
+    "This data may be transferred to servers located outside the European Union, particularly in the United States.",
+  "privacyPolicy.section9.footer":
+    "Vercel Web Analytics processes this data anonymously and does not store unique personal identifiers. For more information on how Vercel processes data, please consult their",
+  "privacyPolicy.section9.footerLink": "privacy policy",
+  "privacyPolicy.section9.footerEnd": ".",
 
   // Section 10
-  "privacyPolicy.section10.title": "10. User Rights",
+  "privacyPolicy.section10.title": "10. Cookies and Similar Technologies",
   "privacyPolicy.section10.text":
-    "In accordance with GDPR, users have the following rights:",
-  "privacyPolicy.section10.item1": "Right of access to their personal data",
-  "privacyPolicy.section10.item2": "Right to rectification",
-  "privacyPolicy.section10.item3": "Right to erasure (right to be forgotten)",
-  "privacyPolicy.section10.item4": "Right to restriction of processing",
-  "privacyPolicy.section10.item5": "Right to object to processing",
-  "privacyPolicy.section10.item6": "Right to data portability",
-  "privacyPolicy.section10.exercise":
-    "To exercise their rights, users can contact the data controller:",
-  "privacyPolicy.section10.emailPrefix": "By email:",
-  "privacyPolicy.section10.addressPrefix": "By mail:",
-  "privacyPolicy.section10.delay":
-    "A response will be provided within a maximum of one month.",
+    "The website uses strictly necessary cookies for its operation as well as, where applicable, cookies related to third-party services.",
+  "privacyPolicy.section10.activation":
+    "Non-essential cookies and external content are activated only after voluntary action or user consent.",
+  "privacyPolicy.section10.manage":
+    "Users can modify or withdraw their consent at any time via the 'Manage cookies' link on the website.",
 
   // Section 11
-  "privacyPolicy.section11.title": "11. Data Security",
+  "privacyPolicy.section11.title": "11. User Rights",
   "privacyPolicy.section11.text":
-    "The data controller implements all appropriate technical and organizational measures to ensure the security and confidentiality of personal data and prevent unauthorized access.",
+    "In accordance with GDPR, users have the following rights:",
+  "privacyPolicy.section11.item1": "Right of access to their personal data",
+  "privacyPolicy.section11.item2": "Right to rectification",
+  "privacyPolicy.section11.item3": "Right to erasure (right to be forgotten)",
+  "privacyPolicy.section11.item4": "Right to restriction of processing",
+  "privacyPolicy.section11.item5": "Right to object to processing",
+  "privacyPolicy.section11.item6": "Right to data portability",
+  "privacyPolicy.section11.exercise":
+    "To exercise their rights, users can contact the data controller:",
+  "privacyPolicy.section11.emailPrefix": "By email:",
+  "privacyPolicy.section11.addressPrefix": "By mail:",
+  "privacyPolicy.section11.delay":
+    "A response will be provided within a maximum of one month.",
 
   // Section 12
-  "privacyPolicy.section12.title": "12. Complaint",
+  "privacyPolicy.section12.title": "12. Data Security",
   "privacyPolicy.section12.text":
-    "If users believe, after contacting us, that their rights are not respected, they may lodge a complaint with the competent supervisory authority:",
-  "privacyPolicy.section12.authority":
-    "CNIL – French Data Protection Authority",
+    "The data controller implements all appropriate technical and organizational measures to ensure the security and confidentiality of personal data and prevent unauthorized access.",
 
   // Section 13
-  "privacyPolicy.section13.title": "13. Privacy Policy Modifications",
+  "privacyPolicy.section13.title": "13. Complaint",
   "privacyPolicy.section13.text":
+    "If users believe, after contacting us, that their rights are not respected, they may lodge a complaint with the competent supervisory authority:",
+  "privacyPolicy.section13.authority":
+    "CNIL – French Data Protection Authority",
+
+  // Section 14
+  "privacyPolicy.section14.title": "14. Privacy Policy Modifications",
+  "privacyPolicy.section14.text":
     "This privacy policy may be modified at any time to remain compliant with legal and regulatory developments.",
-  "privacyPolicy.section13.footer":
+  "privacyPolicy.section14.footer":
     "Users are invited to consult it regularly.",
 };

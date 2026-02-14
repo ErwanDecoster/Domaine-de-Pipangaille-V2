@@ -1,6 +1,6 @@
 export const privacyPolicy = {
   "privacyPolicy.title": "Privacybeleid",
-  "privacyPolicy.lastUpdate": "Laatste update: 31 januari 2026",
+  "privacyPolicy.lastUpdate": "Laatst bijgewerkt: 14 februari 2026",
   "privacyPolicy.intro":
     "Dit privacybeleid heeft tot doel gebruikers van de website domaine-de-pipangaille.fr te informeren over hoe hun persoonlijke gegevens worden verzameld, gebruikt en beschermd, in overeenstemming met Verordening (EU) 2016/679 bekend als de Algemene Verordening Gegevensbescherming (AVG).",
   "privacyPolicy.section1.title": "1. Verwerkingsverantwoordelijke",
@@ -84,41 +84,69 @@ export const privacyPolicy = {
   "privacyPolicy.section8.footerLink": "het privacybeleid van Amenitiz",
   "privacyPolicy.section8.footerEnd":
     ", dat gebruikers worden uitgenodigd te raadplegen voordat ze een boeking maken.",
-  "privacyPolicy.section9.title": "9. Cookies en vergelijkbare technologieën",
+
+  // Section 9
+  "privacyPolicy.section9.title": "9. Vercel Web Analytics",
+  "privacyPolicy.section9.intro":
+    "De website gebruikt Vercel Web Analytics, een service van Vercel Inc. voor het analyseren van websitegebruik.",
   "privacyPolicy.section9.text":
-    "De website gebruikt strikt noodzakelijke cookies voor de werking ervan, evenals, indien van toepassing, cookies gerelateerd aan diensten van derden.",
-  "privacyPolicy.section9.activation":
-    "Niet-essentiële cookies en externe inhoud worden alleen geactiveerd na vrijwillige actie of toestemming van de gebruiker.",
-  "privacyPolicy.section9.manage":
-    "Gebruikers kunnen hun toestemming op elk moment wijzigen of intrekken via de link 'Cookies beheren' op de website.",
-  "privacyPolicy.section10.title": "10. Gebruikersrechten",
+    "Vercel Web Analytics verzamelt geanonimiseerde gegevens over websitegebruik om ons te helpen begrijpen hoe gebruikers met de website omgaan en om de werking ervan te verbeteren. De verzamelde gegevens omvatten:",
+  "privacyPolicy.section9.item1": "IP-adres (geanonimiseerd)",
+  "privacyPolicy.section9.item2": "Browsertype en -versie, besturingssysteem",
+  "privacyPolicy.section9.item3":
+    "Bezochte pagina's, navigatiepad, tijd besteed op de website",
+  "privacyPolicy.section9.item4": "Verkeerbron (zoekmachine, verwijzer, enz.)",
+  "privacyPolicy.section9.transfer":
+    "Deze gegevens kunnen naar servers buiten de Europese Unie worden overgebracht, met name naar de Verenigde Staten.",
+  "privacyPolicy.section9.footer":
+    "Vercel Web Analytics verwerkt deze gegevens anoniem en slaat geen unieke persoonlijke identificatie op. Voor meer informatie over hoe Vercel gegevens verwerkt, raadpleegt u alstublieft hun",
+  "privacyPolicy.section9.footerLink": "privacybeleid",
+  "privacyPolicy.section9.footerEnd": ".",
+
+  // Section 10
+  "privacyPolicy.section10.title": "10. Cookies en vergelijkbare technologieën",
   "privacyPolicy.section10.text":
-    "In overeenstemming met AVG hebben gebruikers de volgende rechten:",
-  "privacyPolicy.section10.item1":
-    "Recht op toegang tot hun persoonlijke gegevens",
-  "privacyPolicy.section10.item2": "Recht op rectificatie",
-  "privacyPolicy.section10.item3":
-    "Recht op gegevenswissing (recht om vergeten te worden)",
-  "privacyPolicy.section10.item4": "Recht op beperking van verwerking",
-  "privacyPolicy.section10.item5": "Recht van bezwaar tegen verwerking",
-  "privacyPolicy.section10.item6": "Recht op gegevensoverdraagbaarheid",
-  "privacyPolicy.section10.exercise":
-    "Om hun rechten uit te oefenen, kunnen gebruikers contact opnemen met de verwerkingsverantwoordelijke:",
-  "privacyPolicy.section10.emailPrefix": "Per e-mail:",
-  "privacyPolicy.section10.addressPrefix": "Per post:",
-  "privacyPolicy.section10.delay":
-    "Een reactie wordt gegeven binnen maximaal een maand.",
-  "privacyPolicy.section11.title": "11. Gegevensbeveiliging",
+    "De website gebruikt strikt noodzakelijke cookies voor de werking ervan, evenals, indien van toepassing, cookies gerelateerd aan diensten van derden.",
+  "privacyPolicy.section10.activation":
+    "Niet-essentiële cookies en externe inhoud worden alleen geactiveerd na vrijwillige actie of toestemming van de gebruiker.",
+  "privacyPolicy.section10.manage":
+    "Gebruikers kunnen hun toestemming op elk moment wijzigen of intrekken via de link 'Cookies beheren' op de website.",
+
+  // Section 11
+  "privacyPolicy.section11.title": "11. Gebruikersrechten",
   "privacyPolicy.section11.text":
-    "De verwerkingsverantwoordelijke implementeert alle passende technische en organisatorische maatregelen om de beveiliging en vertrouwelijkheid van persoonlijke gegevens te waarborgen en ongeautoriseerde toegang te voorkomen.",
-  "privacyPolicy.section12.title": "12. Klacht",
+    "In overeenstemming met AVG hebben gebruikers de volgende rechten:",
+  "privacyPolicy.section11.item1":
+    "Recht op toegang tot hun persoonlijke gegevens",
+  "privacyPolicy.section11.item2": "Recht op rectificatie",
+  "privacyPolicy.section11.item3":
+    "Recht op gegevenswissing (recht om vergeten te worden)",
+  "privacyPolicy.section11.item4": "Recht op beperking van verwerking",
+  "privacyPolicy.section11.item5": "Recht van bezwaar tegen verwerking",
+  "privacyPolicy.section11.item6": "Recht op gegevensoverdraagbaarheid",
+  "privacyPolicy.section11.exercise":
+    "Om hun rechten uit te oefenen, kunnen gebruikers contact opnemen met de verwerkingsverantwoordelijke:",
+  "privacyPolicy.section11.emailPrefix": "Per e-mail:",
+  "privacyPolicy.section11.addressPrefix": "Per post:",
+  "privacyPolicy.section11.delay":
+    "Een reactie wordt gegeven binnen maximaal een maand.",
+
+  // Section 12
+  "privacyPolicy.section12.title": "12. Gegevensbeveiliging",
   "privacyPolicy.section12.text":
-    "Als gebruikers, na contact met ons te hebben opgenomen, van mening zijn dat hun rechten niet worden gerespecteerd, kunnen ze een klacht indienen bij de bevoegde toezichthouder:",
-  "privacyPolicy.section12.authority":
-    "CNIL – Franse gegevensbeschermingsautoriteit",
-  "privacyPolicy.section13.title": "13. Wijziging van het privacybeleid",
+    "De verwerkingsverantwoordelijke implementeert alle passende technische en organisatorische maatregelen om de beveiliging en vertrouwelijkheid van persoonlijke gegevens te waarborgen en ongeautoriseerde toegang te voorkomen.",
+
+  // Section 13
+  "privacyPolicy.section13.title": "13. Klacht",
   "privacyPolicy.section13.text":
+    "Als gebruikers, na contact met ons te hebben opgenomen, van mening zijn dat hun rechten niet worden gerespecteerd, kunnen ze een klacht indienen bij de bevoegde toezichthouder:",
+  "privacyPolicy.section13.authority":
+    "CNIL – Franse gegevensbeschermingsautoriteit",
+
+  // Section 14
+  "privacyPolicy.section14.title": "14. Wijziging van het privacybeleid",
+  "privacyPolicy.section14.text":
     "Dit privacybeleid kan op elk moment worden gewijzigd om te voldoen aan wettelijke en regelgevende ontwikkelingen.",
-  "privacyPolicy.section13.footer":
+  "privacyPolicy.section14.footer":
     "Gebruikers worden uitgenodigd het regelmatig te raadplegen.",
 };
