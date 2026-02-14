@@ -11,6 +11,7 @@ type Props = VariantProps<typeof variants> &
   HTMLAttributes<"label"> & {
     as?: "button" | "a" | "label";
     external?: boolean;
+    noArrow?: boolean;
   };
 
 const variants = cva(
@@ -51,6 +52,7 @@ const {
   href,
   external,
   target,
+  noArrow,
   ...props
 } = Astro.props;
 
@@ -73,9 +75,11 @@ const Comp = href ? "a" : "button";
       {(variant === "secondary" || variant === "default" || external) && (
         <span
           class={
-            variant === "secondary"
-              ? "after:bg-primary dark:text-background relative after:absolute after:-inset-1 after:-z-10 after:rounded-full after:duration-125 group-hover:after:scale-125"
-              : ""
+            noArrow
+              ? "hidden"
+              : variant === "secondary"
+                ? "after:bg-primary dark:text-background relative after:absolute after:-inset-1 after:-z-10 after:rounded-full after:duration-125 group-hover:after:scale-125"
+                : ""
           }
         >
           <ArrowRight class={external ? "-rotate-45" : ""} />
