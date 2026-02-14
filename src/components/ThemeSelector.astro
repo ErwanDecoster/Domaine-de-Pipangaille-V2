@@ -1,0 +1,174 @@
+---
+import SunIcon from "./ui/icons/SunIcon.astro";
+import MoonIcon from "./ui/icons/MoonIcon.astro";
+import SystemIcon from "./ui/icons/SystemIcon.astro";
+import { getCurrentLang, useTranslations } from "@/lib/i18n";
+
+const lang = getCurrentLang(Astro.currentLocale);
+const t = useTranslations(lang);
+
+export interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div class={`theme-selector ${className || ""}`}>
+  <button
+    id="theme-toggle-light"
+    data-theme="light"
+    class="theme-button"
+    aria-label={t("theme.light")}
+  >
+    <SunIcon class="size-5" />
+    <span class="theme-label">{t("theme.light")}</span>
+  </button>
+  <button
+    id="theme-toggle-dark"
+    data-theme="dark"
+    class="theme-button"
+    aria-label={t("theme.dark")}
+  >
+    <MoonIcon class="size-5" />
+    <span class="theme-label">{t("theme.dark")}</span>
+  </button>
+  <button
+    id="theme-toggle-system"
+    data-theme="system"
+    class="theme-button"
+    aria-label={t("theme.system")}
+  >
+    <SystemIcon class="size-5" />
+    <span class="theme-label">{t("theme.system")}</span>
+  </button>
+</div>
+
+<style>
+  .theme-selector {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theme-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+    opacity: 0.6;
+    border: 1px solid transparent;
+  }
+
+  .theme-button:hover {
+    opacity: 1;
+    background-color: hsl(var(--accent));
+  }
+
+  .theme-button[data-active="true"] {
+    opacity: 1;
+    border-color: hsl(var(--border));
+    background-color: hsl(var(--accent));
+  }
+
+  .theme-label {
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 640px) {
+    .theme-label {
+      display: none;
+    }
+
+    .theme-button {
+      padding: 0.5rem;
+    }
+  }
+</style>
+
+<script>
+  type Theme = "light" | "dark" | "system";
+
+  function getThemePreference(): Theme {
+    if (typeof localStorage !== "undefined") {
+      const stored = localStorage.getItem("theme");
+      if (stored === "light" || stored === "dark" || stored === "system") {
+        return stored;
+      }
+    }
+    return "system";
+  }
+
+  function getSystemTheme(): "light" | "dark" {
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      return "dark";
+    }
+    return "light";
+  }
+
+  function applyTheme(theme: Theme) {
+    const effectiveTheme = theme === "system" ? getSystemTheme() : theme;
+
+    if (effectiveTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }
+
+  function updateActiveButton(theme: Theme) {
+    document.querySelectorAll(".theme-button").forEach((button) => {
+      const buttonTheme = (button as HTMLElement).dataset.theme;
+      if (buttonTheme === theme) {
+        button.setAttribute("data-active", "true");
+      } else {
+        button.setAttribute("data-active", "false");
+      }
+    });
+  }
+
+  function setTheme(theme: Theme) {
+    localStorage.setItem("theme", theme);
+    applyTheme(theme);
+    updateActiveButton(theme);
+  }
+
+  // Initialize theme on load
+  function initTheme() {
+    const theme = getThemePreference();
+    applyTheme(theme);
+    updateActiveButton(theme);
+
+    // Listen for system theme changes
+    if (typeof window !== "undefined") {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", () => {
+          const currentTheme = getThemePreference();
+          if (currentTheme === "system") {
+            applyTheme("system");
+          }
+        });
+    }
+
+    // Add event listeners to theme buttons
+    document.querySelectorAll(".theme-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const theme = (button as HTMLElement).dataset.theme as Theme;
+        setTheme(theme);
+      });
+    });
+  }
+
+  // Run on initial load
+  initTheme();
+
+  // Re-run after view transitions (Astro's client-side routing)
+  document.addEventListener("astro:after-swap", initTheme);
+</script>
