@@ -32,6 +32,13 @@ export default [
         URL: "readonly",
         fetch: "readonly",
         setTimeout: "readonly",
+        // Browser globals
+        window: "readonly",
+        document: "readonly",
+        localStorage: "readonly",
+        HTMLElement: "readonly",
+        URLSearchParams: "readonly",
+        Event: "readonly",
       },
     },
   },

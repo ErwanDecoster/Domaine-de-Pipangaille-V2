@@ -99,7 +99,7 @@ const bookingPath = getLocalizedUrl("booking", lang);
               </label>
               <NativeSelect class="w-20" id="adults-select">
                 {
-                  Array.from({ length: 10 }, (_, i) => i + 1).map((n) => (
+                  Array.from({ length: 9 }, (_, i) => i + 1).map((n) => (
                     <NativeSelectOption value={n.toString()} selected={n === 2}>
                       {n}
                     </NativeSelectOption>

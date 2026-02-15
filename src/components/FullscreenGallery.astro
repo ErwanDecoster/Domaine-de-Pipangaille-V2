@@ -29,13 +29,15 @@ const t = useTranslations(lang);
   aria-hidden="true"
   data-gallery-id={galleryId}
 >
-  <div class="relative w-full max-w-6xl rounded-2xl border bg-white sm:p-8">
+  <div
+    class="bg-background relative w-full max-w-6xl rounded-2xl border sm:p-8"
+  >
     <Button
       type="button"
       data-fullscreen-action="close"
       variant="ghost"
       size="icon"
-      class="absolute top-2 right-2 z-10 touch-manipulation rounded-full bg-white/90 hover:bg-white"
+      class="bg-background/90 hover:bg-background absolute top-2 right-2 z-10 touch-manipulation rounded-full"
       aria-label={t("home.gallery.close")}
     >
       <X size={20} />
@@ -48,7 +50,7 @@ const t = useTranslations(lang);
           data-fullscreen-action="prev"
           variant="ghost"
           size="icon"
-          class="absolute top-1/2 left-2 z-50 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
+          class="bg-background/90 hover:bg-background absolute top-1/2 left-2 z-50 -translate-y-1/2 touch-manipulation rounded-full"
           aria-label={t("home.gallery.previous")}
         >
           <ChevronLeft size={24} />
@@ -63,7 +65,7 @@ const t = useTranslations(lang);
           data-fullscreen-action="next"
           variant="ghost"
           size="icon"
-          class="absolute top-1/2 right-2 z-50 -translate-y-1/2 touch-manipulation rounded-full bg-white/90 hover:bg-white"
+          class="bg-background/90 hover:bg-background absolute top-1/2 right-2 z-50 -translate-y-1/2 touch-manipulation rounded-full"
           aria-label={t("home.gallery.next")}
         >
           <ChevronRight size={24} />

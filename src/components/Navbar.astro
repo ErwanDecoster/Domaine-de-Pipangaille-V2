@@ -1,9 +1,8 @@
 ---
-import Logo from "@/assets/DP_LogoText_black.svg";
+import Logo from "./Logo.astro";
 import Button from "./ui/button/button.astro";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
 import { useTranslations, getCurrentLang, getLocalizedUrl } from "@/lib/i18n";
-import { Image } from "astro:assets";
 import { languages } from "@/i18n/ui";
 
 type Props = {
@@ -40,14 +39,7 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
     aria-hidden="true"
     tabindex="-1"
   >
-    <Image
-      src={Logo}
-      alt="Domaine de Pipangaille"
-      sizes="(min-width: 768px) 112px, 80px"
-      fetchpriority="high"
-      loading="eager"
-      class="w-20 bg-transparent md:w-28"
-    />
+    <Logo class="w-20 md:w-28" />
   </Button>
 
   <!-- Desktop Navigation -->

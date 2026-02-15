@@ -85,10 +85,23 @@ const bikeRoute = (
 )?.bikeRoute;
 const headerTags: { icon?: any; text: string }[] = [];
 
+const formatDurationMinutes = (minutes: number) => {
+  if (minutes < 60) {
+    return `${minutes}min`;
+  }
+
+  const hours = Math.floor(minutes / 60);
+  const remainingMinutes = minutes % 60;
+
+  return remainingMinutes
+    ? `${hours}h${String(remainingMinutes).padStart(2, "0")}`
+    : `${hours}h`;
+};
+
 if (bikeRoute?.durationMinutes) {
   headerTags.push({
     icon: Bike,
-    text: `${bikeRoute.durationMinutes}min`,
+    text: formatDurationMinutes(bikeRoute.durationMinutes),
   });
 }
 
