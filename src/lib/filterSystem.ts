@@ -1,4 +1,3 @@
-/* global document, HTMLElement, URLSearchParams, Event */
 /**
  * Filter system for activities and restaurants
  * Manages filtering, pagination, and URL state synchronization
