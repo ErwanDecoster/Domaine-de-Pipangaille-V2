@@ -40,7 +40,7 @@ const getLangHref = (targetLocale: Locale) => {
         .replace(/^\/(en|de|es|it|nl)$/, "/") || "/"
     ).replace(/\/$/, "") || "/";
 
-  let translatedUrl = "";
+  let translatedUrl: string;
 
   if (cleanPath === "/" || cleanPath === "") {
     translatedUrl = targetLocale === "fr" ? "/" : `/${targetLocale}/`;
