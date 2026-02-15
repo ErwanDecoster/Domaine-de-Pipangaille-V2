@@ -22,7 +22,7 @@ const { class: className } = Astro.props;
   <!-- System theme -->
   <button
     data-theme="system"
-    class="hover:bg-background/40 dark:hover:bg-background/10 data-checked:bg-background dark:data-checked:bg-background dark:data-checked:text-foreground flex cursor-pointer items-center justify-center rounded-full p-1.5 transition-all data-checked:opacity-100"
+    class="hover:bg-background/40 dark:hover:bg-background/10 data-checked:bg-background dark:data-checked:text-white flex cursor-pointer items-center justify-center rounded-full p-1.5 transition-all data-checked:opacity-100"
     role="radio"
     aria-label={t("theme.system")}
     tabindex="0"
@@ -44,7 +44,7 @@ const { class: className } = Astro.props;
   <!-- Light theme -->
   <button
     data-theme="light"
-    class="hover:bg-background/40 dark:hover:bg-background/10 data-checked:bg-background dark:data-checked:bg-background dark:data-checked:text-foreground flex cursor-pointer items-center justify-center rounded-full p-1.5 transition-all data-checked:opacity-100"
+    class="hover:bg-background/40 dark:hover:bg-background/10 data-checked:bg-background dark:data-checked:text-foreground flex cursor-pointer items-center justify-center rounded-full p-1.5 transition-all data-checked:opacity-100"
     role="radio"
     aria-label={t("theme.light")}
     tabindex="-1"
@@ -80,7 +80,7 @@ const { class: className } = Astro.props;
   <!-- Dark theme -->
   <button
     data-theme="dark"
-    class="hover:bg-background/40 dark:hover:bg-background/10 data-checked:bg-background dark:data-checked:bg-background flex cursor-pointer items-center justify-center rounded-full p-1.5 transition-all data-checked:opacity-100 dark:data-checked:text-white"
+    class="hover:bg-background/40 dark:hover:bg-background/10 data-checked:bg-background flex cursor-pointer items-center justify-center rounded-full p-1.5 transition-all data-checked:opacity-100 dark:data-checked:text-white"
     role="radio"
     aria-label={t("theme.dark")}
     tabindex="-1"
