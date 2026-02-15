@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { DateRange } from "reka-ui";
-import { ref, type Ref, computed, onMounted, onUnmounted } from "vue";
-import { getLocalTimeZone, today, parseDate } from "@internationalized/date";
-import { RangeCalendar } from "@/components/ui/range-calendar";
 import {
   fetchAmenitizAvailability,
   buildUnavailableDatesMap,
 } from "@/lib/amenitiz";
+import { getLocalTimeZone, today, parseDate } from "@internationalized/date";
+import type { DateRange } from "reka-ui";
+import { ref, type Ref, computed, onMounted, onUnmounted } from "vue";
+import { RangeCalendar } from "@/components/ui/range-calendar";
 
 const props = defineProps<{
   lang?: string;

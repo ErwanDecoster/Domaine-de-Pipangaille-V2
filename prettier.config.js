@@ -1,5 +1,16 @@
 export default {
-  plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  importOrder: [
+    "^@/assets/(.*)$",
+    "^@/components/(.*)$",
+    "^@/layouts/(.*)$",
+    "^@/utils/(.*)$",
+    "^[./]",
+  ],
+  plugins: [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss",
+  ],
   overrides: [
     {
       files: "*.astro",

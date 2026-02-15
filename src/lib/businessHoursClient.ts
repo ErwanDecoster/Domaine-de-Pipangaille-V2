@@ -2,7 +2,6 @@
  * Client-side utilities for checking restaurant opening hours
  * Must run in browser to get current time
  */
-
 import businessHours from "@/constants/businessHours.json";
 
 type BusinessHoursData = typeof businessHours;

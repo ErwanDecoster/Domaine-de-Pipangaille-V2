@@ -1,16 +1,16 @@
-import { navigation } from "./navigation";
-import { seo } from "./seo";
-import { home } from "./home";
 import { accommodations } from "./accommodations";
-import { surroundings } from "./surroundings";
-import { contact } from "./contact";
 import { common } from "./common";
-import { place } from "./place";
+import { contact } from "./contact";
 import { counter } from "./counter";
-import { legalNotices } from "./legalNotices";
-import { privacyPolicy } from "./privacyPolicy";
 import { generalConditions } from "./generalConditions";
+import { home } from "./home";
+import { legalNotices } from "./legalNotices";
+import { navigation } from "./navigation";
 import { notfound } from "./notfound";
+import { place } from "./place";
+import { privacyPolicy } from "./privacyPolicy";
+import { seo } from "./seo";
+import { surroundings } from "./surroundings";
 
 export const de = {
   ...navigation,
