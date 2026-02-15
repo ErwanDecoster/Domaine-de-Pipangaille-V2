@@ -1,6 +1,8 @@
 ---
 import HomeTemplate from "@/components/templates/HomeTemplate.astro";
 import { defaultLang } from "@/i18n/ui";
+
+export const prerender = true;
 ---
 
 <HomeTemplate lang={defaultLang} />
