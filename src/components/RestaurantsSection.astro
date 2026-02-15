@@ -60,6 +60,7 @@ const toKey = (key: string) => key as any;
         <div
           class="restaurant-card"
           data-kind="restaurant"
+          data-slug={restaurant.slug}
           data-categories={restaurant.categories.join(",")}
         >
           <Card
