@@ -7,6 +7,7 @@ export const common = {
   "iframeConsent.privacyPrefix": "Consulta nuestra",
   "iframeConsent.privacyLink": "Política de privacidad",
   "mapProviderDialog.title": "Abrir con",
+  "theme.selector": "Selector de tema",
   "theme.light": "Claro",
   "theme.dark": "Oscuro",
   "theme.system": "Sistema",

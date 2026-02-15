@@ -23,10 +23,7 @@ export function getThemePreference(): Theme {
  * Gets the system theme preference based on media query
  */
 export function getSystemTheme(): "light" | "dark" {
-  if (
-    typeof window !== "undefined" &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  ) {
+  if (globalThis.window?.matchMedia("(prefers-color-scheme: dark)").matches) {
     return "dark";
   }
   return "light";
@@ -61,8 +58,8 @@ export function initializeTheme(): void {
 }
 
 // Export functions as global for inline scripts
-if (typeof window !== "undefined") {
-  (window as any).__themeUtils = {
+if (globalThis.window !== undefined) {
+  (globalThis as any).__themeUtils = {
     getThemePreference,
     getSystemTheme,
     getEffectiveTheme,

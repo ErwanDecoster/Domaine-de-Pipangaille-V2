@@ -39,7 +39,7 @@ const toKey = (key: string) => key as any;
     {
       categories.map((category) => (
         <Button
-          class="bg-muted hover:bg-accent/50 [.is-active]:bg-primary [.is-active]:text-primary-foreground rounded-full"
+          class="bg-muted hover:bg-accent/50 [.is-active]:bg-primary [.is-active]:hover:bg-primary/80 [.is-active]:text-primary-foreground rounded-full"
           variant="ghost"
           data-value={category}
           size="sm"
@@ -60,11 +60,12 @@ const toKey = (key: string) => key as any;
         <div
           class="restaurant-card"
           data-kind="restaurant"
+          data-slug={restaurant.slug}
           data-categories={restaurant.categories.join(",")}
         >
           <Card
             {...restaurant}
-            sizes="(min-width: 1280px) 472px, (min-width: 768px) 50vw, 100vw"
+            sizes="(min-width: 1280px) 416px, (min-width: 768px) 48vw, 100vw"
           />
         </div>
       ))
@@ -82,7 +83,7 @@ const toKey = (key: string) => key as any;
         <Button
           variant="link"
           data-page={String(index + 1)}
-          class="[.is-active]:before:bg-primary relative z-0 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
+          class="[.is-active]:before:bg-primary [.is-active]:dark:text-background relative z-0 before:absolute before:inset-0.5 before:-z-10 before:rounded-full"
           data-action="restaurant-page"
           size="icon-lg"
         >
