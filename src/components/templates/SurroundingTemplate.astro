@@ -53,6 +53,9 @@ const baseSurrounding = !isNotFound
 const selectedSurroundingDescription = baseSurrounding
   ? t(toKey(`surroundings.descriptions.${baseSurrounding.slug}.long`))
   : "";
+const selectedSurroundingShortDescription = baseSurrounding
+  ? t(toKey(`surroundings.descriptions.${baseSurrounding.slug}.short`))
+  : "";
 const selectedSurroundingImageAlt = baseSurrounding
   ? t(toKey(baseSurrounding.gallery?.[0]?.altKey ?? ""))
   : "";
@@ -71,6 +74,11 @@ const seeAllButtonLink =
   surroundingType === "toEat"
     ? getLocalizedUrl("surroundings", lang) + "#to-eat"
     : getLocalizedUrl("surroundings", lang);
+
+// SEO metadata
+const selectedSurroundingOgImage = baseSurrounding
+  ? `/og/surroundings/${baseSurrounding.slug}.jpg`
+  : "/og-image.jpg";
 
 // Get bike route data if available
 const bikeRoute = (
@@ -145,7 +153,11 @@ const shouldShowMediaContent =
   isNotFound ? (
     <NotFoundTemplate lang={lang} />
   ) : (
-    <Layout>
+    <Layout
+      title={baseSurrounding?.title}
+      description={selectedSurroundingShortDescription}
+      ogImage={selectedSurroundingOgImage}
+    >
       <div
         data-scroll-animated
         class="bg-background sticky top-0 z-10 ml-[calc(50%-50vw)] h-28 w-screen"
