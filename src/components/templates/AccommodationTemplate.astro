@@ -25,6 +25,11 @@ const equipmentsNote = baseRoom?.equipmentsNoteKey
   : undefined;
 const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
 
+// SEO metadata
+const selectedRoomOgImage = baseRoom
+  ? `/og/accommodations/${baseRoom.key}.jpg`
+  : "/og/og-image.jpg";
+
 const selectedRoomTitle = baseRoom
   ? t(`accommodations.rooms.${baseRoom.key}.title`)
   : "";
@@ -83,6 +88,7 @@ const otherRooms = roomsContent
             )
           : t("seo.pages.accommodations.description")
       }
+      ogImage={selectedRoomOgImage}
     >
       <div
         data-scroll-animated
