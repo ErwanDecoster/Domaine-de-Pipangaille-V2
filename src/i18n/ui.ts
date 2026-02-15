@@ -1,9 +1,9 @@
-import { fr } from "./locales/fr/index.ts";
-import { en } from "./locales/en/index.ts";
-import { nl } from "./locales/nl/index.ts";
 import { de } from "./locales/de/index.ts";
+import { en } from "./locales/en/index.ts";
 import { es } from "./locales/es/index.ts";
+import { fr } from "./locales/fr/index.ts";
 import { it } from "./locales/it/index.ts";
+import { nl } from "./locales/nl/index.ts";
 
 export const languages = {
   fr: "Français",

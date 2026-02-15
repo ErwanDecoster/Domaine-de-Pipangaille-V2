@@ -11,11 +11,9 @@
  * Environment Variables Required:
  *   GOOGLE_PLACES_API_KEY - Google Cloud API key
  */
-
 import "dotenv/config.js";
 import fs from "node:fs";
 import path from "node:path";
-
 import { placeIds } from "../src/constants/placeIds.ts";
 
 const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;

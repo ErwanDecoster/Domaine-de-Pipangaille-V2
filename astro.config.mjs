@@ -1,13 +1,9 @@
 // @ts-check
-import { defineConfig } from "astro/config";
-
-import vue from "@astrojs/vue";
-
-import tailwindcss from "@tailwindcss/vite";
-
-import vercel from "@astrojs/vercel";
-
 import sitemap from "@astrojs/sitemap";
+import vercel from "@astrojs/vercel";
+import vue from "@astrojs/vue";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({

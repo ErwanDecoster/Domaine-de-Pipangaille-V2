@@ -15,7 +15,6 @@
  * @global fetch - Node.js 18+ has native fetch
  * @global setTimeout - Node.js native timer
  */
-
 import "dotenv/config.js";
 import fs from "node:fs";
 import path from "node:path";
