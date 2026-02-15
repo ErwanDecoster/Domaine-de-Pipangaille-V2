@@ -45,6 +45,9 @@ const siteUrl = "https://domaine-de-pipangaille.fr";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
+    <script is:inline src="/theme-init.js"></script>
+
     <meta name="generator" content={Astro.generator} />
 
     <!-- SEO -->
@@ -62,12 +65,6 @@ const siteUrl = "https://domaine-de-pipangaille.fr";
       content="#0f0f0f"
       media="(prefers-color-scheme: dark)"
     />
-
-    <!-- Initialize theme before page loads to prevent flash -->
-    <script>
-      import { initializeTheme } from "@/lib/theme";
-      initializeTheme();
-    </script>
 
     <!-- Open Graph -->
     <meta property="og:title" content={t("seo.og.title")} />
@@ -119,6 +116,23 @@ const siteUrl = "https://domaine-de-pipangaille.fr";
     {reduce ? null : <BookingWidget lang={lang} />}
 
     <Analytics />
+
+    <!-- Reapply theme after Astro page transitions -->
+    <script>
+      import { applyTheme, getThemePreference } from "@/lib/theme";
+
+      // Reapply theme on page transitions
+      document.addEventListener("astro:after-swap", () => {
+        const theme = getThemePreference();
+        applyTheme(theme);
+      });
+
+      // Also apply on initial page load (for client-side navigation)
+      document.addEventListener("astro:page-load", () => {
+        const theme = getThemePreference();
+        applyTheme(theme);
+      });
+    </script>
   </body>
 </html>
 
