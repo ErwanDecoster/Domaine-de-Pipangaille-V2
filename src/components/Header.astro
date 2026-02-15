@@ -14,6 +14,8 @@ const {
   buttonExternal = false,
   withBackground = true,
   tags,
+  imageSizes = "(min-width: 1024px) 50vw, 100vw",
+  imageQuality = 30,
 } = Astro.props as {
   title: string;
   text?: string | string[];
@@ -31,6 +33,8 @@ const {
   buttonExternal?: boolean;
   withBackground?: boolean;
   tags?: { icon?: any; text: string }[];
+  imageSizes?: string;
+  imageQuality?: number;
 };
 
 const paragraphs = Array.isArray(text)
@@ -50,10 +54,10 @@ const paragraphs = Array.isArray(text)
     )}></span>
   <Image
     class="aspect-video lg:aspect-11/12"
-    quality="40"
+    quality={imageQuality}
     fetchpriority="high"
     loading="eager"
-    sizes="(min-width: 900px) 900px, 100vw"
+    sizes={imageSizes}
     src={image}
     alt={imageAlt}
   />

@@ -25,6 +25,7 @@ interface Props {
   objectFit?: "cover" | "contain";
   galleryId?: string;
   imageClass?: string;
+  imageQuality?: number;
 }
 
 const {
@@ -42,6 +43,7 @@ const {
   objectFit = "cover",
   galleryId,
   imageClass,
+  imageQuality = 30,
 } = Astro.props as Props;
 
 const gallery = images.length
@@ -104,8 +106,8 @@ const paragraphs = Array.isArray(text)
                 galleryLayout === "triple" && index === 2,
             })}
             data-gallery={galleryId}
-            quality="40"
-            sizes="(min-width: 624px) 624px, 100vw"
+            quality={imageQuality}
+            sizes="(min-width: 1024px) 50vw, (min-width: 768px) 624px, 100vw"
             src={src}
             alt={alt ?? `${title} - image ${index + 1}`}
           />
