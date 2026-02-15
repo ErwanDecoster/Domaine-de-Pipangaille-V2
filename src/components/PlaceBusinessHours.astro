@@ -7,13 +7,17 @@ const {
   lang,
   slug,
   class: className,
+  titleLevel = "h3",
   description,
 } = Astro.props as {
   lang: string;
   slug: string;
   class?: string;
+  titleLevel: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   description?: string;
 };
+
+const TitleComponent = titleLevel;
 
 const t = useTranslations(lang as any);
 
@@ -62,9 +66,9 @@ const formatTime = (time: string) => {
 ---
 
 <div class={className}>
-  <h3 class="mb-4 text-2xl">
+  <TitleComponent class="mb-4 text-2xl">
     {t("surroundings.detail.businessHours.title")}
-  </h3>
+  </TitleComponent>
   {
     description && (
       <p class="text-muted-foreground mb-4 text-sm">{description}</p>
