@@ -4,7 +4,6 @@ import ActivitiesSection from "@/components/ActivitiesSection.astro";
 import RestaurantsSection from "@/components/RestaurantsSection.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { surroundings } from "@/constants/surroundings";
-import businessHours from "@/constants/businessHours.json";
 import { languages } from "@/i18n/ui";
 import { Bike } from "@lucide/astro";
 
@@ -15,60 +14,6 @@ type TranslationKey = Parameters<typeof t>[0];
 const toKey = (key: string) => key as TranslationKey;
 
 const ITEMS_PER_PAGE = 6;
-
-// Function to check if a restaurant is open at a specific time
-const isOpenAtTime = (
-  slug: string,
-  startHour: number,
-  endHour: number,
-): boolean => {
-  const toBusinessHoursKey = (slug: string) => {
-    return slug.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
-  };
-
-  const businessHoursKey = toBusinessHoursKey(slug);
-  const hours =
-    businessHours[businessHoursKey as keyof typeof businessHours]?.hours;
-
-  if (!hours) return false;
-
-  // Get today's day of week using Intl API with Europe/Paris timezone
-  const dayOfWeekIndex = new Intl.DateTimeFormat("en-US", {
-    weekday: "long",
-    timeZone: "Europe/Paris",
-  })
-    .format(new Date())
-    .toLowerCase();
-
-  const todayHours = hours[dayOfWeekIndex as keyof typeof hours];
-
-  if (!todayHours?.isOpen || !("periods" in todayHours)) {
-    return false;
-  }
-
-  // Check if any period overlaps with the requested time window
-  // The requested time window is [startHour, endHour)
-  return todayHours.periods!.some((period: { open: string; close: string }) => {
-    const openHour =
-      Number.parseInt(period.open.slice(0, 2), 10) +
-      Number.parseInt(period.open.slice(2), 10) / 60;
-    const closeHour =
-      Number.parseInt(period.close.slice(0, 2), 10) +
-      Number.parseInt(period.close.slice(2), 10) / 60;
-
-    // Check if the period overlaps with the requested time window
-    // Overlap occurs if: period.open < endHour AND period.close > startHour
-    return openHour < endHour && closeHour > startHour;
-  });
-};
-
-const isOpenNoon = (slug: string): boolean => {
-  return isOpenAtTime(slug, 12, 14);
-};
-
-const isOpenEvening = (slug: string): boolean => {
-  return isOpenAtTime(slug, 19, 22);
-};
 
 const formatCard = (
   item:
@@ -109,21 +54,13 @@ const formatCard = (
 
 const activities = surroundings.toVisit.map(formatCard);
 
-// Add dynamic filter properties to restaurants
+// Format restaurants - opening hours will be calculated client-side
 const restaurantFiltersData = surroundings.toEat.map((item) => {
   const baseCard = formatCard(item);
-  const openNoon = isOpenNoon(item.slug);
-  const openEvening = isOpenEvening(item.slug);
-
-  const dynamicCategories = [...(item.category ?? [])];
-  if (openNoon) dynamicCategories.push("openNoon");
-  if (openEvening) dynamicCategories.push("openEvening");
 
   return {
     ...baseCard,
-    categories: dynamicCategories,
-    openNoon,
-    openEvening,
+    slug: item.slug, // Keep slug for client-side opening hours calculation
   };
 });
 
@@ -131,8 +68,16 @@ const allCategories = [
   ...new Set(surroundings.toVisit.flatMap((item) => item.category ?? [])),
 ].sort();
 
+// Restaurant categories include static ones + dynamic ones (openNoon, openEvening)
+// Dynamic categories will be added client-side
+const baseRestaurantCategories = [
+  ...new Set(surroundings.toEat.flatMap((item) => item.category ?? [])),
+].sort();
+
 const restaurantCategories = [
-  ...new Set(restaurantFiltersData.flatMap((item) => item.categories)),
+  ...baseRestaurantCategories,
+  "openNoon",
+  "openEvening",
 ].sort();
 
 const getTotalPages = (count: number) =>
@@ -172,13 +117,21 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
 
 <script>
   import { initializeFilterSystem } from "@/lib/filterSystem";
+  import { updateRestaurantOpeningStatus } from "@/lib/businessHoursClient";
 
   // Initialize the filter system when DOM is ready
   const init = () => {
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initializeFilterSystem);
-    } else {
+    const initialize = () => {
+      // First update restaurant opening status (client-side)
+      updateRestaurantOpeningStatus();
+      // Then initialize filter system
       initializeFilterSystem();
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initialize);
+    } else {
+      initialize();
     }
   };
 

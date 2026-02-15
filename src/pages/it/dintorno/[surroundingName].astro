@@ -4,8 +4,6 @@ import { surroundings } from "@/constants/surroundings";
 import { languages } from "@/i18n/ui";
 import { getCurrentLang } from "@/lib/i18n";
 
-export const prerender = true;
-
 export function getStaticPaths() {
   const allSlugs = [
     ...surroundings.toVisit.map((s) => s.slug),
