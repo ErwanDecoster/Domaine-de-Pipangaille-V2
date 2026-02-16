@@ -2,10 +2,6 @@ import { SCHEMA_CONFIG } from "@/constants/schemaConfig";
 
 const { site, lodging } = SCHEMA_CONFIG;
 
-function getRoomId(roomKey: string): string {
-  return `${site.url}/hebergement/${roomKey}/#room`;
-}
-
 function getAbsoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
   return `${site.url}${path}`;
@@ -197,20 +193,20 @@ export interface PlaceSchema extends SchemaBase {
 }
 
 export function generateBedAndBreakfastSchema(options?: {
-    images?: string[];
-    coordinates?: { lat: string; lng: string };
-    amenities?: string[];
-    description?: string;
-    knowsAbout?: string[];
-    openingHours?: Array<{
-      dayOfWeek: string | string[];
-      opens: string;
-      closes: string;
-    }>;
-    subjectOf?: string;
-    hasPart?: Array<{ "@id": string }>;
-  },
-): BedAndBreakfastSchema {
+  images?: string[];
+  coordinates?: { lat: string; lng: string };
+  amenities?: string[];
+  description?: string;
+  knowsAbout?: string[];
+  containsPlace?: Array<{ "@id": string }>;
+  openingHours?: Array<{
+    dayOfWeek: string | string[];
+    opens: string;
+    closes: string;
+  }>;
+  subjectOf?: string;
+  hasPart?: Array<{ "@id": string }>;
+}): BedAndBreakfastSchema {
   const images = (options?.images || ["/og/og-image.jpg"]).map(getAbsoluteUrl);
 
   const schema: BedAndBreakfastSchema = {
@@ -238,13 +234,6 @@ export function generateBedAndBreakfastSchema(options?: {
     checkoutTime: lodging.checkoutTime,
     petsAllowed: lodging.petsAllowed,
     sameAs: SCHEMA_CONFIG.socialProfiles || [],
-    knowsAbout: options?.knowsAbout || [
-      "Hébergement proche Safari de Peaugres",
-      "Séjour proche Palais Idéal du Facteur Cheval",
-      "ViaRhôna",
-      "Tourisme en Drôme Nord",
-      "Chambres d'hôtes en Auvergne-Rhône-Alpes",
-    ],
   } as BedAndBreakfastSchema;
 
   if ((site as any).hasMap) {
@@ -268,6 +257,10 @@ export function generateBedAndBreakfastSchema(options?: {
     }));
   }
 
+  if (options?.knowsAbout && options.knowsAbout.length > 0) {
+    schema.knowsAbout = options.knowsAbout;
+  }
+
   if (options?.openingHours && options.openingHours.length > 0) {
     schema.openingHoursSpecification = options.openingHours.map((hours) => ({
       "@type": "OpeningHoursSpecification",
@@ -277,9 +270,9 @@ export function generateBedAndBreakfastSchema(options?: {
     }));
   }
 
-  schema.containsPlace = SCHEMA_CONFIG.rooms.map((room) => ({
-    "@id": getRoomId(room.key),
-  }));
+  if (options?.containsPlace) {
+    schema.containsPlace = options.containsPlace;
+  }
 
   if (options?.subjectOf) {
     schema.subjectOf = {
@@ -361,7 +354,9 @@ export function generateRoomSchema(
   const schema: RoomSchema = {
     "@context": "https://schema.org",
     "@type": "Room",
-    "@id": getRoomId(roomKey),
+    "@id": options?.url
+      ? `${getAbsoluteUrl(options.url)}#room`
+      : `${site.url}/#room-${roomKey}`,
     name,
     description,
     image: images,

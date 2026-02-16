@@ -41,12 +41,13 @@ const MENU_SECTION_KEYS: TranslationKey[] = [
   "schema.restaurant.menu.section.4",
 ];
 
-export function generateLocalizedBedAndBreakfastSchema(
-  lang: Language,
-) {
+export function generateLocalizedBedAndBreakfastSchema(lang: Language) {
   const t = useTranslations(lang);
   const description = t(SCHEMA_CONFIG.lodging.descriptionKey as TranslationKey);
   const counterPath = getLocalizedUrl("counter", lang).replace(/^\//, "");
+  const containsPlace = SCHEMA_CONFIG.rooms.map((room) => ({
+    "@id": `${SITE_URL}${getLocalizedUrl("accommodation", lang, room.key)}#room`,
+  }));
 
   return generateBedAndBreakfastSchema({
     images: SCHEMA_CONFIG.lodging.images,
@@ -54,6 +55,7 @@ export function generateLocalizedBedAndBreakfastSchema(
     amenities: SCHEMA_CONFIG.lodging.amenities,
     description,
     knowsAbout: BED_AND_BREAKFAST_KNOWS_ABOUT_KEYS.map((key) => t(key)),
+    containsPlace,
     hasPart: [
       {
         "@id": `${SITE_URL}/${counterPath}/#restaurant`,
@@ -115,7 +117,7 @@ export function generateLocalizedRoomSchema(
     amenities: roomConfig.amenities,
     minOccupancy: roomConfig.minOccupancy,
     maxOccupancy: roomConfig.maxOccupancy,
-    url: `${langPath}/hebergement/${roomKey}`,
+    url: getLocalizedUrl("accommodation", lang, roomKey),
     roomKey: roomKey,
   });
 }
