@@ -203,6 +203,7 @@ export function generateBedAndBreakfastSchema(
     coordinates?: { lat: string; lng: string };
     amenities?: string[];
     description?: string;
+    knowsAbout?: string[];
     openingHours?: Array<{
       dayOfWeek: string | string[];
       opens: string;
@@ -222,7 +223,7 @@ export function generateBedAndBreakfastSchema(
     url: site.url,
     logo: getAbsoluteUrl(lodging.logo || "/favicon.svg"),
     image: images,
-    description: options?.description || lodging.description || site.name,
+    description: options?.description || site.name,
     telephone: site.phone,
     email: site.email,
     priceRange: "€€",
@@ -239,7 +240,7 @@ export function generateBedAndBreakfastSchema(
     checkoutTime: lodging.checkoutTime,
     petsAllowed: lodging.petsAllowed,
     sameAs: SCHEMA_CONFIG.socialProfiles || [],
-    knowsAbout: [
+    knowsAbout: options?.knowsAbout || [
       "Hébergement proche Safari de Peaugres",
       "Séjour proche Palais Idéal du Facteur Cheval",
       "ViaRhôna",
