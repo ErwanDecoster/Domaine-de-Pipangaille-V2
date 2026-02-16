@@ -12,6 +12,62 @@ import {
 
 type Language = "fr" | "en" | "de" | "es" | "it" | "nl";
 
+const SITE_URL = SCHEMA_CONFIG.site.url;
+
+const PLACE_DESCRIPTIONS: Record<Language, string> = {
+  fr: "Ancienne magnanerie rénovée située à Andancette avec parc arboré, terrasse extérieure et accès direct à la ViaRhôna. Un lieu chargé d'histoire et de charme, parfait pour se détendre et explorer la région.",
+  en: "Restored traditional silk mill located in Andancette with arboretum park, outdoor terrace and direct access to the ViaRhôna. A place rich in history and charm, perfect for relaxation and regional exploration.",
+  de: "Restauriertes traditionelles Seidenhaus in Andancette mit Baumpark, Außenterrasse und direktem Zugang zur ViaRhôna. Ein Ort voller Geschichte und Charme, perfekt zum Entspannen und Erkunden der Region.",
+  es: "Antiguo molino de seda restaurado ubicado en Andancette con parque arbolado, terraza exterior y acceso directo a la ViaRhôna. Un lugar lleno de historia y encanto, perfecto para relajarse y explorar la región.",
+  it: "Antico mulino per seta restaurato situato ad Andancette con parco arboreo, terrazza esterna e accesso diretto alla ViaRhôna. Un luogo ricco di storia e fascino, perfetto per rilassarsi ed esplorare la regione.",
+  nl: "Gerestaureerde traditionele zijdemolen in Andancette met boomgaard, buitenterras en directe toegang tot de ViaRhôna. Een plaats vol geschiedenis en charme, perfect om te ontspannen en de regio te verkennen.",
+};
+
+const PLACE_KNOWS_ABOUT: Record<Language, string[]> = {
+  fr: [
+    "Magnanerie restaurée",
+    "Patrimoine architectural régional",
+    "Parc arboré",
+    "Terrasse extérieure",
+    "Architecture traditionnelle",
+  ],
+  en: [
+    "Restored silk mill",
+    "Regional architectural heritage",
+    "Arboretum park",
+    "Outdoor terrace",
+    "Traditional architecture",
+  ],
+  de: [
+    "Restauriertes Seidenhaus",
+    "Regionales architektonisches Erbe",
+    "Baumpark",
+    "Außenterrasse",
+    "Traditionelle Architektur",
+  ],
+  es: [
+    "Molino de seda restaurado",
+    "Patrimonio arquitectónico regional",
+    "Parque arbolado",
+    "Terraza exterior",
+    "Arquitectura tradicional",
+  ],
+  it: [
+    "Mulino per seta restaurato",
+    "Patrimonio architettonico regionale",
+    "Parco arboreo",
+    "Terrazza esterna",
+    "Architettura tradizionale",
+  ],
+  nl: [
+    "Gerestaureerde zijdemolen",
+    "Regionaal architectonisch erfgoed",
+    "Boomgaard",
+    "Buitenterras",
+    "Traditionele architectuur",
+  ],
+};
+
 const BREADCRUMB_TRANSLATIONS: Record<Language, Record<string, string>> = {
   fr: {
     home: "Accueil",
@@ -69,13 +125,24 @@ const BREADCRUMB_TRANSLATIONS: Record<Language, Record<string, string>> = {
   },
 };
 
+function getLocalizedString(
+  lang: Language,
+  localized: Partial<Record<Language, string>> | undefined,
+  fallback: string,
+): string {
+  return localized?.[lang] || fallback;
+}
+
 export function generateLocalizedBedAndBreakfastSchema(
   lang: Language,
   translations: Record<string, string>,
 ) {
   const description =
-    SCHEMA_CONFIG.lodging.descriptions?.[lang] ||
-    SCHEMA_CONFIG.lodging.description;
+    getLocalizedString(
+      lang,
+      SCHEMA_CONFIG.lodging.descriptions,
+      SCHEMA_CONFIG.lodging.description,
+    );
 
   return generateBedAndBreakfastSchema(translations, {
     images: SCHEMA_CONFIG.lodging.images,
@@ -85,7 +152,7 @@ export function generateLocalizedBedAndBreakfastSchema(
     hasPart: [
       {
         "@id":
-          "https://domaine-de-pipangaille-v2.vercel.app/le-comptoir/#restaurant",
+          `${SITE_URL}/le-comptoir/#restaurant`,
       },
     ],
   });
@@ -137,9 +204,11 @@ export function generateLocalizedRestaurantSchema(lang: Language) {
     ],
   };
 
-  const description =
-    SCHEMA_CONFIG.restaurant.descriptions?.[lang] ||
-    SCHEMA_CONFIG.restaurant.description;
+  const description = getLocalizedString(
+    lang,
+    SCHEMA_CONFIG.restaurant.descriptions,
+    SCHEMA_CONFIG.restaurant.description,
+  );
 
   return generateRestaurantSchema(
     SCHEMA_CONFIG.restaurant.name,
@@ -170,8 +239,12 @@ export function generateLocalizedRoomSchema(
   const roomConfig = SCHEMA_CONFIG.rooms.find((room) => room.key === roomKey);
   if (!roomConfig) return null;
 
-  const name = roomConfig.names?.[lang] || roomConfig.name;
-  const description = roomConfig.descriptions?.[lang] || roomConfig.description;
+  const name = getLocalizedString(lang, roomConfig.names, roomConfig.name);
+  const description = getLocalizedString(
+    lang,
+    roomConfig.descriptions,
+    roomConfig.description,
+  );
 
   return generateRoomSchema(
     name,
@@ -211,67 +284,13 @@ export function generateLocalizedPlaceSchema(
   lang: Language,
   images?: string[],
 ) {
-  const placeDescriptions: Record<Language, string> = {
-    fr: "Ancienne magnanerie rénovée située à Andancette avec parc arboré, terrasse extérieure et accès direct à la ViaRhôna. Un lieu chargé d'histoire et de charme, parfait pour se détendre et explorer la région.",
-    en: "Restored traditional silk mill located in Andancette with arboretum park, outdoor terrace and direct access to the ViaRhôna. A place rich in history and charm, perfect for relaxation and regional exploration.",
-    de: "Restauriertes traditionelles Seidenhaus in Andancette mit Baumpark, Außenterrasse und direktem Zugang zur ViaRhôna. Ein Ort voller Geschichte und Charme, perfekt zum Entspannen und Erkunden der Region.",
-    es: "Antiguo molino de seda restaurado ubicado en Andancette con parque arbolado, terraza exterior y acceso directo a la ViaRhôna. Un lugar lleno de historia y encanto, perfecto para relajarse y explorar la región.",
-    it: "Antico mulino per seta restaurato situato ad Andancette con parco arboreo, terrazza esterna e accesso diretto alla ViaRhôna. Un luogo ricco di storia e fascino, perfetto per rilassarsi ed esplorare la regione.",
-    nl: "Gerestaureerde traditionele zijdemolen in Andancette met boomgaard, buitenterras en directe toegang tot de ViaRhôna. Een plaats vol geschiedenis en charme, perfect om te ontspannen en de regio te verkennen.",
-  };
-
-  const placeKnowsAbout: Record<Language, string[]> = {
-    fr: [
-      "Magnanerie restaurée",
-      "Patrimoine architectural régional",
-      "Parc arboré",
-      "Terrasse extérieure",
-      "Architecture traditionnelle",
-    ],
-    en: [
-      "Restored silk mill",
-      "Regional architectural heritage",
-      "Arboretum park",
-      "Outdoor terrace",
-      "Traditional architecture",
-    ],
-    de: [
-      "Restauriertes Seidenhaus",
-      "Regionales architektonisches Erbe",
-      "Baumpark",
-      "Außenterrasse",
-      "Traditionelle Architektur",
-    ],
-    es: [
-      "Molino de seda restaurado",
-      "Patrimonio arquitectónico regional",
-      "Parque arbolado",
-      "Terraza exterior",
-      "Arquitectura tradicional",
-    ],
-    it: [
-      "Mulino per seta restaurato",
-      "Patrimonio architettonico regionale",
-      "Parco arboreo",
-      "Terrazza esterna",
-      "Architettura tradizionale",
-    ],
-    nl: [
-      "Gerestaureerde zijdemolen",
-      "Regionaal architectonisch erfgoed",
-      "Boomgaard",
-      "Buitenterras",
-      "Traditionele architectuur",
-    ],
-  };
-
   return generatePlaceSchema(
     "Le Lieu – Domaine de Pipangaille",
-    placeDescriptions[lang] || placeDescriptions.en,
+    PLACE_DESCRIPTIONS[lang] || PLACE_DESCRIPTIONS.en,
     {
       images,
       coordinates: SCHEMA_CONFIG.site.coordinates,
-      knowsAbout: placeKnowsAbout[lang] || placeKnowsAbout.en,
+      knowsAbout: PLACE_KNOWS_ABOUT[lang] || PLACE_KNOWS_ABOUT.en,
     },
   );
 }
@@ -282,6 +301,7 @@ export function generateLocalizedAttractionsList(
     name: string;
     url: string;
     description?: string;
+    descriptions?: Partial<Record<Language, string>>;
     image?: string;
   }>,
 ) {
@@ -294,28 +314,67 @@ export function generateLocalizedAttractionsList(
     nl: "Activiteiten en attracties in de buurt van Domaine de Pipangaille",
   };
 
-  return generateAttractionItemListSchema(attractions, listNames[lang]);
+  const localizedAttractions = attractions.map((attraction) => {
+    const description = attraction.descriptions
+      ? getLocalizedString(
+          lang,
+          attraction.descriptions,
+          attraction.description || "",
+        )
+      : attraction.description;
+
+    return {
+      name: attraction.name,
+      url: attraction.url,
+      image: attraction.image,
+      description: description || undefined,
+    };
+  });
+
+  return generateAttractionItemListSchema(
+    localizedAttractions,
+    listNames[lang],
+  );
 }
 
 export const DEFAULT_ATTRACTIONS = [
   {
     name: "Safari de Peaugres",
     url: "https://www.safari-peaugres.com",
-    description: "Parc zoologique interactif avec vue sur les Alpes",
+    descriptions: {
+      fr: "Parc zoologique interactif avec vue sur les Alpes",
+      en: "Interactive wildlife park with views of the Alps",
+      de: "Interaktiver Tierpark mit Blick auf die Alpen",
+      es: "Parque zoológico interactivo con vistas a los Alpes",
+      it: "Parco faunistico interattivo con vista sulle Alpi",
+      nl: "Interactief dierenpark met uitzicht op de Alpen",
+    },
     image: "/images/safari-peaugres.jpg",
   },
   {
     name: "Palais Idéal du Facteur Cheval",
     url: "https://www.facteurcheval.com",
-    description:
-      "Monument naïf unique construit par un facteur rural - Chef-d'œuvre de l'art brut",
+    descriptions: {
+      fr: "Monument naïf unique construit par un facteur rural - Chef-d'œuvre de l'art brut",
+      en: "Unique naive monument built by a rural postman - a masterpiece of outsider art",
+      de: "Einzigartiges naives Monument, erbaut von einem Landbriefträger - ein Meisterwerk der Art brut",
+      es: "Monumento naíf único construido por un cartero rural - obra maestra del arte bruto",
+      it: "Monumento naif unico costruito da un postino di campagna - capolavoro di art brut",
+      nl: "Uniek naief monument gebouwd door een dorpspostbode - meesterwerk van art brut",
+    },
     image: "/images/palais-ideal-du-facteur-cheval.jpg",
   },
   {
     name: "ViaRhôna",
     url: "https://www.viarhona.com",
-    description:
-      "Voie verte reliant le lac Léman à la Méditerranée - Itinéraire cycliste mythique",
+    descriptions: {
+      fr: "Voie verte reliant le lac Léman à la Méditerranée - Itinéraire cycliste mythique",
+      en: "Greenway linking Lake Geneva to the Mediterranean - iconic cycling route",
+      de: "Grünweg vom Genfersee bis zum Mittelmeer - legendäre Radroute",
+      es: "Vía verde que une el lago Lemán con el Mediterráneo - ruta ciclista mítica",
+      it: "Via verde che collega il Lago Lemano al Mediterraneo - itinerario ciclistico leggendario",
+      nl: "Groene fietsroute tussen het Meer van Genève en de Middellandse Zee - iconische fietsroute",
+    },
     image: "/images/viarhona.jpg",
   },
 ];

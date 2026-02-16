@@ -2,6 +2,10 @@ import { SCHEMA_CONFIG } from "@/constants/schemaConfig";
 
 const { site, lodging } = SCHEMA_CONFIG;
 
+function getRoomId(roomKey: string): string {
+  return `${site.url}/hebergement/${roomKey}/#room`;
+}
+
 function getAbsoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
   return `${site.url}${path}`;
@@ -230,7 +234,7 @@ export function generateBedAndBreakfastSchema(
       postalCode: site.address.postalCode,
       addressCountry: site.address.addressCountry,
     },
-    numberOfRooms: 4,
+    numberOfRooms: lodging.numberOfRooms,
     checkinTime: lodging.checkinTime,
     checkoutTime: lodging.checkoutTime,
     petsAllowed: lodging.petsAllowed,
@@ -274,12 +278,9 @@ export function generateBedAndBreakfastSchema(
     }));
   }
 
-  schema.containsPlace = [
-    { "@id": `${site.url}/hebergement/marocaine/#room` },
-    { "@id": `${site.url}/hebergement/africaine/#room` },
-    { "@id": `${site.url}/hebergement/toscane/#room` },
-    { "@id": `${site.url}/hebergement/creole/#room` },
-  ];
+  schema.containsPlace = SCHEMA_CONFIG.rooms.map((room) => ({
+    "@id": getRoomId(room.key),
+  }));
 
   if (options?.subjectOf) {
     schema.subjectOf = {
@@ -360,7 +361,7 @@ export function generateRoomSchema(
   const schema: RoomSchema = {
     "@context": "https://schema.org",
     "@type": "Room",
-    "@id": `${site.url}/hebergement/${roomKey}/#room`,
+    "@id": getRoomId(roomKey),
     name,
     description,
     image: images,
