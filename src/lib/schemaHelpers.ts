@@ -93,7 +93,6 @@ export function generateLocalizedRestaurantSchema(lang: Language) {
 
 export function generateLocalizedRoomSchema(
   roomKey: string,
-  langPath: string,
   images: string[],
   lang: Language,
 ) {
@@ -124,14 +123,13 @@ export function generateLocalizedRoomSchema(
 
 export function generateLocalizedBreadcrumbList(
   lang: Language,
-  langPrefix: string,
   items: Array<{ name: string; path: string }>,
 ) {
   const t = useTranslations(lang);
 
   const translatedItems = items.map((item) => ({
     name: t(`schema.breadcrumb.${item.name}` as TranslationKey) || item.name,
-    path: `${langPrefix}${item.path}`,
+    path: item.path,
   }));
 
   return generateBreadcrumbListSchema(translatedItems);

@@ -20,13 +20,11 @@ const toKey = (key: string) => key as TranslationKey;
 
 const ITEMS_PER_PAGE = 6;
 
-const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
 const breadcrumbSchema = generateLocalizedBreadcrumbList(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",
-  langPrefix,
   [
-    { name: "home", path: "" },
-    { name: "surroundings", path: "les-alentours" },
+    { name: "home", path: getLocalizedUrl("home", lang) },
+    { name: "surroundings", path: getLocalizedUrl("surroundings", lang) },
   ],
 );
 

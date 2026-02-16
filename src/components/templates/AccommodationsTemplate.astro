@@ -38,13 +38,11 @@ const accommodationsHeroParagraphs = t("accommodations.hero.text")
   .split(/\n\s*\n/)
   .filter(Boolean);
 
-const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
 const breadcrumbSchema = generateLocalizedBreadcrumbList(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",
-  langPrefix,
   [
-    { name: "home", path: "" },
-    { name: "accommodations", path: "hebergements" },
+    { name: "home", path: getLocalizedUrl("home", lang) },
+    { name: "accommodations", path: getLocalizedUrl("accommodations", lang) },
   ],
 );
 
@@ -64,7 +62,6 @@ const roomSchemas = roomsContent
     ];
     return generateLocalizedRoomSchema(
       room.key,
-      langPrefix,
       roomImageUrls,
       lang as "fr" | "en" | "de" | "es" | "it" | "nl",
     );

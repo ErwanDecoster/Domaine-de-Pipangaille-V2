@@ -18,13 +18,11 @@ import gardenTerrace from "@/images/garden-terrace.jpeg";
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
 
-const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
 const breadcrumbSchema = generateLocalizedBreadcrumbList(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",
-  langPrefix,
   [
-    { name: "home", path: "" },
-    { name: "place", path: "le-lieu" },
+    { name: "home", path: getLocalizedUrl("home", lang) },
+    { name: "place", path: getLocalizedUrl("place", lang) },
   ],
 );
 

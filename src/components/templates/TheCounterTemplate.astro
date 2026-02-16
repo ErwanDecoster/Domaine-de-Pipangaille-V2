@@ -4,7 +4,7 @@ import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import PlaceBusinessHours from "@/components/PlaceBusinessHours.astro";
 import FullscreenGallery from "@/components/FullscreenGallery.astro";
-import { useTranslations } from "@/lib/i18n";
+import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
 import {
   generateLocalizedRestaurantSchema,
@@ -17,16 +17,14 @@ import menuComptoirDePipangaille from "@/assets/menu_comptoir_de_pipangaille.svg
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
 
-const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
 const restaurantSchema = generateLocalizedRestaurantSchema(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",
 );
 const breadcrumbSchema = generateLocalizedBreadcrumbList(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",
-  langPrefix,
   [
-    { name: "home", path: "" },
-    { name: "comptoir", path: "le-comptoir" },
+    { name: "home", path: getLocalizedUrl("home", lang) },
+    { name: "comptoir", path: getLocalizedUrl("counter", lang) },
   ],
 );
 ---

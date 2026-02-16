@@ -20,11 +20,9 @@ const t = useTranslations(lang);
 type TranslationKey = Parameters<typeof t>[0];
 const toKey = (key: string) => key as TranslationKey;
 
-const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
 const breadcrumbSchema = generateLocalizedBreadcrumbList(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",
-  langPrefix,
-  [{ name: "home", path: "" }],
+  [{ name: "home", path: getLocalizedUrl("home", lang) }],
 );
 
 const formatCard = (item: (typeof surroundings.toVisit)[number]) => {

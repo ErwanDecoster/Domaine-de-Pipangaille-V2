@@ -77,15 +77,12 @@ const otherRooms = roomsContent
 
 let additionalSchemas: Record<string, unknown>[] = [];
 if (baseRoom) {
-  const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
-
   const roomImageUrls = [
     getImageSrc(baseRoom.image),
     ...baseRoom.gallery.map((g) => getImageSrc(g.src)),
   ];
   const roomSchema = generateLocalizedRoomSchema(
     baseRoom.key,
-    langPrefix,
     roomImageUrls as unknown as string[],
     lang as "fr" | "en" | "de" | "es" | "it" | "nl",
   );
@@ -100,11 +97,13 @@ if (baseRoom) {
 
   const breadcrumbSchema = generateLocalizedBreadcrumbList(
     lang as "fr" | "en" | "de" | "es" | "it" | "nl",
-    langPrefix,
     [
-      { name: "home", path: "" },
-      { name: "accommodations", path: "hebergements" },
-      { name: "room", path: `hebergement/${baseRoom.key}` },
+      { name: "home", path: getLocalizedUrl("home", lang) },
+      { name: "accommodations", path: getLocalizedUrl("accommodations", lang) },
+      {
+        name: "room",
+        path: getLocalizedUrl("accommodation", lang, baseRoom.key),
+      },
     ],
   );
 
