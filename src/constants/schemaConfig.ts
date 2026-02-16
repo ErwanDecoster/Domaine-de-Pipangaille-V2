@@ -1,4 +1,55 @@
+import businessHours from "@/constants/businessHours.json";
 import { SITE } from "@/constants/site";
+
+type DayKey =
+  | "monday"
+  | "tuesday"
+  | "wednesday"
+  | "thursday"
+  | "friday"
+  | "saturday"
+  | "sunday";
+
+type BusinessPeriod = {
+  open: string;
+  close: string;
+};
+
+type BusinessDay = {
+  isOpen: boolean;
+  periods?: BusinessPeriod[];
+};
+
+const DAY_OF_WEEK: Record<DayKey, string> = {
+  monday: "Monday",
+  tuesday: "Tuesday",
+  wednesday: "Wednesday",
+  thursday: "Thursday",
+  friday: "Friday",
+  saturday: "Saturday",
+  sunday: "Sunday",
+};
+
+const formatTime = (value: string) => `${value.slice(0, 2)}:${value.slice(2)}`;
+
+const comptoirHours = businessHours.comptoir.hours as Record<
+  DayKey,
+  BusinessDay
+>;
+
+const comptoirOpeningHours = Object.entries(comptoirHours).flatMap(
+  ([day, info]) => {
+    if (!info.isOpen || !info.periods || info.periods.length === 0) {
+      return [];
+    }
+
+    return info.periods.map((period: BusinessPeriod) => ({
+      dayOfWeek: [DAY_OF_WEEK[day as DayKey]],
+      opens: formatTime(period.open),
+      closes: formatTime(period.close),
+    }));
+  },
+);
 
 export const SCHEMA_CONFIG = {
   site: {
@@ -43,23 +94,7 @@ export const SCHEMA_CONFIG = {
     cuisines: ["Coffee", "Tea", "French", "Desserts", "Snacks"],
     priceRange: "€€",
     images: ["/og/og-image.jpg"],
-    openingHours: [
-      {
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "11:00",
-        closes: "23:00",
-      },
-      {
-        dayOfWeek: ["Saturday"],
-        opens: "10:00",
-        closes: "00:00",
-      },
-      {
-        dayOfWeek: ["Sunday"],
-        opens: "10:00",
-        closes: "23:00",
-      },
-    ],
+    openingHours: comptoirOpeningHours,
   },
 
   rooms: [

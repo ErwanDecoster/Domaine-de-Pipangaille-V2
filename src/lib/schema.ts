@@ -357,7 +357,8 @@ export function generateRoomSchema(
   },
 ): RoomSchema {
   const images = imageUrls.map(getAbsoluteUrl);
-  const roomKey = options?.roomKey || name.toLowerCase().replace(/\s+/g, "-");
+  const roomKey =
+    options?.roomKey || name.toLowerCase().replaceAll(/\s+/g, "-");
 
   const schema: RoomSchema = {
     "@context": "https://schema.org",

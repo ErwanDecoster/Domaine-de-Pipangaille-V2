@@ -5,7 +5,6 @@ import {
   generateRestaurantSchema,
   generateRoomSchema,
   generateBreadcrumbListSchema,
-  generateImageGallerySchema,
   createMainEntityReference,
   generatePlaceSchema,
   generateAttractionItemListSchema,
@@ -204,4 +203,4 @@ export const DEFAULT_ATTRACTIONS = [
   },
 ];
 
-export { generateImageGallerySchema };
+export { generateImageGallerySchema } from "./schema";
