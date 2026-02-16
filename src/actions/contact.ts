@@ -1,3 +1,4 @@
+import { SITE } from "@/constants/site";
 import { ActionError, defineAction } from "astro:actions";
 import { z } from "astro:schema";
 import { Resend } from "resend";
@@ -72,10 +73,9 @@ export const contact = {
       }
       try {
         const { data, error } = await resend.emails.send({
-          from: "Site internet - Domaine de Pipangaille <contact@domaine-de-pipangaille.fr>",
+          from: `Site internet - ${SITE.name} <${SITE.email}>`,
           replyTo: email,
-          to:
-            import.meta.env.CONTACT_MAIL || "contact@domaine-de-pipangaille.fr",
+          to: import.meta.env.CONTACT_MAIL || SITE.email,
           subject: `Site internet | ${object}`,
           html: `
             <body style="font-family: Arial; background-color: #fffbf8;">

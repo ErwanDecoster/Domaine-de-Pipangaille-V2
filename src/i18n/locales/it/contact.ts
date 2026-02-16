@@ -27,7 +27,7 @@ export const contact = {
   "contact.form.fullNamePlaceholder": "Giovanni Rossi",
   "contact.form.emailPlaceholder": "giovanni.rossi@example.com",
   "contact.form.subjectPlaceholder": "Oggetto del tuo messaggio",
-  "contact.form.phonePlaceholder": "+33 4 75 68 28 24",
+  "contact.form.phonePlaceholder": "{phone}",
   "contact.form.messagePlaceholder": "Il tuo messaggio qui",
   "contact.privateRequest.title": "Richiesta speciale",
   "contact.privateRequest.text":

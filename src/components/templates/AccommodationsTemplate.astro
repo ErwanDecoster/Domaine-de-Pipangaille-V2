@@ -4,15 +4,23 @@ import MediaContent from "@/components/MediaContent.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
 import { roomsContent } from "@/constants/rooms";
+import { SCHEMA_CONFIG } from "@/constants/schemaConfig";
 import Button from "../ui/button/button.astro";
 import Card from "../Card.astro";
 import breakfastWindow from "@/images/breakfast-window.jpg";
+import type { ImageMetadata } from "astro";
+import {
+  generateLocalizedBreadcrumbList,
+  generateLocalizedRoomSchema,
+} from "@/lib/schemaHelpers";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
 const roomButtonText = t("accommodations.rooms.button");
 
 const toTranslationKey = (key: string) => key as Parameters<typeof t>[0];
+const getImageSrc = (image: ImageMetadata | string) =>
+  typeof image === "string" ? image : image.src;
 
 const rooms = roomsContent.map((room) => ({
   key: room.key,
@@ -29,12 +37,43 @@ const rooms = roomsContent.map((room) => ({
 const accommodationsHeroParagraphs = t("accommodations.hero.text")
   .split(/\n\s*\n/)
   .filter(Boolean);
+
+const breadcrumbSchema = generateLocalizedBreadcrumbList(
+  lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  [
+    { name: "home", path: getLocalizedUrl("home", lang) },
+    { name: "accommodations", path: getLocalizedUrl("accommodations", lang) },
+  ],
+);
+
+const siteUrl = SCHEMA_CONFIG.site.url;
+const convertToAbsoluteUrl = (imageSrc: string): string => {
+  if (imageSrc.includes("/_astro/")) {
+    return `${siteUrl}${imageSrc}`;
+  }
+  return imageSrc.startsWith("http") ? imageSrc : `${siteUrl}${imageSrc}`;
+};
+
+const roomSchemas = roomsContent
+  .map((room) => {
+    const roomImageUrls = [
+      convertToAbsoluteUrl(getImageSrc(room.image)),
+      ...room.gallery.map((g) => convertToAbsoluteUrl(getImageSrc(g.src))),
+    ];
+    return generateLocalizedRoomSchema(
+      room.key,
+      roomImageUrls,
+      lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+    );
+  })
+  .filter(Boolean) as unknown as Record<string, unknown>[];
 ---
 
 <Layout
   title={t("seo.pages.accommodations.title")}
   description={t("seo.pages.accommodations.description")}
   ogImage="/og/accommodations/marocaine.jpg"
+  additionalSchemas={[breadcrumbSchema, ...roomSchemas]}
 >
   <div
     data-scroll-animated

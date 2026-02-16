@@ -7,6 +7,12 @@ import Card from "../Card.astro";
 import { Image } from "astro:assets";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
 import FullscreenGallery from "@/components/FullscreenGallery.astro";
+import {
+  generateLocalizedRoomSchema,
+  generateImageGallerySchema,
+  generateLocalizedBreadcrumbList,
+} from "@/lib/schemaHelpers";
+import type { ImageMetadata } from "astro";
 
 const { lang, roomName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -25,7 +31,6 @@ const equipmentsNote = baseRoom?.equipmentsNoteKey
   : undefined;
 const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
 
-// SEO metadata
 const selectedRoomOgImage = baseRoom
   ? `/og/accommodations/${baseRoom.key}.jpg`
   : "/og/og-image.jpg";
@@ -36,12 +41,18 @@ const selectedRoomTitle = baseRoom
 const selectedRoomLongDescription = baseRoom
   ? t(`accommodations.rooms.${baseRoom.key}.longDescription`)
   : "";
-const galleryImages = baseRoom
+const getImageSrc = (image: ImageMetadata | string) =>
+  typeof image === "string" ? image : image.src;
+const galleryImages: { src: ImageMetadata; alt: string }[] = baseRoom
   ? baseRoom.gallery.map((image) => ({
       src: image.src,
       alt: t(toTranslationKey(image.altKey)),
     }))
   : [];
+const gallerySchemaImages = galleryImages.map((image) => ({
+  ...image,
+  src: getImageSrc(image.src),
+}));
 
 const selectedRoomEquipments = baseRoom
   ? baseRoom.equipments.map((equipment) => ({
@@ -63,6 +74,43 @@ const otherRooms = roomsContent
     })),
     buttonLink: getLocalizedUrl("accommodation", lang, room.key),
   }));
+
+let additionalSchemas: Record<string, unknown>[] = [];
+if (baseRoom) {
+  const roomImageUrls = [
+    getImageSrc(baseRoom.image),
+    ...baseRoom.gallery.map((g) => getImageSrc(g.src)),
+  ];
+  const roomSchema = generateLocalizedRoomSchema(
+    baseRoom.key,
+    roomImageUrls as unknown as string[],
+    lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  );
+
+  const gallerySchema = generateImageGallerySchema(
+    gallerySchemaImages.map((img, idx) => ({
+      url: img.src,
+      name: `${selectedRoomTitle} - Image ${idx + 1}`,
+      description: img.alt,
+    })),
+  );
+
+  const breadcrumbSchema = generateLocalizedBreadcrumbList(
+    lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+    [
+      { name: "home", path: getLocalizedUrl("home", lang) },
+      { name: "accommodations", path: getLocalizedUrl("accommodations", lang) },
+      {
+        name: "room",
+        path: getLocalizedUrl("accommodation", lang, baseRoom.key),
+      },
+    ],
+  );
+
+  additionalSchemas = [roomSchema, gallerySchema, breadcrumbSchema].filter(
+    Boolean,
+  ) as Record<string, unknown>[];
+}
 ---
 
 {
@@ -89,6 +137,7 @@ const otherRooms = roomsContent
           : t("seo.pages.accommodations.description")
       }
       ogImage={selectedRoomOgImage}
+      additionalSchemas={additionalSchemas}
     >
       <div
         data-scroll-animated

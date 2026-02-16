@@ -57,7 +57,7 @@ export const seo = {
 
   "seo.pages.contact.title": "Contact & Réservation | Domaine de Pipangaille",
   "seo.pages.contact.description":
-    "Contactez-nous pour toute demande : séjours, événements privés, séminaires. Tél : +33 4 75 68 28 24. Proche A7, Andancette.",
+    "Contactez-nous pour toute demande : séjours, événements privés, séminaires. Tél : {phone}. Proche A7, {city}.",
 
   "seo.pages.legal.title": "Mentions Légales | Domaine de Pipangaille",
   "seo.pages.legal.description":

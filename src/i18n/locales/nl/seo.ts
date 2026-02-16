@@ -56,7 +56,7 @@ export const seo = {
 
   "seo.pages.contact.title": "Contact & Reserveringen | Domaine de Pipangaille",
   "seo.pages.contact.description":
-    "Neem contact met ons op voor elke vraag: verblijven, privé-evenementen, seminars. Tel: +33 4 75 68 28 24. Nabij A7, Andancette.",
+    "Neem contact met ons op voor elke vraag: verblijven, privé-evenementen, seminars. Tel: {phone}. Nabij A7, {city}.",
 
   "seo.pages.legal.title": "Wettelijke Vermeldingen | Domaine de Pipangaille",
   "seo.pages.legal.description":

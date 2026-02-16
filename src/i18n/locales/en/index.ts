@@ -9,6 +9,7 @@ import { navigation } from "./navigation";
 import { notfound } from "./notfound";
 import { place } from "./place";
 import { privacyPolicy } from "./privacyPolicy";
+import { schema } from "./schema";
 import { seo } from "./seo";
 import { surroundings } from "./surroundings";
 
@@ -25,5 +26,6 @@ export const en = {
   ...legalNotices,
   ...privacyPolicy,
   ...generalConditions,
+  ...schema,
   ...notfound,
 };

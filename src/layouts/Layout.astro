@@ -9,6 +9,9 @@ import { getLangFromUrl, useTranslations } from "../lib/i18n";
 import BookingWidget from "@/components/BookingWidgetAstro.astro";
 import { ClientRouter } from "astro:transitions";
 import Analytics from "@vercel/analytics/astro";
+import SchemaScript from "@/components/SchemaScript.astro";
+import { generateLocalizedBedAndBreakfastSchema } from "@/lib/schemaHelpers";
+import { SITE } from "@/constants/site";
 
 type Props = {
   bodyClass?: string;
@@ -19,6 +22,7 @@ type Props = {
   navHeight?: string;
   reducedNavHeight?: string;
   navBackground?: string;
+  additionalSchemas?: Record<string, unknown>[];
 };
 
 const {
@@ -30,14 +34,22 @@ const {
   navHeight,
   reducedNavHeight,
   navBackground,
+  additionalSchemas = [],
 } = Astro.props as Props;
-const lang = getLangFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url) as
+  | "fr"
+  | "en"
+  | "de"
+  | "es"
+  | "it"
+  | "nl";
 const t = useTranslations(lang);
 
-// Use provided title/description or fallback to defaults
 const finalTitle = title || t("seo.title");
 const finalDescription = description || t("seo.description");
-const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
+const siteUrl = SITE.url;
+
+const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(lang);
 ---
 
 <!doctype html>
@@ -50,7 +62,6 @@ const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
 
     <meta name="generator" content={Astro.generator} />
 
-    <!-- SEO -->
     <title>{finalTitle}</title>
     <meta name="description" content={finalDescription} />
     <meta name="robots" content="index, follow" />
@@ -66,7 +77,6 @@ const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
       media="(prefers-color-scheme: dark)"
     />
 
-    <!-- Open Graph -->
     <meta property="og:title" content={t("seo.og.title")} />
     <meta property="og:description" content={t("seo.og.description")} />
     <meta property="og:type" content="website" />
@@ -74,13 +84,11 @@ const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
     <meta property="og:image" content={new URL(ogImage, siteUrl).toString()} />
     <meta property="og:locale" content={lang} />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={t("seo.twitter.title")} />
     <meta name="twitter:description" content={t("seo.twitter.description")} />
     <meta name="twitter:image" content={new URL(ogImage, siteUrl).toString()} />
 
-    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <ClientRouter />
@@ -89,11 +97,12 @@ const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Pipangaille" />
 
-    <!-- Manifest & Sitemap -->
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    <!-- Preconnect -->
+    <SchemaScript schema={bedAndBreakfastSchema} />
+    {additionalSchemas.map((schema) => <SchemaScript schema={schema} />)}
+
     <link
       rel="preconnect"
       href="https://domaine-de-pipangaille.amenitiz.io"
@@ -112,22 +121,18 @@ const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
     </main>
     {reduce ? null : <Footer />}
 
-    <!-- Booking Widget -->
     {reduce ? null : <BookingWidget lang={lang} />}
 
     <Analytics />
 
-    <!-- Reapply theme after Astro page transitions -->
     <script>
       import { applyTheme, getThemePreference } from "@/lib/theme";
 
-      // Reapply theme on page transitions
       document.addEventListener("astro:after-swap", () => {
         const theme = getThemePreference();
         applyTheme(theme);
       });
 
-      // Also apply on initial page load (for client-side navigation)
       document.addEventListener("astro:page-load", () => {
         const theme = getThemePreference();
         applyTheme(theme);
@@ -142,6 +147,5 @@ const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
     margin: 0;
     width: 100%;
     height: 100%;
-    /* overflow-x: hidden; */
   }
 </style>

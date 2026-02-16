@@ -4,6 +4,11 @@ import Header from "@/components/Header.astro";
 import MediaContent from "@/components/MediaContent.astro";
 import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { reviews } from "@/constants/reviews";
+import { SCHEMA_CONFIG } from "@/constants/schemaConfig";
+import {
+  generateLocalizedBreadcrumbList,
+  generateLocalizedPlaceSchema,
+} from "@/lib/schemaHelpers";
 import poolLoungers from "@/images/pool-loungers.jpeg";
 import courtyardCornerConcert from "@/images/courtyard-corner-concert.jpeg";
 import pavilionTerraceEvening from "@/images/pavilion-terrace-evening.jpeg";
@@ -12,12 +17,33 @@ import gardenTerrace from "@/images/garden-terrace.jpeg";
 
 const { lang } = Astro.props as { lang: keyof typeof reviews };
 const t = useTranslations(lang);
+
+const breadcrumbSchema = generateLocalizedBreadcrumbList(
+  lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  [
+    { name: "home", path: getLocalizedUrl("home", lang) },
+    { name: "place", path: getLocalizedUrl("place", lang) },
+  ],
+);
+
+const siteUrl = SCHEMA_CONFIG.site.url;
+const placeImages = [
+  `${siteUrl}${poolLoungers.src}`,
+  `${siteUrl}${courtyardCornerConcert.src}`,
+  `${siteUrl}${pavilionTerraceEvening.src}`,
+  `${siteUrl}${gardenTerrace.src}`,
+];
+const placeSchema = generateLocalizedPlaceSchema(
+  lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  placeImages,
+);
 ---
 
 <Layout
   title={t("seo.pages.place.title")}
   description={t("seo.pages.place.description")}
   ogImage="/og/place.jpg"
+  additionalSchemas={[placeSchema, breadcrumbSchema]}
 >
   <div
     data-scroll-animated
@@ -58,37 +84,5 @@ const t = useTranslations(lang);
   />
   <section class="my-24 px-4 sm:px-6 md:my-48 md:px-10 lg:px-20">
     <h2>{t("place.spotlight.title")}</h2>
-    <!-- <SpotlightGallery
-      title={t("place.spotlight.gallery1.title")}
-      direction="left"
-      images={[
-        { src: "/the-place-1.jpg", alt: "" },
-        { src: "/the-place-2.jpg", alt: "" },
-        { src: "/the-place-3.jpg", alt: "" },
-        { src: "/the-place-4.jpg", alt: "" },
-        { src: "/the-place-5.jpg", alt: "" },
-      ]}
-    />
-    <SpotlightGallery
-      title={t("place.spotlight.gallery2.title")}
-      images={[
-        { src: "/the-place-1.jpg", alt: "" },
-        { src: "/the-place-2.jpg", alt: "" },
-        { src: "/the-place-3.jpg", alt: "" },
-        { src: "/the-place-4.jpg", alt: "" },
-        { src: "/the-place-5.jpg", alt: "" },
-      ]}
-    />
-    <SpotlightGallery
-      title={t("place.spotlight.gallery3.title")}
-      direction="left"
-      images={[
-        { src: "/the-place-1.jpg", alt: "" },
-        { src: "/the-place-2.jpg", alt: "" },
-        { src: "/the-place-3.jpg", alt: "" },
-        { src: "/the-place-4.jpg", alt: "" },
-        { src: "/the-place-5.jpg", alt: "" },
-      ]}
-    /> -->
   </section>
 </Layout>
