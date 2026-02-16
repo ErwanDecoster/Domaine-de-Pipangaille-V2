@@ -11,6 +11,7 @@ import { ClientRouter } from "astro:transitions";
 import Analytics from "@vercel/analytics/astro";
 import SchemaScript from "@/components/SchemaScript.astro";
 import { generateLocalizedBedAndBreakfastSchema } from "@/lib/schemaHelpers";
+import { SITE } from "@/constants/site";
 
 type Props = {
   bodyClass?: string;
@@ -46,7 +47,7 @@ const t = useTranslations(lang);
 
 const finalTitle = title || t("seo.title");
 const finalDescription = description || t("seo.description");
-const siteUrl = "https://domaine-de-pipangaille-v2.vercel.app/";
+const siteUrl = SITE.url;
 
 const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(
   lang,

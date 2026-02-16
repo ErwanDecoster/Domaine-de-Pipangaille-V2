@@ -1,26 +1,24 @@
+import { SITE } from "@/constants/site";
+
 export const SCHEMA_CONFIG = {
   site: {
-    url: "https://domaine-de-pipangaille-v2.vercel.app",
-    name: "Domaine de Pipangaille",
-    email: "contact@domaine-de-pipangaille.fr",
-    phone: "+33 4 75 68 28 24",
+    url: SITE.url,
+    name: SITE.name,
+    email: SITE.email,
+    phone: SITE.phone.formatted,
     address: {
-      streetAddress: "1 Quartier les Marettes",
-      addressLocality: "Andancette",
-      addressRegion: "Auvergne-Rhône-Alpes",
-      postalCode: "26140",
-      addressCountry: "FR",
+      streetAddress: SITE.address.street,
+      addressLocality: SITE.address.city,
+      addressRegion: SITE.address.region,
+      postalCode: SITE.address.postalCode,
+      addressCountry: SITE.address.countryCode,
     },
-    coordinates: {
-      lat: "45.252593",
-      lng: "4.809788",
-    },
-    hasMap:
-      "https://www.google.com/maps/place/Domaine+de+Pipangaille/@45.2525628,4.8076338,695m/data=!3m2!1e3!4b1!4m9!3m8!1s0x47f53e41af912869:0xe0c49553166e1500!5m2!4m1!1i2!8m2!3d45.2525628!4d4.8102141!16s%2Fg%2F11btm7z48m?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D",
+    coordinates: SITE.coordinates,
+    hasMap: SITE.mapUrl,
   },
 
   lodging: {
-    name: "Domaine de Pipangaille",
+    name: SITE.name,
     descriptionKey: "schema.lodging.description",
     numberOfRooms: 4,
     checkinTime: "17:00",
@@ -125,10 +123,10 @@ export const SCHEMA_CONFIG = {
   ],
 
   socialProfiles: [
-    "https://www.facebook.com/domainedepipangaille",
-    "https://www.instagram.com/domaine_de_pipangaille",
-    "https://www.linkedin.com/company/domaine-de-pipangaille",
-    "https://x.com/D_Pipangaille",
+    SITE.social.facebook,
+    SITE.social.instagram,
+    SITE.social.linkedin,
+    SITE.social.x,
   ],
 };
 

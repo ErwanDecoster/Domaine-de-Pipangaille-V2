@@ -37,7 +37,8 @@ export const schema = {
   "schema.rooms.creole.name": "Chambre Créole",
   "schema.rooms.creole.description":
     "La chambre Créole est inspirée d'un voyage vers les îles avec ses couleurs bleues et son mobilier en rotin. Cette chambre est idéale pour un couple. Cette chambre dispose d'un lit de 1,6 x 2 m.",
-  "schema.bedAndBreakfast.knowsAbout.0": "Hébergement proche Safari de Peaugres",
+  "schema.bedAndBreakfast.knowsAbout.0":
+    "Hébergement proche Safari de Peaugres",
   "schema.bedAndBreakfast.knowsAbout.1":
     "Séjour proche Palais Idéal du Facteur Cheval",
   "schema.bedAndBreakfast.knowsAbout.2": "ViaRhôna",

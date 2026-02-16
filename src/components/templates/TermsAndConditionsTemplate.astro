@@ -3,12 +3,13 @@ import { useTranslations } from "@/lib/i18n";
 import Layout from "@/layouts/Layout.astro";
 import { ui } from "@/i18n/ui";
 import Button from "../ui/button/button.astro";
+import { SITE } from "@/constants/site";
 
 const { lang } = Astro.props as { lang: keyof typeof ui };
 const t = useTranslations(lang);
 
-const phoneNumber = "+33475682824";
-const phoneNumberFormatted = "+33 4 75 68 28 24";
+const phoneNumber = SITE.phone.e164;
+const phoneNumberFormatted = SITE.phone.formatted;
 ---
 
 <Layout

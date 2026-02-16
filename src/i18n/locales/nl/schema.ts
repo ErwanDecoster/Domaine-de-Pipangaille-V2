@@ -43,6 +43,5 @@ export const schema = {
     "Verblijf vlak bij het Palais Idéal du Facteur Cheval",
   "schema.bedAndBreakfast.knowsAbout.2": "ViaRhôna",
   "schema.bedAndBreakfast.knowsAbout.3": "Toerisme in Drôme Nord",
-  "schema.bedAndBreakfast.knowsAbout.4":
-    "B&B in Auvergne-Rhône-Alpes",
+  "schema.bedAndBreakfast.knowsAbout.4": "B&B in Auvergne-Rhône-Alpes",
 };

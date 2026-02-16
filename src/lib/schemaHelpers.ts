@@ -46,9 +46,7 @@ export function generateLocalizedBedAndBreakfastSchema(
   translations: Record<string, string>,
 ) {
   const t = useTranslations(lang);
-  const description = t(
-    SCHEMA_CONFIG.lodging.descriptionKey as TranslationKey,
-  );
+  const description = t(SCHEMA_CONFIG.lodging.descriptionKey as TranslationKey);
 
   return generateBedAndBreakfastSchema(translations, {
     images: SCHEMA_CONFIG.lodging.images,
@@ -58,8 +56,7 @@ export function generateLocalizedBedAndBreakfastSchema(
     knowsAbout: BED_AND_BREAKFAST_KNOWS_ABOUT_KEYS.map((key) => t(key)),
     hasPart: [
       {
-        "@id":
-          `${SITE_URL}/le-comptoir/#restaurant`,
+        "@id": `${SITE_URL}/le-comptoir/#restaurant`,
       },
     ],
   });
@@ -81,7 +78,7 @@ export function generateLocalizedRestaurantSchema(lang: Language) {
       cuisines: SCHEMA_CONFIG.restaurant.cuisines,
       priceRange: SCHEMA_CONFIG.restaurant.priceRange,
       linkToParentBusiness: true,
-      areaServed: ["Drôme Nord", "Auvergne-Rhône-Alpes"],
+      areaServed: ["Drôme Nord", SCHEMA_CONFIG.site.address.addressRegion],
       menu: {
         name: t("schema.restaurant.menu.name"),
         sections: MENU_SECTION_KEYS.map((key) => ({ name: t(key) })),

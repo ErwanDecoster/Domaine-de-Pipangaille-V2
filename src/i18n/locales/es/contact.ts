@@ -23,4 +23,5 @@ export const contact = {
   "contact.info.whatsapp": "Whatsapp",
   "contact.info.email": "Correo electrónico",
   "contact.info.address": "Dirección",
+  "contact.form.phonePlaceholder": "{phone}",
 };

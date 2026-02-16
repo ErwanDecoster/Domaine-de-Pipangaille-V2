@@ -5,6 +5,7 @@ import ThemeSelector from "./ThemeSelector.astro";
 import Logo from "./Logo.astro";
 import { useTranslations, getCurrentLang, getLocalizedUrl } from "@/lib/i18n";
 import PlatformIcon from "./ui/icons/PlatformIcon.astro";
+import { SITE } from "@/constants/site";
 
 const lang = getCurrentLang(Astro.currentLocale);
 const t = useTranslations(lang);
@@ -39,7 +40,7 @@ const t = useTranslations(lang);
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
             external
             noArrow
-            href="https://www.tripadvisor.fr/Hotel_Review-g11695688-d5990107-Reviews-Domaine_de_Pipangaille-Andancette_Drome_Auvergne_Rhone_Alpes.html"
+            href={SITE.social.tripadvisor}
           >
             Tripadvisor
           </Button>
@@ -50,7 +51,7 @@ const t = useTranslations(lang);
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
             external
             noArrow
-            href="https://www.pagesjaunes.fr/pros/56007503"
+            href={SITE.social.pagesJaunes}
           >
             Pages Jaunes
           </Button>
@@ -66,7 +67,7 @@ const t = useTranslations(lang);
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
             external
             noArrow
-            href="https://facebook.com/domainedepipangaille"
+            href={SITE.social.facebook}
           >
             <PlatformIcon platform="facebook" class="size-5" />
             Facebook
@@ -78,7 +79,7 @@ const t = useTranslations(lang);
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
             external
             noArrow
-            href="https://instagram.com/domaine_de_pipangaille"
+            href={SITE.social.instagram}
           >
             <PlatformIcon platform="instagram" class="size-5" />
             Instagram
@@ -90,7 +91,7 @@ const t = useTranslations(lang);
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
             external
             noArrow
-            href="https://linkedin.com/company/domaine-de-pipangaille/"
+            href={SITE.social.linkedin}
           >
             <PlatformIcon platform="linkedin" class="size-5" />
             LinkedIn
@@ -102,7 +103,7 @@ const t = useTranslations(lang);
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
             external
             noArrow
-            href="https://x.com/D_Pipangaille"
+            href={SITE.social.x}
           >
             <PlatformIcon platform="x" class="size-5" />
             X
@@ -152,15 +153,14 @@ const t = useTranslations(lang);
           <Button
             variant="link"
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
-            href="tel:+33456747382">+33 4 56 74 73 82</Button
+            href={`tel:${SITE.phone.e164}`}>{SITE.phone.formatted}</Button
           >
         </li>
         <li>
           <Button
             variant="link"
             class="px-4 py-2 text-left md:-ml-6 md:px-6"
-            href="mailto:contact@domaine-de-pipangaille.fr"
-            >contact@domaine-de-pipangaille.fr</Button
+            href={`mailto:${SITE.email}`}>{SITE.email}</Button
           >
         </li>
         <li>

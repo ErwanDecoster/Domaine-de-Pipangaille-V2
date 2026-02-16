@@ -5,17 +5,18 @@ import { ui } from "@/i18n/ui";
 import Button from "../ui/button/button.astro";
 import MapProviderDialog from "@/components/MapProviderDialog.astro";
 import { getLocalizedUrl } from "@/lib/routeTranslator";
+import { SITE } from "@/constants/site";
 
 const { lang } = Astro.props as { lang: keyof typeof ui };
 const t = useTranslations(lang);
 
-const editorCompany = "SAS Domaine de Pipangaille";
-const editorEmail = "contact@domaine-de-pipangaille.fr";
-const editorPhone = "+33 4 75 68 28 24";
-const editorAddress = "1 Quartier Les Marettes, 26140 Andancette – France";
-const editorRcsValue = "904 638 814";
-const editorNafValue = "55202";
-const editorCapitalValue = "1 500 €";
+const editorCompany = SITE.legal.companyName;
+const editorEmail = SITE.email;
+const editorPhone = SITE.phone.formatted;
+const editorAddress = SITE.address.formattedWithCountry;
+const editorRcsValue = SITE.legal.rcs;
+const editorNafValue = SITE.legal.naf;
+const editorCapitalValue = SITE.legal.capital;
 
 const designCompany = "Erwan Decoster";
 const designEmail = "contact@erwan-decoster.com";
