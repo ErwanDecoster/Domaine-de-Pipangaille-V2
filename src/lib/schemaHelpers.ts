@@ -99,19 +99,20 @@ export function generateLocalizedRoomSchema(
   const t = useTranslations(lang);
   const name = t(roomConfig.nameKey as TranslationKey);
   const description = t(roomConfig.descriptionKey as TranslationKey);
+  const schemaImages =
+    images.length > 0
+      ? images
+      : roomConfig.images && roomConfig.images.length > 0
+        ? roomConfig.images
+        : SCHEMA_CONFIG.lodging.images;
 
-  return generateRoomSchema(
-    name,
-    description,
-    images.length > 0 ? images : SCHEMA_CONFIG.lodging.images,
-    {
-      amenities: roomConfig.amenities,
-      minOccupancy: roomConfig.minOccupancy,
-      maxOccupancy: roomConfig.maxOccupancy,
-      url: `${langPath}/hebergement/${roomKey}`,
-      roomKey: roomKey,
-    },
-  );
+  return generateRoomSchema(name, description, schemaImages, {
+    amenities: roomConfig.amenities,
+    minOccupancy: roomConfig.minOccupancy,
+    maxOccupancy: roomConfig.maxOccupancy,
+    url: `${langPath}/hebergement/${roomKey}`,
+    roomKey: roomKey,
+  });
 }
 
 export function generateLocalizedBreadcrumbList(

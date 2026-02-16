@@ -85,7 +85,10 @@ export const SCHEMA_CONFIG = {
       "Outdoor terrace",
     ],
     logo: "/favicon.svg",
-    images: ["/og/og-image.jpg"],
+    images: [
+      "/images/courtyard-terrace-lawn.jpeg",
+      "/images/pool-loungers.jpeg",
+    ],
   },
 
   restaurant: {
@@ -93,7 +96,11 @@ export const SCHEMA_CONFIG = {
     descriptionKey: "schema.restaurant.description",
     cuisines: ["Coffee", "Tea", "French", "Desserts", "Snacks"],
     priceRange: "€€",
-    images: ["/og/og-image.jpg"],
+    images: [
+      "/images/counter/carport-counter.jpg",
+      "/images/counter/carport-counter-bikes.jpg",
+      "/images/counter/garden-cheese-and-charcuterie-board.jpg",
+    ],
     openingHours: comptoirOpeningHours,
   },
 
@@ -109,6 +116,7 @@ export const SCHEMA_CONFIG = {
         "Air conditioning",
         "WiFi",
       ],
+      images: ["/images/accommodations/moroccan-room-french-door.jpeg"],
       minOccupancy: 1,
       maxOccupancy: 2,
     },
@@ -124,6 +132,7 @@ export const SCHEMA_CONFIG = {
         "WiFi",
         "Work desk",
       ],
+      images: ["/images/accommodations/african-room-double-beds-bathroom.jpeg"],
       minOccupancy: 1,
       maxOccupancy: 2,
     },
@@ -138,6 +147,7 @@ export const SCHEMA_CONFIG = {
         "WiFi",
         "Work desk",
       ],
+      images: ["/images/accommodations/tuscan-room-bed-desk-shelf.jpg"],
       minOccupancy: 1,
       maxOccupancy: 2,
     },
@@ -152,6 +162,7 @@ export const SCHEMA_CONFIG = {
         "WiFi",
         "Work desk",
       ],
+      images: ["/images/accommodations/creole-room-bed-basket.jpg"],
       minOccupancy: 1,
       maxOccupancy: 2,
     },
