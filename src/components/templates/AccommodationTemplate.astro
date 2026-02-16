@@ -7,6 +7,11 @@ import Card from "../Card.astro";
 import { Image } from "astro:assets";
 import NotFoundTemplate from "./NotFoundTemplate.astro";
 import FullscreenGallery from "@/components/FullscreenGallery.astro";
+import {
+  generateLocalizedRoomSchema,
+  generateImageGallerySchema,
+  generateLocalizedBreadcrumbList,
+} from "@/lib/schemaHelpers";
 
 const { lang, roomName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -25,7 +30,6 @@ const equipmentsNote = baseRoom?.equipmentsNoteKey
   : undefined;
 const otherRoomsTitle = t("accommodations.detail.otherRooms.title");
 
-// SEO metadata
 const selectedRoomOgImage = baseRoom
   ? `/og/accommodations/${baseRoom.key}.jpg`
   : "/og/og-image.jpg";
@@ -63,6 +67,44 @@ const otherRooms = roomsContent
     })),
     buttonLink: getLocalizedUrl("accommodation", lang, room.key),
   }));
+
+let additionalSchemas: Record<string, unknown>[] = [];
+if (baseRoom) {
+  const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
+
+  const roomImageUrls = [
+    baseRoom.image.src.src || baseRoom.image.src,
+    ...baseRoom.gallery.map((g) => g.src.src || g.src),
+  ];
+  const roomSchema = generateLocalizedRoomSchema(
+    baseRoom.key,
+    langPrefix,
+    roomImageUrls as unknown as string[],
+    lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  );
+
+  const gallerySchema = generateImageGallerySchema(
+    galleryImages.map((img, idx) => ({
+      url: img.src.src || img.src,
+      name: `${selectedRoomTitle} - Image ${idx + 1}`,
+      description: img.alt,
+    })),
+  );
+
+  const breadcrumbSchema = generateLocalizedBreadcrumbList(
+    lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+    langPrefix,
+    [
+      { name: "home", path: "" },
+      { name: "accommodations", path: "hebergements" },
+      { name: "room", path: `hebergement/${baseRoom.key}` },
+    ],
+  );
+
+  additionalSchemas = [roomSchema, gallerySchema, breadcrumbSchema].filter(
+    Boolean,
+  ) as Record<string, unknown>[];
+}
 ---
 
 {
@@ -89,6 +131,7 @@ const otherRooms = roomsContent
           : t("seo.pages.accommodations.description")
       }
       ogImage={selectedRoomOgImage}
+      additionalSchemas={additionalSchemas}
     >
       <div
         data-scroll-animated

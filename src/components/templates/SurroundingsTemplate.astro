@@ -6,6 +6,11 @@ import { useTranslations, getLocalizedUrl } from "@/lib/i18n";
 import { surroundings } from "@/constants/surroundings";
 import { languages } from "@/i18n/ui";
 import { Bike } from "@lucide/astro";
+import {
+  generateLocalizedBreadcrumbList,
+  generateLocalizedAttractionsList,
+  DEFAULT_ATTRACTIONS,
+} from "@/lib/schemaHelpers";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
@@ -14,6 +19,21 @@ type TranslationKey = Parameters<typeof t>[0];
 const toKey = (key: string) => key as TranslationKey;
 
 const ITEMS_PER_PAGE = 6;
+
+const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
+const breadcrumbSchema = generateLocalizedBreadcrumbList(
+  lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  langPrefix,
+  [
+    { name: "home", path: "" },
+    { name: "surroundings", path: "les-alentours" },
+  ],
+);
+
+const attractionsSchema = generateLocalizedAttractionsList(
+  lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  DEFAULT_ATTRACTIONS,
+);
 
 const formatCard = (
   item:
@@ -24,14 +44,12 @@ const formatCard = (
   const firstImage = item.gallery?.[0];
   const bikeRoute = (item as { bikeRoute?: { tag?: string } }).bikeRoute;
 
-  // Build tags array: categories + bike tag if exists
   const allTags: { icon?: any; text: string }[] = [
     ...categories.map((cat) => ({
       text: t(toKey(`surroundings.category.${cat}`)),
     })),
   ];
 
-  // Add bike route tag if it exists
   if (bikeRoute?.tag) {
     allTags.push({
       icon: Bike,
@@ -54,13 +72,12 @@ const formatCard = (
 
 const activities = surroundings.toVisit.map(formatCard);
 
-// Format restaurants - opening hours will be calculated client-side
 const restaurantFiltersData = surroundings.toEat.map((item) => {
   const baseCard = formatCard(item);
 
   return {
     ...baseCard,
-    slug: item.slug, // Keep slug for client-side opening hours calculation
+    slug: item.slug,
   };
 });
 
@@ -68,8 +85,6 @@ const allCategories = [
   ...new Set(surroundings.toVisit.flatMap((item) => item.category ?? [])),
 ].sort();
 
-// Restaurant categories include static ones + dynamic ones (openNoon, openEvening)
-// Dynamic categories will be added client-side
 const baseRestaurantCategories = [
   ...new Set(surroundings.toEat.flatMap((item) => item.category ?? [])),
 ].sort();
@@ -90,6 +105,7 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
   title={t("seo.pages.surroundings.title")}
   description={t("seo.pages.surroundings.description")}
   ogImage="/og/surroundings/palais_ideal_du_facteur_cheval.jpg"
+  additionalSchemas={[breadcrumbSchema, attractionsSchema]}
 >
   <div
     data-scroll-animated
@@ -120,12 +136,9 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
   import { initializeFilterSystem } from "@/lib/filterSystem";
   import { updateRestaurantOpeningStatus } from "@/lib/businessHoursClient";
 
-  // Initialize the filter system when DOM is ready
   const init = () => {
     const initialize = () => {
-      // First update restaurant opening status (client-side)
       updateRestaurantOpeningStatus();
-      // Then initialize filter system
       initializeFilterSystem();
     };
 

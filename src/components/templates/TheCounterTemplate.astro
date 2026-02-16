@@ -6,12 +6,30 @@ import PlaceBusinessHours from "@/components/PlaceBusinessHours.astro";
 import FullscreenGallery from "@/components/FullscreenGallery.astro";
 import { useTranslations } from "@/lib/i18n";
 import { languages } from "@/i18n/ui";
+import {
+  generateLocalizedRestaurantSchema,
+  generateLocalizedBreadcrumbList,
+} from "@/lib/schemaHelpers";
 import carportCounter from "@/images/carport-counter.jpg";
 import carportCounterBikes from "@/images/carport-counter-bikes.jpg";
 import menuComptoirDePipangaille from "@/assets/menu_comptoir_de_pipangaille.svg";
 
 const { lang } = Astro.props as { lang: keyof typeof languages };
 const t = useTranslations(lang);
+
+const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
+const restaurantSchema = generateLocalizedRestaurantSchema(
+  lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  t as unknown as Record<string, string>,
+);
+const breadcrumbSchema = generateLocalizedBreadcrumbList(
+  lang as "fr" | "en" | "de" | "es" | "it" | "nl",
+  langPrefix,
+  [
+    { name: "home", path: "" },
+    { name: "comptoir", path: "le-comptoir" },
+  ],
+);
 ---
 
 <Layout
@@ -19,6 +37,7 @@ const t = useTranslations(lang);
   title={t("seo.pages.counter.title")}
   description={t("seo.pages.counter.description")}
   ogImage="/og/counter.jpg"
+  additionalSchemas={[restaurantSchema, breadcrumbSchema]}
 >
   <div
     data-scroll-animated
