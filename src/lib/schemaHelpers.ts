@@ -99,12 +99,15 @@ export function generateLocalizedRoomSchema(
   const t = useTranslations(lang);
   const name = t(roomConfig.nameKey as TranslationKey);
   const description = t(roomConfig.descriptionKey as TranslationKey);
-  const schemaImages =
-    images.length > 0
-      ? images
-      : roomConfig.images && roomConfig.images.length > 0
-        ? roomConfig.images
-        : SCHEMA_CONFIG.lodging.images;
+  let schemaImages = SCHEMA_CONFIG.lodging.images;
+
+  if (roomConfig.images && roomConfig.images.length > 0) {
+    schemaImages = roomConfig.images;
+  }
+
+  if (images.length > 0) {
+    schemaImages = images;
+  }
 
   return generateRoomSchema(name, description, schemaImages, {
     amenities: roomConfig.amenities,
