@@ -39,4 +39,4 @@
 - [ ] Add hiking options
 - [ ] Find MTB activities
 - [ ] find place for "@/images/table-d-hotes.jpg"; "@/images/pool.jpeg"; "@/images/courtyard-terrace-corner.jpeg";
-- [ ] on shema generator update checkinTime and openingHours with auto script
+- [ ] on schema generator update checkinTime with auto script

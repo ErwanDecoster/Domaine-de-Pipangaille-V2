@@ -1,5 +1,6 @@
 import { SCHEMA_CONFIG } from "@/constants/schemaConfig";
 import { useTranslations } from "@/lib/i18n";
+import { getLocalizedUrl } from "@/lib/routeTranslator";
 import {
   generateBedAndBreakfastSchema,
   generateRestaurantSchema,
@@ -42,12 +43,12 @@ const MENU_SECTION_KEYS: TranslationKey[] = [
 
 export function generateLocalizedBedAndBreakfastSchema(
   lang: Language,
-  translations: Record<string, string>,
 ) {
   const t = useTranslations(lang);
   const description = t(SCHEMA_CONFIG.lodging.descriptionKey as TranslationKey);
+  const counterPath = getLocalizedUrl("counter", lang).replace(/^\//, "");
 
-  return generateBedAndBreakfastSchema(translations, {
+  return generateBedAndBreakfastSchema({
     images: SCHEMA_CONFIG.lodging.images,
     coordinates: SCHEMA_CONFIG.site.coordinates,
     amenities: SCHEMA_CONFIG.lodging.amenities,
@@ -55,7 +56,7 @@ export function generateLocalizedBedAndBreakfastSchema(
     knowsAbout: BED_AND_BREAKFAST_KNOWS_ABOUT_KEYS.map((key) => t(key)),
     hasPart: [
       {
-        "@id": `${SITE_URL}/le-comptoir/#restaurant`,
+        "@id": `${SITE_URL}/${counterPath}/#restaurant`,
       },
     ],
   });
@@ -66,13 +67,14 @@ export function generateLocalizedRestaurantSchema(lang: Language) {
   const description = t(
     SCHEMA_CONFIG.restaurant.descriptionKey as TranslationKey,
   );
+  const counterPath = getLocalizedUrl("counter", lang).replace(/^\//, "");
 
   return generateRestaurantSchema(
     SCHEMA_CONFIG.restaurant.name,
     description,
     SCHEMA_CONFIG.restaurant.images,
     {
-      slug: "le-comptoir",
+      slug: counterPath,
       type: "CafeOrCoffeeShop",
       cuisines: SCHEMA_CONFIG.restaurant.cuisines,
       priceRange: SCHEMA_CONFIG.restaurant.priceRange,

@@ -12,6 +12,7 @@ import {
   generateImageGallerySchema,
   generateLocalizedBreadcrumbList,
 } from "@/lib/schemaHelpers";
+import type { ImageMetadata } from "astro";
 
 const { lang, roomName } = Astro.props as {
   lang: keyof typeof reviews;
@@ -40,12 +41,18 @@ const selectedRoomTitle = baseRoom
 const selectedRoomLongDescription = baseRoom
   ? t(`accommodations.rooms.${baseRoom.key}.longDescription`)
   : "";
-const galleryImages = baseRoom
+const getImageSrc = (image: ImageMetadata | string) =>
+  typeof image === "string" ? image : image.src;
+const galleryImages: { src: ImageMetadata; alt: string }[] = baseRoom
   ? baseRoom.gallery.map((image) => ({
       src: image.src,
       alt: t(toTranslationKey(image.altKey)),
     }))
   : [];
+const gallerySchemaImages = galleryImages.map((image) => ({
+  ...image,
+  src: getImageSrc(image.src),
+}));
 
 const selectedRoomEquipments = baseRoom
   ? baseRoom.equipments.map((equipment) => ({
@@ -73,8 +80,8 @@ if (baseRoom) {
   const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
 
   const roomImageUrls = [
-    baseRoom.image.src.src || baseRoom.image.src,
-    ...baseRoom.gallery.map((g) => g.src.src || g.src),
+    getImageSrc(baseRoom.image),
+    ...baseRoom.gallery.map((g) => getImageSrc(g.src)),
   ];
   const roomSchema = generateLocalizedRoomSchema(
     baseRoom.key,
@@ -84,8 +91,8 @@ if (baseRoom) {
   );
 
   const gallerySchema = generateImageGallerySchema(
-    galleryImages.map((img, idx) => ({
-      url: img.src.src || img.src,
+    gallerySchemaImages.map((img, idx) => ({
+      url: img.src,
       name: `${selectedRoomTitle} - Image ${idx + 1}`,
       description: img.alt,
     })),

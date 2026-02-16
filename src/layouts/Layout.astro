@@ -49,10 +49,7 @@ const finalTitle = title || t("seo.title");
 const finalDescription = description || t("seo.description");
 const siteUrl = SITE.url;
 
-const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(
-  lang,
-  t as unknown as Record<string, string>,
-);
+const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(lang);
 ---
 
 <!doctype html>

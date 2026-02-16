@@ -20,7 +20,6 @@ const t = useTranslations(lang);
 const langPrefix = lang === "fr" ? "/" : `/${lang}/`;
 const restaurantSchema = generateLocalizedRestaurantSchema(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",
-  t as unknown as Record<string, string>,
 );
 const breadcrumbSchema = generateLocalizedBreadcrumbList(
   lang as "fr" | "en" | "de" | "es" | "it" | "nl",

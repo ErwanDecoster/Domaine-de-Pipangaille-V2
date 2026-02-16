@@ -196,9 +196,7 @@ export interface PlaceSchema extends SchemaBase {
   knowsAbout?: string[];
 }
 
-export function generateBedAndBreakfastSchema(
-  translations: Record<string, string>,
-  options?: {
+export function generateBedAndBreakfastSchema(options?: {
     images?: string[];
     coordinates?: { lat: string; lng: string };
     amenities?: string[];

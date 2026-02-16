@@ -24,4 +24,11 @@ export const contact = {
   "contact.info.email": "Correo electrónico",
   "contact.info.address": "Dirección",
   "contact.form.phonePlaceholder": "{phone}",
+  "contact.form.fullNamePlaceholder": "Introduce tu nombre completo",
+  "contact.form.emailPlaceholder": "nombre@ejemplo.com",
+  "contact.form.subjectPlaceholder": "Motivo de tu mensaje",
+  "contact.form.messagePlaceholder": "Escribe tu mensaje aquí...",
+  "contact.privateRequest.title": "Solicitud privada",
+  "contact.privateRequest.text":
+    "Para solicitudes privadas o estancias de larga duración, rellena el siguiente formulario y nos pondremos en contacto contigo.",
 };
