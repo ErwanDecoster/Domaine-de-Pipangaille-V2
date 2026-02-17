@@ -39,7 +39,7 @@ export const SITE = {
     capital: "1 500 €",
   },
   hours: {
-    checkin: {
+    CheckIn: {
       start: "17:00",
       end: "21:00",
       lateArrivalPossible: "22:00",

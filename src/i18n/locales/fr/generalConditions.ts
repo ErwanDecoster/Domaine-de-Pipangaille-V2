@@ -1,5 +1,5 @@
 import {
-  formatCheckinStart,
+  formatCheckInStart,
   formatLateArrivalTime,
   formatCheckoutTime,
 } from "@/lib/hours";
@@ -51,7 +51,7 @@ export const generalConditions = {
   "generalConditions.article6.content2":
     "Le client sera alors immédiatement et intégralement remboursé des sommes qu'il aura déjà versées.",
   "generalConditions.article7.title": "Article 7 - Heure d'arrivée",
-  "generalConditions.article7.content1": `L'arrivée est prévue l'après-midi à partir de ${formatCheckinStart("fr")}, et possible jusqu'à ${formatLateArrivalTime("fr")}.`,
+  "generalConditions.article7.content1": `L'arrivée est prévue l'après-midi à partir de ${formatCheckInStart("fr")}, et possible jusqu'à ${formatLateArrivalTime("fr")}.`,
   "generalConditions.article7.content2":
     "En cas de demande particulière ou imprévue, il sera nécessaire de nous contacter par téléphone au ",
   "generalConditions.article7.content3": " pour nous signaler tout retard.",

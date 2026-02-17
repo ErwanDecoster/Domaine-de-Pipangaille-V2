@@ -1,12 +1,12 @@
 import {
-  formatCheckinHours,
+  formatCheckInHours,
   formatCheckoutTime,
   formatBreakfastHours,
 } from "@/lib/hours";
 
 export const accommodations = {
   "accommodations.hero.title": "Onze gastenkamers: comfort en authenticiteit",
-  "accommodations.hero.text": `De vier uniek ingerichte kamers, die uitnodigen tot reizen, bevinden zich op de tweede verdieping. Een ontvangstruimte met fauteuils, gezelschapsspellen, boeken en toeristische informatie is beschikbaar. Onze kamers met airconditioning hebben een privé-douche en toilet.\n\nOpeningstijden: ontvangst: ${formatCheckinHours("nl")} - Vertrek tot ${formatCheckoutTime("nl")}. Vroege aankomst mogelijk op aanvraag en tegen betaling.`,
+  "accommodations.hero.text": `De vier uniek ingerichte kamers, die uitnodigen tot reizen, bevinden zich op de tweede verdieping. Een ontvangstruimte met fauteuils, gezelschapsspellen, boeken en toeristische informatie is beschikbaar. Onze kamers met airconditioning hebben een privé-douche en toilet.\n\nOpeningstijden: ontvangst: ${formatCheckInHours("nl")} - Vertrek tot ${formatCheckoutTime("nl")}. Vroege aankomst mogelijk op aanvraag en tegen betaling.`,
   "accommodations.rooms.button": "Bekijk de kamer",
   "accommodations.rooms.marocaine.title": "Marokkaanse kamer",
   "accommodations.rooms.marocaine.description":

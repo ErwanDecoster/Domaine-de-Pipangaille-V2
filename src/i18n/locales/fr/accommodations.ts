@@ -1,5 +1,5 @@
 import {
-  formatCheckinHours,
+  formatCheckInHours,
   formatCheckoutTime,
   formatBreakfastHours,
 } from "@/lib/hours";
@@ -7,7 +7,7 @@ import {
 export const accommodations = {
   "accommodations.hero.title":
     "Nos chambres d'hôtes, entre confort et authenticité",
-  "accommodations.hero.text": `Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étage. Une pièce d'accueil avec fauteuil, jeux de sociétés, livres et informations touristiques à disposition. Nos chambres climatisées disposent d'une douche et toilettes privatives.\n\nHoraires : accueil : ${formatCheckinHours("fr")} - Départ jusqu'à ${formatCheckoutTime("fr")}. Arrivée anticipée possible sur demande et facturée.`,
+  "accommodations.hero.text": `Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étage. Une pièce d'accueil avec fauteuil, jeux de sociétés, livres et informations touristiques à disposition. Nos chambres climatisées disposent d'une douche et toilettes privatives.\n\nHoraires : accueil : ${formatCheckInHours("fr")} - Départ jusqu'à ${formatCheckoutTime("fr")}. Arrivée anticipée possible sur demande et facturée.`,
   "accommodations.rooms.button": "Voir la chambre",
   "accommodations.rooms.marocaine.title": "Chambre Marocaine",
   "accommodations.rooms.marocaine.description":
