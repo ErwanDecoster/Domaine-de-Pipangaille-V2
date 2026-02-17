@@ -1,3 +1,5 @@
+import { formatPoolHours } from "@/lib/hours";
+
 export const place = {
   "place.header.title": "Le lieu",
   "place.header.imageAlt":
@@ -12,8 +14,7 @@ export const place = {
     "Piscine extérieure du Domaine de Pipangaille entourée d'arbres, avec terrasse en bois et espace en gazon synthétique.",
   "place.services.image3Alt":
     "Cour intérieure du Domaine de Pipangaille avec tables et chaises, vue sur la façade en pierre aux volets verts.",
-  "place.services.text":
-    "Pensé pour votre confort, le domaine propose un parking extérieur non fermé, un abri sécurisé pour les vélos, une piscine non chauffée ouverte en saison, un pavillon d’été et des espaces de détente côté cour et jardin.\n\nLa table d’hôtes est proposée sur réservation et réservée à la clientèle de l’hébergement. Un service bar est également accessible sur place.",
+  "place.services.text": `Pensé pour votre confort, le domaine propose un parking extérieur non fermé, un abri sécurisé pour les vélos, une piscine non chauffée ouverte en saison ${formatPoolHours("fr")} (horaires pouvant varier selon les conditions météorologiques), un pavillon d'été et des espaces de détente côté cour et jardin.\n\nLa table d'hôtes est proposée sur réservation et réservée à la clientèle de l'hébergement. Un service bar est également accessible sur place.`,
   "place.events.title": "Organisation d’évènements",
   "place.events.gallery.image1Alt":
     "Musiciens se produisant sur une estrade abritée dans la cour intérieure",

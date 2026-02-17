@@ -1,8 +1,13 @@
+import {
+  formatCheckinHours,
+  formatCheckoutTime,
+  formatBreakfastHours,
+} from "@/lib/hours";
+
 export const accommodations = {
   "accommodations.hero.title":
     "Unsere Gästezimmer – Komfort trifft Authentizität",
-  "accommodations.hero.text":
-    "Die vier einzigartig dekorierten Zimmer, die zum Reisen einladen, befinden sich im zweiten Stock. Ein Empfangsbereich mit Sesseln, Gesellschaftsspielen, Büchern und touristischen Informationen steht zur Verfügung. Unsere klimatisierten Zimmer verfügen über eine private Dusche und Toilette.\n\nÖffnungszeiten: Empfang: 17–21 Uhr - Abreise bis 10:30 Uhr. Frühe Anreise auf Anfrage möglich und kostenpflichtig.",
+  "accommodations.hero.text": `Die vier einzigartig dekorierten Zimmer, die zum Reisen einladen, befinden sich im zweiten Stock. Ein Empfangsbereich mit Sesseln, Gesellschaftsspielen, Büchern und touristischen Informationen steht zur Verfügung. Unsere klimatisierten Zimmer verfügen über eine private Dusche und Toilette.\n\nÖffnungszeiten: Empfang: ${formatCheckinHours("de")} - Abreise bis ${formatCheckoutTime("de")}. Frühe Anreise auf Anfrage möglich und kostenpflichtig.`,
   "accommodations.rooms.button": "Zimmer ansehen",
   "accommodations.rooms.marocaine.title": "Marokkanisches Zimmer",
   "accommodations.rooms.marocaine.description":
@@ -110,8 +115,7 @@ export const accommodations = {
   "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
     "Beistelltisch mit zwei Sesseln",
   "accommodations.breakfast.title": "Frühstück, Table d'hôtes und Bar",
-  "accommodations.breakfast.text":
-    "Das Frühstück wird von 8:00 bis 9:30 Uhr, auf Wunsch auch früher, serviert. Es wird im Speisesaal oder bei schönem Wetter im Innenhof serviert. Am Buffet erwarten Sie traditionelles Brot, Gebäck, Bio-Tee, Kaffee, Fruchtsäfte, lokale Joghurts und saisonales Obst.\n\nWir wählen unsere Lieferanten sorgfältig aus, um Ihnen lokale und biologische Produkte anzubieten.\n\nHerzhaftes Frühstück optional verfügbar, auf Anfrage und nach Reservierung am Vortag.\n\nAuf Reservierung bietet die Table d'hôtes ein hausgemachtes Einheitsmenü oder Platten mit Aufschnitt, Käse oder zusammengestellten Salaten mit lokalen und Bio-Produkten. Unsere Angebote können je nach Saison variieren.\n\nBar-Service: wir bieten eine Getränkekarte und eine Weinkarte.",
+  "accommodations.breakfast.text": `Das Frühstück wird ${formatBreakfastHours("de")}, auf Wunsch auch früher, serviert. Es wird im Speisesaal oder bei schönem Wetter im Innenhof serviert. Am Buffet erwarten Sie traditionelles Brot, Gebäck, Bio-Tee, Kaffee, Fruchtsäfte, lokale Joghurts und saisonales Obst.\n\nWir wählen unsere Lieferanten sorgfältig aus, um Ihnen lokale und biologische Produkte anzubieten.\n\nHerzhaftes Frühstück optional verfügbar, auf Anfrage und nach Reservierung am Vortag.\n\nAuf Reservierung bietet die Table d'hôtes ein hausgemachtes Einheitsmenü oder Platten mit Aufschnitt, Käse oder zusammengestellten Salaten mit lokalen und Bio-Produkten. Unsere Angebote können je nach Saison variieren.\n\nBar-Service: wir bieten eine Getränkekarte und eine Weinkarte.`,
   "accommodations.cta.title": "Sie möchten alle Zimmer privat nutzen?",
   "accommodations.cta.text":
     "Buchen Sie das gesamte Haus für Gruppenveranstaltungen, Familienfeiern oder Wochenenden mit Freunden.",

@@ -1,8 +1,13 @@
+import {
+  formatCheckinHours,
+  formatCheckoutTime,
+  formatBreakfastHours,
+} from "@/lib/hours";
+
 export const accommodations = {
   "accommodations.hero.title":
     "Our guest rooms, where comfort meets authenticity",
-  "accommodations.hero.text":
-    "The four uniquely decorated rooms, inviting you to travel, are located on the second floor. A welcome area with armchairs, board games, books and tourist information is available. Our air-conditioned rooms have private shower and toilet facilities.\n\nOpening hours: check-in: 5 pm–9 pm - Check-out by 10:30 am. Early arrival possible on request and charged.",
+  "accommodations.hero.text": `The four uniquely decorated rooms, inviting you to travel, are located on the second floor. A welcome area with armchairs, board games, books and tourist information is available. Our air-conditioned rooms have private shower and toilet facilities.\n\nOpening hours: check-in: ${formatCheckinHours("en")} - Check-out by ${formatCheckoutTime("en")}. Early arrival possible on request and charged.`,
   "accommodations.rooms.button": "View the room",
   "accommodations.rooms.marocaine.title": "Moroccan Room",
   "accommodations.rooms.marocaine.description":
@@ -109,8 +114,7 @@ export const accommodations = {
   "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
     "Pedestal table with two armchairs",
   "accommodations.breakfast.title": "Breakfast, table d'hôtes and bar",
-  "accommodations.breakfast.text":
-    "Breakfast is served from 8:00 to 9:30 a.m., or earlier on request. It is served in the dining room or in the inner courtyard, in good weather. As a buffet, you will find traditional bread, pastries, organic tea, coffee, fruit juices, local yogurts and seasonal fruit.\n\nWe select our suppliers to offer you local and organic products.\n\nSavory breakfast option available, on request and by reservation the day before.\n\nBy reservation, the table d'hôtes offers a homemade set menu or boards of charcuterie, cheeses or composed salads with local and organic products. Our offerings may vary depending on the season.\n\nBar service: we offer a drinks menu and a wine list.",
+  "accommodations.breakfast.text": `Breakfast is served ${formatBreakfastHours("en")}, or earlier on request. It is served in the dining room or in the inner courtyard, in good weather. As a buffet, you will find traditional bread, pastries, organic tea, coffee, fruit juices, local yogurts and seasonal fruit.\n\nWe select our suppliers to offer you local and organic products.\n\nSavory breakfast option available, on request and by reservation the day before.\n\nBy reservation, the table d'hôtes offers a homemade set menu or boards of charcuterie, cheeses or composed salads with local and organic products. Our offerings may vary depending on the season.\n\nBar service: we offer a drinks menu and a wine list.`,
   "accommodations.cta.title": "Want to privatize every room?",
   "accommodations.cta.text":
     "You can book the entire house for group events, evenings with friends or a family weekend getaway.",

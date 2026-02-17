@@ -1,3 +1,5 @@
+import { formatPoolHours } from "@/lib/hours";
+
 export const place = {
   "place.header.title": "The Place",
   "place.header.imageAlt":
@@ -12,8 +14,7 @@ export const place = {
     "Outdoor swimming pool at Domaine de Pipangaille surrounded by trees, with wooden deck and artificial grass area.",
   "place.services.image3Alt":
     "Inner courtyard of Domaine de Pipangaille with tables and chairs, view of the stone facade with green shutters.",
-  "place.services.text":
-    "Designed for your comfort, the domain offers outdoor parking, a secure shelter for bikes, an unheated swimming pool open in season, a summer pavilion and relaxation areas by the courtyard and garden.\n\nThe table d'hôtes is offered on reservation and reserved for accommodation guests. A bar service is also accessible on site.",
+  "place.services.text": `Designed for your comfort, the domain offers outdoor parking, a secure shelter for bikes, an unheated swimming pool open in season ${formatPoolHours("en")} (hours may vary depending on weather conditions), a summer pavilion and relaxation areas by the courtyard and garden.\n\nThe table d'hôtes is offered on reservation and reserved for accommodation guests. A bar service is also accessible on site.`,
   "place.events.title": "Event planning",
   "place.events.gallery.image1Alt":
     "Musicians performing on a sheltered stage in the inner courtyard",

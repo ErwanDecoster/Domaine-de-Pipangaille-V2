@@ -1,8 +1,13 @@
+import {
+  formatCheckinHours,
+  formatCheckoutTime,
+  formatBreakfastHours,
+} from "@/lib/hours";
+
 export const accommodations = {
   "accommodations.hero.title":
     "Nuestras habitaciones, entre confort y autenticidad",
-  "accommodations.hero.text":
-    "Las cuatro habitaciones con decoración única, que invitan al viaje, están situadas en el segundo piso. Hay un área de recepción con sillones, juegos de mesa, libros e información turística disponible. Nuestras habitaciones climatizadas disponen de ducha y aseo privados.\n\nHorarios: recepción: 17h-21h - Salida hasta las 10:30. Llegada anticipada posible bajo petición y de pago.",
+  "accommodations.hero.text": `Las cuatro habitaciones con decoración única, que invitan al viaje, están situadas en el segundo piso. Hay un área de recepción con sillones, juegos de mesa, libros e información turística disponible. Nuestras habitaciones climatizadas disponen de ducha y aseo privados.\n\nHorarios: recepción: ${formatCheckinHours("es")} - Salida hasta las ${formatCheckoutTime("es")}. Llegada anticipada posible bajo petición y de pago.`,
   "accommodations.rooms.button": "Ver la habitación",
   "accommodations.rooms.marocaine.title": "Habitación Marroquí",
   "accommodations.rooms.marocaine.description":
@@ -110,8 +115,7 @@ export const accommodations = {
   "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
     "Mesa auxiliar con dos sillones",
   "accommodations.breakfast.title": "Desayuno, mesa de anfitrión y bar",
-  "accommodations.breakfast.text":
-    "El desayuno se sirve de 8:00 a 9:30, o antes bajo petición. Se sirve en el comedor o en el patio interior, con buen tiempo. En forma de buffet, encontrará pan tradicional, bollería, té orgánico, café, zumos de frutas, yogures locales y frutas de temporada.\n\nSeleccionamos a nuestros proveedores para ofrecerle productos locales y ecológicos.\n\nDesayuno salado opcional disponible, bajo petición y con reserva previa el día anterior.\n\nCon reserva previa, la mesa de anfitrión ofrece un menú único casero o tablas de embutidos, quesos o ensaladas compuestas con productos locales y ecológicos. Nuestras propuestas pueden variar según la temporada.\n\nServicio de bar: ofrecemos una carta de bebidas y una carta de vinos.",
+  "accommodations.breakfast.text": `El desayuno se sirve ${formatBreakfastHours("es")}, o antes bajo petición. Se sirve en el comedor o en el patio interior, con buen tiempo. En forma de buffet, encontrará pan tradicional, bollería, té orgánico, café, zumos de frutas, yogures locales y frutas de temporada.\n\nSeleccionamos a nuestros proveedores para ofrecerle productos locales y ecológicos.\n\nDesayuno salado opcional disponible, bajo petición y con reserva previa el día anterior.\n\nCon reserva previa, la mesa de anfitrión ofrece un menú único casero o tablas de embutidos, quesos o ensaladas compuestas con productos locales y ecológicos. Nuestras propuestas pueden variar según la temporada.\n\nServicio de bar: ofrecemos una carta de bebidas y una carta de vinos.`,
   "accommodations.cta.title": "¿Quieres privatizar todas las habitaciones?",
   "accommodations.cta.text":
     "También puedes reservar todas las habitaciones para eventos de grupo, fines de semana en familia o encuentros con amigos.",

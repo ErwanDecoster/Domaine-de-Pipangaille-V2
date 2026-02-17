@@ -1,3 +1,9 @@
+import {
+  formatCheckinStart,
+  formatLateArrivalTime,
+  formatCheckoutTime,
+} from "@/lib/hours";
+
 export const generalConditions = {
   "generalConditions.title":
     "Allgemeine Geschäftsbedingungen für Bed & Breakfast-Aufenthalte",
@@ -44,15 +50,13 @@ export const generalConditions = {
   "generalConditions.article6.content2":
     "Der Gast wird dann sofort und vollständig erstattet.",
   "generalConditions.article7.title": "Artikel 7 - Ankunftszeit",
-  "generalConditions.article7.content1":
-    "Die Ankunft ist ab 17:00 Uhr nachmittags möglich und bis 22:00 Uhr.",
+  "generalConditions.article7.content1": `Die Ankunft ist ab ${formatCheckinStart("de")} nachmittags möglich und bis ${formatLateArrivalTime("de")}.`,
   "generalConditions.article7.content2":
     "Im Falle einer besonderen oder ungeplanten Anfrage müssen Sie uns unter ",
   "generalConditions.article7.content3":
     " anrufen, um etwaige Verzögerungen zu melden.",
   "generalConditions.article8.title": "Artikel 8 - Abreisezeit",
-  "generalConditions.article8.content":
-    "Die Abreisezeit aus den Zimmern ist spätestens 10:30 Uhr.",
+  "generalConditions.article8.content": `Die Abreisezeit aus den Zimmern ist spätestens ${formatCheckoutTime("de")}.`,
   "generalConditions.article9.title":
     "Artikel 9 - Zahlung des Restbetrags für Unterkunft",
   "generalConditions.article9.content1":
