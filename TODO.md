@@ -36,6 +36,3 @@
 - [ ] Add hiking options
 - [ ] Find MTB activities
 - [ ] find place for "@/images/table-d-hotes.jpg";
-- [ ] update amenitiz picture
-- [ ] update amenitiz text in all language
-- [ ] update amenitiz option in all language
