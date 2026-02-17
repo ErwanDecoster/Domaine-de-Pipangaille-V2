@@ -265,18 +265,21 @@ const bookingPath = getLocalizedUrl("booking", lang);
     }
 
     private handleOutsideClick = (e: Event): void => {
-      const target = e.target as Node;
+      // Use composedPath to get the event path before any DOM changes
+      const path = e.composedPath();
+      
+      // Check if click is inside dropdown or date button
+      const isInsideDropdown = path.includes(this.dropdown);
+      const isInsideDateButton = path.includes(this.dateButton);
+      const isInsideWidget = path.includes(this.widget);
 
       // Close dropdown if clicking outside
-      if (
-        !this.dropdown.contains(target) &&
-        !this.dateButton.contains(target)
-      ) {
+      if (!isInsideDropdown && !isInsideDateButton) {
         this.closeDropdown();
       }
 
-      // Close widget if clicking outside
-      if (!this.widget.contains(target) && !this.dropdown.contains(target)) {
+      // Close widget if clicking outside (mobile only)
+      if (!isInsideWidget && !isInsideDropdown) {
         this.toggle.checked = false;
       }
     };
