@@ -45,6 +45,11 @@ const baseUrl = `https://domaine-de-pipangaille.amenitiz.io/${amenitizLang}/book
     bookingUrl.searchParams.set("children", children);
 
     // Set the iframe src
-    document.getElementById("amenitizFrame").src = bookingUrl.toString();
+    const iframe = document.getElementById("amenitizFrame");
+    if (iframe instanceof HTMLIFrameElement) {
+      iframe.src = bookingUrl.toString();
+    } else {
+      console.error("Amenitiz booking iframe not found");
+    }
   </script>
 </Layout>
