@@ -85,10 +85,7 @@ export const SCHEMA_CONFIG = {
       "Outdoor terrace",
     ],
     logo: "/favicon.svg",
-    images: [
-      "/images/courtyard-terrace-lawn.jpeg",
-      "/images/pool-loungers.jpeg",
-    ],
+    images: ["/images/courtyard-terrace-lawn.jpg", "/images/pool-loungers.jpg"],
   },
 
   restaurant: {
@@ -116,7 +113,7 @@ export const SCHEMA_CONFIG = {
         "Air conditioning",
         "WiFi",
       ],
-      images: ["/images/accommodations/moroccan-room-french-door.jpeg"],
+      images: ["/images/accommodations/moroccan-room-french-door.jpg"],
       minOccupancy: 1,
       maxOccupancy: 2,
     },
@@ -132,7 +129,7 @@ export const SCHEMA_CONFIG = {
         "WiFi",
         "Work desk",
       ],
-      images: ["/images/accommodations/african-room-double-beds-bathroom.jpeg"],
+      images: ["/images/accommodations/african-room-double-beds-bathroom.jpg"],
       minOccupancy: 1,
       maxOccupancy: 2,
     },

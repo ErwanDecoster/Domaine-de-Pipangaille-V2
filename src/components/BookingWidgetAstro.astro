@@ -267,7 +267,7 @@ const bookingPath = getLocalizedUrl("booking", lang);
     private handleOutsideClick = (e: Event): void => {
       // Use composedPath to get the event path before any DOM changes
       const path = e.composedPath();
-      
+
       // Check if click is inside dropdown or date button
       const isInsideDropdown = path.includes(this.dropdown);
       const isInsideDateButton = path.includes(this.dateButton);
