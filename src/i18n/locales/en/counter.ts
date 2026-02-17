@@ -6,9 +6,9 @@ export const counter = {
     "Terrace of Le Comptoir de Pipangaille at the estate entrance with tables set up and sun loungers on the grass",
   "counter.hero.description":
     "Open from April to September, hours may vary depending on the weather.",
-  "counter.story.title": "Enjoy a meal or a drink break",
+  "counter.story.title": "A stop at the heart of the estate",
   "counter.story.text":
-    "Le Comptoir also curates local products and pantry items to enjoy on site or to take away.\n\nOpen Wednesday to Monday, 11 a.m. to 6 p.m., it is a simple, lively and welcoming place to meet, chat and soak up the unique setting of Pipangaille.",
+    "In the shade of the shelter, between touring bicycles and relaxation area, Le Comptoir becomes an ideal stopover after a few kilometers on the ViaRhôna.\n\nSettle in for a light meal, a sharing board or simply a fresh drink, and let time slow down.\n\nEnjoy the calm, the wooded park and the authenticity of Pipangaille.",
   "counter.story.imageAlt":
     "Covered shelter of the estate with touring bicycles parked and relaxation area arranged",
   "counter.menu.title": "Our menu",

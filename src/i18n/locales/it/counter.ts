@@ -6,9 +6,9 @@ export const counter = {
     "Terrazza di Le Comptoir de Pipangaille all'ingresso del dominio con tavoli installati e sdraio sull'erba",
   "counter.hero.description":
     "Aperto da aprile a settembre, gli orari possono variare a seconda del tempo.",
-  "counter.story.title": "Goditi un pasto o una pausa bevanda",
+  "counter.story.title": "Una sosta nel cuore del dominio",
   "counter.story.text":
-    "Il Comptoir propone anche una selezione di prodotti locali e di drogheria fine, da assaporare sul posto o da portare via.\n\nAperto dal mercoledì al lunedì, dalle 11 alle 18, è un luogo semplice, caloroso e vivo pensato per ritrovarsi, chiacchierare e godersi appieno l’ambiente unico di Pipangaille.",
+    "All'ombra del riparo, tra biciclette da viaggio e area relax, il Comptoir diventa una tappa ideale dopo qualche chilometro sulla ViaRhôna.\n\nAccomodatevi per un pasto leggero, un tagliere da condividere o semplicemente una bevanda fresca, e lasciate rallentare il tempo.\n\nGodetevi la calma, il parco alberato e l'autenticità di Pipangaille.",
   "counter.story.imageAlt":
     "Riparo coperto del dominio con biciclette da viaggio parcheggiate e area relax allestita",
   "counter.menu.title": "Il nostro menu",
