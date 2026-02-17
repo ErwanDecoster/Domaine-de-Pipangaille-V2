@@ -8,6 +8,10 @@ export const place = {
   "place.services.title": "Des espaces et services dédiés",
   "place.services.imageAlt":
     "Terrasse du domaine côté jardin avec vue sur les grands arbres baignée de soleil",
+  "place.services.image2Alt":
+    "Piscine extérieure du Domaine de Pipangaille entourée d'arbres, avec terrasse en bois et espace en gazon synthétique.",
+  "place.services.image3Alt":
+    "Cour intérieure du Domaine de Pipangaille avec tables et chaises, vue sur la façade en pierre aux volets verts.",
   "place.services.text":
     "Pensé pour votre confort, le domaine propose un parking extérieur non fermé, un abri sécurisé pour les vélos, une piscine non chauffée ouverte en saison, un pavillon d’été et des espaces de détente côté cour et jardin.\n\nLa table d’hôtes est proposée sur réservation et réservée à la clientèle de l’hébergement. Un service bar est également accessible sur place.",
   "place.events.title": "Organisation d’évènements",

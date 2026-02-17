@@ -8,6 +8,10 @@ export const place = {
   "place.services.title": "Ruimtes en services",
   "place.services.imageAlt":
     "Terras van het domein aan tuinzijde met zicht op hoge bomen badend in zonlicht",
+  "place.services.image2Alt":
+    "Buitenzwembad van het Domein Pipangaille omgeven door bomen, met houten terras en kunstgrasgebied.",
+  "place.services.image3Alt":
+    "Binnenhof van het Domein Pipangaille met tafels en stoelen, zicht op de stenen gevel met groene luiken.",
   "place.services.text":
     "Met het oog op uw gemak biedt het domein een open buitenparkeerplaats, een beveiligde fietsenstalling, een onverwarmend zwembad open in het seizoen, een zomerpaviljoen en ontspanningsruimtes naast de binnenplaats en tuin.\n\nDe tafel d'hôtes wordt op reservering aangeboden en is voorbehouden aan gasten van accommodaties. Een barservice is ook ter plaatse beschikbaar.",
   "place.events.title": "Evenementen organiseren",

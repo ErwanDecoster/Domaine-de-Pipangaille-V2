@@ -8,6 +8,10 @@ export const place = {
   "place.services.title": "Spazi e servizi dedicati",
   "place.services.imageAlt":
     "Terrazza del dominio lato giardino con vista sugli alberi alti baciati dal sole",
+  "place.services.image2Alt":
+    "Piscina esterna del Dominio di Pipangaille circondata da alberi, con terrazza in legno e area con erba sintetica.",
+  "place.services.image3Alt":
+    "Cortile interno del Dominio di Pipangaille con tavoli e sedie, vista sulla facciata in pietra con persiane verdi.",
   "place.services.text":
     "Pensato per il tuo comfort, il dominio propone un parcheggio esterno non chiuso, un rifugio sicuro per le biciclette, una piscina non riscaldata aperta in stagione, un padiglione estivo e spazi di relax verso la corte e il giardino.\n\nLa tavola d'ospiti viene proposta su prenotazione ed è riservata alla clientela dell'alloggio. Un servizio bar è anche accessibile in loco.",
   "place.events.title": "Organizzazione di eventi",
