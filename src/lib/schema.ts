@@ -38,7 +38,7 @@ export interface BedAndBreakfastSchema extends SchemaBase {
     longitude: string;
   };
   numberOfRooms?: number;
-  CheckInTime?: string;
+  checkinTime?: string;
   checkoutTime?: string;
   petsAllowed?: boolean;
   amenityFeature?: Array<{
@@ -230,7 +230,7 @@ export function generateBedAndBreakfastSchema(options?: {
       addressCountry: site.address.addressCountry,
     },
     numberOfRooms: lodging.numberOfRooms,
-    CheckInTime: lodging.CheckInTime,
+    checkinTime: lodging.checkInTime,
     checkoutTime: lodging.checkoutTime,
     petsAllowed: lodging.petsAllowed,
     sameAs: SCHEMA_CONFIG.socialProfiles || [],
