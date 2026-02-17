@@ -72,7 +72,7 @@ export const SCHEMA_CONFIG = {
     name: SITE.name,
     descriptionKey: "schema.lodging.description",
     numberOfRooms: 4,
-    checkInTime: SITE.hours.CheckIn.start,
+    checkInTime: SITE.hours.checkIn.start,
     checkoutTime: SITE.hours.checkout.time,
     petsAllowed: true,
     amenities: [

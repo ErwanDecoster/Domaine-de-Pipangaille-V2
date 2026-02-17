@@ -64,16 +64,16 @@ export function formatTime(time: string, locale: Locale): string {
  * @returns Formatted check-in time range (e.g., "17h-21h", "5:00 PM–9:00 PM")
  */
 export function formatCheckInHours(locale: Locale): string {
-  const start = formatTime(SITE.hours.CheckIn.start, locale);
-  const end = formatTime(SITE.hours.CheckIn.end, locale);
+  const start = formatTime(SITE.hours.checkIn.start, locale);
+  const end = formatTime(SITE.hours.checkIn.end, locale);
 
   switch (locale) {
     case "en":
       return `${start}–${end}`;
     case "nl": {
       // Dutch uses short format for ranges: "17u-21u"
-      const [startHours] = SITE.hours.CheckIn.start.split(":");
-      const [endHours] = SITE.hours.CheckIn.end.split(":");
+      const [startHours] = SITE.hours.checkIn.start.split(":");
+      const [endHours] = SITE.hours.checkIn.end.split(":");
       return `${startHours}u-${endHours}u`;
     }
     default:
@@ -126,7 +126,7 @@ export function formatCheckoutTime(locale: Locale): string {
  * @returns Formatted late arrival time
  */
 export function formatLateArrivalTime(locale: Locale): string {
-  return formatTime(SITE.hours.CheckIn.lateArrivalPossible, locale);
+  return formatTime(SITE.hours.checkIn.lateArrivalPossible, locale);
 }
 
 /**
@@ -136,7 +136,7 @@ export function formatLateArrivalTime(locale: Locale): string {
  * @returns Formatted check-in start time
  */
 export function formatCheckInStart(locale: Locale): string {
-  return formatTime(SITE.hours.CheckIn.start, locale);
+  return formatTime(SITE.hours.checkIn.start, locale);
 }
 
 /**
