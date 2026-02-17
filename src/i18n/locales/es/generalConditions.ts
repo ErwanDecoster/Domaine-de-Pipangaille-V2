@@ -1,3 +1,9 @@
+import {
+  formatCheckInStart,
+  formatLateArrivalTime,
+  formatCheckoutTime,
+} from "@/lib/hours";
+
 export const generalConditions = {
   "generalConditions.title":
     "Condiciones generales de venta de estadías en cama y desayuno",
@@ -45,15 +51,13 @@ export const generalConditions = {
   "generalConditions.article6.content2":
     "El cliente será entonces reembolsado inmediatamente y en su totalidad de las cantidades ya pagadas.",
   "generalConditions.article7.title": "Artículo 7 - Hora de llegada",
-  "generalConditions.article7.content1":
-    "La llegada está programada a partir de las 17:00 y es posible hasta las 22:00.",
+  "generalConditions.article7.content1": `La llegada está programada a partir de las ${formatCheckInStart("es")} y es posible hasta las ${formatLateArrivalTime("es")}.`,
   "generalConditions.article7.content2":
     "En caso de solicitud especial o imprevista, será necesario contactarnos por teléfono en ",
   "generalConditions.article7.content3":
     " para informarnos de cualquier retraso.",
   "generalConditions.article8.title": "Artículo 8 - Hora de partida",
-  "generalConditions.article8.content":
-    "La hora de salida de las habitaciones se establece a las 10:30 como máximo.",
+  "generalConditions.article8.content": `La hora de salida de las habitaciones se establece a las ${formatCheckoutTime("es")} como máximo.`,
   "generalConditions.article9.title":
     "Artículo 9 - Pago del saldo del alojamiento",
   "generalConditions.article9.content1":

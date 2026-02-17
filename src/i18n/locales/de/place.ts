@@ -1,3 +1,5 @@
+import { formatPoolHours } from "@/lib/hours";
+
 export const place = {
   "place.header.title": "Der Ort",
   "place.header.imageAlt":
@@ -8,8 +10,11 @@ export const place = {
   "place.services.title": "Räume und Services",
   "place.services.imageAlt":
     "Terrasse des Anwesens auf der Gartenseite mit Blick auf hohe Bäume im Sonnenlicht",
-  "place.services.text":
-    "Das Anwesen wurde für Ihren Komfort gestaltet und bietet kostenloses Parken im Freien, einen sicheren Unterstand für Fahrräder, einen unbeheizt Swimmingpool in der Saison, einen Sommerpavillon und Ruhezonen auf dem Innenhof und im Garten.\n\nDie Table d'hôtes wird auf Reservierung angeboten und ist den Übernachtungsgästen vorbehalten. Ein Bar-Service ist auch vor Ort verfügbar.",
+  "place.services.image2Alt":
+    "Außenpool des Domaine de Pipangaille umgeben von Bäumen, mit Holzterrasse und Kunstrasenbereich.",
+  "place.services.image3Alt":
+    "Innenhof des Domaine de Pipangaille mit Tischen und Stühlen, Blick auf die Steinfassade mit grünen Fensterläden.",
+  "place.services.text": `Das Anwesen wurde für Ihren Komfort gestaltet und bietet kostenloses Parken im Freien, einen sicheren Unterstand für Fahrräder, einen unbeheizt Swimmingpool in der Saison ${formatPoolHours("de")} (Öffnungszeiten können je nach Wetterlage variieren), einen Sommerpavillon und Ruhezonen auf dem Innenhof und im Garten.\n\nDie Table d'hôtes wird auf Reservierung angeboten und ist den Übernachtungsgästen vorbehalten. Ein Bar-Service ist auch vor Ort verfügbar.`,
   "place.events.title": "Veranstaltungen organisieren",
   "place.events.gallery.image1Alt":
     "Musiker treten auf einer überdachten Bühne im Innenhof auf",

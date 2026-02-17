@@ -6,9 +6,9 @@ export const counter = {
     "Terras van Le Comptoir de Pipangaille bij de ingang van het domein met geplaatste tafels en ligbedden in het gras",
   "counter.hero.description":
     "Geopend van april tot september, openingstijden kunnen variëren naar gelang het weer.",
-  "counter.story.title": "Geniet van een maaltijd of drinkpauze",
+  "counter.story.title": "Een halte in het hart van het domein",
   "counter.story.text":
-    "De Comptoir biedt ook een selectie lokale producten en delicatessen om ter plaatse te proeven of mee te nemen.\n\nGeopend van woensdag tot maandag, van 11.00 tot 18.00 uur, is het een eenvoudige, gezellige en levendige plek om af te spreken, bij te praten en volop van de unieke omgeving van Pipangaille te genieten.",
+    "In de schaduw van de schuilplaats, tussen reisfietsen en ontspanningsruimte, wordt de Comptoir een ideale tussenstop na een paar kilometer op de ViaRhôna.\n\nNeem plaats voor een lichte maaltijd, een deelplank of gewoon een frisse drank, en laat de tijd vertragen.\n\nGeniet van de rust, het bosrijke park en de authenticiteit van Pipangaille.",
   "counter.story.imageAlt":
     "Overdekte schuilplaats van het domein met geparkeerde reisfietsen en ingerichte ontspanningsruimte",
   "counter.menu.title": "Ons menu",

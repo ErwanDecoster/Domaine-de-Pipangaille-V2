@@ -1,3 +1,9 @@
+import {
+  formatCheckInStart,
+  formatLateArrivalTime,
+  formatCheckoutTime,
+} from "@/lib/hours";
+
 export const generalConditions = {
   "generalConditions.title":
     "Conditions générales de vente des séjours en chambre d'hôtes",
@@ -45,14 +51,12 @@ export const generalConditions = {
   "generalConditions.article6.content2":
     "Le client sera alors immédiatement et intégralement remboursé des sommes qu'il aura déjà versées.",
   "generalConditions.article7.title": "Article 7 - Heure d'arrivée",
-  "generalConditions.article7.content1":
-    "L'arrivée est prévue l'après-midi à partir de 17h, et possible jusqu'à 22h.",
+  "generalConditions.article7.content1": `L'arrivée est prévue l'après-midi à partir de ${formatCheckInStart("fr")}, et possible jusqu'à ${formatLateArrivalTime("fr")}.`,
   "generalConditions.article7.content2":
     "En cas de demande particulière ou imprévue, il sera nécessaire de nous contacter par téléphone au ",
   "generalConditions.article7.content3": " pour nous signaler tout retard.",
   "generalConditions.article8.title": "Article 8 - Heure de départ",
-  "generalConditions.article8.content":
-    "L'heure de départ des chambres est fixée à 10h30 au plus tard.",
+  "generalConditions.article8.content": `L'heure de départ des chambres est fixée à ${formatCheckoutTime("fr")} au plus tard.`,
   "generalConditions.article9.title":
     "Article 9 - Règlement du solde de l'hébergement",
   "generalConditions.article9.content1":

@@ -1,7 +1,12 @@
+import {
+  formatCheckInHours,
+  formatCheckoutTime,
+  formatBreakfastHours,
+} from "@/lib/hours";
+
 export const accommodations = {
   "accommodations.hero.title": "Onze gastenkamers: comfort en authenticiteit",
-  "accommodations.hero.text":
-    "De vier uniek ingerichte kamers, die uitnodigen tot reizen, bevinden zich op de tweede verdieping. Een ontvangstruimte met fauteuils, gezelschapsspellen, boeken en toeristische informatie is beschikbaar. Onze kamers met airconditioning hebben een privé-douche en toilet.\n\nOpeningstijden: ontvangst: 17u-21u - Vertrek tot 10:30 uur. Vroege aankomst mogelijk op aanvraag en tegen betaling.",
+  "accommodations.hero.text": `De vier uniek ingerichte kamers, die uitnodigen tot reizen, bevinden zich op de tweede verdieping. Een ontvangstruimte met fauteuils, gezelschapsspellen, boeken en toeristische informatie is beschikbaar. Onze kamers met airconditioning hebben een privé-douche en toilet.\n\nOpeningstijden: ontvangst: ${formatCheckInHours("nl")} - Vertrek tot ${formatCheckoutTime("nl")}. Vroege aankomst mogelijk op aanvraag en tegen betaling.`,
   "accommodations.rooms.button": "Bekijk de kamer",
   "accommodations.rooms.marocaine.title": "Marokkaanse kamer",
   "accommodations.rooms.marocaine.description":
@@ -110,8 +115,7 @@ export const accommodations = {
   "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
     "Bijzettafel met twee fauteuils",
   "accommodations.breakfast.title": "Ontbijt, table d'hôtes en bar",
-  "accommodations.breakfast.text":
-    "Het ontbijt wordt geserveerd van 8.00 tot 9.30 uur, of eerder op aanvraag. Het wordt geserveerd in de eetzaal of bij mooi weer in de binnenplaats. Als buffet vindt u traditioneel brood, viennoiserie, biologische thee, koffie, vruchtensappen, lokale yoghurt en seizoensfruit.\n\nWij selecteren onze leveranciers om u lokale en biologische producten aan te bieden.\n\nHartig ontbijt optioneel beschikbaar, op aanvraag en na reservering de dag ervoor.\n\nOp reservering biedt de table d'hôtes een huisgemaakt vast menu of borden met charcuterie, kazen of samengestelde salades met lokale en biologische producten. Onze aanbiedingen kunnen variëren naargelang het seizoen.\n\nBar-service: wij bieden een drankenkaart en een wijnkaart.",
+  "accommodations.breakfast.text": `Het ontbijt wordt geserveerd ${formatBreakfastHours("nl")}, of eerder op aanvraag. Het wordt geserveerd in de eetzaal of bij mooi weer in de binnenplaats. Als buffet vindt u traditioneel brood, viennoiserie, biologische thee, koffie, vruchtensappen, lokale yoghurt en seizoensfruit.\n\nWij selecteren onze leveranciers om u lokale en biologische producten aan te bieden.\n\nHartig ontbijt optioneel beschikbaar, op aanvraag en na reservering de dag ervoor.\n\nOp reservering biedt de table d'hôtes een huisgemaakt vast menu of borden met charcuterie, kazen of samengestelde salades met lokale en biologische producten. Onze aanbiedingen kunnen variëren naargelang het seizoen.\n\nBar-service: wij bieden een drankenkaart en een wijnkaart.`,
   "accommodations.cta.title": "Wilt u alle kamers privatiseren?",
   "accommodations.cta.text":
     "Het is mogelijk om het volledige huis te reserveren voor groepsactiviteiten, familie-uitstapjes of weekends met vrienden.",

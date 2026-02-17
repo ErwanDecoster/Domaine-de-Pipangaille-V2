@@ -1,5 +1,5 @@
 /**
- * Client-side utilities for checking restaurant opening hours
+ * Client-side utilities for checkIng restaurant opening hours
  * Must run in browser to get current time
  */
 import businessHours from "@/constants/businessHours.json";

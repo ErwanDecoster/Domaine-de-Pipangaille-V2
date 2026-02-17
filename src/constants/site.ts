@@ -38,4 +38,22 @@ export const SITE = {
     naf: "55202",
     capital: "1 500 €",
   },
+  hours: {
+    checkIn: {
+      start: "17:00",
+      end: "21:00",
+      lateArrivalPossible: "22:00",
+    },
+    checkout: {
+      time: "10:30",
+    },
+    breakfast: {
+      start: "08:00",
+      end: "09:30",
+    },
+    pool: {
+      start: "11:00",
+      end: "21:00",
+    },
+  },
 } as const;

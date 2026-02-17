@@ -1,3 +1,9 @@
+import {
+  formatCheckInStart,
+  formatLateArrivalTime,
+  formatCheckoutTime,
+} from "@/lib/hours";
+
 export const generalConditions = {
   "generalConditions.title":
     "Algemene voorwaarden voor bed- en breakfastovernachtingen",
@@ -43,15 +49,13 @@ export const generalConditions = {
   "generalConditions.article6.content2":
     "De gast wordt dan onmiddellijk en volledig terugbetaald van alle reeds betaalde bedragen.",
   "generalConditions.article7.title": "Artikel 7 - Aankomsttijd",
-  "generalConditions.article7.content1":
-    "Aankomst is voorzien in de middag vanaf 17:00 uur en mogelijk tot 22:00 uur.",
+  "generalConditions.article7.content1": `Aankomst is voorzien in de middag vanaf ${formatCheckInStart("nl")} en mogelijk tot ${formatLateArrivalTime("nl")}.`,
   "generalConditions.article7.content2":
     "In geval van een speciale of onverwachte aanvraag dient u ons per telefoon te bellen op ",
   "generalConditions.article7.content3":
     " om ons van vertragingen op de hoogte te stellen.",
   "generalConditions.article8.title": "Artikel 8 - Vertrektijd",
-  "generalConditions.article8.content":
-    "De vertrektijd uit de kamers is vastgesteld op 10:30 uur uiterlijk.",
+  "generalConditions.article8.content": `De vertrektijd uit de kamers is vastgesteld op ${formatCheckoutTime("nl")} uiterlijk.`,
   "generalConditions.article9.title":
     "Artikel 9 - Betaling van het restantbedrag van het verblijf",
   "generalConditions.article9.content1":

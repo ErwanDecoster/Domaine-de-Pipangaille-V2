@@ -6,9 +6,9 @@ export const counter = {
     "Terrasse des Le Comptoir de Pipangaille am Anwesenseingang mit aufgestellten Tischen und Liegestühlen auf dem Rasen",
   "counter.hero.description":
     "Von April bis September geöffnet, Öffnungszeiten können je nach Wetter variieren.",
-  "counter.story.title": "Genießen Sie eine Mahlzeit oder eine Getränkepause",
+  "counter.story.title": "Eine Pause im Herzen des Anwesens",
   "counter.story.text":
-    "Das Comptoir bietet außerdem eine Auswahl an lokalen Produkten und Feinkost zum Verzehr vor Ort oder zum Mitnehmen.\n\nGeöffnet von Mittwoch bis Montag, 11 bis 18 Uhr, ist es ein unkomplizierter, lebendiger Treffpunkt, um sich auszutauschen und das einzigartige Ambiente von Pipangaille voll auszukosten.",
+    "Im Schatten des Unterstands, zwischen Tourenrädern und Ruhebereich, wird das Comptoir zu einem idealen Zwischenstopp nach ein paar Kilometern auf der ViaRhôna.\n\nNehmen Sie Platz für eine leichte Mahlzeit, eine Platte zum Teilen oder einfach ein erfrischendes Getränk und lassen Sie die Zeit langsamer werden.\n\nGenießen Sie die Ruhe, den bewaldeten Park und die Authentizität von Pipangaille.",
   "counter.story.imageAlt":
     "Überdachter Unterstand des Anwesens mit geparkten Tourenrädern und eingerichtetem Entspannungsbereich",
   "counter.menu.title": "Unsere Speisekarte",

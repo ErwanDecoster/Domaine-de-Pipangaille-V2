@@ -1,7 +1,12 @@
+import {
+  formatCheckInHours,
+  formatCheckoutTime,
+  formatBreakfastHours,
+} from "@/lib/hours";
+
 export const accommodations = {
   "accommodations.hero.title": "Le nostre camere, tra comfort e autenticità",
-  "accommodations.hero.text":
-    "Le quattro camere decorate in modo unico, che invitano al viaggio, si trovano al secondo piano. È disponibile un'area di accoglienza con poltrone, giochi da tavolo, libri e informazioni turistiche. Le nostre camere climatizzate dispongono di doccia e servizi privati.\n\nOrari: accoglienza: 17h-21h - Partenza fino alle 10:30. Arrivo anticipato possibile su richiesta e a pagamento.",
+  "accommodations.hero.text": `Le quattro camere decorate in modo unico, che invitano al viaggio, si trovano al secondo piano. È disponibile un'area di accoglienza con poltrone, giochi da tavolo, libri e informazioni turistiche. Le nostre camere climatizzate dispongono di doccia e servizi privati.\n\nOrari: accoglienza: ${formatCheckInHours("it")} - Partenza fino alle ${formatCheckoutTime("it")}. Arrivo anticipato possibile su richiesta e a pagamento.`,
   "accommodations.rooms.button": "Vedi la camera",
   "accommodations.rooms.marocaine.title": "Camera Marocchina",
   "accommodations.rooms.marocaine.description":
@@ -111,8 +116,7 @@ export const accommodations = {
   "accommodations.rooms.equipments.pedestalTableWithTwoArmchairs":
     "Tavolino con due poltrone",
   "accommodations.breakfast.title": "Colazione, table d'hôtes e bar",
-  "accommodations.breakfast.text":
-    "La colazione è servita dalle 8:00 alle 9:30, o prima su richiesta. Viene servita nella sala da pranzo o nel cortile interno, con bel tempo. A buffet, troverete pane tradizionale, pasticceria, tè biologico, caffè, succhi di frutta, yogurt locali e frutta di stagione.\n\nSelezioniamo i nostri fornitori per offrirvi prodotti locali e biologici.\n\nColazione salata opzionale disponibile, su richiesta e con prenotazione il giorno prima.\n\nSu prenotazione, la table d'hôtes propone un menù unico fatto in casa o taglieri di salumi, formaggi o insalate composte con prodotti locali e biologici. Le nostre proposte possono variare a seconda della stagione.\n\nServizio bar: proponiamo una carta delle bevande e una carta dei vini.",
+  "accommodations.breakfast.text": `La colazione è servita ${formatBreakfastHours("it")}, o prima su richiesta. Viene servita nella sala da pranzo o nel cortile interno, con bel tempo. A buffet, troverete pane tradizionale, pasticceria, tè biologico, caffè, succhi di frutta, yogurt locali e frutta di stagione.\n\nSelezioniamo i nostri fornitori per offrirvi prodotti locali e biologici.\n\nColazione salata opzionale disponibile, su richiesta e con prenotazione il giorno prima.\n\nSu prenotazione, la table d'hôtes propone un menù unico fatto in casa o taglieri di salumi, formaggi o insalate composte con prodotti locali e biologici. Le nostre proposte possono variare a seconda della stagione.\n\nServizio bar: proponiamo una carta delle bevande e una carta dei vini.`,
   "accommodations.cta.title": "Vuoi privatizzare tutte le camere?",
   "accommodations.cta.text":
     "È possibile riservare l’intera casa per eventi di gruppo, weekend in famiglia o serate tra amici.",

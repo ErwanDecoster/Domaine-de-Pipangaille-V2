@@ -230,7 +230,7 @@ export function generateBedAndBreakfastSchema(options?: {
       addressCountry: site.address.addressCountry,
     },
     numberOfRooms: lodging.numberOfRooms,
-    checkinTime: lodging.checkinTime,
+    checkinTime: lodging.checkInTime,
     checkoutTime: lodging.checkoutTime,
     petsAllowed: lodging.petsAllowed,
     sameAs: SCHEMA_CONFIG.socialProfiles || [],
