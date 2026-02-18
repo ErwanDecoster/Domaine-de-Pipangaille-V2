@@ -1,5 +1,5 @@
 export const home = {
-  "home.header.title": "Le Domaine de Pipangaille",
+  "home.header.title": "The place, guest house in Drôme",
   "home.header.imageAlt":
     "Inner courtyard of Domaine de Pipangaille surrounded by stone walls, with shaded terrace and staircase leading to the rooms",
   "home.header.text":
