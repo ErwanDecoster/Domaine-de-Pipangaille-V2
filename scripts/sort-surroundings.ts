@@ -1,24 +1,26 @@
 #!/usr/bin/env node
 /**
- * Script de tri pour surroundings.ts
- * Exécution: npm run sort-surroundings
- * 
- * Ce script trie les activités et restaurants selon:
- * 1. Durée du trajet (durationMinutes * 10)
- * 2. Catégories: "loved" (-500), "family" (-100)
+ * Sort script for surroundings.ts
+ * Execution: npm run sort-surroundings
+ *
+ * This script sorts activities and restaurants by:
+ * 1. Route duration (durationMinutes * 10)
+ * 2. Categories: "loved" (-500), "family" (-100), "bike" (-100)
  * 3. BikeScore: <70 (+100), >=80 (-50)
- * 4. Sans tag: (+500)
- * 
- * Score total = durationMinutes * 10 + categoryBonus + bikeScoreBonus + tagPenalty
- * Tri: petit score → grand score (plus prioritaire)
+ * 4. No category: (+500)
+ *
+ * Score = durationMinutes * 10 + categoryBonus + bikeScoreBonus + categoryPenalty
+ * Sort: lower score → higher score (more priority first)
  */
-
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const SURROUNDINGS_FILE = path.join(__dirname, "../src/constants/surroundings.ts");
+const SURROUNDINGS_FILE = path.join(
+  __dirname,
+  "../src/constants/surroundings.ts",
+);
 
 interface BikeRoute {
   durationMinutes?: number;
@@ -68,14 +70,11 @@ function calculateSortScore(activity: Activity): number {
 
 function sortActivities(activities: Activity[]): Activity[] {
   return [...activities].sort(
-    (a, b) => calculateSortScore(a) - calculateSortScore(b)
+    (a, b) => calculateSortScore(a) - calculateSortScore(b),
   );
 }
 
-function generateReport(
-  title: string,
-  sorted: Activity[]
-): string {
+function generateReport(title: string, sorted: Activity[]): string {
   let report = `\n${"=".repeat(80)}\n`;
   report += `📋 ${title} (${sorted.length} items)\n`;
   report += `${"=".repeat(80)}\n`;
@@ -83,7 +82,6 @@ function generateReport(
   sorted.forEach((activity, index) => {
     const score = calculateSortScore(activity);
     const duration = activity.bikeRoute?.durationMinutes || "N/A";
-    const category = activity.category?.join(", ") || "N/A";
     const bikeScore = activity.bikeRoute?.bikeScore || "N/A";
 
     report += `${String(index + 1).padStart(2, " ")}. ${activity.title.padEnd(40)} | Score: ${String(score).padStart(5)} | Duration: ${String(duration).padStart(4)}min | BikeScore: ${bikeScore}\n`;
@@ -113,7 +111,6 @@ function extractDataFromTS(content: string): string {
 }
 
 function parseData(dataString: string): any {
-  // eslint-disable-next-line no-eval
   return eval(`(${dataString})`);
 }
 
@@ -131,7 +128,7 @@ function generateTS(data: any, originalContent: string): string {
 
 async function main() {
   try {
-    console.log("🔄 Tri des activités et restaurants de surroundings.ts\n");
+    console.log("🔄 Sorting activities and restaurants from surroundings.ts\n");
 
     const fileContent = fs.readFileSync(SURROUNDINGS_FILE, "utf-8");
     const dataString = extractDataFromTS(fileContent);
@@ -142,20 +139,20 @@ async function main() {
     }
 
     const allItems = [...data.toVisit, ...data.toEat];
-    console.log(`✓ Chargé ${data.toVisit.length} activités (toVisit)`);
-    console.log(`✓ Chargé ${data.toEat.length} restaurants (toEat)`);
+    console.log(`✓ Loaded ${data.toVisit.length} activities (toVisit)`);
+    console.log(`✓ Loaded ${data.toEat.length} restaurants (toEat)`);
     console.log(`✓ Total: ${allItems.length} items\n`);
 
     if (allItems.length === 0) {
-      console.warn("⚠️  Aucun item trouvé");
+      console.warn("⚠️  No items found");
       process.exit(1);
     }
 
     const sortedToVisit = sortActivities(data.toVisit);
     const sortedToEat = sortActivities(data.toEat);
 
-    console.log(generateReport("🎯 À VISITER (toVisit)", sortedToVisit));
-    console.log(generateReport("🍽️  À MANGER (toEat)", sortedToEat));
+    console.log(generateReport("🎯 PLACES TO VISIT (toVisit)", sortedToVisit));
+    console.log(generateReport("🍽️  PLACES TO EAT (toEat)", sortedToEat));
 
     const sortedData = {
       toVisit: sortedToVisit,
@@ -165,11 +162,11 @@ async function main() {
     const newContent = generateTS(sortedData, fileContent);
     fs.writeFileSync(SURROUNDINGS_FILE, newContent, "utf-8");
 
-    console.log(`\n✅ Fichier ${SURROUNDINGS_FILE} mis à jour avec succès!\n`);
+    console.log(`\n✅ File ${SURROUNDINGS_FILE} updated successfully!\n`);
   } catch (error) {
     console.error(
-      "❌ Erreur:",
-      error instanceof Error ? error.message : String(error)
+      "❌ Error:",
+      error instanceof Error ? error.message : String(error),
     );
     if (error instanceof Error && error.stack) {
       console.error(error.stack);
@@ -178,4 +175,4 @@ async function main() {
   }
 }
 
-main();
+await main();
