@@ -779,6 +779,7 @@ export const surroundings = {
     },
     {
       title: "Le Picotin",
+      category: ["loved"],
       shortDesc: "surroundings.descriptions.le_picotin.short",
       longDesc: ["surroundings.descriptions.le_picotin.long"],
       gallery: [
