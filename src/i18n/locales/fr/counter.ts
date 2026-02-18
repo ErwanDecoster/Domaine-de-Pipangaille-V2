@@ -1,5 +1,5 @@
 export const counter = {
-  "counter.hero.title": "Le comptoir",
+  "counter.hero.title": "Le comptoir, pause vélo sur la ViaRhôna",
   "counter.hero.text":
     "Le Comptoir de Pipangaille est un lieu de pause et de partage, pensé comme une parenthèse gourmande au cœur du domaine. On y vient pour savourer un café, un chocolat chaud, un matcha ou une boisson fraîche, accompagné d’une gourmandise sucrée ou salée, dans une atmosphère conviviale et apaisante.",
   "counter.hero.imageAlt":

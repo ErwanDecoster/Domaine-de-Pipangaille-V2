@@ -1,5 +1,5 @@
 export const counter = {
-  "counter.hero.title": "El Mostrador",
+  "counter.hero.title": "El Mostrador, pausa ciclista en la ViaRhôna",
   "counter.hero.text":
     "Le Comptoir de Pipangaille es un espacio de pausa y encuentro, pensado como un paréntesis gourmet en el corazón del dominio. Se viene a saborear un café, un chocolate caliente, un matcha o una bebida fresca acompañada de un capricho dulce o salado, en un ambiente acogedor y sereno.",
   "counter.hero.imageAlt":

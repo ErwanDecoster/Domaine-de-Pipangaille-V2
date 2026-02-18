@@ -1,5 +1,5 @@
 export const counter = {
-  "counter.hero.title": "The Counter",
+  "counter.hero.title": "The counter, bike break on the ViaRhôna",
   "counter.hero.text":
     "Le Comptoir de Pipangaille is a cosy pause-and-share space, conceived as a gourmet interlude at the heart of the estate. Stop by for coffee, hot chocolate, matcha or a chilled drink paired with a sweet or savoury treat in a warm, soothing atmosphere.",
   "counter.hero.imageAlt":

@@ -1,5 +1,5 @@
 export const counter = {
-  "counter.hero.title": "Il Bancone",
+  "counter.hero.title": "Il Bancone, pausa ciclistica sulla ViaRhôna",
   "counter.hero.text":
     "Le Comptoir de Pipangaille è un luogo di pausa e condivisione, pensato come una parentesi gourmet nel cuore del dominio. Ci si ferma per gustare un caffè, una cioccolata calda, un matcha o una bevanda fresca accompagnata da una golosità dolce o salata, in un’atmosfera conviviale e rasserenante.",
   "counter.hero.imageAlt":
