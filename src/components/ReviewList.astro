@@ -67,9 +67,9 @@ const bufferSize = tailBuffer.length;
       aria-label={t("home.reviews.title")}
     >
       {
-        displayReviews.map((review) => (
+        displayReviews.map((review, index) => (
           <div class="snap-start">
-            <Review review={review} />
+            <Review review={review} index={index} />
           </div>
         ))
       }

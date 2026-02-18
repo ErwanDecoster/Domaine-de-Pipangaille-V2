@@ -1,12 +1,15 @@
 ---
 import { Star } from "@lucide/astro";
 
-const { review } = Astro.props;
+const { review, index = 0 } = Astro.props;
 ---
 
 <div
   class="min-w-441px bg-muted group relative grid gap-6 rounded-md p-8"
   onmouseleave="this.querySelector('[data-review-overlay]')?.scrollTo({top:0,behavior:'smooth'})"
+  data-review-index={index}
+  data-review-name={review.name}
+  data-review-date={new Date(review.publishedAtDate).toLocaleDateString()}
 >
   <div class="flex gap-1.5">
     <Star />
@@ -53,7 +56,16 @@ const { review } = Astro.props;
           gradient.style.opacity = "1";
           overlay.setAttribute("tabindex", "0");
           overlay.setAttribute("role", "region");
-          overlay.setAttribute("aria-label", "Full review text");
+
+          // Get unique identifier from parent data attributes
+          const reviewElement = container.parentElement as HTMLElement;
+          const reviewIndex = reviewElement?.dataset.reviewIndex || "0";
+          const reviewName = reviewElement?.dataset.reviewName || "Review";
+          const reviewDate = reviewElement?.dataset.reviewDate || "";
+
+          const uniqueLabel = `Review ${reviewIndex}: ${reviewName} on ${reviewDate}`;
+
+          overlay.setAttribute("aria-label", uniqueLabel);
         } else {
           // Content is not truncated - remove accessibility attributes
           overlay.removeAttribute("tabindex");
