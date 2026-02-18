@@ -147,10 +147,10 @@ const bufferSize = tailBuffer.length;
         });
         resizeObserver.observe(carousel);
       } else {
-        (window as any).addEventListener("resize", calculateDimensions);
+        (globalThis as any).addEventListener("resize", calculateDimensions);
       }
 
-      (window as any).scrollCarousel = (direction: number) => {
+      (globalThis as any).scrollCarousel = (direction: number) => {
         const scrollAmount = itemWidth * direction;
         carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
       };
@@ -159,10 +159,10 @@ const bufferSize = tailBuffer.length;
       carousel.addEventListener("keydown", (e: KeyboardEvent) => {
         if (e.key === "ArrowLeft") {
           e.preventDefault();
-          (window as any).scrollCarousel(-1);
+          (globalThis as any).scrollCarousel(-1);
         } else if (e.key === "ArrowRight") {
           e.preventDefault();
-          (window as any).scrollCarousel(1);
+          (globalThis as any).scrollCarousel(1);
         }
       });
     }
