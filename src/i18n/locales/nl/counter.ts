@@ -1,5 +1,5 @@
 export const counter = {
-  "counter.hero.title": "De Toonbank",
+  "counter.hero.title": "De Toonbank, fietspauze op de ViaRhôna",
   "counter.hero.text":
     "Le Comptoir de Pipangaille is een plek om even te pauzeren en te delen – een gastronomische tussenstop in het hart van het domein. Je komt er voor koffie, warme chocolademelk, matcha of een frisse drank met een zoete of hartige lekkernij, in een warme en rustgevende sfeer.",
   "counter.hero.imageAlt":

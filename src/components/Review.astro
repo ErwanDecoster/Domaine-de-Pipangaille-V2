@@ -1,12 +1,15 @@
 ---
 import { Star } from "@lucide/astro";
 
-const { review } = Astro.props;
+const { review, index = 0 } = Astro.props;
 ---
 
 <div
   class="min-w-441px bg-muted group relative grid gap-6 rounded-md p-8"
   onmouseleave="this.querySelector('[data-review-overlay]')?.scrollTo({top:0,behavior:'smooth'})"
+  data-review-index={index}
+  data-review-name={review.name}
+  data-review-date={new Date(review.publishedAtDate).toLocaleDateString()}
 >
   <div class="flex gap-1.5">
     <Star />
@@ -23,7 +26,7 @@ const { review } = Astro.props;
     </div>
     <div
       data-review-overlay
-      class="bg-muted absolute inset-0 overflow-y-auto rounded text-sm opacity-0 transition-opacity group-hover:opacity-100"
+      class="bg-muted focus:outline-primary absolute inset-0 overflow-y-auto rounded text-sm opacity-0 transition-opacity group-hover:opacity-100 focus:opacity-100 focus:outline-2 focus:outline-offset-2"
     >
       <p>{review.text}</p>
     </div>
@@ -43,10 +46,31 @@ const { review } = Astro.props;
       const gradient = container.querySelector(
         "[data-review-gradient]",
       ) as HTMLElement;
+      const overlay = container.querySelector(
+        "[data-review-overlay]",
+      ) as HTMLElement;
 
-      if (preview && gradient) {
+      if (preview && gradient && overlay) {
         if (preview.scrollHeight > preview.clientHeight) {
+          // Content is truncated - show gradient and make overlay accessible
           gradient.style.opacity = "1";
+          overlay.setAttribute("tabindex", "0");
+          overlay.setAttribute("role", "region");
+
+          // Get unique identifier from parent data attributes
+          const reviewElement = container.parentElement as HTMLElement;
+          const reviewIndex = reviewElement?.dataset.reviewIndex || "0";
+          const reviewName = reviewElement?.dataset.reviewName || "Review";
+          const reviewDate = reviewElement?.dataset.reviewDate || "";
+
+          const uniqueLabel = `Review ${reviewIndex}: ${reviewName} on ${reviewDate}`;
+
+          overlay.setAttribute("aria-label", uniqueLabel);
+        } else {
+          // Content is not truncated - remove accessibility attributes
+          overlay.removeAttribute("tabindex");
+          overlay.removeAttribute("role");
+          overlay.removeAttribute("aria-label");
         }
       }
     });

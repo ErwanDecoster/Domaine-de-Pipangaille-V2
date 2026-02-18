@@ -118,7 +118,7 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
   <label
     for="mobile-menu-toggle"
     class="flex cursor-pointer flex-col items-center justify-center gap-1.5 lg:hidden"
-    aria-label="Toggle menu"
+    aria-label={t("nav.toggleMenu")}
   >
     <span
       class="hamburger-line hamburger-line--top bg-foreground block h-0.5 w-6 origin-center transition-all duration-300 ease-in-out"
@@ -133,8 +133,9 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
 </nav>
 
 <!-- Mobile Menu -->
-<div
+<nav
   class="bg-background fixed inset-x-0 top-0 z-30 flex h-screen w-screen translate-x-full flex-col gap-8 overflow-y-auto px-4 pt-32 transition-transform duration-300 ease-in-out peer-checked/menu:translate-x-0 lg:hidden"
+  aria-label={t("nav.mobileMenu")}
 >
   <ul class="flex flex-col gap-2">
     <li>
@@ -197,7 +198,7 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
       >{t("nav.book")}</Button
     >
   </div>
-</div>
+</nav>
 
 <style>
   #mobile-menu-toggle:checked ~ nav label .hamburger-line--top {

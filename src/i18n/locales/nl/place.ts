@@ -1,7 +1,7 @@
 import { formatPoolHours } from "@/lib/hours";
 
 export const place = {
-  "place.header.title": "De locatie",
+  "place.header.title": "De Plek, gastenverblijf in de Drôme",
   "place.header.imageAlt":
     "Buitenzwembad omgeven door ligbedden en vegetatie met houten paviljoen dichtbij",
   "place.header.text":

@@ -24,6 +24,7 @@ const bookingPath = getLocalizedUrl("booking", lang);
         type="checkbox"
         id="booking-widget-toggle"
         class="peer/widget sr-only"
+        aria-label={t("home.booking.button")}
       />
 
       <label
@@ -145,9 +146,9 @@ const bookingPath = getLocalizedUrl("booking", lang);
     class="bg-background fixed z-50 hidden rounded-lg border p-4 shadow-lg"
   >
     <div class="mb-4 flex items-center justify-between">
-      <h3 class="text-sm font-medium">
+      <h2 class="text-sm font-medium">
         {t("home.booking.selectDates")}
-      </h3>
+      </h2>
       <Button
         type="button"
         variant="ghost"

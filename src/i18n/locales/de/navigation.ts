@@ -6,6 +6,8 @@ export const navigation = {
   "nav.surroundings": "Umgebung",
   "nav.contact": "Kontakt",
   "nav.book": "Buchen",
+  "nav.mobileMenu": "Mobiles Menü",
+  "nav.toggleMenu": "Menü ein-/ausblenden",
   "footer.usefulLinks": "Nützliche Links",
   "footer.knowUsBetter": "Lernen Sie uns kennen",
   "footer.moreInfo": "Mehr Informationen",

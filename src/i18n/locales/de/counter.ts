@@ -1,5 +1,5 @@
 export const counter = {
-  "counter.hero.title": "Die Theke",
+  "counter.hero.title": "Die Theke, Fahrradpause auf der ViaRhôna",
   "counter.hero.text":
     "Le Comptoir de Pipangaille ist ein Ort zum Innehalten und Teilen – eine Gourmet-Pause im Herzen des Anwesens. Hier genießt man Kaffee, heiße Schokolade, Matcha oder ein kühles Getränk mit süßer oder herzhafter Leckerei in einer warmen, beruhigenden Atmosphäre.",
   "counter.hero.imageAlt":
