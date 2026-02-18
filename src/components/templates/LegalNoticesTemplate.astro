@@ -18,16 +18,21 @@ const editorRcsValue = SITE.legal.rcs;
 const editorNafValue = SITE.legal.naf;
 const editorCapitalValue = SITE.legal.capital;
 
-const designCompany = "Erwan Decoster";
-const designEmail = "contact@erwan-decoster.com";
-const designPhone = "+33 6 25 30 68 13";
-const designWebsiteUrl = "https://erwan-decoster.com";
-const designWebsiteLabel = "erwan-decoster.com";
-const designGithubUrl = "https://github.com/ErwanDecoster";
-const designGithubLabel = "github.com/ErwanDecoster";
-const designRepoUrl =
+const designerName = "Anthony Clemenson";
+const designerEmail = "replace";
+const designerWebsiteUrl = "replace";
+const designerWebsiteLabel = "replace";
+
+const developerName = "Erwan Decoster";
+const developerEmail = "contact@erwan-decoster.com";
+const developerPhone = "+33 6 25 30 68 13";
+const developerWebsiteUrl = "https://erwan-decoster.com";
+const developerWebsiteLabel = "erwan-decoster.com";
+const developerGithubUrl = "https://github.com/ErwanDecoster";
+const developerGithubLabel = "github.com/ErwanDecoster";
+const developerRepoUrl =
   "https://github.com/ErwanDecoster/domaine-de-pipangaille-v2-astro";
-const designRepoLabel =
+const developerRepoLabel =
   "github.com/ErwanDecoster/domaine-de-pipangaille-v2-astro";
 
 const hostingUrl = "https://vercel.com";
@@ -109,25 +114,15 @@ const privacyPolicyUrl = getLocalizedUrl("privacyPolicy", lang);
     <section class="grid gap-4">
       <h2>{t("legalNotices.design.title")}</h2>
       <div class="grid gap-2 text-lg">
-        <p><strong>{designCompany}</strong></p>
-        <p>
-          <strong>{t("legalNotices.design.phoneLabel")}:</strong>
-          <Button
-            variant="link"
-            class="-mx-6 -my-4"
-            href={`tel:${designPhone.replace(/\s/g, "")}`}
-          >
-            {designPhone}
-          </Button>
-        </p>
+        <p><strong>{designerName}</strong></p>
         <p>
           <strong>{t("legalNotices.design.emailLabel")}:</strong>
           <Button
             variant="link"
             class="-mx-6 -my-4"
-            href={`mailto:${designEmail}`}
+            href={`mailto:${designerEmail}`}
           >
-            {designEmail}
+            {designerEmail}
           </Button>
         </p>
         <p>
@@ -135,32 +130,70 @@ const privacyPolicyUrl = getLocalizedUrl("privacyPolicy", lang);
           <Button
             variant="link"
             class="-mx-6 -my-4"
-            href={designWebsiteUrl}
+            href={designerWebsiteUrl}
             target="_blank"
           >
-            {designWebsiteLabel}
+            {designerWebsiteLabel}
           </Button>
         </p>
+      </div>
+    </section>
+
+    <section class="grid gap-4">
+      <h2>{t("legalNotices.development.title")}</h2>
+      <div class="grid gap-2 text-lg">
+        <p><strong>{developerName}</strong></p>
         <p>
-          <strong>{t("legalNotices.design.githubLabel")}:</strong>
+          <strong>{t("legalNotices.development.phoneLabel")}:</strong>
           <Button
             variant="link"
             class="-mx-6 -my-4"
-            href={designGithubUrl}
-            target="_blank"
+            href={`tel:${developerPhone.replace(/\s/g, "")}`}
           >
-            {designGithubLabel}
+            {developerPhone}
           </Button>
         </p>
         <p>
-          <strong>{t("legalNotices.design.repoLabel")}:</strong>
+          <strong>{t("legalNotices.development.emailLabel")}:</strong>
           <Button
             variant="link"
             class="-mx-6 -my-4"
-            href={designRepoUrl}
+            href={`mailto:${developerEmail}`}
+          >
+            {developerEmail}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.development.websiteLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={developerWebsiteUrl}
             target="_blank"
           >
-            {designRepoLabel}
+            {developerWebsiteLabel}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.development.githubLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={developerGithubUrl}
+            target="_blank"
+          >
+            {developerGithubLabel}
+          </Button>
+        </p>
+        <p>
+          <strong>{t("legalNotices.development.repoLabel")}:</strong>
+          <Button
+            variant="link"
+            class="-mx-6 -my-4"
+            href={developerRepoUrl}
+            target="_blank"
+          >
+            {developerRepoLabel}
           </Button>
         </p>
       </div>
