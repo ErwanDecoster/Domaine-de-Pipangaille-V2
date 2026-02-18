@@ -1,7 +1,7 @@
 import { formatPoolHours } from "@/lib/hours";
 
 export const place = {
-  "place.header.title": "Der Ort",
+  "place.header.title": "Der Ort, Gästehaus in der Drôme",
   "place.header.imageAlt":
     "Außenpool umgeben von Sonnenliegen und Vegetation mit Holzpavillon in der Nähe",
   "place.header.text":

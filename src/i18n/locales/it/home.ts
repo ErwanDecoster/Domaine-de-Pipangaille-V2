@@ -1,5 +1,5 @@
 export const home = {
-  "home.header.title": "Il luogo, casa per ospiti nella Drôme",
+  "home.header.title": "Le Domaine de Pipangaille",
   "home.header.imageAlt":
     "Cortile interno del Domaine de Pipangaille circondato da muri in pietra, con terrazza ombreggiata e scala che conduce alle camere",
   "home.header.text":
