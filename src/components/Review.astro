@@ -23,7 +23,7 @@ const { review } = Astro.props;
     </div>
     <div
       data-review-overlay
-      class="bg-muted absolute inset-0 overflow-y-auto rounded text-sm opacity-0 transition-opacity group-hover:opacity-100"
+      class="bg-muted focus:outline-primary absolute inset-0 overflow-y-auto rounded text-sm opacity-0 transition-opacity group-hover:opacity-100 focus:opacity-100 focus:outline-2 focus:outline-offset-2"
     >
       <p>{review.text}</p>
     </div>
@@ -43,10 +43,22 @@ const { review } = Astro.props;
       const gradient = container.querySelector(
         "[data-review-gradient]",
       ) as HTMLElement;
+      const overlay = container.querySelector(
+        "[data-review-overlay]",
+      ) as HTMLElement;
 
-      if (preview && gradient) {
+      if (preview && gradient && overlay) {
         if (preview.scrollHeight > preview.clientHeight) {
+          // Content is truncated - show gradient and make overlay accessible
           gradient.style.opacity = "1";
+          overlay.setAttribute("tabindex", "0");
+          overlay.setAttribute("role", "region");
+          overlay.setAttribute("aria-label", "Full review text");
+        } else {
+          // Content is not truncated - remove accessibility attributes
+          overlay.removeAttribute("tabindex");
+          overlay.removeAttribute("role");
+          overlay.removeAttribute("aria-label");
         }
       }
     });
