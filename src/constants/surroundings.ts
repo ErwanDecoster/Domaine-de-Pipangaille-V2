@@ -76,6 +76,103 @@ export const surroundings = {
       },
     },
     {
+      title: "Accro d'Ailes",
+      category: ["sport", "family"],
+      shortDesc: "surroundings.descriptions.accrod_ailes.short",
+      longDesc: ["surroundings.descriptions.accrod_ailes.long"],
+      gallery: [
+        {
+          src: accrodAilesImg,
+          altKey: "surroundings.accrod_ailes.gallery.image1Alt",
+        },
+      ],
+      website: "https://accrodailes.fr/",
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2205417592213!2d4.7918709766153675!3d45.258408171071274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f6422464a8f%3A0x16b7840f8fd7bd77!2sAccro%20d&#39;Ailes!5e1!3m2!1sen!2sfr!4v1770977911902!5m2!1sen!2sfr",
+      slug: "accrod_ailes",
+      bikeRoute: {
+        durationMinutes: 15,
+        distanceKm: 4.5,
+        elevationGainMeters: 59,
+        routeType: "Path",
+        bikeScore: 82,
+        difficulty: "easy",
+        tag: "quick_neighborhood_ride",
+      },
+    },
+    {
+      title: "Musée de l'Alambic",
+      category: ["family", "visit"],
+      shortDesc: "surroundings.descriptions.musee_de_l_alambic.short",
+      longDesc: ["surroundings.descriptions.musee_de_l_alambic.long"],
+      gallery: [
+        {
+          src: museeDeLAlambicImg,
+          altKey: "surroundings.musee_de_l_alambic.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.470119451013!2d4.789534115550604!3d45.25850677909912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e1ecf9f32d7%3A0x963ede95fbaa5f1f!2sMus%C3%A9e%20De%20L'alambic!5e0!3m2!1sfr!2sfr!4v166896806589",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/distilleriejeangauthier",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/distilleriejeangauthier/",
+        },
+      ],
+      website: "http://www.jeangauthier.com/",
+      phoneNumber: "+33 4 75 34 23 11",
+      slug: "musee_de_l_alambic",
+      bikeRoute: {
+        durationMinutes: 16,
+        distanceKm: 4.7,
+        elevationGainMeters: 66,
+        routeType: "Path",
+        bikeScore: 82,
+        difficulty: "easy",
+        tag: "quick_neighborhood_ride",
+      },
+    },
+    {
+      title: "Cave Saint-Désirat",
+      category: ["visit"],
+      shortDesc: "surroundings.descriptions.cave_saint_desirat.short",
+      longDesc: ["surroundings.descriptions.cave_saint_desirat.long"],
+      gallery: [
+        {
+          src: caveSaintDesiratImg,
+          altKey: "surroundings.cave_saint_desirat.gallery.image1Alt",
+        },
+      ],
+      website: "https://cave-saint-desirat.com/",
+      phoneNumber: "+33 4 75 34 22 05",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://fr-fr.facebook.com/cave.saintdesirat/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/cavesaintdesirat/",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.844049331331!2d4.7941911766157315!3d45.26518957107144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e053810daa5%3A0xea497e5263dce9ef!2sCave%20Saint%20d%C3%A9sirat!5e1!3m2!1sen!2sfr!4v1770977799883!5m2!1sen!2sfr",
+      slug: "cave_saint_desirat",
+      bikeRoute: {
+        durationMinutes: 20,
+        distanceKm: 5.6,
+        elevationGainMeters: 131,
+        routeType: "Path",
+        bikeScore: 77,
+        difficulty: "easy",
+        tag: "easy_short_ride",
+      },
+    },
+    {
       title: "Palais Idéal du Facteur Cheval",
       category: ["family", "visit", "loved"],
       shortDesc:
@@ -116,141 +213,68 @@ export const surroundings = {
       },
     },
     {
-      title: "Acrobois Pilat",
+      title: "Train de l'ardèche",
+      category: ["family", "visit", "bike", "loved"],
+      shortDesc: "surroundings.descriptions.train_de_l_ardeche.short",
+      longDesc: ["surroundings.descriptions.train_de_l_ardeche.long"],
+      gallery: [
+        {
+          src: trainDeLArdecheImg,
+          altKey: "surroundings.train_de_l_ardeche.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.889945565062!2d4.785396876973903!3d45.06774355980253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f542ee0be4daeb%3A0xced9ed03fcfbfc84!2sTrain%20de%20l'Ard%C3%A8che!5e0!3m2!1sfr!2sfr!4v1699292973669",
+      website: "https://www.trainardeche.fr/",
+      bookLink: "https://www.trainardeche.fr/les-voyages/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/trainardeche07/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/traindelardeche/",
+        },
+      ],
+      phoneNumber: "+33 4 75 06 07 00",
+      slug: "train_de_l_ardeche",
+      bikeRoute: {
+        durationMinutes: 92,
+        distanceKm: 27,
+        elevationGainMeters: 195,
+        routeType: "Path",
+        bikeScore: 88,
+        difficulty: "moderate",
+        tag: "long_scenic_route",
+      },
+    },
+    {
+      title: "Slidesparc",
       category: ["family", "sport"],
-      shortDesc: "surroundings.descriptions.acrobois_pilat.short",
-      longDesc: ["surroundings.descriptions.acrobois_pilat.long"],
+      shortDesc: "surroundings.descriptions.slidesparc.short",
+      longDesc: ["surroundings.descriptions.slidesparc.long"],
       gallery: [
         {
-          src: acroboisPilatImg,
-          altKey: "surroundings.acrobois_pilat.gallery.image1Alt",
+          src: slidesparcImg,
+          altKey: "surroundings.slidesparc.gallery.image1Alt",
         },
       ],
       mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89692.58883524877!2d4.380942982021311!3d45.37114609720795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5084b3bafc339%3A0xf17cc27dad426b1d!2sAcrobois%20Pilat!5e0!3m2!1sfr!2sfr!4v1668710836619",
-      website: "https://pilat.les-acrobois.fr/",
-      bookLink: "https://pilat.les-acrobois.fr/le-parc/",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/acroboispilat",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/acrobois_pilat",
-        },
-      ],
-      phoneNumber: "+33 4 82 29 80 01",
-      slug: "acrobois_pilat",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.806617695187!2d4.880707076611426!3d45.175739571070814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f54726b5f33711%3A0xeb894e0ea847cd7!2sSlidesparc!5e1!3m2!1sen!2sfr!4v1770977743325!5m2!1sen!2sfr",
+      website: "https://slidesparc.fr/",
+      phoneNumber: "+33 7 67 01 40 96",
+      bookLink: "https://slidesparc.fr/tarifs/",
+      slug: "slidesparc",
       bikeRoute: {
-        durationMinutes: 181,
-        distanceKm: 50.2,
-        elevationGainMeters: 1712,
+        durationMinutes: 59,
+        distanceKm: 16.6,
+        elevationGainMeters: 359,
         routeType: "Path",
-        bikeScore: 69,
-        difficulty: "challenging",
-        tag: "epic_mountain_challenge",
+        bikeScore: 80,
+        difficulty: "moderate",
+        tag: "moderate_trip",
       },
-    },
-    {
-      title: "Musée de l'Alambic",
-      category: ["family", "visit"],
-      shortDesc: "surroundings.descriptions.musee_de_l_alambic.short",
-      longDesc: ["surroundings.descriptions.musee_de_l_alambic.long"],
-      gallery: [
-        {
-          src: museeDeLAlambicImg,
-          altKey: "surroundings.musee_de_l_alambic.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.470119451013!2d4.789534115550604!3d45.25850677909912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e1ecf9f32d7%3A0x963ede95fbaa5f1f!2sMus%C3%A9e%20De%20L'alambic!5e0!3m2!1sfr!2sfr!4v166896806589",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/distilleriejeangauthier",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/distilleriejeangauthier/",
-        },
-      ],
-      website: "http://www.jeangauthier.com/",
-      phoneNumber: "+33 4 75 34 23 11",
-      slug: "musee_de_l_alambic",
-      bikeRoute: {
-        durationMinutes: 16,
-        distanceKm: 4.7,
-        elevationGainMeters: 66,
-        routeType: "Path",
-        bikeScore: 82,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
-      },
-    },
-    {
-      title: "Golf de Saint-Clair",
-      category: ["sport"],
-      shortDesc: "surroundings.descriptions.golf_de_saint_clair.short",
-      longDesc: ["surroundings.descriptions.golf_de_saint_clair.long"],
-      gallery: [
-        {
-          src: golfDeSaintClairImg,
-          altKey: "surroundings.golf_de_saint_clair.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.76003356285!2d4.687672776548022!3d45.272861371071585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8071d3acf1b43db7!2sGolf%20et%20brasserie%20de%20St-Clair!5e0!3m2!1sfr!2sfr!4v1668714492081",
-      website: "https://golfdesaintclair.fr/",
-      bookLink: "https://golfdesaintclair.fr/tarifs/#toggle-id-1-closed",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/golfdudomainestclair.fr/",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/golfdestclair",
-        },
-      ],
-      slug: "golf_de_saint_clair",
-      bikeRoute: {
-        durationMinutes: 53,
-        distanceKm: 14.8,
-        elevationGainMeters: 509,
-        routeType: "Path",
-        bikeScore: 73,
-        difficulty: "challenging",
-        tag: "challenging_hills",
-      },
-    },
-    {
-      title: "ViaRhôna",
-      category: ["sport", "ride", "bike", "loved"],
-      shortDesc: "surroundings.descriptions.viarhona.short",
-      longDesc: ["surroundings.descriptions.viarhona.long"],
-      gallery: [
-        {
-          src: viarhonaImg,
-          altKey: "surroundings.viarhona.gallery.image1Alt",
-        },
-      ],
-      website: "https://www.viarhona.com/",
-      slug: "viarhona",
-    },
-    {
-      title: "ViaFluvia",
-      category: ["sport", "ride", "bike"],
-      shortDesc: "surroundings.descriptions.viafluvia.short",
-      longDesc: ["surroundings.descriptions.viafluvia.long"],
-      gallery: [
-        {
-          src: viafluviaImg,
-          altKey: "surroundings.viafluvia.gallery.image1Alt",
-        },
-      ],
-      website: "https://www.viafluvia.fr/",
-      slug: "viafluvia",
     },
     {
       title: "Cité du Chocolat Valrhôna",
@@ -290,21 +314,40 @@ export const surroundings = {
       },
     },
     {
-      title: "Lamas des Plaines",
-      category: ["family", "visit"],
-      shortDesc: "surroundings.descriptions.lamas_des_plaines.short",
-      longDesc: ["surroundings.descriptions.lamas_des_plaines.long"],
+      title: "Golf de Saint-Clair",
+      category: ["sport"],
+      shortDesc: "surroundings.descriptions.golf_de_saint_clair.short",
+      longDesc: ["surroundings.descriptions.golf_de_saint_clair.long"],
       gallery: [
         {
-          src: lamasDesPlainesImg,
-          altKey: "surroundings.lamas_des_plaines.gallery.image1Alt",
+          src: golfDeSaintClairImg,
+          altKey: "surroundings.golf_de_saint_clair.gallery.image1Alt",
         },
       ],
-      website: "http://www.lamasdesplaines.com/",
-      bookLink:
-        "http://www.lamasdesplaines.com/Mediation%20animale/Prestations%20et%20tarifs.htm",
-      phoneNumber: "+33 6 14 38 82 00",
-      slug: "lamas_des_plaines",
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.76003356285!2d4.687672776548022!3d45.272861371071585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8071d3acf1b43db7!2sGolf%20et%20brasserie%20de%20St-Clair!5e0!3m2!1sfr!2sfr!4v1668714492081",
+      website: "https://golfdesaintclair.fr/",
+      bookLink: "https://golfdesaintclair.fr/tarifs/#toggle-id-1-closed",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/golfdudomainestclair.fr/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/golfdestclair",
+        },
+      ],
+      slug: "golf_de_saint_clair",
+      bikeRoute: {
+        durationMinutes: 53,
+        distanceKm: 14.8,
+        elevationGainMeters: 509,
+        routeType: "Path",
+        bikeScore: 73,
+        difficulty: "challenging",
+        tag: "challenging_hills",
+      },
     },
     {
       title: "Montgolfières & Cie",
@@ -345,41 +388,84 @@ export const surroundings = {
       },
     },
     {
-      title: "Train de l'ardèche",
-      category: ["family", "visit", "bike", "loved"],
-      shortDesc: "surroundings.descriptions.train_de_l_ardeche.short",
-      longDesc: ["surroundings.descriptions.train_de_l_ardeche.long"],
+      title: "ViaRhôna",
+      category: ["sport", "ride", "bike", "loved"],
+      shortDesc: "surroundings.descriptions.viarhona.short",
+      longDesc: ["surroundings.descriptions.viarhona.long"],
       gallery: [
         {
-          src: trainDeLArdecheImg,
-          altKey: "surroundings.train_de_l_ardeche.gallery.image1Alt",
+          src: viarhonaImg,
+          altKey: "surroundings.viarhona.gallery.image1Alt",
+        },
+      ],
+      website: "https://www.viarhona.com/",
+      slug: "viarhona",
+    },
+    {
+      title: "Domaine du Golf d'Albon",
+      shortDesc: "surroundings.descriptions.domaine_golf_albon.short",
+      longDesc: ["surroundings.descriptions.domaine_golf_albon.long"],
+      gallery: [
+        {
+          src: domaineDuGolfDAlbon,
+          altKey: "surroundings.domaine_golf_albon.gallery.image1Alt",
         },
       ],
       mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.889945565062!2d4.785396876973903!3d45.06774355980253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f542ee0be4daeb%3A0xced9ed03fcfbfc84!2sTrain%20de%20l'Ard%C3%A8che!5e0!3m2!1sfr!2sfr!4v1699292973669",
-      website: "https://www.trainardeche.fr/",
-      bookLink: "https://www.trainardeche.fr/les-voyages/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.6463547548374!2d4.841219089939405!3d45.234720996480334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f1e5b68e91b%3A0x5d4527496f5f1d0b!2sDomaine%20du%20Golf%20d&#39;Albon!5e0!3m2!1sen!2sfr!4v1770202573323!5m2!1sen!2sfr",
+      website: "http://www.domainegolfalbon.fr/",
       socialMedia: [
         {
           platform: "facebook",
-          link: "https://www.facebook.com/trainardeche07/",
+          link: "https://www.facebook.com/domainegolfalbon/",
         },
         {
           platform: "instagram",
-          link: "https://www.instagram.com/traindelardeche/",
+          link: "https://www.instagram.com/domainegolfalbon/",
         },
       ],
-      phoneNumber: "+33 4 75 06 07 00",
-      slug: "train_de_l_ardeche",
+      phoneNumber: "+33 4 75 03 03 90",
+      slug: "domaine_golf_albon",
       bikeRoute: {
-        durationMinutes: 92,
-        distanceKm: 27,
-        elevationGainMeters: 195,
+        durationMinutes: 19,
+        distanceKm: 4.8,
+        elevationGainMeters: 67,
         routeType: "Path",
-        bikeScore: 88,
-        difficulty: "moderate",
-        tag: "long_scenic_route",
+        bikeScore: 82,
+        difficulty: "easy",
+        tag: "quick_neighborhood_ride",
       },
+    },
+    {
+      title: "ViaFluvia",
+      category: ["sport", "ride", "bike"],
+      shortDesc: "surroundings.descriptions.viafluvia.short",
+      longDesc: ["surroundings.descriptions.viafluvia.long"],
+      gallery: [
+        {
+          src: viafluviaImg,
+          altKey: "surroundings.viafluvia.gallery.image1Alt",
+        },
+      ],
+      website: "https://www.viafluvia.fr/",
+      slug: "viafluvia",
+    },
+    {
+      title: "Lamas des Plaines",
+      category: ["family", "visit"],
+      shortDesc: "surroundings.descriptions.lamas_des_plaines.short",
+      longDesc: ["surroundings.descriptions.lamas_des_plaines.long"],
+      gallery: [
+        {
+          src: lamasDesPlainesImg,
+          altKey: "surroundings.lamas_des_plaines.gallery.image1Alt",
+        },
+      ],
+      website: "http://www.lamasdesplaines.com/",
+      bookLink:
+        "http://www.lamasdesplaines.com/Mediation%20animale/Prestations%20et%20tarifs.htm",
+      phoneNumber: "+33 6 14 38 82 00",
+      slug: "lamas_des_plaines",
     },
     {
       title: "La fabrique de Julien",
@@ -413,68 +499,40 @@ export const surroundings = {
       slug: "la_fabrique_de_julien",
     },
     {
-      title: "Le Nougat de Montségur",
-      category: ["visit"],
-      shortDesc: "surroundings.descriptions.le_nougat_de_montsegur.short",
-      longDesc: ["surroundings.descriptions.le_nougat_de_montsegur.long"],
+      title: "Acrobois Pilat",
+      category: ["family", "sport"],
+      shortDesc: "surroundings.descriptions.acrobois_pilat.short",
+      longDesc: ["surroundings.descriptions.acrobois_pilat.long"],
       gallery: [
         {
-          src: leNougatDeMontsegurImg,
-          altKey: "surroundings.le_nougat_de_montsegur.gallery.image1Alt",
+          src: acroboisPilatImg,
+          altKey: "surroundings.acrobois_pilat.gallery.image1Alt",
         },
       ],
       mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.565783006997!2d4.844310976948855!3d44.359970506432354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b576d972d14e19%3A0xf24766592b34c9a9!2sLe%20Nougat%20de%20Montsegur!5e0!3m2!1sfr!2sfr!4v1699293264985",
-      website: "http://lenougatdemontsegur.com/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89692.58883524877!2d4.380942982021311!3d45.37114609720795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5084b3bafc339%3A0xf17cc27dad426b1d!2sAcrobois%20Pilat!5e0!3m2!1sfr!2sfr!4v1668710836619",
+      website: "https://pilat.les-acrobois.fr/",
+      bookLink: "https://pilat.les-acrobois.fr/le-parc/",
       socialMedia: [
         {
           platform: "facebook",
-          link: "https://www.facebook.com/LenougatdeMontsegur",
+          link: "https://www.facebook.com/acroboispilat",
         },
-      ],
-      slug: "le_nougat_de_montsegur",
-      bikeRoute: {
-        durationMinutes: 492,
-        distanceKm: 143.9,
-        elevationGainMeters: 1075,
-        routeType: "Path",
-        bikeScore: 68,
-        difficulty: "challenging",
-        tag: "full_day_adventure",
-      },
-    },
-    {
-      title: "Château de Grignan",
-      category: ["family", "visit"],
-      shortDesc: "surroundings.descriptions.chateau_de_grignan.short",
-      longDesc: ["surroundings.descriptions.chateau_de_grignan.long"],
-      gallery: [
         {
-          src: chateauDeGrignanImg,
-          altKey: "surroundings.chateau_de_grignan.gallery.image1Alt",
+          platform: "instagram",
+          link: "https://www.instagram.com/acrobois_pilat",
         },
       ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.693052782849!2d4.906192676950954!3d44.41894400256858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b57a916b9ae53f%3A0x3dddef62740f24a9!2sCh%C3%A2teau%20de%20Grignan!5e0!3m2!1sfr!2sfr!4v1699293349698",
-      website: "https://www.chateaux-ladrome.fr/fr/chateau-de-grignan",
-      bookLink:
-        "https://chateaux-ladrome.notre-billetterie.fr/formulaire?dial=sommairegeneral",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/chateauxdeladrome",
-        },
-      ],
-      phoneNumber: "+33 4 75 91 83 50",
-      slug: "chateau_de_grignan",
+      phoneNumber: "+33 4 82 29 80 01",
+      slug: "acrobois_pilat",
       bikeRoute: {
-        durationMinutes: 432,
-        distanceKm: 127.4,
-        elevationGainMeters: 1229,
+        durationMinutes: 181,
+        distanceKm: 50.2,
+        elevationGainMeters: 1712,
         routeType: "Path",
-        bikeScore: 67,
+        bikeScore: 69,
         difficulty: "challenging",
-        tag: "full_day_adventure",
+        tag: "epic_mountain_challenge",
       },
     },
     {
@@ -554,159 +612,134 @@ export const surroundings = {
       },
     },
     {
-      title: "Domaine du Golf d'Albon",
-      shortDesc: "surroundings.descriptions.domaine_golf_albon.short",
-      longDesc: ["surroundings.descriptions.domaine_golf_albon.long"],
+      title: "Château de Grignan",
+      category: ["family", "visit"],
+      shortDesc: "surroundings.descriptions.chateau_de_grignan.short",
+      longDesc: ["surroundings.descriptions.chateau_de_grignan.long"],
       gallery: [
         {
-          src: domaineDuGolfDAlbon,
-          altKey: "surroundings.domaine_golf_albon.gallery.image1Alt",
+          src: chateauDeGrignanImg,
+          altKey: "surroundings.chateau_de_grignan.gallery.image1Alt",
         },
       ],
       mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.6463547548374!2d4.841219089939405!3d45.234720996480334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f1e5b68e91b%3A0x5d4527496f5f1d0b!2sDomaine%20du%20Golf%20d&#39;Albon!5e0!3m2!1sen!2sfr!4v1770202573323!5m2!1sen!2sfr",
-      website: "http://www.domainegolfalbon.fr/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.693052782849!2d4.906192676950954!3d44.41894400256858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b57a916b9ae53f%3A0x3dddef62740f24a9!2sCh%C3%A2teau%20de%20Grignan!5e0!3m2!1sfr!2sfr!4v1699293349698",
+      website: "https://www.chateaux-ladrome.fr/fr/chateau-de-grignan",
+      bookLink:
+        "https://chateaux-ladrome.notre-billetterie.fr/formulaire?dial=sommairegeneral",
       socialMedia: [
         {
           platform: "facebook",
-          link: "https://www.facebook.com/domainegolfalbon/",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/domainegolfalbon/",
+          link: "https://www.facebook.com/chateauxdeladrome",
         },
       ],
-      phoneNumber: "+33 4 75 03 03 90",
-      slug: "domaine_golf_albon",
+      phoneNumber: "+33 4 75 91 83 50",
+      slug: "chateau_de_grignan",
       bikeRoute: {
-        durationMinutes: 19,
-        distanceKm: 4.8,
-        elevationGainMeters: 67,
+        durationMinutes: 432,
+        distanceKm: 127.4,
+        elevationGainMeters: 1229,
         routeType: "Path",
-        bikeScore: 82,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
+        bikeScore: 67,
+        difficulty: "challenging",
+        tag: "full_day_adventure",
       },
     },
     {
-      title: "Slidesparc",
-      category: ["family", "sport"],
-      shortDesc: "surroundings.descriptions.slidesparc.short",
-      longDesc: ["surroundings.descriptions.slidesparc.long"],
-      gallery: [
-        {
-          src: slidesparcImg,
-          altKey: "surroundings.slidesparc.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.806617695187!2d4.880707076611426!3d45.175739571070814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f54726b5f33711%3A0xeb894e0ea847cd7!2sSlidesparc!5e1!3m2!1sen!2sfr!4v1770977743325!5m2!1sen!2sfr",
-      website: "https://slidesparc.fr/",
-      phoneNumber: "+33 7 67 01 40 96",
-      bookLink: "https://slidesparc.fr/tarifs/",
-      slug: "slidesparc",
-      bikeRoute: {
-        durationMinutes: 59,
-        distanceKm: 16.6,
-        elevationGainMeters: 359,
-        routeType: "Path",
-        bikeScore: 80,
-        difficulty: "moderate",
-        tag: "moderate_trip",
-      },
-    },
-    {
-      title: "Cave Saint-Désirat",
+      title: "Le Nougat de Montségur",
       category: ["visit"],
-      shortDesc: "surroundings.descriptions.cave_saint_desirat.short",
-      longDesc: ["surroundings.descriptions.cave_saint_desirat.long"],
+      shortDesc: "surroundings.descriptions.le_nougat_de_montsegur.short",
+      longDesc: ["surroundings.descriptions.le_nougat_de_montsegur.long"],
       gallery: [
         {
-          src: caveSaintDesiratImg,
-          altKey: "surroundings.cave_saint_desirat.gallery.image1Alt",
+          src: leNougatDeMontsegurImg,
+          altKey: "surroundings.le_nougat_de_montsegur.gallery.image1Alt",
         },
       ],
-      website: "https://cave-saint-desirat.com/",
-      phoneNumber: "+33 4 75 34 22 05",
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.565783006997!2d4.844310976948855!3d44.359970506432354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b576d972d14e19%3A0xf24766592b34c9a9!2sLe%20Nougat%20de%20Montsegur!5e0!3m2!1sfr!2sfr!4v1699293264985",
+      website: "http://lenougatdemontsegur.com/",
       socialMedia: [
         {
           platform: "facebook",
-          link: "https://fr-fr.facebook.com/cave.saintdesirat/",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/cavesaintdesirat/",
+          link: "https://www.facebook.com/LenougatdeMontsegur",
         },
       ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.844049331331!2d4.7941911766157315!3d45.26518957107144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e053810daa5%3A0xea497e5263dce9ef!2sCave%20Saint%20d%C3%A9sirat!5e1!3m2!1sen!2sfr!4v1770977799883!5m2!1sen!2sfr",
-      slug: "cave_saint_desirat",
+      slug: "le_nougat_de_montsegur",
       bikeRoute: {
-        durationMinutes: 20,
-        distanceKm: 5.6,
-        elevationGainMeters: 131,
+        durationMinutes: 492,
+        distanceKm: 143.9,
+        elevationGainMeters: 1075,
         routeType: "Path",
-        bikeScore: 77,
-        difficulty: "easy",
-        tag: "easy_short_ride",
-      },
-    },
-    {
-      title: "Accro d'Ailes",
-      category: ["sport", "family"],
-      shortDesc: "surroundings.descriptions.accrod_ailes.short",
-      longDesc: ["surroundings.descriptions.accrod_ailes.long"],
-      gallery: [
-        {
-          src: accrodAilesImg,
-          altKey: "surroundings.accrod_ailes.gallery.image1Alt",
-        },
-      ],
-      website: "https://accrodailes.fr/",
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2205417592213!2d4.7918709766153675!3d45.258408171071274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f6422464a8f%3A0x16b7840f8fd7bd77!2sAccro%20d&#39;Ailes!5e1!3m2!1sen!2sfr!4v1770977911902!5m2!1sen!2sfr",
-      slug: "accrod_ailes",
-      bikeRoute: {
-        durationMinutes: 15,
-        distanceKm: 4.5,
-        elevationGainMeters: 59,
-        routeType: "Path",
-        bikeScore: 82,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
+        bikeScore: 68,
+        difficulty: "challenging",
+        tag: "full_day_adventure",
       },
     },
   ],
   toEat: [
     {
-      title: "Le Relais Des Mailles",
-      shortDesc: "surroundings.descriptions.le_relais_mailles.short",
-      longDesc: ["surroundings.descriptions.le_relais_mailles.long"],
+      title: "Le Picotin",
+      category: ["loved"],
+      shortDesc: "surroundings.descriptions.le_picotin.short",
+      longDesc: ["surroundings.descriptions.le_picotin.long"],
       gallery: [
         {
-          src: leRelaisDesMaillesImg,
-          altKey: "surroundings.le_relais_mailles.gallery.image1Alt",
+          src: lePicotinImg,
+          altKey: "surroundings.le_picotin.gallery.image1Alt",
         },
       ],
       mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.225223103316!2d4.811978015548724!3d45.202777779098774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f86aa0f5df3%3A0xadfe40030a3eadd3!2sLe%20Relais%20Des%20Mailles!5e0!3m2!1sfr!2sfr!4v1669483885140",
-      website: "https://www.lerelaisdesmailles.com/",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.369912579978!2d4.7964493155499515!3d45.24031207909892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e33e8fa4b59%3A0x13b9117667cddb47!2sLE%20PICOTIN!5e0!3m2!1sfr!2sfr!4v1669484403254",
+      website: "https://le-picotin-restaurant-andance.eatbu.com/?lang=fr",
       socialMedia: [
         {
           platform: "facebook",
-          link: "https://www.facebook.com/lerelaisdesmailles",
+          link: "https://www.facebook.com/GaelleHermandsecretant/",
         },
       ],
-      phoneNumber: "+33 4 75 23 42 26",
-      slug: "le_relais_mailles",
+      phoneNumber: "+33 4 75 34 21 01",
+      slug: "le_picotin",
       bikeRoute: {
-        durationMinutes: 20,
-        distanceKm: 6,
-        elevationGainMeters: 23,
+        durationMinutes: 8,
+        distanceKm: 2.3,
+        elevationGainMeters: 38,
         routeType: "Path",
-        bikeScore: 89,
+        bikeScore: 70,
         difficulty: "easy",
-        tag: "easy_short_ride",
+        tag: "quick_neighborhood_ride",
+      },
+    },
+    {
+      title: "La Poule Noire",
+      category: ["loved"],
+      shortDesc: "surroundings.descriptions.la_poule_noire.short",
+      longDesc: ["surroundings.descriptions.la_poule_noire.long"],
+      gallery: [
+        {
+          src: laPouleNoireImg,
+          altKey: "surroundings.la_poule_noir.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.1526048602063!2d4.847777615550117!3d45.24470677909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53ec2efffb5cf%3A0x5e00680a9119bd91!2sLa%20Poule%20Noire!5e0!3m2!1sfr!2sfr!4v1669484279763",
+      website: "https://www.restaurant-lapoulenoire.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/lapoulenoire26",
+        },
+      ],
+      phoneNumber: "+33475030882",
+      slug: "la_poule_noir",
+      bikeRoute: {
+        durationMinutes: 17,
+        distanceKm: 5,
+        elevationGainMeters: 51,
+        routeType: "Path",
+        bikeScore: 85,
+        difficulty: "easy",
+        tag: "quick_neighborhood_ride",
       },
     },
     {
@@ -746,69 +779,6 @@ export const surroundings = {
       },
     },
     {
-      title: "La Poule Noire",
-      category: ["loved"],
-      shortDesc: "surroundings.descriptions.la_poule_noire.short",
-      longDesc: ["surroundings.descriptions.la_poule_noire.long"],
-      gallery: [
-        {
-          src: laPouleNoireImg,
-          altKey: "surroundings.la_poule_noir.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.1526048602063!2d4.847777615550117!3d45.24470677909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53ec2efffb5cf%3A0x5e00680a9119bd91!2sLa%20Poule%20Noire!5e0!3m2!1sfr!2sfr!4v1669484279763",
-      website: "https://www.restaurant-lapoulenoire.fr/",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/lapoulenoire26",
-        },
-      ],
-      phoneNumber: "+33475030882",
-      slug: "la_poule_noir",
-      bikeRoute: {
-        durationMinutes: 17,
-        distanceKm: 5,
-        elevationGainMeters: 51,
-        routeType: "Path",
-        bikeScore: 85,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
-      },
-    },
-    {
-      title: "Le Picotin",
-      shortDesc: "surroundings.descriptions.le_picotin.short",
-      longDesc: ["surroundings.descriptions.le_picotin.long"],
-      gallery: [
-        {
-          src: lePicotinImg,
-          altKey: "surroundings.le_picotin.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.369912579978!2d4.7964493155499515!3d45.24031207909892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e33e8fa4b59%3A0x13b9117667cddb47!2sLE%20PICOTIN!5e0!3m2!1sfr!2sfr!4v1669484403254",
-      website: "https://le-picotin-restaurant-andance.eatbu.com/?lang=fr",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/GaelleHermandsecretant/",
-        },
-      ],
-      phoneNumber: "+33 4 75 34 21 01",
-      slug: "le_picotin",
-      bikeRoute: {
-        durationMinutes: 8,
-        distanceKm: 2.3,
-        elevationGainMeters: 38,
-        routeType: "Path",
-        bikeScore: 70,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
-      },
-    },
-    {
       title: "Au Pré du Rhône",
       category: ["loved"],
       shortDesc: "surroundings.descriptions.au_pre_du_rhone.short",
@@ -838,6 +808,79 @@ export const surroundings = {
         bikeScore: 86,
         difficulty: "easy",
         tag: "easy_half_day_ride",
+      },
+    },
+    {
+      title: "Le Lieu",
+      category: ["loved"],
+      shortDesc: "surroundings.descriptions.le_lieu.short",
+      longDesc: ["surroundings.descriptions.le_lieu.long"],
+      gallery: [
+        {
+          src: leLieuImg,
+          altKey: "surroundings.le_lieu.gallery.image1Alt",
+        },
+      ],
+      website: "https://www.lelieulerestaurant.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/lelieu.fr",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/lelieuannonay/",
+        },
+      ],
+      phoneNumber: "+33 7 81 02 85 25",
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1066019884192!2d4.669696976614631!3d45.24244527107111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f51399040043e1%3A0xe44d856af25a5b95!2sLe%20Lieu!5e1!3m2!1sen!2sfr!4v1770978039268!5m2!1sen!2sfr",
+      slug: "le_lieu",
+      bikeRoute: {
+        durationMinutes: 58,
+        distanceKm: 17,
+        elevationGainMeters: 532,
+        routeType: "Path",
+        bikeScore: 75,
+        difficulty: "challenging",
+        tag: "challenging_hills",
+      },
+    },
+    {
+      title: "Le Hangar N7",
+      shortDesc: "surroundings.descriptions.le_hangar_n7.short",
+      longDesc: ["surroundings.descriptions.le_hangar_n7.long"],
+      gallery: [
+        {
+          src: leHangarN7BarPub,
+          altKey: "surroundings.le_hangar_n7.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.391074543576!2d4.820551676615481!3d45.2601048710712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e646c8e6cf5%3A0xa26aa5377b082544!2sLe%20Hangar%20N7%20%E2%80%A2%20Bar%20%2F%20Pub%20%2F%20Restaurant!5e0!3m2!1sen!2sfr!4v1770201673243!5m2!1sen!2sfr",
+      website: "https://www.hangar-n7-restaurant-andancette.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/lehangarn7",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/lehangarn7",
+        },
+      ],
+      bookLink:
+        "https://www.hangar-n7-restaurant-andancette.fr/v2/reservation/date",
+      phoneNumber: "+33 4 75 68 45 54",
+      slug: "le_hangar_n7",
+      bikeRoute: {
+        durationMinutes: 6,
+        distanceKm: 1.9,
+        elevationGainMeters: 21,
+        routeType: "Path",
+        bikeScore: 72,
+        difficulty: "easy",
+        tag: "quick_neighborhood_ride",
       },
     },
     {
@@ -879,61 +922,6 @@ export const surroundings = {
       },
     },
     {
-      title: "O'Daily Truck",
-      category: ["loved"],
-      gallery: [
-        {
-          src: oDailyTruckImg,
-          altKey: "surroundings.o_daily_truck.gallery.image1Alt",
-        },
-        {
-          src: oDailyTruckImg,
-          altKey: "surroundings.o_daily_truck.gallery.image2Alt",
-        },
-      ],
-      shortDesc: "surroundings.descriptions.o_daily_truck.short",
-      longDesc: ["surroundings.descriptions.o_daily_truck.long"],
-      website: "https://odailytruck.eatbu.com/?lang=fr",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/profile.php?id=100083238615438",
-        },
-      ],
-      phoneNumber: "+33 7 84 75 76 46",
-      slug: "o_daily_truck",
-    },
-    {
-      title: "César Pizza",
-      shortDesc: "surroundings.descriptions.cesar_pizza.short",
-      longDesc: ["surroundings.descriptions.cesar_pizza.long"],
-      gallery: [
-        {
-          src: cesarPizzaImg,
-          altKey: "surroundings.cesar_pizza.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.3278141159412!2d4.79721751554998!3d45.24116347909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e3151ab7961%3A0xb011d2747fe95cca!2sC%C3%A9sar%20Pizza!5e0!3m2!1sfr!2sfr!4v1669484773964",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/Pizza.andance/",
-        },
-      ],
-      phoneNumber: "+33 4 75 32 75 12",
-      slug: "cesar_pizza",
-      bikeRoute: {
-        durationMinutes: 7,
-        distanceKm: 2.1,
-        elevationGainMeters: 35,
-        routeType: "Path",
-        bikeScore: 69,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
-      },
-    },
-    {
       title: "La Villa Champagnère",
       shortDesc: "surroundings.descriptions.la_villa_champagnere.short",
       longDesc: ["surroundings.descriptions.la_villa_champagnere.long"],
@@ -960,78 +948,6 @@ export const surroundings = {
         elevationGainMeters: 30,
         routeType: "Path",
         bikeScore: 77,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
-      },
-    },
-    {
-      title: "Les Agapons",
-      shortDesc: "surroundings.descriptions.les_agapons.short",
-      longDesc: ["surroundings.descriptions.les_agapons.long"],
-      gallery: [
-        {
-          src: lesAgaponRestaurantImg,
-          altKey: "surroundings.les_agapons.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.3689680670077!2d4.997990576442773!3d45.30097184431462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f531aa947df32f%3A0xbc5d1e6a3aa025aa!2sLes%20Agapons%20Restaurant!5e0!3m2!1sen!2sfr!4v1767889769559!5m2!1sen!2sfr",
-      website: "https://les-agapons.eatbu.com/?lang=fr",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/LesAgaponsRestaurant",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/lesagapons_restaurant/",
-        },
-      ],
-      phoneNumber: "+33 4 75 03 02 56",
-      slug: "les_agapons",
-      bikeRoute: {
-        durationMinutes: 76,
-        distanceKm: 22.2,
-        elevationGainMeters: 255,
-        routeType: "Path",
-        bikeScore: 86,
-        difficulty: "moderate",
-        tag: "moderate_trip",
-      },
-    },
-    {
-      title: "Le Hangar N7",
-      shortDesc: "surroundings.descriptions.le_hangar_n7.short",
-      longDesc: ["surroundings.descriptions.le_hangar_n7.long"],
-      gallery: [
-        {
-          src: leHangarN7BarPub,
-          altKey: "surroundings.le_hangar_n7.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.391074543576!2d4.820551676615481!3d45.2601048710712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e646c8e6cf5%3A0xa26aa5377b082544!2sLe%20Hangar%20N7%20%E2%80%A2%20Bar%20%2F%20Pub%20%2F%20Restaurant!5e0!3m2!1sen!2sfr!4v1770201673243!5m2!1sen!2sfr",
-      website: "https://www.hangar-n7-restaurant-andancette.fr/",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/lehangarn7",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/lehangarn7",
-        },
-      ],
-      bookLink:
-        "https://www.hangar-n7-restaurant-andancette.fr/v2/reservation/date",
-      phoneNumber: "+33 4 75 68 45 54",
-      slug: "le_hangar_n7",
-      bikeRoute: {
-        durationMinutes: 6,
-        distanceKm: 1.9,
-        elevationGainMeters: 21,
-        routeType: "Path",
-        bikeScore: 72,
         difficulty: "easy",
         tag: "quick_neighborhood_ride",
       },
@@ -1068,6 +984,92 @@ export const surroundings = {
       },
     },
     {
+      title: "Le Relais Des Mailles",
+      shortDesc: "surroundings.descriptions.le_relais_mailles.short",
+      longDesc: ["surroundings.descriptions.le_relais_mailles.long"],
+      gallery: [
+        {
+          src: leRelaisDesMaillesImg,
+          altKey: "surroundings.le_relais_mailles.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.225223103316!2d4.811978015548724!3d45.202777779098774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f86aa0f5df3%3A0xadfe40030a3eadd3!2sLe%20Relais%20Des%20Mailles!5e0!3m2!1sfr!2sfr!4v1669483885140",
+      website: "https://www.lerelaisdesmailles.com/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/lerelaisdesmailles",
+        },
+      ],
+      phoneNumber: "+33 4 75 23 42 26",
+      slug: "le_relais_mailles",
+      bikeRoute: {
+        durationMinutes: 20,
+        distanceKm: 6,
+        elevationGainMeters: 23,
+        routeType: "Path",
+        bikeScore: 89,
+        difficulty: "easy",
+        tag: "easy_short_ride",
+      },
+    },
+    {
+      title: "César Pizza",
+      shortDesc: "surroundings.descriptions.cesar_pizza.short",
+      longDesc: ["surroundings.descriptions.cesar_pizza.long"],
+      gallery: [
+        {
+          src: cesarPizzaImg,
+          altKey: "surroundings.cesar_pizza.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.3278141159412!2d4.79721751554998!3d45.24116347909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e3151ab7961%3A0xb011d2747fe95cca!2sC%C3%A9sar%20Pizza!5e0!3m2!1sfr!2sfr!4v1669484773964",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/Pizza.andance/",
+        },
+      ],
+      phoneNumber: "+33 4 75 32 75 12",
+      slug: "cesar_pizza",
+      bikeRoute: {
+        durationMinutes: 7,
+        distanceKm: 2.1,
+        elevationGainMeters: 35,
+        routeType: "Path",
+        bikeScore: 69,
+        difficulty: "easy",
+        tag: "quick_neighborhood_ride",
+      },
+    },
+    {
+      title: "O'Daily Truck",
+      category: ["loved"],
+      gallery: [
+        {
+          src: oDailyTruckImg,
+          altKey: "surroundings.o_daily_truck.gallery.image1Alt",
+        },
+        {
+          src: oDailyTruckImg,
+          altKey: "surroundings.o_daily_truck.gallery.image2Alt",
+        },
+      ],
+      shortDesc: "surroundings.descriptions.o_daily_truck.short",
+      longDesc: ["surroundings.descriptions.o_daily_truck.long"],
+      website: "https://odailytruck.eatbu.com/?lang=fr",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/profile.php?id=100083238615438",
+        },
+      ],
+      phoneNumber: "+33 7 84 75 76 46",
+      slug: "o_daily_truck",
+    },
+    {
       title: "La Vallée",
       shortDesc: "surroundings.descriptions.la_vallee.short",
       longDesc: ["surroundings.descriptions.la_vallee.long"],
@@ -1099,39 +1101,38 @@ export const surroundings = {
       },
     },
     {
-      title: "Le Lieu",
-      category: ["loved"],
-      shortDesc: "surroundings.descriptions.le_lieu.short",
-      longDesc: ["surroundings.descriptions.le_lieu.long"],
+      title: "Les Agapons",
+      shortDesc: "surroundings.descriptions.les_agapons.short",
+      longDesc: ["surroundings.descriptions.les_agapons.long"],
       gallery: [
         {
-          src: leLieuImg,
-          altKey: "surroundings.le_lieu.gallery.image1Alt",
+          src: lesAgaponRestaurantImg,
+          altKey: "surroundings.les_agapons.gallery.image1Alt",
         },
       ],
-      website: "https://www.lelieulerestaurant.fr/",
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.3689680670077!2d4.997990576442773!3d45.30097184431462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f531aa947df32f%3A0xbc5d1e6a3aa025aa!2sLes%20Agapons%20Restaurant!5e0!3m2!1sen!2sfr!4v1767889769559!5m2!1sen!2sfr",
+      website: "https://les-agapons.eatbu.com/?lang=fr",
       socialMedia: [
         {
           platform: "facebook",
-          link: "https://www.facebook.com/lelieu.fr",
+          link: "https://www.facebook.com/LesAgaponsRestaurant",
         },
         {
           platform: "instagram",
-          link: "https://www.instagram.com/lelieuannonay/",
+          link: "https://www.instagram.com/lesagapons_restaurant/",
         },
       ],
-      phoneNumber: "+33 7 81 02 85 25",
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1066019884192!2d4.669696976614631!3d45.24244527107111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f51399040043e1%3A0xe44d856af25a5b95!2sLe%20Lieu!5e1!3m2!1sen!2sfr!4v1770978039268!5m2!1sen!2sfr",
-      slug: "le_lieu",
+      phoneNumber: "+33 4 75 03 02 56",
+      slug: "les_agapons",
       bikeRoute: {
-        durationMinutes: 58,
-        distanceKm: 17,
-        elevationGainMeters: 532,
+        durationMinutes: 76,
+        distanceKm: 22.2,
+        elevationGainMeters: 255,
         routeType: "Path",
-        bikeScore: 75,
-        difficulty: "challenging",
-        tag: "challenging_hills",
+        bikeScore: 86,
+        difficulty: "moderate",
+        tag: "moderate_trip",
       },
     },
   ],

@@ -36,6 +36,9 @@ jobs:
           ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
         run: npm run update-bike-routes
 
+      - name: Sort surroundings
+        run: npm run sort-surroundings
+
       - name: Format updated files
         run: npm run format
 
