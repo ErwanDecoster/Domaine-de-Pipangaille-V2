@@ -149,6 +149,45 @@ export const surroundings = {
       }
     },
     {
+      title: "Cave Saint-Désirat",
+      category: [
+        "visit"
+      ],
+      shortDesc: "surroundings.descriptions.cave_saint_desirat.short",
+      longDesc: [
+        "surroundings.descriptions.cave_saint_desirat.long"
+      ],
+      gallery: [
+        {
+          src: caveSaintDesiratImg,
+          altKey: "surroundings.cave_saint_desirat.gallery.image1Alt"
+        }
+      ],
+      website: "https://cave-saint-desirat.com/",
+      phoneNumber: "+33 4 75 34 22 05",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://fr-fr.facebook.com/cave.saintdesirat/"
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/cavesaintdesirat/"
+        }
+      ],
+      mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.844049331331!2d4.7941911766157315!3d45.26518957107144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e053810daa5%3A0xea497e5263dce9ef!2sCave%20Saint%20d%C3%A9sirat!5e1!3m2!1sen!2sfr!4v1770977799883!5m2!1sen!2sfr",
+      slug: "cave_saint_desirat",
+      bikeRoute: {
+        durationMinutes: 20,
+        distanceKm: 5.6,
+        elevationGainMeters: 131,
+        routeType: "Path",
+        bikeScore: 77,
+        difficulty: "easy",
+        tag: "easy_short_ride"
+      }
+    },
+    {
       title: "Palais Idéal du Facteur Cheval",
       category: [
         "family",
@@ -233,42 +272,34 @@ export const surroundings = {
       }
     },
     {
-      title: "Cave Saint-Désirat",
+      title: "Slidesparc",
       category: [
-        "visit"
+        "family",
+        "sport"
       ],
-      shortDesc: "surroundings.descriptions.cave_saint_desirat.short",
+      shortDesc: "surroundings.descriptions.slidesparc.short",
       longDesc: [
-        "surroundings.descriptions.cave_saint_desirat.long"
+        "surroundings.descriptions.slidesparc.long"
       ],
       gallery: [
         {
-          src: caveSaintDesiratImg,
-          altKey: "surroundings.cave_saint_desirat.gallery.image1Alt"
+          src: slidesparcImg,
+          altKey: "surroundings.slidesparc.gallery.image1Alt"
         }
       ],
-      website: "https://cave-saint-desirat.com/",
-      phoneNumber: "+33 4 75 34 22 05",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://fr-fr.facebook.com/cave.saintdesirat/"
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/cavesaintdesirat/"
-        }
-      ],
-      mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.844049331331!2d4.7941911766157315!3d45.26518957107144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e053810daa5%3A0xea497e5263dce9ef!2sCave%20Saint%20d%C3%A9sirat!5e1!3m2!1sen!2sfr!4v1770977799883!5m2!1sen!2sfr",
-      slug: "cave_saint_desirat",
+      mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.806617695187!2d4.880707076611426!3d45.175739571070814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f54726b5f33711%3A0xeb894e0ea847cd7!2sSlidesparc!5e1!3m2!1sen!2sfr!4v1770977743325!5m2!1sen!2sfr",
+      website: "https://slidesparc.fr/",
+      phoneNumber: "+33 7 67 01 40 96",
+      bookLink: "https://slidesparc.fr/tarifs/",
+      slug: "slidesparc",
       bikeRoute: {
-        durationMinutes: 20,
-        distanceKm: 5.6,
-        elevationGainMeters: 131,
+        durationMinutes: 59,
+        distanceKm: 16.6,
+        elevationGainMeters: 359,
         routeType: "Path",
-        bikeScore: 77,
-        difficulty: "easy",
-        tag: "easy_short_ride"
+        bikeScore: 80,
+        difficulty: "moderate",
+        tag: "moderate_trip"
       }
     },
     {
@@ -311,58 +342,6 @@ export const surroundings = {
         bikeScore: 87,
         difficulty: "moderate",
         tag: "half_day_expedition"
-      }
-    },
-    {
-      title: "ViaRhôna",
-      category: [
-        "sport",
-        "ride",
-        "bike",
-        "loved"
-      ],
-      shortDesc: "surroundings.descriptions.viarhona.short",
-      longDesc: [
-        "surroundings.descriptions.viarhona.long"
-      ],
-      gallery: [
-        {
-          src: viarhonaImg,
-          altKey: "surroundings.viarhona.gallery.image1Alt"
-        }
-      ],
-      website: "https://www.viarhona.com/",
-      slug: "viarhona"
-    },
-    {
-      title: "Slidesparc",
-      category: [
-        "family",
-        "sport"
-      ],
-      shortDesc: "surroundings.descriptions.slidesparc.short",
-      longDesc: [
-        "surroundings.descriptions.slidesparc.long"
-      ],
-      gallery: [
-        {
-          src: slidesparcImg,
-          altKey: "surroundings.slidesparc.gallery.image1Alt"
-        }
-      ],
-      mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.806617695187!2d4.880707076611426!3d45.175739571070814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f54726b5f33711%3A0xeb894e0ea847cd7!2sSlidesparc!5e1!3m2!1sen!2sfr!4v1770977743325!5m2!1sen!2sfr",
-      website: "https://slidesparc.fr/",
-      phoneNumber: "+33 7 67 01 40 96",
-      bookLink: "https://slidesparc.fr/tarifs/",
-      slug: "slidesparc",
-      bikeRoute: {
-        durationMinutes: 59,
-        distanceKm: 16.6,
-        elevationGainMeters: 359,
-        routeType: "Path",
-        bikeScore: 80,
-        difficulty: "moderate",
-        tag: "moderate_trip"
       }
     },
     {
@@ -445,6 +424,27 @@ export const surroundings = {
         difficulty: "challenging",
         tag: "challenging_hills"
       }
+    },
+    {
+      title: "ViaRhôna",
+      category: [
+        "sport",
+        "ride",
+        "bike",
+        "loved"
+      ],
+      shortDesc: "surroundings.descriptions.viarhona.short",
+      longDesc: [
+        "surroundings.descriptions.viarhona.long"
+      ],
+      gallery: [
+        {
+          src: viarhonaImg,
+          altKey: "surroundings.viarhona.gallery.image1Alt"
+        }
+      ],
+      website: "https://www.viarhona.com/",
+      slug: "viarhona"
     },
     {
       title: "Domaine du Golf d'Albon",
@@ -600,6 +600,41 @@ export const surroundings = {
       }
     },
     {
+      title: "Labyrinthe végétal",
+      category: [
+        "family"
+      ],
+      shortDesc: "surroundings.descriptions.labyrinthe_vegetal.short",
+      longDesc: [
+        "surroundings.descriptions.labyrinthe_vegetal.long"
+      ],
+      gallery: [
+        {
+          src: labyrintheVegetalImg,
+          altKey: "surroundings.labyrinthe_vegetal.gallery.image1Alt"
+        }
+      ],
+      mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.2422525455586!2d4.818862076967201!3d44.87771877237721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b54c97839d2593%3A0x67542e4940b3b3d8!2zbGFieXJpbnRoZSB2w6lnw6h0YWw!5e0!3m2!1sfr!2sfr!4v1699293410152",
+      website: "https://labyleo.com/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/labyrinthevegetal/"
+        }
+      ],
+      phoneNumber: "+33 4 75 25 80 65",
+      slug: "labyrinthe_vegetal",
+      bikeRoute: {
+        durationMinutes: 198,
+        distanceKm: 58,
+        elevationGainMeters: 498,
+        routeType: "Path",
+        bikeScore: 77,
+        difficulty: "challenging",
+        tag: "full_day_adventure"
+      }
+    },
+    {
       title: "Compagnie des Canotiers Rhône & Saône",
       category: [
         "family",
@@ -640,41 +675,6 @@ export const surroundings = {
         elevationGainMeters: 799,
         routeType: "Path",
         bikeScore: 71,
-        difficulty: "challenging",
-        tag: "full_day_adventure"
-      }
-    },
-    {
-      title: "Labyrinthe végétal",
-      category: [
-        "family"
-      ],
-      shortDesc: "surroundings.descriptions.labyrinthe_vegetal.short",
-      longDesc: [
-        "surroundings.descriptions.labyrinthe_vegetal.long"
-      ],
-      gallery: [
-        {
-          src: labyrintheVegetalImg,
-          altKey: "surroundings.labyrinthe_vegetal.gallery.image1Alt"
-        }
-      ],
-      mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.2422525455586!2d4.818862076967201!3d44.87771877237721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b54c97839d2593%3A0x67542e4940b3b3d8!2zbGFieXJpbnRoZSB2w6lnw6h0YWw!5e0!3m2!1sfr!2sfr!4v1699293410152",
-      website: "https://labyleo.com/",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/labyrinthevegetal/"
-        }
-      ],
-      phoneNumber: "+33 4 75 25 80 65",
-      slug: "labyrinthe_vegetal",
-      bikeRoute: {
-        durationMinutes: 198,
-        distanceKm: 58,
-        elevationGainMeters: 498,
-        routeType: "Path",
-        bikeScore: 77,
         difficulty: "challenging",
         tag: "full_day_adventure"
       }
@@ -936,35 +936,6 @@ export const surroundings = {
       }
     },
     {
-      title: "O'Daily Truck",
-      category: [
-        "loved"
-      ],
-      gallery: [
-        {
-          src: oDailyTruckImg,
-          altKey: "surroundings.o_daily_truck.gallery.image1Alt"
-        },
-        {
-          src: oDailyTruckImg,
-          altKey: "surroundings.o_daily_truck.gallery.image2Alt"
-        }
-      ],
-      shortDesc: "surroundings.descriptions.o_daily_truck.short",
-      longDesc: [
-        "surroundings.descriptions.o_daily_truck.long"
-      ],
-      website: "https://odailytruck.eatbu.com/?lang=fr",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/profile.php?id=100083238615438"
-        }
-      ],
-      phoneNumber: "+33 7 84 75 76 46",
-      slug: "o_daily_truck"
-    },
-    {
       title: "Le Hangar N7",
       shortDesc: "surroundings.descriptions.le_hangar_n7.short",
       longDesc: [
@@ -1166,6 +1137,35 @@ export const surroundings = {
         difficulty: "easy",
         tag: "quick_neighborhood_ride"
       }
+    },
+    {
+      title: "O'Daily Truck",
+      category: [
+        "loved"
+      ],
+      gallery: [
+        {
+          src: oDailyTruckImg,
+          altKey: "surroundings.o_daily_truck.gallery.image1Alt"
+        },
+        {
+          src: oDailyTruckImg,
+          altKey: "surroundings.o_daily_truck.gallery.image2Alt"
+        }
+      ],
+      shortDesc: "surroundings.descriptions.o_daily_truck.short",
+      longDesc: [
+        "surroundings.descriptions.o_daily_truck.long"
+      ],
+      website: "https://odailytruck.eatbu.com/?lang=fr",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/profile.php?id=100083238615438"
+        }
+      ],
+      phoneNumber: "+33 7 84 75 76 46",
+      slug: "o_daily_truck"
     },
     {
       title: "La Vallée",

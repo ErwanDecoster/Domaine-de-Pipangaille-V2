@@ -52,7 +52,7 @@ function calculateSortScore(activity: Activity): number {
     score = activity.bikeRoute.durationMinutes * 10;
   }
 
-  if (activity.category?.includes("loved")) score -= 500;
+  if (activity.category?.includes("loved")) score -= 300;
   if (activity.category?.includes("family")) score -= 100;
   if (activity.category?.includes("bike")) score -= 100;
 
