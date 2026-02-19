@@ -138,40 +138,6 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
     const initialize = () => {
       updateRestaurantOpeningStatus();
       initializeFilterSystem();
-
-      // Track surrounding clicks
-      const surroundingCards = document.querySelectorAll(
-        "[data-surrounding-type]",
-      );
-      surroundingCards.forEach((card) => {
-        const name = card.getAttribute("data-surrounding-name");
-        const type = card.getAttribute("data-surrounding-type");
-        const button = card.querySelector("a");
-
-        if (button && window.plausible) {
-          button.addEventListener("click", () => {
-            window.plausible("surrounding_clicked", {
-              props: {
-                name: name || "unknown",
-                category: type || "unknown",
-              },
-            });
-          });
-        }
-      });
-
-      // Track filter applications
-      const filterButtons = document.querySelectorAll("[data-filter]");
-      filterButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const filter = btn.getAttribute("data-filter");
-          if (window.plausible && filter) {
-            window.plausible("surrounding_filter_applied", {
-              props: { filter },
-            });
-          }
-        });
-      });
     };
 
     if (document.readyState === "loading") {
@@ -179,7 +145,46 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
     } else {
       initialize();
     }
+
+    document.addEventListener("astro:page-load", initialize);
   };
+
+  // Use event delegation for surrounding clicks (prevents duplicate listeners)
+  document.body.addEventListener("click", (e) => {
+    const card = (e.target as Element).closest("[data-surrounding-type]");
+    if (!card) return;
+
+    const link = (e.target as Element).closest("a");
+    if (!link) return;
+
+    const name = card.getAttribute("data-surrounding-name");
+    const type = card.getAttribute("data-surrounding-type");
+
+    if (window.plausible) {
+      window.plausible("surrounding_clicked", {
+        props: {
+          name: name || "unknown",
+          category: type || "unknown",
+        },
+      });
+    }
+  });
+
+  // Use event delegation for filter clicks (prevents duplicate listeners)
+  document.body.addEventListener("click", (e) => {
+    const filterBtn = (e.target as Element).closest("[data-action='filter']");
+    if (!filterBtn) return;
+
+    const filter =
+      filterBtn.getAttribute("data-filter") ||
+      filterBtn.getAttribute("data-category");
+
+    if (window.plausible && filter) {
+      window.plausible("surrounding_filter_applied", {
+        props: { filter },
+      });
+    }
+  });
 
   init();
   document.addEventListener("astro:page-load", init);

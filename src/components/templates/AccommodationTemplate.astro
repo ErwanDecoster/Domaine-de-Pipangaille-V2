@@ -252,28 +252,40 @@ if (baseRoom) {
 }
 
 <script>
-  function initRoomDetailsTracking() {
+  // Track room details opened once on page load
+  function trackRoomDetails() {
     const roomTitle = document.querySelector("h1");
     if (roomTitle && window.plausible) {
       window.plausible("room_details_opened", {
         props: { room: roomTitle.textContent || "unknown" },
       });
     }
-
-    const galleryImages = document.querySelectorAll(
-      '[data-gallery="room-gallery"]',
-    );
-    galleryImages.forEach((img) => {
-      img.addEventListener("click", () => {
-        if (roomTitle && window.plausible) {
-          window.plausible("gallery_opened", {
-            props: { room: roomTitle.textContent || "unknown" },
-          });
-        }
-      });
-    });
   }
 
-  initRoomDetailsTracking();
-  document.addEventListener("astro:page-load", initRoomDetailsTracking);
+  // Use event delegation for gallery tracking (prevents duplicate listeners)
+  document.body.addEventListener("click", (e) => {
+    const galleryImg = (e.target as Element).closest(
+      '[data-gallery="room-gallery"]',
+    );
+    if (!galleryImg) return;
+
+    const roomTitle = document.querySelector("h1");
+    if (roomTitle && window.plausible) {
+      window.plausible("gallery_opened", {
+        props: { room: roomTitle.textContent || "unknown" },
+      });
+    }
+  });
+
+  // Track on initial load
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", trackRoomDetails, {
+      once: true,
+    });
+  } else {
+    trackRoomDetails();
+  }
+
+  // Track on client-side navigation
+  document.addEventListener("astro:page-load", trackRoomDetails);
 </script>

@@ -82,27 +82,23 @@ const t = useTranslations(lang as any);
 </div>
 
 <script>
-  function initSurroundingContactTracking() {
-    const title = document.querySelector("h1");
-    const contactButtons = document.querySelectorAll(
+  // Use event delegation for contact tracking (prevents duplicate listeners)
+  document.body.addEventListener("click", (e) => {
+    const contactBtn = (e.target as Element).closest(
       "[data-surrounding-contact]",
     );
+    if (!contactBtn) return;
 
-    contactButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const contactType = btn.getAttribute("data-surrounding-contact");
-        if (window.plausible && title && contactType) {
-          window.plausible("surrounding_contact_clicked", {
-            props: {
-              name: title.textContent || "unknown",
-              type: contactType,
-            },
-          });
-        }
+    const title = document.querySelector("h1");
+    const contactType = contactBtn.getAttribute("data-surrounding-contact");
+
+    if (window.plausible && title && contactType) {
+      window.plausible("surrounding_contact_clicked", {
+        props: {
+          name: title.textContent || "unknown",
+          type: contactType,
+        },
       });
-    });
-  }
-
-  initSurroundingContactTracking();
-  document.addEventListener("astro:page-load", initSurroundingContactTracking);
+    }
+  });
 </script>

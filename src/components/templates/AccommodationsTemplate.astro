@@ -129,26 +129,23 @@ const roomSchemas = roomsContent
   </section>
 
   <script>
-    function initRoomTracking() {
-      // Track room clicks
-      const roomCards = document.querySelectorAll("[data-room-name]");
-      roomCards.forEach((card) => {
-        const roomName = card.getAttribute("data-room-name");
-        const button = card.querySelector(
-          "a[href*='/hebergement/'], a[href*='/accommodation/'], a[href*='/alojamiento/']",
-        );
+    // Use event delegation for room tracking (prevents duplicate listeners)
+    document.body.addEventListener("click", (e) => {
+      const card = (e.target as Element).closest("[data-room-name]");
+      if (!card) return;
 
-        if (button && window.plausible) {
-          button.addEventListener("click", () => {
-            window.plausible("room_viewed", {
-              props: { room: roomName || "unknown" },
-            });
-          });
-        }
-      });
-    }
+      const link = (e.target as Element).closest(
+        "a[href*='/hebergement/'], a[href*='/accommodation/'], a[href*='/alojamiento/'], a[href*='/unterkunft/'], a[href*='/alloggio/'], a[href*='/accommodatie/']",
+      );
+      if (!link) return;
 
-    initRoomTracking();
-    document.addEventListener("astro:page-load", initRoomTracking);
+      const roomName = card.getAttribute("data-room-name");
+
+      if (window.plausible) {
+        window.plausible("room_viewed", {
+          props: { room: roomName || "unknown" },
+        });
+      }
+    });
   </script>
 </Layout>

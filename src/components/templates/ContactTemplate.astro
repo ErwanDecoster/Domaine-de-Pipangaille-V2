@@ -182,17 +182,6 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
 
         if (form) {
           form.addEventListener("submit", () => {
-            // Get form data for tracking
-            const formData = new FormData(form);
-            const subject = (formData.get("object") as string) || "unknown";
-
-            // Track form submission
-            if (window.plausible) {
-              window.plausible("contact_form_submitted", {
-                props: { subject },
-              });
-            }
-
             if (submitBtn) {
               submitBtn.disabled = true;
               submitBtn.setAttribute("aria-busy", "true");
@@ -202,7 +191,7 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
           });
         }
 
-        // Track success or error after form submission
+        // Track success or error after form submission (page reload)
         const successMessage = document.querySelector(
           ".bg-green-100, .dark\\:bg-green-900\\/20",
         );
@@ -211,16 +200,14 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
         );
 
         if (successMessage && window.plausible) {
-          window.plausible("contact_form_success");
+          window.plausible("contact_form_submitted", {
+            props: { status: "success" },
+          });
         }
 
         if (errorMessage && window.plausible) {
-          const errorText =
-            errorMessage.textContent ||
-            errorMessage.innerText ||
-            "unknown error";
-          window.plausible("contact_form_error", {
-            props: { error: errorText.substring(0, 100) },
+          window.plausible("contact_form_submitted", {
+            props: { status: "error" },
           });
         }
 

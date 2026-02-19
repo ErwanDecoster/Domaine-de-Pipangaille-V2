@@ -38,15 +38,17 @@ export const plausibleEvents = {
   // Surroundings/POI Events
   surroundingClicked: (name: string, category?: string) =>
     trackEvent("surrounding_clicked", { name, category }),
-  surroundingContactClicked: (name: string, type: "phone" | "website") =>
-    trackEvent("surrounding_contact_clicked", { name, type }),
+  surroundingContactClicked: (
+    name: string,
+    type: "phone" | "website" | "booking",
+  ) => trackEvent("surrounding_contact_clicked", { name, type }),
   surroundingFilterApplied: (filter: string) =>
     trackEvent("surrounding_filter_applied", { filter }),
 
   // Navigation & UX Events
   languageSwitched: (language: string) =>
     trackEvent("language_switched", { language }),
-  themeSwitched: (theme: "light" | "dark") =>
+  themeSwitched: (theme: "light" | "dark" | "system") =>
     trackEvent("theme_switched", { theme }),
   externalLinkClicked: (url: string, type?: string) =>
     trackEvent("external_link_clicked", { url, type }),
