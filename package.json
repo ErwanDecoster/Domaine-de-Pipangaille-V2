@@ -21,7 +21,7 @@
     "@astrojs/vue": "^5.1.4",
     "@fontsource/barlow": "^5.2.8",
     "@fontsource/source-serif-4": "^5.2.9",
-    "@lucide/astro": "^0.564.0",
+    "@lucide/astro": "^0.574.0",
     "@tailwindcss/vite": "^4.1.18",
     "@vercel/analytics": "^1.6.1",
     "@vueuse/core": "^14.2.1",
