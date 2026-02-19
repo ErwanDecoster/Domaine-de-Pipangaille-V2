@@ -153,6 +153,15 @@ const getLangHref = (targetLocale: Locale) => {
             const target = event.target as HTMLSelectElement;
             const selectedOption = target.options[target.selectedIndex];
             const url = selectedOption.getAttribute("data-url");
+            const language = target.value;
+
+            // Track language switch
+            if (window.plausible && language) {
+              window.plausible("language_switched", {
+                props: { language },
+              });
+            }
+
             if (url) {
               window.location.href = url;
             }

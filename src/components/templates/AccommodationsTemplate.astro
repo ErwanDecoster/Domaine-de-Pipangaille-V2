@@ -103,6 +103,7 @@ const roomSchemas = roomsContent
           buttonLink={room.buttonLink}
           isLCP={index === 0}
           sizes="(min-width: 1280px) 620px, (min-width: 768px) 48vw, 100vw"
+          data-room-name={room.title}
         />
       ))
     }
@@ -126,4 +127,28 @@ const roomSchemas = roomsContent
       </div>
     </div>
   </section>
+
+  <script>
+    function initRoomTracking() {
+      // Track room clicks
+      const roomCards = document.querySelectorAll("[data-room-name]");
+      roomCards.forEach((card) => {
+        const roomName = card.getAttribute("data-room-name");
+        const button = card.querySelector(
+          "a[href*='/hebergement/'], a[href*='/accommodation/'], a[href*='/alojamiento/']",
+        );
+
+        if (button && window.plausible) {
+          button.addEventListener("click", () => {
+            window.plausible("room_viewed", {
+              props: { room: roomName || "unknown" },
+            });
+          });
+        }
+      });
+    }
+
+    initRoomTracking();
+    document.addEventListener("astro:page-load", initRoomTracking);
+  </script>
 </Layout>

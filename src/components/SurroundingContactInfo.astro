@@ -44,14 +44,22 @@ const t = useTranslations(lang as any);
   <div class="flex flex-wrap gap-6">
     {
       surrounding && "bookLink" in surrounding && surrounding.bookLink ? (
-        <Button external href={surrounding.bookLink}>
+        <Button
+          external
+          href={surrounding.bookLink}
+          data-surrounding-contact="booking"
+        >
           {t("surroundings.detail.book")}
         </Button>
       ) : null
     }
     {
       surrounding?.phoneNumber ? (
-        <Button variant="outline" href={`tel:${surrounding.phoneNumber}`}>
+        <Button
+          variant="outline"
+          href={`tel:${surrounding.phoneNumber}`}
+          data-surrounding-contact="phone"
+        >
           <Phone />
           {t("surroundings.detail.call")}
         </Button>
@@ -64,6 +72,7 @@ const t = useTranslations(lang as any);
           class="-mx-6 gap-3!"
           external
           href={surrounding.website}
+          data-surrounding-contact="website"
         >
           {t("surroundings.detail.visitWebsite")}
         </Button>
@@ -71,3 +80,29 @@ const t = useTranslations(lang as any);
     }
   </div>
 </div>
+
+<script>
+  function initSurroundingContactTracking() {
+    const title = document.querySelector("h1");
+    const contactButtons = document.querySelectorAll(
+      "[data-surrounding-contact]",
+    );
+
+    contactButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const contactType = btn.getAttribute("data-surrounding-contact");
+        if (window.plausible && title && contactType) {
+          window.plausible("surrounding_contact_clicked", {
+            props: {
+              name: title.textContent || "unknown",
+              type: contactType,
+            },
+          });
+        }
+      });
+    });
+  }
+
+  initSurroundingContactTracking();
+  document.addEventListener("astro:page-load", initSurroundingContactTracking);
+</script>

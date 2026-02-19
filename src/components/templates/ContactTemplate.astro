@@ -182,12 +182,45 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
 
         if (form) {
           form.addEventListener("submit", () => {
+            // Get form data for tracking
+            const formData = new FormData(form);
+            const subject = (formData.get("object") as string) || "unknown";
+
+            // Track form submission
+            if (window.plausible) {
+              window.plausible("contact_form_submitted", {
+                props: { subject },
+              });
+            }
+
             if (submitBtn) {
               submitBtn.disabled = true;
               submitBtn.setAttribute("aria-busy", "true");
             }
             form.style.opacity = "0.6";
             form.style.pointerEvents = "none";
+          });
+        }
+
+        // Track success or error after form submission
+        const successMessage = document.querySelector(
+          ".bg-green-100, .dark\\:bg-green-900\\/20",
+        );
+        const errorMessage = document.querySelector(
+          ".bg-red-100, .dark\\:bg-red-900\\/20",
+        );
+
+        if (successMessage && window.plausible) {
+          window.plausible("contact_form_success");
+        }
+
+        if (errorMessage && window.plausible) {
+          const errorText =
+            errorMessage.textContent ||
+            errorMessage.innerText ||
+            "unknown error";
+          window.plausible("contact_form_error", {
+            props: { error: errorText.substring(0, 100) },
           });
         }
 

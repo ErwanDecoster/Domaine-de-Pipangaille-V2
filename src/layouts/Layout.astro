@@ -143,11 +143,23 @@ const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(lang);
       document.addEventListener("astro:after-swap", () => {
         const theme = getThemePreference();
         applyTheme(theme);
+        // Track theme on page load
+        if (window.plausible) {
+          window.plausible("page_theme", {
+            props: { theme },
+          });
+        }
       });
 
       document.addEventListener("astro:page-load", () => {
         const theme = getThemePreference();
         applyTheme(theme);
+        // Track theme on page load
+        if (window.plausible) {
+          window.plausible("page_theme", {
+            props: { theme },
+          });
+        }
       });
     </script>
   </body>

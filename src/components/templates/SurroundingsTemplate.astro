@@ -138,6 +138,40 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
     const initialize = () => {
       updateRestaurantOpeningStatus();
       initializeFilterSystem();
+
+      // Track surrounding clicks
+      const surroundingCards = document.querySelectorAll(
+        "[data-surrounding-type]",
+      );
+      surroundingCards.forEach((card) => {
+        const name = card.getAttribute("data-surrounding-name");
+        const type = card.getAttribute("data-surrounding-type");
+        const button = card.querySelector("a");
+
+        if (button && window.plausible) {
+          button.addEventListener("click", () => {
+            window.plausible("surrounding_clicked", {
+              props: {
+                name: name || "unknown",
+                category: type || "unknown",
+              },
+            });
+          });
+        }
+      });
+
+      // Track filter applications
+      const filterButtons = document.querySelectorAll("[data-filter]");
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+          if (window.plausible && filter) {
+            window.plausible("surrounding_filter_applied", {
+              props: { filter },
+            });
+          }
+        });
+      });
     };
 
     if (document.readyState === "loading") {

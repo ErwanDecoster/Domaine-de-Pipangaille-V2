@@ -62,6 +62,8 @@ const toKey = (key: string) => key as any;
           data-kind="restaurant"
           data-slug={restaurant.slug}
           data-categories={restaurant.categories.join(",")}
+          data-surrounding-type="restaurant"
+          data-surrounding-name={restaurant.title}
         >
           <Card
             {...restaurant}

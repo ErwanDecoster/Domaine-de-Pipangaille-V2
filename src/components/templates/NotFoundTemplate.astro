@@ -32,3 +32,11 @@ const t = useTranslations(lang);
     </div>
   </div>
 </Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.plausible) {
+      window.plausible("404");
+    }
+  });
+</script>

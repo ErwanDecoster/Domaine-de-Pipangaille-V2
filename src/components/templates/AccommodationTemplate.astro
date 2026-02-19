@@ -247,6 +247,35 @@ if (baseRoom) {
           }))}
         />
       ) : null}
+
+      <script>
+        function initRoomDetailsTracking() {
+          // Track when page loads (room details viewed)
+          const roomTitle = document.querySelector("h1");
+          if (roomTitle && window.plausible) {
+            window.plausible("room_details_opened", {
+              props: { room: roomTitle.textContent || "unknown" },
+            });
+          }
+
+          // Track gallery opens
+          const galleryImages = document.querySelectorAll(
+            '[data-gallery="room-gallery"]',
+          );
+          galleryImages.forEach((img) => {
+            img.addEventListener("click", () => {
+              if (window.plausible && roomTitle) {
+                window.plausible("gallery_opened", {
+                  props: { room: roomTitle.textContent || "unknown" },
+                });
+              }
+            });
+          });
+        }
+
+        initRoomDetailsTracking();
+        document.addEventListener("astro:page-load", initRoomDetailsTracking);
+      </script>
     </Layout>
   )
 }
