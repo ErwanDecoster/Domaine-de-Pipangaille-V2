@@ -249,13 +249,13 @@ if (baseRoom) {
       ) : null}
 
       <script>
+        import { plausibleEvents } from "@/lib/plausibleEvents";
+
         function initRoomDetailsTracking() {
           // Track when page loads (room details viewed)
           const roomTitle = document.querySelector("h1");
-          if (roomTitle && window.plausible) {
-            window.plausible("room_details_opened", {
-              props: { room: roomTitle.textContent || "unknown" },
-            });
+          if (roomTitle) {
+            plausibleEvents.roomDetailsOpened(roomTitle.textContent || "unknown");
           }
 
           // Track gallery opens
@@ -264,10 +264,8 @@ if (baseRoom) {
           );
           galleryImages.forEach((img) => {
             img.addEventListener("click", () => {
-              if (window.plausible && roomTitle) {
-                window.plausible("gallery_opened", {
-                  props: { room: roomTitle.textContent || "unknown" },
-                });
+              if (roomTitle) {
+                plausibleEvents.galleryOpened(roomTitle.textContent || "unknown");
               }
             });
           });
