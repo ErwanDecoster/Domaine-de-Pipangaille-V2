@@ -129,23 +129,38 @@ const roomSchemas = roomsContent
   </section>
 
   <script>
-    // Use event delegation for room tracking (prevents duplicate listeners)
-    document.body.addEventListener("click", (e) => {
-      const card = (e.target as Element).closest("[data-room-name]");
-      if (!card) return;
+    // Use event delegation for room tracking with cleanup on navigation
+    const roomTrackingAbortController = new AbortController();
 
-      const link = (e.target as Element).closest(
-        "a[href*='/hebergement/'], a[href*='/accommodation/'], a[href*='/alojamiento/'], a[href*='/unterkunft/'], a[href*='/alloggio/'], a[href*='/accommodatie/']",
-      );
-      if (!link) return;
+    document.body.addEventListener(
+      "click",
+      (e) => {
+        const card = (e.target as Element).closest("[data-room-name]");
+        if (!card) return;
 
-      const roomName = card.getAttribute("data-room-name");
+        const link = (e.target as Element).closest(
+          "a[href*='/hebergement/'], a[href*='/accommodation/'], a[href*='/alojamiento/'], a[href*='/unterkunft/'], a[href*='/alloggio/'], a[href*='/accommodatie/']",
+        );
+        if (!link) return;
 
-      if (window.plausible) {
-        window.plausible("room_viewed", {
-          props: { room: roomName || "unknown" },
-        });
-      }
-    });
+        const roomName = card.getAttribute("data-room-name");
+
+        if (window.plausible) {
+          window.plausible("room_viewed", {
+            props: { room: roomName || "unknown" },
+          });
+        }
+      },
+      { signal: roomTrackingAbortController.signal },
+    );
+
+    // Cleanup on navigation
+    document.addEventListener(
+      "astro:before-swap",
+      () => {
+        roomTrackingAbortController.abort();
+      },
+      { once: true },
+    );
   </script>
 </Layout>

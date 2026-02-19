@@ -82,23 +82,38 @@ const t = useTranslations(lang as any);
 </div>
 
 <script>
-  // Use event delegation for contact tracking (prevents duplicate listeners)
-  document.body.addEventListener("click", (e) => {
-    const contactBtn = (e.target as Element).closest(
-      "[data-surrounding-contact]",
-    );
-    if (!contactBtn) return;
+  // Use event delegation for contact tracking with cleanup on navigation
+  const contactTrackingAbortController = new AbortController();
 
-    const title = document.querySelector("h1");
-    const contactType = contactBtn.getAttribute("data-surrounding-contact");
+  document.body.addEventListener(
+    "click",
+    (e) => {
+      const contactBtn = (e.target as Element).closest(
+        "[data-surrounding-contact]",
+      );
+      if (!contactBtn) return;
 
-    if (window.plausible && title && contactType) {
-      window.plausible("surrounding_contact_clicked", {
-        props: {
-          name: title.textContent || "unknown",
-          type: contactType,
-        },
-      });
-    }
-  });
+      const title = document.querySelector("h1");
+      const contactType = contactBtn.getAttribute("data-surrounding-contact");
+
+      if (window.plausible && title && contactType) {
+        window.plausible("surrounding_contact_clicked", {
+          props: {
+            name: title.textContent || "unknown",
+            type: contactType,
+          },
+        });
+      }
+    },
+    { signal: contactTrackingAbortController.signal },
+  );
+
+  // Cleanup on navigation
+  document.addEventListener(
+    "astro:before-swap",
+    () => {
+      contactTrackingAbortController.abort();
+    },
+    { once: true },
+  );
 </script>

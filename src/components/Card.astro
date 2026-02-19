@@ -37,6 +37,11 @@ const {
   ...dataAttrs
 } = Astro.props;
 
+// Filter out undefined data attributes
+const cleanDataAttrs = Object.fromEntries(
+  Object.entries(dataAttrs).filter(([, value]) => value !== undefined),
+);
+
 const TitleComponent = titleLevel;
 
 // Optimize background image for blur effect
@@ -53,7 +58,7 @@ const optimizedBgImage = await getImage({
   style={`--card-image: url(${optimizedBgImage.src});`}
   tabindex="-1"
   onclick={`window.location.href='${buttonLink}'`}
-  {...dataAttrs}
+  {...cleanDataAttrs}
 >
   <Image
     class="aspect-video"

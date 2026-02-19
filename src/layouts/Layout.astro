@@ -138,7 +138,11 @@ const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(lang);
     <Analytics />
 
     <script>
-      import { applyTheme, getThemePreference } from "@/lib/theme";
+      import {
+        applyTheme,
+        getThemePreference,
+        getEffectiveTheme,
+      } from "@/lib/theme";
 
       // Apply theme immediately after page swap (for view transitions)
       document.addEventListener("astro:after-swap", () => {
@@ -151,9 +155,11 @@ const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(lang);
         const theme = getThemePreference();
         applyTheme(theme);
 
+        // Track the resolved theme (light/dark) for consistent analytics
         if (window.plausible) {
+          const resolvedTheme = getEffectiveTheme(theme);
           window.plausible("page_theme", {
-            props: { theme },
+            props: { theme: resolvedTheme },
           });
         }
       });
