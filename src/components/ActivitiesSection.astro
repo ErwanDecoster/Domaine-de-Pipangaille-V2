@@ -56,6 +56,8 @@ const toKey = (key: string) => key as any;
           class="activity-card"
           data-kind="activity"
           data-categories={(activity.categories ?? []).join(",")}
+          data-surrounding-type="activity"
+          data-surrounding-name={activity.title}
         >
           <Card
             {...activity}

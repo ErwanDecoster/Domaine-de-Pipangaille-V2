@@ -103,6 +103,7 @@ const roomSchemas = roomsContent
           buttonLink={room.buttonLink}
           isLCP={index === 0}
           sizes="(min-width: 1280px) 620px, (min-width: 768px) 48vw, 100vw"
+          data-room-name={room.title}
         />
       ))
     }
@@ -126,4 +127,40 @@ const roomSchemas = roomsContent
       </div>
     </div>
   </section>
+
+  <script>
+    // Use event delegation for room tracking with cleanup on navigation
+    const roomTrackingAbortController = new AbortController();
+
+    document.body.addEventListener(
+      "click",
+      (e) => {
+        const card = (e.target as Element).closest("[data-room-name]");
+        if (!card) return;
+
+        const link = (e.target as Element).closest(
+          "a[href*='/hebergement/'], a[href*='/accommodation/'], a[href*='/alojamiento/'], a[href*='/unterkunft/'], a[href*='/alloggio/'], a[href*='/accommodatie/']",
+        );
+        if (!link) return;
+
+        const roomName = card.getAttribute("data-room-name");
+
+        if (window.plausible) {
+          window.plausible("room_viewed", {
+            props: { room: roomName || "unknown" },
+          });
+        }
+      },
+      { signal: roomTrackingAbortController.signal },
+    );
+
+    // Cleanup on navigation
+    document.addEventListener(
+      "astro:before-swap",
+      () => {
+        roomTrackingAbortController.abort();
+      },
+      { once: true },
+    );
+  </script>
 </Layout>
