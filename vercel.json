@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/analytics/:path*",
-      "destination": "https://analytics.domaine-de-pipangaille.fr/:path*"
+      "source": "/api/embed.js",
+      "destination": "https://api.domaine-de-pipangaille.fr/js/script.hash.outbound-links.pageview-props.tagged-events.js"
     }
   ],
   "redirects": [
