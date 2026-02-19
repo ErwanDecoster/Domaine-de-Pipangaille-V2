@@ -250,3 +250,57 @@ if (baseRoom) {
     </Layout>
   )
 }
+
+<script>
+  // Track room details opened once on page load
+  function trackRoomDetails() {
+    const roomTitle = document.querySelector("h1");
+    if (roomTitle && window.plausible) {
+      window.plausible("room_details_opened", {
+        props: { room: roomTitle.textContent || "unknown" },
+      });
+    }
+  }
+
+  // Use event delegation for gallery tracking with cleanup on navigation
+  const galleryTrackingAbortController = new AbortController();
+
+  document.body.addEventListener(
+    "click",
+    (e) => {
+      const galleryImg = (e.target as Element).closest(
+        '[data-gallery="room-gallery"]',
+      );
+      if (!galleryImg) return;
+
+      const roomTitle = document.querySelector("h1");
+      if (roomTitle && window.plausible) {
+        window.plausible("gallery_opened", {
+          props: { room: roomTitle.textContent || "unknown" },
+        });
+      }
+    },
+    { signal: galleryTrackingAbortController.signal },
+  );
+
+  // Cleanup on navigation
+  document.addEventListener(
+    "astro:before-swap",
+    () => {
+      galleryTrackingAbortController.abort();
+    },
+    { once: true },
+  );
+
+  // Track on initial load
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", trackRoomDetails, {
+      once: true,
+    });
+  } else {
+    trackRoomDetails();
+  }
+
+  // Track on client-side navigation
+  document.addEventListener("astro:page-load", trackRoomDetails);
+</script>

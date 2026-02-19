@@ -145,7 +145,68 @@ const restaurantsTotalPages = getTotalPages(restaurantFiltersData.length);
     } else {
       initialize();
     }
+
+    document.addEventListener("astro:page-load", initialize);
   };
+
+  // Use event delegation for surrounding clicks with cleanup on navigation
+  const surroundingClickAbortController = new AbortController();
+
+  document.body.addEventListener(
+    "click",
+    (e) => {
+      const card = (e.target as Element).closest("[data-surrounding-type]");
+      if (!card) return;
+
+      const link = (e.target as Element).closest("a");
+      if (!link) return;
+
+      const name = card.getAttribute("data-surrounding-name");
+      const type = card.getAttribute("data-surrounding-type");
+
+      if (window.plausible) {
+        window.plausible("surrounding_clicked", {
+          props: {
+            name: name || "unknown",
+            category: type || "unknown",
+          },
+        });
+      }
+    },
+    { signal: surroundingClickAbortController.signal },
+  );
+
+  // Use event delegation for filter clicks with cleanup on navigation
+  const filterClickAbortController = new AbortController();
+
+  document.body.addEventListener(
+    "click",
+    (e) => {
+      const filterBtn = (e.target as Element).closest("[data-action='filter']");
+      if (!filterBtn) return;
+
+      const filter =
+        filterBtn.getAttribute("data-filter") ||
+        filterBtn.getAttribute("data-category");
+
+      if (window.plausible && filter) {
+        window.plausible("surrounding_filter_applied", {
+          props: { filter },
+        });
+      }
+    },
+    { signal: filterClickAbortController.signal },
+  );
+
+  // Cleanup both listeners on navigation
+  document.addEventListener(
+    "astro:before-swap",
+    () => {
+      surroundingClickAbortController.abort();
+      filterClickAbortController.abort();
+    },
+    { once: true },
+  );
 
   init();
   document.addEventListener("astro:page-load", init);

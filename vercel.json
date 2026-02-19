@@ -1,4 +1,14 @@
 {
+  "rewrites": [
+    {
+      "source": "/lib.js",
+      "destination": "https://analytics.domaine-de-pipangaille.fr/js/script.hash.outbound-links.pageview-props.tagged-events.js"
+    },
+    {
+      "source": "/v1/data",
+      "destination": "https://analytics.domaine-de-pipangaille.fr/api/event"
+    }
+  ],
   "redirects": [
     {
       "source": "/a-proximite/:path*",
