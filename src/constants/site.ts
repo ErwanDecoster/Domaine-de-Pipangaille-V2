@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Domaine de Pipangaille",
-  url: "https://domaine-de-pipangaille-v2.vercel.app",
+  url: "https://domaine-de-pipangaille.fr",
   email: "contact@domaine-de-pipangaille.fr",
   phone: {
     formatted: "+33 4 75 68 28 24",
