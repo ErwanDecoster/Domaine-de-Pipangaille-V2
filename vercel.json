@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    {
+      "source": "/analytics/:path*",
+      "destination": "https://analytics.domaine-de-pipangaille.fr/:path*"
+    }
+  ],
   "redirects": [
     {
       "source": "/a-proximite/:path*",
