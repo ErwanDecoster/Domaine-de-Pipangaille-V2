@@ -3,6 +3,10 @@
     {
       "source": "/api/embed.js",
       "destination": "https://api.domaine-de-pipangaille.fr/js/script.hash.outbound-links.pageview-props.tagged-events.js"
+    },
+    {
+      "source": "/api/event",
+      "destination": "https://api.domaine-de-pipangaille.fr/api/event"
     }
   ],
   "redirects": [
