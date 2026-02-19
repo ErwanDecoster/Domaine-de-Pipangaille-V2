@@ -111,8 +111,8 @@ const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(lang);
     <script
       defer
       data-domain="domaine-de-pipangaille.fr"
-      src="https://api.domaine-de-pipangaille.fr/js/script.hash.outbound-links.pageview-props.tagged-events.js"
-    ></script>
+      data-api="/v1/data"
+      src="/lib.js"></script>
     <script>
       window.plausible =
         window.plausible ||
@@ -138,16 +138,30 @@ const bedAndBreakfastSchema = generateLocalizedBedAndBreakfastSchema(lang);
     <Analytics />
 
     <script>
-      import { applyTheme, getThemePreference } from "@/lib/theme";
+      import {
+        applyTheme,
+        getThemePreference,
+        getEffectiveTheme,
+      } from "@/lib/theme";
 
+      // Apply theme immediately after page swap (for view transitions)
       document.addEventListener("astro:after-swap", () => {
         const theme = getThemePreference();
         applyTheme(theme);
       });
 
+      // Apply theme and track on page load (only track once per navigation)
       document.addEventListener("astro:page-load", () => {
         const theme = getThemePreference();
         applyTheme(theme);
+
+        // Track the resolved theme (light/dark) for consistent analytics
+        if (window.plausible) {
+          const resolvedTheme = getEffectiveTheme(theme);
+          window.plausible("page_theme", {
+            props: { theme: resolvedTheme },
+          });
+        }
       });
     </script>
   </body>

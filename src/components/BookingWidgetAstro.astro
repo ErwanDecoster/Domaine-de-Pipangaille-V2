@@ -251,12 +251,20 @@ const bookingPath = getLocalizedUrl("booking", lang);
       this.dateButton.setAttribute("aria-expanded", "true");
       this.dropdown.setAttribute("aria-hidden", "false");
       this.positionDropdown();
+      // Track event
+      if (window.plausible) {
+        window.plausible("booking_widget_opened");
+      }
     };
 
     private closeDropdown = (): void => {
       this.dropdown.classList.add("hidden");
       this.dateButton.setAttribute("aria-expanded", "false");
       this.dropdown.setAttribute("aria-hidden", "true");
+      // Track event
+      if (window.plausible) {
+        window.plausible("booking_widget_closed");
+      }
     };
 
     private positionDropdown(): void {
@@ -305,6 +313,23 @@ const bookingPath = getLocalizedUrl("booking", lang);
       const startDate = this.dateButton.dataset.startDate || "";
       const endDate = this.dateButton.dataset.endDate || "";
       const bookingPath = this.bookButton.dataset.bookingPath || "/reservation";
+
+      // Track booking submission
+      if (window.plausible && startDate && endDate) {
+        window.plausible("booking_submitted", {
+          props: {
+            adults,
+            children,
+            dateRange: `${startDate}-${endDate}`,
+          },
+        });
+      } else if (window.plausible) {
+        window.plausible("booking_error", {
+          props: {
+            error: "Missing dates",
+          },
+        });
+      }
 
       const bookUrl = new URL(bookingPath, window.location.origin);
       if (startDate) bookUrl.searchParams.set("start_date", startDate);
