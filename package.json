@@ -31,7 +31,7 @@
     "reka-ui": "^2.8.0",
     "resend": "^6.9.2",
     "tailwind-merge": "^3.4.1",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.0",
     "vue": "^3.5.28"
   },
   "devDependencies": {
