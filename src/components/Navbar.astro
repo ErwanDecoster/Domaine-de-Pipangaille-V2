@@ -213,4 +213,9 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
   #mobile-menu-toggle:checked ~ nav label .hamburger-line--bottom {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  :global(html:has(#mobile-menu-toggle:checked)),
+  :global(body:has(#mobile-menu-toggle:checked)) {
+    overflow: hidden;
+  }
 </style>
