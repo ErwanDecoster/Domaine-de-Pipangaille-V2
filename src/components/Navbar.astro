@@ -214,8 +214,10 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  :global(html:has(#mobile-menu-toggle:checked)),
   :global(body:has(#mobile-menu-toggle:checked)) {
     overflow: hidden;
+    height: 100dvh;
+    overscroll-behavior: none;
+    touch-action: none;
   }
 </style>
