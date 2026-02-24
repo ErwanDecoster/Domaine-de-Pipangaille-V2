@@ -121,13 +121,13 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
     aria-label={t("nav.toggleMenu")}
   >
     <span
-      class="hamburger-line hamburger-line--top bg-foreground block h-0.5 w-6 origin-center transition-all duration-300 ease-in-out"
+      class="hamburger-line hamburger-line--top bg-foreground block h-0.5 w-6 origin-center rounded transition-all duration-300 ease-in-out"
     ></span>
     <span
-      class="hamburger-line hamburger-line--middle bg-foreground block h-0.5 w-6 transition-all duration-300 ease-in-out"
+      class="hamburger-line hamburger-line--middle bg-foreground block h-0.5 w-6 rounded transition-all duration-300 ease-in-out"
     ></span>
     <span
-      class="hamburger-line hamburger-line--bottom bg-foreground block h-0.5 w-6 origin-center transition-all duration-300 ease-in-out"
+      class="hamburger-line hamburger-line--bottom bg-foreground block h-0.5 w-6 origin-center rounded transition-all duration-300 ease-in-out"
     ></span>
   </label>
 </nav>
@@ -207,9 +207,17 @@ const navbarHeightClass = reduce ? reducedNavHeight : navHeight;
 
   #mobile-menu-toggle:checked ~ nav label .hamburger-line--middle {
     opacity: 0;
+    background: transparent;
   }
 
   #mobile-menu-toggle:checked ~ nav label .hamburger-line--bottom {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  :global(body:has(#mobile-menu-toggle:checked)) {
+    overflow: hidden;
+    height: 100dvh;
+    overscroll-behavior: none;
+    touch-action: none;
   }
 </style>

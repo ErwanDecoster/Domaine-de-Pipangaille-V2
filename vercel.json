@@ -11,7 +11,12 @@
   ],
   "redirects": [
     {
-      "source": "/a-proximite/:path*",
+      "source": "/a-proximite/a-visiter/:path*",
+      "destination": "/alentour/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/a-proximite/se-restaurer/:path*",
       "destination": "/alentour/:path*",
       "permanent": true
     },
@@ -61,18 +66,23 @@
       "permanent": true
     },
     {
-      "source": "/en/near/:path*",
+      "source": "/en/near",
+      "destination": "/en/surroundings",
+      "permanent": true
+    },
+    {
+      "source": "/en/near/dining/:path*",
+      "destination": "/en/surrounding/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/near/to-visit/:path*",
       "destination": "/en/surrounding/:path*",
       "permanent": true
     },
     {
       "source": "/en/near/:path*",
       "destination": "/es/alrededor/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/es/a-proximidad",
-      "destination": "/en/surroundings",
       "permanent": true
     },
     {
@@ -108,6 +118,11 @@
     {
       "source": "/es/reservar",
       "destination": "/es/reserva",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
       "permanent": true
     },
     {
