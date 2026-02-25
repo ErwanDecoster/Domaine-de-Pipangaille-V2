@@ -100,12 +100,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1100",
-            "close": "1600"
-          },
-          {
-            "open": "1830",
-            "close": "1930"
+            "open": "1030",
+            "close": "1630"
           }
         ]
       },
@@ -113,12 +109,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1100",
-            "close": "1600"
-          },
-          {
-            "open": "1830",
-            "close": "1930"
+            "open": "1030",
+            "close": "1630"
           }
         ]
       },
@@ -126,12 +118,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1100",
-            "close": "1600"
-          },
-          {
-            "open": "1830",
-            "close": "1930"
+            "open": "1030",
+            "close": "1630"
           }
         ]
       },
@@ -139,12 +127,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1100",
-            "close": "1600"
-          },
-          {
-            "open": "1830",
-            "close": "1930"
+            "open": "1030",
+            "close": "1630"
           }
         ]
       },
@@ -152,12 +136,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1100",
-            "close": "1600"
-          },
-          {
-            "open": "1830",
-            "close": "1930"
+            "open": "1030",
+            "close": "1630"
           }
         ]
       },
@@ -165,12 +145,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1100",
-            "close": "1600"
-          },
-          {
-            "open": "1830",
-            "close": "1930"
+            "open": "1030",
+            "close": "1630"
           }
         ]
       },
@@ -178,12 +154,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1100",
-            "close": "1600"
-          },
-          {
-            "open": "1830",
-            "close": "1930"
+            "open": "1030",
+            "close": "1630"
           }
         ]
       }
