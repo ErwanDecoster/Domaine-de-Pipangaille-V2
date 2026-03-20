@@ -1,6 +1,6 @@
 import { SITE } from "@/constants/site";
+import { z } from "astro/zod";
 import { ActionError, defineAction } from "astro:actions";
-import { z } from "astro:schema";
 import { Resend } from "resend";
 import { ui, defaultLang } from "../i18n/ui";
 
