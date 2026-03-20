@@ -44,14 +44,22 @@ const t = useTranslations(lang as any);
   <div class="flex flex-wrap gap-6">
     {
       surrounding && "bookLink" in surrounding && surrounding.bookLink ? (
-        <Button external href={surrounding.bookLink}>
+        <Button
+          external
+          href={surrounding.bookLink}
+          data-surrounding-contact="booking"
+        >
           {t("surroundings.detail.book")}
         </Button>
       ) : null
     }
     {
       surrounding?.phoneNumber ? (
-        <Button variant="outline" href={`tel:${surrounding.phoneNumber}`}>
+        <Button
+          variant="outline"
+          href={`tel:${surrounding.phoneNumber}`}
+          data-surrounding-contact="phone"
+        >
           <Phone />
           {t("surroundings.detail.call")}
         </Button>
@@ -64,6 +72,7 @@ const t = useTranslations(lang as any);
           class="-mx-6 gap-3!"
           external
           href={surrounding.website}
+          data-surrounding-contact="website"
         >
           {t("surroundings.detail.visitWebsite")}
         </Button>
@@ -71,3 +80,40 @@ const t = useTranslations(lang as any);
     }
   </div>
 </div>
+
+<script>
+  // Use event delegation for contact tracking with cleanup on navigation
+  const contactTrackingAbortController = new AbortController();
+
+  document.body.addEventListener(
+    "click",
+    (e) => {
+      const contactBtn = (e.target as Element).closest(
+        "[data-surrounding-contact]",
+      );
+      if (!contactBtn) return;
+
+      const title = document.querySelector("h1");
+      const contactType = contactBtn.getAttribute("data-surrounding-contact");
+
+      if (window.plausible && title && contactType) {
+        window.plausible("surrounding_contact_clicked", {
+          props: {
+            name: title.textContent || "unknown",
+            type: contactType,
+          },
+        });
+      }
+    },
+    { signal: contactTrackingAbortController.signal },
+  );
+
+  // Cleanup on navigation
+  document.addEventListener(
+    "astro:before-swap",
+    () => {
+      contactTrackingAbortController.abort();
+    },
+    { once: true },
+  );
+</script>

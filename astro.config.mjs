@@ -11,7 +11,7 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: "viewport",
   },
-  site: "https://domaine-de-pipangaille-v2.vercel.app",
+  site: "https://domaine-de-pipangaille.fr",
   image: {
     layout: "constrained",
   },

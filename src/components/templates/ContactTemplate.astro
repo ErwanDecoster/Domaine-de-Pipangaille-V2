@@ -191,6 +191,26 @@ const getFieldErrors = (error: unknown): Record<string, string[]> | null => {
           });
         }
 
+        // Track success or error after form submission (page reload)
+        const successMessage = document.querySelector(
+          ".bg-green-100, .dark\\:bg-green-900\\/20",
+        );
+        const errorMessage = document.querySelector(
+          ".bg-red-100, .dark\\:bg-red-900\\/20",
+        );
+
+        if (successMessage && window.plausible) {
+          window.plausible("contact_form_submitted", {
+            props: { status: "success" },
+          });
+        }
+
+        if (errorMessage && window.plausible) {
+          window.plausible("contact_form_submitted", {
+            props: { status: "error" },
+          });
+        }
+
         if (window.location.search.includes("_action")) {
           const url = new URL(window.location.href);
           if (url.searchParams.has("_action")) {

@@ -135,6 +135,14 @@ const { class: className } = Astro.props;
     localStorage.setItem("theme", theme);
     applyTheme(theme);
     updateActiveButton(theme);
+
+    // Track theme change
+    if (window.plausible) {
+      const displayTheme = theme === "system" ? getThemePreference() : theme;
+      window.plausible("theme_switched", {
+        props: { theme: displayTheme },
+      });
+    }
   }
 
   // Initialize theme on load

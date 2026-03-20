@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-Sitemap: https://domaine-de-pipangaille-v2.vercel.app/sitemap-index.xml
+Sitemap: https://domaine-de-pipangaille.fr/sitemap-index.xml

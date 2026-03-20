@@ -18,6 +18,7 @@ interface Props {
   isLCP?: boolean;
   sizes?: string;
   quality?: number;
+  [key: `data-${string}`]: string | undefined;
 }
 
 const {
@@ -33,7 +34,13 @@ const {
   isLCP = false,
   sizes = "(min-width: 768px) 50vw, 100vw",
   quality = 30,
+  ...dataAttrs
 } = Astro.props;
+
+// Filter out undefined data attributes
+const cleanDataAttrs = Object.fromEntries(
+  Object.entries(dataAttrs).filter(([, value]) => value !== undefined),
+);
 
 const TitleComponent = titleLevel;
 
@@ -51,6 +58,7 @@ const optimizedBgImage = await getImage({
   style={`--card-image: url(${optimizedBgImage.src});`}
   tabindex="-1"
   onclick={`window.location.href='${buttonLink}'`}
+  {...cleanDataAttrs}
 >
   <Image
     class="aspect-video"

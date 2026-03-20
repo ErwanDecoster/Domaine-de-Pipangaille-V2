@@ -32,3 +32,21 @@ const t = useTranslations(lang);
     </div>
   </div>
 </Layout>
+
+<script>
+  function track404() {
+    if (window.plausible) {
+      window.plausible("404");
+    }
+  }
+
+  // Track on initial load
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", track404, { once: true });
+  } else {
+    track404();
+  }
+
+  // Track on client-side navigation
+  document.addEventListener("astro:page-load", track404);
+</script>

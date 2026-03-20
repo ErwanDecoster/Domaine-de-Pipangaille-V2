@@ -3,7 +3,6 @@
 ## SEO & Configuration
 
 - [ ] Update robot.txt
-- [ ] update site URL in astro config file
 
 ## Translations
 
