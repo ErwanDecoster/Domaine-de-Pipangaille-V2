@@ -10,7 +10,7 @@ export const legalNotices = {
   "legalNotices.editor.ceoLabel": "Dirigeante et Directrice de la publication",
   "legalNotices.editor.ceoValue": "Madame Catherine Lemoine",
   "legalNotices.design.title": "Conception du site",
-  "legalNotices.design.emailLabel": "Email",
+  "legalNotices.design.linkedinLabel": "LinkedIn",
   "legalNotices.design.websiteLabel": "Site",
   "legalNotices.development.title": "Développement du site",
   "legalNotices.development.phoneLabel": "Téléphone",

@@ -19,9 +19,10 @@ const editorNafValue = SITE.legal.naf;
 const editorCapitalValue = SITE.legal.capital;
 
 const designerName = "Anthony Clemenson";
-const designerEmail = "replace";
-const designerWebsiteUrl = "replace";
-const designerWebsiteLabel = "replace";
+const designerLinkedInUrl = "https://www.linkedin.com/in/anthonyclemenson/";
+const designerLinkedInLabel = "linkedin.com/in/anthonyclemenson";
+const designerWebsiteUrl = "https://anthonyclemenson.com/";
+const designerWebsiteLabel = "anthonyclemenson.com";
 
 const developerName = "Erwan Decoster";
 const developerEmail = "contact@erwan-decoster.com";
@@ -116,13 +117,14 @@ const privacyPolicyUrl = getLocalizedUrl("privacyPolicy", lang);
       <div class="grid gap-2 text-lg">
         <p><strong>{designerName}</strong></p>
         <p>
-          <strong>{t("legalNotices.design.emailLabel")}:</strong>
+          <strong>{t("legalNotices.design.linkedinLabel")}:</strong>
           <Button
             variant="link"
             class="-mx-6 -my-4"
-            href={`mailto:${designerEmail}`}
+            href={designerLinkedInUrl}
+            target="_blank"
           >
-            {designerEmail}
+            {designerLinkedInLabel}
           </Button>
         </p>
         <p>
