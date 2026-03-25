@@ -6,7 +6,11 @@ import { ui, defaultLang } from "../i18n/ui";
 
 type Language = keyof typeof ui;
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY);
+function getResendClient() {
+  const apiKey = import.meta.env.RESEND_API_KEY;
+  if (!apiKey) return null;
+  return new Resend(apiKey);
+}
 
 function getLangFromRequest(context: any): Language {
   const url = context.url;
@@ -71,6 +75,15 @@ export const contact = {
             JSON.stringify(errors),
         });
       }
+
+      const resend = getResendClient();
+      if (!resend) {
+        throw new ActionError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: getTranslation(lang, "contact.genericError"),
+        });
+      }
+
       try {
         const { data, error } = await resend.emails.send({
           from: `Site internet - ${SITE.name} <${SITE.email}>`,
