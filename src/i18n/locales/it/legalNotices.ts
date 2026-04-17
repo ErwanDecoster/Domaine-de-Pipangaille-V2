@@ -1,8 +1,10 @@
 export const legalNotices = {
   "legalNotices.title": "Note legali",
   "legalNotices.editor.title": "Editore del sito",
-  "legalNotices.editor.addressLabel": "Indirizzo",
+  "legalNotices.editor.addressLabel": "Indirizzo della sede legale",
   "legalNotices.editor.rcsLabel": "RCS",
+  "legalNotices.editor.siretLabel": "SIRET",
+  "legalNotices.editor.tvaLabel": "Partita IVA",
   "legalNotices.editor.nafLabel": "Codice NAF",
   "legalNotices.editor.capitalLabel": "Capitale sociale",
   "legalNotices.editor.phoneLabel": "Telefono",
