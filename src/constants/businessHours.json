@@ -100,8 +100,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1030",
-            "close": "1630"
+            "open": "0930",
+            "close": "1700"
           }
         ]
       },
@@ -109,8 +109,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1030",
-            "close": "1630"
+            "open": "0930",
+            "close": "1700"
           }
         ]
       },
@@ -118,8 +118,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1030",
-            "close": "1630"
+            "open": "0930",
+            "close": "1700"
           }
         ]
       },
@@ -127,8 +127,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1030",
-            "close": "1630"
+            "open": "0930",
+            "close": "1700"
           }
         ]
       },
@@ -136,8 +136,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1030",
-            "close": "1630"
+            "open": "0930",
+            "close": "1700"
           }
         ]
       },
@@ -145,8 +145,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1030",
-            "close": "1630"
+            "open": "0930",
+            "close": "1700"
           }
         ]
       },
@@ -154,8 +154,8 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1030",
-            "close": "1630"
+            "open": "0930",
+            "close": "1700"
           }
         ]
       }
@@ -178,7 +178,7 @@
         "periods": [
           {
             "open": "0930",
-            "close": "1730"
+            "close": "1830"
           }
         ]
       },
@@ -187,7 +187,7 @@
         "periods": [
           {
             "open": "0930",
-            "close": "1730"
+            "close": "1830"
           }
         ]
       },
@@ -233,7 +233,13 @@
     "googlePlaceId": "ChIJOcOvO0sI9UcRHWtCrX3CfPE",
     "hours": {
       "sunday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "monday": {
         "isOpen": false
@@ -245,13 +251,31 @@
         "isOpen": false
       },
       "thursday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "friday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "saturday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       }
     }
   },
@@ -440,10 +464,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1200"
-          },
-          {
-            "open": "1300",
             "close": "1700"
           }
         ]
@@ -453,10 +473,6 @@
         "periods": [
           {
             "open": "0900",
-            "close": "1200"
-          },
-          {
-            "open": "1300",
             "close": "1700"
           }
         ]
@@ -466,10 +482,6 @@
         "periods": [
           {
             "open": "0900",
-            "close": "1200"
-          },
-          {
-            "open": "1300",
             "close": "1700"
           }
         ]
@@ -479,10 +491,6 @@
         "periods": [
           {
             "open": "0900",
-            "close": "1200"
-          },
-          {
-            "open": "1300",
             "close": "1700"
           }
         ]
@@ -492,10 +500,6 @@
         "periods": [
           {
             "open": "0900",
-            "close": "1200"
-          },
-          {
-            "open": "1300",
             "close": "1700"
           }
         ]
@@ -505,10 +509,6 @@
         "periods": [
           {
             "open": "0900",
-            "close": "1200"
-          },
-          {
-            "open": "1300",
             "close": "1700"
           }
         ]
@@ -805,11 +805,7 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
-            "close": "1700"
+            "close": "1800"
           }
         ]
       },
@@ -818,11 +814,7 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
-            "close": "1700"
+            "close": "1800"
           }
         ]
       },
@@ -831,11 +823,7 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
-            "close": "1700"
+            "close": "1800"
           }
         ]
       },
@@ -844,11 +832,7 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
-            "close": "1700"
+            "close": "1800"
           }
         ]
       },
@@ -857,11 +841,7 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
-            "close": "1700"
+            "close": "1800"
           }
         ]
       },
@@ -870,11 +850,7 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
-            "close": "1700"
+            "close": "1800"
           }
         ]
       },
@@ -883,11 +859,7 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
-            "close": "1700"
+            "close": "1800"
           }
         ]
       }
