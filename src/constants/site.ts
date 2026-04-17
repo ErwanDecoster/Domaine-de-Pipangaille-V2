@@ -35,6 +35,8 @@ export const SITE = {
   legal: {
     companyName: "SAS Domaine de Pipangaille",
     rcs: "904 638 814",
+    siret: "904 638 814 00015",
+    tva: "FR14904638814",
     naf: "55202",
     capital: "1 500 €",
   },
