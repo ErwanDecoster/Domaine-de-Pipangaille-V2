@@ -131,7 +131,7 @@ export const surroundings = {
         distanceKm: 4.7,
         elevationGainMeters: 66,
         routeType: "Path",
-        bikeScore: 82,
+        bikeScore: 81,
         difficulty: "easy",
         tag: "quick_neighborhood_ride",
       },
@@ -165,7 +165,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 20,
         distanceKm: 5.6,
-        elevationGainMeters: 131,
+        elevationGainMeters: 132,
         routeType: "Path",
         bikeScore: 77,
         difficulty: "easy",
@@ -604,7 +604,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 255,
         distanceKm: 74.1,
-        elevationGainMeters: 799,
+        elevationGainMeters: 800,
         routeType: "Path",
         bikeScore: 71,
         difficulty: "challenging",
@@ -638,7 +638,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 432,
         distanceKm: 127.2,
-        elevationGainMeters: 1244,
+        elevationGainMeters: 1243,
         routeType: "Path",
         bikeScore: 67,
         difficulty: "challenging",
@@ -976,7 +976,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 18,
         distanceKm: 5.2,
-        elevationGainMeters: 77,
+        elevationGainMeters: 78,
         routeType: "Path",
         bikeScore: 82,
         difficulty: "easy",
@@ -1126,9 +1126,9 @@ export const surroundings = {
       phoneNumber: "+33 4 75 03 02 56",
       slug: "les_agapons",
       bikeRoute: {
-        durationMinutes: 76,
-        distanceKm: 22.2,
-        elevationGainMeters: 255,
+        durationMinutes: 78,
+        distanceKm: 22.6,
+        elevationGainMeters: 266,
         routeType: "Path",
         bikeScore: 86,
         difficulty: "moderate",
