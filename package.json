@@ -28,7 +28,7 @@
     "@tailwindcss/vite": "^4.2.4",
     "@vercel/analytics": "^2.0.1",
     "@vueuse/core": "^14.2.1",
-    "astro": "^6.0.8",
+    "astro": "^6.1.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "reka-ui": "^2.9.2",
