@@ -77,31 +77,13 @@
         "isOpen": false
       },
       "tuesday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1100",
-            "close": "1700"
-          }
-        ]
+        "isOpen": false
       },
       "wednesday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1100",
-            "close": "1700"
-          }
-        ]
+        "isOpen": false
       },
       "thursday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1100",
-            "close": "1700"
-          }
-        ]
+        "isOpen": false
       },
       "friday": {
         "isOpen": false
