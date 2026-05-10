@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
-    "@astrojs/vercel": "^10.0.5",
+    "@astrojs/vercel": "^10.0.6",
     "@astrojs/vue": "^6.0.1",
     "@fontsource/barlow": "^5.2.8",
     "@fontsource/source-serif-4": "^5.2.9",
