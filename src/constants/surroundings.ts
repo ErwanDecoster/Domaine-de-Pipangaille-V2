@@ -560,7 +560,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 199,
         distanceKm: 57.9,
-        elevationGainMeters: 513,
+        elevationGainMeters: 512,
         routeType: "Path",
         bikeScore: 77,
         difficulty: "challenging",
@@ -602,9 +602,9 @@ export const surroundings = {
       phoneNumber: "+33 6 44 30 79 76",
       slug: "compagnie_des_canotiers_rhone_et_saone",
       bikeRoute: {
-        durationMinutes: 255,
+        durationMinutes: 254,
         distanceKm: 74.1,
-        elevationGainMeters: 802,
+        elevationGainMeters: 800,
         routeType: "Path",
         bikeScore: 71,
         difficulty: "challenging",
@@ -637,8 +637,8 @@ export const surroundings = {
       slug: "chateau_de_grignan",
       bikeRoute: {
         durationMinutes: 432,
-        distanceKm: 127.2,
-        elevationGainMeters: 1243,
+        distanceKm: 126.8,
+        elevationGainMeters: 1234,
         routeType: "Path",
         bikeScore: 67,
         difficulty: "challenging",
@@ -669,7 +669,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 493,
         distanceKm: 143.7,
-        elevationGainMeters: 1092,
+        elevationGainMeters: 1090,
         routeType: "Path",
         bikeScore: 68,
         difficulty: "challenging",
