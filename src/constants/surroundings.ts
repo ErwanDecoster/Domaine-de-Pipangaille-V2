@@ -26,6 +26,7 @@ import museeDeLAlambicImg from "@/images/musee-de-l-alambic.jpg";
 import museeValrhonaImg from "@/images/musee-valrhona.jpg";
 import oDailyTruckImg from "@/images/o-daily-truck.jpg";
 import palaisIdealDuFacteurChevalImg from "@/images/palais-ideal-du-facteur-cheval.jpg";
+import restaurantAmbiguImg from "@/images/restaurant_ambigu.jpg";
 import restaurantLaTreille from "@/images/restaurant_la_treille.jpg";
 import safariPeaugresImg from "@/images/safari-peaugres.jpg";
 import slidesparcImg from "@/images/slide-parc.jpg";
@@ -560,7 +561,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 199,
         distanceKm: 57.9,
-        elevationGainMeters: 513,
+        elevationGainMeters: 512,
         routeType: "Path",
         bikeScore: 77,
         difficulty: "challenging",
@@ -602,9 +603,9 @@ export const surroundings = {
       phoneNumber: "+33 6 44 30 79 76",
       slug: "compagnie_des_canotiers_rhone_et_saone",
       bikeRoute: {
-        durationMinutes: 255,
+        durationMinutes: 254,
         distanceKm: 74.1,
-        elevationGainMeters: 802,
+        elevationGainMeters: 800,
         routeType: "Path",
         bikeScore: 71,
         difficulty: "challenging",
@@ -637,8 +638,8 @@ export const surroundings = {
       slug: "chateau_de_grignan",
       bikeRoute: {
         durationMinutes: 432,
-        distanceKm: 127.2,
-        elevationGainMeters: 1243,
+        distanceKm: 126.8,
+        elevationGainMeters: 1234,
         routeType: "Path",
         bikeScore: 67,
         difficulty: "challenging",
@@ -669,7 +670,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 493,
         distanceKm: 143.7,
-        elevationGainMeters: 1092,
+        elevationGainMeters: 1090,
         routeType: "Path",
         bikeScore: 68,
         difficulty: "challenging",
@@ -1133,6 +1134,41 @@ export const surroundings = {
         bikeScore: 86,
         difficulty: "moderate",
         tag: "moderate_trip",
+      },
+    },
+    {
+      title: "Restaurant l'Ambigu",
+      shortDesc: "surroundings.descriptions.restaurant_ambigu.short",
+      longDesc: ["surroundings.descriptions.restaurant_ambigu.long"],
+      gallery: [
+        {
+          src: restaurantAmbiguImg,
+          altKey: "surroundings.restaurant_ambigu.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.0!2d4.8188!3d45.1725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1sChIJWY79bntA9UcRmcX-yW6kGi0!2sRestaurant%20l%27Ambigu!5e1!3m2!1sfr!2sfr!4v1748131200000!5m2!1sfr!2sfr",
+      website: "https://www.restaurant-ambigu.fr/",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/AmbiguCafeRestaurant/",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/ambigu_restaurant_stvallier/",
+        },
+      ],
+      phoneNumber: "+33 6 16 71 46 98",
+      slug: "restaurant_ambigu",
+      bikeRoute: {
+        durationMinutes: 34,
+        distanceKm: 9.9,
+        elevationGainMeters: 58,
+        routeType: "Path",
+        bikeScore: 88,
+        difficulty: "easy",
+        tag: "easy_short_ride",
       },
     },
   ],

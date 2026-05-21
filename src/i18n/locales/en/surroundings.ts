@@ -224,6 +224,8 @@ export const surroundings = {
   "surroundings.la_vallee.gallery.image1Alt": "La Vallée restaurant in Peyraud",
   "surroundings.le_lieu.gallery.image1Alt":
     "Interior courtyard and terrace of Le Lieu in Annonay",
+  "surroundings.restaurant_ambigu.gallery.image1Alt":
+    "Dining room and terrace of Restaurant l'Ambigu in Saint-Vallier",
   "surroundings.descriptions.les_agapons.short":
     "Authentic French cuisine restaurant in Manthes, quality home-cooked food with local and regional products.",
   "surroundings.descriptions.les_agapons.long":
@@ -240,6 +242,10 @@ export const surroundings = {
     "Traditional restaurant offering regional French cuisine in a peaceful, verdant setting.",
   "surroundings.descriptions.restaurant_de_la_treille.long":
     "Located in Champagne, just minutes from Andancette, Restaurant de la Treille sits at the heart of a rural and viticultural landscape. It offers traditional French cuisine rooted in local recipes and regional produce. The establishment features a warm dining room and a pleasant terrace in season. It's a treasured address for authentic dining in a calm setting, ideal for a gourmet stop while staying in the Rhône Valley.",
+  "surroundings.descriptions.restaurant_ambigu.short":
+    "Home-cooked Asian cuisine (Thai, Cambodian, Korean, Japanese) and a local dish in Saint-Vallier, with a park-view terrace.",
+  "surroundings.descriptions.restaurant_ambigu.long":
+    "Restaurant l'Ambigu invites you on a culinary journey in Saint-Vallier. Discover traditional Asian cuisine — Thai, Cambodian, Korean and Japanese — prepared in-house from family recipes, alongside two signature dishes served year-round: the famous Thai Padthaï and the delicious Gratin de Ravioles, a Label Rouge product from the Drôme region.\n\nThe restaurant has two rooms accommodating up to 60 guests, plus a terrace with views over the park and children's play equipment. Free on-site parking. Takeaway also available.",
   "surroundings.detail.book": "Book",
   "surroundings.detail.call": "Call",
   "surroundings.detail.socialNetworks": "Social media",

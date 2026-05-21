@@ -15,7 +15,7 @@
     "check:format": "prettier --check .",
     "check:lint": "eslint .",
     "update-bike-routes": "node scripts/update-bike-routes.js",
-    "update-business-hours": "node scripts/update-business-hours.js",
+    "update-business-hours": "npx tsx scripts/update-business-hours.js",
     "sort-surroundings": "npx tsx scripts/sort-surroundings.ts"
   },
   "dependencies": {
