@@ -43,5 +43,5 @@ export const placeIds = {
   restaurantDeLaTreille: "ChIJQfWDiQ8-9UcRlpSPl4FKTCA",
   laVallee: "ChIJy15PVy8W9UcRzQT0TqrgvLk",
   leLieu: "ChIJ4UMABJkT9UcRlVta8mqFTeQ",
-  restaurantAmbigu: "ChIJWY79bntA9UcRmcX-yW6kGi0"
+  restaurantAmbigu: "ChIJWY79bntA9UcRmcX-yW6kGi0",
 };
