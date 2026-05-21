@@ -222,6 +222,8 @@ export const surroundings = {
   "surroundings.la_vallee.gallery.image1Alt": "Ristorante La Vallée a Peyraud",
   "surroundings.le_lieu.gallery.image1Alt":
     "Cortile interno e terrazza di Le Lieu ad Annonay",
+  "surroundings.restaurant_ambigu.gallery.image1Alt":
+    "Sala e terrazza del ristorante l'Ambigu a Saint-Vallier",
   "surroundings.descriptions.les_agapons.short":
     "Ristorante di autentica cucina francese a Manthes, cibo fatto in casa di qualità con prodotti locali e regionali.",
   "surroundings.descriptions.les_agapons.long":
@@ -238,6 +240,10 @@ export const surroundings = {
     "Ristorante tradizionale che offre cucina francese regionale in un ambiente tranquillo e verdeggiante.",
   "surroundings.descriptions.restaurant_de_la_treille.long":
     "Situato a Champagne, a pochi minuti da Andancette, il Restaurant de la Treille si trova nel cuore di un paesaggio rurale e viticolo. Offre cucina francese tradizionale basata su ricette locali e prodotti regionali. L'établissement dispone di una sala da pranzo accogliente e di una piacevole terrazza in stagione. È un indirizzo apprezzato per cenare in autenticità in un ambiente tranquillo, ideale per una tappa golosa durante un soggiorno nella Valle del Rodano.",
+  "surroundings.descriptions.restaurant_ambigu.short":
+    "Cucina asiatica casalinga (tailandese, cambogiana, coreana, giapponese) e un piatto locale a Saint-Vallier, con terrazza vista parco.",
+  "surroundings.descriptions.restaurant_ambigu.long":
+    "Il ristorante l'Ambigu vi invita in un viaggio culinario a Saint-Vallier. Scoprite una cucina tradizionale asiatica — tailandese, cambogiana, coreana e giapponese — preparata in casa secondo ricette di famiglia, con due piatti signature disponibili tutto l'anno: il famoso Padthaï tailandese e il delizioso Gratin de Ravioles, un prodotto Label Rouge della Drôme.\n\nIl ristorante dispone di due sale con capienza fino a 60 persone e una terrazza con vista sul parco e giochi per bambini. Parcheggio gratuito in loco. Disponibile anche l'asporto.",
   "surroundings.detail.book": "Prenota",
   "surroundings.detail.call": "Chiama",
   "surroundings.detail.socialNetworks": "Canali social",

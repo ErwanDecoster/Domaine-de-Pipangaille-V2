@@ -228,6 +228,8 @@ export const surroundings = {
     "Restaurante La Vallée en Peyraud",
   "surroundings.le_lieu.gallery.image1Alt":
     "Patio interior y terraza de Le Lieu en Annonay",
+  "surroundings.restaurant_ambigu.gallery.image1Alt":
+    "Sala y terraza del restaurante l'Ambigu en Saint-Vallier",
   "surroundings.descriptions.les_agapons.short":
     "Restaurante de auténtica cocina francesa en Manthes, comida casera de calidad con productos locales y regionales.",
   "surroundings.descriptions.les_agapons.long":
@@ -244,6 +246,10 @@ export const surroundings = {
     "Restaurante tradicional que ofrece cocina francesa regional en un entorno tranquilo y verdoso.",
   "surroundings.descriptions.restaurant_de_la_treille.long":
     "Ubicado en Champagne, a solo minutos de Andancette, el Restaurante de la Treille se encuentra en el corazón de un paisaje rural y vitícola. Ofrece cocina francesa tradicional basada en recetas locales y productos regionales. El establecimiento cuenta con un comedor cálido y una agradable terraza en temporada. Es una dirección valorada para cenar auténtico en un ambiente tranquilo, ideal para una parada gourmet mientras se disfruta en el Valle del Ródano.",
+  "surroundings.descriptions.restaurant_ambigu.short":
+    "Cocina asiática casera (tailandesa, camboyana, coreana, japonesa) y un plato local en Saint-Vallier, con terraza con vistas al parque.",
+  "surroundings.descriptions.restaurant_ambigu.long":
+    "El restaurante l'Ambigu le invita a un viaje culinario en Saint-Vallier. Descubra una cocina tradicional asiática — tailandesa, camboyana, coreana y japonesa — preparada en casa según recetas familiares, con dos platos estrella disponibles todo el año: el famoso Padthaï tailandés y el delicioso Gratin de Ravioles, un producto Label Rouge del Drôme.\n\nEl restaurante dispone de dos salas con capacidad para 60 comensales y una terraza con vistas al parque y zona de juegos para niños. Aparcamiento gratuito en el lugar. También disponible para llevar.",
   "surroundings.detail.book": "Reservar",
   "surroundings.detail.call": "Llamar",
   "surroundings.detail.socialNetworks": "Redes sociales",

@@ -224,6 +224,8 @@ export const surroundings = {
   "surroundings.la_vallee.gallery.image1Alt": "Restaurant La Vallée in Peyraud",
   "surroundings.le_lieu.gallery.image1Alt":
     "Binnenhof en terras van Le Lieu in Annonay",
+  "surroundings.restaurant_ambigu.gallery.image1Alt":
+    "Zaal en terras van restaurant l'Ambigu in Saint-Vallier",
   "surroundings.descriptions.les_agapons.short":
     "Restaurant met authentieke Franse keuken in Manthes, huisgemaakte kwaliteitskeuken met lokale en regionale producten.",
   "surroundings.descriptions.les_agapons.long":
@@ -240,6 +242,10 @@ export const surroundings = {
     "Traditioneel restaurant met regionale Franse keuken in een rustige, groene omgeving.",
   "surroundings.descriptions.restaurant_de_la_treille.long":
     "Restaurant de la Treille ligt in Champagne, op slechts enkele minuten van Andancette, in het hart van een landelijke en wijnbouwlandschap. Het biedt traditionele Franse keuken gebaseerd op lokale recepten en regionale producten. Het etablissement beschikt over een gezellige eetkamer en een aangenaam terras in het seizoen. Het is een gewaardeerd adres voor authentiek eten in een rustige omgeving, ideaal voor een culinaire stop tijdens een verblijf in de Rhônedal.",
+  "surroundings.descriptions.restaurant_ambigu.short":
+    "Huisgemaakte Aziatische keuken (Thais, Cambodjaans, Koreaans, Japans) en een lokaal gerecht in Saint-Vallier, met terras met uitzicht op het park.",
+  "surroundings.descriptions.restaurant_ambigu.long":
+    "Restaurant l'Ambigu nodigt u uit voor een culinaire reis in Saint-Vallier. Ontdek een traditionele Aziatische keuken — Thais, Cambodjaans, Koreaans en Japans — thuis bereid naar familierecepten, met twee signature-gerechten het hele jaar door: de beroemde Thaise Padthaï en de heerlijke Gratin de Ravioles, een Label Rouge-product uit de Drôme.\n\nHet restaurant heeft twee zalen met ruimte voor 60 gasten en een terras met uitzicht op het park met speeltoestellen voor kinderen. Gratis parkeerplaats ter plaatse. Meeneembestellingen ook mogelijk.",
   "surroundings.detail.book": "Boeken",
   "surroundings.detail.call": "Bellen",
   "surroundings.detail.socialNetworks": "Sociale media",

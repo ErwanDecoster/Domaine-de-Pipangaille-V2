@@ -224,6 +224,8 @@ export const surroundings = {
   "surroundings.la_vallee.gallery.image1Alt": "Restaurant La Vallée in Peyraud",
   "surroundings.le_lieu.gallery.image1Alt":
     "Innenhof und Terrasse von Le Lieu in Annonay",
+  "surroundings.restaurant_ambigu.gallery.image1Alt":
+    "Speisesaal und Terrasse des Restaurants l'Ambigu in Saint-Vallier",
   "surroundings.descriptions.les_agapons.short":
     "Authentisches französisches Restaurant in Manthes, hochwertige hausgemachte Küche mit lokalen und regionalen Produkten.",
   "surroundings.descriptions.les_agapons.long":
@@ -240,6 +242,10 @@ export const surroundings = {
     "Traditionelles Restaurant mit regionaler französischer Küche in ruhiger, grüner Umgebung.",
   "surroundings.descriptions.restaurant_de_la_treille.long":
     "Das Restaurant de la Treille befindet sich in Champagne, nur wenige Minuten von Andancette entfernt, im Herzen einer ländlichen und weinanbauenden Landschaft. Es bietet traditionelle französische Küche, die auf lokalen Rezepten und regionalen Produkten basiert. Das Etablissement verfügt über einen gemütlichen Speisesaal und eine angenehme Terrasse in der Saison. Es ist eine geschätzte Adresse für authentisches Essen in ruhiger Umgebung, ideal für einen kulinarischen Halt während eines Aufenthalts im Rhônetal.",
+  "surroundings.descriptions.restaurant_ambigu.short":
+    "Hausgemachte asiatische Küche (Thai, Kambodschanisch, Koreanisch, Japanisch) und ein lokales Gericht in Saint-Vallier, mit Terrasse mit Parkblick.",
+  "surroundings.descriptions.restaurant_ambigu.long":
+    "Das Restaurant l'Ambigu lädt Sie in Saint-Vallier zu einer kulinarischen Reise ein. Entdecken Sie traditionelle asiatische Küche — Thai, Kambodschanisch, Koreanisch und Japanisch — hausgemacht nach Familienrezepten, sowie zwei ganzjährige Signature-Gerichte: das berühmte thailändische Padthaï und das köstliche Gratin de Ravioles, ein Label-Rouge-Produkt aus der Drôme.\n\nDas Restaurant verfügt über zwei Säle für bis zu 60 Gäste sowie eine Terrasse mit Blick auf den Park und Kinderspielgeräten. Kostenloser Parkplatz vor Ort. Mitnahme-Bestellungen ebenfalls möglich.",
   "surroundings.detail.book": "Buchen",
   "surroundings.detail.call": "Anrufen",
   "surroundings.detail.socialNetworks": "Soziale Netzwerke",

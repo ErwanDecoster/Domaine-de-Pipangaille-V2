@@ -203,6 +203,8 @@ export const surroundings = {
   "surroundings.la_vallee.gallery.image1Alt": "Restaurant La Vallée à Peyraud",
   "surroundings.le_lieu.gallery.image1Alt":
     "Cour intérieure et terrasse du Lieu à Annonay",
+  "surroundings.restaurant_ambigu.gallery.image1Alt":
+    "Salle et terrasse du restaurant l'Ambigu à Saint-Vallier",
   "surroundings.descriptions.les_agapons.short":
     "Restaurant d'authentique cuisine française à Manthes, cuisine maison de qualité avec produits locaux.",
   "surroundings.descriptions.les_agapons.long":
@@ -239,6 +241,10 @@ export const surroundings = {
     "Restaurant, bar à vin et salon de thé à Annonay, lieu de vie culturel et artistique.",
   "surroundings.descriptions.le_lieu.long":
     "Le Lieu est un espace de vie unique au cœur d'Annonay, articulé autour d'une cour intérieure. C'est à la fois un restaurant, un bar à vin et un salon de thé proposant une cuisine simple, saine et créative dans une ambiance colorée. L'équipe partage son enthousiasme avec des plats généreux préparés avec des produits locaux et bio. Le Lieu accueille également des événements culturels : concerts, expositions, festivals, projections, stages... Un endroit porté par une éthique humaine et environnementale, en résonance avec la vie culturelle et commerçante du territoire. Terrasse agréable pour profiter de moments de partage entre amis.",
+  "surroundings.descriptions.restaurant_ambigu.short":
+    "Cuisine asiatique maison (thaïlandaise, cambodgienne, coréenne, japonaise) et plat local à Saint-Vallier, avec terrasse vue sur parc.",
+  "surroundings.descriptions.restaurant_ambigu.long":
+    "Le restaurant l'Ambigu vous invite à un voyage culinaire à Saint-Vallier. Découvrez une cuisine traditionnelle d'Asie — thaïlandaise, cambodgienne, coréenne et japonaise — préparée maison selon des recettes familiales, ainsi qu'un plat de terroir. Deux plats signatures sont au rendez-vous toute l'année : le célèbre Padthaï thaïlandais et le savoureux Gratin de Ravioles Label Rouge des terroirs drômois.\n\nL'établissement dispose de deux salles pouvant accueillir jusqu'à 60 convives, ainsi qu'une terrasse avec vue sur le parc, agrémentée de jeux pour enfants. Parking gratuit sur place. Possibilité de commandes à emporter.",
   "surroundings.detail.book": "Réserver",
   "surroundings.detail.call": "Appeler",
   "surroundings.detail.socialNetworks": "Réseaux sociaux",
