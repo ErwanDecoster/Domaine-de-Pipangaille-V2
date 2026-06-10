@@ -1102,41 +1102,6 @@ export const surroundings = {
       },
     },
     {
-      title: "Les Agapons",
-      shortDesc: "surroundings.descriptions.les_agapons.short",
-      longDesc: ["surroundings.descriptions.les_agapons.long"],
-      gallery: [
-        {
-          src: lesAgaponRestaurantImg,
-          altKey: "surroundings.les_agapons.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.3689680670077!2d4.997990576442773!3d45.30097184431462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f531aa947df32f%3A0xbc5d1e6a3aa025aa!2sLes%20Agapons%20Restaurant!5e0!3m2!1sen!2sfr!4v1767889769559!5m2!1sen!2sfr",
-      website: "https://les-agapons.eatbu.com/?lang=fr",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/LesAgaponsRestaurant",
-        },
-        {
-          platform: "instagram",
-          link: "https://www.instagram.com/lesagapons_restaurant/",
-        },
-      ],
-      phoneNumber: "+33 4 75 03 02 56",
-      slug: "les_agapons",
-      bikeRoute: {
-        durationMinutes: 78,
-        distanceKm: 22.6,
-        elevationGainMeters: 266,
-        routeType: "Path",
-        bikeScore: 86,
-        difficulty: "moderate",
-        tag: "moderate_trip",
-      },
-    },
-    {
       title: "Restaurant l'Ambigu",
       shortDesc: "surroundings.descriptions.restaurant_ambigu.short",
       longDesc: ["surroundings.descriptions.restaurant_ambigu.long"],
@@ -1169,6 +1134,41 @@ export const surroundings = {
         bikeScore: 88,
         difficulty: "easy",
         tag: "easy_short_ride",
+      },
+    },
+    {
+      title: "Les Agapons",
+      shortDesc: "surroundings.descriptions.les_agapons.short",
+      longDesc: ["surroundings.descriptions.les_agapons.long"],
+      gallery: [
+        {
+          src: lesAgaponRestaurantImg,
+          altKey: "surroundings.les_agapons.gallery.image1Alt",
+        },
+      ],
+      mapsUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.3689680670077!2d4.997990576442773!3d45.30097184431462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f531aa947df32f%3A0xbc5d1e6a3aa025aa!2sLes%20Agapons%20Restaurant!5e0!3m2!1sen!2sfr!4v1767889769559!5m2!1sen!2sfr",
+      website: "https://les-agapons.eatbu.com/?lang=fr",
+      socialMedia: [
+        {
+          platform: "facebook",
+          link: "https://www.facebook.com/LesAgaponsRestaurant",
+        },
+        {
+          platform: "instagram",
+          link: "https://www.instagram.com/lesagapons_restaurant/",
+        },
+      ],
+      phoneNumber: "+33 4 75 03 02 56",
+      slug: "les_agapons",
+      bikeRoute: {
+        durationMinutes: 78,
+        distanceKm: 22.6,
+        elevationGainMeters: 266,
+        routeType: "Path",
+        bikeScore: 86,
+        difficulty: "moderate",
+        tag: "moderate_trip",
       },
     },
   ],
