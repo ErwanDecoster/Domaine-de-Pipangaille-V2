@@ -19,7 +19,7 @@
     "sort-surroundings": "npx tsx scripts/sort-surroundings.ts"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/sitemap": "^3.7.3",
     "@astrojs/vercel": "^10.0.8",
     "@astrojs/vue": "^6.0.1",
     "@fontsource/barlow": "^5.2.8",
