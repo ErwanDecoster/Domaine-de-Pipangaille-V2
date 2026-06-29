@@ -306,7 +306,7 @@ export const surroundings = {
       slug: "musee_valrhona",
       bikeRoute: {
         durationMinutes: 92,
-        distanceKm: 26.7,
+        distanceKm: 26.8,
         elevationGainMeters: 207,
         routeType: "Path",
         bikeScore: 87,
@@ -603,9 +603,9 @@ export const surroundings = {
       phoneNumber: "+33 6 44 30 79 76",
       slug: "compagnie_des_canotiers_rhone_et_saone",
       bikeRoute: {
-        durationMinutes: 254,
-        distanceKm: 74.1,
-        elevationGainMeters: 800,
+        durationMinutes: 255,
+        distanceKm: 74.2,
+        elevationGainMeters: 807,
         routeType: "Path",
         bikeScore: 71,
         difficulty: "challenging",
@@ -639,7 +639,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 432,
         distanceKm: 126.8,
-        elevationGainMeters: 1234,
+        elevationGainMeters: 1233,
         routeType: "Path",
         bikeScore: 67,
         difficulty: "challenging",
@@ -669,8 +669,8 @@ export const surroundings = {
       slug: "le_nougat_de_montsegur",
       bikeRoute: {
         durationMinutes: 493,
-        distanceKm: 143.7,
-        elevationGainMeters: 1090,
+        distanceKm: 143.8,
+        elevationGainMeters: 1093,
         routeType: "Path",
         bikeScore: 68,
         difficulty: "challenging",
