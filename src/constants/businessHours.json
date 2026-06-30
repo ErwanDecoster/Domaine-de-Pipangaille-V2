@@ -168,7 +168,7 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "0930",
+            "open": "0900",
             "close": "1830"
           }
         ]
@@ -195,7 +195,7 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "0930",
+            "open": "0900",
             "close": "1830"
           }
         ]
@@ -204,7 +204,7 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "0930",
+            "open": "0900",
             "close": "1830"
           }
         ]
@@ -213,7 +213,7 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "0930",
+            "open": "0900",
             "close": "1830"
           }
         ]
@@ -222,7 +222,7 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "0930",
+            "open": "0900",
             "close": "1830"
           }
         ]
@@ -242,19 +242,49 @@
         ]
       },
       "monday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "tuesday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "wednesday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "thursday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "friday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1800"
+          }
+        ]
       },
       "saturday": {
         "isOpen": true,
@@ -1666,13 +1696,7 @@
         ]
       },
       "monday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1800",
-            "close": "2130"
-          }
-        ]
+        "isOpen": false
       },
       "tuesday": {
         "isOpen": true,
