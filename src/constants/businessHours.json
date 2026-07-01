@@ -177,7 +177,7 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "0930",
+            "open": "0900",
             "close": "1830"
           }
         ]
@@ -1755,61 +1755,19 @@
         "isOpen": false
       },
       "tuesday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1200",
-            "close": "1400"
-          },
-          {
-            "open": "1900",
-            "close": "2100"
-          }
-        ]
+        "isOpen": false
       },
       "wednesday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1200",
-            "close": "1400"
-          },
-          {
-            "open": "1900",
-            "close": "2100"
-          }
-        ]
+        "isOpen": false
       },
       "thursday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1200",
-            "close": "1400"
-          }
-        ]
+        "isOpen": false
       },
       "friday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1200",
-            "close": "1400"
-          },
-          {
-            "open": "1900",
-            "close": "2100"
-          }
-        ]
+        "isOpen": false
       },
       "saturday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1900",
-            "close": "2100"
-          }
-        ]
+        "isOpen": false
       }
     }
   },
