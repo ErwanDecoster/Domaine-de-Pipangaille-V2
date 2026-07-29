@@ -961,8 +961,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
-            "close": "1900"
+            "open": "0930",
+            "close": "1400"
+          },
+          {
+            "open": "1700",
+            "close": "2130"
           }
         ]
       },
@@ -970,8 +974,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
-            "close": "1900"
+            "open": "0930",
+            "close": "1400"
+          },
+          {
+            "open": "1700",
+            "close": "2130"
           }
         ]
       },
@@ -979,7 +987,11 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "0930",
+            "close": "1400"
+          },
+          {
+            "open": "1700",
             "close": "2300"
           }
         ]
