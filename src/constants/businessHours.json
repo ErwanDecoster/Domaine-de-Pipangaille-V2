@@ -1727,13 +1727,7 @@
     "googlePlaceId": "ChIJYXmrUTE-9UcRylzpf3TSEbA",
     "hours": {
       "sunday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1800",
-            "close": "2200"
-          }
-        ]
+        "isOpen": false
       },
       "monday": {
         "isOpen": false
@@ -1766,22 +1760,10 @@
         ]
       },
       "friday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1800",
-            "close": "2230"
-          }
-        ]
+        "isOpen": false
       },
       "saturday": {
-        "isOpen": true,
-        "periods": [
-          {
-            "open": "1800",
-            "close": "2230"
-          }
-        ]
+        "isOpen": false
       }
     }
   },
