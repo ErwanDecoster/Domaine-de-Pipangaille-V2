@@ -430,7 +430,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 19,
         distanceKm: 4.8,
-        elevationGainMeters: 67,
+        elevationGainMeters: 65,
         routeType: "Path",
         bikeScore: 82,
         difficulty: "easy",
@@ -637,7 +637,7 @@ export const surroundings = {
       phoneNumber: "+33 4 75 91 83 50",
       slug: "chateau_de_grignan",
       bikeRoute: {
-        durationMinutes: 432,
+        durationMinutes: 431,
         distanceKm: 126.8,
         elevationGainMeters: 1233,
         routeType: "Path",
@@ -668,7 +668,7 @@ export const surroundings = {
       ],
       slug: "le_nougat_de_montsegur",
       bikeRoute: {
-        durationMinutes: 493,
+        durationMinutes: 492,
         distanceKm: 143.8,
         elevationGainMeters: 1093,
         routeType: "Path",
