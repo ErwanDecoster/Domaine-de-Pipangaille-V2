@@ -605,7 +605,7 @@ export const surroundings = {
       bikeRoute: {
         durationMinutes: 255,
         distanceKm: 74.2,
-        elevationGainMeters: 807,
+        elevationGainMeters: 806,
         routeType: "Path",
         bikeScore: 71,
         difficulty: "challenging",
