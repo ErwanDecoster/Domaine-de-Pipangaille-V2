@@ -1,6 +1,6 @@
 import js from "@eslint/js";
 import tsParser from "@typescript-eslint/parser";
-import astroParser from "astro-eslint-parser";
+import * as astroParser from "astro-eslint-parser";
 import astro from "eslint-plugin-astro";
 
 const config = [

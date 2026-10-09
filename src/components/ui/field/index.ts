@@ -1,4 +1,3 @@
----
 export { default as Field } from "./field.astro";
 export { default as FieldContent } from "./field-content.astro";
 export { default as FieldDescription } from "./field-description.astro";
@@ -8,4 +7,3 @@ export { default as FieldLegend } from "./field-legend.astro";
 export { default as FieldSeparator } from "./field-separator.astro";
 export { default as FieldSet } from "./field-set.astro";
 export { default as FieldTitle } from "./field-title.astro";
----

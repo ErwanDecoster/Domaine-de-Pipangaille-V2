@@ -9,6 +9,13 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      # astro and its integrations peer-depend on each other's major version,
+      # so they must be bumped in a single PR for `npm ci` to resolve.
+      astro:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
