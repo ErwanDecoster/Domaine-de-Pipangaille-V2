@@ -637,7 +637,7 @@ export const surroundings = {
       phoneNumber: "+33 4 75 91 83 50",
       slug: "chateau_de_grignan",
       bikeRoute: {
-        durationMinutes: 431,
+        durationMinutes: 430,
         distanceKm: 126.8,
         elevationGainMeters: 1233,
         routeType: "Path",
