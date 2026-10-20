@@ -1617,32 +1617,6 @@
       }
     }
   },
-  "laVillaChampagnere": {
-    "googlePlaceId": "ChIJ14GPank-9UcRO7FJY0zreoA",
-    "hours": {
-      "sunday": {
-        "isOpen": false
-      },
-      "monday": {
-        "isOpen": false
-      },
-      "tuesday": {
-        "isOpen": false
-      },
-      "wednesday": {
-        "isOpen": false
-      },
-      "thursday": {
-        "isOpen": false
-      },
-      "friday": {
-        "isOpen": false
-      },
-      "saturday": {
-        "isOpen": false
-      }
-    }
-  },
   "lesAgapons": {
     "googlePlaceId": "ChIJL_N9lKox9UcRqiWgOmoeXbw",
     "hours": {

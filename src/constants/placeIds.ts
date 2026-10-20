@@ -37,7 +37,6 @@ export const placeIds = {
   laBelleEpoque: "ChIJh6UPhOE_9UcRQbFXD-FD8PE",
   oDailyTruck: "ChIJxZHYOe839UcRTMxBVl0e2xM",
   cesarPizza: "ChIJYXmrUTE-9UcRylzpf3TSEbA",
-  laVillaChampagnere: "ChIJ14GPank-9UcRO7FJY0zreoA",
   lesAgapons: "ChIJL_N9lKox9UcRqiWgOmoeXbw",
   leHangarN7: "ChIJ9WyObGQ-9UcRRCUIezelaqI",
   restaurantDeLaTreille: "ChIJQfWDiQ8-9UcRlpSPl4FKTCA",
