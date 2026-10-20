@@ -111,10 +111,6 @@ export const surroundings = {
     "Pizzeria d’Andance appréciée pour ses pizzas à emporter et recettes généreuses.",
   "surroundings.descriptions.cesar_pizza.long":
     "Pizzas croustillantes au four, burgers et planches à partager dans une ambiance conviviale et rapide.\n\nIdéale pour un repas en famille ou une soirée entre amis près de la place du Cloître.",
-  "surroundings.descriptions.la_villa_champagnere.short":
-    "Bistronomie de produits locaux à Saint-Rambert-d’Albon, cadre cosy avec terrasse.",
-  "surroundings.descriptions.la_villa_champagnere.long":
-    "Cuisine maison de saison — burgers gourmets, grenouilles, plats du marché — servie en salles climatisées ou dehors.\n\nAccueil de groupes et salle de réception pour déjeuners d’équipe, soirées ou repas entre amis.",
   "surroundings.descriptions.lamas_des_plaines.short":
     "Ferme découverte et centre de médiation animale avec des lamas, proposant ateliers et formations.",
   "surroundings.descriptions.lamas_des_plaines.long":
@@ -184,8 +180,6 @@ export const surroundings = {
     "Food truck O’Daily Truck prêt à servir",
   "surroundings.cesar_pizza.gallery.image1Alt":
     "Comptoir et four de César Pizza",
-  "surroundings.la_villa_champagnere.gallery.image1Alt":
-    "Jardin et terrasse de La Villa Champagnère",
   "surroundings.les_agapons.gallery.image1Alt":
     "Restaurant Les Agapons à Manthes",
   "surroundings.domaine_golf_albon.gallery.image1Alt":

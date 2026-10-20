@@ -113,10 +113,6 @@ export const surroundings = {
     "Popular Andance pizzeria for takeaway pies and generous recipes.",
   "surroundings.descriptions.cesar_pizza.long":
     "Crispy oven pizzas, burgers and sharing boards in a friendly, quick-service mood.\n\nGreat for a family bite or a night with friends near Place du Cloître.",
-  "surroundings.descriptions.la_villa_champagnere.short":
-    "Local-produce bistronomy in Saint-Rambert-d’Albon with a cosy look and terrace.",
-  "surroundings.descriptions.la_villa_champagnere.long":
-    "House-made seasonal cooking—gourmet burgers, frog legs, market plates—served indoors or outside.\n\nWelcomes groups with a reception room for team lunches, evenings or friendly gatherings.",
   "surroundings.descriptions.lamas_des_plaines.short":
     "Discovery farm and animal-assisted therapy center with llamas, offering workshops and training programs.",
   "surroundings.descriptions.lamas_des_plaines.long":
@@ -205,8 +201,6 @@ export const surroundings = {
     "O'Daily Truck parked and ready to serve",
   "surroundings.cesar_pizza.gallery.image1Alt":
     "Counter and oven at César Pizza",
-  "surroundings.la_villa_champagnere.gallery.image1Alt":
-    "Garden and terrace of La Villa Champagnère",
   "surroundings.les_agapons.gallery.image1Alt":
     "Les Agapons restaurant in Manthes",
   "surroundings.domaine_golf_albon.gallery.image1Alt":

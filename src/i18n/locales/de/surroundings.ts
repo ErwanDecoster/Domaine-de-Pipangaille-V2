@@ -114,10 +114,6 @@ export const surroundings = {
     "Beliebte Pizzeria in Andance für ihre Mitnahme-Pizzen und großzügigen Rezepte.",
   "surroundings.descriptions.cesar_pizza.long":
     "Knusprige Ofenpizzen, Burger und Sharing-Boards in freundlicher, zügiger Atmosphäre.\n\nIdeal für ein Familienessen oder einen Abend mit Freunden nahe Place du Cloître.",
-  "surroundings.descriptions.la_villa_champagnere.short":
-    "Bistronomie mit lokalen Produkten in Saint-Rambert-d’Albon, gemütlicher Stil mit Terrasse.",
-  "surroundings.descriptions.la_villa_champagnere.long":
-    "Hausgemachte Saisonküche — Gourmet-Burger, Froschschenkel, Marktgerichte — drinnen oder draußen serviert.\n\nBegrüßt Gruppen mit eigenem Raum für Team-Lunches, Abende oder Runden unter Freunden.",
   "surroundings.descriptions.lamas_des_plaines.short":
     "Entdeckungshof und tiergestützte Therapiezentrum mit Lamas, bietet Workshops und Schulungsprogramme.",
   "surroundings.descriptions.lamas_des_plaines.long":
@@ -205,8 +201,6 @@ export const surroundings = {
     "O'Daily Truck bereit zum Service",
   "surroundings.cesar_pizza.gallery.image1Alt":
     "Theke und Ofen von César Pizza",
-  "surroundings.la_villa_champagnere.gallery.image1Alt":
-    "Garten und Terrasse der Villa Champagnère",
   "surroundings.les_agapons.gallery.image1Alt":
     "Restaurant Les Agapons in Manthes",
   "surroundings.domaine_golf_albon.gallery.image1Alt":

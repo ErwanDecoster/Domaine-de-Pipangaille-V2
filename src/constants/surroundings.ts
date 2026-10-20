@@ -12,7 +12,6 @@ import laFabriqueDeJulienImg from "@/images/la-fabrique-de-julien.jpg";
 import laPouleNoireImg from "@/images/la-poule-noire.jpg";
 import laTableDesSajImg from "@/images/la-table-des-saj.jpg";
 import laValleeImg from "@/images/la-vallee.jpg";
-import laVillaChampagnereImg from "@/images/la-villa-champagnere.jpg";
 import labyrintheVegetalImg from "@/images/labyrinthe-vegetal.jpg";
 import lamasDesPlainesImg from "@/images/lamas-des-plaines.jpg";
 import leLieuImg from "@/images/le-lieu.jpg";
@@ -918,37 +917,6 @@ export const surroundings = {
         elevationGainMeters: 23,
         routeType: "Path",
         bikeScore: 71,
-        difficulty: "easy",
-        tag: "quick_neighborhood_ride",
-      },
-    },
-    {
-      title: "La Villa Champagnère",
-      shortDesc: "surroundings.descriptions.la_villa_champagnere.short",
-      longDesc: ["surroundings.descriptions.la_villa_champagnere.long"],
-      gallery: [
-        {
-          src: laVillaChampagnereImg,
-          altKey: "surroundings.la_villa_champagnere.gallery.image1Alt",
-        },
-      ],
-      mapsUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.959217030252!2d4.8218889155509155!3d45.26883517909909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e796a8f81d7%3A0x807aeb4c6349b13b!2sLa%20Villa%20Champagn%C3%A8re!5e0!3m2!1sfr!2sfr!4v1669484905306",
-      website: "http://lavillachampagnere.fr/",
-      socialMedia: [
-        {
-          platform: "facebook",
-          link: "https://www.facebook.com/NathalieOttogalli/",
-        },
-      ],
-      phoneNumber: "+33 4 75 31 69 50",
-      slug: "la_villa_champagnere",
-      bikeRoute: {
-        durationMinutes: 10,
-        distanceKm: 2.8,
-        elevationGainMeters: 30,
-        routeType: "Path",
-        bikeScore: 77,
         difficulty: "easy",
         tag: "quick_neighborhood_ride",
       },
