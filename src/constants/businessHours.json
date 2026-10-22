@@ -100,8 +100,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "1100",
             "close": "1630"
+          },
+          {
+            "open": "1900",
+            "close": "2000"
           }
         ]
       },
@@ -109,8 +113,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "1100",
             "close": "1630"
+          },
+          {
+            "open": "1900",
+            "close": "2000"
           }
         ]
       },
@@ -118,8 +126,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "1100",
             "close": "1630"
+          },
+          {
+            "open": "1900",
+            "close": "2000"
           }
         ]
       },
@@ -127,8 +139,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "1100",
             "close": "1630"
+          },
+          {
+            "open": "1900",
+            "close": "2000"
           }
         ]
       },
@@ -136,8 +152,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "1100",
             "close": "1630"
+          },
+          {
+            "open": "1900",
+            "close": "2000"
           }
         ]
       },
@@ -145,8 +165,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "1100",
             "close": "1630"
+          },
+          {
+            "open": "1900",
+            "close": "2000"
           }
         ]
       },
@@ -154,8 +178,12 @@
         "isOpen": true,
         "periods": [
           {
-            "open": "1000",
+            "open": "1100",
             "close": "1630"
+          },
+          {
+            "open": "1900",
+            "close": "2000"
           }
         ]
       }
@@ -652,7 +680,17 @@
         ]
       },
       "monday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1000",
+            "close": "1300"
+          },
+          {
+            "open": "1400",
+            "close": "1900"
+          }
+        ]
       },
       "tuesday": {
         "isOpen": true,
@@ -815,10 +853,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
             "close": "1800"
           }
         ]
@@ -828,10 +862,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
             "close": "1800"
           }
         ]
@@ -841,10 +871,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
             "close": "1800"
           }
         ]
@@ -854,10 +880,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
             "close": "1800"
           }
         ]
@@ -867,10 +889,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
             "close": "1800"
           }
         ]
@@ -880,10 +898,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
             "close": "1800"
           }
         ]
@@ -893,10 +907,6 @@
         "periods": [
           {
             "open": "1000",
-            "close": "1230"
-          },
-          {
-            "open": "1400",
             "close": "1800"
           }
         ]
@@ -916,16 +926,40 @@
         "isOpen": false
       },
       "wednesday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1400",
+            "close": "1800"
+          }
+        ]
       },
       "thursday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1400",
+            "close": "1800"
+          }
+        ]
       },
       "friday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1400",
+            "close": "1800"
+          }
+        ]
       },
       "saturday": {
-        "isOpen": false
+        "isOpen": true,
+        "periods": [
+          {
+            "open": "1400",
+            "close": "1800"
+          }
+        ]
       }
     }
   },
